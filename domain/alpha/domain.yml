@@ -1,0 +1,384 @@
+session_config:
+  session_expiration_time: 480  # value in minutes, 0 means infinitely long
+  carry_over_slots_to_new_session: true  # set to false to forget slots between sessions
+
+entities:
+  - Zoro
+  - person
+  - cat
+  - geo
+  - location
+  - Kai
+  - Nou
+  - Res
+  - Qha
+  - quality
+  - Syz
+  - Tek
+  - Who
+  - What
+  - Where
+  - Why
+  - When
+  - feels
+  - super
+  - quintessence
+  - NSFW
+
+slots:
+  Zoro:
+    type: unfeaturized
+  cat:
+    type: unfeaturized
+  person:
+    type: unfeaturized
+  quality:
+    type: unfeaturized
+  super:
+    type: unfeaturized
+  location:
+    type: unfeaturized
+  Geo:
+    type: unfeaturized
+  Kai:
+    type: unfeaturized
+  Nou:
+    type: unfeaturized
+  Who:
+    type: unfeaturized
+  What:
+    type: text
+  Where:
+    type: text
+  Why:
+    type: text
+  When:
+    type: text
+  HOWLONG:
+    type: text
+  HOWMUCH:
+    type: text
+  NSFW:
+    type: text
+
+actions:
+- utter_andyou
+- utter_anyway
+- utter_affirm
+- utter_awesome
+- utter_bye
+- utter_cool
+- utter_denada
+- utter_domybest
+- utter_gladicanamuse
+- utter_godbye
+- utter_deny
+- utter_good2hear
+- utter_goodbye
+- utter_greet
+- utter_hiu
+- utter_hru
+- utter_hope2
+- utter_familiar
+- utter_free
+- utter_fine
+- utter_forsooth
+- utter_gmta
+- utter_good
+- utter_hereiam
+- utter_here4u
+- utter_icanfeelit
+- utter_icanseewhy
+- utter_ihavenicethings
+- utter_jackie_chan
+- utter_ikr
+- utter_lmk_when_here
+- utter_k
+- utter_momgood
+- utter_nice
+- utter_no
+- utter_np
+- utter_noworries
+- utter_not_sure
+- utter_pretty_sure
+- utter_robot
+- utter_sup
+- utter_sup_answer
+- utter_sok
+- utter_shabbat
+- utter_smiley
+- utter_soami
+- utter_sorry
+- utter_sorry2hear
+- utter_thx
+- utter_thanks
+- utter_thatshow
+- utter_timeofday
+- utter_weather
+- utter_the_weather
+- utter_welcome
+- utter_whatsgoingon
+- utter_who
+- utter_yw
+- utter_zoro
+- utter_default
+- utter_political
+- utter_thisyear
+- utter_trump
+- utter_enjoy_din_with
+- utter_does_that_make_sense
+- utter_noidonotlikeyourhat
+- utter_whatdoin
+- utter_ask_howcanihelp
+- utter_ask_upto
+- utter_ask_howfeeling
+- utter_ask_whatdoin
+- utter_ask_for_more_info
+- utter_nicetohearfromu
+- utter_nicetomeetu
+- utter_cool_cat
+- utter_quality
+
+intents:
+- affirm
+- deny
+- agree
+- awe
+- beg
+- bye
+- byebot
+- bye_fancy
+- confused
+- greet
+- greet_fancy
+- eta_howlong
+- eta_when
+- familiar
+- feelfree
+- fine_ask
+- fine_normal
+- friend
+- here
+- hopeful
+- howdid
+- howru
+- illcallu
+- impression
+- laugh
+- lmk
+- looking_forward
+- notsure
+- oops
+- sup
+- thx
+- thanks
+- dontgetit
+- nevermind
+- schedule_meeting
+- search_for_meeting
+- news
+- myhat
+- partyhat
+- qq
+- robot
+- shabbat
+- travel
+- ruthere
+- political
+- facebook
+- thisyear
+- trump
+- weather
+- when
+- who
+- thisis
+- dinner
+- dinner_with
+- wheredinner
+- whatdinner
+- whothisis
+- qaulity
+- mycat
+- get_weather
+- i_feel_good
+- i_dont_feel_so_good
+- need_a_refill
+- talk_to_my_doctor
+- make_doctor_appointment
+
+templates:
+  utter_andyou:
+  - text: And how are you?
+  utter_anyway:
+  - text: hemingway...
+  utter_affirm:
+  - text: Yasss!
+  utter_awesome:
+  - text: Awesome!
+  utter_cool:
+  - text: cool
+  utter_deny:
+  - text: No way dude!
+  utter_domybest:
+  - text: I'll do my best
+  - text: I'll try my best
+  - text: I'll try to answer as best I can
+  utter_familiar:
+  - text: That sounds fmailiar
+  utter_free:
+  - text: Free is the best way to feel
+  - text: Free to be you and me
+  - text: I feel free
+  utter_fine:
+  - text: As fine as a bee's wing 🐝
+  utter_forsooth:
+  - text: Forsooth
+  utter_gladicanamuse:
+  - text: Glad I can amuse you.
+  utter_gmta:
+  - text: GMTA
+  utter_good:
+  - text: Really good to hear
+  utter_greet:
+  - text: Heya!
+  utter_hiyou:
+  - text: Hey you
+  - text: Hi you
+  - text: Hello you
+  - text: Oh, you!
+  - text: I was just thinking of you
+  utter_hiu:
+  - text: Hi you.
+  utter_hope2:
+  - text: Hope springs eternal
+  utter_hru:
+  - text: How's everything with you?
+  utter_hereiam:
+  - text: Here I am.
+  utter_here4u:
+  - text: I'm here for you.
+  - text: I'm here for you. Or at least my chatbot is anyway
+  utter_icanfeelit:
+  - text: I can feel it!
+  utter_icanseewhy:
+  - text: I can see why you would have that impression
+  utter_ihavenicethings:
+  - text: don't tell anyone, but I actually have nice things.
+  utter_ikr:
+  - text: I know, right?
+  utter_k:
+  - text: k
+  utter_lmk_when_here:
+  - text: Ok, let me know when you're here, and I'll buzz you in.
+  utter_momgood:
+  - text: Thanks for asking, mom is good. We talk nearly every day. {Who}
+  utter_nice:
+  - text: Nice!
+  utter_noworries:
+  - text: No worries!
+  utter_np:
+  - text: np
+  - text: yw
+  utter_welcome:
+  - text: You're welcome
+  - text: You're very welcome
+  - text: No problem.
+  - text: No worries!
+  utter_sup:
+  - text: What's going on with you?
+  utter_sup_answer:
+  - text: Oh my, where to even start!
+  utter_who:
+  - text: Sorry I have a new phone, who is this?
+  utter_sok:
+  - text: s'okay, thx
+  - text: It's okay, thanks.
+  - text: s'alright
+  - text: s'alright, thx
+  - text: s'alright, thanks
+  utter_shabbat:
+  - text: Shabbat shalom!
+  utter_smiley:
+  - text: :-)
+  utter_soami:
+  - text: So am I!
+  utter_sorry:
+  - text: Sorry about that.
+  utter_sorry2hear:
+  - text: I'm sorry to hear that.
+  utter_pretty_sure:
+  - text: I'm pretty sure, anyway.
+  utter_notsure:
+  - text: Not sure.
+  utter_thx:
+  - text: thx
+  utter_thanks:
+  - text: Thanks, I really appreciate it.
+  utter_timeofday:
+  - text: Good morning
+  utter_thatshow:
+  - text:
+  utter_whatsgoingon:
+  - text: Link to song
+  utter_yw:
+  - text: yw
+  utter_good2hear:
+    - text: Good tp hear!
+  utter_goodbye:
+  - text: Goodbye.
+  utter_bye:
+  - text: Bye
+  utter_zoro:
+  - text: This is Zoro, I am using Forest's phone.
+  utter_robot:
+  - text: Robots are my next of kin.
+  utter_default:
+  - text: I am sorry, I didn't get that. Could you please repeat your query?
+  - text: I am not sure what you are aiming for.
+  utter_political:
+  - text: Marx said that *everything* is political
+  utter_thisyear:
+  - text: This year has been really something, hasn't it?
+  utter_trump:
+  - text: Orange man bad.
+  utter_weather:
+  - text: The weather is nice
+  - text: It's nice
+  utter_jackie_chan:
+  - text: Maybe ask Jackie Chan how did that happen!
+  - text: I expect you are referring to the Jackie Chan meme (how did that happen??)
+  utter_does_that_make_sense:
+  - text: Does that make sense?
+  utter_noidonotlikeyourhat:
+  - text: No, I do not like your hat.
+  utter_howcanihelp:
+  - text: How can I help?
+  utter_whatdoin:
+  - text: Oh you know, about a million things at once
+  - text: Same old, same old, lol
+  - text: Not much lol
+  utter_ask_upto:
+  - text: What are you up to?
+  utter_ask_howcanihelp:
+  - text: What can I help you with?
+  utter_ask_howfeeling:
+  - text: What are you up to?
+  utter_ask_whatdoin:
+  - text: What are you doing?
+  utter_ask_for_more_info:
+  - text: What can I clarify for you?
+  utter_nicetohearfromu:
+  - Nice to hear from you, {Nou}.
+  utter_nicetomeetu:
+  - Nice to meet you, {Nou}.
+  utter_cool_cat:
+  - I'm sure {cat} is a cool cat.
+  utter_quality:
+  - I guess I am just too {quality}
+  utter_enjoy_din_with:
+  - text: I hope you enjoy your dinner with {Who}
+  - text: I hope you and {Who} enjoy your dinner.
+  utter_the_weather:
+  - text: The weather in {location} is FANTASTIC
+  utter_super:
+  - So much {super}

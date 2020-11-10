@@ -1,0 +1,76 @@
+{
+  "action_fingerprints": {
+    "action_listen": {
+      "slots": [
+        "date_or_time"
+      ]
+    },
+    "email_form": {
+      "slots": []
+    },
+    "utter_np": {
+      "slots": []
+    },
+    "utter_ask_change_what": {
+      "slots": []
+    },
+    "utter_bye": {
+      "slots": []
+    },
+    "action_send_invite": {
+      "slots": []
+    },
+    "utter_ask_day": {
+      "slots": []
+    },
+    "utter_im_a_scheduling_agent": {
+      "slots": []
+    },
+    "utter_wunderbar": {
+      "slots": []
+    },
+    "utter_corona_bot": {
+      "slots": []
+    },
+    "utter_ask_time_day": {
+      "slots": []
+    },
+    "utter_ask_who": {
+      "slots": []
+    },
+    "utter_ask_date": {
+      "slots": []
+    },
+    "utter_confirm_best_email": {
+      "slots": []
+    },
+    "utter_ask_schedule_call": {
+      "slots": []
+    },
+    "utter_soami": {
+      "slots": []
+    },
+    "utter_ask_time_date": {
+      "slots": []
+    },
+    "action_restart": {
+      "slots": []
+    }
+  },
+  "python": "3.6.12",
+  "max_histories": [
+    5,
+    4,
+    2
+  ],
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
+  "policy_names": [
+    "rasa_core.policies.keras_policy.KerasPolicy",
+    "rasa_core.policies.memoization.MemoizationPolicy",
+    "rasa_core.policies.form_policy.FormPolicy"
+  ],
+  "trained_at": "20201109-235039",
+  "rasa_core": "0.13.8",
+  "tensorflow": "1.12.0",
+  "sklearn": "0.20.2"
+}

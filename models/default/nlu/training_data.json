@@ -1,0 +1,4285 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "greet",
+        "text": "hello"
+      },
+      {
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "intent": "greet",
+        "text": "hey there"
+      },
+      {
+        "intent": "greet",
+        "text": "heya"
+      },
+      {
+        "intent": "greet",
+        "text": "hi"
+      },
+      {
+        "intent": "greet",
+        "text": "hi again"
+      },
+      {
+        "intent": "greet",
+        "text": "hi there"
+      },
+      {
+        "intent": "greet",
+        "text": "hii"
+      },
+      {
+        "intent": "greet",
+        "text": "hiya"
+      },
+      {
+        "intent": "greet_fancy",
+        "text": "good morning"
+      },
+      {
+        "intent": "greet_fancy",
+        "text": "good afternoon"
+      },
+      {
+        "intent": "greet_fancy",
+        "text": "good evening"
+      },
+      {
+        "intent": "greet_fancy",
+        "text": "morning!"
+      },
+      {
+        "intent": "greet_fancy",
+        "text": "greetings"
+      },
+      {
+        "intent": "greet_fancy",
+        "text": "salutations"
+      },
+      {
+        "intent": "greet_fancy",
+        "text": "greetings and salutations"
+      },
+      {
+        "intent": "greet_fancy",
+        "text": "how do you do?"
+      },
+      {
+        "intent": "greet_fancy",
+        "text": "howdy doodie"
+      },
+      {
+        "intent": "affirm",
+        "text": "Y"
+      },
+      {
+        "intent": "affirm",
+        "text": "y"
+      },
+      {
+        "intent": "affirm",
+        "text": "ya"
+      },
+      {
+        "intent": "affirm",
+        "text": "yep"
+      },
+      {
+        "intent": "affirm",
+        "text": "yeppers"
+      },
+      {
+        "intent": "affirm",
+        "text": "yes"
+      },
+      {
+        "intent": "affirm",
+        "text": "ah yes"
+      },
+      {
+        "intent": "affirm",
+        "text": "Ah yes!!"
+      },
+      {
+        "intent": "affirm",
+        "text": "absolutely"
+      },
+      {
+        "intent": "affirm",
+        "text": "definitely"
+      },
+      {
+        "intent": "affirm",
+        "text": "sure"
+      },
+      {
+        "intent": "affirm",
+        "text": "yes sure"
+      },
+      {
+        "intent": "affirm",
+        "text": "you got it"
+      },
+      {
+        "intent": "affirm",
+        "text": "k"
+      },
+      {
+        "intent": "affirm",
+        "text": "kk"
+      },
+      {
+        "intent": "agree",
+        "text": "agree"
+      },
+      {
+        "intent": "agree",
+        "text": "agreed"
+      },
+      {
+        "intent": "agree",
+        "text": "i agree"
+      },
+      {
+        "intent": "agree",
+        "text": "i agree with that"
+      },
+      {
+        "intent": "agree",
+        "text": "i concur"
+      },
+      {
+        "intent": "agree",
+        "text": "me too"
+      },
+      {
+        "intent": "agree",
+        "text": "me too!"
+      },
+      {
+        "intent": "agree",
+        "text": "i wholeheartedly agree"
+      },
+      {
+        "intent": "agree",
+        "text": "ill buy that for a dollar"
+      },
+      {
+        "intent": "deny",
+        "text": "no"
+      },
+      {
+        "intent": "deny",
+        "text": "nope"
+      },
+      {
+        "intent": "deny",
+        "text": "never"
+      },
+      {
+        "intent": "deny",
+        "text": "I don't think so"
+      },
+      {
+        "intent": "deny",
+        "text": "sorry no"
+      },
+      {
+        "intent": "deny",
+        "text": "sorry, no"
+      },
+      {
+        "intent": "laugh",
+        "text": "lol"
+      },
+      {
+        "intent": "laugh",
+        "text": "ha"
+      },
+      {
+        "intent": "laugh",
+        "text": "haha"
+      },
+      {
+        "intent": "laugh",
+        "text": "hahaha"
+      },
+      {
+        "intent": "laugh",
+        "text": "hahahaha"
+      },
+      {
+        "intent": "laugh",
+        "text": "ha ha"
+      },
+      {
+        "intent": "laugh",
+        "text": "ha ha ha"
+      },
+      {
+        "intent": "laugh",
+        "text": "lmao"
+      },
+      {
+        "intent": "laugh",
+        "text": "lmfao"
+      },
+      {
+        "intent": "laugh",
+        "text": "rofl"
+      },
+      {
+        "intent": "laugh",
+        "text": "rotflmfao"
+      },
+      {
+        "intent": "laugh",
+        "text": "omgwtfbbq"
+      },
+      {
+        "intent": "laugh",
+        "text": "thats really funny"
+      },
+      {
+        "intent": "laugh",
+        "text": "youre a funny guy"
+      },
+      {
+        "intent": "laugh",
+        "text": "youre funny"
+      },
+      {
+        "intent": "laugh",
+        "text": "ur funny"
+      },
+      {
+        "intent": "laugh",
+        "text": "u r funny"
+      },
+      {
+        "intent": "who",
+        "text": "who is this"
+      },
+      {
+        "intent": "who",
+        "text": "whose number is this"
+      },
+      {
+        "intent": "who",
+        "text": "who's number is this"
+      },
+      {
+        "intent": "who",
+        "text": "who are you"
+      },
+      {
+        "intent": "itsme",
+        "text": "it's me"
+      },
+      {
+        "intent": "itsme",
+        "text": "its me"
+      },
+      {
+        "intent": "thisis",
+        "text": "this is"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 8,
+            "end": 12,
+            "value": "adam",
+            "entity": "Nou"
+          }
+        ],
+        "text": "this is adam"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 8,
+            "end": 13,
+            "value": "david",
+            "entity": "Nou"
+          }
+        ],
+        "text": "this is david"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 8,
+            "end": 18,
+            "value": "dave smith",
+            "entity": "Nou"
+          }
+        ],
+        "text": "this is dave smith"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 8,
+            "end": 13,
+            "value": "enoch",
+            "entity": "Nou"
+          }
+        ],
+        "text": "this is enoch"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 8,
+            "end": 14,
+            "value": "harold",
+            "entity": "Nou"
+          }
+        ],
+        "text": "this is harold"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 8,
+            "end": 13,
+            "value": "maude",
+            "entity": "Nou"
+          }
+        ],
+        "text": "this is maude"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 8,
+            "end": 16,
+            "value": "nicholas",
+            "entity": "Nou"
+          }
+        ],
+        "text": "this is nicholas"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 8,
+            "end": 13,
+            "value": "peter",
+            "entity": "Nou"
+          }
+        ],
+        "text": "this is peter"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 8,
+            "end": 20,
+            "value": "quincy jones",
+            "entity": "Nou"
+          }
+        ],
+        "text": "this is quincy jones"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 8,
+            "end": 10,
+            "value": "RR",
+            "entity": "Nou"
+          }
+        ],
+        "text": "this is RR"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 8,
+            "end": 15,
+            "value": "Severin",
+            "entity": "Nou"
+          }
+        ],
+        "text": "this is Severin"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 8,
+            "end": 13,
+            "value": "Tomas",
+            "entity": "Nou"
+          }
+        ],
+        "text": "this is Tomas"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 8,
+            "end": 11,
+            "value": "ute",
+            "entity": "Nou"
+          }
+        ],
+        "text": "this is ute"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 8,
+            "end": 16,
+            "value": "Veronica",
+            "entity": "Nou"
+          }
+        ],
+        "text": "this is Veronica"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 8,
+            "end": 13,
+            "value": "vicki",
+            "entity": "Nou"
+          }
+        ],
+        "text": "this is vicki"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 8,
+            "end": 15,
+            "value": "wendall",
+            "entity": "Nou"
+          }
+        ],
+        "text": "this is wendall"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 8,
+            "end": 14,
+            "value": "xavier",
+            "entity": "Nou"
+          }
+        ],
+        "text": "this is xavier"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 8,
+            "end": 14,
+            "value": "yasmin",
+            "entity": "Nou"
+          }
+        ],
+        "text": "this is yasmin"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 8,
+            "end": 11,
+            "value": "Zaz",
+            "entity": "Nou"
+          }
+        ],
+        "text": "this is Zaz"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 5,
+            "end": 9,
+            "value": "adam",
+            "entity": "Nou"
+          }
+        ],
+        "text": "it's adam"
+      },
+      {
+        "intent": "whothisis",
+        "entities": [
+          {
+            "start": 5,
+            "end": 9,
+            "value": "fred",
+            "entity": "Nou"
+          }
+        ],
+        "text": "I am fred"
+      },
+      {
+        "intent": "whothisis",
+        "entities": [
+          {
+            "start": 5,
+            "end": 11,
+            "value": "george",
+            "entity": "Nou"
+          }
+        ],
+        "text": "I am george"
+      },
+      {
+        "intent": "whothisis",
+        "entities": [
+          {
+            "start": 5,
+            "end": 14,
+            "value": "sparticus",
+            "entity": "Nou"
+          }
+        ],
+        "text": "I am sparticus"
+      },
+      {
+        "intent": "whothisis",
+        "entities": [
+          {
+            "start": 12,
+            "end": 28,
+            "value": "little buttercup",
+            "entity": "Nou"
+          }
+        ],
+        "text": "I am called little buttercup"
+      },
+      {
+        "intent": "whothisis",
+        "entities": [
+          {
+            "start": 5,
+            "end": 8,
+            "value": "jen",
+            "entity": "Nou"
+          }
+        ],
+        "text": "I am jen"
+      },
+      {
+        "intent": "forest",
+        "text": "is this Forest"
+      },
+      {
+        "intent": "forest",
+        "text": "Forest is that you"
+      },
+      {
+        "intent": "forest",
+        "text": "am i talking to forest"
+      },
+      {
+        "intent": "forest",
+        "text": "forest have i reached you"
+      },
+      {
+        "intent": "forest",
+        "text": "is this still your number forest"
+      },
+      {
+        "intent": "forest",
+        "text": "hi is this forest"
+      },
+      {
+        "intent": "forest",
+        "text": "forest?"
+      },
+      {
+        "intent": "forest",
+        "text": "hey forest"
+      },
+      {
+        "intent": "forest",
+        "text": "yo forest"
+      },
+      {
+        "intent": "zoro",
+        "text": "zoro"
+      },
+      {
+        "intent": "zoro",
+        "text": "you and zoro"
+      },
+      {
+        "intent": "howru",
+        "text": "hru"
+      },
+      {
+        "intent": "howru",
+        "text": "how r u"
+      },
+      {
+        "intent": "howru",
+        "text": "how r you"
+      },
+      {
+        "intent": "howru",
+        "text": "how are u"
+      },
+      {
+        "intent": "howru",
+        "text": "how are you"
+      },
+      {
+        "intent": "howru",
+        "text": "how are you doing"
+      },
+      {
+        "intent": "howru",
+        "text": "hru?"
+      },
+      {
+        "intent": "howru",
+        "text": "how r u?"
+      },
+      {
+        "intent": "howru",
+        "text": "how are you?"
+      },
+      {
+        "intent": "howru",
+        "text": "how is everything"
+      },
+      {
+        "intent": "howru",
+        "text": "how is everything going"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "I am good, how are you doing?"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "I'm fine, how are you?"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "I'm good, how are you?"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "I am good, how are you?"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "Doing good, how are you?"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "Awesome, how are you?"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "im fine, how are you?"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "im good, how are you?"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "I am doing good. How about you?"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "I am doing great"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "I'm doing great"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "I'm fine"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "I'm good"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "Doing good"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "Awesome"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "im fine"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "im good"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "just fine"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "just fine thanks for asking"
+      },
+      {
+        "intent": "sup",
+        "text": "what's up"
+      },
+      {
+        "intent": "sup",
+        "text": "whats up"
+      },
+      {
+        "intent": "sup",
+        "text": "what's new"
+      },
+      {
+        "intent": "sup",
+        "text": "whats new"
+      },
+      {
+        "intent": "sup",
+        "text": "what's happening"
+      },
+      {
+        "intent": "sup",
+        "text": "whats happening"
+      },
+      {
+        "intent": "sup",
+        "text": "wassup"
+      },
+      {
+        "intent": "sup",
+        "text": "sup"
+      },
+      {
+        "intent": "sup",
+        "text": "whats going on"
+      },
+      {
+        "intent": "sup",
+        "text": "whats going on man"
+      },
+      {
+        "intent": "sup",
+        "text": "whats new and different"
+      },
+      {
+        "intent": "sup",
+        "text": "whats new in your world"
+      },
+      {
+        "intent": "whatdoin",
+        "text": "What are you doing?"
+      },
+      {
+        "intent": "whatdoin",
+        "text": "what are you up to"
+      },
+      {
+        "intent": "whatsgoingon",
+        "text": "What's Going On"
+      },
+      {
+        "intent": "whatsgoingon",
+        "text": "What's going on"
+      },
+      {
+        "intent": "whatsgoingon",
+        "text": "what's going on"
+      },
+      {
+        "intent": "whatsgoingon",
+        "text": "what's goin on"
+      },
+      {
+        "intent": "whatsgoingon",
+        "text": "Whats Going On"
+      },
+      {
+        "intent": "whatsgoingon",
+        "text": "Whats going on"
+      },
+      {
+        "intent": "whatsgoingon",
+        "text": "whats going on"
+      },
+      {
+        "intent": "hopeful",
+        "text": "hope all is well"
+      },
+      {
+        "intent": "hopeful",
+        "text": "hope youre doing well"
+      },
+      {
+        "intent": "hopeful",
+        "text": "hope everything is fine"
+      },
+      {
+        "intent": "hopeful",
+        "text": "hope everything is good"
+      },
+      {
+        "intent": "hopeful",
+        "text": "i hope you are well"
+      },
+      {
+        "intent": "hopeful",
+        "text": "i hope everything is fine"
+      },
+      {
+        "intent": "hopeful",
+        "text": "i hope everything is good"
+      },
+      {
+        "intent": "hopeful",
+        "text": "hope everything goes well"
+      },
+      {
+        "intent": "hopeful",
+        "text": "good luck"
+      },
+      {
+        "intent": "hopeful",
+        "text": "good luck to you"
+      },
+      {
+        "intent": "hopeful",
+        "text": "good luck with that"
+      },
+      {
+        "intent": "hopeful",
+        "text": "best of luck"
+      },
+      {
+        "intent": "hopeful",
+        "text": "best of luck to you"
+      },
+      {
+        "intent": "hopeful",
+        "text": "wishing you luck"
+      },
+      {
+        "intent": "sorry",
+        "text": "sorry"
+      },
+      {
+        "intent": "sorry",
+        "text": "im sorry"
+      },
+      {
+        "intent": "sorry",
+        "text": "sorry to hear"
+      },
+      {
+        "intent": "sorry",
+        "text": "sorry about that"
+      },
+      {
+        "intent": "sorry",
+        "text": "accept my apology"
+      },
+      {
+        "intent": "sorry",
+        "text": "please accept my apology"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thanks"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thank you"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thank you so much"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thank you so very much"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thanks bot"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thanks for that"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thank you so much"
+      },
+      {
+        "intent": "thanks",
+        "text": "perfect thank you"
+      },
+      {
+        "intent": "thanks",
+        "text": "thanks a bunch for everything"
+      },
+      {
+        "intent": "thanks",
+        "text": "thanks for the help"
+      },
+      {
+        "intent": "thanks",
+        "text": "thanks a lot"
+      },
+      {
+        "intent": "thanks",
+        "text": "amazing, thanks"
+      },
+      {
+        "intent": "thanks",
+        "text": "cool, thanks"
+      },
+      {
+        "intent": "thanks",
+        "text": "cool thank you"
+      },
+      {
+        "intent": "thx",
+        "text": "thx"
+      },
+      {
+        "intent": "thx",
+        "text": "Thx"
+      },
+      {
+        "intent": "thx",
+        "text": "k thx"
+      },
+      {
+        "intent": "thx",
+        "text": "ok thx"
+      },
+      {
+        "intent": "thx",
+        "text": "thx!"
+      },
+      {
+        "intent": "thx",
+        "text": "Thx!"
+      },
+      {
+        "intent": "thx",
+        "text": "k thx!"
+      },
+      {
+        "intent": "thx",
+        "text": "ok thx!"
+      },
+      {
+        "intent": "np",
+        "text": "np"
+      },
+      {
+        "intent": "np",
+        "text": "no problem"
+      },
+      {
+        "intent": "np",
+        "text": "no problems"
+      },
+      {
+        "intent": "np",
+        "text": "no problemo"
+      },
+      {
+        "intent": "np",
+        "text": "no problem at all"
+      },
+      {
+        "intent": "np",
+        "text": "not a problem"
+      },
+      {
+        "intent": "np",
+        "text": "not a problem at all"
+      },
+      {
+        "intent": "np",
+        "text": "no worries"
+      },
+      {
+        "intent": "np",
+        "text": "not to worry"
+      },
+      {
+        "intent": "nw",
+        "text": "nw"
+      },
+      {
+        "intent": "nw",
+        "text": "I really appreciate how understanding you are"
+      },
+      {
+        "intent": "nw",
+        "text": "thank you for being understanding"
+      },
+      {
+        "intent": "nw",
+        "text": "thank you for being so understanding"
+      },
+      {
+        "intent": "nw",
+        "text": "thanks for being understanding"
+      },
+      {
+        "intent": "nw",
+        "text": "thanks for being so understanding"
+      },
+      {
+        "intent": "nw",
+        "text": "thanks I really appreciate how understanding you are"
+      },
+      {
+        "intent": "nw",
+        "text": "you are so understanding"
+      },
+      {
+        "intent": "nw",
+        "text": "you are so empathetic"
+      },
+      {
+        "intent": "feelfree",
+        "text": "feel free"
+      },
+      {
+        "intent": "feelfree",
+        "text": "feel free to"
+      },
+      {
+        "intent": "feelfree",
+        "text": "please feel free"
+      },
+      {
+        "intent": "feelfree",
+        "text": "you should feel free"
+      },
+      {
+        "intent": "amazing",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "amazing",
+            "entity": "super"
+          }
+        ],
+        "text": "amazing"
+      },
+      {
+        "intent": "amazing",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "amazing",
+            "entity": "super"
+          }
+        ],
+        "text": "that sounds amazing"
+      },
+      {
+        "intent": "amazing",
+        "entities": [
+          {
+            "start": 4,
+            "end": 11,
+            "value": "amazing",
+            "entity": "super"
+          }
+        ],
+        "text": "how amazing is that"
+      },
+      {
+        "intent": "amazing",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "amazed",
+            "entity": "super"
+          }
+        ],
+        "text": "amazed"
+      },
+      {
+        "intent": "awe",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "awesome",
+            "entity": "super"
+          }
+        ],
+        "text": "awesome"
+      },
+      {
+        "intent": "awe",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Awesome!",
+            "entity": "super"
+          }
+        ],
+        "text": "Awesome!"
+      },
+      {
+        "intent": "awe",
+        "entities": [
+          {
+            "start": 13,
+            "end": 20,
+            "value": "awesome",
+            "entity": "super"
+          }
+        ],
+        "text": "thats really awesome"
+      },
+      {
+        "intent": "awe",
+        "entities": [
+          {
+            "start": 9,
+            "end": 16,
+            "value": "awesome",
+            "entity": "super"
+          }
+        ],
+        "text": "thats so awesome"
+      },
+      {
+        "intent": "awe",
+        "entities": [
+          {
+            "start": 8,
+            "end": 15,
+            "value": "awesome",
+            "entity": "super"
+          }
+        ],
+        "text": "totally awesome"
+      },
+      {
+        "intent": "awe",
+        "entities": [
+          {
+            "start": 6,
+            "end": 13,
+            "value": "awesome",
+            "entity": "super"
+          }
+        ],
+        "text": "totes awesome"
+      },
+      {
+        "intent": "awe",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "epic",
+            "entity": "super"
+          }
+        ],
+        "text": "epic"
+      },
+      {
+        "intent": "awe",
+        "text": "wonder"
+      },
+      {
+        "intent": "awe",
+        "text": "wonderful"
+      },
+      {
+        "intent": "awe",
+        "text": "marvelous"
+      },
+      {
+        "intent": "awe",
+        "text": "i like it"
+      },
+      {
+        "intent": "nice",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "nice",
+            "entity": "super"
+          }
+        ],
+        "text": "nice"
+      },
+      {
+        "intent": "nice",
+        "entities": [
+          {
+            "start": 3,
+            "end": 7,
+            "value": "nice",
+            "entity": "super"
+          }
+        ],
+        "text": "oh nice"
+      },
+      {
+        "intent": "nice",
+        "entities": [
+          {
+            "start": 5,
+            "end": 9,
+            "value": "nice",
+            "entity": "super"
+          }
+        ],
+        "text": "very nice"
+      },
+      {
+        "intent": "nice",
+        "entities": [
+          {
+            "start": 6,
+            "end": 10,
+            "value": "nice",
+            "entity": "super"
+          }
+        ],
+        "text": "thats nice"
+      },
+      {
+        "intent": "oops",
+        "text": "Oops"
+      },
+      {
+        "intent": "oops",
+        "text": "Yikes"
+      },
+      {
+        "intent": "oops",
+        "text": "Egad"
+      },
+      {
+        "intent": "oops",
+        "text": "Oh no"
+      },
+      {
+        "intent": "oops",
+        "text": "Oh, no"
+      },
+      {
+        "intent": "oops",
+        "text": "Oh no!"
+      },
+      {
+        "intent": "loveit",
+        "entities": [
+          {
+            "start": 4,
+            "end": 6,
+            "value": "it",
+            "entity": "quintessence"
+          }
+        ],
+        "text": "loveit"
+      },
+      {
+        "intent": "loveit",
+        "entities": [
+          {
+            "start": 5,
+            "end": 7,
+            "value": "it",
+            "entity": "quintessence"
+          }
+        ],
+        "text": "love it"
+      },
+      {
+        "intent": "loveit",
+        "entities": [
+          {
+            "start": 7,
+            "end": 9,
+            "value": "it",
+            "entity": "quintessence"
+          }
+        ],
+        "text": "i love it"
+      },
+      {
+        "intent": "loveit",
+        "entities": [
+          {
+            "start": 10,
+            "end": 12,
+            "value": "it",
+            "entity": "quintessence"
+          }
+        ],
+        "text": "oh i love it"
+      },
+      {
+        "intent": "loveit",
+        "entities": [
+          {
+            "start": 7,
+            "end": 9,
+            "value": "it",
+            "entity": "quintessence"
+          }
+        ],
+        "text": "i love it so much"
+      },
+      {
+        "intent": "loveit",
+        "entities": [
+          {
+            "start": 15,
+            "end": 17,
+            "value": "it",
+            "entity": "quintessence"
+          }
+        ],
+        "text": "you gotta love it"
+      },
+      {
+        "intent": "missyou",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "miss",
+            "entity": "feels"
+          }
+        ],
+        "text": "miss u"
+      },
+      {
+        "intent": "missyou",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "miss",
+            "entity": "feels"
+          }
+        ],
+        "text": "miss you"
+      },
+      {
+        "intent": "missyou",
+        "entities": [
+          {
+            "start": 2,
+            "end": 6,
+            "value": "miss",
+            "entity": "feels"
+          }
+        ],
+        "text": "i miss u"
+      },
+      {
+        "intent": "missyou",
+        "entities": [
+          {
+            "start": 2,
+            "end": 6,
+            "value": "miss",
+            "entity": "feels"
+          }
+        ],
+        "text": "I miss"
+      },
+      {
+        "intent": "missyou",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "missu",
+            "entity": "feels"
+          }
+        ],
+        "text": "missu"
+      },
+      {
+        "intent": "mad",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "mad",
+            "entity": "feels"
+          }
+        ],
+        "text": "mad at u"
+      },
+      {
+        "intent": "mad",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "mad",
+            "entity": "feels"
+          }
+        ],
+        "text": "mad at you"
+      },
+      {
+        "intent": "mad",
+        "entities": [
+          {
+            "start": 3,
+            "end": 6,
+            "value": "mad",
+            "entity": "feels"
+          }
+        ],
+        "text": "im mad at u"
+      },
+      {
+        "intent": "mad",
+        "entities": [
+          {
+            "start": 3,
+            "end": 6,
+            "value": "mad",
+            "entity": "feels"
+          }
+        ],
+        "text": "im mad"
+      },
+      {
+        "intent": "disbelief",
+        "text": "doubt"
+      },
+      {
+        "intent": "disbelief",
+        "text": "i doubt it"
+      },
+      {
+        "intent": "disbelief",
+        "text": "im dubious"
+      },
+      {
+        "intent": "disbelief",
+        "text": "im skeptical"
+      },
+      {
+        "intent": "disbelief",
+        "text": "what you talkin bout"
+      },
+      {
+        "intent": "disbelief",
+        "text": "how is that even possible"
+      },
+      {
+        "intent": "disbelief",
+        "text": "that sounds unrealistic"
+      },
+      {
+        "intent": "disbelief",
+        "text": "no way"
+      },
+      {
+        "intent": "disbelief",
+        "text": "never"
+      },
+      {
+        "intent": "disbelief",
+        "text": "no way in hell"
+      },
+      {
+        "intent": "disbelief",
+        "text": "theres no way in hell"
+      },
+      {
+        "intent": "disbelief",
+        "text": "thats never going to happen"
+      },
+      {
+        "intent": "disbelief",
+        "text": "lies all lies"
+      },
+      {
+        "intent": "dontgothere",
+        "text": "dont go there"
+      },
+      {
+        "intent": "dontgothere",
+        "text": "dont even go there"
+      },
+      {
+        "intent": "dontgothere",
+        "text": "dont you go there"
+      },
+      {
+        "intent": "dontgothere",
+        "text": "Don't go there"
+      },
+      {
+        "intent": "dontgothere",
+        "text": "Don't even go there"
+      },
+      {
+        "intent": "dontgothere",
+        "text": "oh dont even go there"
+      },
+      {
+        "intent": "nicethings",
+        "text": "This is why we can't have nice things"
+      },
+      {
+        "intent": "nicethings",
+        "text": "That's why we can't have nice things"
+      },
+      {
+        "intent": "nicethings",
+        "text": "we can't have nice things"
+      },
+      {
+        "intent": "nicethings",
+        "text": "we cant hav nice things"
+      },
+      {
+        "intent": "nicethings",
+        "text": "can't have nice things"
+      },
+      {
+        "intent": "nicethings",
+        "text": "cant have nice things"
+      },
+      {
+        "intent": "nicethings",
+        "text": "no nice things"
+      },
+      {
+        "intent": "nicethings",
+        "text": "see this is why we cant have nice things"
+      },
+      {
+        "intent": "nicethings",
+        "text": "thats why we cant have nice things"
+      },
+      {
+        "intent": "nicethings",
+        "text": "and thats why we cant have nice things"
+      },
+      {
+        "intent": "onejob",
+        "text": "you had one job"
+      },
+      {
+        "intent": "onejob",
+        "text": "youhadonejob"
+      },
+      {
+        "intent": "onejob",
+        "text": "#youhadonejob"
+      },
+      {
+        "intent": "onejob",
+        "text": "i had one job"
+      },
+      {
+        "intent": "onejob",
+        "text": "he had one job"
+      },
+      {
+        "intent": "onejob",
+        "text": "she had one job"
+      },
+      {
+        "intent": "onejob",
+        "text": "they had one job"
+      },
+      {
+        "intent": "onejob",
+        "text": "you had 1 job"
+      },
+      {
+        "intent": "onejob",
+        "text": "youhad1job"
+      },
+      {
+        "intent": "onejob",
+        "text": "i had 1 job"
+      },
+      {
+        "intent": "onejob",
+        "text": "he had 1 job"
+      },
+      {
+        "intent": "onejob",
+        "text": "she had 1 job"
+      },
+      {
+        "intent": "onejob",
+        "text": "they had 1 job"
+      },
+      {
+        "intent": "howdid",
+        "text": "how did that happen"
+      },
+      {
+        "intent": "howdid",
+        "text": "now how did that happen"
+      },
+      {
+        "intent": "howdid",
+        "text": "ok how did that happen"
+      },
+      {
+        "intent": "howdid",
+        "text": "tell me how did that happen"
+      },
+      {
+        "intent": "howdid",
+        "text": "how did that"
+      },
+      {
+        "intent": "sendingenergy",
+        "text": "sending you energy"
+      },
+      {
+        "intent": "sendingenergy",
+        "text": "sending you much energy"
+      },
+      {
+        "intent": "sendingenergy",
+        "text": "sending you so much energy"
+      },
+      {
+        "intent": "sendingenergy",
+        "text": "sending much energy you way"
+      },
+      {
+        "intent": "sendingenergy",
+        "text": "sending much energy to you"
+      },
+      {
+        "intent": "sendingenergy",
+        "text": "sending you positive energy"
+      },
+      {
+        "intent": "ambivalence",
+        "text": "Not sure if X or Y"
+      },
+      {
+        "intent": "hmm",
+        "text": "hmm"
+      },
+      {
+        "intent": "hmm",
+        "text": "hmmm"
+      },
+      {
+        "intent": "hmm",
+        "text": "hmmmm"
+      },
+      {
+        "intent": "hmm",
+        "text": "um"
+      },
+      {
+        "intent": "trite",
+        "text": "alls well that ends well"
+      },
+      {
+        "intent": "ridic",
+        "text": "cool beans"
+      },
+      {
+        "intent": "qq (Intent not really used for QQ handling)",
+        "text": "quick question"
+      },
+      {
+        "intent": "qq (Intent not really used for QQ handling)",
+        "text": "quick question:"
+      },
+      {
+        "intent": "qq (Intent not really used for QQ handling)",
+        "text": "quick question-"
+      },
+      {
+        "intent": "qq (Intent not really used for QQ handling)",
+        "text": "quick question for you"
+      },
+      {
+        "intent": "qq (Intent not really used for QQ handling)",
+        "text": "quick question 4 you"
+      },
+      {
+        "intent": "qq (Intent not really used for QQ handling)",
+        "text": "quick question for u"
+      },
+      {
+        "intent": "qq (Intent not really used for QQ handling)",
+        "text": "quick question 4 u"
+      },
+      {
+        "intent": "qq (Intent not really used for QQ handling)",
+        "text": "quick question 4u"
+      },
+      {
+        "intent": "qq (Intent not really used for QQ handling)",
+        "text": "Quick Q"
+      },
+      {
+        "intent": "qq (Intent not really used for QQ handling)",
+        "text": "a question maybe you can answer"
+      },
+      {
+        "intent": "qq (Intent not really used for QQ handling)",
+        "text": "a quick question maybe you can answer"
+      },
+      {
+        "intent": "qq (Intent not really used for QQ handling)",
+        "text": "can i ask you a qq"
+      },
+      {
+        "intent": "qq (Intent not really used for QQ handling)",
+        "text": "can i ask you a q question"
+      },
+      {
+        "intent": "qq (Intent not really used for QQ handling)",
+        "text": "can i ask you a quick question"
+      },
+      {
+        "intent": "qq (Intent not really used for QQ handling)",
+        "text": "can you answer a quick ?"
+      },
+      {
+        "intent": "qq (Intent not really used for QQ handling)",
+        "text": "can you answer a quick question"
+      },
+      {
+        "intent": "qq (Intent not really used for QQ handling)",
+        "text": "can you answer a question"
+      },
+      {
+        "intent": "qq (Intent not really used for QQ handling)",
+        "text": "do you think you could answer a quick question"
+      },
+      {
+        "intent": "qq (Intent not really used for QQ handling)",
+        "text": "got a q question"
+      },
+      {
+        "intent": "qq (Intent not really used for QQ handling)",
+        "text": "got a quick question"
+      },
+      {
+        "intent": "qq (Intent not really used for QQ handling)",
+        "text": "got a quick ? for you"
+      },
+      {
+        "intent": "qq (Intent not really used for QQ handling)",
+        "text": "got a quick question for you"
+      },
+      {
+        "intent": "qq (Intent not really used for QQ handling)",
+        "text": "heres a question"
+      },
+      {
+        "intent": "qq (Intent not really used for QQ handling)",
+        "text": "heres a question for you"
+      },
+      {
+        "intent": "qq (Intent not really used for QQ handling)",
+        "text": "heres a quick question"
+      },
+      {
+        "intent": "qq (Intent not really used for QQ handling)",
+        "text": "heres a quick question for you"
+      },
+      {
+        "intent": "qq (Intent not really used for QQ handling)",
+        "text": "hey i have got a quick question"
+      },
+      {
+        "intent": "qq (Intent not really used for QQ handling)",
+        "text": "hey ive got a quick question"
+      },
+      {
+        "intent": "qq (Intent not really used for QQ handling)",
+        "text": "I have a quick question"
+      },
+      {
+        "intent": "qq (Intent not really used for QQ handling)",
+        "text": "Ive got a quick question for you"
+      },
+      {
+        "intent": "qq (Intent not really used for QQ handling)",
+        "text": "you might be able to answer a quick question"
+      },
+      {
+        "intent": "qq (Intent not really used for QQ handling)",
+        "text": "you might be able to answer this"
+      },
+      {
+        "intent": "familiar",
+        "text": "familiar"
+      },
+      {
+        "intent": "familiar",
+        "text": "are you familiar with"
+      },
+      {
+        "intent": "familiar",
+        "text": "do you know about"
+      },
+      {
+        "intent": "familiar",
+        "text": "have you heard of"
+      },
+      {
+        "intent": "familiar",
+        "text": "have you ever heard of"
+      },
+      {
+        "intent": "familiar",
+        "text": "how much do you know about"
+      },
+      {
+        "intent": "impression",
+        "text": "I have the impression"
+      },
+      {
+        "intent": "impression",
+        "text": "im under the impression"
+      },
+      {
+        "intent": "impression",
+        "text": "gave me the inpression"
+      },
+      {
+        "intent": "impression",
+        "text": "something gives me the impression"
+      },
+      {
+        "intent": "impression",
+        "text": "for some reason i have the impression"
+      },
+      {
+        "intent": "impression",
+        "text": "for some reason i am under the impression"
+      },
+      {
+        "intent": "impression",
+        "text": "i have the distinct impression"
+      },
+      {
+        "intent": "impression",
+        "text": "i got the distinct impression"
+      },
+      {
+        "intent": "impression",
+        "text": "the impression I got was"
+      },
+      {
+        "intent": "impression",
+        "text": "I thought you would like"
+      },
+      {
+        "intent": "impression",
+        "text": "I thought you would appreciate"
+      },
+      {
+        "intent": "impression",
+        "text": "you might like this"
+      },
+      {
+        "intent": "impression",
+        "text": "you will apprciate this"
+      },
+      {
+        "intent": "impression",
+        "text": "i think youll appreciate this"
+      },
+      {
+        "intent": "impression",
+        "text": "i bet youll appreciate this"
+      },
+      {
+        "intent": "impression",
+        "text": "i was thinking you would appreciate this"
+      },
+      {
+        "intent": "impression",
+        "text": "was thinking you would appreciate this"
+      },
+      {
+        "intent": "illcallu",
+        "text": "I'll call you"
+      },
+      {
+        "intent": "illcallu",
+        "text": "Ill call you"
+      },
+      {
+        "intent": "illcallu",
+        "text": "ill call you in a bit"
+      },
+      {
+        "intent": "illcallu",
+        "text": "ill call you in a few"
+      },
+      {
+        "intent": "illcallu",
+        "text": "ill call you in just a bit"
+      },
+      {
+        "intent": "illcallu",
+        "text": "ill call you shortly"
+      },
+      {
+        "intent": "illcallu",
+        "text": "call you in a few"
+      },
+      {
+        "intent": "illcallu",
+        "text": "call you in a bit"
+      },
+      {
+        "intent": "illcallu",
+        "text": "I will call you"
+      },
+      {
+        "intent": "illcallu",
+        "text": "i will call you in a bit"
+      },
+      {
+        "intent": "illcallu",
+        "text": "i will call you in a few"
+      },
+      {
+        "intent": "illcallu",
+        "text": "i will call you in just a bit"
+      },
+      {
+        "intent": "illcallu",
+        "text": "will call you shortly"
+      },
+      {
+        "intent": "illcallu",
+        "text": "call you in a few"
+      },
+      {
+        "intent": "illcallu",
+        "text": "call you in a bit"
+      },
+      {
+        "intent": "illcallu",
+        "text": "will call"
+      },
+      {
+        "intent": "illcallu",
+        "text": "will call soon"
+      },
+      {
+        "intent": "illcallu",
+        "text": "will call in a bit"
+      },
+      {
+        "intent": "illcallu",
+        "text": "shortly"
+      },
+      {
+        "intent": "illcallu",
+        "text": "in a few"
+      },
+      {
+        "intent": "illcallu",
+        "text": "in a bit"
+      },
+      {
+        "intent": "illcallu",
+        "text": "later"
+      },
+      {
+        "intent": "illcallu",
+        "text": "tomorrow"
+      },
+      {
+        "intent": "illcallu",
+        "text": "in 2 min"
+      },
+      {
+        "intent": "lookingforward",
+        "text": "im looking forward"
+      },
+      {
+        "intent": "lookingforward",
+        "text": "looking forward to it"
+      },
+      {
+        "intent": "lookingforward",
+        "text": "im looking forward to it"
+      },
+      {
+        "intent": "lookingforward",
+        "text": "looking forward"
+      },
+      {
+        "intent": "lookingforward",
+        "text": "really looking forward"
+      },
+      {
+        "intent": "lookingforward",
+        "text": "im really looking forward"
+      },
+      {
+        "intent": "lookingforward",
+        "entities": [
+          {
+            "start": 4,
+            "end": 8,
+            "value": "5:00",
+            "entity": "WHEN"
+          }
+        ],
+        "text": "eta 5:00"
+      },
+      {
+        "intent": "lookingforward",
+        "entities": [
+          {
+            "start": 7,
+            "end": 14,
+            "value": "3:00 pm",
+            "entity": "WHEN"
+          }
+        ],
+        "text": "eta is 3:00 pm"
+      },
+      {
+        "intent": "lookingforward",
+        "entities": [
+          {
+            "start": 10,
+            "end": 14,
+            "value": "4:45",
+            "entity": "WHEN"
+          }
+        ],
+        "text": "my eta is 4:45"
+      },
+      {
+        "intent": "lookingforward",
+        "entities": [
+          {
+            "start": 6,
+            "end": 9,
+            "value": "9pm",
+            "entity": "WHEN"
+          }
+        ],
+        "text": "eta = 9pm"
+      },
+      {
+        "intent": "lookingforward",
+        "entities": [
+          {
+            "start": 24,
+            "end": 28,
+            "value": "7:30",
+            "entity": "WHEN"
+          }
+        ],
+        "text": "i will get there around 7:30"
+      },
+      {
+        "intent": "lookingforward",
+        "entities": [
+          {
+            "start": 7,
+            "end": 13,
+            "value": "5 mins",
+            "entity": "HOWLONG"
+          }
+        ],
+        "text": "eta is 5 mins"
+      },
+      {
+        "intent": "lookingforward",
+        "entities": [
+          {
+            "start": 7,
+            "end": 17,
+            "value": "15 minutes",
+            "entity": "HOWLONG"
+          }
+        ],
+        "text": "eta is 15 minutes"
+      },
+      {
+        "intent": "lookingforward",
+        "entities": [
+          {
+            "start": 14,
+            "end": 22,
+            "value": "one hour",
+            "entity": "HOWLONG"
+          }
+        ],
+        "text": "eta should be one hour"
+      },
+      {
+        "intent": "lookingforward",
+        "entities": [
+          {
+            "start": 19,
+            "end": 37,
+            "value": "an hour and a half",
+            "entity": "HOWLONG"
+          }
+        ],
+        "text": "i will be there in an hour and a half"
+      },
+      {
+        "intent": "lookingforward",
+        "entities": [
+          {
+            "start": 24,
+            "end": 31,
+            "value": "an hour",
+            "entity": "HOWLONG"
+          }
+        ],
+        "text": "it should take me about an hour"
+      },
+      {
+        "intent": "lookingforward",
+        "text": "leaving now"
+      },
+      {
+        "intent": "lookingforward",
+        "text": "leaving in a few"
+      },
+      {
+        "intent": "lookingforward",
+        "text": "i'll be coming from"
+      },
+      {
+        "intent": "lookingforward",
+        "text": "I should be there"
+      },
+      {
+        "intent": "lookingforward",
+        "text": "I am en route"
+      },
+      {
+        "intent": "lookingforward",
+        "text": "excited to see you both"
+      },
+      {
+        "intent": "shabbat",
+        "text": "Shabbat shalom"
+      },
+      {
+        "intent": "shabbat",
+        "text": "פברואר שלום"
+      },
+      {
+        "intent": "shabbat",
+        "text": "Have a beautiful Shabbat"
+      },
+      {
+        "intent": "shabbat",
+        "text": "good shabbos"
+      },
+      {
+        "intent": "shabbat",
+        "text": "may your shabbos"
+      },
+      {
+        "intent": "mom",
+        "text": "your mom"
+      },
+      {
+        "intent": "mom",
+        "text": "how is your mom"
+      },
+      {
+        "intent": "mom",
+        "text": "how is your mom doing"
+      },
+      {
+        "intent": "philosophy",
+        "text": "philosophy"
+      },
+      {
+        "intent": "philosophy",
+        "text": "socrates"
+      },
+      {
+        "intent": "philosophy",
+        "text": "plato"
+      },
+      {
+        "intent": "philosophy",
+        "text": "aristotle"
+      },
+      {
+        "intent": "philosophy",
+        "text": "hegel"
+      },
+      {
+        "intent": "philosophy",
+        "text": "nietzsche"
+      },
+      {
+        "intent": "philosophy",
+        "text": "heidegger"
+      },
+      {
+        "intent": "philosophy",
+        "text": "sartre"
+      },
+      {
+        "intent": "philosophy",
+        "text": "deleuze"
+      },
+      {
+        "intent": "philosophy",
+        "text": "baudrillard"
+      },
+      {
+        "intent": "philosophy",
+        "text": "dialectic"
+      },
+      {
+        "intent": "kant",
+        "text": "kant"
+      },
+      {
+        "intent": "kant",
+        "text": "immanuel kant"
+      },
+      {
+        "intent": "kant",
+        "text": "categorical imerative"
+      },
+      {
+        "intent": "kant",
+        "text": "the golden rule"
+      },
+      {
+        "intent": "kant",
+        "text": "golden rule"
+      },
+      {
+        "intent": "kant",
+        "text": "the thing in itself"
+      },
+      {
+        "intent": "kant",
+        "text": "thing-in-itself"
+      },
+      {
+        "intent": "kant",
+        "text": "noumena"
+      },
+      {
+        "intent": "trump",
+        "text": "trump"
+      },
+      {
+        "intent": "trump",
+        "text": "donald trump"
+      },
+      {
+        "intent": "trump",
+        "text": "president trump"
+      },
+      {
+        "intent": "trump",
+        "text": "the donald"
+      },
+      {
+        "intent": "trump",
+        "text": "drumpf"
+      },
+      {
+        "intent": "trump",
+        "text": "orange man"
+      },
+      {
+        "intent": "political",
+        "text": "politics"
+      },
+      {
+        "intent": "political",
+        "text": "election"
+      },
+      {
+        "intent": "political",
+        "text": "election year"
+      },
+      {
+        "intent": "political",
+        "text": "Marx"
+      },
+      {
+        "intent": "political",
+        "text": "Marxism"
+      },
+      {
+        "intent": "political",
+        "text": "president"
+      },
+      {
+        "intent": "sports",
+        "text": "sports"
+      },
+      {
+        "intent": "sports",
+        "text": "soccer"
+      },
+      {
+        "intent": "sports",
+        "text": "football"
+      },
+      {
+        "intent": "sports",
+        "text": "baseball"
+      },
+      {
+        "intent": "sports",
+        "text": "basketball"
+      },
+      {
+        "intent": "thisyear",
+        "text": "2020"
+      },
+      {
+        "intent": "thisyear",
+        "text": "this this"
+      },
+      {
+        "intent": "thisyear",
+        "text": "this whole year"
+      },
+      {
+        "intent": "thisyear",
+        "text": "this entire year"
+      },
+      {
+        "intent": "thisyear",
+        "text": "all this year"
+      },
+      {
+        "intent": "thisyear",
+        "text": "earlier this year"
+      },
+      {
+        "intent": "thisyear",
+        "text": "earlier in the year"
+      },
+      {
+        "intent": "thisyear",
+        "text": "facebook"
+      },
+      {
+        "intent": "thisyear",
+        "text": "are you on facebook"
+      },
+      {
+        "intent": "thisyear",
+        "text": "i messaged you on facebook"
+      },
+      {
+        "intent": "thisyear",
+        "text": "you don't use facebook do you"
+      },
+      {
+        "intent": "robot",
+        "text": "hello robot"
+      },
+      {
+        "intent": "robot",
+        "text": "go robot"
+      },
+      {
+        "intent": "robot",
+        "text": "ru a bot"
+      },
+      {
+        "intent": "robot",
+        "text": "r u a bot"
+      },
+      {
+        "intent": "robot",
+        "text": "are you a robot"
+      },
+      {
+        "intent": "robot",
+        "text": "robot"
+      },
+      {
+        "intent": "ruthere",
+        "text": "hello?"
+      },
+      {
+        "intent": "ruthere",
+        "text": "Hello?"
+      },
+      {
+        "intent": "ruthere",
+        "text": "are you there"
+      },
+      {
+        "intent": "ruthere",
+        "text": "r u there"
+      },
+      {
+        "intent": "ruthere",
+        "text": "you still there"
+      },
+      {
+        "intent": "ruthere",
+        "text": "hello is anybody there"
+      },
+      {
+        "intent": "dontgetit",
+        "text": "i dont get it"
+      },
+      {
+        "intent": "dontgetit",
+        "text": "i don't get it"
+      },
+      {
+        "intent": "dontgetit",
+        "text": "i didnt get it"
+      },
+      {
+        "intent": "dontgetit",
+        "text": "i didnt get the reference"
+      },
+      {
+        "intent": "dontgetit",
+        "text": "what did you mean"
+      },
+      {
+        "intent": "dontgetit",
+        "text": "what do you mean"
+      },
+      {
+        "intent": "confused",
+        "text": "im so confsed"
+      },
+      {
+        "intent": "confused",
+        "text": "confused"
+      },
+      {
+        "intent": "confused",
+        "text": "thats confusing"
+      },
+      {
+        "intent": "confused",
+        "text": "thats realy onfusing"
+      },
+      {
+        "intent": "confused",
+        "text": "this is confusing"
+      },
+      {
+        "intent": "confused",
+        "text": "this is not at all confusing"
+      },
+      {
+        "intent": "confused",
+        "text": "im confused by this"
+      },
+      {
+        "intent": "confused",
+        "text": "am i confused yet"
+      },
+      {
+        "intent": "confused",
+        "entities": [
+          {
+            "start": 13,
+            "end": 16,
+            "value": "sex",
+            "entity": "NSFW"
+          }
+        ],
+        "text": "confusion is sex"
+      },
+      {
+        "intent": "myhat",
+        "text": "do you like my hat"
+      },
+      {
+        "intent": "myhat",
+        "text": "Do you like my hat"
+      },
+      {
+        "intent": "myhat",
+        "text": "Do you like my hat?"
+      },
+      {
+        "intent": "myhat",
+        "text": "like my hat"
+      },
+      {
+        "intent": "myhat",
+        "text": "what do you think of my hat"
+      },
+      {
+        "intent": "myhat",
+        "text": "how bout my new hat"
+      },
+      {
+        "intent": "myhat",
+        "text": "you havent said anything about my hat"
+      },
+      {
+        "intent": "myhat",
+        "text": "you hate my hat"
+      },
+      {
+        "intent": "partyhat",
+        "text": "Do you like my party hat"
+      },
+      {
+        "intent": "partyhat",
+        "text": "Do you like my party hat?"
+      },
+      {
+        "intent": "bye",
+        "text": "Bye"
+      },
+      {
+        "intent": "bye",
+        "text": "Bbye"
+      },
+      {
+        "intent": "bye",
+        "text": "bai"
+      },
+      {
+        "intent": "bye",
+        "text": "Goodbye"
+      },
+      {
+        "intent": "bye",
+        "text": "goodbye"
+      },
+      {
+        "intent": "bye",
+        "text": "ciao"
+      },
+      {
+        "intent": "bye",
+        "text": "chow"
+      },
+      {
+        "intent": "bye",
+        "text": "See you later"
+      },
+      {
+        "intent": "bye",
+        "text": "cu"
+      },
+      {
+        "intent": "bye",
+        "text": "cya"
+      },
+      {
+        "intent": "bye",
+        "text": "cyal8r"
+      },
+      {
+        "intent": "bye",
+        "text": "cya l8r"
+      },
+      {
+        "intent": "bye",
+        "text": "bye"
+      },
+      {
+        "intent": "bye",
+        "text": "bye for now"
+      },
+      {
+        "intent": "bye_fancy",
+        "text": "catch you later"
+      },
+      {
+        "intent": "bye_fancy",
+        "text": "catch you outside"
+      },
+      {
+        "intent": "bye_fancy",
+        "text": "gotta go"
+      },
+      {
+        "intent": "bye_fancy",
+        "text": "See you"
+      },
+      {
+        "intent": "bye_fancy",
+        "text": "have a nice day"
+      },
+      {
+        "intent": "bye_fancy",
+        "text": "i'm off"
+      },
+      {
+        "intent": "byebot",
+        "text": "end"
+      },
+      {
+        "intent": "byebot",
+        "text": "finish"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Goodbye"
+      },
+      {
+        "intent": "hellodoc",
+        "text": "hello doc"
+      },
+      {
+        "intent": "hellodoc",
+        "text": "hello doctor"
+      },
+      {
+        "intent": "hellodoc",
+        "text": "hellodoc"
+      },
+      {
+        "intent": "hellodoc",
+        "text": "doctor"
+      },
+      {
+        "intent": "hellodoc",
+        "text": "hi doc"
+      },
+      {
+        "intent": "hellodoc",
+        "text": "hiya doc"
+      },
+      {
+        "intent": "hellodoc",
+        "text": "doc"
+      },
+      {
+        "intent": "i_feel_good",
+        "text": "good"
+      },
+      {
+        "intent": "i_feel_good",
+        "text": "Im feeling good"
+      },
+      {
+        "intent": "i_feel_good",
+        "text": "pretty good"
+      },
+      {
+        "intent": "i_feel_good",
+        "text": "i'm feeling pretty good"
+      },
+      {
+        "intent": "i_feel_good",
+        "text": "I feel better than James Brown"
+      },
+      {
+        "intent": "i_dont_feel_so_good",
+        "text": "not so good"
+      },
+      {
+        "intent": "i_dont_feel_so_good",
+        "text": "not so well"
+      },
+      {
+        "intent": "i_dont_feel_so_good",
+        "text": "Im feeling bad"
+      },
+      {
+        "intent": "i_dont_feel_so_good",
+        "text": "im feeling out of sorts"
+      },
+      {
+        "intent": "i_dont_feel_so_good",
+        "text": "terrible"
+      },
+      {
+        "intent": "i_dont_feel_so_good",
+        "text": "awful"
+      },
+      {
+        "intent": "i_dont_feel_so_good",
+        "text": "i want to die."
+      },
+      {
+        "intent": "canyouhelp",
+        "text": "can you help me"
+      },
+      {
+        "intent": "canyouhelp",
+        "text": "can you help me with something"
+      },
+      {
+        "intent": "canyouhelp",
+        "text": "i need your help"
+      },
+      {
+        "intent": "canyouhelp",
+        "text": "i need your help with something"
+      },
+      {
+        "intent": "site_inquiry",
+        "text": "What is Zerotonics"
+      },
+      {
+        "intent": "site_inquiry",
+        "text": "What exactly is Zerotonics"
+      },
+      {
+        "intent": "site_inquiry",
+        "text": "I would like to learn more about Zerotonics"
+      },
+      {
+        "intent": "site_inquiry",
+        "text": "Can you tell me more about Zerotonics"
+      },
+      {
+        "intent": "site_inquiry",
+        "text": "How much does a Zerotonics machine cost"
+      },
+      {
+        "intent": "site_inquiry",
+        "text": "Where can I buy a Zerotonics machine"
+      },
+      {
+        "intent": "site_inquiry",
+        "text": "What is the launch date for the Zerotonics machine"
+      },
+      {
+        "intent": "site_inquiry",
+        "text": "Do I need to register on your website to log in"
+      },
+      {
+        "intent": "site_suggestion",
+        "text": "your website is broken"
+      },
+      {
+        "intent": "site_suggestion",
+        "text": "your link doesnt work"
+      },
+      {
+        "intent": "site_suggestion",
+        "text": "you should change your website font its hard to read"
+      },
+      {
+        "intent": "site_suggestion",
+        "text": "you should add a list of qualified dealers to your website."
+      },
+      {
+        "intent": "zerotonics_classes",
+        "text": "where can i take classes in zerotonics"
+      },
+      {
+        "intent": "zerotonics_classes",
+        "text": "i would like to sign up for your class"
+      },
+      {
+        "intent": "zerotonics_classes",
+        "text": "i would like to sign up for your classes"
+      },
+      {
+        "intent": "mailing_list",
+        "text": "I would like to be added to your mailing list"
+      },
+      {
+        "intent": "mailing_list",
+        "text": "I would like to be added to your mailing list please"
+      },
+      {
+        "intent": "mailing_list",
+        "text": "Please add me to your mailing list"
+      },
+      {
+        "intent": "beg",
+        "text": "please like this"
+      },
+      {
+        "intent": "beg",
+        "text": "like my post"
+      },
+      {
+        "intent": "beg",
+        "text": "did you see my post"
+      },
+      {
+        "intent": "beg",
+        "text": "when you get a chance"
+      },
+      {
+        "intent": "channeling",
+        "text": "channeling"
+      },
+      {
+        "intent": "um",
+        "text": "um"
+      },
+      {
+        "intent": "nevermind",
+        "text": "nvrmnd"
+      },
+      {
+        "intent": "nevermind",
+        "text": "nevermind"
+      },
+      {
+        "intent": "nevermind",
+        "text": "In accordance with prophesy"
+      },
+      {
+        "intent": "quality",
+        "text": "why are you"
+      },
+      {
+        "intent": "quality",
+        "entities": [
+          {
+            "start": 15,
+            "end": 22,
+            "value": "amazing",
+            "entity": "quality"
+          }
+        ],
+        "text": "why are you so amazing"
+      },
+      {
+        "intent": "quality",
+        "entities": [
+          {
+            "start": 15,
+            "end": 22,
+            "value": "awesome",
+            "entity": "quality"
+          }
+        ],
+        "text": "why are you so awesome"
+      },
+      {
+        "intent": "quality",
+        "entities": [
+          {
+            "start": 15,
+            "end": 24,
+            "value": "fantastic",
+            "entity": "quality"
+          }
+        ],
+        "text": "why are you so fantastic"
+      },
+      {
+        "intent": "quality",
+        "entities": [
+          {
+            "start": 15,
+            "end": 20,
+            "value": "funny",
+            "entity": "quality"
+          }
+        ],
+        "text": "why are you so funny"
+      },
+      {
+        "intent": "quality",
+        "entities": [
+          {
+            "start": 15,
+            "end": 20,
+            "value": "silly",
+            "entity": "quality"
+          }
+        ],
+        "text": "why are you so silly"
+      },
+      {
+        "intent": "quality",
+        "entities": [
+          {
+            "start": 15,
+            "end": 20,
+            "value": "smart",
+            "entity": "quality"
+          }
+        ],
+        "text": "why are you so smart"
+      },
+      {
+        "intent": "quality",
+        "entities": [
+          {
+            "start": 15,
+            "end": 20,
+            "value": "weird",
+            "entity": "quality"
+          }
+        ],
+        "text": "why are you so weird"
+      },
+      {
+        "intent": "quality",
+        "entities": [
+          {
+            "start": 15,
+            "end": 22,
+            "value": "strange",
+            "entity": "quality"
+          }
+        ],
+        "text": "why are you so strange"
+      },
+      {
+        "intent": "quality",
+        "entities": [
+          {
+            "start": 15,
+            "end": 21,
+            "value": "clever",
+            "entity": "quality"
+          }
+        ],
+        "text": "why are you so clever"
+      },
+      {
+        "intent": "quality",
+        "entities": [
+          {
+            "start": 21,
+            "end": 26,
+            "value": "funny",
+            "entity": "quality"
+          }
+        ],
+        "text": "why is it you are so funny"
+      },
+      {
+        "intent": "quality",
+        "entities": [
+          {
+            "start": 21,
+            "end": 26,
+            "value": "silly",
+            "entity": "quality"
+          }
+        ],
+        "text": "why is it you are so silly"
+      },
+      {
+        "intent": "quality",
+        "entities": [
+          {
+            "start": 21,
+            "end": 26,
+            "value": "smart",
+            "entity": "quality"
+          }
+        ],
+        "text": "why is it you are so smart"
+      },
+      {
+        "intent": "quality",
+        "entities": [
+          {
+            "start": 21,
+            "end": 26,
+            "value": "weird",
+            "entity": "quality"
+          }
+        ],
+        "text": "why is it you are so weird"
+      },
+      {
+        "intent": "quality",
+        "entities": [
+          {
+            "start": 19,
+            "end": 24,
+            "value": "right",
+            "entity": "quality"
+          }
+        ],
+        "text": "why are you always right"
+      },
+      {
+        "intent": "quality",
+        "entities": [
+          {
+            "start": 22,
+            "end": 26,
+            "value": "cool",
+            "entity": "quality"
+          }
+        ],
+        "text": "why are you always so cool"
+      },
+      {
+        "intent": "quality",
+        "entities": [
+          {
+            "start": 15,
+            "end": 19,
+            "value": "cool",
+            "entity": "quality"
+          }
+        ],
+        "text": "why are you so cool"
+      },
+      {
+        "intent": "quality",
+        "entities": [
+          {
+            "start": 25,
+            "end": 30,
+            "value": "funny",
+            "entity": "quality"
+          }
+        ],
+        "text": "seriously why are you so funny"
+      },
+      {
+        "intent": "quality",
+        "entities": [
+          {
+            "start": 21,
+            "end": 25,
+            "value": "mean",
+            "entity": "quality"
+          }
+        ],
+        "text": "do you have to be so mean"
+      },
+      {
+        "intent": "mycat",
+        "entities": [
+          {
+            "start": 24,
+            "end": 30,
+            "value": "alonzo",
+            "entity": "cat"
+          }
+        ],
+        "text": "the family cat is named alonzo"
+      },
+      {
+        "intent": "mycat",
+        "entities": [
+          {
+            "start": 28,
+            "end": 39,
+            "value": "Bombalurina",
+            "entity": "cat"
+          }
+        ],
+        "text": "There is only one cat named Bombalurina"
+      },
+      {
+        "intent": "mycat",
+        "entities": [
+          {
+            "start": 0,
+            "end": 15,
+            "value": "Bustopher Jones",
+            "entity": "cat"
+          }
+        ],
+        "text": "Bustopher Jones is a remarkably fat cat"
+      },
+      {
+        "intent": "mycat",
+        "entities": [
+          {
+            "start": 19,
+            "end": 29,
+            "value": "Copernicus",
+            "entity": "cat"
+          }
+        ],
+        "text": "i just love my cat Copernicus so much"
+      },
+      {
+        "intent": "mycat",
+        "entities": [
+          {
+            "start": 19,
+            "end": 25,
+            "value": "Darwin",
+            "entity": "cat"
+          }
+        ],
+        "text": "i just love my cat Darwin so much"
+      },
+      {
+        "intent": "mycat",
+        "entities": [
+          {
+            "start": 15,
+            "end": 19,
+            "value": "Ezra",
+            "entity": "cat"
+          }
+        ],
+        "text": "this is my cat Ezra"
+      },
+      {
+        "intent": "mycat",
+        "entities": [
+          {
+            "start": 19,
+            "end": 23,
+            "value": "Ezra",
+            "entity": "cat"
+          }
+        ],
+        "text": "i just love my cat Ezra so much"
+      },
+      {
+        "intent": "mycat",
+        "entities": [
+          {
+            "start": 26,
+            "end": 33,
+            "value": "Demeter",
+            "entity": "cat"
+          }
+        ],
+        "text": "dont you just love my cat Demeter"
+      },
+      {
+        "intent": "mycat",
+        "entities": [
+          {
+            "start": 33,
+            "end": 40,
+            "value": "Electra",
+            "entity": "cat"
+          }
+        ],
+        "text": "everyone is talking about my cat Electra"
+      },
+      {
+        "intent": "mycat",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "Filby",
+            "entity": "cat"
+          }
+        ],
+        "text": "Filby is a time traveling cat"
+      },
+      {
+        "intent": "mycat",
+        "entities": [
+          {
+            "start": 42,
+            "end": 53,
+            "value": "Griddlebone",
+            "entity": "cat"
+          }
+        ],
+        "text": "would you like to see a picture of my cat Griddlebone"
+      },
+      {
+        "intent": "mycat",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "Grizabella",
+            "entity": "cat"
+          }
+        ],
+        "text": "Grizabella the glamour cat has a lot of memories"
+      },
+      {
+        "intent": "mycat",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "Growltiger",
+            "entity": "cat"
+          }
+        ],
+        "text": "Growltiger was a Bravo Cat"
+      },
+      {
+        "intent": "mycat",
+        "entities": [
+          {
+            "start": 14,
+            "end": 30,
+            "value": "Great Rumpus Cat",
+            "entity": "cat"
+          }
+        ],
+        "text": "how is my cat Great Rumpus Cat"
+      },
+      {
+        "intent": "mycat",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "Gus",
+            "entity": "cat"
+          }
+        ],
+        "text": "Gus is the Cat at the Theatre Door"
+      },
+      {
+        "intent": "mycat",
+        "entities": [
+          {
+            "start": 10,
+            "end": 20,
+            "value": "Jellylorum",
+            "entity": "cat"
+          }
+        ],
+        "text": "my cat is Jellylorum"
+      },
+      {
+        "intent": "mycat",
+        "entities": [
+          {
+            "start": 41,
+            "end": 53,
+            "value": "Jennyanydots",
+            "entity": "cat"
+          }
+        ],
+        "text": "I have a Gumbie Cat in mind, her name is Jennyanydots"
+      },
+      {
+        "intent": "mycat",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Macavity",
+            "entity": "cat"
+          }
+        ],
+        "text": "Macavity's a Mystery Cat: he's called the Hidden Paw"
+      },
+      {
+        "intent": "mycat",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Macavity",
+            "entity": "cat"
+          }
+        ],
+        "text": "Macavity's a ginger cat, he's very tall and thin”"
+      },
+      {
+        "intent": "mycat",
+        "entities": [
+          {
+            "start": 33,
+            "end": 49,
+            "value": "Mr. Mistoffelees",
+            "entity": "cat"
+          }
+        ],
+        "text": "everyone is talking about my cat Mr. Mistoffelees"
+      },
+      {
+        "intent": "mycat",
+        "entities": [
+          {
+            "start": 42,
+            "end": 58,
+            "value": "Mr. Mistoffelees",
+            "entity": "cat"
+          }
+        ],
+        "text": "Was there ever A Cat so clever as Magical Mr. Mistoffelees"
+      },
+      {
+        "intent": "mycat",
+        "entities": [
+          {
+            "start": 21,
+            "end": 32,
+            "value": "Mungojerrie",
+            "entity": "cat"
+          }
+        ],
+        "text": "have you seen my cat Mungojerrie"
+      },
+      {
+        "intent": "mycat",
+        "entities": [
+          {
+            "start": 22,
+            "end": 32,
+            "value": "Munkustrap",
+            "entity": "cat"
+          }
+        ],
+        "text": "i need to feed my cat Munkustrap"
+      },
+      {
+        "intent": "mycat",
+        "entities": [
+          {
+            "start": 0,
+            "end": 15,
+            "value": "Old Deuteronomy",
+            "entity": "cat"
+          }
+        ],
+        "text": "Old Deuteronomy is a very old cat"
+      },
+      {
+        "intent": "mycat",
+        "entities": [
+          {
+            "start": 15,
+            "end": 20,
+            "value": "Peter",
+            "entity": "cat"
+          }
+        ],
+        "text": "This is my cat Peter"
+      },
+      {
+        "intent": "mycat",
+        "entities": [
+          {
+            "start": 0,
+            "end": 18,
+            "value": "The Rum Tum Tugger",
+            "entity": "cat"
+          }
+        ],
+        "text": "The Rum Tum Tugger is a curious cat"
+      },
+      {
+        "intent": "mycat",
+        "entities": [
+          {
+            "start": 19,
+            "end": 25,
+            "value": "Raziel",
+            "entity": "cat"
+          }
+        ],
+        "text": "i just love my cat Raziel so much"
+      },
+      {
+        "intent": "mycat",
+        "entities": [
+          {
+            "start": 26,
+            "end": 38,
+            "value": "Rumpelteazer",
+            "entity": "cat"
+          }
+        ],
+        "text": "dont you just love my cat Rumpelteazer"
+      },
+      {
+        "intent": "mycat",
+        "entities": [
+          {
+            "start": 14,
+            "end": 27,
+            "value": "Skimbleshanks",
+            "entity": "cat"
+          }
+        ],
+        "text": "how is my cat Skimbleshanks"
+      },
+      {
+        "intent": "mycat",
+        "entities": [
+          {
+            "start": 42,
+            "end": 48,
+            "value": "calico",
+            "entity": "cat"
+          }
+        ],
+        "text": "would you like to see a picture of my cat calico"
+      },
+      {
+        "intent": "mycat",
+        "entities": [
+          {
+            "start": 16,
+            "end": 26,
+            "value": "pussnboots",
+            "entity": "cat"
+          }
+        ],
+        "text": "my cat is named pussnboots"
+      },
+      {
+        "intent": "friend",
+        "entities": [
+          {
+            "start": 22,
+            "end": 28,
+            "value": "Laurie",
+            "entity": "Who"
+          }
+        ],
+        "text": "do you know my friend Laurie"
+      },
+      {
+        "intent": "dinner",
+        "text": "I am having dinner"
+      },
+      {
+        "intent": "dinner",
+        "text": "i am going to have dinner"
+      },
+      {
+        "intent": "dinner",
+        "text": "i am going to be having dinner"
+      },
+      {
+        "intent": "dinner_with",
+        "entities": [
+          {
+            "start": 35,
+            "end": 43,
+            "value": "a friend",
+            "entity": "Who"
+          }
+        ],
+        "text": "i have been invited to dinner with a friend"
+      },
+      {
+        "intent": "dinner_with",
+        "entities": [
+          {
+            "start": 34,
+            "end": 45,
+            "value": "anna sophia",
+            "entity": "Who"
+          }
+        ],
+        "text": "im going to be having dinner with anna sophia"
+      },
+      {
+        "intent": "dinner_with",
+        "entities": [
+          {
+            "start": 29,
+            "end": 41,
+            "value": "alain badiou",
+            "entity": "Who"
+          }
+        ],
+        "text": "I will be having dinner with alain badiou"
+      },
+      {
+        "intent": "dinner_with",
+        "entities": [
+          {
+            "start": 22,
+            "end": 32,
+            "value": "barbarella",
+            "entity": "Who"
+          }
+        ],
+        "text": "im having dinner with barbarella"
+      },
+      {
+        "intent": "dinner_with",
+        "entities": [
+          {
+            "start": 31,
+            "end": 37,
+            "value": "britta",
+            "entity": "Who"
+          }
+        ],
+        "text": "i have a dinner coming up with britta"
+      },
+      {
+        "intent": "dinner_with",
+        "entities": [
+          {
+            "start": 31,
+            "end": 38,
+            "value": "chaewon",
+            "entity": "Who"
+          }
+        ],
+        "text": "i have a dinner coming up with chaewon"
+      },
+      {
+        "intent": "dinner_with",
+        "entities": [
+          {
+            "start": 32,
+            "end": 41,
+            "value": "charlotte",
+            "entity": "Who"
+          }
+        ],
+        "text": "im supposed to have dinner with charlotte"
+      },
+      {
+        "intent": "dinner_with",
+        "entities": [
+          {
+            "start": 22,
+            "end": 40,
+            "value": "Charles Baudelaire",
+            "entity": "Who"
+          }
+        ],
+        "text": "im having dinner with Charles Baudelaire"
+      },
+      {
+        "intent": "dinner_with",
+        "entities": [
+          {
+            "start": 32,
+            "end": 42,
+            "value": "Dave Smith",
+            "entity": "Who"
+          }
+        ],
+        "text": "im supposed to have dinner with Dave Smith"
+      },
+      {
+        "intent": "dinner_with",
+        "entities": [
+          {
+            "start": 32,
+            "end": 40,
+            "value": "Einstein",
+            "entity": "Who"
+          }
+        ],
+        "text": "im supposed to have dinner with Einstein"
+      },
+      {
+        "intent": "dinner_with",
+        "entities": [
+          {
+            "start": 22,
+            "end": 27,
+            "value": "euler",
+            "entity": "Who"
+          }
+        ],
+        "text": "im having dinner with euler"
+      },
+      {
+        "intent": "dinner_with",
+        "entities": [
+          {
+            "start": 22,
+            "end": 26,
+            "value": "fred",
+            "entity": "Who"
+          }
+        ],
+        "text": "im having dinner with fred"
+      },
+      {
+        "intent": "dinner_with",
+        "entities": [
+          {
+            "start": 36,
+            "end": 45,
+            "value": "gabrielle",
+            "entity": "Who"
+          }
+        ],
+        "text": "I am going to be having dinner with gabrielle"
+      },
+      {
+        "intent": "dinner_with",
+        "entities": [
+          {
+            "start": 36,
+            "end": 42,
+            "value": "hamlet",
+            "entity": "Who"
+          }
+        ],
+        "text": "I am going to be having dinner with hamlet"
+      },
+      {
+        "intent": "dinner_with",
+        "entities": [
+          {
+            "start": 29,
+            "end": 42,
+            "value": "henri bergson",
+            "entity": "Who"
+          }
+        ],
+        "text": "I will be having dinner with henri bergson"
+      },
+      {
+        "intent": "dinner_with",
+        "entities": [
+          {
+            "start": 29,
+            "end": 43,
+            "value": "henri poincaré",
+            "entity": "Who"
+          }
+        ],
+        "text": "I will be having dinner with henri poincaré"
+      },
+      {
+        "intent": "dinner_with",
+        "entities": [
+          {
+            "start": 31,
+            "end": 45,
+            "value": "jonathan swift",
+            "entity": "Who"
+          }
+        ],
+        "text": "I have an upcoming dinner with jonathan swift"
+      },
+      {
+        "intent": "dinner_with",
+        "entities": [
+          {
+            "start": 31,
+            "end": 35,
+            "value": "lisa",
+            "entity": "Who"
+          }
+        ],
+        "text": "i have a dinner coming up with lisa"
+      },
+      {
+        "intent": "dinner_with",
+        "entities": [
+          {
+            "start": 22,
+            "end": 26,
+            "value": "lucy",
+            "entity": "Who"
+          }
+        ],
+        "text": "im having dinner with lucy"
+      },
+      {
+        "intent": "dinner_with",
+        "entities": [
+          {
+            "start": 32,
+            "end": 45,
+            "value": "marcel proust",
+            "entity": "Who"
+          }
+        ],
+        "text": "im supposed to have dinner with marcel proust"
+      },
+      {
+        "intent": "dinner_with",
+        "entities": [
+          {
+            "start": 25,
+            "end": 28,
+            "value": "mom",
+            "entity": "Who"
+          }
+        ],
+        "text": "im having dinner with my mom"
+      },
+      {
+        "intent": "dinner_with",
+        "entities": [
+          {
+            "start": 22,
+            "end": 30,
+            "value": "nicholas",
+            "entity": "Who"
+          }
+        ],
+        "text": "im having dinner with nicholas"
+      },
+      {
+        "intent": "dinner_with",
+        "entities": [
+          {
+            "start": 32,
+            "end": 44,
+            "value": "philip glass",
+            "entity": "Who"
+          }
+        ],
+        "text": "im supposed to have dinner with philip glass"
+      },
+      {
+        "intent": "dinner_with",
+        "entities": [
+          {
+            "start": 32,
+            "end": 38,
+            "value": "pamela",
+            "entity": "Who"
+          }
+        ],
+        "text": "im supposed to have dinner with pamela"
+      },
+      {
+        "intent": "dinner_with",
+        "entities": [
+          {
+            "start": 32,
+            "end": 37,
+            "value": "peter",
+            "entity": "Who"
+          }
+        ],
+        "text": "im supposed to have dinner with peter"
+      },
+      {
+        "intent": "dinner_with",
+        "entities": [
+          {
+            "start": 29,
+            "end": 31,
+            "value": "RR",
+            "entity": "Who"
+          }
+        ],
+        "text": "I will be having dinner with RR"
+      },
+      {
+        "intent": "dinner_with",
+        "entities": [
+          {
+            "start": 36,
+            "end": 52,
+            "value": "bertrand russell",
+            "entity": "Who"
+          }
+        ],
+        "text": "I am going to be having dinner with bertrand russell"
+      },
+      {
+        "intent": "dinner_with",
+        "entities": [
+          {
+            "start": 32,
+            "end": 45,
+            "value": "the dali lama",
+            "entity": "Who"
+          }
+        ],
+        "text": "im supposed to have dinner with the dali lama"
+      },
+      {
+        "intent": "dinner_with",
+        "entities": [
+          {
+            "start": 29,
+            "end": 46,
+            "value": "the little prince",
+            "entity": "Who"
+          }
+        ],
+        "text": "I will be having dinner with the little prince"
+      },
+      {
+        "intent": "dinner_with",
+        "entities": [
+          {
+            "start": 29,
+            "end": 34,
+            "value": "wiley",
+            "entity": "Who"
+          }
+        ],
+        "text": "I will be having dinner with wiley"
+      },
+      {
+        "intent": "dinner_with",
+        "entities": [
+          {
+            "start": 34,
+            "end": 39,
+            "value": "wiley",
+            "entity": "Who"
+          }
+        ],
+        "text": "im going to be having dinner with wiley"
+      },
+      {
+        "intent": "dinner_with",
+        "entities": [
+          {
+            "start": 34,
+            "end": 42,
+            "value": "Yoko Ono",
+            "entity": "Who"
+          }
+        ],
+        "text": "im going to be having dinner with Yoko Ono"
+      },
+      {
+        "intent": "dinner_with",
+        "entities": [
+          {
+            "start": 29,
+            "end": 32,
+            "value": "Zak",
+            "entity": "Who"
+          }
+        ],
+        "text": "I will be having dinner with Zak"
+      },
+      {
+        "intent": "dinner_with",
+        "entities": [
+          {
+            "start": 31,
+            "end": 34,
+            "value": "you",
+            "entity": "Zoro"
+          }
+        ],
+        "text": "i have a dinner coming up with you"
+      },
+      {
+        "intent": "get_weather",
+        "text": "what's the weather"
+      },
+      {
+        "intent": "get_weather",
+        "text": "whats the weather"
+      },
+      {
+        "intent": "get_weather",
+        "text": "what is the weather"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 21,
+            "end": 32,
+            "value": "los angeles",
+            "entity": "location"
+          }
+        ],
+        "text": "whats the weather in los angeles"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 23,
+            "end": 31,
+            "value": "new york",
+            "entity": "location"
+          }
+        ],
+        "text": "what is the weather in new york"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 28,
+            "end": 36,
+            "value": "new york",
+            "entity": "location"
+          }
+        ],
+        "text": "what is the weather like in new york"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 20,
+            "end": 28,
+            "value": "new york",
+            "entity": "location"
+          }
+        ],
+        "text": "hows the weather in new york"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 23,
+            "end": 29,
+            "value": "alaska",
+            "entity": "location"
+          }
+        ],
+        "text": "what is the weather in alaska"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 20,
+            "end": 26,
+            "value": "alaska",
+            "entity": "location"
+          }
+        ],
+        "text": "hows the weather in alaska"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 28,
+            "end": 32,
+            "value": "Peru",
+            "entity": "location"
+          }
+        ],
+        "text": "what is the weather like in Peru"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 22,
+            "end": 27,
+            "value": "Paris",
+            "entity": "location"
+          }
+        ],
+        "text": "how is the weather in Paris"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 20,
+            "end": 26,
+            "value": "Berlin",
+            "entity": "location"
+          }
+        ],
+        "text": "hows the weather in Berlin"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 20,
+            "end": 26,
+            "value": "boston",
+            "entity": "location"
+          }
+        ],
+        "text": "hows the weather in boston"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 28,
+            "end": 33,
+            "value": "china",
+            "entity": "location"
+          }
+        ],
+        "text": "what is the weather like in china"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 22,
+            "end": 30,
+            "value": "deleware",
+            "entity": "location"
+          }
+        ],
+        "text": "how is the weather in deleware"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 20,
+            "end": 24,
+            "value": "Erie",
+            "entity": "location"
+          }
+        ],
+        "text": "hows the weather in Erie"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 20,
+            "end": 26,
+            "value": "France",
+            "entity": "location"
+          }
+        ],
+        "text": "hows the weather in France"
+      },
+      {
+        "intent": "get_weather",
+        "text": "what is the weather like"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 22,
+            "end": 28,
+            "value": "alaska",
+            "entity": "location"
+          }
+        ],
+        "text": "how is the weather in alaska"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 20,
+            "end": 26,
+            "value": "bogeta",
+            "entity": "location"
+          }
+        ],
+        "text": "hows the weather in bogeta"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 20,
+            "end": 27,
+            "value": "chicago",
+            "entity": "location"
+          }
+        ],
+        "text": "hows the weather in chicago"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 28,
+            "end": 34,
+            "value": "dallas",
+            "entity": "location"
+          }
+        ],
+        "text": "what is the weather like in dallas"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 26,
+            "end": 34,
+            "value": "Golgotha",
+            "entity": "location"
+          }
+        ],
+        "text": "whats the weather like in Golgotha"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 21,
+            "end": 26,
+            "value": "India",
+            "entity": "location"
+          }
+        ],
+        "text": "whats the weather in India"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 21,
+            "end": 28,
+            "value": "Jakarta",
+            "entity": "location"
+          }
+        ],
+        "text": "whats the weather in Jakarta"
+      },
+      {
+        "intent": "imsure",
+        "text": "I'm sure"
+      },
+      {
+        "intent": "imsure",
+        "text": "I'm sure of that"
+      },
+      {
+        "intent": "imsure",
+        "text": "I'm fairly certain"
+      },
+      {
+        "intent": "imsure",
+        "text": "I'm pretty sure"
+      },
+      {
+        "intent": "imsure",
+        "entities": [
+          {
+            "start": 13,
+            "end": 26,
+            "value": "did something",
+            "entity": "WHAT"
+          }
+        ],
+        "text": "I'm sure you did something"
+      },
+      {
+        "intent": "imsure",
+        "entities": [
+          {
+            "start": 13,
+            "end": 21,
+            "value": "did that",
+            "entity": "WHAT"
+          }
+        ],
+        "text": "I'm sure you did that"
+      },
+      {
+        "intent": "beg",
+        "text": "please like this"
+      },
+      {
+        "intent": "beg",
+        "text": "like my post"
+      },
+      {
+        "intent": "beg",
+        "text": "did you see my post"
+      },
+      {
+        "intent": "beg",
+        "text": "when you get a chance"
+      },
+      {
+        "intent": "channeling",
+        "text": "channeling"
+      },
+      {
+        "intent": "um",
+        "text": "um"
+      },
+      {
+        "intent": "nevermind",
+        "text": "nvrmnd"
+      },
+      {
+        "intent": "nevermind",
+        "text": "nevermind"
+      },
+      {
+        "intent": "nevermind",
+        "text": "In accordance with prophesy"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [],
+    "entity_synonyms": [
+      {
+        "value": "nyc",
+        "synonyms": [
+          "New York City",
+          "New York, NY",
+          "NY NY",
+          "NY, NY",
+          "NYC"
+        ]
+      },
+      {
+        "value": "usa",
+        "synonyms": [
+          "The United States of America",
+          "United States of America",
+          "United States",
+          "The United States",
+          "USA",
+          "US",
+          "America",
+          "murica"
+        ]
+      }
+    ]
+  }
+}

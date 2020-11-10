@@ -1,0 +1,97 @@
+# Domain file for CCM Bot domain.
+
+session_config:
+  session_expiration_time: 480  # value in minutes, 0 means infinitely long
+  carry_over_slots_to_new_session: false  # set to true to remember slots across sessions
+  action_factory: remote
+action_factory: remote
+
+
+forms:
+  - CCMP
+
+
+entities:
+  - following_plan
+  - how_feeling
+  - medication
+  - diet
+  - weight
+  - sleep_hrs
+  - sleep_qual
+  - regimin
+
+
+slots:
+  following_plan:
+    type: boolean
+  how_feeling:
+    type: categorical
+    values:
+      - good
+      - better
+      - bad
+      - worse
+      - same
+  medication:
+    type: unfeaturized
+  diet:
+    type: unfeaturized
+  weight:
+    type: unfeaturized
+  sleep_hrs:
+    type: unfeaturized
+  sleep_qual:
+    type: unfeaturized
+  regimin:
+    type: unfeaturized
+  in_office_or_virtual:
+    type: categorical
+    values:
+      - real
+      - virtual
+
+
+intents:
+- inform
+- inquire
+- request
+# ~~~~~~~~~~ CCM Bot Domain
+- inform_my_prescription_ran_out
+- inform_i_dont_need_refill
+- inform_have_been_following_ccmp
+- inform_have_not_been_following_ccmp
+- inform_how_feeling
+- inquire_my_balance
+- inquire_more_info_about_condition
+- inquire_more_info_about_medication
+- inquire_drug_interactions
+- request_to_see_my_doctor
+# ~~~~~~~~~~ General (move to default domain.)
+- greet
+- affirm
+- deny
+- sorry
+- super
+- thanks
+- bye
+
+
+actions:
+# ~~~~~~~~~~ CCM Bot Responses (utter, ask, action) !!!
+- action_award_points
+- action_calculate_prescription_period
+- utter_your_presciption_ran_out_early
+- utter_your_prescription_lasted_longer
+- utter_your_current_balance_is
+- utter_ask_do_you_need_a_refill
+- utter_ask_are_you_following_your_ccmp
+- utter_ask_how_ru_feeling
+- utter_ask_how_ru_sleeping
+- utter_ask_how_many_hours_of_sleep
+- utter_ask_your_current_weight
+
+
+
+### ### ### TEMPLATES ### ### ###
+templates:

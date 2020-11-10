@@ -1,0 +1,41 @@
+version: '3'
+
+services:
+
+  dialog-server:
+      build: dialog
+      container_name: dialog-server
+      env_file:
+          .env
+      depends_on:
+        - response-server
+      restart: always
+      ports:
+        - 5555:9000
+        - 9001:9001
+        - 9002:9002
+        - 9003:9003
+      command: /bin/bash /home/zoro/zorobot/bot.sh -r --api
+
+  response-server:
+      build: response
+      container_name: response-server
+      restart: always
+      ports:
+          - 5050:5050
+
+  bot-server:
+      build: bot
+      container_name: bot-server
+      depends_on:
+        - dialog-server
+      restart: always
+      ports:
+        - 5531:5531
+
+  redis-server:
+      image: 'redis'
+      container_name: redis-service
+      restart: always
+      expose:
+        - 6379

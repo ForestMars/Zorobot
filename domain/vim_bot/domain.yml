@@ -1,0 +1,190 @@
+# domain file for Vim Bot domain.
+
+session_config:
+  session_expiration_time: 480  # value in minutes, 0 means infinitely long
+  carry_over_slots_to_new_session: false  # set to true to remember slots across sessions
+  action_factory: remote
+
+action_factory: remote
+
+forms:
+  - vim_form
+
+entities:
+  - Command
+  - Object
+  - Objective
+  - Scenario
+
+slots:
+  command:
+    type: unfeaturized
+  object:
+    type: unfeaturized
+  objective:
+    type: unfeaturized
+  scenario:
+    type: unfeaturized
+  context:
+    type: unfeaturized
+
+  which_vimfact:
+    type: unfeaturized
+
+  same_or_different:
+    type: categorical
+    values:
+      - same
+      - different
+
+
+intents:
+
+# ~~~~~~~~~~ Vim Bot
+- ask_for_vfotd
+- add_new_vimfact
+- update_vimfact
+- ask_for_command
+- ask_explain_command
+- thats_the_command_i_was_looking_for
+- thats_not_the_command_i_was_looking_for
+
+# ~~~~~~~~~~ General - @TODO: Should all be in general domain only.
+- affirm
+- deny
+- agree
+- super
+- bye
+- confused
+- greet
+- goodbye
+- help
+- idk
+- lol
+- notsure
+- thx
+- thanks
+- dontgetit
+- nevermind
+- when
+- who
+- yw
+- ruthere
+- lost_the_plot
+- nvrmnd
+
+# ~~~~~~~~~~ Idiomatic
+- i_just_told_you
+
+
+actions:
+
+# ~~~~~~~~~~ Vim Bot Actions
+- action_utter_vfotd
+- action_add_new_vimfact
+- action_update_vimfact
+- action_answer_which_command
+- action_answer_what_does_command_do
+
+- utter_ask_more_info
+- utter_new_vimfact_added
+- utter_vimfact_updated
+- utter_do_my_best
+
+# ~~~~~~~~~~ General Actions (move to default domain)
+- utter_affirm
+- utter_deny
+- utter_goodbye
+- utter_nice
+- utter_np
+- utter_noworries
+- utter_not_sure
+- utter_pretty_sure
+- utter_sorry
+- utter_thx
+- utter_thanks
+- utter_does_that_make_sense
+
+# ~~~~~~~~~~ Filler Talk (move to chitchat)
+
+
+###  TEMPLATES
+
+templates:
+  utter_default:
+  - text: I am sorry, I didn't get that. Could you please repeat your query?
+  - text: I am not sure what you are aiming for.
+
+# ~~~~~~~~~~~~~ Vim Bot Templates
+  utter_is_that_the_right_command:
+  - text: Does that command do what you trying to accomplish?
+  utter_ask_more_info:
+  - text: Can you give me a little more information about what you're asking?
+  utter_new_vimfact_added:
+  - text: New Vim Fact added! Thanks for your contribution!
+  utter_vimfact_updated:
+  - text: Updated {which_vimfact}, thanks!
+  utter_do_my_best:
+  - text: I'll do my best.
+
+# ~~~~~~~~~~~~~ General Templates
+  utter_greet:
+  - text: Heya!
+  utter_affirm:
+  - text: Yasss!
+  utter_deny:
+  - text: No way dude!
+  utter_goodbye:
+  - text: Goodbye.
+  utter_bye:
+  - text: Bye
+  utter_np:
+  - text: np
+  - text: Not a problem
+  - text: No promblem at all
+  - text: No problemo
+  utter_nw:
+  - text: nw
+  - text: No worries!
+  utter_yw:
+  - text: yw
+  - text: You're welcome
+  utter_sorry:
+  - text: Sorry about that
+  utter_pretty_sure:
+  - text: I'm pretty sure, anyway
+  utter_notsure:
+  - text: Not sure.
+  - image: assets/not_sure.png
+  utter_thx:
+  - text: thx
+  - text: Thanks
+  utter_good2hear:
+  - text: Good to hear!
+  utter_ikr:
+  - text: I know, right?
+  utter_k:
+  - text: k
+
+# Super
+  utter_super_awesome:
+  - text: Awesome!
+  utter_super_cool:
+  - text: cool
+  utter_super_good:
+  - text: Really good to hear
+  utter_super_great:
+  - text: great
+  - text: Great
+  - text: ok, great
+  - text: Great!
+  utter_super_nice:
+  - text: Nice!
+
+# Tryna Help You
+  utter_domybest:
+  - text: I'll do my best
+  - text: I'll try my best
+  - text: I'll try to answer as best I can
+  utter_gladicanamuse:
+  - text: Glad I can amuse you.

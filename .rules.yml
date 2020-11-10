@@ -1,0 +1,5 @@
+rules:
+  - rule: respond to chitchat
+    steps:
+    - intent: chitchat
+    - action: utter_chitchat

@@ -1,0 +1,839 @@
+
+### this should be a synonym for different
+## intent:better_day
+- actually [sun](Day) is bettter
+- actually [mon](Day) is bettter
+- actually [tue](Day) is bettter
+- actually [wed](Day) is bettter
+- actually [thu](Day) is bettter
+- actually [thur](Day) is bettter
+- actually [fri](Day) is bettter
+- actually [sat](Day) is bettter
+- actually [sunday](Day) is bettter
+- actually [monday](Day) is bettter
+- actually [tuesday](Day) is bettter
+- actually [wednesday](Day) is bettter
+- actually [thursday](Day) is bettter
+- actually [friday](Day)
+- actually [saturday](Day)
+
+
+
+### ~~~~~~~~~~~~~~~~~~~~ When? ~~~~~~~~~~~~~~~~~~~~
+
+# weekday should actually be a lookup
+## intent:suggest_day
+- [today](Day)
+- [tomorrow](Day)
+- how about [tomorrow](Day)
+- how does [tomorrow](Day) look
+- how does [tomorrow](Day) work
+- how does [tomorrow](Day) work for you
+- is [tomorrow](Day) good
+- is [tomorrow](Day) good for you
+- can we have a call [today](Day)
+- [sun](Day)
+- [mon](Day)
+- [tue](Day)
+- [wed](Day)
+- [thu](Day)
+- [thur](Day)
+- [thurs](Day)
+- [fri](Day)
+- [sat](Day)
+- [sunday](Day)
+- [monday](Day)
+- [tuesday](Day)
+- [wednesday](Day)
+- [thursday](Day)
+- [friday](Day)
+- [saturday](Day)
+- next [sun](Day)
+- next [mon](Day)
+- next [tue](Day)
+- next [wed](Day)
+- next [thu](Day)
+- next [thur](Day)
+- next [fri](Day)
+- next [sat](Day)
+- this [sunday](Day)
+- this [monday](Day)
+- this [tuesday](Day)
+- this [wednesday](Day)
+- this [thursday](Day)
+- this [friday](Day)
+- this [sunday](Day)
+- next [monday](Day)
+- next [tuesday](Day)
+- next [wednesday](Day)
+- next [thursday](Day)
+- next [friday](Day)
+- next [saturday](Day)
+- ok [sunday](Day)
+- ok [monday](Day)
+- ok [tuesday](Day)
+- ok [wednesday](Day)
+- ok [thursday](Day)
+- ok [friday](Day)
+- ok [saturday](Day)
+- ok then [sunday](Day)
+- ok then [monday](Day)
+- ok then [tuesday](Day)
+- ok then [wednesday](Day)
+- ok then [thursday](Day)
+- ok then [friday](Day)
+- ok then [saturday](Day)
+- [tomorrow](Day) works
+- [sunday](Day) works
+- [monday](Day) wokks
+- [tuesday](Day) works
+- [wednesday](Day) works
+- [thursday](Day) woorks
+- [friday](Day) works
+- can you do a call [tomorrow](Day)
+- can you do a call on [monday](Day)
+- can you do a call on [tuesday](Day)
+- can you do a call on [wensday](Day)
+- can you do a call on [thurs](Day)
+- can you do a call on [fri](Day)
+- can you do a call this [monday](Day)
+- can you do a call this [tuesday](Day)
+- can you do a call this [wensday](Day)
+- can you do a call this [thurs](Day)
+- can you do a call this [fri](Day)
+- can you do a call next [monday](Day)
+- can you do a call next [tuesday](Day)
+- can you do a call next [wensday](Day)
+- can you do a call next [thurs](Day)
+- can you do a call next [fri](Day)
+- can we set up a ca;; for [monday](Day)
+- whats your availability [this week](Day)
+- whats your availability [next week](Day)
+- whats your availability [today](Day)
+- whats your availability [tomorrow](Day)
+- whats your avail [monday](Day)
+- whats your availability [tuesday](Day)
+- whats your availability [wednesday](Day)
+- whats your availability [thursday](Day)
+- whats your availability [thu](Day)
+- whats your availability [thur](Day)
+
+- whats your availability look like [tuesday](Day)
+- whats your availability look like [wednesday](Day)
+- whats your availability [thursday](Day)
+- whats your availability [thu](Day)
+- whats your availability [thur](Day)
+
+- wats your availability [thurs](Day)
+- whats your availability [friday](Day)
+- whats your avail like on [thursday](Day)
+- whats your availability like this [thu](Day)
+- whats your availability like next [thur](Day)
+- whats your availability on [thurs](Day) like
+- whats your availability like this coming [friday](Day)
+- whats your availability this [monday](Day)
+- whats your availability this [tuesday](Day)
+- whats your availability this [wednesday](Day)
+- whats your availability this [thursday](Day)
+- whats your avail this [friday](Day)
+- whats your availability next [monday](Day)
+- whats your availability next [tuesday](Day)
+- whats your availability next [wednesday](Day)
+- whats your availability next [thursday](Day)
+- hats your availability next [friday](Day)
+- ows your availability on [monday](Day)
+- whats your availability on [tuesday](Day)
+- whats your availability on [wednesday](Day)
+- whats your availability on [thursday](Day)
+- whats your availability on [friday](Day)
+- whats your availability on [monday](Day) for a call
+- whats your availability on [tuesday](Day) for a call
+- whats your availability on [wednesday](Day) for call
+- whats your avail on [thursday](Day) for a call
+- whats your availability on [friday](Day) to hop on a call
+- whats your availability for a call on [monday](Day)
+- ows your availability for a call on [tuesday](Day)
+- whats your availability for a call on [wednesday](Day)
+- whats your availability for a call on [thursday](Day)
+- what is your availability for a call on [friday](Day)
+- ows your availability on [monday](Day)
+- hows your availability on [tuesday](Day)
+- hows your availability on [wednesday](Day)
+- hows your availability on [thursday](Day)
+- hows your availability on [friday](Day)
+- hows your availability [today](Day)
+- hows your availability on [tomorrow](Day)
+- hows your availability on [this week](When)
+- hows your availability on [next week](When)
+- how does [tomorrow](Day) work for you
+- how does [monday](Day) work for you
+- how does [tuesday](Day) work for you
+- how does [wednesday](Day) work for you
+- how does [thursday](Day) work for you
+- how does [fiday](Day) work for you
+- how does [monday](Day) work for you
+- how does [tuesday](Day) work for you
+- how does [wednesday](Day) work for you
+- how does [thursday](Day) work for you
+- how does [fiday](Day) work for you
+- how about [monday](Day)
+- how about [tusday](Day)
+- how about [wednsday](Day)
+- how about [thursday](Day)
+- how about [friday](Day)
+- [monday](Day) is good for me
+- [tuesday](Day) is good for me
+- [wednesday](Day) is good for me
+- [thursday](Day) is good for me
+- [friday](Day) is good for me
+- next [monday](Day) is good for me
+- next [tuesday](Day) is good for me
+- next [wednesday](Day) is good for me
+- next [thursday](Day) is good for me
+- next [friday](Day) is good for me
+- whats [monday](Day) look like
+- whats your [tuesday](Day) look like
+- what does [wednesday](Day) look like
+- what does [thursday](Day) look like for you
+- how does [friday](Day) look like for you
+- can we do a call on [tuesday](Day)
+- how is your availability looking on [tuesday](Day)
+- how about [monday](Day)
+- how about [tusday](Day)
+- how about [wednsday](Day)
+- how about [thursday](Day)
+- how about [friday](Day)
+- [monday](Day) is good for me
+- [tuesday](Day) is good for me
+- [wednesday](Day) is good for me
+- [thursday](Day) is good for me
+- [friday](Day) is good for me
+- next [monday](Day) is good for me
+- next [tuesday](Day) is good for me
+- next [wednesday](Day) is good for me
+- next [thursday](Day) is good for me
+- next [friday](Day) is good for me
+- whats [monday](Day) look like
+- whats [this friday](Day) look like
+- can we do [next monday](Day)
+- how about the [wenesday after next](Day)
+- how about the [thursday after this](Day)
+- can we do [monday](Day)
+- can we do next [tuesday](Day)
+- can we do this [tuesday](Day)
+
+
+## intent:suggest_date
+- [the 1st](Ordinal)
+- [the 2nd](Ordinal)
+- [the 3rd](Ordinal)
+- [the 4th](Ordinal)
+- [the 5th](Ordinal)
+- [the 6th](Ordinal)
+- hows [the 7th](Ordinal)
+- hows [the 8th](Ordinal)
+- hows [the 9th](Ordinal)
+- how about [the 10th](Ordinal)
+- how about [the 11th](Ordinal)
+- how about [the 12th](Ordinal)
+- can we do [the 13th](Ordinal)
+- can we do [the 14th](Ordinal)
+
+- [oct 15](month_and_date)
+- [sep 12](month_and_date)
+- [apr 21](month_and_date)
+- [may 16](month_and_date)
+- [feb 3](month_and_date)
+- [mar 4](month_and_date)
+- [jan 5](month_and_date)
+- [nov 11](month_and_date)
+- [sep 15](month_and_date)
+- [jul 19](month_and_date)
+- [jun 4](month_and_date)
+- [feb 14](month_and_date)
+- [jan 15](month_and_date)
+- [april 15](month_and_date)
+- [may 31](month_and_date)
+- [feb 2](month_and_date)
+- [mar 15](month_and_date)
+- [apr 2](month_and_date)
+- [may 6](month_and_date)
+- [feb 1](month_and_date)
+- [mar 4](month_and_date)
+- [jan 25](month_and_date)
+- [oct 23](month_and_date)
+- [sep 15](month_and_date)
+- [nov 1](month_and_date)
+- [sept 15](month_and_date)
+- [jul 17](month_and_date)
+- [jun 4](month_and_date)
+- [feb 4](month_and_date)
+- [jan 5](month_and_date)
+- [apr 5](month_and_date)
+- [may 1](month_and_date)
+- [feb 2](month_and_date)
+- [feb 3](month_and_date)
+- [mar 13](month_and_date)
+
+- [15 oct](month_and_date)
+- [12 sep](month_and_date)
+- [21 apr](month_and_date)
+- [22 may](month_and_date)
+- [16 feb](month_and_date)
+- [14 mar](month_and_date)
+- [4 jan](month_and_date)
+- [5 nov](month_and_date)
+- [11 sep](month_and_date)
+- [15 jul](month_and_date)
+- [18 jun](month_and_date)
+- [7 feb](month_and_date)
+- [14 jan](month_and_date)
+- [14 april](month_and_date)
+- [21 may](month_and_date)
+- [2 feb](month_and_date)
+- [13 mar](month_and_date)
+- [3 apr](month_and_date)
+- [5 may](month_and_date)
+- [1 feb](month_and_date)
+- [4 mar](month_and_date)
+- [25 jan](month_and_date)
+- [23 oct](month_and_date)
+- [17 sep](month_and_date)
+- [15 nov](month_and_date)
+- [15 sept](month_and_date)
+- [6 jul](month_and_date)
+- [6 jun](month_and_date)
+- [4 feb](month_and_date)
+- [5jan](month_and_date)
+- [5 apr](month_and_date)
+- [1 may](month_and_date)
+- [3 feb](month_and_date)
+- [12 mar](month_and_date)
+
+- [january 15](month_and_date)
+- [february 12](month_and_date)
+- [march 21](month_and_date)
+- [april 16](month_and_date)
+- [june 3](month_and_date)
+- [july 4](month_and_date)
+- [august 5](month_and_date)
+- [september 11](month_and_date)
+- [sept 15](month_and_date)
+- [october 19](month_and_date)
+- [november 4](month_and_date)
+- [december 14](month_and_date)
+- [january 11](month_and_date)
+- [april 1](month_and_date)
+- [may 3](month_and_date)
+- [march 1](month_and_date)
+
+- [11/3](month_and_date)
+- [10/31](month_and_date)
+- [9/15](month_and_date)
+- [8/3](month_and_date)
+- [7/19](month_and_date)
+- [6/4](month_and_date)
+- [5/31](month_and_date)
+- [4/1](month_and_date)
+- [3/14](month_and_date)
+- [2/20](month_and_date)
+- [1/11](month_and_date)
+- [1/3](month_and_date)
+- [1/3](month_and_date)
+- [2/15](month_and_date)
+- [3/3](month_and_date)
+- [4/17](month_and_date)
+- [6/24](month_and_date)
+- [7/11](month_and_date)
+- [8/1](month_and_date)
+- [9/15](month_and_date)
+- [10/04](month_and_date)
+- [11/15](month_and_date)
+- [12/22](month_and_date)
+- [12/13](month_and_date)
+- [12/12](month_and_date)
+- [3/3](month_and_date)
+- [4/19](month_and_date)
+- [6/22](month_and_date)
+- [7/4](month_and_date)
+- [8/8](month_and_date)
+- [9/6](month_and_date)
+- [10/10](month_and_date)
+- [11/18](month_and_date)
+- [12/24](month_and_date)
+- [6/1](month_and_date)
+- [10/15](month_and_date)
+- [11/04](month_and_date)
+- [12/15](month_and_date)
+- [1/22](month_and_date)
+- [2/13](month_and_date)
+- [3/12](month_and_date)
+- [3/3](month_and_date)
+- [4/19](month_and_date)
+- [6/2](month_and_date)
+- [8/14](month_and_date)
+- [9/9](month_and_date)
+- [9/7](month_and_date)
+- [10/5](month_and_date)
+- [11/28](month_and_date)
+- [12/25](month_and_date)
+- [4/1](month_and_date)
+- [3/3](month_and_date)
+- [4/4](month_and_date)
+- [6/5](month_and_date)
+- [7/6](month_and_date)
+- [8/7](month_and_date)
+- [9/8](month_and_date)
+- [10/9](month_and_date)
+- [11/10](month_and_date)
+- [12/11](month_and_date)
+- [6/12](month_and_date)
+- [10/13](month_and_date)
+- [11/14](month_and_date)
+- [12/16](month_and_date)
+- [1/17](month_and_date)
+- [2/18](month_and_date)
+- [3/19](month_and_date)
+- [3/20](month_and_date)
+- [4/21](month_and_date)
+- [6/22](month_and_date)
+- [8/24](month_and_date)
+- [9/23](month_and_date)
+- [9/25](month_and_date)
+- [10/26](month_and_date)
+- [11/27](month_and_date)
+- [12/28](month_and_date)
+
+- [3-14](month_and_date)
+- [2-20](month_and_date)
+- [1-11](month_and_date)
+- [1-3](month_and_date)
+- [1-3](month_and_date)
+- [2-15](month_and_date)
+- [3-3](month_and_date)
+- [4-17](month_and_date)
+- [6-24](month_and_date)
+- [7-11](month_and_date)
+- [8-1](month_and_date)
+- [9-15](month_and_date)
+- [10-04](month_and_date)
+- [11-15](month_and_date)
+- [12-22](month_and_date)
+- [12-13](month_and_date)
+- [12-12](month_and_date)
+- [3-3](month_and_date)
+- [4-19](month_and_date)
+- [6-22](month_and_date)
+- [7-4](month_and_date)
+- [8-8](month_and_date)
+- [9-6](month_and_date)
+- [10-10](month_and_date)
+- [11-18](month_and_date)
+- [12-24](month_and_date)
+
+- can we do a call on [oct 15](month_and_date)
+- can you do a call on [nov 11th](month_and_date)
+- can you do a call on [december 6](month_and_date)
+- can you do a call on [june 8](month_and_date)
+- can you do a call on [feb 29](month_and_date)
+- can you do a call on [feb 29th](month_and_date)
+- can you do a call on [february 29](month_and_date)
+- can you do a call on [february 29th](month_and_date)
+- can we set up a ca;; for [jan 15](month_and_date)
+- whats your availability [feb 2](month_and_date)
+- whats your availability [mar 8](month_and_date)
+- whats your availability [march 15](month_and_date)
+- whats your availability [march 21st](month_and_date)
+- whats your availability on [april 1st](month_and_date)
+- whats your availability on [april 15](month_and_date)
+- whats your availability on [apr 22](month_and_date)
+- hows your availability [may 4th](month_and_date)
+- hows your availability [may 14](month_and_date)
+- hows your availability [may 27](month_and_date)
+- hows your availability [jun 1st](month_and_date)
+- hows your availability on [jun 7](month_and_date)
+- hows your availability on [jun 8](month_and_date)
+- hows your availability on [jun 29](month_and_date)
+- how does [jul 7](month_and_date) work for you
+- how does [july 17](month_and_date) work for you
+- how does [july 31](month_and_date) work for you
+- how about [aug 3](month_and_date)
+- how about [august 14](month_and_date)
+- how about [aug 30](month_and_date)
+- [sep 15](month_and_date) is good for me
+- [sept 16](month_and_date) is good for me
+- [september 17](month_and_date) is good for me
+- what does [sept 30](month_and_date) look like
+- what does [30 sept](month_and_date) look like
+- what does the [30th of sept](month_and_date) look like
+- what does [oct 1](month_and_date) look like for you
+- what does [october 30th](month_and_date) look like for you
+- what does [october 31](month_and_date) look like for you
+- can we do a call on [nov 3](month_and_date)
+- could we do a call on [nov 4](month_and_date)
+- can we do a call on [nov 5](month_and_date)
+- could we do a call on [november 6th](month_and_date)
+- can we do a call on [novembver 10](month_and_date)
+- could we do a call on [4 november](month_and_date)
+- how is your availability looking on [novembver 11](month_and_date)
+- how is your availability looking on [novembver 13th](month_and_date)
+- how is your availability looking on [nov 14](month_and_date)
+- how is your availability looking on [nov 15th](month_and_date)
+- how is your availability looking on [16 nov](month_and_date)
+- how is your availability looking on [16 november](month_and_date)
+- how is your availability looking on the [16th of november](month_and_date)
+- how is your availability looking for [novembver 13th](month_and_date)
+- how is your availability looking for [nov 14](month_and_date)
+- how is your availability looking for [nov 15th](month_and_date)
+- how is your availability looking for [16 nov](month_and_date)
+- how is your availability looking for [16 november](month_and_date)
+- how is your availability looking for the [16th of november](month_and_date)
+- what does the [30th of sept](month_and_date) look like
+- can we do a call on the [4th of novembver](month_and_date)
+- could we do a call on the [4th of novembver](month_and_date)
+- how about [11/11](month_and_date)
+- how about [07/11](month_and_date)
+- how about [8-12](month_and_date)
+- what about [07/04](month_and_date)
+- [3/14](month_and_date) is good for me
+- whats [9/11](month_and_date) look like
+- can we do [2/15](month_and_date)
+- how about [3-16](month_and_date)
+- how is your availability looking for the [16th of november](month_and_date)
+- what does the [30th of sept](month_and_date) look like
+- can we do a call on the [4th of novembver](month_and_date)
+- could we do a call on the [4th of novembver](month_and_date)
+- could we do a call on the [4th of novembver](month_and_date)
+- how about [11/11](month_and_date)
+- how about [07/11](month_and_date)
+- how about [8-12](month_and_date)
+
+
+
+## intent:suggest_different_day
+- can we do [monday](Day) instead
+- can we do [tuesday](Day) instead
+- can we do [wednesday](Day) instead
+- can we do [thursday](Day) instead
+- can we do [friday](Day) instead
+- does [monday](Day) work
+- does [tuesday](Day) work
+- does [wednesday](Day) work
+- does [thursday](Day) work
+- does [friday](Day) work
+- does [monday](Day) work instead
+- does [tuesday](Day) work instead
+- does [wednesday](Day) work instead
+- does [thursday](Day) work instead
+- does [friday](Day) work instead
+- i would prefer [tuesday](Day)
+- rather can we do [wednesday](Day)
+- i would rather we do [monday](Day)
+- [thursday](Day) is better for me
+- [friday](Day) is better for me
+
+## intent:suggest_time
+- [1p](Time)
+- [2p](Time)
+- [3p](Time)
+- [4 p](Time)
+- [5 pm](Time)
+- [7a](Time)
+- [830a](Time)
+- [9a](Time)
+- [930a](Time)
+- [1030a](Time)
+- [1130am](Time)
+- [noon](Time)
+- [800](Time)
+- [815](Time)
+- [845](Time)
+- [920](Time)
+- [930](Time)
+- [930](Time)
+- [945](Time)
+- [10:10](Time)
+- [1045](Time)
+- [1130](Time)
+- [1130](Time)
+- [130](Time)
+- [230](Time)
+- [330](Time)
+- [430](Time)
+- [530](Time)
+- [630](Time)
+- [730](Time)
+- [830](Time)
+- [8:05](Time)
+- [800](Time)
+- [900](Time)
+- [0700](Time)
+- [100](Time)
+- [300](Time)
+- [800am](Time)
+- [815am](Time)
+- [845am](Time)
+- [920am](Time)
+- [930am](Time)
+- [930am](Time)
+- [945am](Time)
+- [10:10am](Time)
+- [1045am](Time)
+- [1130am](Time)
+- [1130am](Time)
+- [130pm](Time)
+- [230pm](Time)
+- [330pm](Time)
+- [430pm](Time)
+- [530pm](Time)
+- [630pm](Time)
+- [730pm](Time)
+- [830pm](Time)
+- [8:05am](Time)
+- [800pm](Time)
+
+- [100p](Time)
+- [200pm](Time)
+- [300p](Time)
+- [400pm](Time)
+- [500p](Time)
+- [600pm](Time)
+- [700p](Time)
+- [800pm](Time)
+- [805pm](Time)
+- [800pm](Time)
+- [100a](Time)
+- [200a](Time)
+- [300a](Time)
+- [400a](Time)
+- [500am](Time)
+- [600am](Time)
+- [700am](Time)
+- [800am](Time)
+- [805am](Time)
+- [800am](Time)
+
+- [800 am](Time)
+- [815 am](Time)
+- [845 am](Time)
+- [920 am](Time)
+- [930 am](Time)
+- [930 am](Time)
+- [945 am](Time)
+- [10: 10am](Time)
+- [1044 am](Time)
+- [113 0am](Time)
+- [113 0am](Time)
+- [130 pm](Time)
+- [230 pm](Time)
+- [330 pm](Time)
+- [430 pm](Time)
+- [530 pm](Time)
+- [630 pm](Time)
+- [730 pm](Time)
+- [830 pm](Time)
+- [8:05 am](Time)
+- [800 pm](Time)
+
+- [9:00 am](Time)
+- [10:00am](Time)
+- [1100am](Time)
+- [1130 am](Time)
+- [1pm](Time)
+- [130](Time)
+- [2:00](Time)
+- [3:30](Time)
+- [4:00 pm](Time)
+- [10:00pm](Time)
+- [2100](Time)
+- [830 pm](Time)
+- [7pm](Time)
+- [340](Time)
+- [20:00](Time)
+- [21:30](Time)
+- [9:33 am](Time)
+- [10:10pm](Time)
+- [1111am](Time)
+- [1112 am](Time)
+- [1pm](Time)
+- [111](Time)
+- [11:00](Time)
+- [2:00](Time)
+- [11:00 am](Time)
+- [2:00pm](Time)
+- [3pm](Time)
+- [930](Time)
+- [3](Time) EST
+- [400](Time) EST
+- [10:00](Time) EST
+- [400 pm](Time) BST
+- hows [10:00](Time)
+- lets do [9am](Time)
+- lets do [11:00](Time)
+- lets do [10:30 AM](Time)
+- lets do [9:30AM](Time)
+- lets do [930AM](Time)
+- lets do [12:00](Time)
+- lets do [1:30 pm](Time)
+- lets do [4:30pm](Time)
+- lets do [930am](Time)
+- lets do [3p](Time)
+- lets aim for [930AM](Time)
+- lets aim for [12:00](Time)
+- lets aim for [1:30 pm](Time)
+- lets aim for [555 pm](Time)
+- lets do for [930am](Time)
+- lets do for [3p](Time)
+- lets shoot for [930](Time)
+- lets shoot for [12:00](Time)
+- lets shoot for [1:30 pm](Time)
+- lets shoot for [430 pm](Time)
+- lets shoot for [930am](Time)
+- lets shoot for [3p](Time)
+- can we do [11:00](Time)
+- can we do [12:00](Time)
+- can we do [12pm](Time)
+- can we do [noon](Time)
+- can we do [morning](Time)
+- can we do [morning](Time)
+- can we do [3PM](Time)
+- can we do [3:00 pm](Time)
+- can we do [3:00PM](Time)
+- actually [2:30](Time)
+- actually [2:30](Time)
+- actually [2:30](Time)
+- you know what [4:00](Time)
+- you know what [11:45](Time)
+- actually [12:00](Time)
+- can we do [11:00](Time)
+- how about [21:00](Time)
+- how about [12PM](Time)
+- how bout [2pm](Time)
+- I was thinking something around [1:00 or 2:00](Time)
+- I have [11:00](Time) or [1:30](Time) please
+- how is [3:30](Time)
+- how is [2pm](Time)
+- can we do [15:30 pm](Time)
+- i could do [14:30](Time)
+- does [10:00](Time) work
+- how about we do [10:00](Time)
+- how about sometime around [1:00](Time)
+- lets make it sometime in the [afternon](TOD)
+- can we do [11:00](Time) EST
+- can we say [11:00](Time) BST
+- can you do [8am](Time) EST
+- id like to do it at [0700](Time) BST
+- is it possible to do it at [1045](Time)
+- is it possible for us to do it at [220](Time)
+- im thinking [noon](Time)
+- im thinking [morning](Time)
+- im thinking in the [morning](Time)
+- im thinking around [3PM](Time)
+- im thinking of [3:00 pm](Time)
+- can we do sometime around [3:00PM](Time)
+- i was thinking [2:30](Time)
+- id be good with [2:30](Time)
+- i have [2:30](Time) open
+- i have  [4:00](Time) available
+- you know what [11:45](Time) looks good
+
+## intent:suggest_different_date
+- can we do [aug 8](month_and_date) instead
+- can we do [sep 8](month_and_date) instead
+- can we do [nov 8](month_and_date) instead
+- can we do [dec 8](month_and_date) instead
+- can we do [jan 1](month_and_date) instead
+- can we do [mar 15](month_and_date) instead
+- can we do [may 4](month_and_date) instead
+- can we do [jul 4](month_and_date) instead
+- can we do [aug 1](month_and_date) instead
+- can we do [sep 2](month_and_date) instead
+- can we do [nov 3](month_and_date) instead
+- can we do [dec 4](month_and_date) instead
+- can we do [jan 5](month_and_date) instead
+- can we do [mar 5](month_and_date) instead
+- can we do [may 4](month_and_date) instead
+- can we do [jul 6](month_and_date) instead
+- can we do [sep 15](month_and_date) instead
+- can you do [aug 1](month_and_date) instead
+- can you do [sep 2](month_and_date) instead
+- can you do [nov 3](month_and_date) instead
+- can you do [dec 4](month_and_date) instead
+- can you do [jan 5](month_and_date) instead
+- can you do [mar 5](month_and_date) instead
+- can you do [may 4](month_and_date) instead
+- can you do [jul 6](month_and_date) instead
+
+- actually [nov 11](month_and_date) is better for me
+- actually [jan 11](month_and_date) is better for me
+- actually [apr 19](month_and_date) is better for me
+- actually [jun 9](month_and_date) is better for me
+- actually [aug 3](month_and_date) is better for me
+- actually [oct 3](month_and_date) is better for me
+- actually [sept 17](month_and_date) works better for me
+- actually can we do [dec 18](month_and_date) instead
+- actualluy can we do [jan 10](month_and_date) instead
+- sorry can we do [mar 5](month_and_date) instead
+- sorry can we do [may 14](month_and_date) instead
+- can we do [jul 24](month_and_date) instead
+- actually [feb 11](month_and_date) looks better
+- actually [mar 11](month_and_date) looks better
+- actually [apr 9](month_and_date) looks better
+- actually [jun 19](month_and_date) is better
+- actually [aug 13](month_and_date) is better
+- actually [oct 13](month_and_date) is better
+
+- can we do [august 8](month_and_date) instead
+- can we do [sept 18](month_and_date) instead
+- can we do [september 28](month_and_date) instead
+- can we do [november 18](month_and_date) instead
+- can we do [december 28](month_and_date) instead
+- can we do [january 9](month_and_date) instead
+- can we do [march 5](month_and_date) instead
+- can we do [may 27](month_and_date) instead
+- can we do [july 17](month_and_date) instead
+- can we do [september 25](month_and_date) instead
+- actually [november 16](month_and_date) is better for me
+- actually [janurary 2](month_and_date) is better for me
+- actually [april 3](month_and_date) is better for me
+- actually [june 24](month_and_date) is better for me
+- actually [august 30](month_and_date) is better for me
+- actually [ocober 10](month_and_date) is better for me
+- actually [september 26](month_and_date) works better for me
+- actually can we do [december 7](month_and_date) instead
+- actualluy can we do [january 6](month_and_date) instead
+- sorry can we do [march 16](month_and_date) instead
+- sorry can we do [may 13](month_and_date) instead
+- can we do [july 22](month_and_date) instead
+- actually [february 27](month_and_date) looks better
+- actually [march 10](month_and_date) looks better
+- actually [april 22](month_and_date) looks better
+- actually [june 17](month_and_date) is better
+- actually [august 1](month_and_date) is better
+- actually [october 20](month_and_date) is better
+- actually [12:00](month_and_date) would be perfect
+- [nov 21](month_and_date) would be better
+- [jan 12](month_and_date) would be better for me
+- actually [nov 22](month_and_date) would be better
+- actually [jan 22](month_and_date) would be better for me
+- actually [next week](when) is better for me
+- actually [next month](when) is better for me
+
+
+## intent:suggest_different_time
+- can we do [11:00](Time) instead
+- can we do [12:00](Time) instead
+- can we do [12PM](Time) instead
+- can we do [npon](Time) instead
+- can we do [morning](Time) instead
+- can we do [morning](Time) instead
+- can we do [3PM](Time) instead
+- can we do [3:00 PM](Time) instead
+- can we do [3:00PM](Time) instead
+- actually [2:30](Time) is better for me
+- actually [2:30](Time) works better for me
+- actually [2:30](Time) is much better for me
+- you know what [4:00](Time) would be much better
+- you know what [11:45](Time) would be a lot better
+- actually [12:00](Time) would be perfect
+- can we do a different time instead

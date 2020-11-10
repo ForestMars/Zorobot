@@ -1,0 +1,65 @@
+# domain file for Vim Bot domain.
+
+session_config:
+  session_expiration_time: 480  # value in minutes, 0 means infinitely long
+  carry_over_slots_to_new_session: false  # set to true to remember slots across sessions
+  action_factory: remote
+
+action_factory: remote
+
+
+entities:
+  - food_category
+  - food_kind
+  - michelin
+
+slots:
+  food_category:
+    type: categorical
+    values:
+      - American
+      - Chinese
+      - French
+      - Spanish
+      - Tacos
+      - Italian
+      - Pizza
+      - Japanese
+      - Ramen
+      - Sushi
+      - Seafood
+  food_kind:
+    type: unfeaturized
+  michelin:
+    type: categorical
+    values:
+      - 3
+      - 2
+      - 1
+      - 0
+# oddly, we don't have a slot for int, but only float.
+
+
+intents:
+
+# ~~~~~~~~~~ Dinner Bot
+- i_dont_know_what_do_you_feel_like
+- i_decided_last_time_its_your_turn
+- no_you_didnt_i_did
+- ok_i_dont_want_to_argue_im_just_hungry
+- fine_whatever_just_make_the_reservation
+
+
+actions:
+
+# ~~~~~~~~~~ Dinner Bot Actions
+- utter_ask_what_ru_in_the_mood_for
+- utter_its_your_turn_to_pick
+- utter_yes_dear
+- utter_ok_dear
+- utter_fine
+- action_make_reservation
+
+
+### ### ### TEMPLATES ### ### ###
+templates:

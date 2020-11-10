@@ -1,0 +1,22 @@
+{
+  "the city": "ToLocation, ",
+  "resumé": "resume",
+  "cv": "resume",
+  "c.v.": "resume",
+  "corpus vitae": "resume",
+  "new york city": "nyc",
+  "new york, ny": "nyc",
+  "ny ny": "nyc",
+  "ny, ny": "nyc",
+  "nyc": "nyc",
+  "your city": "nyc",
+  "the united states of america": "usa",
+  "united states of america": "usa",
+  "united states": "usa",
+  "the united states": "usa",
+  "usa": "usa",
+  "us": "usa",
+  "america": "usa",
+  "murica": "usa",
+  "it's": "its"
+}

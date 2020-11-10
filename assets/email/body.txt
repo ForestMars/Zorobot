@@ -1,0 +1,16 @@
+{Name},<br>
+<br>
+Great talking to you today (to be clear you were talking to my assistant, not myself) and looking forward to our call, which we have planned for {Day}, {month_name} {ord} at {time_hour}:{time_minutes}.
+<br>
+<br>
+If you have any materials you'd like to share prior to them, please reply to this email and include them. And feel free to reach out to my scheduling assistant if you need anything else.
+<br>
+<br>
+Best,<br>
+<br>
+Forest Mars<br>
+--<br>
+voice: 516-698-2705<br>
+sms/text: 347-688-7501<br>
+scheduling assistant: 845-868-0258<br>
+<br>

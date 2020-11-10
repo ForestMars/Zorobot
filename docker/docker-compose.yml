@@ -35,7 +35,7 @@ services:
 
   redis-server:
       image: 'redis'
-      container_name: redis-service
+      container_name: redis-server
       restart: always
       expose:
         - 6379

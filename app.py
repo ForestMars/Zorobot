@@ -19,9 +19,6 @@ import requests
 #import contacts
 from common.utils import HaltException as HX
 
-## Move into settings.py (auth token in credentials.yml)
-#account_sid = "AC00e3fee397a6213911fd1c79478d1106"
-#auth_token  = "73c7696839dc729bbff3ac0342be20f4"
 session_=Session()
 nassau='+15166982705'
 upstate="+18458680258"

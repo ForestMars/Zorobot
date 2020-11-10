@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # run.py (smsbot) - SMS message dispatcher and handler. (In a more perfect world, this would be app.py.)
-__version__ = '0.2'
+__version__ = '0.0.2'
 CONDA_ENV = 'chatbot1'
 
 #import inspect

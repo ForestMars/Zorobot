@@ -1,0 +1,16 @@
+usage: run.py [-h] -d CORE [-u NLU] [-p PORT] [--auth_token AUTH_TOKEN]
+              [--cors [CORS [CORS ...]]] [-o LOG_FILE]
+              [--credentials CREDENTIALS] [--endpoints ENDPOINTS]
+              [-c CONNECTOR] [--enable_api] [--jwt_secret JWT_SECRET]
+              [--jwt_method JWT_METHOD] [-v] [-vv] [--quiet]
+run.py: error: unrecognized arguments: --enable-api
+usage: run.py [-h] -d CORE [-u NLU] [-p PORT] [--auth_token AUTH_TOKEN]
+              [--cors [CORS [CORS ...]]] [-o LOG_FILE]
+              [--credentials CREDENTIALS] [--endpoints ENDPOINTS]
+              [-c CONNECTOR] [--enable_api] [--jwt_secret JWT_SECRET]
+              [--jwt_method JWT_METHOD] [-v] [-vv] [--quiet]
+run.py: error: unrecognized arguments: --enable-api
+2020-11-11 10:40:49 INFO     root  - Rasa process starting
+2020-11-11 10:40:50 INFO     rasa_nlu.components  - Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+2020-11-11 10:41:01 INFO     root  - Rasa Core server is up and running on http://localhost:5005
+Warning: Output is not a terminal (fd=1).

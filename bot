@@ -26,7 +26,7 @@ function show_usage (){
     printf " -d|--debug, Run in debug mode\n"
     printf " -m|--model, Name of model to run (aka domain)\n"
     printf " -e|--epochs, Unless you have infinite patience\n"
-    printf " -a|--enable-api, Enables web api\n"
+    printf " -a|--api, Enables web api\n"
     printf " -h|--help, Print help\n"
 return 0
 }
@@ -102,6 +102,10 @@ while [ ! -z "$1" ]; do
       # shift
       check_valid_model "$@"
       ;;
+     --api|-a)
+       shift
+       API=y
+       ;;
      *)
       show_usage
       ;;
@@ -167,12 +171,29 @@ done
 # create model directory if it doesn't exist
 
 if [[ $RUNYN = 'y' ]]; then
+  echo "YASSS"
   REACTION="domain.$PROJECT.$ACTION"
   python -m rasa_core_sdk.endpoint --actions $REACTION & echo $!
+  BILL=$!
 fi
 
 ## "Let's git down to bizniz." -overheard in the office.
 ## NB. switches should use '-' not '_'
+
+if [[ -z "${CHOICE}" ]] && [[ $RUNYN = 'y' ]] && [[ $API = 'y' ]]; then
+  echo "Running model in API mode.";
+  # check training data exists
+  # python -m rasa_nlu.train -c nlu_config.yml --data data/$PROJECT/intents/nlu_data.md -o models --fixed_model_name nlu --project $PROJECT --verbose ;
+  # python -m rasa_nlu.train -c config.yml --data data//$PROJECT/intents -o models --fixed_model_name nlu --project $PROJECT --verbose --path agent ;
+  #time python -m rasa_nlu.train -c config.yml --data data//$PROJECT/intents -o models --fixed_model_name nlu --project $PROJECT --verbose ;
+  alias api='nohup python -m rasa_core.run \
+    -u models/scheduler/nlu \
+    -d models/scheduler/dialogue \
+    --enable-api \
+    --endpoints $ENDPOINT \
+    --log_file $LOGFILE &'
+fi
+
 if [[ -z "${CHOICE}" ]] && [[ $RUNYN = 'y' ]]; then
   echo "Let's do this! (no training, running model)";
   # check training data exists
@@ -276,4 +297,4 @@ fi
 
 
 # No Dragons Beyond This Point.
-kill $!
+kill $BILL

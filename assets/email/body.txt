@@ -1,6 +1,6 @@
 {Name},<br>
 <br>
-Great talking to you today (to be clear you were talking to my assistant, not myself) and looking forward to our call, which we have planned for {Day}, {month_name} {ord} at {time_hour}:{time_minutes}.
+Great talking to you today (to be clear you were talking to my assistant, not myself) and looking forward to our call, which we have planned for {Day}, {month_name} {ord} at {time_hour}:{time_minutes} {ampm} EST. (If you are in a different time zone, you may need to adjust the time on the attached calendar invite.)
 <br>
 <br>
 If you have any materials you'd like to share prior to them, please reply to this email and include them. And feel free to reach out to my scheduling assistant if you need anything else.

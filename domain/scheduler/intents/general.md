@@ -66,6 +66,10 @@
 - sounds good
 - that sounds good
 - i would like that
+- yes thats right
+- yes that's right
+- yes that is correct
+- yes, that is correct
 
 ## intent:agree
 - agree

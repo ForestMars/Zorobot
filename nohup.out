@@ -14,3 +14,361 @@ run.py: error: unrecognized arguments: --enable-api
 2020-11-11 10:40:50 INFO     rasa_nlu.components  - Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
 2020-11-11 10:41:01 INFO     root  - Rasa Core server is up and running on http://localhost:5005
 Warning: Output is not a terminal (fd=1).
+usage: run.py [-h] -d CORE [-u NLU] [-p PORT] [--auth_token AUTH_TOKEN]
+              [--cors [CORS [CORS ...]]] [-o LOG_FILE]
+              [--credentials CREDENTIALS] [--endpoints ENDPOINTS]
+              [-c CONNECTOR] [--enable_api] [--jwt_secret JWT_SECRET]
+              [--jwt_method JWT_METHOD] [-v] [-vv] [--quiet]
+run.py: error: unrecognized arguments: --enable-api
+usage: run.py [-h] -d CORE [-u NLU] [-p PORT] [--auth_token AUTH_TOKEN]
+              [--cors [CORS [CORS ...]]] [-o LOG_FILE]
+              [--credentials CREDENTIALS] [--endpoints ENDPOINTS]
+              [-c CONNECTOR] [--enable_api] [--jwt_secret JWT_SECRET]
+              [--jwt_method JWT_METHOD] [-v] [-vv] [--quiet]
+run.py: error: unrecognized arguments: --enable-api
+2020-11-11 17:03:38 INFO     __main__  - Starting action endpoint server...
+2020-11-11 17:03:38 INFO     rasa_core_sdk.executor  - Registered function for 'action_nsfw'.
+2020-11-11 17:03:38 INFO     rasa_core_sdk.executor  - Registered function for 'action_reset_email'.
+2020-11-11 17:03:38 INFO     rasa_core_sdk.executor  - Registered function for 'action_check_date'.
+2020-11-11 17:03:38 INFO     rasa_core_sdk.executor  - Registered function for 'action_check_day'.
+2020-11-11 17:03:38 INFO     rasa_core_sdk.executor  - Registered function for 'action_check_time'.
+2020-11-11 17:03:38 INFO     rasa_core_sdk.executor  - Registered function for 'action_send_invite'.
+2020-11-11 17:03:38 INFO     rasa_core_sdk.executor  - Registered function for 'action_update_contacts'.
+2020-11-11 17:03:38 INFO     rasa_core_sdk.executor  - Registered function for 'action_repeat'.
+2020-11-11 17:03:38 INFO     rasa_core_sdk.executor  - Registered function for 'action_repeat_'.
+2020-11-11 17:03:38 INFO     rasa_core_sdk.executor  - Registered function for 'email_form'.
+2020-11-11 17:03:38 INFO     __main__  - Action endpoint is up and running. on ('0.0.0.0', 5055)
+usage: run.py [-h] -d CORE [-u NLU] [-p PORT] [--auth_token AUTH_TOKEN]
+              [--cors [CORS [CORS ...]]] [-o LOG_FILE]
+              [--credentials CREDENTIALS] [--endpoints ENDPOINTS]
+              [-c CONNECTOR] [--enable_api] [--jwt_secret JWT_SECRET]
+              [--jwt_method JWT_METHOD] [-v] [-vv] [--quiet]
+run.py: error: unrecognized arguments: --enable-api
+2020-11-11 17:04:22 INFO     __main__  - Starting action endpoint server...
+2020-11-11 17:04:22 INFO     rasa_core_sdk.executor  - Registered function for 'action_nsfw'.
+2020-11-11 17:04:22 INFO     rasa_core_sdk.executor  - Registered function for 'action_reset_email'.
+2020-11-11 17:04:22 INFO     rasa_core_sdk.executor  - Registered function for 'action_check_date'.
+2020-11-11 17:04:22 INFO     rasa_core_sdk.executor  - Registered function for 'action_check_day'.
+2020-11-11 17:04:22 INFO     rasa_core_sdk.executor  - Registered function for 'action_check_time'.
+2020-11-11 17:04:22 INFO     rasa_core_sdk.executor  - Registered function for 'action_send_invite'.
+2020-11-11 17:04:22 INFO     rasa_core_sdk.executor  - Registered function for 'action_update_contacts'.
+2020-11-11 17:04:22 INFO     rasa_core_sdk.executor  - Registered function for 'action_repeat'.
+2020-11-11 17:04:22 INFO     rasa_core_sdk.executor  - Registered function for 'action_repeat_'.
+2020-11-11 17:04:22 INFO     rasa_core_sdk.executor  - Registered function for 'email_form'.
+2020-11-11 17:04:22 INFO     __main__  - Action endpoint is up and running. on ('0.0.0.0', 5055)
+usage: run.py [-h] -d CORE [-u NLU] [-p PORT] [--auth_token AUTH_TOKEN]
+              [--cors [CORS [CORS ...]]] [-o LOG_FILE]
+              [--credentials CREDENTIALS] [--endpoints ENDPOINTS]
+              [-c CONNECTOR] [--enable_api] [--jwt_secret JWT_SECRET]
+              [--jwt_method JWT_METHOD] [-v] [-vv] [--quiet]
+run.py: error: unrecognized arguments: --enable-api
+2020-11-11 17:06:00 INFO     __main__  - Starting action endpoint server...
+2020-11-11 17:06:00 INFO     rasa_core_sdk.executor  - Registered function for 'action_nsfw'.
+2020-11-11 17:06:00 INFO     rasa_core_sdk.executor  - Registered function for 'action_reset_email'.
+2020-11-11 17:06:00 INFO     rasa_core_sdk.executor  - Registered function for 'action_check_date'.
+2020-11-11 17:06:00 INFO     rasa_core_sdk.executor  - Registered function for 'action_check_day'.
+2020-11-11 17:06:00 INFO     rasa_core_sdk.executor  - Registered function for 'action_check_time'.
+2020-11-11 17:06:00 INFO     rasa_core_sdk.executor  - Registered function for 'action_send_invite'.
+2020-11-11 17:06:00 INFO     rasa_core_sdk.executor  - Registered function for 'action_update_contacts'.
+2020-11-11 17:06:00 INFO     rasa_core_sdk.executor  - Registered function for 'action_repeat'.
+2020-11-11 17:06:00 INFO     rasa_core_sdk.executor  - Registered function for 'action_repeat_'.
+2020-11-11 17:06:00 INFO     rasa_core_sdk.executor  - Registered function for 'email_form'.
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core_sdk/endpoint.py", line 115, in <module>
+    http_server.start()
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/gevent/baseserver.py", line 305, in start
+    self.init_socket()
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/gevent/pywsgi.py", line 1490, in init_socket
+    StreamServer.init_socket(self)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/gevent/server.py", line 146, in init_socket
+    self.socket = self.get_listener(self.address, self.backlog, self.family)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/gevent/server.py", line 157, in get_listener
+    return _tcp_listener(address, backlog=backlog, reuse_addr=cls.reuse_addr, family=family)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/gevent/server.py", line 256, in _tcp_listener
+    sock.bind(address)
+OSError: [Errno 48] Address already in use: ('0.0.0.0', 5055)
+usage: run.py [-h] -d CORE [-u NLU] [-p PORT] [--auth_token AUTH_TOKEN]
+              [--cors [CORS [CORS ...]]] [-o LOG_FILE]
+              [--credentials CREDENTIALS] [--endpoints ENDPOINTS]
+              [-c CONNECTOR] [--enable_api] [--jwt_secret JWT_SECRET]
+              [--jwt_method JWT_METHOD] [-v] [-vv] [--quiet]
+run.py: error: unrecognized arguments: --enable-api
+2020-11-11 17:07:45 INFO     __main__  - Starting action endpoint server...
+2020-11-11 17:07:45 INFO     rasa_core_sdk.executor  - Registered function for 'action_nsfw'.
+2020-11-11 17:07:45 INFO     rasa_core_sdk.executor  - Registered function for 'action_reset_email'.
+2020-11-11 17:07:45 INFO     rasa_core_sdk.executor  - Registered function for 'action_check_date'.
+2020-11-11 17:07:45 INFO     rasa_core_sdk.executor  - Registered function for 'action_check_day'.
+2020-11-11 17:07:45 INFO     rasa_core_sdk.executor  - Registered function for 'action_check_time'.
+2020-11-11 17:07:45 INFO     rasa_core_sdk.executor  - Registered function for 'action_send_invite'.
+2020-11-11 17:07:45 INFO     rasa_core_sdk.executor  - Registered function for 'action_update_contacts'.
+2020-11-11 17:07:45 INFO     rasa_core_sdk.executor  - Registered function for 'action_repeat'.
+2020-11-11 17:07:45 INFO     rasa_core_sdk.executor  - Registered function for 'action_repeat_'.
+2020-11-11 17:07:45 INFO     rasa_core_sdk.executor  - Registered function for 'email_form'.
+2020-11-11 17:07:45 INFO     __main__  - Action endpoint is up and running. on ('0.0.0.0', 5055)
+usage: run.py [-h] -d CORE [-u NLU] [-p PORT] [--auth_token AUTH_TOKEN]
+              [--cors [CORS [CORS ...]]] [-o LOG_FILE]
+              [--credentials CREDENTIALS] [--endpoints ENDPOINTS]
+              [-c CONNECTOR] [--enable_api] [--jwt_secret JWT_SECRET]
+              [--jwt_method JWT_METHOD] [-v] [-vv] [--quiet]
+run.py: error: unrecognized arguments: --enable-api
+2020-11-11 17:10:57 INFO     __main__  - Starting action endpoint server...
+2020-11-11 17:10:57 INFO     rasa_core_sdk.executor  - Registered function for 'action_nsfw'.
+2020-11-11 17:10:57 INFO     rasa_core_sdk.executor  - Registered function for 'action_reset_email'.
+2020-11-11 17:10:57 INFO     rasa_core_sdk.executor  - Registered function for 'action_check_date'.
+2020-11-11 17:10:57 INFO     rasa_core_sdk.executor  - Registered function for 'action_check_day'.
+2020-11-11 17:10:57 INFO     rasa_core_sdk.executor  - Registered function for 'action_check_time'.
+2020-11-11 17:10:57 INFO     rasa_core_sdk.executor  - Registered function for 'action_send_invite'.
+2020-11-11 17:10:57 INFO     rasa_core_sdk.executor  - Registered function for 'action_update_contacts'.
+2020-11-11 17:10:57 INFO     rasa_core_sdk.executor  - Registered function for 'action_repeat'.
+2020-11-11 17:10:57 INFO     rasa_core_sdk.executor  - Registered function for 'action_repeat_'.
+2020-11-11 17:10:57 INFO     rasa_core_sdk.executor  - Registered function for 'email_form'.
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core_sdk/endpoint.py", line 115, in <module>
+    http_server.start()
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/gevent/baseserver.py", line 305, in start
+    self.init_socket()
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/gevent/pywsgi.py", line 1490, in init_socket
+    StreamServer.init_socket(self)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/gevent/server.py", line 146, in init_socket
+    self.socket = self.get_listener(self.address, self.backlog, self.family)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/gevent/server.py", line 157, in get_listener
+    return _tcp_listener(address, backlog=backlog, reuse_addr=cls.reuse_addr, family=family)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/gevent/server.py", line 256, in _tcp_listener
+    sock.bind(address)
+OSError: [Errno 48] Address already in use: ('0.0.0.0', 5055)
+usage: run.py [-h] -d CORE [-u NLU] [-p PORT] [--auth_token AUTH_TOKEN]
+              [--cors [CORS [CORS ...]]] [-o LOG_FILE]
+              [--credentials CREDENTIALS] [--endpoints ENDPOINTS]
+              [-c CONNECTOR] [--enable_api] [--jwt_secret JWT_SECRET]
+              [--jwt_method JWT_METHOD] [-v] [-vv] [--quiet]
+run.py: error: unrecognized arguments: --enable-api
+2020-11-11 17:11:18 INFO     __main__  - Starting action endpoint server...
+2020-11-11 17:11:18 INFO     rasa_core_sdk.executor  - Registered function for 'action_nsfw'.
+2020-11-11 17:11:18 INFO     rasa_core_sdk.executor  - Registered function for 'action_reset_email'.
+2020-11-11 17:11:18 INFO     rasa_core_sdk.executor  - Registered function for 'action_check_date'.
+2020-11-11 17:11:18 INFO     rasa_core_sdk.executor  - Registered function for 'action_check_day'.
+2020-11-11 17:11:18 INFO     rasa_core_sdk.executor  - Registered function for 'action_check_time'.
+2020-11-11 17:11:18 INFO     rasa_core_sdk.executor  - Registered function for 'action_send_invite'.
+2020-11-11 17:11:18 INFO     rasa_core_sdk.executor  - Registered function for 'action_update_contacts'.
+2020-11-11 17:11:18 INFO     rasa_core_sdk.executor  - Registered function for 'action_repeat'.
+2020-11-11 17:11:18 INFO     rasa_core_sdk.executor  - Registered function for 'action_repeat_'.
+2020-11-11 17:11:18 INFO     rasa_core_sdk.executor  - Registered function for 'email_form'.
+2020-11-11 17:11:18 INFO     __main__  - Action endpoint is up and running. on ('0.0.0.0', 5055)
+usage: run.py [-h] -d CORE [-u NLU] [-p PORT] [--auth_token AUTH_TOKEN]
+              [--cors [CORS [CORS ...]]] [-o LOG_FILE]
+              [--credentials CREDENTIALS] [--endpoints ENDPOINTS]
+              [-c CONNECTOR] [--enable_api] [--jwt_secret JWT_SECRET]
+              [--jwt_method JWT_METHOD] [-v] [-vv] [--quiet]
+run.py: error: unrecognized arguments: --enable-api
+usage: run.py [-h] -d CORE [-u NLU] [-p PORT] [--auth_token AUTH_TOKEN]
+              [--cors [CORS [CORS ...]]] [-o LOG_FILE]
+              [--credentials CREDENTIALS] [--endpoints ENDPOINTS]
+              [-c CONNECTOR] [--enable_api] [--jwt_secret JWT_SECRET]
+              [--jwt_method JWT_METHOD] [-v] [-vv] [--quiet]
+run.py: error: unrecognized arguments: --enable-api
+usage: run.py [-h] -d CORE [-u NLU] [-p PORT] [--auth_token AUTH_TOKEN]
+              [--cors [CORS [CORS ...]]] [-o LOG_FILE]
+              [--credentials CREDENTIALS] [--endpoints ENDPOINTS]
+              [-c CONNECTOR] [--enable_api] [--jwt_secret JWT_SECRET]
+              [--jwt_method JWT_METHOD] [-v] [-vv] [--quiet]
+run.py: error: unrecognized arguments: --enable-api
+usage: run.py [-h] -d CORE [-u NLU] [-p PORT] [--auth_token AUTH_TOKEN]
+              [--cors [CORS [CORS ...]]] [-o LOG_FILE]
+              [--credentials CREDENTIALS] [--endpoints ENDPOINTS]
+              [-c CONNECTOR] [--enable_api] [--jwt_secret JWT_SECRET]
+              [--jwt_method JWT_METHOD] [-v] [-vv] [--quiet]
+run.py: error: unrecognized arguments: --enable-api
+2020-11-11 17:18:03 INFO     root  - Rasa process starting
+2020-11-11 17:18:04 INFO     rasa_nlu.components  - Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+2020-11-11 17:18:14 INFO     root  - Rasa Core server is up and running on http://localhost:5005
+Warning: Output is not a terminal (fd=1).
+Warning: Input is not a terminal (fd=0).
+2020-11-11 17:20:31 INFO     root  - Rasa process starting
+2020-11-11 17:20:32 INFO     rasa_nlu.components  - Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+2020-11-11 17:20:42 INFO     root  - Rasa Core server is up and running on http://localhost:5005
+Warning: Output is not a terminal (fd=1).
+Warning: Input is not a terminal (fd=0).
+2020-11-11 17:21:39 INFO     __main__  - Starting action endpoint server...
+2020-11-11 17:21:39 INFO     rasa_core_sdk.executor  - Registered function for 'action_nsfw'.
+2020-11-11 17:21:39 INFO     rasa_core_sdk.executor  - Registered function for 'action_reset_email'.
+2020-11-11 17:21:39 INFO     rasa_core_sdk.executor  - Registered function for 'action_check_date'.
+2020-11-11 17:21:39 INFO     rasa_core_sdk.executor  - Registered function for 'action_check_day'.
+2020-11-11 17:21:39 INFO     rasa_core_sdk.executor  - Registered function for 'action_check_time'.
+2020-11-11 17:21:39 INFO     rasa_core_sdk.executor  - Registered function for 'action_send_invite'.
+2020-11-11 17:21:39 INFO     rasa_core_sdk.executor  - Registered function for 'action_update_contacts'.
+2020-11-11 17:21:39 INFO     rasa_core_sdk.executor  - Registered function for 'action_repeat'.
+2020-11-11 17:21:39 INFO     rasa_core_sdk.executor  - Registered function for 'action_repeat_'.
+2020-11-11 17:21:39 INFO     rasa_core_sdk.executor  - Registered function for 'email_form'.
+2020-11-11 17:21:39 INFO     __main__  - Action endpoint is up and running. on ('0.0.0.0', 5055)
+2020-11-11 17:21:43 INFO     root  - Rasa process starting
+2020-11-11 17:21:44 INFO     rasa_nlu.components  - Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+2020-11-11 17:21:54 INFO     root  - Rasa Core server is up and running on http://localhost:5005
+Warning: Output is not a terminal (fd=1).
+Warning: Input is not a terminal (fd=0).
+2020-11-11 17:22:40 INFO     __main__  - Starting action endpoint server...
+2020-11-11 17:22:40 INFO     rasa_core_sdk.executor  - Registered function for 'action_nsfw'.
+2020-11-11 17:22:40 INFO     rasa_core_sdk.executor  - Registered function for 'action_reset_email'.
+2020-11-11 17:22:40 INFO     rasa_core_sdk.executor  - Registered function for 'action_check_date'.
+2020-11-11 17:22:40 INFO     rasa_core_sdk.executor  - Registered function for 'action_check_day'.
+2020-11-11 17:22:40 INFO     rasa_core_sdk.executor  - Registered function for 'action_check_time'.
+2020-11-11 17:22:40 INFO     rasa_core_sdk.executor  - Registered function for 'action_send_invite'.
+2020-11-11 17:22:40 INFO     rasa_core_sdk.executor  - Registered function for 'action_update_contacts'.
+2020-11-11 17:22:40 INFO     rasa_core_sdk.executor  - Registered function for 'action_repeat'.
+2020-11-11 17:22:40 INFO     rasa_core_sdk.executor  - Registered function for 'action_repeat_'.
+2020-11-11 17:22:40 INFO     rasa_core_sdk.executor  - Registered function for 'email_form'.
+2020-11-11 17:22:40 INFO     __main__  - Action endpoint is up and running. on ('0.0.0.0', 5055)
+2020-11-11 17:22:44 INFO     root  - Rasa process starting
+2020-11-11 17:22:45 INFO     rasa_nlu.components  - Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+2020-11-11 17:22:55 INFO     root  - Rasa Core server is up and running on http://localhost:5005
+Warning: Output is not a terminal (fd=1).
+Warning: Input is not a terminal (fd=0).
+2020-11-11 17:23:14 INFO     __main__  - Starting action endpoint server...
+2020-11-11 17:23:14 INFO     rasa_core_sdk.executor  - Registered function for 'action_nsfw'.
+2020-11-11 17:23:14 INFO     rasa_core_sdk.executor  - Registered function for 'action_reset_email'.
+2020-11-11 17:23:14 INFO     rasa_core_sdk.executor  - Registered function for 'action_check_date'.
+2020-11-11 17:23:14 INFO     rasa_core_sdk.executor  - Registered function for 'action_check_day'.
+2020-11-11 17:23:14 INFO     rasa_core_sdk.executor  - Registered function for 'action_check_time'.
+2020-11-11 17:23:14 INFO     rasa_core_sdk.executor  - Registered function for 'action_send_invite'.
+2020-11-11 17:23:14 INFO     rasa_core_sdk.executor  - Registered function for 'action_update_contacts'.
+2020-11-11 17:23:14 INFO     rasa_core_sdk.executor  - Registered function for 'action_repeat'.
+2020-11-11 17:23:14 INFO     rasa_core_sdk.executor  - Registered function for 'action_repeat_'.
+2020-11-11 17:23:14 INFO     rasa_core_sdk.executor  - Registered function for 'email_form'.
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core_sdk/endpoint.py", line 115, in <module>
+    http_server.start()
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/gevent/baseserver.py", line 305, in start
+    self.init_socket()
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/gevent/pywsgi.py", line 1490, in init_socket
+    StreamServer.init_socket(self)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/gevent/server.py", line 146, in init_socket
+    self.socket = self.get_listener(self.address, self.backlog, self.family)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/gevent/server.py", line 157, in get_listener
+    return _tcp_listener(address, backlog=backlog, reuse_addr=cls.reuse_addr, family=family)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/gevent/server.py", line 256, in _tcp_listener
+    sock.bind(address)
+OSError: [Errno 48] Address already in use: ('0.0.0.0', 5055)
+2020-11-11 17:23:18 INFO     root  - Rasa process starting
+2020-11-11 17:23:19 INFO     rasa_nlu.components  - Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+2020-11-11 17:23:29 INFO     root  - Rasa Core server is up and running on http://localhost:5005
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/run.py", line 260, in <module>
+    cmdline_args.jwt_method)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/run.py", line 194, in serve_application
+    jwt_secret, jwt_method)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/run.py", line 173, in start_server
+    http_server.start()
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/gevent/baseserver.py", line 305, in start
+    self.init_socket()
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/gevent/pywsgi.py", line 1490, in init_socket
+    StreamServer.init_socket(self)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/gevent/server.py", line 146, in init_socket
+    self.socket = self.get_listener(self.address, self.backlog, self.family)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/gevent/server.py", line 157, in get_listener
+    return _tcp_listener(address, backlog=backlog, reuse_addr=cls.reuse_addr, family=family)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/gevent/server.py", line 256, in _tcp_listener
+    sock.bind(address)
+OSError: [Errno 48] Address already in use: ('0.0.0.0', 5005)
+2020-11-11 17:27:16 INFO     __main__  - Starting action endpoint server...
+2020-11-11 17:27:16 INFO     rasa_core_sdk.executor  - Registered function for 'action_nsfw'.
+2020-11-11 17:27:16 INFO     rasa_core_sdk.executor  - Registered function for 'action_reset_email'.
+2020-11-11 17:27:16 INFO     rasa_core_sdk.executor  - Registered function for 'action_check_date'.
+2020-11-11 17:27:16 INFO     rasa_core_sdk.executor  - Registered function for 'action_check_day'.
+2020-11-11 17:27:16 INFO     rasa_core_sdk.executor  - Registered function for 'action_check_time'.
+2020-11-11 17:27:16 INFO     rasa_core_sdk.executor  - Registered function for 'action_send_invite'.
+2020-11-11 17:27:16 INFO     rasa_core_sdk.executor  - Registered function for 'action_update_contacts'.
+2020-11-11 17:27:16 INFO     rasa_core_sdk.executor  - Registered function for 'action_repeat'.
+2020-11-11 17:27:16 INFO     rasa_core_sdk.executor  - Registered function for 'action_repeat_'.
+2020-11-11 17:27:16 INFO     rasa_core_sdk.executor  - Registered function for 'email_form'.
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core_sdk/endpoint.py", line 115, in <module>
+    http_server.start()
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/gevent/baseserver.py", line 305, in start
+    self.init_socket()
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/gevent/pywsgi.py", line 1490, in init_socket
+    StreamServer.init_socket(self)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/gevent/server.py", line 146, in init_socket
+    self.socket = self.get_listener(self.address, self.backlog, self.family)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/gevent/server.py", line 157, in get_listener
+    return _tcp_listener(address, backlog=backlog, reuse_addr=cls.reuse_addr, family=family)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/gevent/server.py", line 256, in _tcp_listener
+    sock.bind(address)
+OSError: [Errno 48] Address already in use: ('0.0.0.0', 5055)
+2020-11-11 17:27:20 INFO     root  - Rasa process starting
+2020-11-11 17:27:21 INFO     rasa_nlu.components  - Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+2020-11-11 17:27:31 INFO     root  - Rasa Core server is up and running on http://localhost:5005
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/run.py", line 260, in <module>
+    cmdline_args.jwt_method)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/run.py", line 194, in serve_application
+    jwt_secret, jwt_method)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/run.py", line 173, in start_server
+    http_server.start()
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/gevent/baseserver.py", line 305, in start
+    self.init_socket()
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/gevent/pywsgi.py", line 1490, in init_socket
+    StreamServer.init_socket(self)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/gevent/server.py", line 146, in init_socket
+    self.socket = self.get_listener(self.address, self.backlog, self.family)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/gevent/server.py", line 157, in get_listener
+    return _tcp_listener(address, backlog=backlog, reuse_addr=cls.reuse_addr, family=family)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/gevent/server.py", line 256, in _tcp_listener
+    sock.bind(address)
+OSError: [Errno 48] Address already in use: ('0.0.0.0', 5005)
+2020-11-11 17:29:43 INFO     __main__  - Starting action endpoint server...
+2020-11-11 17:29:43 INFO     rasa_core_sdk.executor  - Registered function for 'action_nsfw'.
+2020-11-11 17:29:43 INFO     rasa_core_sdk.executor  - Registered function for 'action_reset_email'.
+2020-11-11 17:29:43 INFO     rasa_core_sdk.executor  - Registered function for 'action_check_date'.
+2020-11-11 17:29:43 INFO     rasa_core_sdk.executor  - Registered function for 'action_check_day'.
+2020-11-11 17:29:43 INFO     rasa_core_sdk.executor  - Registered function for 'action_check_time'.
+2020-11-11 17:29:43 INFO     rasa_core_sdk.executor  - Registered function for 'action_send_invite'.
+2020-11-11 17:29:43 INFO     rasa_core_sdk.executor  - Registered function for 'action_update_contacts'.
+2020-11-11 17:29:43 INFO     rasa_core_sdk.executor  - Registered function for 'action_repeat'.
+2020-11-11 17:29:43 INFO     rasa_core_sdk.executor  - Registered function for 'action_repeat_'.
+2020-11-11 17:29:43 INFO     rasa_core_sdk.executor  - Registered function for 'email_form'.
+2020-11-11 17:29:43 INFO     __main__  - Action endpoint is up and running. on ('0.0.0.0', 5055)
+2020-11-11 17:29:47 INFO     root  - Rasa process starting
+2020-11-11 17:29:48 INFO     rasa_nlu.components  - Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+2020-11-11 17:29:58 INFO     root  - Rasa Core server is up and running on http://localhost:5005
+Warning: Output is not a terminal (fd=1).
+Warning: Input is not a terminal (fd=0).
+2020-11-11 17:36:01 INFO     __main__  - Starting action endpoint server...
+2020-11-11 17:36:01 INFO     rasa_core_sdk.executor  - Registered function for 'action_nsfw'.
+2020-11-11 17:36:01 INFO     rasa_core_sdk.executor  - Registered function for 'action_reset_email'.
+2020-11-11 17:36:01 INFO     rasa_core_sdk.executor  - Registered function for 'action_check_date'.
+2020-11-11 17:36:01 INFO     rasa_core_sdk.executor  - Registered function for 'action_check_day'.
+2020-11-11 17:36:01 INFO     rasa_core_sdk.executor  - Registered function for 'action_check_time'.
+2020-11-11 17:36:01 INFO     rasa_core_sdk.executor  - Registered function for 'action_send_invite'.
+2020-11-11 17:36:01 INFO     rasa_core_sdk.executor  - Registered function for 'action_update_contacts'.
+2020-11-11 17:36:01 INFO     rasa_core_sdk.executor  - Registered function for 'action_repeat'.
+2020-11-11 17:36:01 INFO     rasa_core_sdk.executor  - Registered function for 'action_repeat_'.
+2020-11-11 17:36:01 INFO     rasa_core_sdk.executor  - Registered function for 'email_form'.
+2020-11-11 17:36:01 INFO     __main__  - Action endpoint is up and running. on ('0.0.0.0', 5055)
+2020-11-11 17:36:05 INFO     root  - Rasa process starting
+2020-11-11 17:36:06 INFO     rasa_nlu.components  - Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+2020-11-11 17:36:15 INFO     root  - Rasa Core server is up and running on http://localhost:5005
+Warning: Output is not a terminal (fd=1).
+Warning: Input is not a terminal (fd=0).

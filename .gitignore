@@ -138,3 +138,9 @@ cython_debug/
 
 # tar -X 
 .git
+
+# kill bill
+config/bill.pid
+config/budd.pid
+
+

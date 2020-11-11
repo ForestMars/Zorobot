@@ -235,9 +235,9 @@ class ActionCheckTime(Action):
             when['day'] = tracker.get_slot('day_of_month')
         when['time_hour'] = hr
         when['time_minutes'] = min
-        if tracker.get_slot('time_am_pm') is not None:
-            when['am_pm'] = tracker.get_slot('time_am_pm')
-        elif ampm is not None:
+        #if tracker.get_slot('time_am_pm') is not None:
+        #    when['am_pm'] = tracker.get_slot('time_am_pm')
+        if ampm is not None:
             when['am_pm'] = ampm  # ?
 
         confirm, message = sch.check_time_avail(when)
@@ -279,14 +279,18 @@ class ActionSendInvite(Action):  # Action Invite
             call['month_no'] = kr.get_int_from_month_name(
                 tracker.get_slot('date_month'))
         if tracker.get_slot('time_am_pm') is not None:
-            call['ampm'] = tracker.get_slot('time_am_pm'),
+            #input(tracker.get_slot('time_am_pm'))
+            call['ampm'] = tracker.get_slot('time_am_pm')
+            #input(tracker.get_slot('time_am_pm'))
         elif call['hour'] in range(1, 6):
+            print('no')
             call['ampm'] = 'pm'
         elif call['hour'] in range(7, 12):
+            print('nono')
             call['ampm'] = 'am'
         else:
             call['ampm'] = ' '
-
+        #input(call['ampm'])
         # Th ole off by double zero problem.
         if call['mins'] == '0':
             call['mins'] == '00'  # @FIXME: No longer needed.

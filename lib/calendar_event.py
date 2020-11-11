@@ -61,7 +61,7 @@ class CalendarInvite():
 
         body_tmpl = open('assets/email/body.txt', 'r')
         #email_body = call['body']
-        self.data = {"Name": call['who'], "Day": call['weekday'], "month_name": call['month_name'], "day": call['day'], "ord": call['ord'], "time_hour": call['hour'], "time_minutes": call['mins']} # @FIXME
+        self.data = {"Name": call['who'], "Day": call['weekday'], "month_name": call['month_name'], "day": call['day'], "ord": call['ord'], "time_hour": call['hour'], "time_minutes": call['mins'], "ampm": call['ampm']} # @FIXME
         email_body = body_tmpl.read().format(**self.data)
         body_bin = "This is the email body in binary - two steps"
 

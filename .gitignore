@@ -10,6 +10,7 @@ env/*
 build/src
 build/setup.py
 logs/*
+nohup.out
 screenshots
 xyz
 

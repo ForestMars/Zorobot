@@ -38,6 +38,8 @@
 ## schedule call
 * schedule_call OR ask_availability OR following_up
   - utter_ask_who
+* thisis
+  - utter_ask_day
 
 ## who and time
 * thisis

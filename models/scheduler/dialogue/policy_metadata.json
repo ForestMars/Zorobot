@@ -35,13 +35,13 @@
     "utter_ask_time_day": {
       "slots": []
     },
-    "utter_ask_who": {
-      "slots": []
-    },
     "utter_ask_date": {
       "slots": []
     },
     "utter_confirm_best_email": {
+      "slots": []
+    },
+    "utter_ask_who": {
       "slots": []
     },
     "utter_ask_schedule_call": {
@@ -50,10 +50,10 @@
     "utter_soami": {
       "slots": []
     },
-    "utter_ask_time_date": {
+    "action_restart": {
       "slots": []
     },
-    "action_restart": {
+    "utter_ask_time_date": {
       "slots": []
     }
   },
@@ -69,7 +69,7 @@
     "rasa_core.policies.memoization.MemoizationPolicy",
     "rasa_core.policies.form_policy.FormPolicy"
   ],
-  "trained_at": "20201109-235039",
+  "trained_at": "20201111-184608",
   "rasa_core": "0.13.8",
   "tensorflow": "1.12.0",
   "sklearn": "0.20.2"

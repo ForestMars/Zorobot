@@ -18,6 +18,23 @@
 - i would like to set up a call
 - can we set up a call
 - are we able to set up a call
+- id like to book a call
+- can we book a call
+- can you book a call
+- can you book a call for me
+- can you set up a call for me
+- lets set up a call
+- we should set up a call
+- are you able to set up a call
+- when is a good time for us to book a call
+- i would like to book a call
+- would like to book a call
+- would like to book a call please
+- hi would like to book a call please
+- hi would like to book a call with forest please
+- hi would like to book a call with forest
+- would like to book a call with forest please
+- would like to book a call with forest
 
 ## intent:ask_availability
 - do you have time for a call

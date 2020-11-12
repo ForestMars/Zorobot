@@ -10048,6 +10048,22 @@
         "text": "i would like that"
       },
       {
+        "intent": "affirm",
+        "text": "yes thats right"
+      },
+      {
+        "intent": "affirm",
+        "text": "yes that's right"
+      },
+      {
+        "intent": "affirm",
+        "text": "yes that is correct"
+      },
+      {
+        "intent": "affirm",
+        "text": "yes, that is correct"
+      },
+      {
         "intent": "agree",
         "text": "agree"
       },
@@ -15078,6 +15094,74 @@
         "text": "are we able to set up a call"
       },
       {
+        "intent": "schedule_call",
+        "text": "id like to book a call"
+      },
+      {
+        "intent": "schedule_call",
+        "text": "can we book a call"
+      },
+      {
+        "intent": "schedule_call",
+        "text": "can you book a call"
+      },
+      {
+        "intent": "schedule_call",
+        "text": "can you book a call for me"
+      },
+      {
+        "intent": "schedule_call",
+        "text": "can you set up a call for me"
+      },
+      {
+        "intent": "schedule_call",
+        "text": "lets set up a call"
+      },
+      {
+        "intent": "schedule_call",
+        "text": "we should set up a call"
+      },
+      {
+        "intent": "schedule_call",
+        "text": "are you able to set up a call"
+      },
+      {
+        "intent": "schedule_call",
+        "text": "when is a good time for us to book a call"
+      },
+      {
+        "intent": "schedule_call",
+        "text": "i would like to book a call"
+      },
+      {
+        "intent": "schedule_call",
+        "text": "would like to book a call"
+      },
+      {
+        "intent": "schedule_call",
+        "text": "would like to book a call please"
+      },
+      {
+        "intent": "schedule_call",
+        "text": "hi would like to book a call please"
+      },
+      {
+        "intent": "schedule_call",
+        "text": "hi would like to book a call with forest please"
+      },
+      {
+        "intent": "schedule_call",
+        "text": "hi would like to book a call with forest"
+      },
+      {
+        "intent": "schedule_call",
+        "text": "would like to book a call with forest please"
+      },
+      {
+        "intent": "schedule_call",
+        "text": "would like to book a call with forest"
+      },
+      {
         "intent": "ask_availability",
         "text": "do you have time for a call"
       },
@@ -19494,6 +19578,26 @@
       {
         "intent": "remember_me",
         "text": "as you may recall we were talking"
+      },
+      {
+        "intent": "get_my_email",
+        "text": "i sent you an email"
+      },
+      {
+        "intent": "get_my_email",
+        "text": "did you get my email"
+      },
+      {
+        "intent": "get_my_email",
+        "text": "did you get the email i sent you"
+      },
+      {
+        "intent": "get_my_email",
+        "text": "did you have a chance to read my email"
+      },
+      {
+        "intent": "get_my_email",
+        "text": "sent an email your way"
       },
       {
         "intent": "heard_you_are_hiring",
@@ -25422,12 +25526,36 @@
         "entities": [
           {
             "start": 0,
+            "end": 6,
+            "value": "cassie",
+            "entity": "Nou"
+          }
+        ],
+        "text": "cassie"
+      },
+      {
+        "intent": "bare_names",
+        "entities": [
+          {
+            "start": 0,
             "end": 7,
             "value": "chaewon",
             "entity": "Nou"
           }
         ],
         "text": "chaewon"
+      },
+      {
+        "intent": "bare_names",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "craig",
+            "entity": "Nou"
+          }
+        ],
+        "text": "craig"
       },
       {
         "intent": "bare_names",
@@ -25476,6 +25604,18 @@
           }
         ],
         "text": "hal"
+      },
+      {
+        "intent": "bare_names",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "holly",
+            "entity": "Nou"
+          }
+        ],
+        "text": "holly"
       }
     ],
     "regex_features": [],

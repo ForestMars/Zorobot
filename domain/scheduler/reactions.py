@@ -14,11 +14,11 @@ from rasa_core_sdk.forms import FormAction
 
 
 try:
-    from lib.c import kronos as kr
+    from lib.ext import kronos as kr
 except ImportError:
     from build.src import kronos as kr
 try:
-    import lib.c.scheduler as sch
+    import lib.ext.scheduler as sch
 except ImportError:
     import build.src.scheduler as sch
 # Explain yourself.
@@ -180,7 +180,7 @@ class ActionCheckDay(Action):
         when['Day'] = day_clean.capitalize()  # not used
         month_name = kr.get_month_abbr_from_num(ymd[1])
         when['month_name'] = month_name
-        print(month_name)
+
 
         slots.append(SlotSet('month_name', month_name))
         slots.append(SlotSet('date_month', ymd[1]))
@@ -283,10 +283,8 @@ class ActionSendInvite(Action):  # Action Invite
             call['ampm'] = tracker.get_slot('time_am_pm')
             #input(tracker.get_slot('time_am_pm'))
         elif call['hour'] in range(1, 6):
-            print('no')
             call['ampm'] = 'pm'
         elif call['hour'] in range(7, 12):
-            print('nono')
             call['ampm'] = 'am'
         else:
             call['ampm'] = ' '

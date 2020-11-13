@@ -439,6 +439,8 @@
 - [cassie](Nou)
 - [chaewon](Nou)
 - [craig](Nou)
+- [eliot](Nou)
+- [eliott](Nou)
 - [kyle](Nou)
 - [mika](Nou)
 - [will](Nou)

@@ -5,6 +5,7 @@ __version__ = '0.1'
 import os
 import csv
 
+# please remove this, it is not needed in the Python3 version. 
 try:
     import cPickle as pickle
 except ImportError:

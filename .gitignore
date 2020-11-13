@@ -2,6 +2,7 @@
 .env
 env
 env/*
+!env/.keep
 
 # Models are built for target architecture.
 # models/*
@@ -10,6 +11,7 @@ env/*
 build/src
 build/setup.py
 logs/*
+!logs/.keep
 nohup.out
 screenshots
 xyz

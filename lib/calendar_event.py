@@ -44,6 +44,7 @@ class CalendarInvite():
         dur = datetime.timedelta(hours = 1)
         #ddtstart = ddtstart +dtoff
         ddtstart = call['datetime']
+        ddtstart = ddtstart + datetime.timedelta(hours=5)
         dtend = ddtstart + dur
         dtstamp = datetime.datetime.now().strftime("%Y%m%dT%H%M%SZ")
         dtstart = ddtstart.strftime("%Y%m%dT%H%M%SZ")
@@ -57,7 +58,7 @@ class CalendarInvite():
         ical+="METHOD:REQUEST"+CRLF+"BEGIN:VEVENT"+CRLF+"DTSTART:"+dtstart+CRLF+"DTEND:"+dtend+CRLF+"DTSTAMP:"+dtstamp+CRLF+organizer+CRLF
         ical+= "UID:FIXMEUID"+dtstamp+CRLF
         ical+= attendee+"CREATED:"+dtstamp+CRLF+description+"LAST-MODIFIED:"+dtstamp+CRLF+"LOCATION:"+CRLF+"SEQUENCE:0"+CRLF+"STATUS:CONFIRMED"+CRLF
-        ical+= "SUMMARY:test "+ddtstart.strftime("%Y%m%d @ %H:%M")+CRLF+"TRANSP:OPAQUE"+CRLF+"END:VEVENT"+CRLF+"END:VCALENDAR"+CRLF
+        ical+= "SUMMARY:Call with Forest Mars: "+ddtstart.strftime("%b %d %Y @ %H:%M")+CRLF+"TRANSP:OPAQUE"+CRLF+"END:VEVENT"+CRLF+"END:VCALENDAR"+CRLF
 
         body_tmpl = open('assets/email/body.txt', 'r')
         #email_body = call['body']

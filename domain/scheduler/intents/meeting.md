@@ -68,6 +68,9 @@
 - hi [forest](forest) i received your email. whats a good time for a call
 
 ## intent:time_of_day
+- [morning](TOD)
+- [afternoon](TOD)
+- [evening](TOD)
 - how about [morning](TOD)
 - hows [morning](TOD) look
 - hows your [morning](TOD) look?
@@ -686,3 +689,14 @@
 - hiya forest
 - good morning forest
 - good afternoon forest
+
+## intent:whats_none
+- none?  
+- none none?
+- whats none
+- what is none
+- whats none none
+- what is none none
+- whats (None None)
+- what is (None None)
+- huh? none?

@@ -157,6 +157,28 @@
 * thanks OR thx
   - utter_np
 
+## suggest time of day - pick time + yes
+* suggest_day OR when
+  - action_check_day
+  - utter_ask_time_day
+* time_of_day
+  - utter_ask_specific_time
+* suggest_time
+  - action_check_time
+  - utter_heres_my_number
+  - email_form
+  - form{"name": "email_form"}
+  - form{"name": null}
+  - utter_confirm_best_email
+* affirm OR thanks
+  - utter_shall_we_confirm  
+* affirm OR thanks
+  - action_send_invite
+* affirm OR ok
+  - utter_looking_forward
+* bye
+  - utter_bye
+
 ## suggest date/time - "happy" path + thx BUT with email correction
 * suggest_date
   - action_check_date
@@ -428,6 +450,10 @@
 * metoo
   - action_listen
 
+## sorrow
+* sorry
+  - utter_no_worries
+
 ## thanks
 * thanks
   - utter_np
@@ -444,3 +470,7 @@
 ## empty response (not supported)
 * None
   - action_listen
+
+## whats none
+* whats_none
+  - utter_none_of_your_business

@@ -11,6 +11,8 @@
 
 ## intent:greet
 - hello
+- helloworld
+- hello world
 - hey
 - hey there
 - heya
@@ -35,6 +37,7 @@
 - is this forest
 - is this zoro
 - yo
+- word up
 
 ## intent:affirm
 - Y

@@ -361,6 +361,7 @@ actions:
 - utter_ask_for_phone_number
 - utter_ask_email
 - utter_ask_who
+- utter_ask_specific_time
 - utter_affirm_day
 - utter_affirm_time
 - utter_confirm_best_email
@@ -408,6 +409,7 @@ actions:
 - utter_restart
 - utter_familiar
 - utter_corona_bot
+- utter_none_of_your_business
 
 templates:
   utter_default:
@@ -440,7 +442,6 @@ templates:
   - text: You're welcome
   - text: You're very welcome
   - text: No problem.
-  - text: No worries!
 
 # Super
   utter_awesome:
@@ -689,6 +690,8 @@ templates:
   - text: Ok great {Nou}, Shall we confirm for {Day}, {month_name} {day_ordinal} at {time_hour}:{time_minutes}?
   utter_ask_who:
   - text: Who is this please?
+  utter_ask_specific_time:
+  - text: Ok, {TOD} sounds good. What's a specific time you can do a call?
   utter_camus:
   - text: It has been quite the year. I did find some time to re-read the Camus novel.
   utter_confirm_phone_number:
@@ -796,3 +799,5 @@ templates:
   - text: Ok, starting over.
   utter_corona_bot:
   - text: Please text any Covid related questions to the Corona Data Natural Language Server at {corona_bot}. \n You can also visit http://coda.to for pandemic data visualizations and epidemiological modeling.
+  utter_none_of_your_business:
+  - text: None of your business, LOL. \n It probably means I need to run an update. Thanks for telling me, I will run my self-diagnostics.

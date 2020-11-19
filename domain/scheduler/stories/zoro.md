@@ -1,3 +1,7 @@
+## zoro
+* zoro
+  - utter_greet
+
 ## good dog
 * zoro_who
   - utter_intro_dog

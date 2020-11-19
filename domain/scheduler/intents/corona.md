@@ -55,3 +55,7 @@
 - do you mean the plague
 - you mean the plague
 - did you enjoy it
+
+## intent:mask
+- wearing mask
+- wearing a mask

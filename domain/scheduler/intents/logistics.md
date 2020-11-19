@@ -98,7 +98,7 @@
 - im here in [woodstock](FromLocation)
 - im still in [chautuaqua](FromLocation)
 - im currently in [brooklyn](FromLocation)
-- im currently way up north in [canaan](FromLocation
+- im currently way up north in [canaan](FromLocation)
 - thats because im in [belcamp](FromLocation)
 - in [nyc](FromLocation) briefly
 - i escaped the city and am in the middle of nowhere

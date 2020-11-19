@@ -33,6 +33,7 @@ entities:
   - TOD
   - email
   - person
+  - activity
   - accepting_resumes
   - are_you_hiring
   - open_roles
@@ -40,6 +41,11 @@ entities:
 
 # (Capitalized slots from user, snake_case slots from app.)
 slots:
+  activity:
+    type: text
+  Nou:
+    type: unfeaturized
+    initial_value: ' '
   Nou:
     type: unfeaturized
     initial_value: ' '
@@ -61,10 +67,12 @@ slots:
     type: unfeaturized
   month_name:
     type: unfeaturized
+    initial_value: ' '
   day_of_month:
     type: unfeaturized
   day_ordinal:
     type: unfeaturized
+    initial_value: ' '
   month_and_date:
     type: text
   time_hour:
@@ -155,6 +163,7 @@ intents:
 - thanks
 - dontgetit
 - nevermind
+- wassup
 - when
 - who
 - yw
@@ -276,6 +285,7 @@ intents:
 - awesome
 - metoo
 - backup
+- meet_up
 
 
 actions:

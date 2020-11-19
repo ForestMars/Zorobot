@@ -1,6 +1,6 @@
 {Name},<br>
 <br>
-Great talking to you today (to be clear you were talking to my assistant, not myself) and looking forward to our call, which we have planned for {Day}, {month_name} {ord} at {time_hour}:{time_minutes} {ampm} EST. (If you are in a different time zone, you may need to adjust the time on the attached calendar invite.)
+Great talking to you today (to be clear you were talking to my assistant, not myself) and looking forward to our call, which we have planned for {Day}, {month_name} {ord} at {time_hour}:{time_minutes} {ampm} EST. (If you are in a different time zone, you may wish to confim the time of the attached calendar invite is correct for your time zone.)
 <br>
 <br>
 If you have any materials you'd like to share prior to them, please reply to this email and include them. And feel free to reach out to my scheduling assistant if you need anything else.
@@ -12,5 +12,5 @@ Forest Mars<br>
 --<br>
 voice: 516-698-2705<br>
 sms/text: 347-688-7501<br>
-scheduling assistant: 845-868-0258<br>
+scheduling assistant: 415-712-2019<br>
 <br>

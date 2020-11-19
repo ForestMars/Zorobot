@@ -1,4 +1,4 @@
-#!/bin/bash
+  #!/bin/bash
 ##
 # @Description: Train and/or run conversational AI model.
 # Ignores contradictory arguments.
@@ -135,7 +135,7 @@ if [[ $TRAIN == true ]] && [[ -z "${CHOICE}" ]]; then
   ask_train_target
 fi
 
-# @TODO: Either change RUNYN to RUN or change TRAIN to TRAIN_Y_N - SemanticsFTW
+# @TODO: Either change RUNYN to RUN or change TRAIN to TRAIN_Y_N - Semantics FTMFW
 # if [[ -z "${RUNYN}" ]]; then
 #  ask_run_app
 # fi
@@ -148,7 +148,7 @@ ln -s domain/$PROJECT/domain.yml domain.yml
 # Active <> Current
 cd domain
 mv stories.md .stories.md.prev
-ln -s $PROJECT/stories/stories.md stories.md
+ln -s $PROJECT/stories/ stories.md
 cd - > /dev/null
 cd models
 mv current .current.prev
@@ -192,7 +192,7 @@ function train_nlu (){
   time python -m rasa_nlu.train -c config.yml --data domain/$DOMAIN/intents -o models --fixed_model_name nlu --project $PROJECT --verbose ;
 }
 function train_dialog (){
-  time python -m rasa_core.train -d domain.yml -s domain/$DOMAIN/stories/stories.md -o models/$PROJECT/dialogue -c policies.yml;
+  time python -m rasa_core.train -d domain.yml -s domain/$DOMAIN/stories/ -o models/$PROJECT/dialogue -c policies.yml;
 }
 function run_bot (){
   python -m rasa_core.run -d models/$PROJECT/dialogue -u models/$PROJECT/nlu --endpoints $ENDPOINT --log_file $LOGFILE
@@ -226,6 +226,7 @@ if [[ ! -z "$CHOICE" ]] && [[ $RUNYN = 'y' ]] && [[ $API = 'y' ]]; then
   #echo $BUDD > config/budd.pid
 fi
 
+# Run in API mode (don't retrain)
 if [[ -z "${CHOICE}" ]] && [[ $RUNYN = 'y' ]] && [[ $API = 'y' ]]; then
   # This is redundant and can be safely removed.
   nohup python -m rasa_core.run \
@@ -237,6 +238,7 @@ if [[ -z "${CHOICE}" ]] && [[ $RUNYN = 'y' ]] && [[ $API = 'y' ]]; then
   exit 0
 fi
 
+# Don't retrain, just run (no API)
 if [[ -z "${CHOICE}" ]] && [[ $RUNYN = 'y' ]]; then
   echo "Let's do this! (no training, running model)";
   # check training data exists
@@ -250,6 +252,7 @@ if [[ -z "${CHOICE}" ]] && [[ $RUNYN = 'y' ]]; then
     --log_file $LOGFILE
 fi
 
+# Just run in debug mode.
 if [[ -z "${CHOICE}" ]] && [[ $RUNYN = 'd' ]]; then
   echo "Let's do this! (running model in debug mode)";
   # check training data exists
@@ -291,7 +294,7 @@ if [[ $CHOICE == 2 && $RUNYN = 'n' ]]; then
   echo "Ttraining $R for the domain.";
   echo $PROJECT | tr '[:lower:]' '[:upper:]'
   # directory check, make directory if needed
-  time python -m rasa_core.train -d domain.yml -s domain/$DOMAIN/stories/stories.md -o models/$PROJECT/dialogue -c policies.yml;
+  time python -m rasa_core.train -d domain.yml -s domain/$DOMAIN/stories/ -o models/$PROJECT/dialogue -c policies.yml;
 fi
 
 # train dialogue and run
@@ -316,7 +319,7 @@ if [[ $CHOICE == 3 && $RUNYN == 'n' ]]; then
   echo "Training $I and $R for the domain:";
   echo $PROJECT | tr '[:lower:]' '[:upper:]'
   time python -m rasa_nlu.train -c config.yml --data domain/$DOMAIN/intents -o models --fixed_model_name nlu --project $PROJECT --verbose ;
-  time python -m rasa_core.train -d domain.yml -s domain/$DOMAIN/stories/stories.md -o models/$DOMAIN/dialogue -c policies.yml;
+  time python -m rasa_core.train -d domain.yml -s domain/$DOMAIN/stories/ -o models/$DOMAIN/dialogue -c policies.yml;
 fi
 
 # train both and run
@@ -324,8 +327,8 @@ if [[ $CHOICE == 3 && $RUNYN == 'y' ]]; then
   echo "Training both $I and $R, then running app for the domain:";
   echo $PROJECT | tr '[:lower:]' '[:upper:]'
   time python -m rasa_nlu.train -c config.yml --data domain//$DOMAIN/intents -o models --fixed_model_name nlu --project $PROJECT --verbose ;
-  time python -m rasa_core.train -d domain.yml -s domain/$DOMAIN/stories/stories.md -o models/$PROJECT/dialogue -c policies.yml;
-  python -m rasa_core.run -d models/$PROJECT/dialogue -u models/$project/nlu --endpoints $ENDPOINT --log_file $LOGFILE
+  time python -m rasa_core.train -d domain.yml -s domain/$DOMAIN/stories/ -o models/$PROJECT/dialogue -c policies.yml;
+  python -m rasa_core.run -d models/$PROJECT/dialogue -u models/$PROJECT/nlu --endpoints $ENDPOINT --log_file $LOGFILE
 fi
 
 # train both and run in debug mode
@@ -334,7 +337,7 @@ if [[ $CHOICE == 3 && $RUNYN == 'd' ]]; then
   echo $PROJECT | tr '[:lower:]' '[:upper:]'
   # directory check, make directory if needed
   time python -m rasa_nlu.train -c config.yml --data domain/$DOMAIN/intents -o models --fixed_model_name nlu --project $PROJECT --verbose ;
-  time python -m rasa_core.train -d domain.yml -s domain/$DOMAIN/stories/stories.md -o models/$PROJECT/dialogue -c policies.yml;
+  time python -m rasa_core.train -d domain.yml -s domain/$DOMAIN/stories/ -o models/$PROJECT/dialogue -c policies.yml;
   python -m rasa_core.run -d models/$PROJECT/dialogue -u models/$PROJECT/nlu --endpoints $ENDPOINT --log_file $LOGFILE --debug
 fi
 

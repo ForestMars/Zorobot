@@ -66,7 +66,6 @@ actions:
 - utter_whatsgoingon
 - utter_who
 - utter_yw
-- utter_zoro
 - utter_default
 - utter_political
 - utter_thisyear
@@ -82,7 +81,10 @@ actions:
 - utter_quality
 - utter_topic_camus
 - utter_topic_facebook
+- utter_zoro
 - utter_zoro_greet
+- utter_zoro_thx
+- utter_intro_dog
 - utter_answer_hru_prof
 - utter_ask_howcanihelp
 - utter_ask_upto
@@ -103,6 +105,7 @@ actions:
 - utter_ask_for_phone_number
 - utter_ask_email
 - utter_ask_who
+- utter_ask_specific_time
 - utter_affirm_day
 - utter_affirm_time
 - utter_confirm_best_email
@@ -132,6 +135,7 @@ actions:
 - utter_money_money_money
 - utter_hope_to_make_it
 - utter_sure
+- utter_yum
 - utter_send_invite
 - utter_until_we_meet
 - utter_glad_conversation
@@ -150,6 +154,8 @@ actions:
 - utter_restart
 - utter_familiar
 - utter_corona_bot
+- utter_none_of_your_business
+- utter_no_worries
 config:
   store_entities_as_slots: true
 entities:
@@ -176,10 +182,19 @@ entities:
 - TOD
 - email
 - person
+- accepting_resumes
+- are_you_hiring
+- open_roles
 forms:
 - email_form
 intents:
 - forest:
+    use_entities: true
+- zoro:
+    use_entities: true
+- zoro_good:
+    use_entities: true
+- zoro_who:
     use_entities: true
 - affirm:
     use_entities: true
@@ -371,9 +386,9 @@ intents:
     use_entities: true
 - ask_are_you_open_to:
     use_entities: true
-- iamme:
+- did_you_get_candidates:
     use_entities: true
-- greet_with_name:
+- did_you_send_resume:
     use_entities: true
 - feel_good:
     use_entities: true
@@ -437,11 +452,31 @@ intents:
     use_entities: true
 - ask_camus:
     use_entities: true
+- restart:
+    use_entities: true
 - late_reply:
     use_entities: true
 - financial:
     use_entities: true
 - zerotonica:
+    use_entities: true
+- iamme:
+    use_entities: true
+- greet_with_name:
+    use_entities: true
+- sorry:
+    use_entities: true
+- whats_none:
+    use_entities: true
+- ok:
+    use_entities: true
+- great:
+    use_entities: true
+- awesome:
+    use_entities: true
+- metoo:
+    use_entities: true
+- backup:
     use_entities: true
 slots:
   DATE:
@@ -476,6 +511,14 @@ slots:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.TextSlot
+  accepting_resumes:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.BooleanSlot
+  are_you_hiring:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.BooleanSlot
   corona_bot:
     auto_fill: true
     initial_value: (845) 868-0258
@@ -521,6 +564,10 @@ slots:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.UnfeaturizedSlot
+  open_roles:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.ListSlot
   requested_slot:
     auto_fill: true
     initial_value: null
@@ -553,6 +600,8 @@ slots:
     initial_value: null
     type: rasa_core.slots.UnfeaturizedSlot
 templates:
+  uter_no_worries:
+  - text: No worries!
   utter_affirm:
   - text: Yasss!
   utter_affirm_day:
@@ -612,6 +661,8 @@ templates:
   utter_ask_schedule_call_discuss:
   - text: Would you like to schedule a call to discuss?
   - text: Shall we plan on having a call to discuss?
+  utter_ask_specific_time:
+  - text: Ok, {TOD} sounds good. What's a specific time you can do a call?
   utter_ask_time:
   - text: What's a good time for you?
   utter_ask_time_date:
@@ -737,6 +788,8 @@ templates:
   utter_im_a_scheduling_agent:
   - text: ah ok, sorry, I'm a call scheduling agent. If you'd like to have a more
       general conversation, please message 347-688-7501.
+  utter_intro_dog:
+  - text: What if I never find out... https://i.pinimg.com/736x/98/d6/26/98d626eb01a1096c1c24e97a1d94d183--so-funny-funny-dogs.jpg
   utter_jackie_chan:
   - text: Maybe ask Jackie Chan how did that happen!
   - text: I expect you are referring to the Jackie Chan meme (how did that happen??)
@@ -761,6 +814,9 @@ templates:
   - text: Nice to meet you, {Nou}.
   utter_noidonotlikeyourhat:
   - text: No, I do not like your hat.
+  utter_none_of_your_business:
+  - text: None of your business, LOL. \n It probably means I need to run an update.
+      Thanks for telling me, I will run my self-diagnostics.
   utter_notsure:
   - text: Not sure.
   utter_noworries:
@@ -876,7 +932,6 @@ templates:
   - text: You're welcome
   - text: You're very welcome
   - text: No problem.
-  - text: No worries!
   utter_whatdoin:
   - text: Oh you know, about a million things at once
   - text: Same old, same old, lol
@@ -895,6 +950,8 @@ templates:
   - text: Super!
   utter_yes:
   - text: Yes.
+  utter_yum:
+  - text: Yum!
   utter_yw:
   - text: yw
   utter_zoro:
@@ -905,3 +962,5 @@ templates:
   - text: I'm Zoro, Forest's scheduling bot. You can ask me about Forest's availability
       for a meeting by day or time, or tell me when you'd like to have a call with
       Forest.
+  utter_zoro_thx:
+  - text: Thanks! Do I get a treat with that?

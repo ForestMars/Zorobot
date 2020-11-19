@@ -975,3 +975,25 @@
 - i was going over
 - i was about to
 - i was considering
+
+## intent:zoro_who
+- are you a good dog
+- whos a good dog
+- who's a good dog
+- are you a good doggie
+- whos a good doggie
+- who's a good doggie
+- zoro are you a good dog
+- who is a good dog?
+
+## intent:zoro_good
+- you are a good dog
+- you're a good dog
+- you are a good doggie
+- you're a good dog
+- you are such a good dog
+- you're such a good dog
+- you are such a good doggie
+- you're such a good dog
+- you're so good
+- you are so good 

@@ -33,6 +33,9 @@ entities:
   - TOD
   - email
   - person
+  - accepting_resumes
+  - are_you_hiring
+  - open_roles
 
 
 # (Capitalized slots from user, snake_case slots from app.)
@@ -98,10 +101,21 @@ slots:
       - same
       - different
 
+# Staffing
+  accepting_resumes:
+    type: bool
+  are_you_hiring:
+    type: bool
+  open_roles:
+    type: list
+
 
 intents:
 # ~~~~~~~~~~ General
 - forest
+- zoro
+- zoro_good
+- zoro_who
 - affirm
 - deny
 - agree
@@ -203,8 +217,8 @@ intents:
 - heard_you_are_hiring
 - ask_are_you_hiring
 - ask_are_you_open_to
-- iamme
-- greet_with_name
+- did_you_get_candidates
+- did_you_send_resume
 
 # ~~~~~~~~~~ Virtual Doc
 - feel_good
@@ -248,11 +262,20 @@ intents:
 - ask_camus
 
 # ~~~~~~~~~~ Unsorted
+- restart
 - late_reply
 - financial
 - zerotonica
+- iamme
+- greet_with_name
 
-
+- sorry
+- whats_none
+- ok
+- great
+- awesome
+- metoo
+- backup
 
 
 actions:
@@ -324,7 +347,6 @@ actions:
 - utter_whatsgoingon
 - utter_who
 - utter_yw
-- utter_zoro
 - utter_default
 - utter_political
 - utter_thisyear
@@ -340,7 +362,10 @@ actions:
 - utter_quality
 - utter_topic_camus
 - utter_topic_facebook
+- utter_zoro
 - utter_zoro_greet
+- utter_zoro_thx
+- utter_intro_dog
 - utter_answer_hru_prof
 - utter_ask_howcanihelp
 - utter_ask_upto
@@ -391,6 +416,7 @@ actions:
 - utter_money_money_money
 - utter_hope_to_make_it
 - utter_sure
+- utter_yum
 - utter_send_invite
 - utter_until_we_meet
 - utter_glad_conversation
@@ -410,6 +436,7 @@ actions:
 - utter_familiar
 - utter_corona_bot
 - utter_none_of_your_business
+- utter_no_worries
 
 templates:
   utter_default:
@@ -771,7 +798,14 @@ templates:
   - text: Well I think you should stop smoking (what is the song that ends like that?)
   utter_noidonotlikeyourhat:
   - text: No, I do not like your hat.
-
+  utter_intro_dog:
+  - text: What if I never find out... https://i.pinimg.com/736x/98/d6/26/98d626eb01a1096c1c24e97a1d94d183--so-funny-funny-dogs.jpg
+  utter_zoro_thx:
+  - text: Thanks! Do I get a treat with that?
+  utter_yum:
+  - text: Yum!
+  uter_no_worries:
+  - text: No worries!
  # Misc Topic Responses
   utter_political:
   - text: Marx said that *everything* is political

@@ -9837,6 +9837,14 @@
       },
       {
         "intent": "greet",
+        "text": "helloworld"
+      },
+      {
+        "intent": "greet",
+        "text": "hello world"
+      },
+      {
+        "intent": "greet",
         "text": "hey"
       },
       {
@@ -9930,6 +9938,10 @@
       {
         "intent": "greet",
         "text": "yo"
+      },
+      {
+        "intent": "greet",
+        "text": "word up"
       },
       {
         "intent": "affirm",
@@ -13292,6 +13304,78 @@
         "text": "i was considering"
       },
       {
+        "intent": "zoro_who",
+        "text": "are you a good dog"
+      },
+      {
+        "intent": "zoro_who",
+        "text": "whos a good dog"
+      },
+      {
+        "intent": "zoro_who",
+        "text": "who's a good dog"
+      },
+      {
+        "intent": "zoro_who",
+        "text": "are you a good doggie"
+      },
+      {
+        "intent": "zoro_who",
+        "text": "whos a good doggie"
+      },
+      {
+        "intent": "zoro_who",
+        "text": "who's a good doggie"
+      },
+      {
+        "intent": "zoro_who",
+        "text": "zoro are you a good dog"
+      },
+      {
+        "intent": "zoro_who",
+        "text": "who is a good dog?"
+      },
+      {
+        "intent": "zoro_good",
+        "text": "you are a good dog"
+      },
+      {
+        "intent": "zoro_good",
+        "text": "you're a good dog"
+      },
+      {
+        "intent": "zoro_good",
+        "text": "you are a good doggie"
+      },
+      {
+        "intent": "zoro_good",
+        "text": "you're a good dog"
+      },
+      {
+        "intent": "zoro_good",
+        "text": "you are such a good dog"
+      },
+      {
+        "intent": "zoro_good",
+        "text": "you're such a good dog"
+      },
+      {
+        "intent": "zoro_good",
+        "text": "you are such a good doggie"
+      },
+      {
+        "intent": "zoro_good",
+        "text": "you're such a good dog"
+      },
+      {
+        "intent": "zoro_good",
+        "text": "you're so good"
+      },
+      {
+        "intent": "zoro_good",
+        "text": "you are so good"
+      },
+      {
         "intent": "omw",
         "text": "omw"
       },
@@ -15276,6 +15360,42 @@
           }
         ],
         "text": "hi forest i received your email. whats a good time for a call"
+      },
+      {
+        "intent": "time_of_day",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "morning",
+            "entity": "TOD"
+          }
+        ],
+        "text": "morning"
+      },
+      {
+        "intent": "time_of_day",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "afternoon",
+            "entity": "TOD"
+          }
+        ],
+        "text": "afternoon"
+      },
+      {
+        "intent": "time_of_day",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "evening",
+            "entity": "TOD"
+          }
+        ],
+        "text": "evening"
       },
       {
         "intent": "time_of_day",
@@ -19546,6 +19666,42 @@
       {
         "intent": "hi_forest",
         "text": "good afternoon forest"
+      },
+      {
+        "intent": "whats_none",
+        "text": "none?"
+      },
+      {
+        "intent": "whats_none",
+        "text": "none none?"
+      },
+      {
+        "intent": "whats_none",
+        "text": "whats none"
+      },
+      {
+        "intent": "whats_none",
+        "text": "what is none"
+      },
+      {
+        "intent": "whats_none",
+        "text": "whats none none"
+      },
+      {
+        "intent": "whats_none",
+        "text": "what is none none"
+      },
+      {
+        "intent": "whats_none",
+        "text": "whats (None None)"
+      },
+      {
+        "intent": "whats_none",
+        "text": "what is (None None)"
+      },
+      {
+        "intent": "whats_none",
+        "text": "huh? none?"
       },
       {
         "intent": "remember_me",
@@ -25562,6 +25718,30 @@
         "entities": [
           {
             "start": 0,
+            "end": 5,
+            "value": "eliot",
+            "entity": "Nou"
+          }
+        ],
+        "text": "eliot"
+      },
+      {
+        "intent": "bare_names",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "eliott",
+            "entity": "Nou"
+          }
+        ],
+        "text": "eliott"
+      },
+      {
+        "intent": "bare_names",
+        "entities": [
+          {
+            "start": 0,
             "end": 4,
             "value": "kyle",
             "entity": "Nou"
@@ -25580,6 +25760,30 @@
           }
         ],
         "text": "mika"
+      },
+      {
+        "intent": "bare_names",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "mort",
+            "entity": "Nou"
+          }
+        ],
+        "text": "mort"
+      },
+      {
+        "intent": "bare_names",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "morty",
+            "entity": "Nou"
+          }
+        ],
+        "text": "morty"
       },
       {
         "intent": "bare_names",

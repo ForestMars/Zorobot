@@ -443,6 +443,8 @@
 - [eliott](Nou)
 - [kyle](Nou)
 - [mika](Nou)
+- [mort](Nou)
+- [morty](Nou)
 - [will](Nou)
 - [hal](Nou)
 - [holly](Nou)

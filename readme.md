@@ -110,7 +110,10 @@ The "Grok" class in the included Kronos module does a pretty suberb job of under
 This looks like what we'll be using going forward for date/time intent extraction, mainly bc of everything else you get for free. Duckling is a rules-based engine, not a machine learning model, but seemingly covers a wide bearth of intents and entities. None of them individually are particularly hard (note for example, all date time extraction is currently handled by a single and very compact "kronos" class), but the sheer range of what you get with Duckling makes it a very attrctive option.
 
 * Timezone support: (not implemented)
-if someone specifies a preferred time in diff time zone, it will get interpreted as local TZ. This is on hold pending Duckling integration.
+If someone specifies a preferred time in diff time zone, it will get interpreted as local TZ. This is on hold pending Duckling integration.
+
+* Multi-domain mode
+Currently uses giant "domain of doom" for all domains. This will be refactored once core is updated to 2.0. 
 
 ### Github issue queue
 

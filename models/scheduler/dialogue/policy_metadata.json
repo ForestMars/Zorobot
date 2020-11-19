@@ -11,49 +11,64 @@
     "utter_np": {
       "slots": []
     },
-    "utter_ask_change_what": {
-      "slots": []
-    },
     "utter_bye": {
-      "slots": []
-    },
-    "action_send_invite": {
       "slots": []
     },
     "utter_ask_day": {
       "slots": []
     },
-    "utter_im_a_scheduling_agent": {
-      "slots": []
-    },
-    "utter_wunderbar": {
-      "slots": []
-    },
-    "utter_corona_bot": {
-      "slots": []
-    },
-    "utter_ask_time_day": {
+    "utter_ask_schedule_call_discuss": {
       "slots": []
     },
     "utter_ask_date": {
       "slots": []
     },
-    "utter_confirm_best_email": {
+    "utter_ask_time_date": {
       "slots": []
     },
-    "utter_ask_who": {
+    "action_send_invite": {
       "slots": []
     },
     "utter_ask_schedule_call": {
       "slots": []
     },
-    "utter_soami": {
+    "utter_ask_change_what": {
+      "slots": []
+    },
+    "utter_none_of_your_business": {
+      "slots": []
+    },
+    "utter_wunderbar": {
+      "slots": []
+    },
+    "utter_ask_time_day": {
+      "slots": []
+    },
+    "utter_corona_bot": {
       "slots": []
     },
     "action_restart": {
       "slots": []
     },
-    "utter_ask_time_date": {
+    "utter_im_a_scheduling_agent": {
+      "slots": []
+    },
+    "utter_ask_who": {
+      "slots": []
+    },
+    "utter_no_worries": {
+      "slots": []
+    },
+    "utter_confirm_best_email": {
+      "slots": []
+    },
+    "utter_soami": {
+      "slots": []
+    },
+    "utter_intro_dog": {
+      "slots": []
+    },
+    "utter_yum": {
       "slots": []
     }
   },
@@ -69,7 +84,7 @@
     "rasa_core.policies.memoization.MemoizationPolicy",
     "rasa_core.policies.form_policy.FormPolicy"
   ],
-  "trained_at": "20201111-184608",
+  "trained_at": "20201117-224929",
   "rasa_core": "0.13.8",
   "tensorflow": "1.12.0",
   "sklearn": "0.20.2"

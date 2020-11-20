@@ -1,4 +1,16 @@
-## multi_intent (with name)
+## lets do
+* lets_do_something OR can_we_do_something
+  - utter_robot
+  - utter_sure_we_can
+  - utter_ask_day
+* suggest_day
+  - utter_ask_time_day
+
+## when is good
+* when_is_good
+  - utter_ask_day
+
+## multi intent (with name)
 * multi_intent
   - utter_nicetohearfromu
   - action_update_contacts
@@ -427,6 +439,8 @@
 * ask_which_day
   - utter_ask_day
 
+* meet_up
+  - utter_ask_day
 
 #### ~~~~~~~~ Closings incl. Closing Chitchat ~~~~~~~~
 
@@ -457,10 +471,6 @@
 ## thanks
 * thanks
   - utter_np
-
-## corona corona
-* corona
-  - utter_corona_bot
 
 ## do over
 * restart

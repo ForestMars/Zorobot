@@ -17,3 +17,11 @@
   - utter_zoro_thx
 * deny OR sorry
   - action_listen
+
+## wassup
+* sup
+  - utter_up_down
+
+## corona corona
+* corona
+  - utter_corona_bot

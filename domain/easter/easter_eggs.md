@@ -65,7 +65,7 @@
 - perambulate promenade prance plod plunge ahead
 - race ramble roam rove rush roundabout
 - round-trip, round-trip
-- saunter scamper scramble step stroll stray safari sprint -- sashay! (swoop)
+- saunter scamper scramble shamble step stroll stray safari sprint -- sashay! (swoop)
 - trek trip traipse tour trot trod trample trudge
 - sometimes i wander
 

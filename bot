@@ -147,13 +147,14 @@ ln -s domain/$PROJECT/domain.yml domain.yml
 
 # Active <> Current
 cd domain
-mv stories.md .stories.md.prev
+# mv stories.md .stories.md.prev
+rm stories.md
 ln -s $PROJECT/stories/ stories.md
 cd - > /dev/null
-cd models
-mv current .current.prev
-ln -s $PROJECT current
-cd - > /dev/null
+# cd models
+# mv current .current.prev
+# ln -s $PROJECT current
+# cd - > /dev/null
 echo "$PROJECT is now the current model"
 DOMAIN=$PROJECT
 
@@ -301,7 +302,7 @@ fi
 if [[ $CHOICE == 2 && $RUNYN == 'y' ]]; then
   echo "Training $R, then running app for the domain:";
   echo $PROJECT | tr '[:lower:]' '[:upper:]'
-  time python -m rasa_core.train -d domain.yml -s domain/$DOMAIN/stories/stories.md -o models/$PROJECT/dialogue -c policies.yml;
+  time python -m rasa_core.train -d domain.yml -s domain/$DOMAIN/stories/ -o models/$PROJECT/dialogue -c policies.yml;
   python -m rasa_core.run -d models/$PROJECT/dialogue -u models/$PROJECT/nlu --endpoints $ENDPOINT --log_file $LOGFILE
 fi
 
@@ -309,7 +310,7 @@ fi
 if [[ $CHOICE == 2 && $RUNYN == 'd' ]]; then
   echo "Training $R, then debugging app for the domain:";
   echo $PROJECT | tr '[:lower:]' '[:upper:]'
-  time python -m rasa_core.train -d domain.yml -s domain/$DOMAIN/stories/stories.md -o models/$PROJECT/dialogue -c policies.yml;
+  time python -m rasa_core.train -d domain.yml -s domain/$DOMAIN/stories/ -o models/$PROJECT/dialogue -c policies.yml;
   python -m rasa_core.run -d models/$PROJECT/dialogue -u models/$PROJECT/nlu --endpoints $ENDPOINT --log_file $LOGFILE --debug
 fi
 

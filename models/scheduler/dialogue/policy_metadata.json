@@ -8,40 +8,61 @@
     "email_form": {
       "slots": []
     },
-    "utter_np": {
-      "slots": []
-    },
     "utter_bye": {
       "slots": []
     },
-    "utter_ask_day": {
+    "utter_np": {
+      "slots": []
+    },
+    "utter_confirm_best_email": {
       "slots": []
     },
     "utter_ask_schedule_call_discuss": {
       "slots": []
     },
-    "utter_ask_date": {
-      "slots": []
-    },
-    "utter_ask_time_date": {
+    "utter_ask_day": {
       "slots": []
     },
     "action_send_invite": {
       "slots": []
     },
-    "utter_ask_schedule_call": {
-      "slots": []
-    },
-    "utter_ask_change_what": {
+    "utter_ask_time_date": {
       "slots": []
     },
     "utter_none_of_your_business": {
       "slots": []
     },
-    "utter_wunderbar": {
+    "utter_ask_date": {
+      "slots": []
+    },
+    "utter_intro_dog": {
       "slots": []
     },
     "utter_ask_time_day": {
+      "slots": []
+    },
+    "utter_no_worries": {
+      "slots": []
+    },
+    "utter_ask_who": {
+      "slots": []
+    },
+    "utter_soami": {
+      "slots": []
+    },
+    "utter_ask_change_what": {
+      "slots": []
+    },
+    "utter_up_down": {
+      "slots": []
+    },
+    "utter_ask_schedule_call": {
+      "slots": []
+    },
+    "utter_im_a_scheduling_agent": {
+      "slots": []
+    },
+    "utter_wunderbar": {
       "slots": []
     },
     "utter_corona_bot": {
@@ -50,25 +71,7 @@
     "action_restart": {
       "slots": []
     },
-    "utter_im_a_scheduling_agent": {
-      "slots": []
-    },
-    "utter_ask_who": {
-      "slots": []
-    },
-    "utter_no_worries": {
-      "slots": []
-    },
-    "utter_confirm_best_email": {
-      "slots": []
-    },
-    "utter_soami": {
-      "slots": []
-    },
-    "utter_intro_dog": {
-      "slots": []
-    },
-    "utter_yum": {
+    "utter_greet": {
       "slots": []
     }
   },
@@ -84,7 +87,7 @@
     "rasa_core.policies.memoization.MemoizationPolicy",
     "rasa_core.policies.form_policy.FormPolicy"
   ],
-  "trained_at": "20201117-224929",
+  "trained_at": "20201119-194245",
   "rasa_core": "0.13.8",
   "tensorflow": "1.12.0",
   "sklearn": "0.20.2"

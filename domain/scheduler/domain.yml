@@ -10,6 +10,7 @@ forms:
   - email_form
 
 entities:
+  - activity
   - appt
   - ETA
   - Geo
@@ -33,7 +34,6 @@ entities:
   - TOD
   - email
   - person
-  - activity
   - accepting_resumes
   - are_you_hiring
   - open_roles
@@ -43,10 +43,11 @@ entities:
 slots:
   activity:
     type: text
+    initial_value: 'have a phone call'
   Nou:
     type: unfeaturized
     initial_value: ' '
-  Nou:
+  Nou_last:
     type: unfeaturized
     initial_value: ' '
   When:
@@ -285,7 +286,9 @@ intents:
 - awesome
 - metoo
 - backup
-- meet_up
+- lets_do_something
+- can_we_do_something
+- when_is_good
 
 
 actions:
@@ -447,6 +450,8 @@ actions:
 - utter_corona_bot
 - utter_none_of_your_business
 - utter_no_worries
+- utter_up_down
+- utter_sure_we_can
 
 templates:
   utter_default:
@@ -660,6 +665,7 @@ templates:
   - text: How long should be plan for our call?
   utter_ask_day:
   - text: What's a good day for you?
+  - text: What's a good day to {activity}?
   utter_ask_date:
   - text: What's a better date for you?
   utter_ask_time:
@@ -845,3 +851,9 @@ templates:
   - text: Please text any Covid related questions to the Corona Data Natural Language Server at {corona_bot}. \n You can also visit http://coda.to for pandemic data visualizations and epidemiological modeling.
   utter_none_of_your_business:
   - text: None of your business, LOL. \n It probably means I need to run an update. Thanks for telling me, I will run my self-diagnostics.
+  utter_up_down:
+  - text: The opposite of down?
+  - text: The lightest of all known quarks?
+  - text: One third of a neutron? (A neutron is made up of 1 up quark + 2 down quarks.)
+  utter_sure_we_can:
+  - text: Sure we can {activity}

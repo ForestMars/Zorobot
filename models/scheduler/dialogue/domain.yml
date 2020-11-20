@@ -156,9 +156,12 @@ actions:
 - utter_corona_bot
 - utter_none_of_your_business
 - utter_no_worries
+- utter_up_down
+- utter_sure_we_can
 config:
   store_entities_as_slots: true
 entities:
+- activity
 - appt
 - ETA
 - Geo
@@ -273,6 +276,8 @@ intents:
 - dontgetit:
     use_entities: true
 - nevermind:
+    use_entities: true
+- wassup:
     use_entities: true
 - when:
     use_entities: true
@@ -478,6 +483,12 @@ intents:
     use_entities: true
 - backup:
     use_entities: true
+- lets_do_something:
+    use_entities: true
+- can_we_do_something:
+    use_entities: true
+- when_is_good:
+    use_entities: true
 slots:
   DATE:
     auto_fill: true
@@ -499,6 +510,10 @@ slots:
     auto_fill: true
     initial_value: ' '
     type: rasa_core.slots.UnfeaturizedSlot
+  Nou_last:
+    auto_fill: true
+    initial_value: ' '
+    type: rasa_core.slots.UnfeaturizedSlot
   TOD:
     auto_fill: true
     initial_value: null
@@ -515,6 +530,10 @@ slots:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.BooleanSlot
+  activity:
+    auto_fill: true
+    initial_value: have a phone call
+    type: rasa_core.slots.TextSlot
   are_you_hiring:
     auto_fill: true
     initial_value: null
@@ -546,7 +565,7 @@ slots:
     type: rasa_core.slots.UnfeaturizedSlot
   day_ordinal:
     auto_fill: true
-    initial_value: null
+    initial_value: ' '
     type: rasa_core.slots.UnfeaturizedSlot
   email:
     auto_fill: true
@@ -562,7 +581,7 @@ slots:
     type: rasa_core.slots.TextSlot
   month_name:
     auto_fill: true
-    initial_value: null
+    initial_value: ' '
     type: rasa_core.slots.UnfeaturizedSlot
   open_roles:
     auto_fill: true
@@ -636,6 +655,7 @@ templates:
   - text: What's a better date for you?
   utter_ask_day:
   - text: What's a good day for you?
+  - text: What's a good day to {activity}?
   utter_ask_email:
   - text: What's your best email?
   utter_ask_for_more_info:
@@ -901,6 +921,8 @@ templates:
   - text: Great!
   utter_sure:
   - text: Sure.
+  utter_sure_we_can:
+  - text: Sure we can {activity}
   utter_thanks:
   - text: Thanks, I really appreciate it.
   utter_thatshow:
@@ -925,6 +947,10 @@ templates:
   - text: You see where I'm going with this...
   utter_until_we_meet:
   - text: Until we meet again
+  utter_up_down:
+  - text: The opposite of down?
+  - text: The lightest of all known quarks?
+  - text: One third of a neutron? (A neutron is made up of 1 up quark + 2 down quarks.)
   utter_weather:
   - text: The weather is nice
   - text: It's nice

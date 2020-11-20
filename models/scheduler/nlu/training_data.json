@@ -2,6 +2,1182 @@
   "rasa_nlu_data": {
     "common_examples": [
       {
+        "intent": "schedule_call",
+        "entities": [
+          {
+            "start": 5,
+            "end": 16,
+            "value": "have a call",
+            "entity": "activity"
+          }
+        ],
+        "text": "lets have a call"
+      },
+      {
+        "intent": "schedule_call",
+        "entities": [
+          {
+            "start": 10,
+            "end": 21,
+            "value": "have a call",
+            "entity": "activity"
+          }
+        ],
+        "text": "we should have a call"
+      },
+      {
+        "intent": "schedule_call",
+        "entities": [
+          {
+            "start": 15,
+            "end": 26,
+            "value": "have a call",
+            "entity": "activity"
+          }
+        ],
+        "text": "can we plan to have a call"
+      },
+      {
+        "intent": "schedule_call",
+        "entities": [
+          {
+            "start": 20,
+            "end": 26,
+            "value": " \"activity\", \"value\": \"have a call\"",
+            "entity": "\"entity\""
+          }
+        ],
+        "text": "id like to schedule a call"
+      },
+      {
+        "intent": "schedule_call",
+        "entities": [
+          {
+            "start": 7,
+            "end": 22,
+            "value": " \"activity\", \"value\": \"have a call\"",
+            "entity": "\"entity\""
+          }
+        ],
+        "text": "can we schedule a call"
+      },
+      {
+        "intent": "schedule_call",
+        "entities": [
+          {
+            "start": 8,
+            "end": 23,
+            "value": " \"activity\", \"value\": \"have a call\"",
+            "entity": "\"entity\""
+          }
+        ],
+        "text": "can you schedule a call"
+      },
+      {
+        "intent": "schedule_call",
+        "entities": [
+          {
+            "start": 8,
+            "end": 23,
+            "value": " \"activity\", \"value\": \"have a call\"",
+            "entity": "\"entity\""
+          }
+        ],
+        "text": "can you schedule a call for me"
+      },
+      {
+        "intent": "schedule_call",
+        "entities": [
+          {
+            "start": 5,
+            "end": 19,
+            "value": " \"activity\", \"value\": \"have a call\"",
+            "entity": "\"entity\""
+          }
+        ],
+        "text": "lets schdule a call"
+      },
+      {
+        "intent": "schedule_call",
+        "entities": [
+          {
+            "start": 7,
+            "end": 37,
+            "value": " \"activity\", \"value\": \"have a call\"",
+            "entity": "\"entity\""
+          }
+        ],
+        "text": "can we make an appointment for a call"
+      },
+      {
+        "intent": "schedule_call",
+        "entities": [
+          {
+            "start": 7,
+            "end": 18,
+            "value": " \"activity\", \"value\": \"have a call\"",
+            "entity": "\"entity\""
+          }
+        ],
+        "text": "can we plan a call"
+      },
+      {
+        "intent": "schedule_call",
+        "entities": [
+          {
+            "start": 16,
+            "end": 31,
+            "value": " \"activity\", \"value\": \"have a call\"",
+            "entity": "\"entity\""
+          }
+        ],
+        "text": "are you able to schedule a call"
+      },
+      {
+        "intent": "schedule_call",
+        "entities": [
+          {
+            "start": 30,
+            "end": 45,
+            "value": " \"activity\", \"value\": \"have a call\"",
+            "entity": "\"entity\""
+          }
+        ],
+        "text": "when is a good time for us to schedule a call"
+      },
+      {
+        "intent": "schedule_call",
+        "entities": [
+          {
+            "start": 16,
+            "end": 29,
+            "value": " \"activity\", \"value\": \"have a call\"",
+            "entity": "\"entity\""
+          }
+        ],
+        "text": "i would like to set up a call"
+      },
+      {
+        "intent": "schedule_call",
+        "entities": [
+          {
+            "start": 7,
+            "end": 20,
+            "value": " \"activity\", \"value\": \"have a call\"",
+            "entity": "\"entity\""
+          }
+        ],
+        "text": "can we set up a call"
+      },
+      {
+        "intent": "schedule_call",
+        "entities": [
+          {
+            "start": 15,
+            "end": 29,
+            "value": " \"activity\", \"value\": \"have a call\"",
+            "entity": "\"entity\""
+          }
+        ],
+        "text": "are we able to set up [a call"
+      },
+      {
+        "intent": "schedule_call",
+        "entities": [
+          {
+            "start": 11,
+            "end": 22,
+            "value": " \"activity\", \"value\": \"have a call\"",
+            "entity": "\"entity\""
+          }
+        ],
+        "text": "id like to book a call"
+      },
+      {
+        "intent": "schedule_call",
+        "entities": [
+          {
+            "start": 7,
+            "end": 18,
+            "value": " \"activity\", \"value\": \"have a call\"",
+            "entity": "\"entity\""
+          }
+        ],
+        "text": "can we book a call"
+      },
+      {
+        "intent": "schedule_call",
+        "entities": [
+          {
+            "start": 8,
+            "end": 19,
+            "value": " \"activity\", \"value\": \"have a call\"",
+            "entity": "\"entity\""
+          }
+        ],
+        "text": "can you book a call"
+      },
+      {
+        "intent": "schedule_call",
+        "entities": [
+          {
+            "start": 8,
+            "end": 19,
+            "value": " \"activity\", \"value\": \"have a call\"",
+            "entity": "\"entity\""
+          }
+        ],
+        "text": "can you book a call for me"
+      },
+      {
+        "intent": "schedule_call",
+        "entities": [
+          {
+            "start": 8,
+            "end": 21,
+            "value": " \"activity\", \"value\": \"have a call\"",
+            "entity": "\"entity\""
+          }
+        ],
+        "text": "can you set up a call for me"
+      },
+      {
+        "intent": "schedule_call",
+        "entities": [
+          {
+            "start": 5,
+            "end": 18,
+            "value": " \"activity\", \"value\": \"have a call\"",
+            "entity": "\"entity\""
+          }
+        ],
+        "text": "lets set up a call"
+      },
+      {
+        "intent": "schedule_call",
+        "entities": [
+          {
+            "start": 10,
+            "end": 23,
+            "value": " \"activity\", \"value\": \"have a call\"",
+            "entity": "\"entity\""
+          }
+        ],
+        "text": "we should set up a call"
+      },
+      {
+        "intent": "schedule_call",
+        "entities": [
+          {
+            "start": 16,
+            "end": 29,
+            "value": " \"activity\", \"value\": \"have a call\"",
+            "entity": "\"entity\""
+          }
+        ],
+        "text": "are you able to set up a call"
+      },
+      {
+        "intent": "schedule_call",
+        "entities": [
+          {
+            "start": 30,
+            "end": 41,
+            "value": " \"activity\", \"value\": \"have a call\"",
+            "entity": "\"entity\""
+          }
+        ],
+        "text": "when is a good time for us to book a call"
+      },
+      {
+        "intent": "schedule_call",
+        "entities": [
+          {
+            "start": 16,
+            "end": 27,
+            "value": " \"activity\", \"value\": \"have a call\"",
+            "entity": "\"entity\""
+          }
+        ],
+        "text": "i would like to book a call"
+      },
+      {
+        "intent": "schedule_call",
+        "entities": [
+          {
+            "start": 14,
+            "end": 25,
+            "value": " \"activity\", \"value\": \"have a call\"",
+            "entity": "\"entity\""
+          }
+        ],
+        "text": "would like to book a call"
+      },
+      {
+        "intent": "schedule_call",
+        "entities": [
+          {
+            "start": 14,
+            "end": 25,
+            "value": " \"activity\", \"value\": \"have a call\"",
+            "entity": "\"entity\""
+          }
+        ],
+        "text": "would like to book a call please"
+      },
+      {
+        "intent": "schedule_call",
+        "entities": [
+          {
+            "start": 17,
+            "end": 28,
+            "value": " \"activity\", \"value\": \"have a call\"",
+            "entity": "\"entity\""
+          }
+        ],
+        "text": "hi would like to book a call please"
+      },
+      {
+        "intent": "schedule_call",
+        "entities": [
+          {
+            "start": 17,
+            "end": 28,
+            "value": " \"activity\", \"value\": \"have a call\"",
+            "entity": "\"entity\""
+          }
+        ],
+        "text": "hi would like to book a call with forest please"
+      },
+      {
+        "intent": "schedule_call",
+        "entities": [
+          {
+            "start": 17,
+            "end": 28,
+            "value": " \"activity\", \"value\": \"have a call\"",
+            "entity": "\"entity\""
+          }
+        ],
+        "text": "hi would like to book a call with forest"
+      },
+      {
+        "intent": "schedule_call",
+        "entities": [
+          {
+            "start": 14,
+            "end": 25,
+            "value": " \"activity\", \"value\": \"have a call\"",
+            "entity": "\"entity\""
+          }
+        ],
+        "text": "would like to book a call with forest please"
+      },
+      {
+        "intent": "schedule_call",
+        "entities": [
+          {
+            "start": 14,
+            "end": 25,
+            "value": " \"activity\", \"value\": \"have a call\"",
+            "entity": "\"entity\""
+          }
+        ],
+        "text": "would like to book a call with forest"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 11,
+            "end": 23,
+            "value": "get together",
+            "entity": "activity"
+          }
+        ],
+        "text": "id like to get together"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 7,
+            "end": 19,
+            "value": "get together",
+            "entity": "activity"
+          }
+        ],
+        "text": "can we get together"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 5,
+            "end": 17,
+            "value": "get together",
+            "entity": "activity"
+          }
+        ],
+        "text": "lets get together"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 10,
+            "end": 22,
+            "value": "get together",
+            "entity": "activity"
+          }
+        ],
+        "text": "we should get together"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 10,
+            "end": 22,
+            "value": "get together",
+            "entity": "activity"
+          },
+          {
+            "start": 23,
+            "end": 31,
+            "value": "sometime",
+            "entity": "when"
+          }
+        ],
+        "text": "we should get together sometime"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 30,
+            "end": 42,
+            "value": "get together",
+            "entity": "activity"
+          }
+        ],
+        "text": "can we make an appointment to get together"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 15,
+            "end": 27,
+            "value": "get together",
+            "entity": "activity"
+          }
+        ],
+        "text": "can we plan to get together"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 16,
+            "end": 28,
+            "value": "get together",
+            "entity": "activity"
+          }
+        ],
+        "text": "are you able to get together"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 16,
+            "end": 28,
+            "value": "get together",
+            "entity": "activity"
+          }
+        ],
+        "text": "i would like to get together"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 14,
+            "end": 26,
+            "value": "get together",
+            "entity": "activity"
+          }
+        ],
+        "text": "would like to get together with forest"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 14,
+            "end": 26,
+            "value": "get together",
+            "entity": "activity"
+          }
+        ],
+        "text": "would like to get together with please"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 11,
+            "end": 19,
+            "value": "hang out",
+            "entity": "activity"
+          }
+        ],
+        "text": "id like to hang out"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 7,
+            "end": 15,
+            "value": "hang out",
+            "entity": "activity"
+          }
+        ],
+        "text": "can we hang out"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 5,
+            "end": 13,
+            "value": "hang out",
+            "entity": "activity"
+          }
+        ],
+        "text": "lets hang out"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 10,
+            "end": 18,
+            "value": "hang out",
+            "entity": "activity"
+          }
+        ],
+        "text": "we should hang out"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 10,
+            "end": 18,
+            "value": "hang out",
+            "entity": "activity"
+          },
+          {
+            "start": 19,
+            "end": 27,
+            "value": "sometime",
+            "entity": "when"
+          }
+        ],
+        "text": "we should hang out sometime"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 30,
+            "end": 38,
+            "value": "hang out",
+            "entity": "activity"
+          }
+        ],
+        "text": "can we make an appointment to hang out"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 15,
+            "end": 23,
+            "value": "hang out",
+            "entity": "activity"
+          }
+        ],
+        "text": "can we plan to hang out"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 16,
+            "end": 24,
+            "value": "hang out",
+            "entity": "activity"
+          }
+        ],
+        "text": "are you able to hang out"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 16,
+            "end": 24,
+            "value": "hang out",
+            "entity": "activity"
+          }
+        ],
+        "text": "i would like to hang out"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 14,
+            "end": 22,
+            "value": "hang out",
+            "entity": "activity"
+          }
+        ],
+        "text": "would like to hang out with forest"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 14,
+            "end": 22,
+            "value": "hang out",
+            "entity": "activity"
+          }
+        ],
+        "text": "would like to hang out with please"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 11,
+            "end": 18,
+            "value": "meet up",
+            "entity": "activity"
+          }
+        ],
+        "text": "id like to meet up"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 7,
+            "end": 14,
+            "value": "meet up",
+            "entity": "activity"
+          }
+        ],
+        "text": "can we meet up"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 5,
+            "end": 12,
+            "value": "meet up",
+            "entity": "activity"
+          }
+        ],
+        "text": "lets meet up"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 10,
+            "end": 17,
+            "value": "meet up",
+            "entity": "activity"
+          }
+        ],
+        "text": "we should meet up"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 10,
+            "end": 17,
+            "value": "meet up",
+            "entity": "activity"
+          },
+          {
+            "start": 18,
+            "end": 26,
+            "value": "sometime",
+            "entity": "when"
+          }
+        ],
+        "text": "we should meet up sometime"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 30,
+            "end": 37,
+            "value": "meet up",
+            "entity": "activity"
+          }
+        ],
+        "text": "can we make an appointment to meet up"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 15,
+            "end": 22,
+            "value": "meet up",
+            "entity": "activity"
+          }
+        ],
+        "text": "can we plan to meet up"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 16,
+            "end": 23,
+            "value": "meet up",
+            "entity": "activity"
+          }
+        ],
+        "text": "are you able to meet up"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 16,
+            "end": 23,
+            "value": "meet up",
+            "entity": "activity"
+          }
+        ],
+        "text": "i would like to meet up"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 14,
+            "end": 21,
+            "value": "meet up",
+            "entity": "activity"
+          }
+        ],
+        "text": "would like to meet up with forest"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 14,
+            "end": 21,
+            "value": "meet up",
+            "entity": "activity"
+          }
+        ],
+        "text": "would like to meet up with please"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 22,
+            "end": 29,
+            "value": "meet up",
+            "entity": "activity"
+          }
+        ],
+        "text": "can we pick a time to meet up"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 22,
+            "end": 29,
+            "value": "meet up",
+            "entity": "activity"
+          }
+        ],
+        "text": "can we make a plan to meet up"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 6,
+            "end": 15,
+            "value": "come over",
+            "entity": "activity"
+          },
+          {
+            "start": 16,
+            "end": 21,
+            "value": "today",
+            "entity": "when"
+          }
+        ],
+        "text": "can i come over today"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 6,
+            "end": 15,
+            "value": "come over",
+            "entity": "activity"
+          },
+          {
+            "start": 16,
+            "end": 23,
+            "value": "tonight",
+            "entity": "when"
+          }
+        ],
+        "text": "can i come over tonight"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 6,
+            "end": 15,
+            "value": "come over",
+            "entity": "activity"
+          },
+          {
+            "start": 16,
+            "end": 24,
+            "value": "tomorrow",
+            "entity": "when"
+          }
+        ],
+        "text": "can i come over tomorrow"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 6,
+            "end": 15,
+            "value": "come over",
+            "entity": "activity"
+          },
+          {
+            "start": 16,
+            "end": 25,
+            "value": "this week",
+            "entity": "when"
+          }
+        ],
+        "text": "can i come over this week"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 18,
+            "end": 27,
+            "value": "come over",
+            "entity": "activity"
+          }
+        ],
+        "text": "do you want me to come over"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 18,
+            "end": 27,
+            "value": "come over",
+            "entity": "activity"
+          },
+          {
+            "start": 28,
+            "end": 35,
+            "value": "tonight",
+            "entity": "when"
+          }
+        ],
+        "text": "do you want me to come over tonight"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 5,
+            "end": 28,
+            "value": " wtf, value: meet in the garden",
+            "entity": "activity"
+          }
+        ],
+        "text": "lets hang out in your garden"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 6,
+            "end": 25,
+            "value": " wtf, value: meet in the garden",
+            "entity": "activity"
+          }
+        ],
+        "text": "let's meet in your garden"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 10,
+            "end": 29,
+            "value": " wtf, value: meet in the garden",
+            "entity": "activity"
+          }
+        ],
+        "text": "i want to meet in your garden"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 5,
+            "end": 15,
+            "value": "grab lunch",
+            "entity": "activity"
+          }
+        ],
+        "text": "lets grab lunch"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 5,
+            "end": 15,
+            "value": "grab lunch",
+            "entity": "activity"
+          },
+          {
+            "start": 16,
+            "end": 24,
+            "value": "sometime",
+            "entity": "when"
+          }
+        ],
+        "text": "lets grab lunch sometime"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 5,
+            "end": 16,
+            "value": "have dinner",
+            "entity": "activity"
+          }
+        ],
+        "text": "lets have dinner"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 5,
+            "end": 17,
+            "value": "go to a show",
+            "entity": "activity"
+          }
+        ],
+        "text": "lets go to a show"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 5,
+            "end": 19,
+            "value": "go see a movie",
+            "entity": "activity"
+          }
+        ],
+        "text": "lets go see a movie"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 5,
+            "end": 19,
+            "value": "take in a film",
+            "entity": "activity"
+          }
+        ],
+        "text": "lets take in a film"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 5,
+            "end": 24,
+            "value": "party like its 1999",
+            "entity": "activity"
+          }
+        ],
+        "text": "lets party like its 1999"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "whats a good day",
+            "entity": "when"
+          },
+          {
+            "start": 20,
+            "end": 32,
+            "value": "get together",
+            "entity": "activity"
+          }
+        ],
+        "text": "whats a good day to get together"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "when",
+            "entity": "when"
+          },
+          {
+            "start": 30,
+            "end": 42,
+            "value": "get together",
+            "entity": "activity"
+          }
+        ],
+        "text": "when is a good time for us to get together"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "whats a good day",
+            "entity": "when"
+          },
+          {
+            "start": 20,
+            "end": 28,
+            "value": "hang out",
+            "entity": "activity"
+          }
+        ],
+        "text": "whats a good day to hang out"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 0,
+            "end": 19,
+            "value": "when is a good time",
+            "entity": "when"
+          },
+          {
+            "start": 30,
+            "end": 38,
+            "value": "hang out",
+            "entity": "activity"
+          }
+        ],
+        "text": "when is a good time for us to hang out"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "whats a good day",
+            "entity": "when"
+          },
+          {
+            "start": 20,
+            "end": 24,
+            "value": "meet",
+            "entity": "activity"
+          }
+        ],
+        "text": "whats a good day to meet"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 0,
+            "end": 19,
+            "value": "when is a good time",
+            "entity": "when"
+          },
+          {
+            "start": 30,
+            "end": 37,
+            "value": "meet up",
+            "entity": "activity"
+          }
+        ],
+        "text": "when is a good time for us to meet up"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 6,
+            "end": 16,
+            "value": "a good day",
+            "entity": "when"
+          },
+          {
+            "start": 20,
+            "end": 43,
+            "value": "hang out in your garden",
+            "entity": "activity"
+          }
+        ],
+        "text": "whats a good day to hang out in your garden"
+      },
+      {
         "intent": "corona",
         "text": "covid"
       },
@@ -208,6 +1384,14 @@
       {
         "intent": "ask_camus",
         "text": "did you enjoy it"
+      },
+      {
+        "intent": "mask",
+        "text": "wearing mask"
+      },
+      {
+        "intent": "mask",
+        "text": "wearing a mask"
       },
       {
         "intent": "better_day",
@@ -12948,42 +14132,6 @@
         "text": "what day is it today"
       },
       {
-        "intent": "zoro",
-        "text": "zoro"
-      },
-      {
-        "intent": "zoro",
-        "text": "you and zoro"
-      },
-      {
-        "intent": "zoro",
-        "text": "how are you and zoro"
-      },
-      {
-        "intent": "zoro",
-        "text": "say hi to zoro"
-      },
-      {
-        "intent": "zoro",
-        "text": "how is zoro"
-      },
-      {
-        "intent": "zoro",
-        "text": "how is zoro doing"
-      },
-      {
-        "intent": "zoro",
-        "text": "i love zoro"
-      },
-      {
-        "intent": "zoro",
-        "text": "i miss zoro"
-      },
-      {
-        "intent": "zoro",
-        "text": "i miss zoro so much"
-      },
-      {
         "intent": "gratitude",
         "text": "im grateful"
       },
@@ -13302,78 +14450,6 @@
       {
         "intent": "inform_i_am",
         "text": "i was considering"
-      },
-      {
-        "intent": "zoro_who",
-        "text": "are you a good dog"
-      },
-      {
-        "intent": "zoro_who",
-        "text": "whos a good dog"
-      },
-      {
-        "intent": "zoro_who",
-        "text": "who's a good dog"
-      },
-      {
-        "intent": "zoro_who",
-        "text": "are you a good doggie"
-      },
-      {
-        "intent": "zoro_who",
-        "text": "whos a good doggie"
-      },
-      {
-        "intent": "zoro_who",
-        "text": "who's a good doggie"
-      },
-      {
-        "intent": "zoro_who",
-        "text": "zoro are you a good dog"
-      },
-      {
-        "intent": "zoro_who",
-        "text": "who is a good dog?"
-      },
-      {
-        "intent": "zoro_good",
-        "text": "you are a good dog"
-      },
-      {
-        "intent": "zoro_good",
-        "text": "you're a good dog"
-      },
-      {
-        "intent": "zoro_good",
-        "text": "you are a good doggie"
-      },
-      {
-        "intent": "zoro_good",
-        "text": "you're a good dog"
-      },
-      {
-        "intent": "zoro_good",
-        "text": "you are such a good dog"
-      },
-      {
-        "intent": "zoro_good",
-        "text": "you're such a good dog"
-      },
-      {
-        "intent": "zoro_good",
-        "text": "you are such a good doggie"
-      },
-      {
-        "intent": "zoro_good",
-        "text": "you're such a good dog"
-      },
-      {
-        "intent": "zoro_good",
-        "text": "you're so good"
-      },
-      {
-        "intent": "zoro_good",
-        "text": "you are so good"
       },
       {
         "intent": "omw",
@@ -14431,7 +15507,15 @@
       },
       {
         "intent": "whereami",
-        "text": "im currently way up north in [canaan](FromLocation"
+        "entities": [
+          {
+            "start": 29,
+            "end": 35,
+            "value": "canaan",
+            "entity": "FromLocation"
+          }
+        ],
+        "text": "im currently way up north in canaan"
       },
       {
         "intent": "whereami",
@@ -15116,134 +16200,6 @@
       {
         "intent": "their_contact_info",
         "text": "do you have their contact info"
-      },
-      {
-        "intent": "schedule_call",
-        "text": "id like to schedule a call"
-      },
-      {
-        "intent": "schedule_call",
-        "text": "can we schedule a call"
-      },
-      {
-        "intent": "schedule_call",
-        "text": "can you schedule a call"
-      },
-      {
-        "intent": "schedule_call",
-        "text": "can you schedule a call for me"
-      },
-      {
-        "intent": "schedule_call",
-        "text": "lets have a call"
-      },
-      {
-        "intent": "schedule_call",
-        "text": "lets schdule a call"
-      },
-      {
-        "intent": "schedule_call",
-        "text": "we should have a call"
-      },
-      {
-        "intent": "schedule_call",
-        "text": "can we make an appointment for a call"
-      },
-      {
-        "intent": "schedule_call",
-        "text": "can we plan a call"
-      },
-      {
-        "intent": "schedule_call",
-        "text": "are you able to schedule a call"
-      },
-      {
-        "intent": "schedule_call",
-        "text": "can we plan to have a call"
-      },
-      {
-        "intent": "schedule_call",
-        "text": "when is a good time for us to schedule a call"
-      },
-      {
-        "intent": "schedule_call",
-        "text": "i would like to set up a call"
-      },
-      {
-        "intent": "schedule_call",
-        "text": "can we set up a call"
-      },
-      {
-        "intent": "schedule_call",
-        "text": "are we able to set up a call"
-      },
-      {
-        "intent": "schedule_call",
-        "text": "id like to book a call"
-      },
-      {
-        "intent": "schedule_call",
-        "text": "can we book a call"
-      },
-      {
-        "intent": "schedule_call",
-        "text": "can you book a call"
-      },
-      {
-        "intent": "schedule_call",
-        "text": "can you book a call for me"
-      },
-      {
-        "intent": "schedule_call",
-        "text": "can you set up a call for me"
-      },
-      {
-        "intent": "schedule_call",
-        "text": "lets set up a call"
-      },
-      {
-        "intent": "schedule_call",
-        "text": "we should set up a call"
-      },
-      {
-        "intent": "schedule_call",
-        "text": "are you able to set up a call"
-      },
-      {
-        "intent": "schedule_call",
-        "text": "when is a good time for us to book a call"
-      },
-      {
-        "intent": "schedule_call",
-        "text": "i would like to book a call"
-      },
-      {
-        "intent": "schedule_call",
-        "text": "would like to book a call"
-      },
-      {
-        "intent": "schedule_call",
-        "text": "would like to book a call please"
-      },
-      {
-        "intent": "schedule_call",
-        "text": "hi would like to book a call please"
-      },
-      {
-        "intent": "schedule_call",
-        "text": "hi would like to book a call with forest please"
-      },
-      {
-        "intent": "schedule_call",
-        "text": "hi would like to book a call with forest"
-      },
-      {
-        "intent": "schedule_call",
-        "text": "would like to book a call with forest please"
-      },
-      {
-        "intent": "schedule_call",
-        "text": "would like to book a call with forest"
       },
       {
         "intent": "ask_availability",
@@ -25820,11 +26776,139 @@
           }
         ],
         "text": "holly"
+      },
+      {
+        "intent": "zoro",
+        "text": "zoro"
+      },
+      {
+        "intent": "zoro",
+        "text": "you and zoro"
+      },
+      {
+        "intent": "zoro",
+        "text": "how are you and zoro"
+      },
+      {
+        "intent": "zoro",
+        "text": "say hi to zoro"
+      },
+      {
+        "intent": "zoro",
+        "text": "how is zoro"
+      },
+      {
+        "intent": "zoro",
+        "text": "how is zoro doing"
+      },
+      {
+        "intent": "zoro",
+        "text": "i love zoro"
+      },
+      {
+        "intent": "zoro",
+        "text": "i miss zoro"
+      },
+      {
+        "intent": "zoro",
+        "text": "i miss zoro so much"
+      },
+      {
+        "intent": "zoro_who",
+        "text": "are you a good dog"
+      },
+      {
+        "intent": "zoro_who",
+        "text": "whos a good dog"
+      },
+      {
+        "intent": "zoro_who",
+        "text": "who's a good dog"
+      },
+      {
+        "intent": "zoro_who",
+        "text": "are you a good doggie"
+      },
+      {
+        "intent": "zoro_who",
+        "text": "whos a good doggie"
+      },
+      {
+        "intent": "zoro_who",
+        "text": "who's a good doggie"
+      },
+      {
+        "intent": "zoro_who",
+        "text": "zoro are you a good dog"
+      },
+      {
+        "intent": "zoro_who",
+        "text": "who is a good dog?"
+      },
+      {
+        "intent": "zoro_good",
+        "text": "you are a good dog"
+      },
+      {
+        "intent": "zoro_good",
+        "text": "you're a good dog"
+      },
+      {
+        "intent": "zoro_good",
+        "text": "you are a good doggie"
+      },
+      {
+        "intent": "zoro_good",
+        "text": "you're a good dog"
+      },
+      {
+        "intent": "zoro_good",
+        "text": "you are such a good dog"
+      },
+      {
+        "intent": "zoro_good",
+        "text": "you're such a good dog"
+      },
+      {
+        "intent": "zoro_good",
+        "text": "you are such a good doggie"
+      },
+      {
+        "intent": "zoro_good",
+        "text": "you're such a good dog"
+      },
+      {
+        "intent": "zoro_good",
+        "text": "you're so good"
+      },
+      {
+        "intent": "zoro_good",
+        "text": "you are so good"
       }
     ],
     "regex_features": [],
     "lookup_tables": [],
     "entity_synonyms": [
+      {
+        "value": " \"activity\", \"value\": \"have a call\"",
+        "synonyms": [
+          "a call",
+          "schedule a call",
+          "schdule a call",
+          "make an appointment for a call",
+          "plan a call",
+          "set up a call",
+          "set up [a call",
+          "book a call"
+        ]
+      },
+      {
+        "value": " wtf, value: meet in the garden",
+        "synonyms": [
+          "hang out in your garden",
+          "meet in your garden"
+        ]
+      },
       {
         "value": "nyc",
         "synonyms": [

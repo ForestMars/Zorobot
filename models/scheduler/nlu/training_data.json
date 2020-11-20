@@ -931,6 +931,66 @@
           {
             "start": 5,
             "end": 28,
+            "value": "hang out in your garden",
+            "entity": "activity"
+          }
+        ],
+        "text": "lets hang out in your garden"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 6,
+            "end": 25,
+            "value": "meet in your garden",
+            "entity": "activity"
+          }
+        ],
+        "text": "let's meet in your garden"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 10,
+            "end": 29,
+            "value": "meet in your garden",
+            "entity": "activity"
+          }
+        ],
+        "text": "i want to meet in your garden"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 7,
+            "end": 29,
+            "value": "hang out in the garden",
+            "entity": "actvity"
+          }
+        ],
+        "text": "can we hang out in the garden"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 7,
+            "end": 30,
+            "value": "hang out in the garden",
+            "entity": "activity"
+          }
+        ],
+        "text": "can we hang out in your garden"
+      },
+      {
+        "intent": "lets_do_something",
+        "entities": [
+          {
+            "start": 5,
+            "end": 28,
             "value": "hang out in the garden",
             "entity": "activity"
           }
@@ -20794,6 +20854,78 @@
       {
         "intent": "ask_are_you_hiring",
         "text": "what positions are you currently trying to fill"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "what positions do you currently have open"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "what open positions you have"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "what open roles you have"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "is your company hiring"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "is your company currently"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "is your company currently hiring"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "is your company staffing up"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "is your company currently staffing up"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "is your company hiring right now"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "is your company considering candidates"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "is your company interviewing candidates"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "do you have any open roles"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "what roles is your company trying to fill"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "what roles is your company currently trying to fill"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "what roles do you currently have open"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "what is your company open roles right now"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "do you have any open positions"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "what positions is your company currently trying to fill"
       },
       {
         "intent": "ask_are_you_hiring",

@@ -688,7 +688,7 @@ templates:
   utter_ask_time_date:
   - text: What's a good time for you to have a call on ({Day}) {month_name} {day_of_month}?
   utter_ask_time_day:
-  - text: What's a good time for you to have a call {Day}? ({month_name} {day_ordinal})
+  - text: What's a good time for you to have a call {Day} {month_name} {day_ordinal}?
   utter_ask_upto:
   - text: What are you up to?
   utter_ask_whatdoin:

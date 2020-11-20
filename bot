@@ -142,7 +142,7 @@ fi
 
 # Check if previous domain.yml exists and vanquish.
 #mv domain.yml .domain.yml.prev
-mv domain.yml
+rm domain.yml
 ln -s domain/$PROJECT/domain.yml domain.yml
 
 # Active <> Current

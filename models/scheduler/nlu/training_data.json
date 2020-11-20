@@ -931,7 +931,7 @@
           {
             "start": 5,
             "end": 28,
-            "value": " wtf, value: meet in the garden",
+            "value": " meet in the garden",
             "entity": "activity"
           }
         ],
@@ -943,7 +943,7 @@
           {
             "start": 6,
             "end": 25,
-            "value": " wtf, value: meet in the garden",
+            "value": " meet in the garden",
             "entity": "activity"
           }
         ],
@@ -955,7 +955,7 @@
           {
             "start": 10,
             "end": 29,
-            "value": " wtf, value: meet in the garden",
+            "value": " meet in the garden",
             "entity": "activity"
           }
         ],
@@ -26903,7 +26903,7 @@
         ]
       },
       {
-        "value": " wtf, value: meet in the garden",
+        "value": " meet in the garden",
         "synonyms": [
           "hang out in your garden",
           "meet in your garden"

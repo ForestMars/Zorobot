@@ -48,7 +48,14 @@
   - utter_ask_who
 
 ## schedule call
-* schedule_call OR ask_availability OR following_up
+* schedule_call
+  - utter_sure_we_can
+  - utter_ask_who
+* thisis
+  - utter_ask_day
+
+## availability follow up
+* ask_availability OR following_up
   - utter_ask_who
 * thisis
   - utter_ask_day

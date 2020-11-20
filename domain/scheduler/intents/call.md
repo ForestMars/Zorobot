@@ -83,11 +83,11 @@
 - do you want me to [come over](activity) [tonight](when)
 
 
-- lets [hang out in your garden](activity: meet in the garden)
+- lets [hang out in your garden](activity:hang out in the garden)
 
-- let's [meet in your garden](activity: meet in the garden)
+- let's [meet in your garden](activity:hang out in the garden)
 
-- i want to [meet in your garden](activity: meet in the garden)
+- i want to [meet in your garden](activity:hang out in the garden)
 
 - lets [grab lunch](activity)
 - lets [grab lunch](activity) [sometime](when)

@@ -45,6 +45,25 @@
 - what open positions you have
 - what open roles you have
 
+- is your company hiring
+- is your company currently
+- is your company currently hiring
+- is your company staffing up
+- is your company currently staffing up
+- is your company hiring right now
+- is your company considering candidates
+- is your company interviewing candidates
+- do you have any open roles
+- what roles is your company trying to fill
+- what roles is your company currently trying to fill
+- what roles do you currently have open
+- what is your company open roles right now
+- do you have any open positions
+- what positions is your company currently trying to fill
+- what positions do you currently have open
+- what open positions you have
+- what open roles you have
+
 ## intent:ask_are_you_open_to
 - are you open to seeing candidates
 - are you open to seeing a few candidates

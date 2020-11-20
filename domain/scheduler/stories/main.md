@@ -1,9 +1,9 @@
 ## lets do
 * lets_do_something OR can_we_do_something
-  - utter_robot
   - utter_sure_we_can
   - utter_ask_day
 * suggest_day
+  - action_check_day
   - utter_ask_time_day
 
 ## when is good

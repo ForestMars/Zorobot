@@ -6,35 +6,35 @@
 - lets [have a call](activity)
 - we should [have a call](activity)
 - can we plan to [have a call](activity)
-- id like to schedule [a call]("entity": "activity", "value": "have a call")
-- can we [schedule a call]("entity": "activity", "value": "have a call")
-- can you [schedule a call]("entity": "activity", "value": "have a call")
-- can you [schedule a call]("entity": "activity", "value": "have a call") for me
-- lets [schdule a call]("entity": "activity", "value": "have a call")
-- can we [make an appointment for a call]("entity": "activity", "value": "have a call")
-- can we [plan a call]("entity": "activity", "value": "have a call")
-- are you able to [schedule a call]("entity": "activity", "value": "have a call")
-- when is a good time for us to [schedule a call]("entity": "activity", "value": "have a call")
-- i would like to [set up a call]("entity": "activity", "value": "have a call")
-- can we [set up a call]("entity": "activity", "value": "have a call")
-- are we able to [set up [a call]("entity": "activity", "value": "have a call")
-- id like to [book a call]("entity": "activity", "value": "have a call")
-- can we [book a call]("entity": "activity", "value": "have a call")
-- can you [book a call]("entity": "activity", "value": "have a call")
-- can you [book a call]("entity": "activity", "value": "have a call") for me
-- can you [set up a call]("entity": "activity", "value": "have a call") for me
-- lets [set up a call]("entity": "activity", "value": "have a call")
-- we should [set up a call]("entity": "activity", "value": "have a call")
-- are you able to [set up a call]("entity": "activity", "value": "have a call")
-- when is a good time for us to [book a call]("entity": "activity", "value": "have a call")
-- i would like to [book a call]("entity": "activity", "value": "have a call")
-- would like to [book a call]("entity": "activity", "value": "have a call")
-- would like to [book a call]("entity": "activity", "value": "have a call") please
-- hi would like to [book a call]("entity": "activity", "value": "have a call") please
-- hi would like to [book a call]("entity": "activity", "value": "have a call") with forest please
-- hi would like to [book a call]("entity": "activity", "value": "have a call") with forest
-- would like to [book a call]("entity": "activity", "value": "have a call") with forest please
-- would like to [book a call]("entity": "activity", "value": "have a call") with forest
+- id like to schedule [a call](activity:have a call)
+- can we [schedule a call](activity:have a call)
+- can you [schedule a call](activity:have a call)
+- can you [schedule a call](activity:have a call) for me
+- lets [schdule a call](activity:have a call)
+- can we [make an appointment for a call](activity:have a call)
+- can we [plan a call](activity:have a call)
+- are you able to [schedule a call](activity:have a call)
+- when is a good time for us to [schedule a call](activity:have a call)
+- i would like to [set up a call](activity:have a call)
+- can we [set up a call](activity:have a call)
+- are we able to [set up [a call](activity:have a call)
+- id like to [book a call](activity:have a call)
+- can we [book a call](activity:have a call)
+- can you [book a call](activity:have a call)
+- can you [book a call](activity:have a call) for me
+- can you [set up a call](activity:have a call) for me
+- lets [set up a call](activity:have a call)
+- we should [set up a call](activity:have a call)
+- are you able to [set up a call](activity:have a call)
+- when is a good time for us to [book a call](activity:have a call)
+- i would like to [book a call](activity:have a call)
+- would like to [book a call](activity:have a call)
+- would like to [book a call](activity:have a call) please
+- hi would like to [book a call](activity:have a call) please
+- hi would like to [book a call](activity:have a call) with forest please
+- hi would like to [book a call](activity:have a call) with forest
+- would like to [book a call](activity:have a call) with forest please
+- would like to [book a call](activity:have a call) with forest
 
 ## intent:lets_do_something
 - id like to [get together](activity)
@@ -82,11 +82,13 @@
 - do you want me to [come over](activity)
 - do you want me to [come over](activity) [tonight](when)
 
-
+- lets [hang out in your garden](activity)
+- let's [meet in your garden](activity)
+- i want to [meet in your garden](activity)
+- can we [hang out in the garden](actvity)
+- can we [hang out in your garden](activity:hang out in the garden)
 - lets [hang out in your garden](activity:hang out in the garden)
-
 - let's [meet in your garden](activity:hang out in the garden)
-
 - i want to [meet in your garden](activity:hang out in the garden)
 
 - lets [grab lunch](activity)

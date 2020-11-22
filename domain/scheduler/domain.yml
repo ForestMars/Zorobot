@@ -289,6 +289,7 @@ intents:
 - lets_do_something
 - can_we_do_something
 - when_is_good
+- enthusiasm
 
 
 actions:

@@ -964,3 +964,9 @@
 - i was going over
 - i was about to
 - i was considering
+
+## intent:enthusiasm
+- im excited
+- i would be stoked
+- I would be pumped
+- it would be great 

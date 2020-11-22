@@ -71,6 +71,19 @@ All 3 containers can be run on a single server, or in microservices mode, deploy
 
 Zorobot runs cleanly on bare metal, which can be used for development. To deploy to a bare metal server for production, you currently have to roll your own install script as it is not included with the 0.1 release.  **\m/**
 
+## MULTIHOST
+
+#### The manual way:
+Given you know the IP addresses for each of your host machines:
+1. Add them to the environment (config/env.yml)
+2. Copy docker-compose and Docker file to target hosts.
+3. Run docker-compose with service name as argument on each respective host.
+#### The Swarm way:
+1. Designate one host as Swarm manager and run
+  `docker swarm init`
+This will generate a join-token which your other nodes can use to join the swarm with `docker swarm join`  
+
+
 ## RUN
 
 Assuming you have a working environment definition file in the `env` directory, simply run `docker-compose up`. (This ofc assumes you have root permissions or have added your user to the docker group. I got 99 problems son, but permissions ain't one.) To start an individual service, specify it as the target of docker-compose:
@@ -113,7 +126,7 @@ This looks like what we'll be using going forward for date/time intent extractio
 If someone specifies a preferred time in diff time zone, it will get interpreted as local TZ. This is on hold pending Duckling integration.
 
 * Multi-domain mode
-Currently uses giant "domain of doom" for all domains. This will be refactored once core is updated to 2.0. 
+Currently uses giant "domain of doom" for all domains. This will be refactored once core is updated to 2.0.
 
 ### Github issue queue
 

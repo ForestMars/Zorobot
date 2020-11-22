@@ -359,6 +359,7 @@
     "prev_utter_no_worries",
     "prev_utter_up_down",
     "prev_utter_sure_we_can",
+    "prev_utter_sorry_dont_understand",
     "prev_email_form",
     "active_form_email_form"
   ]

@@ -452,6 +452,7 @@ actions:
 - utter_no_worries
 - utter_up_down
 - utter_sure_we_can
+- utter_sorry_dont_understand
 
 templates:
   utter_default:
@@ -857,3 +858,5 @@ templates:
   - text: One third of a neutron? (A neutron is made up of 1 up quark + 2 down quarks.)
   utter_sure_we_can:
   - text: Sure we can {activity}
+  utter_sorry_dont_understand:
+  - text: I'm sorry, I didn't understand that

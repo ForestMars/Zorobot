@@ -27016,6 +27016,26 @@
       {
         "intent": "zoro_good",
         "text": "you are so good"
+      },
+      {
+        "intent": "nonsequitur",
+        "text": "warm up your barks"
+      },
+      {
+        "intent": "nonsequitur",
+        "text": "he who barks last"
+      },
+      {
+        "intent": "nonsequitur",
+        "text": "is your bark worse or your bite"
+      },
+      {
+        "intent": "nonsequitur",
+        "text": "do you bark at the moon"
+      },
+      {
+        "intent": "nonsequitur",
+        "text": "bark bark bark"
       }
     ],
     "regex_features": [],

@@ -158,6 +158,7 @@ actions:
 - utter_no_worries
 - utter_up_down
 - utter_sure_we_can
+- utter_sorry_dont_understand
 config:
   store_entities_as_slots: true
 entities:
@@ -898,6 +899,8 @@ templates:
   - text: Sorry about that.
   utter_sorry2hear:
   - text: I'm sorry to hear that.
+  utter_sorry_dont_understand:
+  - text: I'm sorry, I didn't understand that
   utter_sorry_try_again:
   - text: Sorry I didn't quite get that, can you please rephrase?
   utter_stop_smoking:

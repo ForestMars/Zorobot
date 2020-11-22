@@ -8,34 +8,16 @@
     "email_form": {
       "slots": []
     },
-    "utter_bye": {
-      "slots": []
-    },
     "utter_np": {
       "slots": []
     },
-    "utter_confirm_best_email": {
-      "slots": []
-    },
-    "utter_ask_schedule_call_discuss": {
-      "slots": []
-    },
-    "utter_ask_day": {
+    "utter_bye": {
       "slots": []
     },
     "action_send_invite": {
       "slots": []
     },
-    "utter_none_of_your_business": {
-      "slots": []
-    },
-    "action_restart": {
-      "slots": []
-    },
-    "utter_no_worries": {
-      "slots": []
-    },
-    "utter_ask_time_date": {
+    "utter_corona_bot": {
       "slots": []
     },
     "utter_ask_date": {
@@ -44,37 +26,61 @@
     "utter_greet": {
       "slots": []
     },
+    "utter_ask_change_what": {
+      "slots": []
+    },
+    "utter_ask_time_date": {
+      "slots": []
+    },
     "utter_ask_time_day": {
       "slots": []
     },
-    "utter_ask_who": {
+    "utter_none_of_your_business": {
+      "slots": []
+    },
+    "utter_no_worries": {
+      "slots": []
+    },
+    "utter_ask_schedule_call_discuss": {
+      "slots": []
+    },
+    "utter_confirm_best_email": {
+      "slots": []
+    },
+    "action_restart": {
       "slots": []
     },
     "utter_wunderbar": {
       "slots": []
     },
-    "utter_corona_bot": {
-      "slots": []
-    },
-    "utter_ask_change_what": {
-      "slots": []
-    },
-    "utter_ask_schedule_call": {
+    "utter_ask_who": {
       "slots": []
     },
     "utter_im_a_scheduling_agent": {
       "slots": []
     },
-    "utter_soami": {
+    "utter_looking_forward": {
       "slots": []
     },
     "utter_up_down": {
       "slots": []
     },
+    "utter_ask_day": {
+      "slots": []
+    },
     "utter_intro_dog": {
       "slots": []
     },
+    "utter_soami": {
+      "slots": []
+    },
+    "utter_sorry_dont_understand": {
+      "slots": []
+    },
     "utter_yum": {
+      "slots": []
+    },
+    "utter_ask_schedule_call": {
       "slots": []
     }
   },
@@ -90,7 +96,7 @@
     "rasa_core.policies.memoization.MemoizationPolicy",
     "rasa_core.policies.form_policy.FormPolicy"
   ],
-  "trained_at": "20201120-004349",
+  "trained_at": "20201121-202406",
   "rasa_core": "0.13.8",
   "tensorflow": "1.12.0",
   "sklearn": "0.20.2"

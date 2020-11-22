@@ -18,6 +18,14 @@
 * deny OR sorry
   - action_listen
 
+## nonsequitur
+* nonsequitur
+  - utter_sorry_dont_understand
+
+## omw
+* omw
+  - utter_looking_forward
+
 ## wassup
 * sup
   - utter_up_down

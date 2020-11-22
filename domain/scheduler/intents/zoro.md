@@ -32,3 +32,10 @@
 - you're such a good dog
 - you're so good
 - you are so good
+
+## intent:nonsequitur
+- warm up your barks
+- he who barks last
+- is your bark worse or your bite
+- do you bark at the moon
+- bark bark bark

@@ -41,7 +41,7 @@ Building Zorobot for your architecture is as simple as running:
 make build
 ```
 
-This is an alias for `build-arch` which compiles from the source files (found in `build/src`) to (the) executable objects (which are) found in `lib/c`.)
+This is an alias for `build-arch` which compiles from the source files (found in `lib/c`) to (the) executable objects (which are) found in `lib/ext`.)
 
 The included Makefile also supports options for `build-source` which creates the source code used by build-arch, and `build-local` which, intended for developers, skips the intermediate step and directly compiles the binaries for your local architecture.
 
@@ -76,7 +76,7 @@ Zorobot runs cleanly on bare metal, which can be used for development. To deploy
 
 ## MULTIHOST
 
-If you're not using Kubernetes but still want to run each service on its own node, Zorobot can be deployed in multihost mode, either manully, or using Docker Swarm. 
+If you're not using Kubernetes but still want to run each service on its own node, Zorobot can be deployed in multihost mode, either manully, or using Docker Swarm.
 
 #### The manual way:
 Given you know the IP addresses for each of your host machines:

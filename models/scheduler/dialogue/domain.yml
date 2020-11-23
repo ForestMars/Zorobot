@@ -45,7 +45,6 @@ actions:
 - utter_nice
 - utter_no
 - utter_np
-- utter_noworries
 - utter_not_sure
 - utter_pretty_sure
 - utter_robot
@@ -106,7 +105,6 @@ actions:
 - utter_ask_for_phone_number
 - utter_ask_email
 - utter_ask_Nou
-- utter_ask_nou
 - utter_ask_who
 - utter_ask_specific_time
 - utter_affirm_day
@@ -166,13 +164,13 @@ actions:
 config:
   store_entities_as_slots: true
 entities:
+- fm
 - activity
 - appt
 - ETA
 - Geo
 - ToLocation
 - FromLocation
-- nou
 - Nou
 - Nou_last
 - Who
@@ -197,9 +195,8 @@ entities:
 - are_you_hiring
 - open_roles
 forms:
-- email_form
 - Nou_form
-- nou_form
+- email_form
 intents:
 - forest:
     use_entities: true
@@ -375,6 +372,8 @@ intents:
     use_entities: true
 - looking_forward:
     use_entities: true
+- meet_up:
+    use_entities: true
 - dinner:
     use_entities: true
 - dinner_with:
@@ -384,6 +383,8 @@ intents:
 - eta_when:
     use_entities: true
 - have_dinner:
+    use_entities: true
+- omw:
     use_entities: true
 - here:
     use_entities: true
@@ -404,6 +405,10 @@ intents:
 - did_you_get_candidates:
     use_entities: true
 - did_you_send_resume:
+    use_entities: true
+- send_resume:
+    use_entities: true
+- make_request:
     use_entities: true
 - feel_good:
     use_entities: true
@@ -502,14 +507,6 @@ intents:
 - enthusiasm:
     use_entities: true
 - saymyname:
-    use_entities: true
-- meet_up:
-    use_entities: true
-- omw:
-    use_entities: true
-- make_request:
-    use_entities: true
-- send_resume:
     use_entities: true
 - nonsequitur:
     use_entities: true
@@ -611,10 +608,6 @@ slots:
     auto_fill: true
     initial_value: ' '
     type: rasa_core.slots.UnfeaturizedSlot
-  nou:
-    auto_fill: true
-    initial_value: null
-    type: rasa_core.slots.UnfeaturizedSlot
   open_roles:
     auto_fill: true
     initial_value: null
@@ -655,8 +648,6 @@ slots:
     initial_value: null
     type: rasa_core.slots.UnfeaturizedSlot
 templates:
-  uter_no_worries:
-  - text: No worries!
   utter_affirm:
   - text: Yasss!
   utter_affirm_day:
@@ -678,7 +669,7 @@ templates:
   utter_anyway:
   - text: hemingway...
   utter_ask_Nou:
-  - text: Who is this please? upper case
+  - text: Who is this please?
   utter_ask_are_you_tryna_schedule:
   - text: Are you trying to set up a call with Forest?
   - text: Are you trying to set up a meeting with Forest?
@@ -712,8 +703,6 @@ templates:
   - text: What can I do for you?
   utter_ask_howfeeling:
   - text: What are you up to?
-  utter_ask_nou:
-  - text: Who is this please? lower case
   utter_ask_schedule_call:
   - text: Did you want to schedule a call?
   - text: Do you want to schedule a call?
@@ -757,7 +746,7 @@ templates:
   - text: I'm not too good at small talk, this number is only for scheduling meetings.
       If you'd like to have a general conversation, please use 347-688-7501 instead.
   utter_confirm_best_email:
-  - text: Just to confirm, {email} is the right email to send the call invite to?
+  - text: Just to confirm, {email} is the right email to send to?
   utter_confirm_change_date_or_time:
   - text: Ok, you'd like to change the {date_or_time}, correct?
   utter_confirm_phone_number:
@@ -871,6 +860,8 @@ templates:
   - text: Nice to hear from you {Nou}
   utter_nicetomeetu:
   - text: Nice to meet you, {Nou}.
+  utter_no_worries:
+  - text: No worries!
   utter_noidonotlikeyourhat:
   - text: No, I do not like your hat.
   utter_none_of_your_business:

@@ -1,39 +1,96 @@
 {
   "action_fingerprints": {
     "action_listen": {
+      "slots": [
+        "res",
+        "date_or_time"
+      ]
+    },
+    "email_form": {
       "slots": []
     },
-    "Nou_form": {
+    "utter_np": {
       "slots": []
     },
-    "utter_does_that_make_sense": {
-      "slots": []
-    },
-    "utter_your_name": {
-      "slots": []
-    },
-    "utter_ask_schedule_call_discuss": {
-      "slots": []
-    },
-    "utter_corona_bot": {
-      "slots": []
-    },
-    "utter_looking_forward": {
-      "slots": []
-    },
-    "utter_sorry_dont_understand": {
+    "utter_bye": {
       "slots": []
     },
     "utter_greet": {
       "slots": []
     },
+    "utter_ask_day": {
+      "slots": []
+    },
+    "utter_wunderbar": {
+      "slots": []
+    },
+    "utter_ask_change_what": {
+      "slots": []
+    },
+    "utter_ask_time_date": {
+      "slots": []
+    },
+    "utter_ask_schedule_call_discuss": {
+      "slots": []
+    },
+    "utter_none_of_your_business": {
+      "slots": []
+    },
+    "utter_your_name": {
+      "slots": []
+    },
+    "utter_ask_date": {
+      "slots": []
+    },
+    "utter_ask_time_day": {
+      "slots": []
+    },
+    "utter_ask_who": {
+      "slots": []
+    },
+    "utter_looking_forward": {
+      "slots": []
+    },
     "utter_up_down": {
+      "slots": []
+    },
+    "utter_confirm_best_email": {
+      "slots": []
+    },
+    "utter_corona_bot": {
+      "slots": []
+    },
+    "action_send_invite": {
+      "slots": []
+    },
+    "utter_ask_schedule_call": {
+      "slots": []
+    },
+    "utter_no_worries": {
+      "slots": []
+    },
+    "utter_yum": {
+      "slots": []
+    },
+    "utter_sorry_dont_understand": {
       "slots": []
     },
     "utter_intro_dog": {
       "slots": []
     },
-    "utter_yum": {
+    "utter_smiley": {
+      "slots": []
+    },
+    "action_restart": {
+      "slots": []
+    },
+    "utter_im_a_scheduling_agent": {
+      "slots": []
+    },
+    "Nou_form": {
+      "slots": []
+    },
+    "utter_anything_else": {
       "slots": []
     }
   },
@@ -49,7 +106,7 @@
     "rasa_core.policies.memoization.MemoizationPolicy",
     "rasa_core.policies.form_policy.FormPolicy"
   ],
-  "trained_at": "20201122-233055",
+  "trained_at": "20201123-040451",
   "rasa_core": "0.13.8",
   "tensorflow": "1.12.0",
   "sklearn": "0.20.2"

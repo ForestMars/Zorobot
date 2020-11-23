@@ -17,10 +17,26 @@
 
 ## send resume
 * send_resume
-  - utter_yum
+  - utter_sure
   - Nou_form
   - form{"name": "Nou_form"}
   - form{"name": null}
-  - utter_smiley
+  - email_form
+  - form{"name": "email_form"}
+  - form{"name": null}
+  - utter_confirm_best_email
+* affirm
   - action_send_res
-  - utter_does_that_make_sense
+  - utter_anything_else
+
+## request cv
+* make_request {"res": "cv"}
+  - utter_confirm_best_email
+  - action_send_res  
+  - utter_smiley
+
+## request jd
+* make_request {"res": "jd"}
+  - utter_confirm_best_email
+  - action_send_res
+  - utter_smiley

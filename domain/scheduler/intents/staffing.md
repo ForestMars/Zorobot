@@ -1,5 +1,4 @@
 
-
 ## intent:remember_me
 - I don't know if you recall
 - I don't know if you remember
@@ -65,14 +64,19 @@
 - what open roles you have
 
 ## intent:ask_are_you_open_to
-- are you open to seeing candidates
-- are you open to seeing a few candidates
-- can i send a few resumes your way
-- are you open to seeing some resumes
-- are you open to talking to a few candidates
-- are you open to talking to a candidate
-- can i run a candidate by you
-- can i run a few candidates by you
+- are you open to seeing [candidates](pos:candidates)
+- are you open to seeing potential [candidates](pos:candidates)
+- are you open to seeing a few [candidates](pos:candidates)
+- can i send a few [resumes](pos:resumes) your way
+- are you open to seeing some [resumes](resumes)
+- are you open to talking to a few [candidates](pos:candidates)
+- are you open to talking to a [candidate](pos:candidates)
+- can i run a [candidate](pos:candidate) by you
+- can i run a few [candidates](pos:candidates) by you
+- are you open to [new opportunities](pos:opp)
+- are you open to considering [a new role](pos:opp)
+- are you open to considering any [new roles](pos:opp)
+- i have an [opportunity](pos:opp) you may be interested in
 
 ## intent:did_you_get_candidates
 - did you get the resumes i sent over
@@ -109,18 +113,58 @@
 - were any of the candidates i sent over interesting to you
 - are you interested in any of the candidates i sent over
 
+## intent:make_request
+- can you send me the [jd](res)
+- can you send me the [vp engineering](kind) [jd](res)
+- can you send me the [solutions architect](kind) [jd](res)
+- can you send me the [solutions engineer](kind) [jd](res)
+- can you send me the [senior engineer](kind) [jd](res)
+
 ## intent:send_resume
 - can you send me [your resume](res:cv)
 - can you send me [your resume](res) please
+- can you send me [your current resume](res:cv)
+- can you send me [your current resume](res) please
 - can you please send me [your resume](res:cv)
 - please can you please send me [your resume](res:cv)
 - will you send [your resume](res:cv) over
 - will you please send me [your resume](res:cv)
 - please send me [your resume](res:cv)
 - if you send [your resume](res:cv) over i'll get the process started
-
-## synonym:please
-- kudasai
+- no but can you send me [your resume](res:cv)
+- no need for a call but can you shoot me [your resume](res:cv)
+- no, however can you send [your resume](res:cv) over?
+- no, however can you send [your current resume](res:cv) over?
+- hey [forest](fm) can you send me [your current resume](res:cv)
+- hey [forest](fm) can you send [your current resume](res:cv) over
+- hi [forest](fm), it's [barb](Nou), can you send [your resume](res:cv) over
+- hey [forest](fm), its [keith](Nou) can you send me [your current resume](res:cv)
+- hi [forest](fm), its [peter](Nou), can you send [your current resume](res:cv) over
+- hey [forest](fm), its [mark](Nou), can you send me [your resume](res:cv)
+- hi [forest](fm) its [matt](Nou) can you send [your resume](res:cv) over
+- hey [forest](fm) its [john](Nou) can you send me [your current resume](res:cv)
+- hi [forest](fm) its [paul](Nou) can you send [your current resume](res:cv) over
+- hey [forest](fm) its [will](Nou) can you send me [the jd](res:jd) for the [solutions engineer](kind) role
+- hi [forest](fm), its [brian](Nou), can you send [that job description](res:cv) over
+- hey [forest](fm) its [graham](Nou) can you send me [the jd](res:cv) for the senior role
+- hi [forest](fm) its [rick](Nou) can you send over the [solutions engineer](kind) [job description](res)
+- hey [forest](fm), its [dan](Nou), can you send [your resume](res:cv) over
+- hi [forest](fm), its [eli](Nou), can you send [your current resume](res:cv) over
+- hey [forest](fm), its [francesca](Nou), can you please send me [your resume](res:cv)
+- hi [forest](fm), its [greg](Nou), please can you please send me [your resume](res:cv)
+- hey [forest](fm), its [holly](Nou), will you send [your resume](res:cv) over
+- hey [forest](fm), its [isabel](Nou), will you please send me [solutions architect](kind) [job description](res:jd) please
+- hi [forest](fm), its [jordan](Nou), please send me [your resume](res:cv)
+- hi [forest](fm), its [kevin](Nou), can you send me [senior engineer](kind) [job description](res:jd) please
+- hi [forest](fm), its [lee](Nou), can you send me [your resume](res) please
+- hi [forest](fm), its [martha](Nou), can you send me [your resume](res:cv)
+- hi [forest](fm), its [noel](Nou), can you send me [your resume](res) please
+- hi [forest](fm), its [olga](Nou), can you please send me [your resume](res:cv)
+- hi [forest](fm), its [pauline](Nou), please send me [junior role](kind) [job description](res:jd)
+- hi [forest](fm), its [quentin](Nou), will you send [senior role](kind) [job description](res:jd) over
+- hi [forest](fm), its [rachel](Nou), can you send me [senior engineer](kind) [job description](res:jd)
+- hi [forest](fm), its [stan](Nou), can you send me [solutions engineer](kind) [job description](res:jd) please
+- hi [forest](fm), its [tom](Nou), can you send me the [vp engineering](kind) [job description](res:jd)
 
 ## intent:did_you_send_resume
 - did you have a chance to send those [resumes](res) yet
@@ -145,19 +189,14 @@
 - theres a typo in the resume you sent
 - the resume you sent has an error
 
-## intent:make_request
-- can you send me the jd
-- can you send me the [vp engineering](kind) [jd](res)
-- can you send me the [solutions architect](kind) [jd](res)
-- can you send me the [solutions engineer](kind) [jd](res)
-- can you send me the [senior engineer](kind) [jd](res)
-
 ## synonym:jd
-j.d.
-JD
-J.D.
-job description
-job desc
+- j.d.
+- JD
+- J.D.
+- job description
+- job desc
+- role description
+- position description
 
 ## synonym:resume
 - resumé
@@ -166,3 +205,6 @@ job desc
 - c.v.
 - C.V.
 - Corpus Vitae
+
+## synonym:please
+- kudasai

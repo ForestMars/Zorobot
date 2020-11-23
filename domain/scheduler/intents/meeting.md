@@ -538,7 +538,6 @@ w
 
 
 ## intent:multi_intent
-- Hey Forest, Love to set up a call. [Freddie](Nou) Scope Personel
 - Hi Forest, thank you for coming back to me and i would be keen to set up a call. Can you let me know what your availability is? Thanks, [Sarah](Nou)
 - Hi Forest thank you for getting back to me. I would be interested in setting up a call. Thanks very much, [Ann](Nou)
 - Hi Forest thank you for getting back to me. I would like to set up a call. Sincerely, [Bud](Nou)
@@ -571,14 +570,14 @@ w
 - hi forest, this is [chip](Nou) i sent you some resumes and wanted to see whats a good time to discuss? LMK!
 - hi forest it's [pam](Nou) thank you for getting back to me and i would like to schedule a call. what is your availability this week? thanks!
 - hi forest it's [mel](Nou) thank you for getting back to me and i would like to schedule a call. what is your availability this week or next? thanks
- - hy forest it’s [roger](Nou) have you had a chance to look at those resumes i sent
- - hey forest this is [andy](Nou) thank you for getting back to me, can we hop on a call. whats good for this week?
- - hey forest this is [barry](Nou) got time for a call this week?
- - hey  this is [cal](Nou) we spoke on the phone.
- - hey forest its [dan](Nou) did you get a chance to look at the candidates i sent you
- - hello forest its [eric](Nou) have you had a chance to review the candidates
- - hello forest this is [felicia](Nou). did you get the candidates i sent over
-
+- hy forest it’s [roger](Nou) have you had a chance to look at those resumes i sent
+- hey forest this is [andy](Nou) thank you for getting back to me, can we hop on a call. whats good for this week?
+- hey forest this is [barry](Nou) got time for a call this week?
+- hey  this is [cal](Nou) we spoke on the phone.
+- hey forest its [dan](Nou) did you get a chance to look at the candidates i sent you
+- hello forest its [eric](Nou) have you had a chance to review the candidates
+- hello forest this is [felicia](Nou). did you get the candidates i sent over
+- Hey Forest, Love to set up a call. [Freddie](Nou) Scope Personel
 - hi forest this is [arlo](Nou) thank you for getting back to me, can we hop on a call. whats good for this week?
 - hi forest this is [barbara](Nou) got time for a call this week?
 - hi this is [rachel](Nou) we spoke on the phone.
@@ -588,7 +587,6 @@ w
 - hi forest it's [don](Nou). just following up on my email
 - hi forest it's [ron](Nou). i received your email and
 - hi forest it's [chelsea](Nou). great talking to you
-
 - hi forest this is [arlo](Nou), thank you for getting back to me, can we hop on a call. whats good for this week?
 - hi forest this is [barbara](Nou), got time for a call this week?
 - hi this is [rachel](Nou), we spoke on the phone.

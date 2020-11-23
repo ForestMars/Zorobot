@@ -814,6 +814,7 @@
 - restar
 - rstart
 - retstr
+- resatrt
 - rere
 - re
 - please restart

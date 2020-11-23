@@ -322,39 +322,34 @@ class ActionSendRes(Action):
         send = Send()
         sendres = {}
         res=tracker.get_slot('res')
-        sendres['Name'] = tracker.get_slot('Nou')
+        if tracker.get_slot('Nou') is not None:
+            sendres['Name'] = tracker.get_slot('Nou').capitalize() +','
+        sendres['FM'] = "Forest Mars"
         sendres['From'] = "themarsgroup@gmail.com"
         sendres['To'] =  tracker.get_slot('email')
 
         if res == 'cv':
-            sendres['Subject'] =  sendres['Name'] + "' Resumé"
+            sendres['Subject'] =  sendres['FM'] + "' Resumé"
             sender = Send()
             try:
-                dispatcher.utter_message("sending email now")
-                #sender.send_email(sendres)
+                sender.send_email(sendres)
+                dispatcher.utter_message("I just sent it to you. Please LMK if you don't get it.")
             except Exception as e:
                 print("oopsie, ", e)
 
         if res == 'jd':
-            kind=tracker.get_slot('kind')
-            sendres['Subject'] =  sendres['Name'] + "' Resumé"
+            kind = tracker.get_slot('kind')
+            sendres['Subject'] =  kind + " Job Description"
             sender = Send()
             try:
-                sender.send_email(sendres)
+                dispatcher.utter_message("Let's have a quick call to discuss.")
             except Exception as e:
                 print("oopsie, ", e)
 
             else:
                 print("No things left that can be sent.")
 
-
-        # @TODO: Add class to scheduler or sender module.
-        # send = sch.Send()
-        # send(name, email, res, kind)
-
     def submit(self, dispatcher, tracker, domain):
-        # @TODO: confirm email it was sent to with them.
-        # dispatcher.utter("I just sent it to you, pls lmk if you didn't get it.")
         pass
 
 
@@ -416,13 +411,13 @@ class NouForm(FormAction):
 
     @staticmethod
     def required_slots(tracker):
-        print("rquired slots")
-        return ["Nou", "nou"]
-
-
+        return ["Nou"]
 
     def submit(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict]:
-        print("submit fired")
+        # Unfortunately, submit *always* fires even if the form was previously completed. So, yeah, just write more custom code as a workaround, right?
+        #name = tracker.get_slot('Nou')
+        #msg = "Nice to hear from you " + name
+        #dispatcher.utter_message(msg)
         return []
 
 

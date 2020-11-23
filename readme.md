@@ -91,7 +91,7 @@ This will generate a join-token which your other nodes can use to join the swarm
 
 ## RUN
 
-Assuming you have a working environment definition file in the `env` directory, simply run `docker-compose up`. (This ofc assumes you have root permissions or have added your user to the docker group. I got 99 problems son, but permissions ain't one.) To start an individual service, specify it as the target of docker-compose:
+Assuming you have a working environment definition file in ~~the `env` directory~~ a`.env` file, simply run `docker-compose up`. (This ofc assumes you have root permissions or have added your user to the docker group. I got 99 problems son, but root permissions ain't one.) To start an individual service, specify it as the target of docker-compose:
 * NLU and Dialog Server: `docker-compose up dialog`
 * Response Server: `docker-composer up reactions`
 * SMS Chatbot: `docker-composer up bot`
@@ -105,7 +105,7 @@ Current training times in the default domain for differing epoch runs are as fol
   * 255 epochs ~11 minutes
   * 555 epochs ~24 minutes
 
-  Zorobot follows the principle that adding more training data to reduce training time is the preferred approach for saving significant development time. Having said that, if you find you're repeatedly adding training data to solve model accuracy issues, you're doing it wrong.
+  Zorobot follows the principle that adding more training data, not adding epochs, is the preferred approach for saving significant development time. Having said that, they each solve different, albeit overlapping problems. If you find you're repeatedly adding training data to solve model accuracy issues, you're doing it wrong.
 
 ## KNOWN ISSUES / FEATURE REQUESTS
 
@@ -122,7 +122,7 @@ Not so much a bug as a better implementation, so refactoring; rather than being 
 ### To Do's
 
 * Cleanup Cython build process:
-Cython tends to be a very idiosyncratic wapper for cc/gcc etc, it's more or less an overly opinionated transpiler that adds little to the compilation side, unless you just like spending an inordinate amount of time futzing with distutils. Which is just a judgey way of saying it's fine tho it keeps things at the same level of abstraction. If you are only comfortable wth Python, and not C, CPP or compiling, then stick with .pyx, but if Python is just another higher level tool in your tool chest, come play with the big boys.
+Cython tends to be a very idiosyncratic wapper for cc/gcc etc, it's more or less an overly opinionated transpiler that adds little to the compilation side, unless you just like spending an inordinate amount of time futzing with distutils. Which is just a judgey way of saying it's okay tho it keeps things at the same level of abstraction. If you are only comfortable wth Python, and not C, CPP or compiling, then stick with .pyx, but if Python is just another higher level tool in your tool chest, come play with the big boys.
 
 * Testing Time:
 The "Grok" class in the included Kronos module does a pretty suberb job of understanding just about any date and time representation in natural language (currently English only) but does need to be hammer tested for the gazillion ways people talk about dates and times. In testing, it gets 99% of all times and dates, but need to test more, esp. aganst tail cases of the `clean_time_string` method (Cf. t1, t2.) For example, when o'clock is assumed, not specified. (But also handling "o'clock" as a figure of speech.) Most of the date/time issues are low priority as the expectation is we'll be using Duckling for this.

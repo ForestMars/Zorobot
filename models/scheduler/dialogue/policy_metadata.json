@@ -1,86 +1,39 @@
 {
   "action_fingerprints": {
     "action_listen": {
-      "slots": [
-        "date_or_time"
-      ]
-    },
-    "email_form": {
       "slots": []
     },
-    "utter_np": {
+    "Nou_form": {
       "slots": []
     },
-    "utter_bye": {
+    "utter_does_that_make_sense": {
       "slots": []
     },
-    "action_send_invite": {
-      "slots": []
-    },
-    "utter_corona_bot": {
-      "slots": []
-    },
-    "utter_ask_date": {
-      "slots": []
-    },
-    "utter_greet": {
-      "slots": []
-    },
-    "utter_ask_change_what": {
-      "slots": []
-    },
-    "utter_ask_time_date": {
-      "slots": []
-    },
-    "utter_ask_time_day": {
-      "slots": []
-    },
-    "utter_none_of_your_business": {
-      "slots": []
-    },
-    "utter_no_worries": {
+    "utter_your_name": {
       "slots": []
     },
     "utter_ask_schedule_call_discuss": {
       "slots": []
     },
-    "utter_confirm_best_email": {
-      "slots": []
-    },
-    "action_restart": {
-      "slots": []
-    },
-    "utter_wunderbar": {
-      "slots": []
-    },
-    "utter_ask_who": {
-      "slots": []
-    },
-    "utter_im_a_scheduling_agent": {
+    "utter_corona_bot": {
       "slots": []
     },
     "utter_looking_forward": {
       "slots": []
     },
-    "utter_up_down": {
+    "utter_sorry_dont_understand": {
       "slots": []
     },
-    "utter_ask_day": {
+    "utter_greet": {
+      "slots": []
+    },
+    "utter_up_down": {
       "slots": []
     },
     "utter_intro_dog": {
       "slots": []
     },
-    "utter_soami": {
-      "slots": []
-    },
-    "utter_sorry_dont_understand": {
-      "slots": []
-    },
     "utter_yum": {
-      "slots": []
-    },
-    "utter_ask_schedule_call": {
       "slots": []
     }
   },
@@ -96,7 +49,7 @@
     "rasa_core.policies.memoization.MemoizationPolicy",
     "rasa_core.policies.form_policy.FormPolicy"
   ],
-  "trained_at": "20201121-202406",
+  "trained_at": "20201122-233055",
   "rasa_core": "0.13.8",
   "tensorflow": "1.12.0",
   "sklearn": "0.20.2"

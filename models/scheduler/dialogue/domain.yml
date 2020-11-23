@@ -2,6 +2,7 @@
 ---
 actions:
 - action_send_invite
+- action_send_res
 - action_message
 - action_check_day
 - action_check_date
@@ -104,6 +105,8 @@ actions:
 - utter_ask_time_date
 - utter_ask_for_phone_number
 - utter_ask_email
+- utter_ask_Nou
+- utter_ask_nou
 - utter_ask_who
 - utter_ask_specific_time
 - utter_affirm_day
@@ -159,6 +162,7 @@ actions:
 - utter_up_down
 - utter_sure_we_can
 - utter_sorry_dont_understand
+- utter_your_name
 config:
   store_entities_as_slots: true
 entities:
@@ -168,6 +172,7 @@ entities:
 - Geo
 - ToLocation
 - FromLocation
+- nou
 - Nou
 - Nou_last
 - Who
@@ -184,13 +189,17 @@ entities:
 - month_and_date
 - same_or_different
 - TOD
+- res
 - email
+- kind
 - person
 - accepting_resumes
 - are_you_hiring
 - open_roles
 forms:
 - email_form
+- Nou_form
+- nou_form
 intents:
 - forest:
     use_entities: true
@@ -490,6 +499,20 @@ intents:
     use_entities: true
 - when_is_good:
     use_entities: true
+- enthusiasm:
+    use_entities: true
+- saymyname:
+    use_entities: true
+- meet_up:
+    use_entities: true
+- omw:
+    use_entities: true
+- make_request:
+    use_entities: true
+- send_resume:
+    use_entities: true
+- nonsequitur:
+    use_entities: true
 slots:
   DATE:
     auto_fill: true
@@ -497,7 +520,7 @@ slots:
     type: rasa_core.slots.TextSlot
   Day:
     auto_fill: true
-    initial_value: null
+    initial_value: ' '
     type: rasa_core.slots.TextSlot
   HowLong:
     auto_fill: true
@@ -509,11 +532,11 @@ slots:
     type: rasa_core.slots.UnfeaturizedSlot
   Nou:
     auto_fill: true
-    initial_value: ' '
+    initial_value: null
     type: rasa_core.slots.UnfeaturizedSlot
   Nou_last:
     auto_fill: true
-    initial_value: ' '
+    initial_value: null
     type: rasa_core.slots.UnfeaturizedSlot
   TOD:
     auto_fill: true
@@ -572,6 +595,10 @@ slots:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.UnfeaturizedSlot
+  kind:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
   location:
     auto_fill: true
     initial_value: null
@@ -584,6 +611,10 @@ slots:
     auto_fill: true
     initial_value: ' '
     type: rasa_core.slots.UnfeaturizedSlot
+  nou:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
   open_roles:
     auto_fill: true
     initial_value: null
@@ -592,6 +623,10 @@ slots:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.UnfeaturizedSlot
+  res:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
   same_or_different:
     auto_fill: true
     initial_value: null
@@ -642,6 +677,8 @@ templates:
   - text: Is there anything else I can help you with?
   utter_anyway:
   - text: hemingway...
+  utter_ask_Nou:
+  - text: Who is this please? upper case
   utter_ask_are_you_tryna_schedule:
   - text: Are you trying to set up a call with Forest?
   - text: Are you trying to set up a meeting with Forest?
@@ -675,6 +712,8 @@ templates:
   - text: What can I do for you?
   utter_ask_howfeeling:
   - text: What are you up to?
+  utter_ask_nou:
+  - text: Who is this please? lower case
   utter_ask_schedule_call:
   - text: Did you want to schedule a call?
   - text: Do you want to schedule a call?
@@ -807,8 +846,7 @@ templates:
   utter_ill_send_invite:
   - text: Ok, I'll send out a calendar invite.
   utter_im_a_scheduling_agent:
-  - text: ah ok, sorry, I'm a call scheduling agent. If you'd like to have a more
-      general conversation, please message 347-688-7501.
+  - text: Ah ok, is there something else I can help you with?
   utter_intro_dog:
   - text: What if I never find out... https://i.pinimg.com/736x/98/d6/26/98d626eb01a1096c1c24e97a1d94d183--so-funny-funny-dogs.jpg
   utter_jackie_chan:
@@ -979,6 +1017,8 @@ templates:
   - text: Super!
   utter_yes:
   - text: Yes.
+  utter_your_name:
+  - text: ok {Nou} {Nou_last}
   utter_yum:
   - text: Yum!
   utter_yw:

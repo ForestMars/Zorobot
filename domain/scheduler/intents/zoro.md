@@ -39,3 +39,15 @@
 - is your bark worse or your bite
 - do you bark at the moon
 - bark bark bark
+
+## intent:zoro_questions
+- are you a dog
+- can you talk
+- what do you like to do
+- is forest nice to you (kind to you, etc.)
+- what’s your favorite song
+- what’s your favorite movie
+- what’s your favorite position
+- what’s your favorite food
+- what do you like to eat
+- how did you get here?

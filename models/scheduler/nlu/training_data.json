@@ -11097,6 +11097,14 @@
       },
       {
         "intent": "greet",
+        "text": "hiya there"
+      },
+      {
+        "intent": "greet",
+        "text": "heya there"
+      },
+      {
+        "intent": "greet",
         "text": "heya"
       },
       {
@@ -14510,6 +14518,62 @@
       {
         "intent": "inform_i_am",
         "text": "i was considering"
+      },
+      {
+        "intent": "enthusiasm",
+        "text": "im excited"
+      },
+      {
+        "intent": "enthusiasm",
+        "text": "i would be stoked"
+      },
+      {
+        "intent": "enthusiasm",
+        "text": "I would be pumped"
+      },
+      {
+        "intent": "enthusiasm",
+        "text": "it would be great"
+      },
+      {
+        "intent": "saymyname",
+        "text": "whats my name"
+      },
+      {
+        "intent": "saymyname",
+        "text": "what is my name"
+      },
+      {
+        "intent": "saymyname",
+        "text": "do you know my name"
+      },
+      {
+        "intent": "saymyname",
+        "text": "did you catch my name"
+      },
+      {
+        "intent": "saymyname",
+        "text": "can you tell me my name"
+      },
+      {
+        "intent": "saymyname",
+        "text": "do you know what my name is"
+      },
+      {
+        "intent": "saymyname",
+        "text": "tell me my name"
+      },
+      {
+        "intent": "saymyname",
+        "text": "can you refer to me by name"
+      },
+      {
+        "intent": "saymyname",
+        "text": "can you refer to me by name please"
+      },
+      {
+        "intent": "saymyname",
+        "text": "say my name"
       },
       {
         "intent": "omw",
@@ -21104,16 +21168,332 @@
         "text": "are you interested in any of the candidates i sent over"
       },
       {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 16,
+            "end": 27,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send me your resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 16,
+            "end": 27,
+            "value": "your resume",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send me your resume please"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 23,
+            "end": 34,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "can you please send me your resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 30,
+            "end": 41,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "please can you please send me your resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 14,
+            "end": 25,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "will you send your resume over"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 24,
+            "end": 35,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "will you please send me your resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 15,
+            "end": 26,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "please send me your resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 12,
+            "end": 23,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "if you send your resume over i'll get the process started"
+      },
+      {
         "intent": "did_you_send_resume",
+        "entities": [
+          {
+            "start": 36,
+            "end": 43,
+            "value": "resumes",
+            "entity": "res"
+          }
+        ],
         "text": "did you have a chance to send those resumes yet"
       },
       {
         "intent": "did_you_send_resume",
+        "entities": [
+          {
+            "start": 27,
+            "end": 34,
+            "value": "resumes",
+            "entity": "res"
+          }
+        ],
+        "text": "did you already send those resumes over"
+      },
+      {
+        "intent": "did_you_send_resume",
+        "entities": [
+          {
+            "start": 18,
+            "end": 24,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "did you send your resume over"
+      },
+      {
+        "intent": "did_you_send_resume",
+        "entities": [
+          {
+            "start": 18,
+            "end": 24,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
         "text": "did you send your resume"
       },
       {
         "intent": "did_you_send_resume",
+        "entities": [
+          {
+            "start": 35,
+            "end": 37,
+            "value": "jd",
+            "entity": "res"
+          }
+        ],
+        "text": "did you have a chance to send that jd"
+      },
+      {
+        "intent": "did_you_send_resume",
+        "entities": [
+          {
+            "start": 35,
+            "end": 37,
+            "value": "jd",
+            "entity": "res"
+          }
+        ],
+        "text": "did you have a chance to send that jd yet"
+      },
+      {
+        "intent": "did_you_send_resume",
+        "entities": [
+          {
+            "start": 27,
+            "end": 34,
+            "value": "resumes",
+            "entity": "res"
+          }
+        ],
+        "text": "did you already send those resumes over"
+      },
+      {
+        "intent": "did_you_send_resume",
+        "entities": [
+          {
+            "start": 13,
+            "end": 24,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
         "text": "did you send your resume over"
+      },
+      {
+        "intent": "did_you_send_resume",
+        "entities": [
+          {
+            "start": 13,
+            "end": 24,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "did you send your resume"
+      },
+      {
+        "intent": "did_you_send_resume",
+        "entities": [
+          {
+            "start": 29,
+            "end": 35,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "did you send me your current resume"
+      },
+      {
+        "intent": "is_resume_current",
+        "text": "is your resume up to date"
+      },
+      {
+        "intent": "is_resume_current",
+        "text": "is the resume you sent me current"
+      },
+      {
+        "intent": "is_resume_current",
+        "text": "is the resume you sent me up to date"
+      },
+      {
+        "intent": "is_resume_current",
+        "text": "is the resume you sent me correct"
+      },
+      {
+        "intent": "is_resume_current",
+        "text": "is the resume you sent all ready to go"
+      },
+      {
+        "intent": "is_resume_current",
+        "text": "the resume you sent had a typo"
+      },
+      {
+        "intent": "is_resume_current",
+        "text": "the resume you sent over has a date discrepancy"
+      },
+      {
+        "intent": "is_resume_current",
+        "text": "theres a typo in the resume you sent"
+      },
+      {
+        "intent": "is_resume_current",
+        "text": "the resume you sent has an error"
+      },
+      {
+        "intent": "make_request",
+        "text": "can you send me the jd"
+      },
+      {
+        "intent": "make_request",
+        "entities": [
+          {
+            "start": 20,
+            "end": 34,
+            "value": "vp engineering",
+            "entity": "kind"
+          },
+          {
+            "start": 35,
+            "end": 37,
+            "value": "jd",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send me the vp engineering jd"
+      },
+      {
+        "intent": "make_request",
+        "entities": [
+          {
+            "start": 20,
+            "end": 39,
+            "value": "solutions architect",
+            "entity": "kind"
+          },
+          {
+            "start": 40,
+            "end": 42,
+            "value": "jd",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send me the solutions architect jd"
+      },
+      {
+        "intent": "make_request",
+        "entities": [
+          {
+            "start": 20,
+            "end": 38,
+            "value": "solutions engineer",
+            "entity": "kind"
+          },
+          {
+            "start": 39,
+            "end": 41,
+            "value": "jd",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send me the solutions engineer jd"
+      },
+      {
+        "intent": "make_request",
+        "entities": [
+          {
+            "start": 20,
+            "end": 35,
+            "value": "senior engineer",
+            "entity": "kind"
+          },
+          {
+            "start": 36,
+            "end": 38,
+            "value": "jd",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send me the senior engineer jd"
       },
       {
         "intent": "thisis",
@@ -27036,6 +27416,46 @@
       {
         "intent": "nonsequitur",
         "text": "bark bark bark"
+      },
+      {
+        "intent": "zoro_questions",
+        "text": "are you a dog"
+      },
+      {
+        "intent": "zoro_questions",
+        "text": "can you talk"
+      },
+      {
+        "intent": "zoro_questions",
+        "text": "what do you like to do"
+      },
+      {
+        "intent": "zoro_questions",
+        "text": "is forest nice to you (kind to you, etc.)"
+      },
+      {
+        "intent": "zoro_questions",
+        "text": "what’s your favorite song"
+      },
+      {
+        "intent": "zoro_questions",
+        "text": "what’s your favorite movie"
+      },
+      {
+        "intent": "zoro_questions",
+        "text": "what’s your favorite position"
+      },
+      {
+        "intent": "zoro_questions",
+        "text": "what’s your favorite food"
+      },
+      {
+        "intent": "zoro_questions",
+        "text": "what do you like to eat"
+      },
+      {
+        "intent": "zoro_questions",
+        "text": "how did you get here?"
       }
     ],
     "regex_features": [],
@@ -27071,6 +27491,19 @@
           "NY, NY",
           "NYC",
           "your city"
+        ]
+      },
+      {
+        "value": "cv",
+        "synonyms": [
+          "your resume",
+          "resume"
+        ]
+      },
+      {
+        "value": "please",
+        "synonyms": [
+          "kudasai"
         ]
       },
       {

@@ -26,6 +26,10 @@
 * omw
   - utter_looking_forward
 
+## say my name
+* saymyname
+  - utter_your_name
+
 ## wassup
 * sup
   - utter_up_down

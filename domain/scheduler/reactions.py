@@ -12,6 +12,7 @@ from rasa_core_sdk.executor import CollectingDispatcher
 from rasa_core_sdk.forms import FormAction
 #from rasa_core_sdk.events import UserUtteranceReverted
 
+from lib.send_res import Send
 
 try:
     from lib.ext import kronos as kr
@@ -313,6 +314,49 @@ class ActionSendInvite(Action):  # Action Invite
 
         return []
 
+class ActionSendRes(Action):
+    def name(self):
+        return "action_send_res"
+
+    def run(self, dispatcher, tracker, domain):
+        send = Send()
+        sendres = {}
+        res=tracker.get_slot('res')
+        sendres['Name'] = tracker.get_slot('Nou')
+        sendres['From'] = "themarsgroup@gmail.com"
+        sendres['To'] =  tracker.get_slot('email')
+
+        if res == 'cv':
+            sendres['Subject'] =  sendres['Name'] + "' Resumé"
+            sender = Send()
+            try:
+                dispatcher.utter_message("sending email now")
+                #sender.send_email(sendres)
+            except Exception as e:
+                print("oopsie, ", e)
+
+        if res == 'jd':
+            kind=tracker.get_slot('kind')
+            sendres['Subject'] =  sendres['Name'] + "' Resumé"
+            sender = Send()
+            try:
+                sender.send_email(sendres)
+            except Exception as e:
+                print("oopsie, ", e)
+
+            else:
+                print("No things left that can be sent.")
+
+
+        # @TODO: Add class to scheduler or sender module.
+        # send = sch.Send()
+        # send(name, email, res, kind)
+
+    def submit(self, dispatcher, tracker, domain):
+        # @TODO: confirm email it was sent to with them.
+        # dispatcher.utter("I just sent it to you, pls lmk if you didn't get it.")
+        pass
+
 
 class ActionUpdateContacts(Action):
     def name(self):
@@ -364,6 +408,23 @@ class EmailForm(FormAction):
 
     def submit(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict]:
         return []
+
+
+class NouForm(FormAction):
+    def name(self):
+        return "Nou_form"
+
+    @staticmethod
+    def required_slots(tracker):
+        print("rquired slots")
+        return ["Nou", "nou"]
+
+
+
+    def submit(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict]:
+        print("submit fired")
+        return []
+
 
 
 class ActionRepeat(Action):

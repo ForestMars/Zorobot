@@ -294,8 +294,9 @@ fi
 if [[ $CHOICE == 2 && $RUNYN = 'n' ]]; then
   echo "Ttraining $R for the domain.";
   echo $PROJECT | tr '[:lower:]' '[:upper:]'
+  train_dialog
   # directory check, make directory if needed
-  time python -m rasa_core.train -d domain.yml -s domain/$DOMAIN/stories/ -o models/$PROJECT/dialogue -c policies.yml;
+  #time python -m rasa_core.train -d domain.yml -s domain/$DOMAIN/stories/ -o models/$PROJECT/dialogue -c policies.yml;
 fi
 
 # train dialogue and run

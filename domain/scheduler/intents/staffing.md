@@ -109,10 +109,55 @@
 - were any of the candidates i sent over interesting to you
 - are you interested in any of the candidates i sent over
 
+## intent:send_resume
+- can you send me [your resume](res:cv)
+- can you send me [your resume](res) please
+- can you please send me [your resume](res:cv)
+- please can you please send me [your resume](res:cv)
+- will you send [your resume](res:cv) over
+- will you please send me [your resume](res:cv)
+- please send me [your resume](res:cv)
+- if you send [your resume](res:cv) over i'll get the process started
+
+## synonym:please
+- kudasai
+
 ## intent:did_you_send_resume
-- did you have a chance to send those resumes yet
-- did you send your resume
-- did you send your resume over
+- did you have a chance to send those [resumes](res) yet
+- did you already send those [resumes](res) over
+- did you send your [resume](res:cv) over
+- did you send your [resume](res:cv)
+- did you have a chance to send that [jd](res)  
+- did you have a chance to send that [jd](res) yet
+- did you already send those [resumes](res) over
+- did you send [your resume](res:cv) over
+- did you send [your resume](res:cv)
+- did you send me your current [resume](res)
+
+## intent:is_resume_current
+- is your resume up to date
+- is the resume you sent me current
+- is the resume you sent me up to date
+- is the resume you sent me correct
+- is the resume you sent all ready to go
+- the resume you sent had a typo
+- the resume you sent over has a date discrepancy
+- theres a typo in the resume you sent
+- the resume you sent has an error
+
+## intent:make_request
+- can you send me the jd
+- can you send me the [vp engineering](kind) [jd](res)
+- can you send me the [solutions architect](kind) [jd](res)
+- can you send me the [solutions engineer](kind) [jd](res)
+- can you send me the [senior engineer](kind) [jd](res)
+
+## synonym:jd
+j.d.
+JD
+J.D.
+job description
+job desc
 
 ## synonym:resume
 - resumé

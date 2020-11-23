@@ -76,6 +76,8 @@ Zorobot runs cleanly on bare metal, which can be used for development. To deploy
 
 ## MULTIHOST
 
+If you're not using Kubernetes but still want to run each service on its own node, Zorobot can be deployed in multihost mode, either manully, or using Docker Swarm. 
+
 #### The manual way:
 Given you know the IP addresses for each of your host machines:
 1. Add them to the environment (config/env.yml)
@@ -114,10 +116,13 @@ Current training times in the default domain for differing epoch runs are as fol
 * The "scott" bug.
 In testing there was one particular instance where the trained LTSM model mis-predicted, namely when the user says "hi forest, it's scott" (with the grammatically correct apostrophe, and in all lower case) to which the bot consistently replies "Super!" instead of the correct response. This happens whether or not the user includes the comma, but does not happen if they misspell it's as "its" or if they capitalize 'Hi', 'Forest' or 'Scott' -- and does not happen for ANY other names tested, only for "scott" when typed in lower case. (The name "scotty" is likewise unaffected and elicits the correct response.) Worth mentioning, we have no one on the team named "Scott" and the expectation is that adding a few epochs will eliminate this bug; it's just an interesting and highly reproducible quirk.
 
+* Role lookup
+Not so much a bug as a better implementation, so refactoring; rather than being included in training data, roles should be a lookup (technically making them a categorical prior) which works better with the CAP model here, which leans on computation for availability but bakes consistency in (while partioning is handled across conversational domains.)
+
 ### To Do's
 
 * Cleanup Cython build process:
-Cython tends to be a very idiosyncratic wapper for cc/gcc etc, it's more or less an overly opinionated transpiler that adds little to the compilations side, unless you just like spending an inordinate amount of time futzing with distutils. Which is just a judgey way of saying it's fine tho it keeps things at the same level of abstraction. If you are only comfortable wth Python, and not C, CPP or compiling, then stick with .pyx, but if Python is just another higher level tool in your tool chest, come play with the big boys.
+Cython tends to be a very idiosyncratic wapper for cc/gcc etc, it's more or less an overly opinionated transpiler that adds little to the compilation side, unless you just like spending an inordinate amount of time futzing with distutils. Which is just a judgey way of saying it's fine tho it keeps things at the same level of abstraction. If you are only comfortable wth Python, and not C, CPP or compiling, then stick with .pyx, but if Python is just another higher level tool in your tool chest, come play with the big boys.
 
 * Testing Time:
 The "Grok" class in the included Kronos module does a pretty suberb job of understanding just about any date and time representation in natural language (currently English only) but does need to be hammer tested for the gazillion ways people talk about dates and times. In testing, it gets 99% of all times and dates, but need to test more, esp. aganst tail cases of the `clean_time_string` method (Cf. t1, t2.) For example, when o'clock is assumed, not specified. (But also handling "o'clock" as a figure of speech.) Most of the date/time issues are low priority as the expectation is we'll be using Duckling for this.
@@ -129,7 +134,7 @@ This looks like what we'll be using going forward for date/time intent extractio
 If someone specifies a preferred time in diff time zone, it will get interpreted as local TZ. This is on hold pending Duckling integration.
 
 * Multi-domain mode
-Currently uses giant "domain of doom" for all domains. This will be refactored once core is updated to 2.0.
+Currently uses giant "domain of doom" for all domains. This will be refactored once core is updated to 2.0. Also, action handling is cross-domain rather than being domain specific. Ideally, actions will be part of domain logic (with a general, default domain for actions which are not specific to a particular domain.)
 
 ### Github issue queue
 

@@ -15,6 +15,8 @@
 - hello world
 - hey
 - hey there
+- hiya there
+- heya there
 - heya
 - hi
 - hi again
@@ -969,4 +971,16 @@
 - im excited
 - i would be stoked
 - I would be pumped
-- it would be great 
+- it would be great
+
+## intent:saymyname
+- whats my name
+- what is my name
+- do you know my name
+- did you catch my name
+- can you tell me my name
+- do you know what my name is
+- tell me my name
+- can you refer to me by name
+- can you refer to me by name please
+- say my name

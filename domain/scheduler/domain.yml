@@ -8,6 +8,8 @@ action_factory: remote
 
 forms:
   - email_form
+  - Nou_form
+  - nou_form
 
 entities:
   - activity
@@ -16,6 +18,7 @@ entities:
   - Geo
   - ToLocation
   - FromLocation
+  - nou
   - Nou
   - Nou_last
   - Who
@@ -32,31 +35,34 @@ entities:
   - month_and_date
   - same_or_different
   - TOD
+  - res
   - email
+  - kind
   - person
   - accepting_resumes
   - are_you_hiring
   - open_roles
 
 
-# (Capitalized slots from user, snake_case slots from app.)
+# SLOTS (Capitalized slots from user, snake_case slots from app.)
 slots:
   activity:
     type: text
     initial_value: 'have a phone call'
+  nou:
+    type: unfeaturized
   Nou:
     type: unfeaturized
-    initial_value: ' '
   Nou_last:
     type: unfeaturized
+  Day:
+    type: text
     initial_value: ' '
-  When:
+  DATE:
     type: text
   HowLong:
     type: text
-  Day:
-    type: text
-  DATE:
+  When:
     type: text
   Time:
     type: text
@@ -117,6 +123,12 @@ slots:
     type: bool
   open_roles:
     type: list
+
+# General
+  res:
+    type: text
+  kind:
+    type: unfeaturized
 
 
 intents:
@@ -290,11 +302,21 @@ intents:
 - can_we_do_something
 - when_is_good
 - enthusiasm
+- saymyname
+
+- meet_up
+- omw
+- make_request
+- send_resume
+- make_request
+
+- nonsequitur
 
 
 actions:
 # ~~~~~~~~~~ Actions
 - action_send_invite
+- action_send_res
 - action_message
 - action_check_day
 - action_check_date
@@ -399,6 +421,8 @@ actions:
 - utter_ask_time_date
 - utter_ask_for_phone_number
 - utter_ask_email
+- utter_ask_Nou
+- utter_ask_nou
 - utter_ask_who
 - utter_ask_specific_time
 - utter_affirm_day
@@ -454,6 +478,7 @@ actions:
 - utter_up_down
 - utter_sure_we_can
 - utter_sorry_dont_understand
+- utter_your_name
 
 templates:
   utter_default:
@@ -690,6 +715,10 @@ templates:
   - text: ok, {Time} is good for me too.
   utter_ask_email:
   - text: What's your best email?
+  utter_ask_Nou:
+  - text: Who is this please? upper case
+  utter_ask_nou:
+  - text: Who is this please? lower case
   utter_heres_my_number:
   - text: "Here's the number to call me on: 347-688-7501"
   utter_best_number_is:
@@ -755,7 +784,7 @@ templates:
   utter_sorry_try_again:
   - text: Sorry I didn't quite get that, can you please rephrase?
   utter_im_a_scheduling_agent:
-  - ah ok, sorry, I'm a call scheduling agent. If you'd like to have a more general conversation, please message 347-688-7501.
+  - Ah ok, is there something else I can help you with?
   utter_anything_else:
   - text: Is there anything else I can help you with?
   utter_ok:
@@ -861,3 +890,5 @@ templates:
   - text: Sure we can {activity}
   utter_sorry_dont_understand:
   - text: I'm sorry, I didn't understand that
+  utter_your_name:
+  - text: ok {Nou} {Nou_last}

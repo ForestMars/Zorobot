@@ -1,4 +1,4 @@
-# lib/logger.py - Logging class and functions for Codato.
+# lib/logger.py - Logging class and functions for Zorobot.
 __version__ = '0.1'
 __all__ = ['Log', 'LOG_LEVEL', 'LOG_DIR', 'LOGFILE_NAME']
 #import inspect

@@ -19783,18 +19783,6 @@
         "intent": "multi_intent",
         "entities": [
           {
-            "start": 35,
-            "end": 42,
-            "value": "Freddie",
-            "entity": "Nou"
-          }
-        ],
-        "text": "Hey Forest, Love to set up a call. Freddie Scope Personel"
-      },
-      {
-        "intent": "multi_intent",
-        "entities": [
-          {
             "start": 136,
             "end": 141,
             "value": "Sarah",
@@ -20202,6 +20190,18 @@
           }
         ],
         "text": "hello forest this is felicia. did you get the candidates i sent over"
+      },
+      {
+        "intent": "multi_intent",
+        "entities": [
+          {
+            "start": 35,
+            "end": 42,
+            "value": "Freddie",
+            "entity": "Nou"
+          }
+        ],
+        "text": "Hey Forest, Love to set up a call. Freddie Scope Personel"
       },
       {
         "intent": "multi_intent",
@@ -21551,6 +21551,102 @@
         "intent": "send_resume",
         "entities": [
           {
+            "start": 22,
+            "end": 37,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "hi id like to request forest's resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 40,
+            "end": 55,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "no need for a call but can you shoot me forest's resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 19,
+            "end": 34,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "hi can you send me forest's resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 16,
+            "end": 31,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send me forest's resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 23,
+            "end": 38,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "can you please send me forest's resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 30,
+            "end": 45,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "please can you please send me forest's resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 14,
+            "end": 29,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "will you send forest's resume over"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 24,
+            "end": 39,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "will you please send me forest's resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
             "start": 4,
             "end": 10,
             "value": "forest",
@@ -21996,12 +22092,18 @@
           },
           {
             "start": 48,
-            "end": 59,
-            "value": "cv",
+            "end": 67,
+            "value": "solutions architect",
+            "entity": "kind"
+          },
+          {
+            "start": 68,
+            "end": 83,
+            "value": "jd",
             "entity": "res"
           }
         ],
-        "text": "hey forest, its isabel, will you please send me your resume"
+        "text": "hey forest, its isabel, will you please send me solutions architect job description please"
       },
       {
         "intent": "send_resume",
@@ -22044,12 +22146,18 @@
           },
           {
             "start": 38,
-            "end": 49,
-            "value": "cv",
+            "end": 53,
+            "value": "senior engineer",
+            "entity": "kind"
+          },
+          {
+            "start": 54,
+            "end": 69,
+            "value": "jd",
             "entity": "res"
           }
         ],
-        "text": "hi forest, its kevin, can you send me your resume"
+        "text": "hi forest, its kevin, can you send me senior engineer job description please"
       },
       {
         "intent": "send_resume",
@@ -22165,11 +22273,17 @@
           {
             "start": 39,
             "end": 50,
-            "value": "cv",
+            "value": "junior role",
+            "entity": "kind"
+          },
+          {
+            "start": 51,
+            "end": 66,
+            "value": "jd",
             "entity": "res"
           }
         ],
-        "text": "hi forest, its pauline, please send me your resume"
+        "text": "hi forest, its pauline, please send me junior role job description"
       },
       {
         "intent": "send_resume",
@@ -22189,11 +22303,17 @@
           {
             "start": 38,
             "end": 49,
-            "value": "cv",
+            "value": "senior role",
+            "entity": "kind"
+          },
+          {
+            "start": 50,
+            "end": 65,
+            "value": "jd",
             "entity": "res"
           }
         ],
-        "text": "hi forest, its quentin, will you send your resume over"
+        "text": "hi forest, its quentin, will you send senior role job description over"
       },
       {
         "intent": "send_resume",
@@ -22212,12 +22332,18 @@
           },
           {
             "start": 39,
-            "end": 50,
-            "value": "cv",
+            "end": 54,
+            "value": "senior engineer",
+            "entity": "kind"
+          },
+          {
+            "start": 55,
+            "end": 70,
+            "value": "jd",
             "entity": "res"
           }
         ],
-        "text": "hi forest, its rachel, can you send me your resume"
+        "text": "hi forest, its rachel, can you send me senior engineer job description"
       },
       {
         "intent": "send_resume",
@@ -22236,12 +22362,18 @@
           },
           {
             "start": 37,
-            "end": 48,
-            "value": "your resume",
+            "end": 55,
+            "value": "solutions engineer",
+            "entity": "kind"
+          },
+          {
+            "start": 56,
+            "end": 71,
+            "value": "jd",
             "entity": "res"
           }
         ],
-        "text": "hi forest, its stan, can you send me your resume please"
+        "text": "hi forest, its stan, can you send me solutions engineer job description please"
       },
       {
         "intent": "send_resume",
@@ -22259,13 +22391,19 @@
             "entity": "Nou"
           },
           {
-            "start": 36,
-            "end": 47,
-            "value": "cv",
+            "start": 40,
+            "end": 54,
+            "value": "vp engineering",
+            "entity": "kind"
+          },
+          {
+            "start": 55,
+            "end": 70,
+            "value": "jd",
             "entity": "res"
           }
         ],
-        "text": "hi forest, its tom, can you send me your resume"
+        "text": "hi forest, its tom, can you send me the vp engineering job description"
       },
       {
         "intent": "did_you_send_resume",
@@ -28384,6 +28522,138 @@
       {
         "intent": "zoro_questions",
         "text": "how did you get here?"
+      },
+      {
+        "intent": "is_this",
+        "text": "Hi, is this Zoro?"
+      },
+      {
+        "intent": "is_this",
+        "text": "Hi is this Zoro?"
+      },
+      {
+        "intent": "is_this",
+        "text": "hi is this zoro"
+      },
+      {
+        "intent": "is_this",
+        "text": "hi, is this zoro"
+      },
+      {
+        "intent": "is_this",
+        "text": "is this zoro"
+      },
+      {
+        "intent": "is_this",
+        "text": "is this Zoro"
+      },
+      {
+        "intent": "is_this",
+        "text": "is this Zoro?"
+      },
+      {
+        "intent": "is_this",
+        "text": "am i talking to zoro"
+      },
+      {
+        "intent": "is_this",
+        "text": "is this the scheduling agent"
+      },
+      {
+        "intent": "is_this",
+        "text": "are you zoro"
+      },
+      {
+        "intent": "is_this",
+        "text": "are you the scheduler"
+      },
+      {
+        "intent": "is_this",
+        "text": "are you the assistant"
+      },
+      {
+        "intent": "is_this",
+        "entities": [
+          {
+            "start": 8,
+            "end": 16,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "are you forest's assistant"
+      },
+      {
+        "intent": "is_this",
+        "text": "is this the scheduler"
+      },
+      {
+        "intent": "is_this",
+        "entities": [
+          {
+            "start": 8,
+            "end": 16,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "is this forest's scheduler"
+      },
+      {
+        "intent": "is_this",
+        "text": "hi can you schedule a call"
+      },
+      {
+        "intent": "is_this",
+        "text": "are you forest's helper"
+      },
+      {
+        "intent": "is_this",
+        "text": "are you forests dog"
+      },
+      {
+        "intent": "go_for_walk",
+        "text": "are you ready to go"
+      },
+      {
+        "intent": "go_for_walk",
+        "text": "are you ready to go out"
+      },
+      {
+        "intent": "go_for_walk",
+        "text": "are you ready to go for a walk"
+      },
+      {
+        "intent": "go_for_walk",
+        "text": "do you want to go out"
+      },
+      {
+        "intent": "go_for_walk",
+        "text": "do you want to go for a walk"
+      },
+      {
+        "intent": "go_for_walk",
+        "text": "do you want to go out for a walk"
+      },
+      {
+        "intent": "go_for_walk",
+        "text": "would you like to go for a walk"
+      },
+      {
+        "intent": "go_for_walk",
+        "text": "would you like to go out"
+      },
+      {
+        "intent": "go_for_walk",
+        "text": "who wants to go"
+      },
+      {
+        "intent": "go_for_walk",
+        "text": "who wants to go out"
+      },
+      {
+        "intent": "go_for_walk",
+        "text": "who wants to go out for a walk"
       }
     ],
     "regex_features": [],
@@ -28441,6 +28711,7 @@
         "synonyms": [
           "your resume",
           "your current resume",
+          "forest's resume",
           "the jd",
           "that job description",
           "resume"
@@ -28449,10 +28720,10 @@
       {
         "value": "jd",
         "synonyms": [
+          "job description",
           "j.d.",
           "JD",
           "J.D.",
-          "job description",
           "job desc",
           "role description",
           "position description"

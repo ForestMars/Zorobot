@@ -161,6 +161,8 @@ actions:
 - utter_sure_we_can
 - utter_sorry_dont_understand
 - utter_your_name
+- utter_im_zoro
+- utter_zoro_walk
 config:
   store_entities_as_slots: true
 entities:
@@ -836,6 +838,9 @@ templates:
   - text: Ok, I'll send out a calendar invite.
   utter_im_a_scheduling_agent:
   - text: Ah ok, is there something else I can help you with?
+  utter_im_zoro:
+  - text: Hi, I'm Zoro! I mostly help Forest with scheduling and stuff like that,
+      but you can ask me anything.
   utter_intro_dog:
   - text: What if I never find out... https://i.pinimg.com/736x/98/d6/26/98d626eb01a1096c1c24e97a1d94d183--so-funny-funny-dogs.jpg
   utter_jackie_chan:
@@ -1024,3 +1029,5 @@ templates:
       Forest.
   utter_zoro_thx:
   - text: Thanks! Do I get a treat with that?
+  utter_zoro_walk:
+  - text: You're kidding right? I ALWAYS want to go for a walk! I live for walks!!

@@ -135,6 +135,14 @@
 - no need for a call but can you shoot me [your resume](res:cv)
 - no, however can you send [your resume](res:cv) over?
 - no, however can you send [your current resume](res:cv) over?
+- hi id like to request [forest's resume](res:cv)
+- no need for a call but can you shoot me [forest's resume](res:cv)
+- hi can you send me [forest's resume](res:cv)
+- can you send me [forest's resume](res:cv)
+- can you please send me [forest's resume](res:cv)
+- please can you please send me [forest's resume](res:cv)
+- will you send [forest's resume](res:cv) over
+- will you please send me [forest's resume](res:cv)
 - hey [forest](fm) can you send me [your current resume](res:cv)
 - hey [forest](fm) can you send [your current resume](res:cv) over
 - hi [forest](fm), it's [barb](Nou), can you send [your resume](res:cv) over

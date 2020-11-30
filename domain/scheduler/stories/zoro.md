@@ -2,6 +2,26 @@
 * zoro
   - utter_greet
 
+## is this zoro
+* is_this
+  - utter_im_zoro
+
+## zoro care  
+* ask_zoro
+  - utter_zoro_spoiled
+
+## zoro origin
+* where_did_u_come_from
+  - utter_zoro_origin
+
+## zoro like
+* what_do_u_like
+  - utter_zoro_likes
+
+## go for a walk
+* go_for_walk
+  - utter_zoro_walk
+
 ## good dog
 * zoro_who
   - utter_intro_dog

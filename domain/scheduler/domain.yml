@@ -132,9 +132,6 @@ slots:
 intents:
 # ~~~~~~~~~~ General
 - forest
-- zoro
-- zoro_good
-- zoro_who
 - affirm
 - deny
 - agree
@@ -306,8 +303,15 @@ intents:
 - enthusiasm
 - saymyname
 
-
-
+# ~~~~~~~~~~ Zoro
+- zoro
+- zoro_good
+- zoro_who
+- is_this
+- go_for_walk
+- ask_zoro
+- where_did_u_come_from
+- what_do_u_like
 
 - nonsequitur
 
@@ -396,10 +400,6 @@ actions:
 - utter_quality
 - utter_topic_camus
 - utter_topic_facebook
-- utter_zoro
-- utter_zoro_greet
-- utter_zoro_thx
-- utter_intro_dog
 - utter_answer_hru_prof
 - utter_ask_howcanihelp
 - utter_ask_upto
@@ -476,6 +476,16 @@ actions:
 - utter_sure_we_can
 - utter_sorry_dont_understand
 - utter_your_name
+- utter_zoro
+- utter_zoro_greet
+- utter_zoro_thx
+- utter_intro_dog
+- utter_im_zoro
+- utter_zoro_walk
+- utter_zoro_spoiled
+- utter_zoro_likes
+- utter_zoro_origin
+
 
 templates:
   utter_default:
@@ -887,3 +897,13 @@ templates:
   - text: I'm sorry, I didn't understand that
   utter_your_name:
   - text: ok {Nou} {Nou_last}
+  utter_im_zoro:
+  - text: Hi, I'm Zoro! I mostly help Forest with scheduling and stuff like that, but you can ask me anything.
+  utter_zoro_walk:
+  - text: You're kidding right? I ALWAYS want to go for a walk! I live for walks!!
+  utter_zoro_spoiled:
+  - text: I'm probably the most spoiled dog on the Upper East Side, which is really saying something.
+  utter_zoro_likes:
+  - text: Besides loving Forest, I love walks, treats, getting attention and most people.
+  utter_zoro_origin:
+  - text: I arrived here in a crystal spaceship from a distant galaxy to bring my message of love to evereyone. 

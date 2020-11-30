@@ -51,3 +51,42 @@
 - what’s your favorite food
 - what do you like to eat
 - how did you get here?
+
+## intent:is_this
+- Hi, is this Zoro?
+- Hi is this Zoro?
+- hi is this zoro
+- hi, is this zoro
+- is this zoro
+- is this Zoro
+- is this Zoro?
+- am i talking to zoro
+- is this the scheduling agent
+- are you zoro
+- are you the scheduler
+- are you the assistant
+- are you [forest's](fm) assistant
+- is this the scheduler
+- is this [forest's](fm) scheduler
+- hi can you schedule a call
+- are you forest's helper
+- are you forests dog
+
+## intent:go_for_walk
+- are you ready to go
+- are you ready to go out
+- are you ready to go for a walk
+- do you want to go out
+- do you want to go for a walk
+- do you want to go out for a walk
+- would you like to go for a walk
+- would you like to go out
+- who wants to go
+- who wants to go out
+- who wants to go out for a walk
+
+## intent:ask_zoro
+- does forest take good care of you
+- does forest treat you well
+- does forest spoil you
+- does he take good care of you 

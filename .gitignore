@@ -5,7 +5,7 @@ env/*
 !env/.keep
 
 # Models are built for target architecture.
-# models/*
+models/*
 
 # Build directory and logs
 build/src

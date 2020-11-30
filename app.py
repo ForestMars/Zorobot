@@ -171,7 +171,7 @@ def who_this(): #placeholder
 
 if __name__ == "__main__":
     #logthis('calbot.log', 'zbot inititalized')
-    app.secret_key = 'HFIAFG' # @FIXME, obvi.
+    app.secret_key = 'SECRET' # If I told you, it wouldn't be. 
     #session_.init_app(app)
     #app.config['SESSION_TYPE'] = 'filesystem'
     #app.run(host='0.0.0.0', port= 80, debug=False)

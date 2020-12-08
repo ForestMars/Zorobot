@@ -142,4 +142,4 @@ Currently uses giant "domain of doom" for all domains. This will be refactored o
 
 ### LICENSE
 
-Zorobot is released under either the MIT or the GPL license, depending who you ask. Please [contact us](mailto:thearsgroup@gmail.com) for clarification or schedule a call to discuss by sending a text message to us at (415) 712-2019.
+Zorobot is released under either the MIT, Apache or GPL license, depending who you ask. Please [contact us](mailto:thearsgroup@gmail.com) for clarification or schedule a call to discuss by sending a text message to us at (415) 712-2019.

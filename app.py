@@ -19,6 +19,27 @@ import requests
 #import contacts
 from common.utils import HaltException as HX
 
+"""
+from common.logger import Log
+log = Log()
+try:
+    app.config('config.py')
+except Exception as e:
+    log("Error finding or loading DevelopmentConfig object. You probably need to specify package since Python 3 dropped support for relative import. (See PEP 8)", e)
+    try:
+        app.config.from_pyfile('config/config.py')
+        log("Loaded configuration from file")
+    except IOError:
+        log("Error finding config.py", IOError)
+    except EOFError:
+        log("Error reading config.py (lint file)", EOFError)
+    except Exception as e:
+        log("Ignoring unknown exception when loading config.py", e)
+    except:
+        handle_unhandled_error() # warn("an additional exception was thrown", throwable)
+        log("no idea.")
+"""
+
 session_=Session()
 nassau='+15166982705'
 upstate="+18458680258"
@@ -27,7 +48,7 @@ belvedere="+14157122019"
 #r = redis.StrictRedis(host=redis_host, port=redis_port, password=redis_password, decode_responses=True)
 #r.set('counter', 1)
 
-## run.py
+## app.py (not run.py)
 command = shlex.split("env -i bash -c 'source env/env.sh && env'")
 proc = subprocess.Popen(command,
     stdout=subprocess.PIPE,
@@ -171,7 +192,7 @@ def who_this(): #placeholder
 
 if __name__ == "__main__":
     #logthis('calbot.log', 'zbot inititalized')
-    app.secret_key = 'SECRET' # If I told you, it wouldn't be. 
+    app.secret_key = 'SECRET' # If I told you, it wouldn't be.
     #session_.init_app(app)
     #app.config['SESSION_TYPE'] = 'filesystem'
     #app.run(host='0.0.0.0', port= 80, debug=False)

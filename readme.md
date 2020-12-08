@@ -21,7 +21,7 @@ This framework includes a general conversation domain as well as specially train
     * [The Manual Way](#themanualway)
     * [Docker Swarm](#dockerswarm)
   * [Run](#run)
-  * [Training Times](#trainingtime)   
+  * [Training Times](#training-times)   
   * [Example Domains](#domains)
      * [Concierge](#concierge)
      * [Dinnerbot](#dinnerbot)

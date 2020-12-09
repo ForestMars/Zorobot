@@ -119,6 +119,9 @@ In testing there was one particular instance where the trained LTSM model mis-pr
 * Role lookup
 Not so much a bug as a better implementation, so refactoring; rather than being included in training data, roles should be a lookup (technically making them a categorical prior) which works better with the CAP model here, which leans on computation for availability but bakes consistency in (while partioning is handled across conversational domains.)
 
+* Case sensitivity
+Perhaps not a bug proper, but NER case handing is pretty lame. This should really be taken care of transparently, but, at least for cases with only a single token, our model misses obivous entities, for example, not reognizing "Today" in answer to the question "What day?" Where possible, we strive to keep the training set case free (all lower) as well as punctution free, rather than depending on either of those modes for semantics that are present in speech without them. 
+
 ### To Do's
 
 * Cleanup Cython build process:

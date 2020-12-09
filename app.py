@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 # run.py (smsbot) - SMS message dispatcher and handler. (In a more perfect world, this would be app.py.)
 __version__ = '0.0.2'
 CONDA_ENV = 'chatbot1'
@@ -8,6 +9,7 @@ import json
 import os
 import shlex
 import subprocess
+from random import choice
 
 from flask import Flask, Response, request, redirect, session
 from flask_session import Session
@@ -118,17 +120,35 @@ def sms():
     return Response(resp, mimetype='text/xml')
 
 
-# @TODO: This should be a class.
+# @TODO: This should be a class & plainly needs refactoring.
 def handle_msg(msg: dict) ->list:
     """ Handler for message request object. Logs message and returns list of responses."""
     msg_alert(msg['From'], msg['Body'])
-    resp = get_response(msg)
+    msg, lol = parse_msg(msg)
+
+    if lol is not None:
+        resp = lol
+    elif lol is None:
+        resp = get_response(msg)
+
     log_msg = [
         {'From': msg['From']},
         {'Message': msg['Body']},
         ]
 
     return(resp)
+
+def parse_msg(msg):
+    """ Handler for people that prepend 'lol' to everything they say."""
+    msg_ = msg
+    if msg_['Body'].lower().startswith('lol '):
+        msg_['Body'].replace('lol ', '')
+        if len(msg_['Body']) > 0:
+            return msg_, None
+        else:
+            lolz = ['😂', '🤣', 'Pretty funny, huh?']
+            return msg_, choice(lolz)
+    return msg, None
 
 def get_port(domain='scheduler'):
     """ Gets port number for the current active domain model """

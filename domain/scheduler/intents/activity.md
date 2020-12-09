@@ -93,6 +93,16 @@
 - can we pick a time to [meet up](activity)
 - can we make a plan to [meet up](activity)
 
+- can we plan a [meeting](activity)
+- whats a good day for a [meeting](activity)
+- can we schedule a [meeting](activity)
+- id like to schedule a [meeting](activity)
+- can we set up a [meeting](activity) sometime
+- can we have a [zoom meeting](activity)
+- i would like a [Zoom meeting](activity)
+- can we have a [zoom meeting](activity) to discuss
+- i would like a [Zoom meeting](activity) so I can share my screen
+
 - can i [come over](activity) [today](when)
 - can i [come over](activity) [tonight](when)
 - can i [come over](activity) [tomorrow](when)

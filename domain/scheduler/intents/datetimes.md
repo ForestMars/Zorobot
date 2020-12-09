@@ -23,9 +23,12 @@
 
 # weekday should actually be a lookup
 ## intent:suggest_day
+- [Today](Day)
+- [Tomorrow](Day)
+- [Today](Day) is good
+- [Tomorrow](Day) looks good
 - [today](Day)
 - [tomorrow](Day)
-- how about [tomorrow](Day)
 - how does [tomorrow](Day) look
 - how does [tomorrow](Day) work
 - how does [tomorrow](Day) work for you
@@ -47,6 +50,22 @@
 - [thurs](Day)
 - [fri](Day)
 - [sat](Day)
+- [Sun](Day)
+- [Mon](Day)
+- [Tue](Day)
+- [Wed](Day)
+- [Thu](Day)
+- [Thur](Day)
+- [Thurs](Day)
+- [Fri](Day)
+- [Sat](Day)
+- [Sunday](Day)
+- [Monday](Day)
+- [Tuesday](Day)
+- [Wednesday](Day)
+- [Thursday](Day)
+- [Friday](Day)
+- [Saturday](Day)
 - [sunday](Day)
 - [monday](Day)
 - [tuesday](Day)

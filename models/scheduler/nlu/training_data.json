@@ -1903,6 +1903,54 @@
           {
             "start": 0,
             "end": 5,
+            "value": "Today",
+            "entity": "Day"
+          }
+        ],
+        "text": "Today"
+      },
+      {
+        "intent": "suggest_day",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Tomorrow",
+            "entity": "Day"
+          }
+        ],
+        "text": "Tomorrow"
+      },
+      {
+        "intent": "suggest_day",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "Today",
+            "entity": "Day"
+          }
+        ],
+        "text": "Today is good"
+      },
+      {
+        "intent": "suggest_day",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Tomorrow",
+            "entity": "Day"
+          }
+        ],
+        "text": "Tomorrow looks good"
+      },
+      {
+        "intent": "suggest_day",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
             "value": "today",
             "entity": "Day"
           }
@@ -1920,18 +1968,6 @@
           }
         ],
         "text": "tomorrow"
-      },
-      {
-        "intent": "suggest_day",
-        "entities": [
-          {
-            "start": 10,
-            "end": 18,
-            "value": "tomorrow",
-            "entity": "Day"
-          }
-        ],
-        "text": "how about tomorrow"
       },
       {
         "intent": "suggest_day",
@@ -2184,6 +2220,198 @@
           }
         ],
         "text": "sat"
+      },
+      {
+        "intent": "suggest_day",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "Sun",
+            "entity": "Day"
+          }
+        ],
+        "text": "Sun"
+      },
+      {
+        "intent": "suggest_day",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "Mon",
+            "entity": "Day"
+          }
+        ],
+        "text": "Mon"
+      },
+      {
+        "intent": "suggest_day",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "Tue",
+            "entity": "Day"
+          }
+        ],
+        "text": "Tue"
+      },
+      {
+        "intent": "suggest_day",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "Wed",
+            "entity": "Day"
+          }
+        ],
+        "text": "Wed"
+      },
+      {
+        "intent": "suggest_day",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "Thu",
+            "entity": "Day"
+          }
+        ],
+        "text": "Thu"
+      },
+      {
+        "intent": "suggest_day",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Thur",
+            "entity": "Day"
+          }
+        ],
+        "text": "Thur"
+      },
+      {
+        "intent": "suggest_day",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "Thurs",
+            "entity": "Day"
+          }
+        ],
+        "text": "Thurs"
+      },
+      {
+        "intent": "suggest_day",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "Fri",
+            "entity": "Day"
+          }
+        ],
+        "text": "Fri"
+      },
+      {
+        "intent": "suggest_day",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "Sat",
+            "entity": "Day"
+          }
+        ],
+        "text": "Sat"
+      },
+      {
+        "intent": "suggest_day",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Sunday",
+            "entity": "Day"
+          }
+        ],
+        "text": "Sunday"
+      },
+      {
+        "intent": "suggest_day",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Monday",
+            "entity": "Day"
+          }
+        ],
+        "text": "Monday"
+      },
+      {
+        "intent": "suggest_day",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Tuesday",
+            "entity": "Day"
+          }
+        ],
+        "text": "Tuesday"
+      },
+      {
+        "intent": "suggest_day",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "Wednesday",
+            "entity": "Day"
+          }
+        ],
+        "text": "Wednesday"
+      },
+      {
+        "intent": "suggest_day",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Thursday",
+            "entity": "Day"
+          }
+        ],
+        "text": "Thursday"
+      },
+      {
+        "intent": "suggest_day",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Friday",
+            "entity": "Day"
+          }
+        ],
+        "text": "Friday"
+      },
+      {
+        "intent": "suggest_day",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Saturday",
+            "entity": "Day"
+          }
+        ],
+        "text": "Saturday"
       },
       {
         "intent": "suggest_day",
@@ -9072,6 +9300,66 @@
           }
         ],
         "text": "800 pm"
+      },
+      {
+        "intent": "suggest_time",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "3:00",
+            "entity": "Time"
+          }
+        ],
+        "text": "3:00 Tokyo Time"
+      },
+      {
+        "intent": "suggest_time",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "4PM",
+            "entity": "Time"
+          }
+        ],
+        "text": "4PM Hawaiian Time"
+      },
+      {
+        "intent": "suggest_time",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "2:30",
+            "entity": "Time"
+          }
+        ],
+        "text": "2:30 BST"
+      },
+      {
+        "intent": "suggest_time",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "12:00",
+            "entity": "Time"
+          }
+        ],
+        "text": "12:00 UTC"
+      },
+      {
+        "intent": "suggest_time",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "5:00",
+            "entity": "Time"
+          }
+        ],
+        "text": "5:00 GMT"
       },
       {
         "intent": "suggest_time",

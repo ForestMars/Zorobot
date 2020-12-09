@@ -32,6 +32,12 @@
 - is [tomorrow](Day) good
 - is [tomorrow](Day) good for you
 - can we have a call [today](Day)
+- maybe [tomorrow](Day)
+- maybe [tomorrow](Day)?
+- idk maybe [tomorrow](Day)
+- [tomorrow](Day) maybe?
+- is [tomorrow](Day) ok?
+- is [tomorrow](Day) good?
 - [sun](Day)
 - [mon](Day)
 - [tue](Day)
@@ -634,7 +640,11 @@
 - [830 pm](Time)
 - [8:05 am](Time)
 - [800 pm](Time)
-
+- [3:00](Time) Tokyo Time
+- [4PM](Time) Hawaiian Time
+- [2:30](Time) BST
+- [12:00](Time) UTC
+- [5:00](Time) GMT
 - [9:00 am](Time)
 - [10:00am](Time)
 - [1100am](Time)

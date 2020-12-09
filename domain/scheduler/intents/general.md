@@ -144,15 +144,15 @@
 - not sure [yet](When)
 - not sure about that
 - i dont know
-- i just don't know
-- im afraid i dont know
-- im afraid i just dont know
-- im afraid i really just dont know
-- im afraid that i just dont know
-- im afraid that i really just dont know
-- im afraid that even i just dont know
-- im afraid that even i really just dont know
-- im afraid to say that even i really just don't know
+#- i just don't know
+#- im afraid i dont know
+#- im afraid i just dont know
+#- im afraid i really just dont know
+#- im afraid that i just dont know
+#- im afraid that i really just dont know
+#- im afraid that even i just dont know
+#- im afraid that even i really just dont know
+#- im afraid to say that even i really just don't know
 
 ## intent:lmk
 - lmk

@@ -29,7 +29,6 @@ entities:
   - super
   - NSFW
   - Day
-  - DATE
   - Time
   - Ordinal
   - month_and_date
@@ -42,6 +41,8 @@ entities:
   - accepting_resumes
   - are_you_hiring
   - open_roles
+  - DATE
+  - PERSON
 
 
 # SLOTS (Capitalized slots from user, snake_case slots from app.)
@@ -51,11 +52,16 @@ slots:
     initial_value: 'have a phone call'
   Nou:
     type: unfeaturized
+    initial_value: ''
   Nou_last:
     type: unfeaturized
+    initial_value: ''
   Day:
     type: text
-    initial_value: ' '
+    initial_value: ''
+  PERSON:
+    type: text
+    initial_value: ''
   DATE:
     type: text
   HowLong:
@@ -185,6 +191,8 @@ intents:
 - so_am_i
 - me_too
 - multi_intent
+- multi_intent_no_name
+- vague_when
 
 # ~~~~~~~~~~ Scheduler
 - schedule_meeting
@@ -302,6 +310,7 @@ intents:
 - when_is_good
 - enthusiasm
 - saymyname
+- when_will_you
 
 # ~~~~~~~~~~ Zoro
 - zoro
@@ -472,6 +481,11 @@ actions:
 - utter_corona_bot
 - utter_none_of_your_business
 - utter_no_worries
+
+- utter_pick_a_day
+- utter_await_response
+- utter_not_sure_when
+
 - utter_up_down
 - utter_sure_we_can
 - utter_sorry_dont_understand
@@ -906,4 +920,10 @@ templates:
   utter_zoro_likes:
   - text: Besides loving Forest, I love walks, treats, getting attention and most people.
   utter_zoro_origin:
-  - text: I arrived here in a crystal spaceship from a distant galaxy to bring my message of love to evereyone. 
+  - text: I arrived here in a crystal spaceship from a distant galaxy to bring my message of love to evereyone.
+  utter_await_response:
+  - text: Ok, I await your update.
+  utter_pick_a_day:
+  - text: What's a particular day that's good for you {DATE}?
+  utter_not_sure_when:
+  - text: Not sure when I will be {activity}, will lyk

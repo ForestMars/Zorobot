@@ -1,22 +1,3 @@
-w
-
-## intent:ask_availability
-- do you have time for a call
-- do you have availability for a call
-- what is a good time for a call
-- whats a good time for a call
-- whats a good day for you
-- are you available for a call
-- are you available for a call on
-- whats your availability
-- whats your availability like
-- whats your availability for a call
-- whats a good day for you
-- is there a good time we can speak
-- is there a good time for a call
-- is there a good time to discuss
-- whats a good time for for a call
-
 ## intent:following_up
 - i got your email
 - i received your email
@@ -30,6 +11,27 @@ w
 - sorry im just now getting back to you
 - sorry for the delay in getting back to you
 - hi [forest](forest) i received your email. whats a good time for a call
+
+## intent:will_lyk
+- will lyk
+- i will lyk
+- i'll lyk
+- will let you know
+- i will let you know
+- will lyk [tomorrow](Day)
+- will lyk by [tomorrow](Day)
+- will let you know [tomorrow](Day)
+- i will let you know by [tomorrow](Day)
+- i will know [next week](When)
+- i will let you know by [next week]((When))
+- i should know [tomorrow](Day)
+- i should know by [tomorrow](Day)
+- i should know [next week](When)
+- i should know by [next week](When)
+- i will know [tomorrow](Day)
+- i will know by [tomorrow](Day)
+- i will know by [next week](When)
+
 
 ## intent:time_of_day
 - [morning](TOD)
@@ -50,14 +52,29 @@ w
 - [morning](TOD) could work, depending on what time
 
 ## intent:vague_when
-- how is your availability looking [this week](When)
-- how is your availability looking [next week](When)
-- how is your availability looking [the week after next](When)
-- how is your availability looking [the week after this](When)
-- how is your availability looking [not this week but next](When)
-- how is your availability looking [next week](When)
-- whats your availability like [this week](When)
-- whats your availability like [next week](When)
+- how is your availability looking [this week](DATE)
+- how is your availability looking [next week](DATE)
+- how is your availability looking [the week after next](DATE)
+- how is your availability looking [the week after this](DATE)
+- how is your availability looking [not this week but next](DATE)
+- how is your availability looking [next week](DATE)
+- whats your availability like [this week](DATE)
+- whats your availability like [next week](DATE)
+- whats [this weekend](DATE) look like
+- what [this weekend](DATE) look like
+- hows [this weekend](DATE) look
+- hows [this weekend](DATE) looking
+- whats [your weekend](DATE) look like
+- you free [this weekend](DATE)
+- are you free [this weekend](DATE)
+- do you have time -[this weekend](DATE)
+- how about [this weekend](DATE)
+- tomorrow, monday or tuesday is fine. afternoons are best
+- either tomorrow or thursday
+- any day but friday
+- any day [this week](DATE)
+- later this afternoon or tomorrow morning
+- either today or tomorrow are good
 
 ## intent:ask_which_day
 - which days good for you
@@ -555,11 +572,6 @@ w
 - hi forest thank you for getting back to me and i would like to schedule a call. what is your availability this week or next? thanks, [mel](Nou)
 - hi forest thank you for getting back to me, can we hop on a call. whats good for this week? thanks, [mel](Nou)
 - hi forest, good to hear from you. can you let me know your availability for a call? thanks, [angie](Nou)
-- hi forest i really appreciate your coming back to me and i am interested in setting up a call
-- hi forest, thank you for getting back to me and i would be interested to set up a call.
-- hi forest, thank you for getting back to me. i would be interested to set up a call.
-- hi forest, thank you for getting back to me. i would be interested in setting up a call.
-- hi forest, thank you for the email. i would be interested in setting up a call.
 - hi forest, thank you for the email. (this is [james](Nou) btw) i would be interested to set up a call.
 - hi forest, i received your email and i would be interested in setting up a call.
 - hi forest this is [andy](Nou). do you have a time for a call this week? I have some interesting candidates for you.
@@ -596,6 +608,18 @@ w
 - hi forest it's [don](Nou), just following up on my email
 - hi forest it's [ron](Nou), i received your email and
 - hi forest it's [chelsea](Nou), great talking to you
+
+## intent:multi_intent_no_name
+- hi forest i really appreciate your coming back to me and i am interested in setting up a call
+- hi forest, thank you for getting back to me and i would be interested to set up a call.
+- hi forest, thank you for getting back to me. i would be interested to set up a call.
+- hi forest, thank you for getting back to me. i would be interested in setting up a call.
+- hi forest, thank you for the email. i would be interested in setting up a call.
+- forest asked me to text you to set up a time for he and I to have a call.
+- forest asked me to text you to set up a time for he and I to have a call. please let me know when we can do that
+- forest said to ask you to set up a call
+- forest said you could schedule a call for us
+- forest said you would set up a call for us
 
 
 ## intent:greet_with_name

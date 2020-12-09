@@ -1,5 +1,23 @@
 ### Scheduling-related Intents Training File for Appointment SCHEDULER Bot
 
+## intent:ask_availability
+- do you have time for a call
+- do you have availability for a call
+- what is a good time for a call
+- whats a good time for a call
+- whats a good day for you
+- are you available for a call
+- are you available for a call on
+- whats your availability
+- whats your availability like
+- whats your availability for a call
+- whats a good day for you
+- is there a good time we can speak
+- is there a good time for a call
+- is there a good time to discuss
+- whats a good time for for a call
+
+
 ### ~~~~~~~~~~~~~~~~~~~~ Schedule call ~~~~~~~~~~~~~~~~~~~~
 
 ## intent:schedule_call
@@ -107,3 +125,23 @@
 - [whats a good day](when) to [meet](activity)
 - [when is a good time](when) for us to [meet up](activity)
 - whats [a good day](when) to [hang out in your garden](activity)
+
+## intent:when_will_you
+- when are you [raking the leaves](activity)
+- when are you [leaving](activity)
+- when are you [going to be home](activity)
+- when are you [working](activity)
+- when are you [leaving for japan](activity)
+- when are you [free](activity)
+- when are you [painting](activity)
+- when are you [doing band related stuff](activity)
+- when are you [having dinner](activity)
+
+- when are you [raking the leaves](activity)
+- when will you be [leaving](activity)
+- when will you be [working](activity)
+- when will you be [leaving for japan](activity)
+- when will you be [free](activity)
+- when will you be [painting](activity)
+- when will you be [doing band related stuff](activity)
+- when will you be [having dinner](activity)

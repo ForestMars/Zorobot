@@ -2,6 +2,66 @@
   "rasa_nlu_data": {
     "common_examples": [
       {
+        "intent": "ask_availability",
+        "text": "do you have time for a call"
+      },
+      {
+        "intent": "ask_availability",
+        "text": "do you have availability for a call"
+      },
+      {
+        "intent": "ask_availability",
+        "text": "what is a good time for a call"
+      },
+      {
+        "intent": "ask_availability",
+        "text": "whats a good time for a call"
+      },
+      {
+        "intent": "ask_availability",
+        "text": "whats a good day for you"
+      },
+      {
+        "intent": "ask_availability",
+        "text": "are you available for a call"
+      },
+      {
+        "intent": "ask_availability",
+        "text": "are you available for a call on"
+      },
+      {
+        "intent": "ask_availability",
+        "text": "whats your availability"
+      },
+      {
+        "intent": "ask_availability",
+        "text": "whats your availability like"
+      },
+      {
+        "intent": "ask_availability",
+        "text": "whats your availability for a call"
+      },
+      {
+        "intent": "ask_availability",
+        "text": "whats a good day for you"
+      },
+      {
+        "intent": "ask_availability",
+        "text": "is there a good time we can speak"
+      },
+      {
+        "intent": "ask_availability",
+        "text": "is there a good time for a call"
+      },
+      {
+        "intent": "ask_availability",
+        "text": "is there a good time to discuss"
+      },
+      {
+        "intent": "ask_availability",
+        "text": "whats a good time for for a call"
+      },
+      {
         "intent": "schedule_call",
         "entities": [
           {
@@ -1238,6 +1298,210 @@
         "text": "whats a good day to hang out in your garden"
       },
       {
+        "intent": "when_will_you",
+        "entities": [
+          {
+            "start": 13,
+            "end": 30,
+            "value": "raking the leaves",
+            "entity": "activity"
+          }
+        ],
+        "text": "when are you raking the leaves"
+      },
+      {
+        "intent": "when_will_you",
+        "entities": [
+          {
+            "start": 13,
+            "end": 20,
+            "value": "leaving",
+            "entity": "activity"
+          }
+        ],
+        "text": "when are you leaving"
+      },
+      {
+        "intent": "when_will_you",
+        "entities": [
+          {
+            "start": 13,
+            "end": 29,
+            "value": "going to be home",
+            "entity": "activity"
+          }
+        ],
+        "text": "when are you going to be home"
+      },
+      {
+        "intent": "when_will_you",
+        "entities": [
+          {
+            "start": 13,
+            "end": 20,
+            "value": "working",
+            "entity": "activity"
+          }
+        ],
+        "text": "when are you working"
+      },
+      {
+        "intent": "when_will_you",
+        "entities": [
+          {
+            "start": 13,
+            "end": 30,
+            "value": "leaving for japan",
+            "entity": "activity"
+          }
+        ],
+        "text": "when are you leaving for japan"
+      },
+      {
+        "intent": "when_will_you",
+        "entities": [
+          {
+            "start": 13,
+            "end": 17,
+            "value": "free",
+            "entity": "activity"
+          }
+        ],
+        "text": "when are you free"
+      },
+      {
+        "intent": "when_will_you",
+        "entities": [
+          {
+            "start": 13,
+            "end": 21,
+            "value": "painting",
+            "entity": "activity"
+          }
+        ],
+        "text": "when are you painting"
+      },
+      {
+        "intent": "when_will_you",
+        "entities": [
+          {
+            "start": 13,
+            "end": 37,
+            "value": "doing band related stuff",
+            "entity": "activity"
+          }
+        ],
+        "text": "when are you doing band related stuff"
+      },
+      {
+        "intent": "when_will_you",
+        "entities": [
+          {
+            "start": 13,
+            "end": 26,
+            "value": "having dinner",
+            "entity": "activity"
+          }
+        ],
+        "text": "when are you having dinner"
+      },
+      {
+        "intent": "when_will_you",
+        "entities": [
+          {
+            "start": 13,
+            "end": 30,
+            "value": "raking the leaves",
+            "entity": "activity"
+          }
+        ],
+        "text": "when are you raking the leaves"
+      },
+      {
+        "intent": "when_will_you",
+        "entities": [
+          {
+            "start": 17,
+            "end": 24,
+            "value": "leaving",
+            "entity": "activity"
+          }
+        ],
+        "text": "when will you be leaving"
+      },
+      {
+        "intent": "when_will_you",
+        "entities": [
+          {
+            "start": 17,
+            "end": 24,
+            "value": "working",
+            "entity": "activity"
+          }
+        ],
+        "text": "when will you be working"
+      },
+      {
+        "intent": "when_will_you",
+        "entities": [
+          {
+            "start": 17,
+            "end": 34,
+            "value": "leaving for japan",
+            "entity": "activity"
+          }
+        ],
+        "text": "when will you be leaving for japan"
+      },
+      {
+        "intent": "when_will_you",
+        "entities": [
+          {
+            "start": 17,
+            "end": 21,
+            "value": "free",
+            "entity": "activity"
+          }
+        ],
+        "text": "when will you be free"
+      },
+      {
+        "intent": "when_will_you",
+        "entities": [
+          {
+            "start": 17,
+            "end": 25,
+            "value": "painting",
+            "entity": "activity"
+          }
+        ],
+        "text": "when will you be painting"
+      },
+      {
+        "intent": "when_will_you",
+        "entities": [
+          {
+            "start": 17,
+            "end": 41,
+            "value": "doing band related stuff",
+            "entity": "activity"
+          }
+        ],
+        "text": "when will you be doing band related stuff"
+      },
+      {
+        "intent": "when_will_you",
+        "entities": [
+          {
+            "start": 17,
+            "end": 30,
+            "value": "having dinner",
+            "entity": "activity"
+          }
+        ],
+        "text": "when will you be having dinner"
+      },
+      {
         "intent": "corona",
         "text": "covid"
       },
@@ -1740,6 +2004,78 @@
           }
         ],
         "text": "can we have a call today"
+      },
+      {
+        "intent": "suggest_day",
+        "entities": [
+          {
+            "start": 6,
+            "end": 14,
+            "value": "tomorrow",
+            "entity": "Day"
+          }
+        ],
+        "text": "maybe tomorrow"
+      },
+      {
+        "intent": "suggest_day",
+        "entities": [
+          {
+            "start": 6,
+            "end": 14,
+            "value": "tomorrow",
+            "entity": "Day"
+          }
+        ],
+        "text": "maybe tomorrow?"
+      },
+      {
+        "intent": "suggest_day",
+        "entities": [
+          {
+            "start": 10,
+            "end": 18,
+            "value": "tomorrow",
+            "entity": "Day"
+          }
+        ],
+        "text": "idk maybe tomorrow"
+      },
+      {
+        "intent": "suggest_day",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "tomorrow",
+            "entity": "Day"
+          }
+        ],
+        "text": "tomorrow maybe?"
+      },
+      {
+        "intent": "suggest_day",
+        "entities": [
+          {
+            "start": 3,
+            "end": 11,
+            "value": "tomorrow",
+            "entity": "Day"
+          }
+        ],
+        "text": "is tomorrow ok?"
+      },
+      {
+        "intent": "suggest_day",
+        "entities": [
+          {
+            "start": 3,
+            "end": 11,
+            "value": "tomorrow",
+            "entity": "Day"
+          }
+        ],
+        "text": "is tomorrow good?"
       },
       {
         "intent": "suggest_day",
@@ -11580,42 +11916,6 @@
         "text": "i dont know"
       },
       {
-        "intent": "idk",
-        "text": "i just don't know"
-      },
-      {
-        "intent": "idk",
-        "text": "im afraid i dont know"
-      },
-      {
-        "intent": "idk",
-        "text": "im afraid i just dont know"
-      },
-      {
-        "intent": "idk",
-        "text": "im afraid i really just dont know"
-      },
-      {
-        "intent": "idk",
-        "text": "im afraid that i just dont know"
-      },
-      {
-        "intent": "idk",
-        "text": "im afraid that i really just dont know"
-      },
-      {
-        "intent": "idk",
-        "text": "im afraid that even i just dont know"
-      },
-      {
-        "intent": "idk",
-        "text": "im afraid that even i really just dont know"
-      },
-      {
-        "intent": "idk",
-        "text": "im afraid to say that even i really just don't know"
-      },
-      {
         "intent": "lmk",
         "text": "lmk"
       },
@@ -16330,66 +16630,6 @@
         "text": "do you have their contact info"
       },
       {
-        "intent": "ask_availability",
-        "text": "do you have time for a call"
-      },
-      {
-        "intent": "ask_availability",
-        "text": "do you have availability for a call"
-      },
-      {
-        "intent": "ask_availability",
-        "text": "what is a good time for a call"
-      },
-      {
-        "intent": "ask_availability",
-        "text": "whats a good time for a call"
-      },
-      {
-        "intent": "ask_availability",
-        "text": "whats a good day for you"
-      },
-      {
-        "intent": "ask_availability",
-        "text": "are you available for a call"
-      },
-      {
-        "intent": "ask_availability",
-        "text": "are you available for a call on"
-      },
-      {
-        "intent": "ask_availability",
-        "text": "whats your availability"
-      },
-      {
-        "intent": "ask_availability",
-        "text": "whats your availability like"
-      },
-      {
-        "intent": "ask_availability",
-        "text": "whats your availability for a call"
-      },
-      {
-        "intent": "ask_availability",
-        "text": "whats a good day for you"
-      },
-      {
-        "intent": "ask_availability",
-        "text": "is there a good time we can speak"
-      },
-      {
-        "intent": "ask_availability",
-        "text": "is there a good time for a call"
-      },
-      {
-        "intent": "ask_availability",
-        "text": "is there a good time to discuss"
-      },
-      {
-        "intent": "ask_availability",
-        "text": "whats a good time for for a call"
-      },
-      {
         "intent": "following_up",
         "text": "i got your email"
       },
@@ -16444,6 +16684,182 @@
           }
         ],
         "text": "hi forest i received your email. whats a good time for a call"
+      },
+      {
+        "intent": "will_lyk",
+        "text": "will lyk"
+      },
+      {
+        "intent": "will_lyk",
+        "text": "i will lyk"
+      },
+      {
+        "intent": "will_lyk",
+        "text": "i'll lyk"
+      },
+      {
+        "intent": "will_lyk",
+        "text": "will let you know"
+      },
+      {
+        "intent": "will_lyk",
+        "text": "i will let you know"
+      },
+      {
+        "intent": "will_lyk",
+        "entities": [
+          {
+            "start": 9,
+            "end": 17,
+            "value": "tomorrow",
+            "entity": "Day"
+          }
+        ],
+        "text": "will lyk tomorrow"
+      },
+      {
+        "intent": "will_lyk",
+        "entities": [
+          {
+            "start": 12,
+            "end": 20,
+            "value": "tomorrow",
+            "entity": "Day"
+          }
+        ],
+        "text": "will lyk by tomorrow"
+      },
+      {
+        "intent": "will_lyk",
+        "entities": [
+          {
+            "start": 18,
+            "end": 26,
+            "value": "tomorrow",
+            "entity": "Day"
+          }
+        ],
+        "text": "will let you know tomorrow"
+      },
+      {
+        "intent": "will_lyk",
+        "entities": [
+          {
+            "start": 23,
+            "end": 31,
+            "value": "tomorrow",
+            "entity": "Day"
+          }
+        ],
+        "text": "i will let you know by tomorrow"
+      },
+      {
+        "intent": "will_lyk",
+        "entities": [
+          {
+            "start": 12,
+            "end": 21,
+            "value": "next week",
+            "entity": "When"
+          }
+        ],
+        "text": "i will know next week"
+      },
+      {
+        "intent": "will_lyk",
+        "entities": [
+          {
+            "start": 23,
+            "end": 32,
+            "value": "next week",
+            "entity": "(When"
+          }
+        ],
+        "text": "i will let you know by next week)"
+      },
+      {
+        "intent": "will_lyk",
+        "entities": [
+          {
+            "start": 14,
+            "end": 22,
+            "value": "tomorrow",
+            "entity": "Day"
+          }
+        ],
+        "text": "i should know tomorrow"
+      },
+      {
+        "intent": "will_lyk",
+        "entities": [
+          {
+            "start": 17,
+            "end": 25,
+            "value": "tomorrow",
+            "entity": "Day"
+          }
+        ],
+        "text": "i should know by tomorrow"
+      },
+      {
+        "intent": "will_lyk",
+        "entities": [
+          {
+            "start": 14,
+            "end": 23,
+            "value": "next week",
+            "entity": "When"
+          }
+        ],
+        "text": "i should know next week"
+      },
+      {
+        "intent": "will_lyk",
+        "entities": [
+          {
+            "start": 17,
+            "end": 26,
+            "value": "next week",
+            "entity": "When"
+          }
+        ],
+        "text": "i should know by next week"
+      },
+      {
+        "intent": "will_lyk",
+        "entities": [
+          {
+            "start": 12,
+            "end": 20,
+            "value": "tomorrow",
+            "entity": "Day"
+          }
+        ],
+        "text": "i will know tomorrow"
+      },
+      {
+        "intent": "will_lyk",
+        "entities": [
+          {
+            "start": 15,
+            "end": 23,
+            "value": "tomorrow",
+            "entity": "Day"
+          }
+        ],
+        "text": "i will know by tomorrow"
+      },
+      {
+        "intent": "will_lyk",
+        "entities": [
+          {
+            "start": 15,
+            "end": 24,
+            "value": "next week",
+            "entity": "When"
+          }
+        ],
+        "text": "i will know by next week"
       },
       {
         "intent": "time_of_day",
@@ -16662,7 +17078,7 @@
             "start": 33,
             "end": 42,
             "value": "this week",
-            "entity": "When"
+            "entity": "DATE"
           }
         ],
         "text": "how is your availability looking this week"
@@ -16674,7 +17090,7 @@
             "start": 33,
             "end": 42,
             "value": "next week",
-            "entity": "When"
+            "entity": "DATE"
           }
         ],
         "text": "how is your availability looking next week"
@@ -16686,7 +17102,7 @@
             "start": 33,
             "end": 52,
             "value": "the week after next",
-            "entity": "When"
+            "entity": "DATE"
           }
         ],
         "text": "how is your availability looking the week after next"
@@ -16698,7 +17114,7 @@
             "start": 33,
             "end": 52,
             "value": "the week after this",
-            "entity": "When"
+            "entity": "DATE"
           }
         ],
         "text": "how is your availability looking the week after this"
@@ -16710,7 +17126,7 @@
             "start": 33,
             "end": 55,
             "value": "not this week but next",
-            "entity": "When"
+            "entity": "DATE"
           }
         ],
         "text": "how is your availability looking not this week but next"
@@ -16722,7 +17138,7 @@
             "start": 33,
             "end": 42,
             "value": "next week",
-            "entity": "When"
+            "entity": "DATE"
           }
         ],
         "text": "how is your availability looking next week"
@@ -16734,7 +17150,7 @@
             "start": 29,
             "end": 38,
             "value": "this week",
-            "entity": "When"
+            "entity": "DATE"
           }
         ],
         "text": "whats your availability like this week"
@@ -16746,10 +17162,150 @@
             "start": 29,
             "end": 38,
             "value": "next week",
-            "entity": "When"
+            "entity": "DATE"
           }
         ],
         "text": "whats your availability like next week"
+      },
+      {
+        "intent": "vague_when",
+        "entities": [
+          {
+            "start": 6,
+            "end": 18,
+            "value": "this weekend",
+            "entity": "DATE"
+          }
+        ],
+        "text": "whats this weekend look like"
+      },
+      {
+        "intent": "vague_when",
+        "entities": [
+          {
+            "start": 5,
+            "end": 17,
+            "value": "this weekend",
+            "entity": "DATE"
+          }
+        ],
+        "text": "what this weekend look like"
+      },
+      {
+        "intent": "vague_when",
+        "entities": [
+          {
+            "start": 5,
+            "end": 17,
+            "value": "this weekend",
+            "entity": "DATE"
+          }
+        ],
+        "text": "hows this weekend look"
+      },
+      {
+        "intent": "vague_when",
+        "entities": [
+          {
+            "start": 5,
+            "end": 17,
+            "value": "this weekend",
+            "entity": "DATE"
+          }
+        ],
+        "text": "hows this weekend looking"
+      },
+      {
+        "intent": "vague_when",
+        "entities": [
+          {
+            "start": 6,
+            "end": 18,
+            "value": "your weekend",
+            "entity": "DATE"
+          }
+        ],
+        "text": "whats your weekend look like"
+      },
+      {
+        "intent": "vague_when",
+        "entities": [
+          {
+            "start": 9,
+            "end": 21,
+            "value": "this weekend",
+            "entity": "DATE"
+          }
+        ],
+        "text": "you free this weekend"
+      },
+      {
+        "intent": "vague_when",
+        "entities": [
+          {
+            "start": 13,
+            "end": 25,
+            "value": "this weekend",
+            "entity": "DATE"
+          }
+        ],
+        "text": "are you free this weekend"
+      },
+      {
+        "intent": "vague_when",
+        "entities": [
+          {
+            "start": 18,
+            "end": 30,
+            "value": "this weekend",
+            "entity": "DATE"
+          }
+        ],
+        "text": "do you have time -this weekend"
+      },
+      {
+        "intent": "vague_when",
+        "entities": [
+          {
+            "start": 10,
+            "end": 22,
+            "value": "this weekend",
+            "entity": "DATE"
+          }
+        ],
+        "text": "how about this weekend"
+      },
+      {
+        "intent": "vague_when",
+        "text": "tomorrow, monday or tuesday is fine. afternoons are best"
+      },
+      {
+        "intent": "vague_when",
+        "text": "either tomorrow or thursday"
+      },
+      {
+        "intent": "vague_when",
+        "text": "any day but friday"
+      },
+      {
+        "intent": "vague_when",
+        "entities": [
+          {
+            "start": 8,
+            "end": 17,
+            "value": "this week",
+            "entity": "DATE"
+          }
+        ],
+        "text": "any day this week"
+      },
+      {
+        "intent": "vague_when",
+        "text": "later this afternoon or tomorrow morning"
+      },
+      {
+        "intent": "vague_when",
+        "text": "either today or tomorrow are good"
       },
       {
         "intent": "ask_which_day",
@@ -19977,26 +20533,6 @@
       },
       {
         "intent": "multi_intent",
-        "text": "hi forest i really appreciate your coming back to me and i am interested in setting up a call"
-      },
-      {
-        "intent": "multi_intent",
-        "text": "hi forest, thank you for getting back to me and i would be interested to set up a call."
-      },
-      {
-        "intent": "multi_intent",
-        "text": "hi forest, thank you for getting back to me. i would be interested to set up a call."
-      },
-      {
-        "intent": "multi_intent",
-        "text": "hi forest, thank you for getting back to me. i would be interested in setting up a call."
-      },
-      {
-        "intent": "multi_intent",
-        "text": "hi forest, thank you for the email. i would be interested in setting up a call."
-      },
-      {
-        "intent": "multi_intent",
         "entities": [
           {
             "start": 45,
@@ -20418,6 +20954,46 @@
           }
         ],
         "text": "hi forest it's chelsea, great talking to you"
+      },
+      {
+        "intent": "multi_intent_no_name",
+        "text": "hi forest i really appreciate your coming back to me and i am interested in setting up a call"
+      },
+      {
+        "intent": "multi_intent_no_name",
+        "text": "hi forest, thank you for getting back to me and i would be interested to set up a call."
+      },
+      {
+        "intent": "multi_intent_no_name",
+        "text": "hi forest, thank you for getting back to me. i would be interested to set up a call."
+      },
+      {
+        "intent": "multi_intent_no_name",
+        "text": "hi forest, thank you for getting back to me. i would be interested in setting up a call."
+      },
+      {
+        "intent": "multi_intent_no_name",
+        "text": "hi forest, thank you for the email. i would be interested in setting up a call."
+      },
+      {
+        "intent": "multi_intent_no_name",
+        "text": "forest asked me to text you to set up a time for he and I to have a call."
+      },
+      {
+        "intent": "multi_intent_no_name",
+        "text": "forest asked me to text you to set up a time for he and I to have a call. please let me know when we can do that"
+      },
+      {
+        "intent": "multi_intent_no_name",
+        "text": "forest said to ask you to set up a call"
+      },
+      {
+        "intent": "multi_intent_no_name",
+        "text": "forest said you could schedule a call for us"
+      },
+      {
+        "intent": "multi_intent_no_name",
+        "text": "forest said you would set up a call for us"
       },
       {
         "intent": "greet_with_name",
@@ -26591,7 +27167,175 @@
             "entity": "Nou"
           }
         ],
-        "text": "its Wally"
+        "text": "its Wally. Do you remember me?"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 5,
+            "end": 10,
+            "value": "Misha",
+            "entity": "Nou"
+          }
+        ],
+        "text": "it's Misha from Long Island. Do you remember me?"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 4,
+            "end": 9,
+            "value": "Celia",
+            "entity": "Nou"
+          }
+        ],
+        "text": "its Celia from the other night. Do you remember me?"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 8,
+            "end": 20,
+            "value": "dave brubeck",
+            "entity": "Nou"
+          }
+        ],
+        "text": "its the dave brubeck"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 8,
+            "end": 19,
+            "value": "david jones",
+            "entity": "Nou"
+          }
+        ],
+        "text": "its the david jones"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 8,
+            "end": 17,
+            "value": "ed teller",
+            "entity": "Nou"
+          }
+        ],
+        "text": "its the ed teller"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 8,
+            "end": 22,
+            "value": "sonny sharrock",
+            "entity": "Nou"
+          }
+        ],
+        "text": "its the sonny sharrock"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 8,
+            "end": 22,
+            "value": "giuseppe peano",
+            "entity": "Nou"
+          }
+        ],
+        "text": "its the giuseppe peano"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 8,
+            "end": 19,
+            "value": "steve irwin",
+            "entity": "Nou"
+          }
+        ],
+        "text": "its the steve irwin"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 8,
+            "end": 19,
+            "value": "bill monroe",
+            "entity": "Nou"
+          }
+        ],
+        "text": "its the bill monroe"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 8,
+            "end": 19,
+            "value": "alex bugnon",
+            "entity": "Nou"
+          }
+        ],
+        "text": "its the alex bugnon"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 21,
+            "end": 32,
+            "value": "harry brown",
+            "entity": "Nou"
+          }
+        ],
+        "text": "its the one and only harry brown"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 8,
+            "end": 17,
+            "value": "phil roth",
+            "entity": "Nou"
+          }
+        ],
+        "text": "its the phil roth"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 8,
+            "end": 22,
+            "value": "bruce campbell",
+            "entity": "Nou"
+          }
+        ],
+        "text": "its the bruce campbell"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 15,
+            "end": 28,
+            "value": "horace silver",
+            "entity": "Nou"
+          }
+        ],
+        "text": "wassup its the horace silver"
       },
       {
         "intent": "thisis",
@@ -28654,6 +29398,22 @@
       {
         "intent": "go_for_walk",
         "text": "who wants to go out for a walk"
+      },
+      {
+        "intent": "ask_zoro",
+        "text": "does forest take good care of you"
+      },
+      {
+        "intent": "ask_zoro",
+        "text": "does forest treat you well"
+      },
+      {
+        "intent": "ask_zoro",
+        "text": "does forest spoil you"
+      },
+      {
+        "intent": "ask_zoro",
+        "text": "does he take good care of you"
       }
     ],
     "regex_features": [],

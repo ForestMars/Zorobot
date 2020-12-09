@@ -294,7 +294,21 @@
 - its [Ute](Nou)
 - its [Veronica](Nou)
 - its [Victoria](Nou)
-- its [Wally](Nou)
+- its [Wally](Nou). Do you remember me?
+- it's [Misha](Nou) from Long Island. Do you remember me?  
+- its [Celia](Nou) from the other night. Do you remember me?
+- its the [dave brubeck](Nou)
+- its the [david jones](Nou)
+- its the [ed teller](Nou)
+- its the [sonny sharrock](Nou)
+- its the [giuseppe peano](Nou)
+- its the [steve irwin](Nou)
+- its the [bill monroe](Nou)
+- its the [alex bugnon](Nou)
+- its the one and only [harry brown](Nou)
+- its the [phil roth](Nou)
+- its the [bruce campbell](Nou)
+- wassup its the [horace silver](Nou)
 - this is [adam](Nou)
 - this is [beth](Nou)
 - this is [cat](Nou)

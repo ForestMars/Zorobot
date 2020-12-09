@@ -81,10 +81,6 @@ actions:
 - utter_quality
 - utter_topic_camus
 - utter_topic_facebook
-- utter_zoro
-- utter_zoro_greet
-- utter_zoro_thx
-- utter_intro_dog
 - utter_answer_hru_prof
 - utter_ask_howcanihelp
 - utter_ask_upto
@@ -157,12 +153,22 @@ actions:
 - utter_corona_bot
 - utter_none_of_your_business
 - utter_no_worries
+- utter_pick_a_day
+- utter_await_response
+- utter_not_sure_when
 - utter_up_down
 - utter_sure_we_can
 - utter_sorry_dont_understand
 - utter_your_name
+- utter_zoro
+- utter_zoro_greet
+- utter_zoro_thx
+- utter_intro_dog
 - utter_im_zoro
 - utter_zoro_walk
+- utter_zoro_spoiled
+- utter_zoro_likes
+- utter_zoro_origin
 config:
   store_entities_as_slots: true
 entities:
@@ -183,7 +189,6 @@ entities:
 - super
 - NSFW
 - Day
-- DATE
 - Time
 - Ordinal
 - month_and_date
@@ -196,17 +201,13 @@ entities:
 - accepting_resumes
 - are_you_hiring
 - open_roles
+- DATE
+- PERSON
 forms:
 - Nou_form
 - email_form
 intents:
 - forest:
-    use_entities: true
-- zoro:
-    use_entities: true
-- zoro_good:
-    use_entities: true
-- zoro_who:
     use_entities: true
 - affirm:
     use_entities: true
@@ -313,6 +314,10 @@ intents:
 - me_too:
     use_entities: true
 - multi_intent:
+    use_entities: true
+- multi_intent_no_name:
+    use_entities: true
+- vague_when:
     use_entities: true
 - schedule_meeting:
     use_entities: true
@@ -510,6 +515,24 @@ intents:
     use_entities: true
 - saymyname:
     use_entities: true
+- when_will_you:
+    use_entities: true
+- zoro:
+    use_entities: true
+- zoro_good:
+    use_entities: true
+- zoro_who:
+    use_entities: true
+- is_this:
+    use_entities: true
+- go_for_walk:
+    use_entities: true
+- ask_zoro:
+    use_entities: true
+- where_did_u_come_from:
+    use_entities: true
+- what_do_u_like:
+    use_entities: true
 - nonsequitur:
     use_entities: true
 slots:
@@ -519,7 +542,7 @@ slots:
     type: rasa_core.slots.TextSlot
   Day:
     auto_fill: true
-    initial_value: ' '
+    initial_value: ''
     type: rasa_core.slots.TextSlot
   HowLong:
     auto_fill: true
@@ -531,12 +554,16 @@ slots:
     type: rasa_core.slots.UnfeaturizedSlot
   Nou:
     auto_fill: true
-    initial_value: null
+    initial_value: ''
     type: rasa_core.slots.UnfeaturizedSlot
   Nou_last:
     auto_fill: true
-    initial_value: null
+    initial_value: ''
     type: rasa_core.slots.UnfeaturizedSlot
+  PERSON:
+    auto_fill: true
+    initial_value: ''
+    type: rasa_core.slots.TextSlot
   TOD:
     auto_fill: true
     initial_value: null
@@ -726,6 +753,8 @@ templates:
   - text: What are you doing?
   utter_ask_who:
   - text: Who is this please?
+  utter_await_response:
+  - text: Ok, I await your update.
   utter_awesome:
   - text: Awesome!
   utter_az:
@@ -872,6 +901,8 @@ templates:
   utter_none_of_your_business:
   - text: None of your business, LOL. \n It probably means I need to run an update.
       Thanks for telling me, I will run my self-diagnostics.
+  utter_not_sure_when:
+  - text: Not sure when I will be {activity}, will lyk
   utter_notsure:
   - text: Not sure.
   utter_noworries:
@@ -887,6 +918,8 @@ templates:
   - text: Ok, morning then.
   utter_pan_demic:
   - text: Pandemic - dem panic.
+  utter_pick_a_day:
+  - text: What's a particular day that's good for you {DATE}?
   utter_please_call_me:
   - text: Please call me
   - text: Please call me then
@@ -1027,6 +1060,15 @@ templates:
   - text: I'm Zoro, Forest's scheduling bot. You can ask me about Forest's availability
       for a meeting by day or time, or tell me when you'd like to have a call with
       Forest.
+  utter_zoro_likes:
+  - text: Besides loving Forest, I love walks, treats, getting attention and most
+      people.
+  utter_zoro_origin:
+  - text: I arrived here in a crystal spaceship from a distant galaxy to bring my
+      message of love to evereyone.
+  utter_zoro_spoiled:
+  - text: I'm probably the most spoiled dog on the Upper East Side, which is really
+      saying something.
   utter_zoro_thx:
   - text: Thanks! Do I get a treat with that?
   utter_zoro_walk:

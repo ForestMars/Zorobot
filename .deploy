@@ -1,0 +1,17 @@
+# Environments not portable.
+.env
+env
+env/*
+!env/.keep
+
+# Models are built for target architecture.
+models/*
+
+# MacOS ridiculousness
+.DS_Store
+
+# tar -X 
+.git
+
+# Byte-compiled / optimized / DLL files
+__pycache__/

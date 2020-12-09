@@ -80,7 +80,7 @@
   - utter_im_a_scheduling_agent
 
 ## goodbye
-* bye or bye_fancy
+* bye OR bye_fancy
   - utter_bye
 
 ## test fragment - WTF / REMOVE
@@ -165,7 +165,7 @@
   - action_send_invite
 * affirm OR ok
   - utter_looking_forward
-* bye or bye_fancy
+* bye OR bye_fancy
   - utter_bye
 
 ## suggest date/time - "happy" path + thx
@@ -206,7 +206,7 @@
   - action_send_invite
 * affirm OR ok
   - utter_looking_forward
-* bye or bye_fancy
+* bye OR bye_fancy
   - utter_bye
 
 ## suggest date/time - "happy" path + thx BUT with email correction

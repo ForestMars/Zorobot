@@ -154,7 +154,7 @@
 - hi [forest](fm) its [paul](Nou) can you send [your current resume](res:cv) over
 - hey [forest](fm) its [will](Nou) can you send me [the jd](res:jd) for the [solutions engineer](kind) role
 - hi [forest](fm), its [brian](Nou), can you send [that job description](res:cv) over
-- hey [forest](fm) its [graham](Nou) can you send me [the jd](res:cv) for the senior role
+- hey [forest](fm) its [graham](Nou) can you send me [the jd](res:jd) for the senior role
 - hi [forest](fm) its [rick](Nou) can you send over the [solutions engineer](kind) [job description](res)
 - hey [forest](fm), its [dan](Nou), can you send [your resume](res:cv) over
 - hi [forest](fm), its [eli](Nou), can you send [your current resume](res:cv) over

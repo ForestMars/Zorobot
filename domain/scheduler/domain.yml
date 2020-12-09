@@ -226,6 +226,7 @@ intents:
 - what_time_did_we_say
 - looking_forward
 - meet_up
+- will_lyk
 
 # ~~~~~~~~~~ Logistics / Making Plans
 - dinner

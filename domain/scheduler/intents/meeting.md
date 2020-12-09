@@ -67,7 +67,7 @@
 - whats [your weekend](DATE) look like
 - you free [this weekend](DATE)
 - are you free [this weekend](DATE)
-- do you have time -[this weekend](DATE)
+- do you have time [this weekend](DATE)
 - how about [this weekend](DATE)
 - tomorrow, monday or tuesday is fine. afternoons are best
 - either tomorrow or thursday

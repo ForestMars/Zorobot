@@ -12400,6 +12400,46 @@
         "text": "i was just kidding"
       },
       {
+        "intent": "any",
+        "text": "any"
+      },
+      {
+        "intent": "any",
+        "text": "anything"
+      },
+      {
+        "intent": "any",
+        "text": "any one"
+      },
+      {
+        "intent": "any",
+        "text": "anyway"
+      },
+      {
+        "intent": "any",
+        "text": "anyhoo"
+      },
+      {
+        "intent": "any",
+        "text": "any who"
+      },
+      {
+        "intent": "any",
+        "text": "anywho"
+      },
+      {
+        "intent": "any",
+        "text": "any day"
+      },
+      {
+        "intent": "any",
+        "text": "any day is fine"
+      },
+      {
+        "intent": "any",
+        "text": "any day is good"
+      },
+      {
         "intent": "hru",
         "text": "hru"
       },
@@ -13882,38 +13922,6 @@
       {
         "intent": "question",
         "text": "you might be able to answer this"
-      },
-      {
-        "intent": "robot",
-        "text": "hello robot"
-      },
-      {
-        "intent": "robot",
-        "text": "go robot"
-      },
-      {
-        "intent": "robot",
-        "text": "ru a bot"
-      },
-      {
-        "intent": "robot",
-        "text": "r u a bot"
-      },
-      {
-        "intent": "robot",
-        "text": "are you a robot"
-      },
-      {
-        "intent": "robot",
-        "text": "are you a bot"
-      },
-      {
-        "intent": "robot",
-        "text": "robot"
-      },
-      {
-        "intent": "robot",
-        "text": "robot lives matter"
       },
       {
         "intent": "ruthere",
@@ -21381,6 +21389,18 @@
       },
       {
         "intent": "multi_intent_no_name",
+        "entities": [
+          {
+            "start": 117,
+            "end": 121,
+            "value": "Gene",
+            "entity": "NAME"
+          }
+        ],
+        "text": "Forest asked me to text you to set up a time for he and I to have a call. Please let me know when we can do that. TY Gene"
+      },
+      {
+        "intent": "multi_intent_no_name",
         "text": "forest said to ask you to set up a call"
       },
       {
@@ -22891,7 +22911,7 @@
           {
             "start": 38,
             "end": 44,
-            "value": "cv",
+            "value": "jd",
             "entity": "res"
           }
         ],
@@ -29496,39 +29516,83 @@
         "text": "holly"
       },
       {
-        "intent": "zoro",
+        "intent": "zoro_greet",
         "text": "zoro"
       },
       {
-        "intent": "zoro",
-        "text": "you and zoro"
+        "intent": "zoro_greet",
+        "text": "hi zoro"
       },
       {
-        "intent": "zoro",
-        "text": "how are you and zoro"
+        "intent": "zoro_greet",
+        "text": "hi Zoro"
       },
       {
-        "intent": "zoro",
+        "intent": "zoro_greet",
+        "text": "Hi Zoro!"
+      },
+      {
+        "intent": "zoro_greet",
+        "text": "Hi there Zoro"
+      },
+      {
+        "intent": "zoro_greet",
+        "text": "Hi there Zoro!"
+      },
+      {
+        "intent": "zoro_greet",
+        "text": "hiya zoro"
+      },
+      {
+        "intent": "zoro_greet",
+        "text": "Hiya Zoro"
+      },
+      {
+        "intent": "zoro_greet",
+        "text": "heya zoro"
+      },
+      {
+        "intent": "zoro_greet",
+        "text": "hello zoro"
+      },
+      {
+        "intent": "zoro_greet",
+        "text": "Hello Zoro"
+      },
+      {
+        "intent": "zoro_greet",
+        "text": "Hello Zoro!"
+      },
+      {
+        "intent": "zoro_greet",
         "text": "say hi to zoro"
       },
       {
-        "intent": "zoro",
+        "intent": "zoro_love",
+        "text": "you and zoro"
+      },
+      {
+        "intent": "zoro_love",
+        "text": "how are you and zoro"
+      },
+      {
+        "intent": "zoro_love",
         "text": "how is zoro"
       },
       {
-        "intent": "zoro",
+        "intent": "zoro_love",
         "text": "how is zoro doing"
       },
       {
-        "intent": "zoro",
+        "intent": "zoro_love",
         "text": "i love zoro"
       },
       {
-        "intent": "zoro",
+        "intent": "zoro_love",
         "text": "i miss zoro"
       },
       {
-        "intent": "zoro",
+        "intent": "zoro_love",
         "text": "i miss zoro so much"
       },
       {
@@ -29810,6 +29874,78 @@
       {
         "intent": "ask_zoro",
         "text": "does he take good care of you"
+      },
+      {
+        "intent": "ruabot",
+        "text": "are you a program"
+      },
+      {
+        "intent": "ruabot",
+        "text": "are you ai"
+      },
+      {
+        "intent": "ruabot",
+        "text": "are you an AI"
+      },
+      {
+        "intent": "ruabot",
+        "text": "are you artificially intelligent"
+      },
+      {
+        "intent": "ruabot",
+        "text": "are you an aritificial intelligence"
+      },
+      {
+        "intent": "ruabot",
+        "text": "are you an AI program"
+      },
+      {
+        "intent": "ruabot",
+        "text": "are you a program"
+      },
+      {
+        "intent": "ruabot",
+        "text": "did forest program you"
+      },
+      {
+        "intent": "ruabot",
+        "text": "do you use machine learning"
+      },
+      {
+        "intent": "ruabot",
+        "text": "are you sentient"
+      },
+      {
+        "intent": "ruabot",
+        "text": "ru a bot"
+      },
+      {
+        "intent": "ruabot",
+        "text": "r u a bot"
+      },
+      {
+        "intent": "ruabot",
+        "text": "are you a robot"
+      },
+      {
+        "intent": "ruabot",
+        "text": "are you a bot"
+      },
+      {
+        "intent": "ruabot",
+        "text": "robot"
+      },
+      {
+        "intent": "robot",
+        "text": "go robot"
+      },
+      {
+        "intent": "robot",
+        "text": "hello robot"
+      },
+      {
+        "intent": "robot",
+        "text": "robot lives matter"
       }
     ],
     "regex_features": [],
@@ -29868,7 +30004,6 @@
           "your resume",
           "your current resume",
           "forest's resume",
-          "the jd",
           "that job description",
           "resume"
         ]
@@ -29876,6 +30011,7 @@
       {
         "value": "jd",
         "synonyms": [
+          "the jd",
           "job description",
           "j.d.",
           "JD",
@@ -29919,6 +30055,16 @@
         "value": "its",
         "synonyms": [
           "it's"
+        ]
+      },
+      {
+        "value": "zoro",
+        "synonyms": [
+          "zorro",
+          "Zorro",
+          "Z-dog",
+          "zdog",
+          "zman"
         ]
       }
     ]

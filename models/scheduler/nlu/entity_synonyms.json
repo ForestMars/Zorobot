@@ -18,7 +18,7 @@
   "your resume": "cv",
   "your current resume": "cv",
   "forest's resume": "cv",
-  "the jd": "cv",
+  "the jd": "jd",
   "that job description": "cv",
   "job description": "jd",
   "resume": "cv",
@@ -46,5 +46,9 @@
   "us": "usa",
   "america": "usa",
   "murica": "usa",
-  "it's": "its"
+  "it's": "its",
+  "zorro": "zoro",
+  "z-dog": "zoro",
+  "zdog": "zoro",
+  "zman": "zoro"
 }

@@ -3,53 +3,28 @@
     "action_listen": {
       "slots": [
         "res",
-        "Nou",
         "date_or_time"
       ]
     },
     "email_form": {
       "slots": []
     },
-    "utter_bye": {
-      "slots": []
-    },
     "utter_np": {
       "slots": []
     },
-    "utter_ask_change_what": {
+    "utter_await_response": {
       "slots": []
     },
-    "utter_confirm_best_email": {
-      "slots": []
-    },
-    "utter_ask_time_day": {
-      "slots": []
-    },
-    "utter_ask_day": {
-      "slots": []
-    },
-    "action_restart": {
-      "slots": []
-    },
-    "utter_your_name": {
-      "slots": []
-    },
-    "utter_greet": {
-      "slots": []
-    },
-    "utter_sorry_dont_understand": {
-      "slots": []
-    },
-    "utter_wunderbar": {
-      "slots": []
-    },
-    "utter_none_of_your_business": {
+    "utter_bye": {
       "slots": []
     },
     "utter_ask_time_date": {
       "slots": []
     },
-    "utter_yum": {
+    "utter_not_sure_when": {
+      "slots": []
+    },
+    "utter_im_a_scheduling_agent": {
       "slots": []
     },
     "Nou_form": {
@@ -58,55 +33,85 @@
     "utter_anything_else": {
       "slots": []
     },
-    "utter_im_a_scheduling_agent": {
-      "slots": []
-    },
-    "action_send_invite": {
-      "slots": []
-    },
-    "utter_im_zoro": {
-      "slots": []
-    },
-    "utter_ask_schedule_call": {
-      "slots": []
-    },
-    "utter_up_down": {
-      "slots": []
-    },
-    "utter_zoro_walk": {
-      "slots": []
-    },
-    "utter_ask_who": {
-      "slots": []
-    },
-    "utter_ask_schedule_call_discuss": {
-      "slots": []
-    },
-    "utter_zoro_likes": {
-      "slots": []
-    },
     "utter_no_worries": {
-      "slots": []
-    },
-    "utter_not_sure_when": {
-      "slots": []
-    },
-    "utter_corona_bot": {
       "slots": []
     },
     "utter_intro_dog": {
       "slots": []
     },
+    "utter_up_down": {
+      "slots": []
+    },
+    "utter_confirm_best_email": {
+      "slots": []
+    },
+    "utter_ask_schedule_call": {
+      "slots": []
+    },
+    "utter_im_zoro": {
+      "slots": []
+    },
+    "action_restart": {
+      "slots": []
+    },
+    "utter_zoro_likes": {
+      "slots": []
+    },
+    "utter_ask_schedule_call_discuss": {
+      "slots": []
+    },
+    "utter_ask_change_what": {
+      "slots": []
+    },
+    "utter_sorry_dont_understand": {
+      "slots": []
+    },
+    "action_send_invite": {
+      "slots": []
+    },
+    "utter_ask_time_day": {
+      "slots": []
+    },
+    "utter_yum": {
+      "slots": []
+    },
+    "utter_zoro_walk": {
+      "slots": []
+    },
+    "utter_zoro_spoiled": {
+      "slots": []
+    },
+    "utter_your_name": {
+      "slots": []
+    },
+    "utter_ask_day": {
+      "slots": []
+    },
+    "utter_soami": {
+      "slots": []
+    },
     "utter_smiley": {
       "slots": []
     },
-    "utter_pick_a_day": {
+    "utter_wunderbar": {
+      "slots": []
+    },
+    "utter_zorobot": {
+      "slots": []
+    },
+    "utter_none_of_your_business": {
       "slots": []
     },
     "utter_looking_forward": {
       "slots": []
     },
-    "utter_zoro_spoiled": {
+    "utter_pick_a_day": {
+      "slots": []
+    },
+    "utter_zoro_origin": {
+      "slots": []
+    },
+    "utter_corona_bot": {
       "slots": []
     }
   },
@@ -122,7 +127,7 @@
     "rasa_core.policies.memoization.MemoizationPolicy",
     "rasa_core.policies.form_policy.FormPolicy"
   ],
-  "trained_at": "20201208-235613",
+  "trained_at": "20201209-194648",
   "rasa_core": "0.13.8",
   "tensorflow": "1.12.0",
   "sklearn": "0.20.2"

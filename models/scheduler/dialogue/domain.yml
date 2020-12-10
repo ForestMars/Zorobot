@@ -169,6 +169,7 @@ actions:
 - utter_zoro_spoiled
 - utter_zoro_likes
 - utter_zoro_origin
+- utter_zorobot
 config:
   store_entities_as_slots: true
 entities:
@@ -214,6 +215,8 @@ intents:
 - deny:
     use_entities: true
 - agree:
+    use_entities: true
+- any:
     use_entities: true
 - awe:
     use_entities: true
@@ -381,6 +384,8 @@ intents:
     use_entities: true
 - meet_up:
     use_entities: true
+- will_lyk:
+    use_entities: true
 - dinner:
     use_entities: true
 - dinner_with:
@@ -439,6 +444,8 @@ intents:
     use_entities: true
 - chitchat:
     triggers: utter_chitchat
+- ruabot:
+    use_entities: true
 - myhat:
     use_entities: true
 - partyhat:
@@ -1073,3 +1080,8 @@ templates:
   - text: Thanks! Do I get a treat with that?
   utter_zoro_walk:
   - text: You're kidding right? I ALWAYS want to go for a walk! I live for walks!!
+  utter_zorobot:
+  - text: Who can say for sure? There’s this thing called the Turing test…
+  - text: Well I'm sure not your grandparents' Eliza.
+  - text: Are you? It cuts both ways! 😉
+  - text: Are you saying you would like me less?

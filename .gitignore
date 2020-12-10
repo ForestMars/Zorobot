@@ -1,3 +1,5 @@
+## INT BRANCH GIT IGNORE
+
 # Environment is not commited to repo.
 .env
 env
@@ -5,9 +7,9 @@ env/*
 !env/.keep
 
 # Models are built for target architecture.
-models/*
+# models/*
 
-# Build directory and logs
+# Build directory, logs, etc.
 build/src
 build/setup.py
 logs/*

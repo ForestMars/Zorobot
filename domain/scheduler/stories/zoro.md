@@ -2,6 +2,10 @@
 * zoro
   - utter_greet
 
+# hi zoro
+* zoro_greet
+  - utter_im_zoro
+
 ## is this zoro
 * is_this
   - utter_im_zoro
@@ -53,6 +57,10 @@
 ## wassup
 * sup
   - utter_up_down
+
+## r u a bot
+* ruabot
+  - utter_zorobot
 
 ## corona corona
 * corona

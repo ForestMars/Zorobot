@@ -11,7 +11,7 @@
   - utter_ask_day
 
 ## multi intent (no name)
-* multi_intent {"Nou": null}
+* multi_intent
   - utter_ask_who
 * this_is
   - utter_nicetohearfromu

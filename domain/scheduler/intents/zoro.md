@@ -1,10 +1,31 @@
 
+## synonym:zoro
+- zorro
+- Zorro
+- Z-dog
+- zdog
+- zman
+_ zztop
 
-## intent:zoro
+## intent:zoro_greet
 - zoro
+- hi zoro
+- hi Zoro
+- Hi Zoro!
+- Hi there Zoro
+- Hi there Zoro!
+- hiya zoro
+- Hiya Zoro
+- heya zoro
+- hello zoro
+- Hello Zoro
+- Hello Zoro!
+- say hi to zoro
+
+
+## intent:zoro_love
 - you and zoro
 - how are you and zoro
-- say hi to zoro
 - how is zoro
 - how is zoro doing
 - i love zoro
@@ -89,4 +110,35 @@
 - does forest take good care of you
 - does forest treat you well
 - does forest spoil you
-- does he take good care of you 
+- does he take good care of you
+
+
+## intent:ruabot
+- are you a program
+- are you ai
+- are you an AI
+- are you artificially intelligent
+- are you an aritificial intelligence
+- are you an AI program
+- are you a program
+- did forest program you
+- do you use machine learning
+- are you sentient
+- ru a bot
+- r u a bot
+- are you a robot
+- are you a bot
+- robot
+
+## intent:robot
+- go robot
+- hello robot
+- robot lives matter
+
+## intent:what_is
+- what is [Eliza](qha)
+- what is [eliza](qha)
+- what is [Eliza](qha)?
+- what is [eliza](qha)?
+- what is ["Eliza"](qha)
+- what is ["eliza"](qha)

@@ -141,6 +141,7 @@ intents:
 - affirm
 - deny
 - agree
+- any
 - awe
 - bye
 - byebot
@@ -265,6 +266,7 @@ intents:
 - corona: {triggers: utter_chitchat}
 - chitchat: {triggers: utter_chitchat}
 - lost_the_plot
+- ruabot
 
 # ~~~~~~~~~~ Easter Eggs
 - myhat
@@ -500,6 +502,7 @@ actions:
 - utter_zoro_spoiled
 - utter_zoro_likes
 - utter_zoro_origin
+- utter_zorobot
 
 
 templates:
@@ -928,3 +931,8 @@ templates:
   - text: What's a particular day that's good for you {DATE}?
   utter_not_sure_when:
   - text: Not sure when I will be {activity}, will lyk
+  utter_zorobot:
+  - text: Who can say for sure? There’s this thing called the Turing test…
+  - text: Well I'm sure not your grandparents' Eliza.
+  - text: Are you? It cuts both ways! 😉
+  - text: Are you saying you would like me less?

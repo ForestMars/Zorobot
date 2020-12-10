@@ -617,6 +617,7 @@
 - hi forest, thank you for the email. i would be interested in setting up a call.
 - forest asked me to text you to set up a time for he and I to have a call.
 - forest asked me to text you to set up a time for he and I to have a call. please let me know when we can do that
+- Forest asked me to text you to set up a time for he and I to have a call. Please let me know when we can do that. TY [Gene](NAME)
 - forest said to ask you to set up a call
 - forest said you could schedule a call for us
 - forest said you would set up a call for us

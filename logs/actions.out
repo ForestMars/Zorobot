@@ -1,0 +1,29 @@
+2020-11-05 15:50:41 INFO     __main__  - Starting action endpoint server...
+2020-11-05 15:50:41 INFO     rasa_core_sdk.executor  - Registered function for 'action_nsfw'.
+2020-11-05 15:50:41 INFO     rasa_core_sdk.executor  - Registered function for 'action_reset_email'.
+2020-11-05 15:50:41 INFO     rasa_core_sdk.executor  - Registered function for 'action_check_date'.
+2020-11-05 15:50:41 INFO     rasa_core_sdk.executor  - Registered function for 'action_check_day'.
+2020-11-05 15:50:41 INFO     rasa_core_sdk.executor  - Registered function for 'action_check_time'.
+2020-11-05 15:50:41 INFO     rasa_core_sdk.executor  - Registered function for 'action_send_invite'.
+2020-11-05 15:50:41 INFO     rasa_core_sdk.executor  - Registered function for 'action_update_contacts'.
+2020-11-05 15:50:41 INFO     rasa_core_sdk.executor  - Registered function for 'action_repeat'.
+2020-11-05 15:50:41 INFO     rasa_core_sdk.executor  - Registered function for 'action_repeat_'.
+2020-11-05 15:50:41 INFO     rasa_core_sdk.executor  - Registered function for 'email_form'.
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core_sdk/endpoint.py", line 115, in <module>
+    http_server.start()
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/gevent/baseserver.py", line 305, in start
+    self.init_socket()
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/gevent/pywsgi.py", line 1490, in init_socket
+    StreamServer.init_socket(self)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/gevent/server.py", line 146, in init_socket
+    self.socket = self.get_listener(self.address, self.backlog, self.family)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/gevent/server.py", line 157, in get_listener
+    return _tcp_listener(address, backlog=backlog, reuse_addr=cls.reuse_addr, family=family)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/gevent/server.py", line 256, in _tcp_listener
+    sock.bind(address)
+OSError: [Errno 48] Address already in use: ('0.0.0.0', 5055)

@@ -1,0 +1,3281 @@
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Available web server routes: 
+static                                             OPTIONS, GET, HEAD             /static/[filename]
+custom_webhook_CmdlineInput.health                 OPTIONS, GET, HEAD             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                OPTIONS, POST                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Using selector: KqueueSelector
+Creating a new tracker for id 'default'.
+Received user message 'Hi Forest, thank you for coming back to me' with intent '{'name': 'oot', 'confidence': 0.13543545765458367}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou:  
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [None, None, {}, {'intent_oot': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 0.52.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hi forest thank you' with intent '{'name': 'thisis', 'confidence': 0.08916844466363956}' and entities '[]'
+Logged UserUtterance - tracker now has 4 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou:  
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [None, {}, {'intent_oot': 1.0, 'prev_action_listen': 1.0}, {'intent_thisis': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_nicetohearfromu' with prob 1.00.
+Action 'utter_nicetohearfromu' ended with events '[]'
+Bot utterance 'BotUttered(text: Nice to hear from you  , data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{}, {'intent_oot': 1.0, 'prev_action_listen': 1.0}, {'intent_thisis': 1.0, 'prev_action_listen': 1.0}, {'intent_thisis': 1.0, 'prev_utter_nicetohearfromu': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_update_contacts' with prob 1.00.
+Calling action endpoint to run action 'action_update_contacts'.
+Action 'action_update_contacts' ended with events '[]'
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'intent_oot': 1.0, 'prev_action_listen': 1.0}, {'intent_thisis': 1.0, 'prev_action_listen': 1.0}, {'intent_thisis': 1.0, 'prev_utter_nicetohearfromu': 1.0}, {'intent_thisis': 1.0, 'prev_action_update_contacts': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_ask_schedule_call' with prob 1.00.
+Action 'utter_ask_schedule_call' ended with events '[]'
+Bot utterance 'BotUttered(text: Do you want to schedule a call?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'intent_thisis': 1.0, 'prev_action_listen': 1.0}, {'intent_thisis': 1.0, 'prev_utter_nicetohearfromu': 1.0}, {'intent_thisis': 1.0, 'prev_action_update_contacts': 1.0}, {'intent_thisis': 1.0, 'prev_utter_ask_schedule_call': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hi forest' with intent '{'name': 'greet', 'confidence': 0.2510672744738374}' and entities '[]'
+Logged UserUtterance - tracker now has 11 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou:  
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Current tracker state [{'intent_thisis': 1.0, 'prev_utter_nicetohearfromu': 1.0}, {'intent_thisis': 1.0, 'prev_action_update_contacts': 1.0}, {'intent_thisis': 1.0, 'prev_utter_ask_schedule_call': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '14'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: Heya!, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_thisis': 1.0, 'prev_action_update_contacts': 1.0}, {'intent_thisis': 1.0, 'prev_utter_ask_schedule_call': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '107'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_ask_who' with prob 1.00.
+Action 'utter_ask_who' ended with events '[]'
+Bot utterance 'BotUttered(text: Who is this please?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_thisis': 1.0, 'prev_utter_ask_schedule_call': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_utter_ask_who': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'thank you' with intent '{'name': 'thanks', 'confidence': 0.20069812991493013}' and entities '[]'
+Logged UserUtterance - tracker now has 17 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou:  
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_utter_ask_who': 1.0, 'intent_greet': 1.0}, {'intent_thanks': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_nicetohearfromu' with prob 0.42.
+Action 'utter_nicetohearfromu' ended with events '[]'
+Bot utterance 'BotUttered(text: Nice to hear from you  , data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_utter_ask_who': 1.0, 'intent_greet': 1.0}, {'intent_thanks': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_nicetohearfromu': 1.0, 'intent_thanks': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_update_contacts' with prob 1.00.
+Calling action endpoint to run action 'action_update_contacts'.
+Action 'action_update_contacts' ended with events '[]'
+Current tracker state [{'prev_utter_ask_who': 1.0, 'intent_greet': 1.0}, {'intent_thanks': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_nicetohearfromu': 1.0, 'intent_thanks': 1.0}, {'intent_thanks': 1.0, 'prev_action_update_contacts': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_ask_schedule_call' with prob 1.00.
+Action 'utter_ask_schedule_call' ended with events '[]'
+Bot utterance 'BotUttered(text: Should we schedule a call?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_thanks': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_nicetohearfromu': 1.0, 'intent_thanks': 1.0}, {'intent_thanks': 1.0, 'prev_action_update_contacts': 1.0}, {'prev_utter_ask_schedule_call': 1.0, 'intent_thanks': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hi forest thanks' with intent '{'name': 'thisis', 'confidence': 0.1684903904750887}' and entities '[]'
+Logged UserUtterance - tracker now has 24 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou:  
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Current tracker state [{'prev_utter_nicetohearfromu': 1.0, 'intent_thanks': 1.0}, {'intent_thanks': 1.0, 'prev_action_update_contacts': 1.0}, {'prev_utter_ask_schedule_call': 1.0, 'intent_thanks': 1.0}, {'intent_thisis': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_nicetohearfromu' with prob 1.00.
+Action 'utter_nicetohearfromu' ended with events '[]'
+Bot utterance 'BotUttered(text: Nice to hear from you  , data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_thanks': 1.0, 'prev_action_update_contacts': 1.0}, {'prev_utter_ask_schedule_call': 1.0, 'intent_thanks': 1.0}, {'intent_thisis': 1.0, 'prev_action_listen': 1.0}, {'intent_thisis': 1.0, 'prev_utter_nicetohearfromu': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_update_contacts' with prob 1.00.
+Calling action endpoint to run action 'action_update_contacts'.
+Action 'action_update_contacts' ended with events '[]'
+Current tracker state [{'prev_utter_ask_schedule_call': 1.0, 'intent_thanks': 1.0}, {'intent_thisis': 1.0, 'prev_action_listen': 1.0}, {'intent_thisis': 1.0, 'prev_utter_nicetohearfromu': 1.0}, {'intent_thisis': 1.0, 'prev_action_update_contacts': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_ask_schedule_call' with prob 1.00.
+Action 'utter_ask_schedule_call' ended with events '[]'
+Bot utterance 'BotUttered(text: Did you want to schedule a call?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_thisis': 1.0, 'prev_action_listen': 1.0}, {'intent_thisis': 1.0, 'prev_utter_nicetohearfromu': 1.0}, {'intent_thisis': 1.0, 'prev_action_update_contacts': 1.0}, {'intent_thisis': 1.0, 'prev_utter_ask_schedule_call': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hello forest' with intent '{'name': 'greet', 'confidence': 0.21708883935885107}' and entities '[]'
+Logged UserUtterance - tracker now has 31 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou:  
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Current tracker state [{'intent_thisis': 1.0, 'prev_utter_nicetohearfromu': 1.0}, {'intent_thisis': 1.0, 'prev_action_update_contacts': 1.0}, {'intent_thisis': 1.0, 'prev_utter_ask_schedule_call': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '14'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: Heya!, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_thisis': 1.0, 'prev_action_update_contacts': 1.0}, {'intent_thisis': 1.0, 'prev_utter_ask_schedule_call': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '107'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_ask_who' with prob 1.00.
+Action 'utter_ask_who' ended with events '[]'
+Bot utterance 'BotUttered(text: Who is this please?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_thisis': 1.0, 'prev_utter_ask_schedule_call': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_utter_ask_who': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'thank you for getting' with intent '{'name': 'thanks', 'confidence': 0.09393280080522357}' and entities '[]'
+Logged UserUtterance - tracker now has 37 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou:  
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_utter_ask_who': 1.0, 'intent_greet': 1.0}, {'intent_thanks': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_nicetohearfromu' with prob 0.42.
+Action 'utter_nicetohearfromu' ended with events '[]'
+Bot utterance 'BotUttered(text: Nice to hear from you  , data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_utter_ask_who': 1.0, 'intent_greet': 1.0}, {'intent_thanks': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_nicetohearfromu': 1.0, 'intent_thanks': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_update_contacts' with prob 1.00.
+Calling action endpoint to run action 'action_update_contacts'.
+Action 'action_update_contacts' ended with events '[]'
+Current tracker state [{'prev_utter_ask_who': 1.0, 'intent_greet': 1.0}, {'intent_thanks': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_nicetohearfromu': 1.0, 'intent_thanks': 1.0}, {'intent_thanks': 1.0, 'prev_action_update_contacts': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_ask_schedule_call' with prob 1.00.
+Action 'utter_ask_schedule_call' ended with events '[]'
+Bot utterance 'BotUttered(text: Did you want to schedule a call?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_thanks': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_nicetohearfromu': 1.0, 'intent_thanks': 1.0}, {'intent_thanks': 1.0, 'prev_action_update_contacts': 1.0}, {'prev_utter_ask_schedule_call': 1.0, 'intent_thanks': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'thank you for coming back' with intent '{'name': 'thanks', 'confidence': 0.0590053841011422}' and entities '[]'
+Logged UserUtterance - tracker now has 44 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou:  
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Current tracker state [{'prev_utter_nicetohearfromu': 1.0, 'intent_thanks': 1.0}, {'intent_thanks': 1.0, 'prev_action_update_contacts': 1.0}, {'prev_utter_ask_schedule_call': 1.0, 'intent_thanks': 1.0}, {'intent_thanks': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 0.32.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'forest thank you for coming' with intent '{'name': 'corona', 'confidence': 0.06490408538969765}' and entities '[]'
+Logged UserUtterance - tracker now has 46 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou:  
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Current tracker state [{'intent_thanks': 1.0, 'prev_action_update_contacts': 1.0}, {'prev_utter_ask_schedule_call': 1.0, 'intent_thanks': 1.0}, {'intent_thanks': 1.0, 'prev_action_listen': 1.0}, {'intent_corona': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 0.69.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'thank you for coming back' with intent '{'name': 'thanks', 'confidence': 0.0590053841011422}' and entities '[]'
+Logged UserUtterance - tracker now has 48 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou:  
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Current tracker state [{'prev_utter_ask_schedule_call': 1.0, 'intent_thanks': 1.0}, {'intent_thanks': 1.0, 'prev_action_listen': 1.0}, {'intent_corona': 1.0, 'prev_action_listen': 1.0}, {'intent_thanks': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 0.45.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'thank you for getting back' with intent '{'name': 'thanks', 'confidence': 0.05331533273144162}' and entities '[]'
+Logged UserUtterance - tracker now has 50 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou:  
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Current tracker state [{'intent_thanks': 1.0, 'prev_action_listen': 1.0}, {'intent_corona': 1.0, 'prev_action_listen': 1.0}, {'intent_thanks': 1.0, 'prev_action_listen': 1.0}, {'intent_thanks': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 0.79.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'thank you for coming' with intent '{'name': 'thanks', 'confidence': 0.0899115278579696}' and entities '[]'
+Logged UserUtterance - tracker now has 52 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou:  
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Current tracker state [{'intent_corona': 1.0, 'prev_action_listen': 1.0}, {'intent_thanks': 1.0, 'prev_action_listen': 1.0}, {'intent_thanks': 1.0, 'prev_action_listen': 1.0}, {'intent_thanks': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 0.96.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'forest thank you' with intent '{'name': 'lost_the_plot', 'confidence': 0.1135111869955334}' and entities '[]'
+Logged UserUtterance - tracker now has 54 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou:  
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Current tracker state [{'intent_thanks': 1.0, 'prev_action_listen': 1.0}, {'intent_thanks': 1.0, 'prev_action_listen': 1.0}, {'intent_thanks': 1.0, 'prev_action_listen': 1.0}, {'intent_lost_the_plot': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 0.79.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa process starting
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Available web server routes: 
+static                                             HEAD, GET, OPTIONS             /static/[filename]
+custom_webhook_CmdlineInput.health                 HEAD, GET, OPTIONS             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                POST, OPTIONS                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Using selector: KqueueSelector
+Creating a new tracker for id 'default'.
+Received user message 'Hi Forest, thank you for coming back to me and i would be keen to set up a call. Can you let me know what your availability is? Thanks,' with intent '{'name': 'oot', 'confidence': 0.23729364402874017}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou:  
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [None, None, {}, {'intent_oot': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_greet' with prob 0.24.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: Heya!, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [None, {}, {'intent_oot': 1.0, 'prev_action_listen': 1.0}, {'intent_oot': 1.0, 'prev_utter_greet': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_ask_who' with prob 1.00.
+Action 'utter_ask_who' ended with events '[]'
+Bot utterance 'BotUttered(text: Who is this please?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{}, {'intent_oot': 1.0, 'prev_action_listen': 1.0}, {'intent_oot': 1.0, 'prev_utter_greet': 1.0}, {'prev_utter_ask_who': 1.0, 'intent_oot': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hi forest thank you for getting back' with intent '{'name': 'oot', 'confidence': 0.045895951878263425}' and entities '[]'
+Logged UserUtterance - tracker now has 8 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou:  
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'intent_oot': 1.0, 'prev_action_listen': 1.0}, {'intent_oot': 1.0, 'prev_utter_greet': 1.0}, {'prev_utter_ask_who': 1.0, 'intent_oot': 1.0}, {'intent_oot': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_nicetohearfromu' with prob 0.94.
+Action 'utter_nicetohearfromu' ended with events '[]'
+Bot utterance 'BotUttered(text: Nice to hear from you  , data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'intent_oot': 1.0, 'prev_utter_greet': 1.0}, {'prev_utter_ask_who': 1.0, 'intent_oot': 1.0}, {'intent_oot': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_nicetohearfromu': 1.0, 'intent_oot': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_update_contacts' with prob 1.00.
+Calling action endpoint to run action 'action_update_contacts'.
+Failed to run custom action 'action_update_contacts'. Couldn't connect to the server at 'http://localhost:5055/webhook'. Is the server running? Error: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x13e7f9eb8>: Failed to establish a new connection: [Errno 61] Connection refused',))
+Encountered an exception while running action 'action_update_contacts'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1287, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1333, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1282, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1042, in _send_output
+    self.send(msg)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 980, in send
+    self.connect()
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x13e7f9eb8>: Failed to establish a new connection: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connectionpool.py", line 727, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x13e7f9eb8>: Failed to establish a new connection: [Errno 61] Connection refused',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/actions/action.py", line 331, in run
+    json=json, method="post", timeout=DEFAULT_REQUEST_TIMEOUT)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/utils.py", line 667, in request
+    **kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x13e7f9eb8>: Failed to establish a new connection: [Errno 61] Connection refused',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/processor.py", line 346, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/actions/action.py", line 352, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'action_update_contacts' ended with events '[]'
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'prev_utter_ask_who': 1.0, 'intent_oot': 1.0}, {'intent_oot': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_nicetohearfromu': 1.0, 'intent_oot': 1.0}, {'intent_oot': 1.0, 'prev_action_update_contacts': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_ask_schedule_call' with prob 1.00.
+Action 'utter_ask_schedule_call' ended with events '[]'
+Bot utterance 'BotUttered(text: Did you want to schedule a call?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'intent_oot': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_nicetohearfromu': 1.0, 'intent_oot': 1.0}, {'intent_oot': 1.0, 'prev_action_update_contacts': 1.0}, {'prev_utter_ask_schedule_call': 1.0, 'intent_oot': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'forst thank you for getting' with intent '{'name': 'thanks', 'confidence': 0.057808318834954145}' and entities '[]'
+Logged UserUtterance - tracker now has 15 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou:  
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'prev_utter_nicetohearfromu': 1.0, 'intent_oot': 1.0}, {'intent_oot': 1.0, 'prev_action_update_contacts': 1.0}, {'prev_utter_ask_schedule_call': 1.0, 'intent_oot': 1.0}, {'intent_thanks': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_bye' with prob 0.20.
+Action 'utter_bye' ended with events '[]'
+Bot utterance 'BotUttered(text: Bye buy, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'intent_oot': 1.0, 'prev_action_update_contacts': 1.0}, {'prev_utter_ask_schedule_call': 1.0, 'intent_oot': 1.0}, {'intent_thanks': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_bye': 1.0, 'intent_thanks': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hi forest thank you' with intent '{'name': 'thisis', 'confidence': 0.08791665721552498}' and entities '[]'
+Logged UserUtterance - tracker now has 19 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou:  
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'prev_utter_ask_schedule_call': 1.0, 'intent_oot': 1.0}, {'intent_thanks': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_bye': 1.0, 'intent_thanks': 1.0}, {'intent_thisis': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_nicetohearfromu' with prob 1.00.
+Action 'utter_nicetohearfromu' ended with events '[]'
+Bot utterance 'BotUttered(text: Nice to hear from you  , data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'intent_thanks': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_bye': 1.0, 'intent_thanks': 1.0}, {'intent_thisis': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_nicetohearfromu': 1.0, 'intent_thisis': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_update_contacts' with prob 1.00.
+Calling action endpoint to run action 'action_update_contacts'.
+Failed to run custom action 'action_update_contacts'. Couldn't connect to the server at 'http://localhost:5055/webhook'. Is the server running? Error: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x13ea8ea58>: Failed to establish a new connection: [Errno 61] Connection refused',))
+Encountered an exception while running action 'action_update_contacts'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1287, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1333, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1282, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1042, in _send_output
+    self.send(msg)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 980, in send
+    self.connect()
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x13ea8ea58>: Failed to establish a new connection: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connectionpool.py", line 727, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x13ea8ea58>: Failed to establish a new connection: [Errno 61] Connection refused',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/actions/action.py", line 331, in run
+    json=json, method="post", timeout=DEFAULT_REQUEST_TIMEOUT)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/utils.py", line 667, in request
+    **kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x13ea8ea58>: Failed to establish a new connection: [Errno 61] Connection refused',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/processor.py", line 346, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/actions/action.py", line 352, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'action_update_contacts' ended with events '[]'
+Current tracker state [{'prev_utter_bye': 1.0, 'intent_thanks': 1.0}, {'intent_thisis': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_nicetohearfromu': 1.0, 'intent_thisis': 1.0}, {'intent_thisis': 1.0, 'prev_action_update_contacts': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_ask_schedule_call' with prob 1.00.
+Action 'utter_ask_schedule_call' ended with events '[]'
+Bot utterance 'BotUttered(text: Did you want to schedule a call?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_thisis': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_nicetohearfromu': 1.0, 'intent_thisis': 1.0}, {'intent_thisis': 1.0, 'prev_action_update_contacts': 1.0}, {'intent_thisis': 1.0, 'prev_utter_ask_schedule_call': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Available web server routes: 
+static                                             GET, HEAD, OPTIONS             /static/[filename]
+custom_webhook_CmdlineInput.health                 GET, HEAD, OPTIONS             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                OPTIONS, POST                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Using selector: KqueueSelector
+Creating a new tracker for id 'default'.
+Received user message 'hi forest thanks for getting back' with intent '{'name': 'thanks', 'confidence': 0.07350258988704968}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou:  
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Current tracker state [None, None, {}, {'prev_action_listen': 1.0, 'intent_thanks': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 0.27.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hi forest thanks for coming back' with intent '{'name': 'thanks', 'confidence': 0.07561596843392426}' and entities '[]'
+Logged UserUtterance - tracker now has 4 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou:  
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_thanks': 1.0}, {'prev_action_listen': 1.0, 'intent_thanks': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 0.77.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'Hi Forest, thank you for coming back to me and i would be keen to set up a call. Can you let me know what your availability is? Thanks, Sarah' with intent '{'name': 'oot', 'confidence': 0.2636054272369768}' and entities '[{'start': 136, 'end': 141, 'value': 'Sarah', 'entity': 'Nou', 'confidence': 0.9680342005411677, 'extractor': 'ner_crf'}, {'entity': 'PERSON', 'value': 'Sarah', 'start': 136, 'confidence': None, 'end': 141, 'extractor': 'ner_spacy'}]'
+Logged UserUtterance - tracker now has 7 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou: Sarah
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Feature 'entity_PERSON' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{}, {'prev_action_listen': 1.0, 'intent_thanks': 1.0}, {'prev_action_listen': 1.0, 'intent_thanks': 1.0}, {'prev_action_listen': 1.0, 'entity_PERSON': 1.0, 'intent_oot': 1.0, 'entity_Nou': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 0.42.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hi forest thank you for' with intent '{'name': 'thanks', 'confidence': 0.08261471305427996}' and entities '[]'
+Logged UserUtterance - tracker now has 9 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou: Sarah
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Feature 'entity_PERSON' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'prev_action_listen': 1.0, 'intent_thanks': 1.0}, {'prev_action_listen': 1.0, 'intent_thanks': 1.0}, {'prev_action_listen': 1.0, 'entity_PERSON': 1.0, 'intent_oot': 1.0, 'entity_Nou': 1.0}, {'prev_action_listen': 1.0, 'intent_thanks': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 0.19.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hi forest thank you for getting back' with intent '{'name': 'thanks', 'confidence': 0.07241382437535451}' and entities '[]'
+Logged UserUtterance - tracker now has 11 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou: Sarah
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Feature 'entity_PERSON' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'prev_action_listen': 1.0, 'intent_thanks': 1.0}, {'prev_action_listen': 1.0, 'entity_PERSON': 1.0, 'intent_oot': 1.0, 'entity_Nou': 1.0}, {'prev_action_listen': 1.0, 'intent_thanks': 1.0}, {'prev_action_listen': 1.0, 'intent_thanks': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 0.76.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hi forest thank you for coming back' with intent '{'name': 'thanks', 'confidence': 0.08028695251980378}' and entities '[]'
+Logged UserUtterance - tracker now has 13 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou: Sarah
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Feature 'entity_PERSON' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'prev_action_listen': 1.0, 'entity_PERSON': 1.0, 'intent_oot': 1.0, 'entity_Nou': 1.0}, {'prev_action_listen': 1.0, 'intent_thanks': 1.0}, {'prev_action_listen': 1.0, 'intent_thanks': 1.0}, {'prev_action_listen': 1.0, 'intent_thanks': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 0.69.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hi forest thank you for coming back to me. I am keen to' with intent '{'name': 'oot', 'confidence': 0.06156482274614867}' and entities '[]'
+Logged UserUtterance - tracker now has 15 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou: Sarah
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Feature 'entity_PERSON' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'prev_action_listen': 1.0, 'intent_thanks': 1.0}, {'prev_action_listen': 1.0, 'intent_thanks': 1.0}, {'prev_action_listen': 1.0, 'intent_thanks': 1.0}, {'prev_action_listen': 1.0, 'intent_oot': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 0.40.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'i am keen to' with intent '{'name': 'suggest_time', 'confidence': 0.055989369708009336}' and entities '[]'
+Logged UserUtterance - tracker now has 17 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou: Sarah
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'prev_action_listen': 1.0, 'intent_thanks': 1.0}, {'prev_action_listen': 1.0, 'intent_thanks': 1.0}, {'prev_action_listen': 1.0, 'intent_oot': 1.0}, {'prev_action_listen': 1.0, 'intent_suggest_time': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_check_time' with prob 1.00.
+Calling action endpoint to run action 'action_check_time'.
+Failed to run custom action 'action_check_time'. Couldn't connect to the server at 'http://localhost:5055/webhook'. Is the server running? Error: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x137ec72b0>: Failed to establish a new connection: [Errno 61] Connection refused',))
+Encountered an exception while running action 'action_check_time'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1287, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1333, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1282, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1042, in _send_output
+    self.send(msg)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 980, in send
+    self.connect()
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x137ec72b0>: Failed to establish a new connection: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connectionpool.py", line 727, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x137ec72b0>: Failed to establish a new connection: [Errno 61] Connection refused',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/actions/action.py", line 331, in run
+    json=json, method="post", timeout=DEFAULT_REQUEST_TIMEOUT)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/utils.py", line 667, in request
+    **kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x137ec72b0>: Failed to establish a new connection: [Errno 61] Connection refused',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/processor.py", line 346, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/actions/action.py", line 352, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'action_check_time' ended with events '[]'
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'prev_action_listen': 1.0, 'intent_thanks': 1.0}, {'prev_action_listen': 1.0, 'intent_oot': 1.0}, {'prev_action_listen': 1.0, 'intent_suggest_time': 1.0}, {'intent_suggest_time': 1.0, 'prev_action_check_time': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_heres_my_number' with prob 1.00.
+Action 'utter_heres_my_number' ended with events '[]'
+Bot utterance 'BotUttered(text: Here's the number to call me on: 347-688-7501, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'prev_action_listen': 1.0, 'intent_oot': 1.0}, {'prev_action_listen': 1.0, 'intent_suggest_time': 1.0}, {'intent_suggest_time': 1.0, 'prev_action_check_time': 1.0}, {'intent_suggest_time': 1.0, 'prev_utter_heres_my_number': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'email_form' with prob 1.00.
+Calling action endpoint to run action 'email_form'.
+Failed to run custom action 'email_form'. Couldn't connect to the server at 'http://localhost:5055/webhook'. Is the server running? Error: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x137f4fe10>: Failed to establish a new connection: [Errno 61] Connection refused',))
+Encountered an exception while running action 'email_form'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1287, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1333, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1282, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1042, in _send_output
+    self.send(msg)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 980, in send
+    self.connect()
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x137f4fe10>: Failed to establish a new connection: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connectionpool.py", line 727, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x137f4fe10>: Failed to establish a new connection: [Errno 61] Connection refused',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/actions/action.py", line 331, in run
+    json=json, method="post", timeout=DEFAULT_REQUEST_TIMEOUT)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/utils.py", line 667, in request
+    **kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x137f4fe10>: Failed to establish a new connection: [Errno 61] Connection refused',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/processor.py", line 346, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/actions/action.py", line 352, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'email_form' ended with events '[]'
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'prev_action_listen': 1.0, 'intent_suggest_time': 1.0}, {'intent_suggest_time': 1.0, 'prev_action_check_time': 1.0}, {'intent_suggest_time': 1.0, 'prev_utter_heres_my_number': 1.0}, {'prev_email_form': 1.0, 'intent_suggest_time': 1.0}]
+There is a memorised next action '110'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_confirm_best_email' with prob 1.00.
+Action 'utter_confirm_best_email' ended with events '[]'
+Bot utterance 'BotUttered(text: Just to confirm, None is the right email to send the call invite to?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_suggest_time': 1.0, 'prev_action_check_time': 1.0}, {'intent_suggest_time': 1.0, 'prev_utter_heres_my_number': 1.0}, {'prev_email_form': 1.0, 'intent_suggest_time': 1.0}, {'intent_suggest_time': 1.0, 'prev_utter_confirm_best_email': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hi forest thank you for coming back' with intent '{'name': 'thanks', 'confidence': 0.08028695251980378}' and entities '[]'
+Logged UserUtterance - tracker now has 25 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou: Sarah
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Current tracker state [{'intent_suggest_time': 1.0, 'prev_utter_heres_my_number': 1.0}, {'prev_email_form': 1.0, 'intent_suggest_time': 1.0}, {'intent_suggest_time': 1.0, 'prev_utter_confirm_best_email': 1.0}, {'prev_action_listen': 1.0, 'intent_thanks': 1.0}]
+There is a memorised next action '99'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_shall_we_confirm' with prob 1.00.
+Action 'utter_shall_we_confirm' ended with events '[]'
+Bot utterance 'BotUttered(text: Ok great Sarah, Shall we confirm for None, None None at None:None?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_email_form': 1.0, 'intent_suggest_time': 1.0}, {'intent_suggest_time': 1.0, 'prev_utter_confirm_best_email': 1.0}, {'prev_action_listen': 1.0, 'intent_thanks': 1.0}, {'intent_thanks': 1.0, 'prev_utter_shall_we_confirm': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hi forest thank you for coming back' with intent '{'name': 'thanks', 'confidence': 0.08028695251980378}' and entities '[]'
+Logged UserUtterance - tracker now has 29 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou: Sarah
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Current tracker state [{'intent_suggest_time': 1.0, 'prev_utter_confirm_best_email': 1.0}, {'prev_action_listen': 1.0, 'intent_thanks': 1.0}, {'intent_thanks': 1.0, 'prev_utter_shall_we_confirm': 1.0}, {'prev_action_listen': 1.0, 'intent_thanks': 1.0}]
+There is a memorised next action '7'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_send_invite' with prob 1.00.
+Calling action endpoint to run action 'action_send_invite'.
+Failed to run custom action 'action_send_invite'. Couldn't connect to the server at 'http://localhost:5055/webhook'. Is the server running? Error: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x13816a550>: Failed to establish a new connection: [Errno 61] Connection refused',))
+Encountered an exception while running action 'action_send_invite'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1287, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1333, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1282, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1042, in _send_output
+    self.send(msg)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 980, in send
+    self.connect()
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x13816a550>: Failed to establish a new connection: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connectionpool.py", line 727, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x13816a550>: Failed to establish a new connection: [Errno 61] Connection refused',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/actions/action.py", line 331, in run
+    json=json, method="post", timeout=DEFAULT_REQUEST_TIMEOUT)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/utils.py", line 667, in request
+    **kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x13816a550>: Failed to establish a new connection: [Errno 61] Connection refused',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/processor.py", line 346, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/actions/action.py", line 352, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'action_send_invite' ended with events '[]'
+Current tracker state [{'prev_action_listen': 1.0, 'intent_thanks': 1.0}, {'intent_thanks': 1.0, 'prev_utter_shall_we_confirm': 1.0}, {'prev_action_listen': 1.0, 'intent_thanks': 1.0}, {'intent_thanks': 1.0, 'prev_action_send_invite': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hi forest thank you for coming back to me' with intent '{'name': 'thanks', 'confidence': 0.07635883025491072}' and entities '[]'
+Logged UserUtterance - tracker now has 32 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou: Sarah
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Current tracker state [{'intent_thanks': 1.0, 'prev_utter_shall_we_confirm': 1.0}, {'prev_action_listen': 1.0, 'intent_thanks': 1.0}, {'intent_thanks': 1.0, 'prev_action_send_invite': 1.0}, {'prev_action_listen': 1.0, 'intent_thanks': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_looking_forward' with prob 0.99.
+Action 'utter_looking_forward' ended with events '[]'
+Bot utterance 'BotUttered(text: Looking forward!, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_listen': 1.0, 'intent_thanks': 1.0}, {'intent_thanks': 1.0, 'prev_action_send_invite': 1.0}, {'prev_action_listen': 1.0, 'intent_thanks': 1.0}, {'prev_utter_looking_forward': 1.0, 'intent_thanks': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 0.99.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'retart' with intent '{'name': 'thisis', 'confidence': 0.49171727433737594}' and entities '[]'
+Logged UserUtterance - tracker now has 36 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou: Sarah
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Current tracker state [{'intent_thanks': 1.0, 'prev_action_send_invite': 1.0}, {'prev_action_listen': 1.0, 'intent_thanks': 1.0}, {'prev_utter_looking_forward': 1.0, 'intent_thanks': 1.0}, {'prev_action_listen': 1.0, 'intent_thisis': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_nicetohearfromu' with prob 1.00.
+Action 'utter_nicetohearfromu' ended with events '[]'
+Bot utterance 'BotUttered(text: Nice to hear from you Sarah, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_listen': 1.0, 'intent_thanks': 1.0}, {'prev_utter_looking_forward': 1.0, 'intent_thanks': 1.0}, {'prev_action_listen': 1.0, 'intent_thisis': 1.0}, {'prev_utter_nicetohearfromu': 1.0, 'intent_thisis': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_update_contacts' with prob 1.00.
+Calling action endpoint to run action 'action_update_contacts'.
+Failed to run custom action 'action_update_contacts'. Couldn't connect to the server at 'http://localhost:5055/webhook'. Is the server running? Error: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1383b8908>: Failed to establish a new connection: [Errno 61] Connection refused',))
+Encountered an exception while running action 'action_update_contacts'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1287, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1333, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1282, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1042, in _send_output
+    self.send(msg)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 980, in send
+    self.connect()
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x1383b8908>: Failed to establish a new connection: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connectionpool.py", line 727, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1383b8908>: Failed to establish a new connection: [Errno 61] Connection refused',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/actions/action.py", line 331, in run
+    json=json, method="post", timeout=DEFAULT_REQUEST_TIMEOUT)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/utils.py", line 667, in request
+    **kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1383b8908>: Failed to establish a new connection: [Errno 61] Connection refused',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/processor.py", line 346, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/actions/action.py", line 352, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'action_update_contacts' ended with events '[]'
+Current tracker state [{'prev_utter_looking_forward': 1.0, 'intent_thanks': 1.0}, {'prev_action_listen': 1.0, 'intent_thisis': 1.0}, {'prev_utter_nicetohearfromu': 1.0, 'intent_thisis': 1.0}, {'prev_action_update_contacts': 1.0, 'intent_thisis': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_ask_schedule_call' with prob 1.00.
+Action 'utter_ask_schedule_call' ended with events '[]'
+Bot utterance 'BotUttered(text: Did you want to schedule a call?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_listen': 1.0, 'intent_thisis': 1.0}, {'prev_utter_nicetohearfromu': 1.0, 'intent_thisis': 1.0}, {'prev_action_update_contacts': 1.0, 'intent_thisis': 1.0}, {'prev_utter_ask_schedule_call': 1.0, 'intent_thisis': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'restart' with intent '{'name': 'restart', 'confidence': 0.31562528013511615}' and entities '[]'
+Logged UserUtterance - tracker now has 43 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou: Sarah
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Predicted next action 'action_restart' with prob 1.00.
+Action 'action_restart' ended with events '['Restarted()']'
+Bot utterance 'BotUttered(text: Ok, starting over., data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hi forest thank you for coming back' with intent '{'name': 'thanks', 'confidence': 0.08028695251980378}' and entities '[]'
+Logged UserUtterance - tracker now has 48 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou:  
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Current tracker state [None, None, {}, {'prev_action_listen': 1.0, 'intent_thanks': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 0.27.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hi forest thank you for coming back to' with intent '{'name': 'thanks', 'confidence': 0.07190427884287116}' and entities '[]'
+Logged UserUtterance - tracker now has 50 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou:  
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_thanks': 1.0}, {'prev_action_listen': 1.0, 'intent_thanks': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 0.77.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hi forest thank you for coming back to me' with intent '{'name': 'thanks', 'confidence': 0.07635883025491072}' and entities '[]'
+Logged UserUtterance - tracker now has 52 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou:  
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Current tracker state [{}, {'prev_action_listen': 1.0, 'intent_thanks': 1.0}, {'prev_action_listen': 1.0, 'intent_thanks': 1.0}, {'prev_action_listen': 1.0, 'intent_thanks': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 0.60.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hi forest thank you for coming back' with intent '{'name': 'thanks', 'confidence': 0.08028695251980378}' and entities '[]'
+Logged UserUtterance - tracker now has 54 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou:  
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Current tracker state [{'prev_action_listen': 1.0, 'intent_thanks': 1.0}, {'prev_action_listen': 1.0, 'intent_thanks': 1.0}, {'prev_action_listen': 1.0, 'intent_thanks': 1.0}, {'prev_action_listen': 1.0, 'intent_thanks': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 0.61.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'restart' with intent '{'name': 'restart', 'confidence': 0.31562528013511615}' and entities '[]'
+Logged UserUtterance - tracker now has 56 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou:  
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Predicted next action 'action_restart' with prob 1.00.
+Action 'action_restart' ended with events '['Restarted()']'
+Bot utterance 'BotUttered(text: Ok, starting over., data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hi forest thank you for coming back to me. I am keen' with intent '{'name': 'oot', 'confidence': 0.052761706895643745}' and entities '[]'
+Logged UserUtterance - tracker now has 61 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou:  
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [None, None, {}, {'prev_action_listen': 1.0, 'intent_oot': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_greet' with prob 0.24.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: Heya!, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_oot': 1.0}, {'prev_utter_greet': 1.0, 'intent_oot': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_ask_who' with prob 1.00.
+Action 'utter_ask_who' ended with events '[]'
+Bot utterance 'BotUttered(text: Who is this please?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{}, {'prev_action_listen': 1.0, 'intent_oot': 1.0}, {'prev_utter_greet': 1.0, 'intent_oot': 1.0}, {'prev_utter_ask_who': 1.0, 'intent_oot': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hi forest thank you for coming back to me. I am keen' with intent '{'name': 'oot', 'confidence': 0.052761706895643745}' and entities '[]'
+Logged UserUtterance - tracker now has 67 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou:  
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'prev_action_listen': 1.0, 'intent_oot': 1.0}, {'prev_utter_greet': 1.0, 'intent_oot': 1.0}, {'prev_utter_ask_who': 1.0, 'intent_oot': 1.0}, {'prev_action_listen': 1.0, 'intent_oot': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_nicetohearfromu' with prob 0.94.
+Action 'utter_nicetohearfromu' ended with events '[]'
+Bot utterance 'BotUttered(text: Nice to hear from you  , data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'prev_utter_greet': 1.0, 'intent_oot': 1.0}, {'prev_utter_ask_who': 1.0, 'intent_oot': 1.0}, {'prev_action_listen': 1.0, 'intent_oot': 1.0}, {'prev_utter_nicetohearfromu': 1.0, 'intent_oot': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_update_contacts' with prob 1.00.
+Calling action endpoint to run action 'action_update_contacts'.
+Failed to run custom action 'action_update_contacts'. Couldn't connect to the server at 'http://localhost:5055/webhook'. Is the server running? Error: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x138b93828>: Failed to establish a new connection: [Errno 61] Connection refused',))
+Encountered an exception while running action 'action_update_contacts'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1287, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1333, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1282, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1042, in _send_output
+    self.send(msg)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 980, in send
+    self.connect()
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x138b93828>: Failed to establish a new connection: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connectionpool.py", line 727, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x138b93828>: Failed to establish a new connection: [Errno 61] Connection refused',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/actions/action.py", line 331, in run
+    json=json, method="post", timeout=DEFAULT_REQUEST_TIMEOUT)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/utils.py", line 667, in request
+    **kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x138b93828>: Failed to establish a new connection: [Errno 61] Connection refused',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/processor.py", line 346, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/actions/action.py", line 352, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'action_update_contacts' ended with events '[]'
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'prev_utter_ask_who': 1.0, 'intent_oot': 1.0}, {'prev_action_listen': 1.0, 'intent_oot': 1.0}, {'prev_utter_nicetohearfromu': 1.0, 'intent_oot': 1.0}, {'intent_oot': 1.0, 'prev_action_update_contacts': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_ask_schedule_call' with prob 1.00.
+Action 'utter_ask_schedule_call' ended with events '[]'
+Bot utterance 'BotUttered(text: Did you want to schedule a call?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'prev_action_listen': 1.0, 'intent_oot': 1.0}, {'prev_utter_nicetohearfromu': 1.0, 'intent_oot': 1.0}, {'intent_oot': 1.0, 'prev_action_update_contacts': 1.0}, {'intent_oot': 1.0, 'prev_utter_ask_schedule_call': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hi forest thank you for coming back to me. I am ke' with intent '{'name': 'oot', 'confidence': 0.05910997104024932}' and entities '[]'
+Logged UserUtterance - tracker now has 74 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou:  
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'prev_utter_nicetohearfromu': 1.0, 'intent_oot': 1.0}, {'intent_oot': 1.0, 'prev_action_update_contacts': 1.0}, {'intent_oot': 1.0, 'prev_utter_ask_schedule_call': 1.0}, {'prev_action_listen': 1.0, 'intent_oot': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_greet' with prob 0.26.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: Heya!, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'intent_oot': 1.0, 'prev_action_update_contacts': 1.0}, {'intent_oot': 1.0, 'prev_utter_ask_schedule_call': 1.0}, {'prev_action_listen': 1.0, 'intent_oot': 1.0}, {'intent_oot': 1.0, 'prev_utter_greet': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_ask_who' with prob 1.00.
+Action 'utter_ask_who' ended with events '[]'
+Bot utterance 'BotUttered(text: Who is this please?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'intent_oot': 1.0, 'prev_utter_ask_schedule_call': 1.0}, {'prev_action_listen': 1.0, 'intent_oot': 1.0}, {'intent_oot': 1.0, 'prev_utter_greet': 1.0}, {'intent_oot': 1.0, 'prev_utter_ask_who': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hi forest thank you for coming back to me. I am' with intent '{'name': 'oot', 'confidence': 0.06416155516051479}' and entities '[]'
+Logged UserUtterance - tracker now has 80 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou:  
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'prev_action_listen': 1.0, 'intent_oot': 1.0}, {'intent_oot': 1.0, 'prev_utter_greet': 1.0}, {'intent_oot': 1.0, 'prev_utter_ask_who': 1.0}, {'prev_action_listen': 1.0, 'intent_oot': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_nicetohearfromu' with prob 0.92.
+Action 'utter_nicetohearfromu' ended with events '[]'
+Bot utterance 'BotUttered(text: Nice to hear from you  , data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'intent_oot': 1.0, 'prev_utter_greet': 1.0}, {'intent_oot': 1.0, 'prev_utter_ask_who': 1.0}, {'prev_action_listen': 1.0, 'intent_oot': 1.0}, {'prev_utter_nicetohearfromu': 1.0, 'intent_oot': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_update_contacts' with prob 1.00.
+Calling action endpoint to run action 'action_update_contacts'.
+Failed to run custom action 'action_update_contacts'. Couldn't connect to the server at 'http://localhost:5055/webhook'. Is the server running? Error: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x138d9f1d0>: Failed to establish a new connection: [Errno 61] Connection refused',))
+Encountered an exception while running action 'action_update_contacts'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1287, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1333, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1282, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1042, in _send_output
+    self.send(msg)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 980, in send
+    self.connect()
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x138d9f1d0>: Failed to establish a new connection: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connectionpool.py", line 727, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x138d9f1d0>: Failed to establish a new connection: [Errno 61] Connection refused',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/actions/action.py", line 331, in run
+    json=json, method="post", timeout=DEFAULT_REQUEST_TIMEOUT)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/utils.py", line 667, in request
+    **kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x138d9f1d0>: Failed to establish a new connection: [Errno 61] Connection refused',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/processor.py", line 346, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/actions/action.py", line 352, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'action_update_contacts' ended with events '[]'
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'intent_oot': 1.0, 'prev_utter_ask_who': 1.0}, {'prev_action_listen': 1.0, 'intent_oot': 1.0}, {'prev_utter_nicetohearfromu': 1.0, 'intent_oot': 1.0}, {'intent_oot': 1.0, 'prev_action_update_contacts': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_ask_schedule_call' with prob 1.00.
+Action 'utter_ask_schedule_call' ended with events '[]'
+Bot utterance 'BotUttered(text: Did you want to schedule a call?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'prev_action_listen': 1.0, 'intent_oot': 1.0}, {'prev_utter_nicetohearfromu': 1.0, 'intent_oot': 1.0}, {'intent_oot': 1.0, 'prev_action_update_contacts': 1.0}, {'intent_oot': 1.0, 'prev_utter_ask_schedule_call': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Available web server routes: 
+static                                             OPTIONS, HEAD, GET             /static/[filename]
+custom_webhook_CmdlineInput.health                 OPTIONS, HEAD, GET             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                OPTIONS, POST                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Using selector: KqueueSelector
+Creating a new tracker for id 'default'.
+Received user message 'hi forest thank you for coming back to me. I am keen' with intent '{'name': 'oot', 'confidence': 0.06169101645942177}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou:  
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [None, None, {}, {'prev_action_listen': 1.0, 'intent_oot': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_greet' with prob 0.24.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: Heya!, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_oot': 1.0}, {'intent_oot': 1.0, 'prev_utter_greet': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_ask_who' with prob 1.00.
+Action 'utter_ask_who' ended with events '[]'
+Bot utterance 'BotUttered(text: Who is this please?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{}, {'prev_action_listen': 1.0, 'intent_oot': 1.0}, {'intent_oot': 1.0, 'prev_utter_greet': 1.0}, {'prev_utter_ask_who': 1.0, 'intent_oot': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hi forest thank you for coming back to me. I am not' with intent '{'name': 'oot', 'confidence': 0.06528874216789983}' and entities '[]'
+Logged UserUtterance - tracker now has 8 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou:  
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'prev_action_listen': 1.0, 'intent_oot': 1.0}, {'intent_oot': 1.0, 'prev_utter_greet': 1.0}, {'prev_utter_ask_who': 1.0, 'intent_oot': 1.0}, {'intent_oot': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_nicetohearfromu' with prob 0.94.
+Action 'utter_nicetohearfromu' ended with events '[]'
+Bot utterance 'BotUttered(text: Nice to hear from you  , data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'intent_oot': 1.0, 'prev_utter_greet': 1.0}, {'prev_utter_ask_who': 1.0, 'intent_oot': 1.0}, {'intent_oot': 1.0, 'prev_action_listen': 1.0}, {'intent_oot': 1.0, 'prev_utter_nicetohearfromu': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_update_contacts' with prob 1.00.
+Calling action endpoint to run action 'action_update_contacts'.
+Failed to run custom action 'action_update_contacts'. Couldn't connect to the server at 'http://localhost:5055/webhook'. Is the server running? Error: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x13debc710>: Failed to establish a new connection: [Errno 61] Connection refused',))
+Encountered an exception while running action 'action_update_contacts'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1287, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1333, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1282, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1042, in _send_output
+    self.send(msg)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 980, in send
+    self.connect()
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x13debc710>: Failed to establish a new connection: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connectionpool.py", line 727, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x13debc710>: Failed to establish a new connection: [Errno 61] Connection refused',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/actions/action.py", line 331, in run
+    json=json, method="post", timeout=DEFAULT_REQUEST_TIMEOUT)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/utils.py", line 667, in request
+    **kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x13debc710>: Failed to establish a new connection: [Errno 61] Connection refused',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/processor.py", line 346, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/actions/action.py", line 352, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'action_update_contacts' ended with events '[]'
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'prev_utter_ask_who': 1.0, 'intent_oot': 1.0}, {'intent_oot': 1.0, 'prev_action_listen': 1.0}, {'intent_oot': 1.0, 'prev_utter_nicetohearfromu': 1.0}, {'prev_action_update_contacts': 1.0, 'intent_oot': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_ask_schedule_call' with prob 1.00.
+Action 'utter_ask_schedule_call' ended with events '[]'
+Bot utterance 'BotUttered(text: Should we schedule a call?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'intent_oot': 1.0, 'prev_action_listen': 1.0}, {'intent_oot': 1.0, 'prev_utter_nicetohearfromu': 1.0}, {'prev_action_update_contacts': 1.0, 'intent_oot': 1.0}, {'intent_oot': 1.0, 'prev_utter_ask_schedule_call': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hi forest thank you for getting back to me. I am not' with intent '{'name': 'oot', 'confidence': 0.0795704973237475}' and entities '[]'
+Logged UserUtterance - tracker now has 15 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou:  
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'intent_oot': 1.0, 'prev_utter_nicetohearfromu': 1.0}, {'prev_action_update_contacts': 1.0, 'intent_oot': 1.0}, {'intent_oot': 1.0, 'prev_utter_ask_schedule_call': 1.0}, {'intent_oot': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_greet' with prob 0.26.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: Heya!, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'prev_action_update_contacts': 1.0, 'intent_oot': 1.0}, {'intent_oot': 1.0, 'prev_utter_ask_schedule_call': 1.0}, {'intent_oot': 1.0, 'prev_action_listen': 1.0}, {'intent_oot': 1.0, 'prev_utter_greet': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_ask_who' with prob 1.00.
+Action 'utter_ask_who' ended with events '[]'
+Bot utterance 'BotUttered(text: Who is this please?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'intent_oot': 1.0, 'prev_utter_ask_schedule_call': 1.0}, {'intent_oot': 1.0, 'prev_action_listen': 1.0}, {'intent_oot': 1.0, 'prev_utter_greet': 1.0}, {'prev_utter_ask_who': 1.0, 'intent_oot': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Available web server routes: 
+static                                             OPTIONS, HEAD, GET             /static/[filename]
+custom_webhook_CmdlineInput.health                 OPTIONS, HEAD, GET             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                OPTIONS, POST                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Using selector: KqueueSelector
+Creating a new tracker for id 'default'.
+Received user message 'https://blog.rasa.com/rasa-nlu-in-depth-part-3-hyperparameters/' with intent '{'name': 'thisis', 'confidence': 0.2524461252408433}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou:  
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Current tracker state [None, None, {}, {'intent_thisis': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '82'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_nicetohearfromu' with prob 1.00.
+Action 'utter_nicetohearfromu' ended with events '[]'
+Bot utterance 'BotUttered(text: Nice to hear from you  , data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, {}, {'intent_thisis': 1.0, 'prev_action_listen': 1.0}, {'intent_thisis': 1.0, 'prev_utter_nicetohearfromu': 1.0}]
+There is a memorised next action '13'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_update_contacts' with prob 1.00.
+Calling action endpoint to run action 'action_update_contacts'.
+Failed to run custom action 'action_update_contacts'. Couldn't connect to the server at 'http://localhost:5055/webhook'. Is the server running? Error: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x13bbbfb70>: Failed to establish a new connection: [Errno 61] Connection refused',))
+Encountered an exception while running action 'action_update_contacts'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1287, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1333, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1282, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1042, in _send_output
+    self.send(msg)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 980, in send
+    self.connect()
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x13bbbfb70>: Failed to establish a new connection: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connectionpool.py", line 727, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x13bbbfb70>: Failed to establish a new connection: [Errno 61] Connection refused',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/actions/action.py", line 331, in run
+    json=json, method="post", timeout=DEFAULT_REQUEST_TIMEOUT)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/utils.py", line 667, in request
+    **kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x13bbbfb70>: Failed to establish a new connection: [Errno 61] Connection refused',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/processor.py", line 346, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/actions/action.py", line 352, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'action_update_contacts' ended with events '[]'
+Current tracker state [{}, {'intent_thisis': 1.0, 'prev_action_listen': 1.0}, {'intent_thisis': 1.0, 'prev_utter_nicetohearfromu': 1.0}, {'intent_thisis': 1.0, 'prev_action_update_contacts': 1.0}]
+There is a memorised next action '96'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_ask_schedule_call' with prob 1.00.
+Action 'utter_ask_schedule_call' ended with events '[]'
+Bot utterance 'BotUttered(text: Did you want to schedule a call?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_thisis': 1.0, 'prev_action_listen': 1.0}, {'intent_thisis': 1.0, 'prev_utter_nicetohearfromu': 1.0}, {'intent_thisis': 1.0, 'prev_action_update_contacts': 1.0}, {'prev_utter_ask_schedule_call': 1.0, 'intent_thisis': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hi forest thanks for coming back to me i am keen' with intent '{'name': 'oot', 'confidence': 0.05019459887726815}' and entities '[]'
+Logged UserUtterance - tracker now has 9 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou:  
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'intent_thisis': 1.0, 'prev_utter_nicetohearfromu': 1.0}, {'intent_thisis': 1.0, 'prev_action_update_contacts': 1.0}, {'prev_utter_ask_schedule_call': 1.0, 'intent_thisis': 1.0}, {'prev_action_listen': 1.0, 'intent_oot': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_greet' with prob 0.28.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: Heya!, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'intent_thisis': 1.0, 'prev_action_update_contacts': 1.0}, {'prev_utter_ask_schedule_call': 1.0, 'intent_thisis': 1.0}, {'prev_action_listen': 1.0, 'intent_oot': 1.0}, {'intent_oot': 1.0, 'prev_utter_greet': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_ask_who' with prob 1.00.
+Action 'utter_ask_who' ended with events '[]'
+Bot utterance 'BotUttered(text: Who is this please?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'prev_utter_ask_schedule_call': 1.0, 'intent_thisis': 1.0}, {'prev_action_listen': 1.0, 'intent_oot': 1.0}, {'intent_oot': 1.0, 'prev_utter_greet': 1.0}, {'prev_utter_ask_who': 1.0, 'intent_oot': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Available web server routes: 
+static                                             GET, HEAD, OPTIONS             /static/[filename]
+custom_webhook_CmdlineInput.health                 GET, HEAD, OPTIONS             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                OPTIONS, POST                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Using selector: KqueueSelector
+Creating a new tracker for id 'default'.
+Received user message 'i am keen to have a call' with intent '{'name': 'question', 'confidence': 0.056969678383921675}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou:  
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Current tracker state [None, None, {}, {'intent_question': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_greet' with prob 0.25.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: Heya!, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, {}, {'intent_question': 1.0, 'prev_action_listen': 1.0}, {'intent_question': 1.0, 'prev_utter_greet': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_ask_who' with prob 1.00.
+Action 'utter_ask_who' ended with events '[]'
+Bot utterance 'BotUttered(text: Who is this please?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{}, {'intent_question': 1.0, 'prev_action_listen': 1.0}, {'intent_question': 1.0, 'prev_utter_greet': 1.0}, {'intent_question': 1.0, 'prev_utter_ask_who': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'thanks for coming back' with intent '{'name': 'thanks', 'confidence': 0.19534954868897003}' and entities '[]'
+Logged UserUtterance - tracker now has 8 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou:  
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Current tracker state [{'intent_question': 1.0, 'prev_action_listen': 1.0}, {'intent_question': 1.0, 'prev_utter_greet': 1.0}, {'intent_question': 1.0, 'prev_utter_ask_who': 1.0}, {'prev_action_listen': 1.0, 'intent_thanks': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_nicetohearfromu' with prob 0.96.
+Action 'utter_nicetohearfromu' ended with events '[]'
+Bot utterance 'BotUttered(text: Nice to hear from you  , data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_question': 1.0, 'prev_utter_greet': 1.0}, {'intent_question': 1.0, 'prev_utter_ask_who': 1.0}, {'prev_action_listen': 1.0, 'intent_thanks': 1.0}, {'prev_utter_nicetohearfromu': 1.0, 'intent_thanks': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_update_contacts' with prob 0.99.
+Calling action endpoint to run action 'action_update_contacts'.
+Failed to run custom action 'action_update_contacts'. Couldn't connect to the server at 'http://localhost:5055/webhook'. Is the server running? Error: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1417a9e80>: Failed to establish a new connection: [Errno 61] Connection refused',))
+Encountered an exception while running action 'action_update_contacts'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1287, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1333, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1282, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 1042, in _send_output
+    self.send(msg)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/http/client.py", line 980, in send
+    self.connect()
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x1417a9e80>: Failed to establish a new connection: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/connectionpool.py", line 727, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1417a9e80>: Failed to establish a new connection: [Errno 61] Connection refused',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/actions/action.py", line 331, in run
+    json=json, method="post", timeout=DEFAULT_REQUEST_TIMEOUT)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/utils.py", line 667, in request
+    **kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1417a9e80>: Failed to establish a new connection: [Errno 61] Connection refused',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/processor.py", line 346, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/actions/action.py", line 352, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'action_update_contacts' ended with events '[]'
+Current tracker state [{'intent_question': 1.0, 'prev_utter_ask_who': 1.0}, {'prev_action_listen': 1.0, 'intent_thanks': 1.0}, {'prev_utter_nicetohearfromu': 1.0, 'intent_thanks': 1.0}, {'intent_thanks': 1.0, 'prev_action_update_contacts': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_ask_schedule_call' with prob 1.00.
+Action 'utter_ask_schedule_call' ended with events '[]'
+Bot utterance 'BotUttered(text: Should we schedule a call?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_listen': 1.0, 'intent_thanks': 1.0}, {'prev_utter_nicetohearfromu': 1.0, 'intent_thanks': 1.0}, {'intent_thanks': 1.0, 'prev_action_update_contacts': 1.0}, {'prev_utter_ask_schedule_call': 1.0, 'intent_thanks': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Available web server routes: 
+static                                             GET, OPTIONS, HEAD             /static/[filename]
+custom_webhook_CmdlineInput.health                 GET, OPTIONS, HEAD             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                POST, OPTIONS                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Using selector: KqueueSelector
+Creating a new tracker for id 'default'.
+Received user message 'Hi Forest, thank you for coming back to me and i would be keen to set up a call.' with intent '{'name': 'oot', 'confidence': 0.3320701338251157}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	DATE: None
+	Day: None
+	HowLong: None
+	NSFW: None
+	Nou:  
+	TOD: None
+	Time: None
+	When: None
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal: None
+	email: None
+	location: None
+	month_and_date: None
+	month_name: None
+	requested_slot: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [None, None, {}, {'intent_oot': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_greet' with prob 0.24.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: Heya!, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [None, {}, {'intent_oot': 1.0, 'prev_action_listen': 1.0}, {'intent_oot': 1.0, 'prev_utter_greet': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_ask_who' with prob 1.00.
+Action 'utter_ask_who' ended with events '[]'
+Bot utterance 'BotUttered(text: Who is this please?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_oot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{}, {'intent_oot': 1.0, 'prev_action_listen': 1.0}, {'intent_oot': 1.0, 'prev_utter_greet': 1.0}, {'intent_oot': 1.0, 'prev_utter_ask_who': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Available web server routes: 
+static                                             OPTIONS, HEAD, GET             /static/[filename]
+custom_webhook_CmdlineInput.health                 OPTIONS, HEAD, GET             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                OPTIONS, POST                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Using selector: KqueueSelector

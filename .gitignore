@@ -1,4 +1,4 @@
-## INT BRANCH GIT IGNORE
+## MASTER BRANCH GIT IGNORE
 
 # Environment is not commited to repo.
 .env
@@ -7,7 +7,7 @@ env/*
 !env/.keep
 
 # Models are built for target architecture.
-# models/*
+models/*
 
 # Build directory, logs, etc.
 build/src

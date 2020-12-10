@@ -1,16 +1,16 @@
-# Environment is not commited to repo.
+# DEV (!!) Environment is not commited to repo.
 .env
 env
 env/*
 !env/.keep
 
 # Models are built for target architecture.
-models/*
+#models/*
 
 # Build directory and logs
-build/src
-build/setup.py
-logs/*
+#build/src
+#build/setup.py
+#logs/*
 !logs/.keep
 nohup.out
 screenshots

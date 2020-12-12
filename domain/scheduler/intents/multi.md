@@ -609,6 +609,17 @@
 - hi forest it's [ron](Nou), i received your email and
 - hi forest it's [chelsea](Nou), great talking to you
 
+## intent:ask_call_with_name
+- Hi this is [Harry](Nou), can I please schedule a [a call](activity) with [Forest](forest)?
+- Can you set up [a call](activity) with [Forest](forest) please? Thanks, this is [Phil](Nou)
+- Hi [Forest](forest) it's [Raymond](Nou), can we set up[a call](activity) please?
+- hi zoro, it's [chris](Nou) are you able to set up [a call](activity) with [forest](forest)
+- can you please set up a call
+- can you please schedule a call
+- i would like to book a call
+
+
+
 ## intent:multi_intent_no_name
 - hi forest i really appreciate your coming back to me and i am interested in setting up a call
 - hi forest, thank you for getting back to me and i would be interested to set up a call.
@@ -621,7 +632,6 @@
 - forest said to ask you to set up a call
 - forest said you could schedule a call for us
 - forest said you would set up a call for us
-
 
 ## intent:greet_with_name
 - hi forest this is [kyle](Nou)

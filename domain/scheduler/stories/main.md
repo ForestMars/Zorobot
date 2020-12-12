@@ -11,7 +11,7 @@
   - utter_ask_day
 
 ## multi intent (no name)
-* multi_intent
+* multi_intent_no_name
   - utter_ask_who
 * this_is
   - utter_nicetohearfromu
@@ -28,6 +28,13 @@
 * affirm
   - utter_ask_day  
 
+## can u schedule this (with name)
+* ask_call_with_name
+  - utter_nicetohearfromu
+  - action_update_contacts
+  - utter_sure_we_can
+* affirm
+  - utter_ask_day  
 
 ## greet with name
 * greet_with_name

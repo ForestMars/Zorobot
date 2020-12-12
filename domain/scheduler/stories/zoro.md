@@ -54,6 +54,12 @@
 * saymyname
   - utter_your_name
 
+## how r u
+* hru
+  - utter_fine
+* fine_normal
+  - utter_super_good
+
 ## wassup
 * sup
   - utter_up_down

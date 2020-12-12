@@ -314,6 +314,7 @@ intents:
 - enthusiasm
 - saymyname
 - when_will_you
+- ask_call_with_name
 
 # ~~~~~~~~~~ Zoro
 - zoro
@@ -559,7 +560,7 @@ templates:
   utter_familiar:
   - text: That sounds fmailiar
   utter_fine:
-  - text: As fine as a bee's wing 🐝
+  - text: As fine as a bee's wing! 🐝 How are you? 
 
 
 

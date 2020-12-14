@@ -1,5 +1,8 @@
 # DEV (!!) Environment is not commited to repo.
 
+# bc we use diff .gitignore files for master & dev branches
+.gitignore
+
 .env
 env
 env/*

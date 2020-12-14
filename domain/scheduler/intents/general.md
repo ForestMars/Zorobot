@@ -182,6 +182,18 @@
 - i was just joking
 - i was just kidding
 
+## intent:any
+- any
+- anything
+- any one
+- anyway
+- anyhoo
+- any who
+- anywho
+- any day
+- any day is fine
+- any day is good
+
 
 ### ~~~~~~~~~~~~~~~~~~~~ General chit chat ~~~~~~~~~~~~~~~~~~~~
 
@@ -558,16 +570,6 @@
 
 
 ## ~~~~~~~~~~~~~~~~~~~~ Meta  ~~~~~~~~~~~~~~~~~~~~  
-
-## intent:robot
-- hello robot
-- go robot
-- ru a bot
-- r u a bot
-- are you a robot
-- are you a bot
-- robot
-- robot lives matter
 
 ## intent:ruthere
 - hello?

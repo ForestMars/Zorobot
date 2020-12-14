@@ -53,6 +53,11 @@
 - hi would like to [book a call](activity:have a call) with forest
 - would like to [book a call](activity:have a call) with forest please
 - would like to [book a call](activity:have a call) with forest
+- can i schedule a call with [Forest](forest)
+- please schedule a call with [Forest](forest)
+- can you please schedule a call with [Forest](forest)
+- can u pls set up a call for me and [Forest](forest)
+
 
 ## intent:lets_do_something
 - id like to [get together](activity)

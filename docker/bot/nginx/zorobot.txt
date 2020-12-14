@@ -1,0 +1,9 @@
+server {
+  listen 5531;
+  server_name zorobot;
+
+  location / {
+    proxy_pass http://18.191.192.161:5555
+    proxy_set_header X-Real-IP $remote_addr;
+  }
+}

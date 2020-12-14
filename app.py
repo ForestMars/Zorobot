@@ -12,10 +12,11 @@ from random import choice
 
 from flask import Flask, Response, request, redirect, session
 from flask_session import Session
-from twilio.twiml.messaging_response import MessagingResponse
-from twilio.rest import Client
 #import redis
 import requests
+from twilio.twiml.messaging_response import MessagingResponse
+from twilio.rest import Client
+from waitress import serve
 
 #import contacts
 from common.utils import HaltException as HX
@@ -193,4 +194,5 @@ if __name__ == "__main__":
     #session_.init_app(app)
     #app.config['SESSION_TYPE'] = 'filesystem'
     #app.run(host='0.0.0.0', port= 80, debug=False)
-    app.run(host='0.0.0.0', port= 5531, debug=True)
+    #app.run(host='0.0.0.0', port= 5531, debug=True)
+    serve(app, host='0.0.0.0', port=5531)

@@ -1,0 +1,10 @@
+flask
+flask_session
+requests
+twilio
+#uwsgi
+waitress
+#wheel
+
+
+

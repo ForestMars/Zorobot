@@ -1,10 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# app.py (smsbot) - SMS message dispatcher and handler. Don't get me started. 
-__version__ = '0.0.2'
+# app.py (smsbot) - SMS message dispatcher and handler. Don't get me started.
+__version__ = '0.3'
 CONDA_ENV = 'chatbot1'
 
-#import inspect
 import json
 import os
 import shlex
@@ -21,36 +20,9 @@ import requests
 #import contacts
 from common.utils import HaltException as HX
 
-"""
-from common.logger import Log
-log = Log()
-try:
-    app.config('config.py')
-except Exception as e:
-    log("Error finding or loading DevelopmentConfig object. You probably need to specify package since Python 3 dropped support for relative import. (See PEP 8)", e)
-    try:
-        app.config.from_pyfile('config/config.py')
-        log("Loaded configuration from file")
-    except IOError:
-        log("Error finding config.py", IOError)
-    except EOFError:
-        log("Error reading config.py (lint file)", EOFError)
-    except Exception as e:
-        log("Ignoring unknown exception when loading config.py", e)
-    except:
-        handle_unhandled_error() # warn("an additional exception was thrown", throwable)
-        log("no idea.")
-"""
-
-session_=Session()
-nassau='+15166982705'
-upstate="+18458680258"
-belvedere="+14157122019"
-
 #r = redis.StrictRedis(host=redis_host, port=redis_port, password=redis_password, decode_responses=True)
 #r.set('counter', 1)
 
-## app.py (not run.py)
 command = shlex.split("env -i bash -c 'source env/env.sh && env'")
 proc = subprocess.Popen(command,
     stdout=subprocess.PIPE,
@@ -76,14 +48,17 @@ except HX as ha:
     print("Um...")
 
 
-# @TODO: replace with custom logging module.
-def logthis(filenom, txt):
-    f = open(filenom, "w")
-    f.write(txt)
-    f.close()
+HOST = '3.137.143.152'
+DOMAIN = 'scheduler'
+nassau='+15166982705'
+upstate="+18458680258"
+belvedere="+14157122019"
+
 
 # back-to-front
 app = Flask(__name__)
+session_=Session()
+
 
 @app.route('/test')
 def helloIndex():
@@ -105,8 +80,12 @@ def sms():
     msg['From'] = msg['From'].replace(' ','') # ('+' handling)
     resp = handle_msg(msg)
 
-    replies = json.loads(resp.content.decode('UTF-8'))
-
+    # @TODO: Needs refactoring.
+    if isinstance(resp, str): # 🦆
+        send_msg(msg['From'], resp)
+        return Response(resp, mimetype='text/xml')
+    else:
+        replies = json.loads(resp.content.decode('UTF-8'))
     if len(replies) > 0:
         for r in replies:
             print(r)
@@ -138,36 +117,29 @@ def handle_msg(msg: dict) ->list:
 
     return(resp)
 
+
 def parse_msg(msg):
-    """ Handler for people that prepend 'lol' to everything they say."""
+    """ Handler mostly for people that prepend 'lol' to everything they say. """
     msg_ = msg
-    if msg_['Body'].lower().startswith('lol '):
-        msg_['Body'].replace('lol ', '')
+    if (msg_['Body'].lower().startswith('lol ') or msg_['Body'].lower() == 'lol'):
+        msg_['Body'] = msg_['Body'].lower().replace('lol', '')
         if len(msg_['Body']) > 0:
+
             return msg_, None
         else:
-            lolz = ['😂', '🤣', 'Pretty funny, huh?']
+            lolz = ["😂", "🤣", "Pretty funny, huh?", "I'm laughing so hard"]
             return msg_, choice(lolz)
+
     return msg, None
 
-def get_port(domain='scheduler'):
-    """ Gets port number for the current active domain model """
-    HOST = '18.222.165.137'
-    url = 'http://18.222.165.137:5005/'
-    txt = msg['Body']
-    who = msg['From'] # NB. the leading '+' is simply ignored.
-    ENDPOINT = url + 'conversations/' + who + '/respond'
-    r = requests.get(ENDPOINT, params={'query': txt})
-    return(r)
 
 def get_response(msg, who='default'):
-    #url = 'http://localhost:5005/'
-    HOST = '18.222.165.137'
-    url = 'http://18.222.165.137:5005/'
+    url = 'http://' + HOST + ':5005/'
     txt = msg['Body']
     who = msg['From'] # NB. the leading '+' is simply ignored.
     ENDPOINT = url + 'conversations/' + who + '/respond'
     r = requests.get(ENDPOINT, params={'query': txt})
+
     return(r)
 
 
@@ -202,6 +174,12 @@ def msg_cc(who, body):
         except Exception as e:
             print(e)
 
+
+def get_port(domain=DOMAIN):
+    """ Gets port number for the current active domain model """
+    pass
+
+
 def who_this(): #placeholder
     pass
 
@@ -211,7 +189,6 @@ def who_this(): #placeholder
 
 
 if __name__ == "__main__":
-    #logthis('calbot.log', 'zbot inititalized')
     app.secret_key = 'SECRET' # If I told you, it wouldn't be.
     #session_.init_app(app)
     #app.config['SESSION_TYPE'] = 'filesystem'

@@ -1,5 +1,7 @@
 ## MASTER BRANCH GIT IGNORE
 
+.gitignore
+
 # Environment is not commited to repo.
 .env
 env

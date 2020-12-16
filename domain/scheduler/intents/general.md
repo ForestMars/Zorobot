@@ -73,8 +73,11 @@
 - i would like that
 - yes thats right
 - yes that's right
+- correct
+- yes correct
 - yes that is correct
 - yes, that is correct
+- you are correct
 
 ## intent:agree
 - agree

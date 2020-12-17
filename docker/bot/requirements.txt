@@ -1,5 +1,6 @@
 flask
 flask_session
+pillow
 python-magic
 requests
 twilio

@@ -25,6 +25,7 @@ from waitress import serve
 from common.lumberjack import Log as log
 from common.utils import ddict, HaltException as HX
 from common import utils
+from cv import VisionAPI
 
 
 command = shlex.split("env -i bash -c 'source env/env.sh && env'")
@@ -50,6 +51,9 @@ try:
     client = Client(account_sid, auth_token)
 except HX as ha:
     print("Um...")
+
+if 'AZURE_SUB_KEY' in os.environ:
+    sub_key = os.environ['AZURE_SUB_KEY']
 
 
 HOST = '3.137.143.152'
@@ -83,17 +87,13 @@ def incall():
 
 @app.route('/sms',methods = ['GET', 'POST'])
 def sms():
-    print('api')
     msg = request.form.to_dict() # Not currently used, but cast as dict so we can add additional keys. (@FIXME: Shouldn't this be in handler?)
     msg['From'] = msg['From'].replace(' ','') # ('+' handling)
 
     if 'MediaUrl0' in msg:
         media = HandleMedia()
-        print('about to handle')
         media.media_files(msg)
         if msg['Body'].replace(' ', '') == '':
-            resp = 'got a pic'
-            send_msg(msg['From'], resp)
             return Response('resp', mimetype='text/xml')
 
     resp = handle_msg(msg)
@@ -121,6 +121,7 @@ class HandleMedia(object):
     def __init__(self):
         pass
 
+    # @TODO: Refactor multiple file handling.
     def media_files(self, msg):
         for m in range(10):
             url = 'MediaUrl' + str(m)
@@ -133,9 +134,10 @@ class HandleMedia(object):
                 mimetype, filetype = self.get_mimetype('tmp')
                 path = 'files/' + mimetype + '/'
                 file = msg['From'].replace('+','') + '_' + now + '.' + filetype
-                # or just rename.
                 with open(path + file, 'wb') as f:
                     f.write(r.content)
+                describe = "That looks like " + self.id_image(path + file)
+                send_msg(msg['From'], describe)
             elif url not in msg:
                 return
 
@@ -143,20 +145,24 @@ class HandleMedia(object):
         log.debug("Scanning %s" % file)
         mimetype = utils.id_mime_type(file)
         mimetypes = ['image/jpeg', 'image/png']
-        if any(mimetype in item for item in mimetypes): # python can b verbose
+        if any(mimetype in m for m in mimetypes): # python can b verbose
             if 'image' in mimetype:
                 filetype = mimetype.replace('image/', '')
                 return mimetype, filetype
             else:
-                return 'other', 'etc'
+                return 'other', 'xyz'
 
-    def id_image(file):
-        # Comp Vision API
-        pass
+    def id_image(self, img):
+        print('id fired')
+        vision = VisionAPI(sub_key)
+        descr = vision.analyse(img)
+        print(descr)
+        return descr
 
     def handle_res(file):
         """ Upload resume in pdf or docx format. """
         pass
+
 
 
 # @TODO: This should be a class & plainly needs refactoring.

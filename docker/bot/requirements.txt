@@ -1,10 +1,8 @@
 flask
 flask_session
+python-magic
 requests
 twilio
 #uwsgi
 waitress
 #wheel
-
-
-

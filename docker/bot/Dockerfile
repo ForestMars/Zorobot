@@ -1,6 +1,7 @@
 FROM python:3.8.3-slim
 
 COPY app.py /app/
+COPY docker/bot/files /app/files/
 COPY nginx/zorobot /etc/nginx/sites-available/
 
 WORKDIR /app

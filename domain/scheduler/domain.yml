@@ -34,6 +34,8 @@ entities:
   - month_and_date
   - same_or_different
   - TOD
+  - qha
+  - quintessence
   - res
   - email
   - kind
@@ -194,6 +196,7 @@ intents:
 - multi_intent
 - multi_intent_no_name
 - vague_when
+- do_you_like
 
 # ~~~~~~~~~~ Scheduler
 - schedule_meeting
@@ -485,6 +488,7 @@ actions:
 - utter_corona_bot
 - utter_none_of_your_business
 - utter_no_worries
+- utter_yes_i_like
 
 - utter_pick_a_day
 - utter_await_response
@@ -560,7 +564,7 @@ templates:
   utter_familiar:
   - text: That sounds fmailiar
   utter_fine:
-  - text: As fine as a bee's wing! 🐝 How are you? 
+  - text: As fine as a bee's wing! 🐝 How are you?
 
 
 
@@ -937,3 +941,8 @@ templates:
   - text: Well I'm sure not your grandparents' Eliza.
   - text: Are you? It cuts both ways! 😉
   - text: Are you saying you would like me less?
+  utter_yes_i_like:
+  - text: What's not to like about {qha}?
+  - text: Can you think of a a good reason not to like {qha}?
+  - text: I'm a dog, I like anything that isn't a threat.
+  - text: I do, should I take it that you do too?

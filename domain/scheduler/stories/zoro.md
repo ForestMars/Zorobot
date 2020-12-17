@@ -42,6 +42,10 @@
 * deny OR sorry
   - action_listen
 
+## you like?
+* do_you_like
+  - utter_yes_i_like
+
 ## nonsequitur
 * nonsequitur
   - utter_sorry_dont_understand

@@ -5,11 +5,15 @@ __all__ = ['Log', 'LOG_LEVEL', 'LOG_DIR', 'LOGFILE_NAME']
 import logging
 import traceback
 
+from common.utils import ddict
+
 
 # Sensible defaults.
 LOG_LEVEL = 'DEBUG'
 LOG_DIR = 'logs/'
 LOGFILE_NAME = 'debug.log'
+FILENAME = 'zlog.log'
+FORMAT = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
 
 logger = logging.getLogger(__name__)
@@ -18,7 +22,7 @@ logger.setLevel(logging.DEBUG)
 handler = logging.FileHandler(LOG_DIR + LOGFILE_NAME)
 handler.setLevel(logging.DEBUG)
 
-formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+formatter = FORMAT
 handler.setFormatter(formatter)
 
 logger.addHandler(handler)
@@ -56,6 +60,7 @@ def log(logmsg, lvl='INFO', e=None):
 
 
 """
+# Flask config loader.
 except Exception as e:
     log("Error finding or loading DevelopmentConfig object. You probably need to specify package since Python 3 dropped support for relative import. (See PEP 8)", e)
     try:

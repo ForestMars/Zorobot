@@ -1,14 +1,17 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # app.py (smsbot) - SMS message dispatcher and handler. Don't get me started.
-__version__ = '0.3'
+__version__ = '0.4'
 CONDA_ENV = 'chatbot1'
 
 import json
+import logging
+import magic
 import os
 import shlex
 import subprocess
 from random import choice
+import time
 
 from flask import Flask, Response, request, redirect, session
 from flask_session import Session
@@ -19,10 +22,10 @@ from twilio.rest import Client
 from waitress import serve
 
 #import contacts
-from common.utils import HaltException as HX
+from common.lumberjack import Log as log
+from common.utils import ddict, HaltException as HX
+from common import utils
 
-#r = redis.StrictRedis(host=redis_host, port=redis_port, password=redis_password, decode_responses=True)
-#r.set('counter', 1)
 
 command = shlex.split("env -i bash -c 'source env/env.sh && env'")
 proc = subprocess.Popen(command,
@@ -60,14 +63,17 @@ belvedere="+14157122019"
 app = Flask(__name__)
 session_=Session()
 
+#r = redis.StrictRedis(host=redis_host, port=redis_port, password=redis_password, decode_responses=True)
+#r.set('counter', 1)
+
 
 @app.route('/test')
-def helloIndex():
-    return 'If you can see this...'
+def ifucancme():
+    return '"If you can see me I can see you."'
 
 @app.route('/xml')
-def xmlTest():
-    xml = '<result>xml</result>'
+def xmlTest(payload):
+    xml = '<result>payload</result>'
     return Response(xml, mimetype='text/xml')
 
 @app.route('/incall',methods = ['POST', 'GET'])
@@ -77,8 +83,19 @@ def incall():
 
 @app.route('/sms',methods = ['GET', 'POST'])
 def sms():
+    print('api')
     msg = request.form.to_dict() # Not currently used, but cast as dict so we can add additional keys. (@FIXME: Shouldn't this be in handler?)
     msg['From'] = msg['From'].replace(' ','') # ('+' handling)
+
+    if 'MediaUrl0' in msg:
+        media = HandleMedia()
+        print('about to handle')
+        media.media_files(msg)
+        if msg['Body'].replace(' ', '') == '':
+            resp = 'got a pic'
+            send_msg(msg['From'], resp)
+            return Response('resp', mimetype='text/xml')
+
     resp = handle_msg(msg)
 
     # @TODO: Needs refactoring.
@@ -95,9 +112,51 @@ def sms():
             try:
                 send_msg(who, reply)
             except Exception as e:
-                print(e)
+                log.error(e)
 
     return Response(resp, mimetype='text/xml')
+
+
+class HandleMedia(object):
+    def __init__(self):
+        pass
+
+    def media_files(self, msg):
+        for m in range(10):
+            url = 'MediaUrl' + str(m)
+            if url in msg:
+                r = requests.get(msg[url])
+                file = r.content
+                with open('tmp', 'wb') as f:
+                    f.write(r.content)
+                now = str(int(time.time()))
+                mimetype, filetype = self.get_mimetype('tmp')
+                path = 'files/' + mimetype + '/'
+                file = msg['From'].replace('+','') + '_' + now + '.' + filetype
+                # or just rename.
+                with open(path + file, 'wb') as f:
+                    f.write(r.content)
+            elif url not in msg:
+                return
+
+    def get_mimetype(self, file):
+        log.debug("Scanning %s" % file)
+        mimetype = utils.id_mime_type(file)
+        mimetypes = ['image/jpeg', 'image/png']
+        if any(mimetype in item for item in mimetypes): # python can b verbose
+            if 'image' in mimetype:
+                filetype = mimetype.replace('image/', '')
+                return mimetype, filetype
+            else:
+                return 'other', 'etc'
+
+    def id_image(file):
+        # Comp Vision API
+        pass
+
+    def handle_res(file):
+        """ Upload resume in pdf or docx format. """
+        pass
 
 
 # @TODO: This should be a class & plainly needs refactoring.

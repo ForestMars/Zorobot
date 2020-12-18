@@ -68,6 +68,10 @@
 * sup
   - utter_up_down
 
+# wat doin  
+* what_are_you_doing
+  - utter_working_on
+  
 ## r u a bot
 * ruabot
   - utter_zorobot

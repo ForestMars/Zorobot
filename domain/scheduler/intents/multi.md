@@ -612,7 +612,7 @@
 ## intent:ask_call_with_name
 - Hi this is [Harry](Nou), can I please schedule a [a call](activity) with [Forest](forest)?
 - Can you set up [a call](activity) with [Forest](forest) please? Thanks, this is [Phil](Nou)
-- Hi [Forest](forest) it's [Raymond](Nou), can we set up[a call](activity) please?
+- Hi [Forest](forest) it's [Raymond](Nou), can we set up [a call](activity) please?
 - hi zoro, it's [chris](Nou) are you able to set up [a call](activity) with [forest](forest)
 - can you please set up a call
 - can you please schedule a call

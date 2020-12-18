@@ -202,6 +202,7 @@
 
 ## intent:hru
 - hru
+- h r u
 - how r u
 - how r you
 - how are u
@@ -215,6 +216,14 @@
 - ruok
 - r u ok
 - are you okay
+- hows it going
+- hows it goin
+- how's it going
+- How's it going?
+- how have you been
+- how have you been doing
+- how has everying been going
+- hi zoro how are you
 
 ## intent:fine_ask
 - I am good, how are you doing?

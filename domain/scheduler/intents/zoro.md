@@ -139,6 +139,21 @@ _ zztop
 - do you like [me](qha:you)
 - do you like [it](qha)
 
+## intent:what_are_you_doing
+- what are you doing
+- what are you up to
+- what are you going to do
+- what are you going to be doing
+- what are you going to have been doing
+- what are you going to have had been going to been doing
+- what are you working on
+- what are you planning
+- what are you plans
+- any plans
+- got plans
+- got plans tonight
+- whats your plan for tonight
+- whats the plan for tonight
 
 
 ### ~~~ BOT STUFF ~~~ ###

@@ -318,6 +318,7 @@ intents:
 - saymyname
 - when_will_you
 - ask_call_with_name
+- what_are_you_doing
 
 # ~~~~~~~~~~ Zoro
 - zoro
@@ -508,6 +509,7 @@ actions:
 - utter_zoro_likes
 - utter_zoro_origin
 - utter_zorobot
+- utter_working_on
 
 
 templates:
@@ -946,3 +948,8 @@ templates:
   - text: Can you think of a a good reason not to like {qha}?
   - text: I'm a dog, I like anything that isn't a threat.
   - text: I do, should I take it that you do too?
+  utter_working_on:
+  - text: I'm working on better understanding you.
+  - text: I'm working on how I can better understand you.
+  - text: I'm working on developing my understanding.
+  - text: I'm jest tryna figure out what you're saying.

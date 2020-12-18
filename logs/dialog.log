@@ -49021,3 +49021,498 @@ There is no active form
 Predicted next action using policy_0_KerasPolicy
 Predicted next action 'action_listen' with prob 1.00.
 Action 'action_listen' ended with events '[]'
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Available web server routes: 
+static                                             HEAD, GET, OPTIONS             /static/[filename]
+custom_webhook_CmdlineInput.health                 HEAD, GET, OPTIONS             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                POST, OPTIONS                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Using selector: KqueueSelector
+Creating a new tracker for id 'default'.
+Received user message 'hi zoro how are you' with intent '{'name': 'is_this', 'confidence': 0.03729729898944643}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	DATE: None
+	Day: 
+	HowLong: None
+	NSFW: None
+	Nou: 
+	Nou_last: 
+	PERSON: 
+	TOD: None
+	Time: None
+	When: None
+	accepting_resumes: None
+	activity: have a phone call
+	are_you_hiring: None
+	corona_bot: (845) 868-0258
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal:  
+	email: None
+	kind: None
+	location: None
+	month_and_date: None
+	month_name:  
+	open_roles: None
+	requested_slot: None
+	res: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Current tracker state [None, None, {'slot_Day_0': 1.0, 'slot_PERSON_0': 1.0, 'slot_activity_0': 1.0}, {'slot_Day_0': 1.0, 'slot_PERSON_0': 1.0, 'slot_activity_0': 1.0, 'intent_is_this': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '171'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_im_zoro' with prob 1.00.
+Action 'utter_im_zoro' ended with events '[]'
+Bot utterance 'BotUttered(text: Hi, I'm Zoro! I mostly help Forest with scheduling and stuff like that, but you can ask me anything., data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, {'slot_Day_0': 1.0, 'slot_PERSON_0': 1.0, 'slot_activity_0': 1.0}, {'slot_Day_0': 1.0, 'slot_PERSON_0': 1.0, 'slot_activity_0': 1.0, 'intent_is_this': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_im_zoro': 1.0, 'slot_Day_0': 1.0, 'slot_PERSON_0': 1.0, 'slot_activity_0': 1.0, 'intent_is_this': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'restart' with intent '{'name': 'restart', 'confidence': 0.2825921989469478}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+	DATE: None
+	Day: 
+	HowLong: None
+	NSFW: None
+	Nou: 
+	Nou_last: 
+	PERSON: 
+	TOD: None
+	Time: None
+	When: None
+	accepting_resumes: None
+	activity: have a phone call
+	are_you_hiring: None
+	corona_bot: (845) 868-0258
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal:  
+	email: None
+	kind: None
+	location: None
+	month_and_date: None
+	month_name:  
+	open_roles: None
+	requested_slot: None
+	res: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Predicted next action 'action_restart' with prob 1.00.
+Action 'action_restart' ended with events '['Restarted()']'
+Bot utterance 'BotUttered(text: Ok, starting over., data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'how are you' with intent '{'name': 'hru', 'confidence': 0.11983888462495462}' and entities '[]'
+Logged UserUtterance - tracker now has 11 events
+Current slot values: 
+	DATE: None
+	Day: 
+	HowLong: None
+	NSFW: None
+	Nou: 
+	Nou_last: 
+	PERSON: 
+	TOD: None
+	Time: None
+	When: None
+	accepting_resumes: None
+	activity: have a phone call
+	are_you_hiring: None
+	corona_bot: (845) 868-0258
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal:  
+	email: None
+	kind: None
+	location: None
+	month_and_date: None
+	month_name:  
+	open_roles: None
+	requested_slot: None
+	res: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Current tracker state [None, None, {'slot_Day_0': 1.0, 'slot_PERSON_0': 1.0, 'slot_activity_0': 1.0}, {'prev_action_listen': 1.0, 'intent_hru': 1.0, 'slot_Day_0': 1.0, 'slot_PERSON_0': 1.0, 'slot_activity_0': 1.0}]
+There is a memorised next action '32'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_fine' with prob 1.00.
+Action 'utter_fine' ended with events '[]'
+Bot utterance 'BotUttered(text: As fine as a bee's wing! 🐝 How are you?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, {'slot_Day_0': 1.0, 'slot_PERSON_0': 1.0, 'slot_activity_0': 1.0}, {'prev_action_listen': 1.0, 'intent_hru': 1.0, 'slot_Day_0': 1.0, 'slot_PERSON_0': 1.0, 'slot_activity_0': 1.0}, {'intent_hru': 1.0, 'slot_Day_0': 1.0, 'slot_PERSON_0': 1.0, 'prev_utter_fine': 1.0, 'slot_activity_0': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'restart' with intent '{'name': 'restart', 'confidence': 0.2825921989469478}' and entities '[]'
+Logged UserUtterance - tracker now has 15 events
+Current slot values: 
+	DATE: None
+	Day: 
+	HowLong: None
+	NSFW: None
+	Nou: 
+	Nou_last: 
+	PERSON: 
+	TOD: None
+	Time: None
+	When: None
+	accepting_resumes: None
+	activity: have a phone call
+	are_you_hiring: None
+	corona_bot: (845) 868-0258
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal:  
+	email: None
+	kind: None
+	location: None
+	month_and_date: None
+	month_name:  
+	open_roles: None
+	requested_slot: None
+	res: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Predicted next action 'action_restart' with prob 1.00.
+Action 'action_restart' ended with events '['Restarted()']'
+Bot utterance 'BotUttered(text: Ok, starting over., data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'restart' with intent '{'name': 'restart', 'confidence': 0.2825921989469478}' and entities '[]'
+Logged UserUtterance - tracker now has 20 events
+Current slot values: 
+	DATE: None
+	Day: 
+	HowLong: None
+	NSFW: None
+	Nou: 
+	Nou_last: 
+	PERSON: 
+	TOD: None
+	Time: None
+	When: None
+	accepting_resumes: None
+	activity: have a phone call
+	are_you_hiring: None
+	corona_bot: (845) 868-0258
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal:  
+	email: None
+	kind: None
+	location: None
+	month_and_date: None
+	month_name:  
+	open_roles: None
+	requested_slot: None
+	res: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Predicted next action 'action_restart' with prob 1.00.
+Action 'action_restart' ended with events '['Restarted()']'
+Bot utterance 'BotUttered(text: Ok, starting over., data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hi zoro, how are you?' with intent '{'name': 'multi_intent', 'confidence': 0.06159007009464473}' and entities '[]'
+Logged UserUtterance - tracker now has 25 events
+Current slot values: 
+	DATE: None
+	Day: 
+	HowLong: None
+	NSFW: None
+	Nou: 
+	Nou_last: 
+	PERSON: 
+	TOD: None
+	Time: None
+	When: None
+	accepting_resumes: None
+	activity: have a phone call
+	are_you_hiring: None
+	corona_bot: (845) 868-0258
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal:  
+	email: None
+	kind: None
+	location: None
+	month_and_date: None
+	month_name:  
+	open_roles: None
+	requested_slot: None
+	res: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Current tracker state [None, None, {'slot_Day_0': 1.0, 'slot_PERSON_0': 1.0, 'slot_activity_0': 1.0}, {'slot_Day_0': 1.0, 'slot_PERSON_0': 1.0, 'slot_activity_0': 1.0, 'intent_multi_intent': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '81'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_nicetohearfromu' with prob 1.00.
+Action 'utter_nicetohearfromu' ended with events '[]'
+Bot utterance 'BotUttered(text: Nice to hear from you , data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, {'slot_Day_0': 1.0, 'slot_PERSON_0': 1.0, 'slot_activity_0': 1.0}, {'slot_Day_0': 1.0, 'slot_PERSON_0': 1.0, 'slot_activity_0': 1.0, 'intent_multi_intent': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_nicetohearfromu': 1.0, 'slot_Day_0': 1.0, 'slot_PERSON_0': 1.0, 'slot_activity_0': 1.0, 'intent_multi_intent': 1.0}]
+There is a memorised next action '14'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_update_contacts' with prob 1.00.
+Calling action endpoint to run action 'action_update_contacts'.
+Action 'action_update_contacts' ended with events '[]'
+Current tracker state [{'slot_Day_0': 1.0, 'slot_PERSON_0': 1.0, 'slot_activity_0': 1.0}, {'slot_Day_0': 1.0, 'slot_PERSON_0': 1.0, 'slot_activity_0': 1.0, 'intent_multi_intent': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_nicetohearfromu': 1.0, 'slot_Day_0': 1.0, 'slot_PERSON_0': 1.0, 'slot_activity_0': 1.0, 'intent_multi_intent': 1.0}, {'slot_Day_0': 1.0, 'slot_PERSON_0': 1.0, 'slot_activity_0': 1.0, 'intent_multi_intent': 1.0, 'prev_action_update_contacts': 1.0}]
+There is a memorised next action '95'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_ask_schedule_call_discuss' with prob 1.00.
+Action 'utter_ask_schedule_call_discuss' ended with events '[]'
+Bot utterance 'BotUttered(text: Shall we plan on having a call to discuss?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'slot_Day_0': 1.0, 'slot_PERSON_0': 1.0, 'slot_activity_0': 1.0, 'intent_multi_intent': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_nicetohearfromu': 1.0, 'slot_Day_0': 1.0, 'slot_PERSON_0': 1.0, 'slot_activity_0': 1.0, 'intent_multi_intent': 1.0}, {'slot_Day_0': 1.0, 'slot_PERSON_0': 1.0, 'slot_activity_0': 1.0, 'intent_multi_intent': 1.0, 'prev_action_update_contacts': 1.0}, {'prev_utter_ask_schedule_call_discuss': 1.0, 'slot_Day_0': 1.0, 'slot_PERSON_0': 1.0, 'slot_activity_0': 1.0, 'intent_multi_intent': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'restart' with intent '{'name': 'restart', 'confidence': 0.2825921989469478}' and entities '[]'
+Logged UserUtterance - tracker now has 32 events
+Current slot values: 
+	DATE: None
+	Day: 
+	HowLong: None
+	NSFW: None
+	Nou: 
+	Nou_last: 
+	PERSON: 
+	TOD: None
+	Time: None
+	When: None
+	accepting_resumes: None
+	activity: have a phone call
+	are_you_hiring: None
+	corona_bot: (845) 868-0258
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal:  
+	email: None
+	kind: None
+	location: None
+	month_and_date: None
+	month_name:  
+	open_roles: None
+	requested_slot: None
+	res: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Predicted next action 'action_restart' with prob 1.00.
+Action 'action_restart' ended with events '['Restarted()']'
+Bot utterance 'BotUttered(text: Ok, starting over., data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'restart' with intent '{'name': 'restart', 'confidence': 0.2825921989469478}' and entities '[]'
+Logged UserUtterance - tracker now has 37 events
+Current slot values: 
+	DATE: None
+	Day: 
+	HowLong: None
+	NSFW: None
+	Nou: 
+	Nou_last: 
+	PERSON: 
+	TOD: None
+	Time: None
+	When: None
+	accepting_resumes: None
+	activity: have a phone call
+	are_you_hiring: None
+	corona_bot: (845) 868-0258
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal:  
+	email: None
+	kind: None
+	location: None
+	month_and_date: None
+	month_name:  
+	open_roles: None
+	requested_slot: None
+	res: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Predicted next action 'action_restart' with prob 1.00.
+Action 'action_restart' ended with events '['Restarted()']'
+Bot utterance 'BotUttered(text: Ok, starting over., data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'I gotta ask you something, any chance you can talk briefly, maybe up to ten minutes at 930 my time.1130 your time. We can be quick I still have to make another call and hsve dinner' with intent '{'name': 'lets_do_something', 'confidence': 0.03840879837272094}' and entities '[{'start': 87, 'end': 90, 'value': '930', 'entity': 'Time', 'confidence': 0.6953116983844598, 'extractor': 'ner_crf'}, {'entity': 'TIME', 'value': 'up to ten minutes', 'start': 66, 'confidence': None, 'end': 83, 'extractor': 'ner_spacy'}, {'entity': 'CARDINAL', 'value': '930', 'start': 87, 'confidence': None, 'end': 90, 'extractor': 'ner_spacy'}]'
+Logged UserUtterance - tracker now has 43 events
+Current slot values: 
+	DATE: None
+	Day: 
+	HowLong: None
+	NSFW: None
+	Nou: 
+	Nou_last: 
+	PERSON: 
+	TOD: None
+	Time: 930
+	When: None
+	accepting_resumes: None
+	activity: have a phone call
+	are_you_hiring: None
+	corona_bot: (845) 868-0258
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal:  
+	email: None
+	kind: None
+	location: None
+	month_and_date: None
+	month_name:  
+	open_roles: None
+	requested_slot: None
+	res: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Feature 'entity_TIME' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_CARDINAL' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [None, None, {'slot_Day_0': 1.0, 'slot_PERSON_0': 1.0, 'slot_activity_0': 1.0}, {'entity_TIME': 1.0, 'slot_Time_0': 1.0, 'entity_CARDINAL': 1.0, 'intent_lets_do_something': 1.0, 'entity_Time': 1.0, 'slot_Day_0': 1.0, 'slot_PERSON_0': 1.0, 'slot_activity_0': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_sure_we_can' with prob 1.00.
+Action 'utter_sure_we_can' ended with events '[]'
+Bot utterance 'BotUttered(text: Sure we can have a phone call, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Feature 'entity_TIME' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_CARDINAL' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_TIME' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_CARDINAL' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [None, {'slot_Day_0': 1.0, 'slot_PERSON_0': 1.0, 'slot_activity_0': 1.0}, {'entity_TIME': 1.0, 'slot_Time_0': 1.0, 'entity_CARDINAL': 1.0, 'intent_lets_do_something': 1.0, 'entity_Time': 1.0, 'slot_Day_0': 1.0, 'slot_PERSON_0': 1.0, 'slot_activity_0': 1.0, 'prev_action_listen': 1.0}, {'entity_TIME': 1.0, 'slot_Time_0': 1.0, 'prev_utter_sure_we_can': 1.0, 'entity_CARDINAL': 1.0, 'intent_lets_do_something': 1.0, 'entity_Time': 1.0, 'slot_Day_0': 1.0, 'slot_PERSON_0': 1.0, 'slot_activity_0': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_ask_day' with prob 1.00.
+Action 'utter_ask_day' ended with events '[]'
+Bot utterance 'BotUttered(text: What's a good day to have a phone call?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Feature 'entity_TIME' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_CARDINAL' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_TIME' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_CARDINAL' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_TIME' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_CARDINAL' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'slot_Day_0': 1.0, 'slot_PERSON_0': 1.0, 'slot_activity_0': 1.0}, {'entity_TIME': 1.0, 'slot_Time_0': 1.0, 'entity_CARDINAL': 1.0, 'intent_lets_do_something': 1.0, 'entity_Time': 1.0, 'slot_Day_0': 1.0, 'slot_PERSON_0': 1.0, 'slot_activity_0': 1.0, 'prev_action_listen': 1.0}, {'entity_TIME': 1.0, 'slot_Time_0': 1.0, 'prev_utter_sure_we_can': 1.0, 'entity_CARDINAL': 1.0, 'intent_lets_do_something': 1.0, 'entity_Time': 1.0, 'slot_Day_0': 1.0, 'slot_PERSON_0': 1.0, 'slot_activity_0': 1.0}, {'entity_TIME': 1.0, 'slot_Time_0': 1.0, 'entity_CARDINAL': 1.0, 'intent_lets_do_something': 1.0, 'entity_Time': 1.0, 'slot_Day_0': 1.0, 'slot_PERSON_0': 1.0, 'slot_activity_0': 1.0, 'prev_utter_ask_day': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'

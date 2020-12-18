@@ -153,6 +153,7 @@ actions:
 - utter_corona_bot
 - utter_none_of_your_business
 - utter_no_worries
+- utter_yes_i_like
 - utter_pick_a_day
 - utter_await_response
 - utter_not_sure_when
@@ -170,6 +171,7 @@ actions:
 - utter_zoro_likes
 - utter_zoro_origin
 - utter_zorobot
+- utter_working_on
 config:
   store_entities_as_slots: true
 entities:
@@ -195,6 +197,8 @@ entities:
 - month_and_date
 - same_or_different
 - TOD
+- qha
+- quintessence
 - res
 - email
 - kind
@@ -321,6 +325,8 @@ intents:
 - multi_intent_no_name:
     use_entities: true
 - vague_when:
+    use_entities: true
+- do_you_like:
     use_entities: true
 - schedule_meeting:
     use_entities: true
@@ -523,6 +529,10 @@ intents:
 - saymyname:
     use_entities: true
 - when_will_you:
+    use_entities: true
+- ask_call_with_name:
+    use_entities: true
+- what_are_you_doing:
     use_entities: true
 - zoro:
     use_entities: true
@@ -818,7 +828,7 @@ templates:
   - text: As a final confirmation, our call is set for {Day} at {time_hour}:{time_minutes}.
       I'll look for your call then.
   utter_fine:
-  - text: As fine as a bee's wing 🐝
+  - text: As fine as a bee's wing! 🐝 How are you?
   utter_forsooth:
   - text: Forsooth
   utter_free:
@@ -1048,11 +1058,21 @@ templates:
   - text: Sorry I have a new phone, who is this?
   utter_wink_gmta:
   - text: GMTA
+  utter_working_on:
+  - text: I'm working on better understanding you.
+  - text: I'm working on how I can better understand you.
+  - text: I'm working on developing my understanding.
+  - text: I'm jest tryna figure out what you're saying.
   utter_wunderbar:
   - text: Wunderbar!
   - text: Super!
   utter_yes:
   - text: Yes.
+  utter_yes_i_like:
+  - text: What's not to like about {qha}?
+  - text: Can you think of a a good reason not to like {qha}?
+  - text: I'm a dog, I like anything that isn't a threat.
+  - text: I do, should I take it that you do too?
   utter_your_name:
   - text: ok {Nou} {Nou_last}
   utter_yum:

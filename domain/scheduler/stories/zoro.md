@@ -42,6 +42,10 @@
 * deny OR sorry
   - action_listen
 
+## you like?
+* do_you_like
+  - utter_yes_i_like
+
 ## nonsequitur
 * nonsequitur
   - utter_sorry_dont_understand
@@ -64,6 +68,10 @@
 * sup
   - utter_up_down
 
+# wat doin  
+* what_are_you_doing
+  - utter_working_on
+  
 ## r u a bot
 * ruabot
   - utter_zorobot

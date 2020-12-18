@@ -14,7 +14,7 @@ env/*
 # Build directory and logs
 #build/src
 #build/setup.py
-#logs/*
+logs/*
 !logs/.keep
 nohup.out
 screenshots

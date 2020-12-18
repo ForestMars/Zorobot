@@ -1,4 +1,7 @@
 
+
+### ~~~ GENERAL CHITCHAT ~~~ ###
+
 ## synonym:zoro
 - zorro
 - Zorro
@@ -112,6 +115,48 @@ _ zztop
 - does forest spoil you
 - does he take good care of you
 
+
+
+### ~~~ AFFINITY INTENTS ~~~ ###
+
+## intent:do_you_like
+- do you like [snow](qha)
+- do you like [playing in the snow](qha)
+- do you like [mostaciolli](qha)
+- do you like [cheese](qha)
+- do you like [getting pets](qha)
+- do you like [havng your back scratched](qha)
+- do you like [rewards](qha)
+- do you like [treats](qha)
+- do you like [texting](qha)
+- do you like [my picture](qha)
+- do you like [going to the museum](qha)
+- do you like [sailing](qha)
+- do you like [that tv show](qha)
+- do you like [going for a walk](qha)
+- do you like [going for walks](qha)
+- do you like [empathy](qha)
+- do you like [me](qha:you)
+- do you like [it](qha)
+
+## intent:what_are_you_doing
+- what are you doing
+- what are you up to
+- what are you going to do
+- what are you going to be doing
+- what are you going to have been doing
+- what are you going to have had been going to been doing
+- what are you working on
+- what are you planning
+- what are you plans
+- any plans
+- got plans
+- got plans tonight
+- whats your plan for tonight
+- whats the plan for tonight
+
+
+### ~~~ BOT STUFF ~~~ ###
 
 ## intent:ruabot
 - are you a program

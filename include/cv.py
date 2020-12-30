@@ -7,6 +7,8 @@ import requests
 import json
 from PIL import Image
 
+from mixin import APIMixin
+
 
 # Add your Computer Vision subscription key and endpoint to your environment variables.
 if 'AZURE_SUB_KEY' in os.environ:
@@ -15,7 +17,7 @@ if 'AZURE_VISION_ENDPOINT' in os.environ:
     endpoint = os.environ['AZURE_VISION_ENDPOINT']
 
 
-class VisionAPI():
+class VisionAPI(APIMixin, object):
     def __init__(self, sub_key):
         self.analyze_url = endpoint + "vision/v3.1/analyze"
         self.headers = {'Ocp-Apim-Subscription-Key': sub_key}
@@ -36,5 +38,6 @@ class VisionAPI():
 if __name__ == '__main__':
     image = 'test.jpg'
     vision = VisionAPI(sub_key)
+    input(vision.test())
     descr = vision.analyse(image)
     print(descr)

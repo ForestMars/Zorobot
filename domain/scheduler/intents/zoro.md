@@ -135,6 +135,7 @@ _ zztop
 - do you like [that tv show](qha)
 - do you like [going for a walk](qha)
 - do you like [going for walks](qha)
+- do you like [ecotechnics](qha)
 - do you like [empathy](qha)
 - do you like [me](qha:you)
 - do you like [it](qha)

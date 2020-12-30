@@ -26,7 +26,7 @@ class HaltException(Exception): pass
 class ContextManager_(_GeneratorContextManager, ContextDecorator): pass
 
 class ddict(dict):
-    """ dot.notation for dicts """
+    """ dot.notation for dicts using non-standard class name. """
     __getattr__ = dict.get
     __setattr__ = dict.__setitem__
     __delattr__ = dict.__delitem__
@@ -198,3 +198,15 @@ def id_file_type(file):
     # n.b. filepath not file
     with open(filepath, 'r') as fp:
         hex_list = ["{:02x}".format(ord(c)) for c in fp.read()]
+
+def const_equal(a: str, b: str) -> bool:
+    """ Constant time string compare. """
+
+    if len(a) != len(b):
+        return False
+
+    result = True
+    for i in range(len(a)):
+        result &= (a[i] == b[i])
+
+    return result

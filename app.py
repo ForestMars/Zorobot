@@ -25,7 +25,7 @@ from waitress import serve
 from common.lumberjack import Log as log
 from common.utils import ddict, HaltException as HX
 from common import utils
-from cv import VisionAPI
+from include.cv import VisionAPI
 
 
 command = shlex.split("env -i bash -c 'source env/env.sh && env'")
@@ -157,12 +157,11 @@ class HandleMedia(object):
         vision = VisionAPI(sub_key)
         descr = vision.analyse(img)
         print(descr)
-        return descr
+        return descr.lower()
 
     def handle_res(file):
         """ Upload resume in pdf or docx format. """
         pass
-
 
 
 # @TODO: This should be a class & plainly needs refactoring.

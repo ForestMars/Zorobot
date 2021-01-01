@@ -8,7 +8,7 @@ import shlex
 import subprocess
 
 
-command = shlex.split("env -i bash -c 'source env/env.sh && env'")
+command = shlex.split("env -i bash -c 'source .env && env'")
 proc = subprocess.Popen(command,
     stdout=subprocess.PIPE,
     encoding='utf8',

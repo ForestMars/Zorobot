@@ -866,3 +866,35 @@
 - you know what [11:45](Time) would be a lot better
 - actually [12:00](Time) would be perfect
 - can we do a different time instead
+
+## intent:vague_when
+- how is your availability looking [this week](DATE)
+- how is your availability looking [next week](DATE)
+- how is your availability looking [the week after next](DATE)
+- how is your availability looking [the week after this](DATE)
+- how is your availability looking [not this week but next](DATE)
+- how is your availability looking [next week](DATE)
+- whats your availability like [this week](DATE)
+- whats your availability like [next week](DATE)
+- whats [this weekend](DATE) look like
+- what [this weekend](DATE) look like
+- hows [this weekend](DATE) look
+- hows [this weekend](DATE) looking
+- whats [your weekend](DATE) look like
+- you free [this weekend](DATE)
+- are you free [this weekend](DATE)
+- do you have time [this weekend](DATE)
+- how about [this weekend](DATE)
+- tomorrow, monday or tuesday is fine. afternoons are best
+- either tomorrow or thursday
+- any day but friday
+- any day [this week](DATE)
+- later this afternoon or tomorrow morning
+- either today or tomorrow are good
+- can we have a call sometime
+- are you avavilable for a call sometime
+- whats your availability for a call
+- whats a good time for you to have a call
+- whats a good time for us to have a call
+- can you let me know what a good time for a call might be
+- is there a particular time thats good for you

@@ -178,11 +178,14 @@ done
 
 # @TODO: create model directory if it doesn't exist
 
-if [[ $RUNYN = 'y' ]]; then
+if [[ $RUNYN = 'y' || $RUNYN = 'd' ]]; then
   mkdir -p -- "logs" # (safety check)
   REACTION="domain.$PROJECT.$ACTION"
+  echo "about to start actions"
   nohup python -m rasa_core_sdk.endpoint --actions $REACTION & echo $!
+  echo "actions are started with pid"
   BILL=$!
+  echo $BILL
   echo $BILL > config/bill.pid
 fi
 

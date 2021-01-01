@@ -3,3 +3,80 @@ Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
 Rasa Core server is up and running on http://localhost:5005
 Failed to run custom action 'action_send_invite'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
 Encountered an exception while running action 'action_send_invite'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Available web server routes: 
+static                                             GET, HEAD, OPTIONS             /static/[filename]
+custom_webhook_CmdlineInput.health                 GET, HEAD, OPTIONS             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                POST, OPTIONS                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Using selector: KqueueSelector
+Creating a new tracker for id 'default'.
+Received user message 'did i tell you what my favorite movie is?' with intent '{'name': 'thisis', 'confidence': 0.08657532098256299}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	DATE: None
+	Day: 
+	HowLong: None
+	NSFW: None
+	Nou: 
+	Nou_last: 
+	PERSON: 
+	TOD: None
+	Time: None
+	When: None
+	accepting_resumes: None
+	activity: have a phone call
+	are_you_hiring: None
+	corona_bot: (845) 868-0258
+	date_month: None
+	date_or_time: None
+	date_year: None
+	day_of_month: None
+	day_ordinal:  
+	email: None
+	kind: None
+	location: None
+	month_and_date: None
+	month_name:  
+	open_roles: None
+	requested_slot: None
+	res: None
+	same_or_different: None
+	super: None
+	time_am_pm: None
+	time_hour: None
+	time_minutes: None
+	weekday: None
+Current tracker state [None, None, {'slot_PERSON_0': 1.0, 'slot_Day_0': 1.0, 'slot_activity_0': 1.0}, {'slot_activity_0': 1.0, 'slot_Day_0': 1.0, 'prev_action_listen': 1.0, 'intent_thisis': 1.0, 'slot_PERSON_0': 1.0}]
+There is a memorised next action '82'
+There is no active form
+NLU confidence 0.08657532098256299 is lower than NLU threshold 0.3. 
+Predicted next action using policy_3_FallbackPolicy
+Predicted next action 'action_chat' with prob 1.00.
+Calling action endpoint to run action 'action_chat'.
+Failed to run custom action 'action_chat'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_chat'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/actions/action.py", line 342, in run
+    response.raise_for_status()
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/requests/models.py", line 941, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/processor.py", line 346, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/Users/forestmars/miniconda3/envs/rasawtf/lib/python3.6/site-packages/rasa_core/actions/action.py", line 362, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'action_chat' ended with events '[]'
+Current tracker state [None, {'slot_PERSON_0': 1.0, 'slot_Day_0': 1.0, 'slot_activity_0': 1.0}, {'slot_activity_0': 1.0, 'slot_Day_0': 1.0, 'prev_action_listen': 1.0, 'intent_thisis': 1.0, 'slot_PERSON_0': 1.0}, {'slot_activity_0': 1.0, 'prev_action_chat': 1.0, 'slot_Day_0': 1.0, 'intent_thisis': 1.0, 'slot_PERSON_0': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_3_FallbackPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'

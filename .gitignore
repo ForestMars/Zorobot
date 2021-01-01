@@ -2,6 +2,7 @@
 
 # bc we use diff .gitignore files for master & dev branches
 .gitignore
+.idea
 
 .env
 env

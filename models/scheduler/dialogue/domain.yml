@@ -4,6 +4,7 @@ actions:
 - action_send_invite
 - action_send_res
 - action_message
+- action_chat
 - action_check_day
 - action_check_date
 - action_check_time
@@ -300,6 +301,8 @@ intents:
     use_entities: true
 - who:
     use_entities: true
+- who_is_this:
+    use_entities: true
 - yw:
     use_entities: true
 - ruthere:
@@ -536,6 +539,8 @@ intents:
     use_entities: true
 - zoro:
     use_entities: true
+- zoro_greet:
+    use_entities: true
 - zoro_good:
     use_entities: true
 - zoro_who:
@@ -551,6 +556,8 @@ intents:
 - what_do_u_like:
     use_entities: true
 - nonsequitur:
+    use_entities: true
+- holiday:
     use_entities: true
 slots:
   DATE:

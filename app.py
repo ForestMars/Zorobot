@@ -1,13 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # app.py (smsbot) - SMS message dispatcher and handler. Don't get me started.
-__version__ = '0.4'
+__version__ = '0.5'
 CONDA_ENV = 'chatbot1'
 
+import os
+import csv
 import json
 import logging
 import magic
-import os
 import shlex
 import subprocess
 from random import choice
@@ -28,7 +29,47 @@ from common import utils
 from include.cv import VisionAPI
 
 
-command = shlex.split("env -i bash -c 'source env/env.sh && env'")
+def csv_to_dict(file):
+    """ write key val csv to dict. """
+    #mydict = {y[0]: y[1] for y in [x.split(",") for x in open(file).read().split('\n') if x]}
+    with open(file) as f:
+        d = dict(filter(None, csv.reader(f)))
+
+    return d
+
+def rev_dict(dict):
+    inv_dict = {v: k for k, v in dict.items()}
+
+    return inv_dict
+
+def validate_number(number):
+    number = str(number.strip(' ').replace('+', ''))
+
+    if len(number) == 11 and number.startswith('1'):
+        return number.replace('1', '', 1)
+    elif len(number) == 10 and not number.startswith('1'):
+        return number
+
+
+def lookup_contact(numba):
+    numba = validate_number(numba)
+
+    peops = csv_to_dict('contacts.csv')
+    lookup = rev_dict(peops)
+
+    if numba in lookup:
+        who = lookup[numba]
+    else:
+        who = numba
+
+    return who
+
+
+peops = csv_to_dict('contacts.csv')
+lookup = rev_dict(peops)
+
+
+command = shlex.split("env -i bash -c 'source .env && env'")
 proc = subprocess.Popen(command,
     stdout=subprocess.PIPE,
     encoding='utf8',
@@ -112,7 +153,8 @@ def sms():
             try:
                 send_msg(who, reply)
             except Exception as e:
-                log.error(e)
+                print(e)
+                # log(e)  # init warning
 
     return Response(resp, mimetype='text/xml')
 
@@ -164,9 +206,27 @@ class HandleMedia(object):
         pass
 
 
+def handle_cmd(msg):
+    if msg['From'] == nassau:
+        print('yes from for')
+        if msg['Body'].lower().startswith('to'):
+            cmd = msg['Body'].lower().replace('to', '', 1).split('&')
+            to = cmd[0]
+            say_what = cmd[1]
+
+            print('caught it')
+
+
+            send_msg(to, say_what)
+            return True
+
+
 # @TODO: This should be a class & plainly needs refactoring.
 def handle_msg(msg: dict) ->list:
     """ Handler for message request object. Logs message and returns list of responses."""
+    #if handle_cmd(msg) is not None:
+    #    return
+
     msg_alert(msg['From'], msg['Body'])
     msg, lol = parse_msg(msg)
 
@@ -212,25 +272,28 @@ def send_msg(to, body):
     """ Send SMS reply via API """
     try:
         message = client.messages.create(to=to, from_=belvedere, body=body)
-        print(message.sid)
+        #print(message.sid)
     except Exception as e:
         print(e)
 
-    msg_cc(to, body)
+    who = lookup_contact(to)
+    msg_cc(who, body)
 
 
-def msg_alert(who, body):
+def msg_alert(numba, body):
+
+    who = lookup_contact(numba)
     incoming = 'msg from ' + who + ': ' + body
-    if who not in nassau:
+
+    if who != 'Forest':
         try:
             message = client.messages.create(to=nassau, from_=belvedere, body=incoming)
-            print(message.sid)
+            #print(message.sid)
         except Exception as e:
             print(e)
 
 
 def msg_cc(who, body):
-    print('cc')
     outgoing = 'msg to ' + who + ': ' + body
     if who not in nassau:
         try:

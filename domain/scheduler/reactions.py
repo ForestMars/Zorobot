@@ -22,6 +22,10 @@ try:
     import lib.ext.scheduler as sch
 except ImportError:
     import build.src.scheduler as sch
+try:
+    import lib.ext.convo as chat
+except ImportError:
+    import build.src.convo as chat
 # Explain yourself.
 
 
@@ -46,6 +50,7 @@ class ActionNSFW(Action):
 class ResetSlot(Action):
     """ The can be refactored as a factory with eval a/o get_attr """
 
+    # Hard coded to reset a particular slot. :-/
     def name(self):
         return "action_reset_email"
 
@@ -468,3 +473,22 @@ class ActionRepeatSomething(Action):
             i -= 1
 
         return []
+
+class ActionChat(Action):
+    """ User inputs not matching an active domain are considered general conversation and handled as such. """
+
+    def name(self):
+        return "action_chat"
+
+    def run(self, dispatcher, tracker, domain):
+
+        slots = []
+        user = (tracker.current_state())["sender_id"]
+        #input(tracker.latest_message)
+        message = tracker.latest_message['text'] # :-)
+        #dispatcher.utter_message(message)
+
+        response = chat.ask(user, message)
+        dispatcher.utter_message(response)
+
+        return slots

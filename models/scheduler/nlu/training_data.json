@@ -446,6 +446,54 @@
         "text": "would like to book a call with forest"
       },
       {
+        "intent": "schedule_call",
+        "entities": [
+          {
+            "start": 27,
+            "end": 33,
+            "value": "Forest",
+            "entity": "forest"
+          }
+        ],
+        "text": "can i schedule a call with Forest"
+      },
+      {
+        "intent": "schedule_call",
+        "entities": [
+          {
+            "start": 28,
+            "end": 34,
+            "value": "Forest",
+            "entity": "forest"
+          }
+        ],
+        "text": "please schedule a call with Forest"
+      },
+      {
+        "intent": "schedule_call",
+        "entities": [
+          {
+            "start": 36,
+            "end": 42,
+            "value": "Forest",
+            "entity": "forest"
+          }
+        ],
+        "text": "can you please schedule a call with Forest"
+      },
+      {
+        "intent": "schedule_call",
+        "entities": [
+          {
+            "start": 35,
+            "end": 41,
+            "value": "Forest",
+            "entity": "forest"
+          }
+        ],
+        "text": "can u pls set up a call for me and Forest"
+      },
+      {
         "intent": "lets_do_something",
         "entities": [
           {
@@ -12053,11 +12101,23 @@
       },
       {
         "intent": "affirm",
+        "text": "correct"
+      },
+      {
+        "intent": "affirm",
+        "text": "yes correct"
+      },
+      {
+        "intent": "affirm",
         "text": "yes that is correct"
       },
       {
         "intent": "affirm",
         "text": "yes, that is correct"
+      },
+      {
+        "intent": "affirm",
+        "text": "you are correct"
       },
       {
         "intent": "agree",
@@ -12445,6 +12505,10 @@
       },
       {
         "intent": "hru",
+        "text": "h r u"
+      },
+      {
+        "intent": "hru",
         "text": "how r u"
       },
       {
@@ -12494,6 +12558,38 @@
       {
         "intent": "hru",
         "text": "are you okay"
+      },
+      {
+        "intent": "hru",
+        "text": "hows it going"
+      },
+      {
+        "intent": "hru",
+        "text": "hows it goin"
+      },
+      {
+        "intent": "hru",
+        "text": "how's it going"
+      },
+      {
+        "intent": "hru",
+        "text": "How's it going?"
+      },
+      {
+        "intent": "hru",
+        "text": "how have you been"
+      },
+      {
+        "intent": "hru",
+        "text": "how have you been doing"
+      },
+      {
+        "intent": "hru",
+        "text": "how has everying been going"
+      },
+      {
+        "intent": "hru",
+        "text": "hi zoro how are you"
       },
       {
         "intent": "fine_ask",
@@ -21360,6 +21456,114 @@
         "text": "hi forest it's chelsea, great talking to you"
       },
       {
+        "intent": "ask_call_with_name",
+        "entities": [
+          {
+            "start": 11,
+            "end": 16,
+            "value": "Harry",
+            "entity": "Nou"
+          },
+          {
+            "start": 42,
+            "end": 48,
+            "value": "a call",
+            "entity": "activity"
+          },
+          {
+            "start": 54,
+            "end": 60,
+            "value": "Forest",
+            "entity": "forest"
+          }
+        ],
+        "text": "Hi this is Harry, can I please schedule a a call with Forest?"
+      },
+      {
+        "intent": "ask_call_with_name",
+        "entities": [
+          {
+            "start": 15,
+            "end": 21,
+            "value": "a call",
+            "entity": "activity"
+          },
+          {
+            "start": 27,
+            "end": 33,
+            "value": "Forest",
+            "entity": "forest"
+          },
+          {
+            "start": 58,
+            "end": 62,
+            "value": "Phil",
+            "entity": "Nou"
+          }
+        ],
+        "text": "Can you set up a call with Forest please? Thanks, this is Phil"
+      },
+      {
+        "intent": "ask_call_with_name",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "Forest",
+            "entity": "forest"
+          },
+          {
+            "start": 15,
+            "end": 22,
+            "value": "Raymond",
+            "entity": "Nou"
+          },
+          {
+            "start": 38,
+            "end": 44,
+            "value": "a call",
+            "entity": "activity"
+          }
+        ],
+        "text": "Hi Forest it's Raymond, can we set up a call please?"
+      },
+      {
+        "intent": "ask_call_with_name",
+        "entities": [
+          {
+            "start": 14,
+            "end": 19,
+            "value": "chris",
+            "entity": "Nou"
+          },
+          {
+            "start": 43,
+            "end": 49,
+            "value": "a call",
+            "entity": "activity"
+          },
+          {
+            "start": 55,
+            "end": 61,
+            "value": "forest",
+            "entity": "forest"
+          }
+        ],
+        "text": "hi zoro, it's chris are you able to set up a call with forest"
+      },
+      {
+        "intent": "ask_call_with_name",
+        "text": "can you please set up a call"
+      },
+      {
+        "intent": "ask_call_with_name",
+        "text": "can you please schedule a call"
+      },
+      {
+        "intent": "ask_call_with_name",
+        "text": "i would like to book a call"
+      },
+      {
         "intent": "multi_intent_no_name",
         "text": "hi forest i really appreciate your coming back to me and i am interested in setting up a call"
       },
@@ -29516,6 +29720,74 @@
         "text": "holly"
       },
       {
+        "intent": "who_is_this",
+        "text": "hello who are you"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "hi, who is this"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "hi who is this"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "who is this"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "who is this pls"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "who is this please"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "hi who is this please"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "hi, who is this please"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "hi, how are you"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "who are you"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "who are you?"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "youre not in my contacts"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "did you get a new number"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "who this"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "who r u"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "do i know you"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "do i know u"
+      },
+      {
         "intent": "zoro_greet",
         "text": "zoro"
       },
@@ -29805,10 +30077,6 @@
       },
       {
         "intent": "is_this",
-        "text": "hi can you schedule a call"
-      },
-      {
-        "intent": "is_this",
         "text": "are you forest's helper"
       },
       {
@@ -29874,6 +30142,338 @@
       {
         "intent": "ask_zoro",
         "text": "does he take good care of you"
+      },
+      {
+        "intent": "do_you_like",
+        "entities": [
+          {
+            "start": 12,
+            "end": 16,
+            "value": "snow",
+            "entity": "qha"
+          }
+        ],
+        "text": "do you like snow"
+      },
+      {
+        "intent": "do_you_like",
+        "entities": [
+          {
+            "start": 12,
+            "end": 31,
+            "value": "playing in the snow",
+            "entity": "qha"
+          }
+        ],
+        "text": "do you like playing in the snow"
+      },
+      {
+        "intent": "do_you_like",
+        "entities": [
+          {
+            "start": 12,
+            "end": 23,
+            "value": "mostaciolli",
+            "entity": "qha"
+          }
+        ],
+        "text": "do you like mostaciolli"
+      },
+      {
+        "intent": "do_you_like",
+        "entities": [
+          {
+            "start": 12,
+            "end": 18,
+            "value": "cheese",
+            "entity": "qha"
+          }
+        ],
+        "text": "do you like cheese"
+      },
+      {
+        "intent": "do_you_like",
+        "entities": [
+          {
+            "start": 12,
+            "end": 24,
+            "value": "getting pets",
+            "entity": "qha"
+          }
+        ],
+        "text": "do you like getting pets"
+      },
+      {
+        "intent": "do_you_like",
+        "entities": [
+          {
+            "start": 12,
+            "end": 37,
+            "value": "havng your back scratched",
+            "entity": "qha"
+          }
+        ],
+        "text": "do you like havng your back scratched"
+      },
+      {
+        "intent": "do_you_like",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "rewards",
+            "entity": "qha"
+          }
+        ],
+        "text": "do you like rewards"
+      },
+      {
+        "intent": "do_you_like",
+        "entities": [
+          {
+            "start": 12,
+            "end": 18,
+            "value": "treats",
+            "entity": "qha"
+          }
+        ],
+        "text": "do you like treats"
+      },
+      {
+        "intent": "do_you_like",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "texting",
+            "entity": "qha"
+          }
+        ],
+        "text": "do you like texting"
+      },
+      {
+        "intent": "do_you_like",
+        "entities": [
+          {
+            "start": 12,
+            "end": 22,
+            "value": "my picture",
+            "entity": "qha"
+          }
+        ],
+        "text": "do you like my picture"
+      },
+      {
+        "intent": "do_you_like",
+        "entities": [
+          {
+            "start": 12,
+            "end": 31,
+            "value": "going to the museum",
+            "entity": "qha"
+          }
+        ],
+        "text": "do you like going to the museum"
+      },
+      {
+        "intent": "do_you_like",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "sailing",
+            "entity": "qha"
+          }
+        ],
+        "text": "do you like sailing"
+      },
+      {
+        "intent": "do_you_like",
+        "entities": [
+          {
+            "start": 12,
+            "end": 24,
+            "value": "that tv show",
+            "entity": "qha"
+          }
+        ],
+        "text": "do you like that tv show"
+      },
+      {
+        "intent": "do_you_like",
+        "entities": [
+          {
+            "start": 12,
+            "end": 28,
+            "value": "going for a walk",
+            "entity": "qha"
+          }
+        ],
+        "text": "do you like going for a walk"
+      },
+      {
+        "intent": "do_you_like",
+        "entities": [
+          {
+            "start": 12,
+            "end": 27,
+            "value": "going for walks",
+            "entity": "qha"
+          }
+        ],
+        "text": "do you like going for walks"
+      },
+      {
+        "intent": "do_you_like",
+        "entities": [
+          {
+            "start": 12,
+            "end": 23,
+            "value": "ecotechnics",
+            "entity": "qha"
+          }
+        ],
+        "text": "do you like ecotechnics"
+      },
+      {
+        "intent": "do_you_like",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "empathy",
+            "entity": "qha"
+          }
+        ],
+        "text": "do you like empathy"
+      },
+      {
+        "intent": "do_you_like",
+        "entities": [
+          {
+            "start": 12,
+            "end": 14,
+            "value": "you",
+            "entity": "qha"
+          }
+        ],
+        "text": "do you like me"
+      },
+      {
+        "intent": "do_you_like",
+        "entities": [
+          {
+            "start": 12,
+            "end": 14,
+            "value": "it",
+            "entity": "qha"
+          }
+        ],
+        "text": "do you like it"
+      },
+      {
+        "intent": "what_are_you_doing",
+        "text": "what are you doing"
+      },
+      {
+        "intent": "what_are_you_doing",
+        "text": "what are you up to"
+      },
+      {
+        "intent": "what_are_you_doing",
+        "text": "what are you going to do"
+      },
+      {
+        "intent": "what_are_you_doing",
+        "text": "what are you going to be doing"
+      },
+      {
+        "intent": "what_are_you_doing",
+        "text": "what are you going to have been doing"
+      },
+      {
+        "intent": "what_are_you_doing",
+        "text": "what are you going to have had been going to been doing"
+      },
+      {
+        "intent": "what_are_you_doing",
+        "text": "what are you working on"
+      },
+      {
+        "intent": "what_are_you_doing",
+        "text": "what are you planning"
+      },
+      {
+        "intent": "what_are_you_doing",
+        "text": "what are you plans"
+      },
+      {
+        "intent": "what_are_you_doing",
+        "text": "any plans"
+      },
+      {
+        "intent": "what_are_you_doing",
+        "text": "got plans"
+      },
+      {
+        "intent": "what_are_you_doing",
+        "text": "got plans tonight"
+      },
+      {
+        "intent": "what_are_you_doing",
+        "text": "whats your plan for tonight"
+      },
+      {
+        "intent": "what_are_you_doing",
+        "text": "whats the plan for tonight"
+      },
+      {
+        "intent": "holiday",
+        "text": "happy new year"
+      },
+      {
+        "intent": "holiday",
+        "text": "Happy New Year"
+      },
+      {
+        "intent": "holiday",
+        "text": "Happy New Year!"
+      },
+      {
+        "intent": "holiday",
+        "text": "Happy New Year to you"
+      },
+      {
+        "intent": "holiday",
+        "text": "Happy New Year to you too!"
+      },
+      {
+        "intent": "holiday",
+        "text": "Happy Gnu Year"
+      },
+      {
+        "intent": "holiday",
+        "text": "Happy Easter"
+      },
+      {
+        "intent": "holiday",
+        "text": "Happy Halloween"
+      },
+      {
+        "intent": "holiday",
+        "text": "Happy Thanksgiving"
+      },
+      {
+        "intent": "holiday",
+        "text": "Happy Thanksgiving!"
+      },
+      {
+        "intent": "holiday",
+        "text": "Happy Christmas"
+      },
+      {
+        "intent": "holiday",
+        "text": "Merry Christmas"
       },
       {
         "intent": "ruabot",
@@ -29946,6 +30546,78 @@
       {
         "intent": "robot",
         "text": "robot lives matter"
+      },
+      {
+        "intent": "what_is",
+        "entities": [
+          {
+            "start": 8,
+            "end": 13,
+            "value": "Eliza",
+            "entity": "qha"
+          }
+        ],
+        "text": "what is Eliza"
+      },
+      {
+        "intent": "what_is",
+        "entities": [
+          {
+            "start": 8,
+            "end": 13,
+            "value": "eliza",
+            "entity": "qha"
+          }
+        ],
+        "text": "what is eliza"
+      },
+      {
+        "intent": "what_is",
+        "entities": [
+          {
+            "start": 8,
+            "end": 13,
+            "value": "Eliza",
+            "entity": "qha"
+          }
+        ],
+        "text": "what is Eliza?"
+      },
+      {
+        "intent": "what_is",
+        "entities": [
+          {
+            "start": 8,
+            "end": 13,
+            "value": "eliza",
+            "entity": "qha"
+          }
+        ],
+        "text": "what is eliza?"
+      },
+      {
+        "intent": "what_is",
+        "entities": [
+          {
+            "start": 8,
+            "end": 15,
+            "value": "\"Eliza\"",
+            "entity": "qha"
+          }
+        ],
+        "text": "what is \"Eliza\""
+      },
+      {
+        "intent": "what_is",
+        "entities": [
+          {
+            "start": 8,
+            "end": 15,
+            "value": "\"eliza\"",
+            "entity": "qha"
+          }
+        ],
+        "text": "what is \"eliza\""
       }
     ],
     "regex_features": [],
@@ -30065,6 +30737,12 @@
           "Z-dog",
           "zdog",
           "zman"
+        ]
+      },
+      {
+        "value": "you",
+        "synonyms": [
+          "me"
         ]
       }
     ]

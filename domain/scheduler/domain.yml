@@ -183,6 +183,7 @@ intents:
 - wassup
 - when
 - who
+- who_is_this
 - yw
 - ruthere
 - lost_the_plot
@@ -322,6 +323,7 @@ intents:
 
 # ~~~~~~~~~~ Zoro
 - zoro
+- zoro_greet
 - zoro_good
 - zoro_who
 - is_this
@@ -331,6 +333,7 @@ intents:
 - what_do_u_like
 
 - nonsequitur
+- holiday
 
 
 actions:
@@ -338,6 +341,7 @@ actions:
 - action_send_invite
 - action_send_res
 - action_message
+- action_chat
 - action_check_day
 - action_check_date
 - action_check_time

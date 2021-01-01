@@ -1,4 +1,23 @@
-
+## intent:who_is_this
+- hello who are you
+- hi, who is this
+- hi who is this
+- who is this
+- who is this pls
+- who is this please
+- hi who is this please
+- hi, who is this please
+- hi, how are you
+- who are you
+- who are you?
+- youre not in my contacts
+- did you get a new number
+- who this
+- who r u
+- do i know you
+- do i know u
+- who's this
+- whos this
 
 ### ~~~ GENERAL CHITCHAT ~~~ ###
 
@@ -92,7 +111,6 @@ _ zztop
 - are you [forest's](fm) assistant
 - is this the scheduler
 - is this [forest's](fm) scheduler
-- hi can you schedule a call
 - are you forest's helper
 - are you forests dog
 
@@ -155,6 +173,21 @@ _ zztop
 - got plans tonight
 - whats your plan for tonight
 - whats the plan for tonight
+
+
+## intent:holiday
+- happy new year
+- Happy New Year
+- Happy New Year!
+- Happy New Year to you
+- Happy New Year to you too!
+- Happy Gnu Year
+- Happy Easter
+- Happy Halloween
+- Happy Thanksgiving
+- Happy Thanksgiving!
+- Happy Christmas
+- Merry Christmas
 
 
 ### ~~~ BOT STUFF ~~~ ###

@@ -1,9 +1,13 @@
 policies:
   - name: KerasPolicy
-    epochs: 155
+    epochs: 55
     max_history: 5
   - name: MemoizationPolicy
     max_history: 4
   - name: FormPolicy
   # other policies
-  # - name: RulePolicy
+  # - name: RulePolicy # (coming in 2.0)
+  - name: "FallbackPolicy"
+    nlu_threshold: 0.15
+    core_threshold: 0.15
+    fallback_action_name: 'action_chat'

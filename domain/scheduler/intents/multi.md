@@ -51,30 +51,7 @@
 - i have more time in the [afternoon](TOD) look
 - [morning](TOD) could work, depending on what time
 
-## intent:vague_when
-- how is your availability looking [this week](DATE)
-- how is your availability looking [next week](DATE)
-- how is your availability looking [the week after next](DATE)
-- how is your availability looking [the week after this](DATE)
-- how is your availability looking [not this week but next](DATE)
-- how is your availability looking [next week](DATE)
-- whats your availability like [this week](DATE)
-- whats your availability like [next week](DATE)
-- whats [this weekend](DATE) look like
-- what [this weekend](DATE) look like
-- hows [this weekend](DATE) look
-- hows [this weekend](DATE) looking
-- whats [your weekend](DATE) look like
-- you free [this weekend](DATE)
-- are you free [this weekend](DATE)
-- do you have time [this weekend](DATE)
-- how about [this weekend](DATE)
-- tomorrow, monday or tuesday is fine. afternoons are best
-- either tomorrow or thursday
-- any day but friday
-- any day [this week](DATE)
-- later this afternoon or tomorrow morning
-- either today or tomorrow are good
+
 
 ## intent:ask_which_day
 - which days good for you

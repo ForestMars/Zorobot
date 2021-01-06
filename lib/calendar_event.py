@@ -98,8 +98,15 @@ class CalendarInvite():
 
 
 if __name__ == '__main__':
-    cal_test = CalendarInvite()
-    cal_test.send_invite(call)
+    call = {}
+    call['login'] = ''
+    call['from'] = ''
+    call['description'] = ''
+    call['attendees'] = []
+    call['organizer'] = []
+
+    #cal_test = CalendarInvite()
+    #cal_test.send_invite(call)
 
 
 # Ca. https://www.w3.org/Protocols/rfc1341/7_2_Multipart.html

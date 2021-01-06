@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 ##
 # @Description: Load environment variables using lexical analysis and run app.
-# Intended to be invoked canonically with `flask run` (which -oddly- looks for app.py before run.py)
+# Intended to be invoked canonically with `flask run` (which looks for app.py before run.py)
 #
 import os
 import shlex

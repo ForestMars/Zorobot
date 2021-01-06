@@ -1,16 +1,15 @@
 # DEV (!!) Environment is not commited to repo.
-
 # bc we use diff .gitignore files for master & dev branches
 .gitignore
+
+# IDE
 .idea
 
-.env
-env
-env/*
-!env/.keep
-
 # Models are built for target architecture.
-#models/*
+models/*
+
+# misc
+assets/contacts.csv
 
 # Build directory and logs
 #build/src

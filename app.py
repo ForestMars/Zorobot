@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # app.py (smsbot) - SMS message dispatcher and handler. Don't get me started.
-__version__ = '0.5'
+__version__ = '0.5.1'
 CONDA_ENV = 'chatbot1'
 
 import os
@@ -43,7 +43,7 @@ def rev_dict(dict):
     return inv_dict
 
 def validate_number(number):
-    number = str(number.strip(' ').replace('+', ''))
+    number = str(number).strip(' ').replace('+', '')
 
     if len(number) == 11 and number.startswith('1'):
         return number.replace('1', '', 1)
@@ -54,19 +54,25 @@ def validate_number(number):
 def lookup_contact(numba):
     numba = validate_number(numba)
 
-    peops = csv_to_dict('contacts.csv')
+    peops = csv_to_dict('assets/contacts.csv')
     lookup = rev_dict(peops)
 
     if numba in lookup:
-        who = lookup[numba]
+        who = lookup[numba].split()[0]
     else:
         who = numba
 
     return who
 
 
-peops = csv_to_dict('contacts.csv')
-lookup = rev_dict(peops)
+input('about to test contacts')
+foo = lookup_contact(' 3476538508')
+input(foo)
+input('ok?')
+#peops = csv_to_dict('contacts.csv')
+#lookup = rev_dict(peops)
+
+
 
 
 command = shlex.split("env -i bash -c 'source .env && env'")
@@ -147,7 +153,6 @@ def sms():
         replies = json.loads(resp.content.decode('UTF-8'))
     if len(replies) > 0:
         for r in replies:
-            print(r)
             who = r['recipient_id']
             reply = r['text']
             try:
@@ -281,11 +286,10 @@ def send_msg(to, body):
 
 
 def msg_alert(numba, body):
-
     who = lookup_contact(numba)
-    incoming = 'msg from ' + who + ': ' + body
 
     if who != 'Forest':
+        incoming = 'msg from ' + who + ': ' + body
         try:
             message = client.messages.create(to=nassau, from_=belvedere, body=incoming)
             #print(message.sid)
@@ -294,8 +298,9 @@ def msg_alert(numba, body):
 
 
 def msg_cc(who, body):
-    outgoing = 'msg to ' + who + ': ' + body
-    if who not in nassau:
+    if who != 'Forest':
+        outgoing = 'msg to ' + who + ': ' + body
+
         try:
             message = client.messages.create(to=nassau, from_=belvedere, body=outgoing)
             print(message.sid)

@@ -6,15 +6,16 @@ models/*
 
 # misc
 assets/contacts.csv
+dir_msg_test.py
+xyz
 
 # Build directory and logs
 #build/src
 #build/setup.py
+logs
 logs/*
-!logs/.keep
 nohup.out
 screenshots
-xyz
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

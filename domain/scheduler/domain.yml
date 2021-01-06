@@ -38,6 +38,7 @@ entities:
   - quintessence
   - res
   - email
+  - phone
   - kind
   - person
   - accepting_resumes
@@ -107,6 +108,8 @@ slots:
   corona_bot:
     type: unfeaturized
     initial_value: "(845) 868-0258"
+  phone:
+    type: unfeaturized
 
   date_or_time:
     type: categorical

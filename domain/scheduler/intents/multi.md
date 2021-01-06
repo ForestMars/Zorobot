@@ -51,8 +51,6 @@
 - i have more time in the [afternoon](TOD) look
 - [morning](TOD) could work, depending on what time
 
-
-
 ## intent:ask_which_day
 - which days good for you
 - which day is good for you
@@ -108,6 +106,11 @@
 - i would rather we do [monday](Day)
 - [thursday](Day) is better for me
 - [friday](Day) is better for me
+- can we chage it to [tomorrow](Day) instead
+- can we change to [monday](Day)
+- can we change to [tuesday](Day)
+- are you able to do [wednesday](Day) instead
+- how does [thursday](Day) work instead
 
 ## intent:change_date_or_time
 - [day]([day_or_time)
@@ -585,6 +588,12 @@
 - hi forest it's [don](Nou), just following up on my email
 - hi forest it's [ron](Nou), i received your email and
 - hi forest it's [chelsea](Nou), great talking to you
+- Forest asked me to [schedule a call](activity). My phone is [212 505 1212](phone). [Doyne Farmer](Nou)
+- Forest asked me to [schedule a call](activity). My email is [artfarmer@gmail.com](phone). [Art Farmer](Nou)
+- hi forest gave me this number to [schedule a call](activity) with him.
+- is this the right number to [schedule a call](activity) with forest
+- is this the right number to [book a call](activity) with forest
+
 
 ## intent:ask_call_with_name
 - Hi this is [Harry](Nou), can I please schedule a [a call](activity) with [Forest](forest)?

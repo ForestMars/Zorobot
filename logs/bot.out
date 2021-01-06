@@ -1,6 +1,0 @@
-usage: run.py [-h] -d CORE [-u NLU] [-p PORT] [--auth_token AUTH_TOKEN]
-              [--cors [CORS [CORS ...]]] [-o LOG_FILE]
-              [--credentials CREDENTIALS] [--endpoints ENDPOINTS]
-              [-c CONNECTOR] [--enable_api] [--jwt_secret JWT_SECRET]
-              [--jwt_method JWT_METHOD] [-v] [-vv] [--quiet]
-run.py: error: unrecognized arguments: --log-file logs/bot.log

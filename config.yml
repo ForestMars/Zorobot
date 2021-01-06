@@ -8,16 +8,29 @@ pipeline:
 #- name: "EmbeddingIntentClassifier"
 #  intent_tokenization_flag: true
 #  intent_split_symbol: "+"
+# - name: "supervised_embeddings"
 
 - name: "nlp_spacy"                   # loads the spacy language model
-  case_sensitive: true
+#  case_sensitive: true
+
 - name: "tokenizer_spacy"             # splits the sentence into tokens
-#- name: "featurizer_spacy"            # also added
+####- name: "featurizer_spacy"            # also added
 - name: "ner_crf"                     # uses the pretrained spacy NER model
 - name: "ner_spacy"                   # uses the pretrained spacy NER model
 - name: "intent_featurizer_spacy"     # transform the sentence into a vector representation
 - name: "intent_classifier_sklearn"   # uses the vector representation to classify using SVM
 
-- name: "ner_synonyms"                # trains the synonyms
+
 #- name: ResponseSelector
 #  epochs: 100
+
+
+#- name: "tokenizer_whitespace"
+#- name: "ner_crf"
+#- name: "intent_featurizer_count_vectors"
+#- name: "CountVectorsFeaturizer"
+#- name: "intent_classifier_tensorflow_embedding"
+#- name: EmbeddingIntentClassifier
+
+
+- name: "ner_synonyms"                # trains the synonyms

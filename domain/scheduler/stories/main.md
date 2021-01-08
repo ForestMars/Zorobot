@@ -15,7 +15,6 @@
   - utter_ask_who
 * thisis
   - utter_nicetohearfromu
-  - action_update_contacts
   - utter_ask_schedule_call_discuss
 * affirm
   - utter_ask_day  

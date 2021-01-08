@@ -16,6 +16,9 @@
 - is there a good time for a call
 - is there a good time to discuss
 - whats a good time for for a call
+- can you please set up a call
+- can you please schedule a call
+- i would like to book a call
 
 
 ### ~~~~~~~~~~~~~~~~~~~~ Schedule call ~~~~~~~~~~~~~~~~~~~~

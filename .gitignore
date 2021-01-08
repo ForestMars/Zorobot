@@ -7,6 +7,7 @@ models/*
 # misc
 assets/contacts.csv
 dir_msg_test.py
+dir_mesg_test.py
 xyz
 
 # Build directory and logs

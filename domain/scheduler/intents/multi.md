@@ -535,9 +535,9 @@
 
 
 ## intent:multi_intent
-- Hi Forest, thank you for coming back to me and i would be keen to set up a call. Can you let me know what your availability is? Thanks, [Sarah](Nou)
-- Hi Forest thank you for getting back to me. I would be interested in setting up a call. Thanks very much, [Ann](Nou)
-- Hi Forest thank you for getting back to me. I would like to set up a call. Sincerely, [Bud](Nou)
+- Hi Forest, thank you for coming back to me and i would be keen to [set up a call](activity). Can you let me know what your availability is? Thanks, [Sarah](Nou)
+- Hi Forest thank you for getting back to me. I would be interested in [setting up a call](activity). Thanks very much, [Ann](Nou)
+- Hi Forest thank you for getting back to me. I would like to [set up a call](activity). Sincerely, [Bud](Nou)
 - Hi Forest, it's [lana](Nou) did you get the resumes i snt over? Let me know what you think of these candidates please.
 - Hi Forest thank you for getting back to me. I am interested in setting up a call. Sincerely, [Chuck](Nou)
 - Forest, I appreciate your reply to my Linked in message. What's a good time for a call you you? Best, [Lance](Nou)
@@ -564,14 +564,14 @@
 - hi forest it's [mel](Nou) thank you for getting back to me and i would like to schedule a call. what is your availability this week or next? thanks
 - hy forest it’s [roger](Nou) have you had a chance to look at those resumes i sent
 - hey forest this is [andy](Nou) thank you for getting back to me, can we hop on a call. whats good for this week?
-- hey forest this is [barry](Nou) got time for a call this week?
+- hey forest this is [barry](Nou) got time for [a call](activity) this week?
 - hey  this is [cal](Nou) we spoke on the phone.
 - hey forest its [dan](Nou) did you get a chance to look at the candidates i sent you
 - hello forest its [eric](Nou) have you had a chance to review the candidates
 - hello forest this is [felicia](Nou). did you get the candidates i sent over
 - Hey Forest, Love to set up a call. [Freddie](Nou) Scope Personel
-- hi forest this is [arlo](Nou) thank you for getting back to me, can we hop on a call. whats good for this week?
-- hi forest this is [barbara](Nou) got time for a call this week?
+- hi forest this is [arlo](Nou) thank you for getting back to me, can we [hop on a call](activity). whats good for this week?
+- hi forest this is [barbara](Nou) got time for [a call](activity) this week?
 - hi this is [rachel](Nou) we spoke on the phone.
 - hi forest its [chris](Nou) did you get a chance to look at the candidates i sent you
 - hi forest its [dale](Nou) have you had a chance to review the candidates
@@ -593,17 +593,12 @@
 - hi forest gave me this number to [schedule a call](activity) with him.
 - is this the right number to [schedule a call](activity) with forest
 - is this the right number to [book a call](activity) with forest
-
-
-## intent:ask_call_with_name
 - Hi this is [Harry](Nou), can I please schedule a [a call](activity) with [Forest](forest)?
 - Can you set up [a call](activity) with [Forest](forest) please? Thanks, this is [Phil](Nou)
 - Hi [Forest](forest) it's [Raymond](Nou), can we set up [a call](activity) please?
 - hi zoro, it's [chris](Nou) are you able to set up [a call](activity) with [forest](forest)
-- can you please set up a call
-- can you please schedule a call
-- i would like to book a call
-
+- hey forest this is [Jean Luc Pierre](PERSON). I was wondering if you mihght have some time for us to schedule a call, maybe this week or next?
+- Forest asked me to text you to set up a time for he and I to have a call. Please let me know when we can do that. TY [Gene](NAME)
 
 
 ## intent:multi_intent_no_name
@@ -614,72 +609,6 @@
 - hi forest, thank you for the email. i would be interested in setting up a call.
 - forest asked me to text you to set up a time for he and I to have a call.
 - forest asked me to text you to set up a time for he and I to have a call. please let me know when we can do that
-- Forest asked me to text you to set up a time for he and I to have a call. Please let me know when we can do that. TY [Gene](NAME)
 - forest said to ask you to set up a call
 - forest said you could schedule a call for us
 - forest said you would set up a call for us
-
-## intent:greet_with_name
-- hi forest this is [kyle](Nou)
-- hey forest this is [adam](Nou)
-- hi forest this is [mike](Nou)
-- hi forest this is [chris](Nou)
-- hello forest this is [dierdre](Nou)
-- hi this is [bonnie](Nou)
-- hey this is [clyde](Nou)
-- hi this is [rick](Nou)
-- hi this is [will](Nou)
-- hello this is [penn](Nou)
-- hiya, its [paula](Nou)
-- forst its [quentin](Nou)
-- hi forest its [roy](Nou)
-- hi forest its [sara](Nou)
-- hi forest its [tashika](Nou)
-- forest it's [victoria](Nou)
-- hi forest it's [wayne](Nou)
-- hi forest it's [yoli](Nou)
-- it's [rick](Nou) forest
-- this is [greg](Nou) forest
-
-
-### ~~~ Meta ~~~
-
-## intent:backup
-- we didnt pick a day
-- we didnt pick a date
-- we didnt pick a time
-- you didn't hear me correctly
-- None is wrong
-- what does None mean
-- what day is None
-- what time is None
-
-## intent:blame_autocorrect
-- i blame siri
-- siri messed that up
-- oops bad siri
-- siri got that wrong
-- voice recognition fail
-- autocorrect fail
-- autocorrect disaster
-- why does autocorrect get everything wrong
-
-## intent:hi_forest
-- hi forest
-- hello forest
-- hey forest
-- heya forest
-- hiya forest
-- good morning forest
-- good afternoon forest
-
-## intent:whats_none
-- none?  
-- none none?
-- whats none
-- what is none
-- whats none none
-- what is none none
-- whats (None None)
-- what is (None None)
-- huh? none?

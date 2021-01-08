@@ -41,6 +41,31 @@
 - yo
 - word up
 
+
+## intent:greet_with_name
+- hi forest this is [kyle](Nou)
+- hey forest this is [adam](Nou)
+- hi forest this is [mike](Nou)
+- hi forest this is [chris](Nou)
+- hello forest this is [dierdre](Nou)
+- hi this is [bonnie](Nou)
+- hey this is [clyde](Nou)
+- hi this is [rick](Nou)
+- hi this is [will](Nou)
+- hello this is [penn](Nou)
+- hiya, its [paula](Nou)
+- forst its [quentin](Nou)
+- hi forest its [roy](Nou)
+- hi forest its [sara](Nou)
+- hi forest its [tashika](Nou)
+- forest it's [victoria](Nou)
+- hi forest it's [wayne](Nou)
+- hi forest it's [yoli](Nou)
+- it's [rick](Nou) forest
+- this is [greg](Nou) forest
+
+
+
 ## intent:affirm
 - Y
 - y
@@ -999,3 +1024,46 @@
 - can you refer to me by name
 - can you refer to me by name please
 - say my name
+
+
+### ~~~ Meta ~~~
+
+## intent:backup
+- we didnt pick a day
+- we didnt pick a date
+- we didnt pick a time
+- you didn't hear me correctly
+- None is wrong
+- what does None mean
+- what day is None
+- what time is None
+
+## intent:blame_autocorrect
+- i blame siri
+- siri messed that up
+- oops bad siri
+- siri got that wrong
+- voice recognition fail
+- autocorrect fail
+- autocorrect disaster
+- why does autocorrect get everything wrong
+
+## intent:hi_forest
+- hi forest
+- hello forest
+- hey forest
+- heya forest
+- hiya forest
+- good morning forest
+- good afternoon forest
+
+## intent:whats_none
+- none?  
+- none none?
+- whats none
+- what is none
+- whats none none
+- what is none none
+- whats (None None)
+- what is (None None)
+- huh? none?

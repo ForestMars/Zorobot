@@ -364,9 +364,10 @@ class ActionUpdateContacts(Action):
 
     def run(self, dispatcher, tracker, domain):
         name = tracker.get_slot('Nou')
-        number = tracker.sender_id.replace('+1', '') # tracker.current_state()["sender_id"]
-        # if number.isnumeric():
-        sch.update_contacts(name, number)
+        if name:
+            # if number.isnumeric():
+            number = tracker.sender_id.replace('+1', '') # tracker.current_state()["sender_id"]
+            sch.update_contacts(name, number)
 
 
 class EmailForm(FormAction):

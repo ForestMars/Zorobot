@@ -16,7 +16,7 @@
 * thisis
   - utter_nicetohearfromu
   - utter_ask_schedule_call_discuss
-* affirm
+* affirm or ask_which_day
   - utter_ask_day  
 
 ## multi intent (with name)
@@ -24,7 +24,7 @@
   - utter_nicetohearfromu
   - action_update_contacts
   - utter_ask_schedule_call_discuss
-* affirm
+* affirm or ask_which_day
   - utter_ask_day  
 
 ## can u schedule this (with name)
@@ -32,7 +32,7 @@
   - utter_nicetohearfromu
   - action_update_contacts
   - utter_sure_we_can
-* affirm
+* affirm or ask_which_day
   - utter_ask_day  
 
 ## greet with name
@@ -56,7 +56,7 @@
   - utter_nicetohearfromu
   - action_update_contacts
   - utter_ask_schedule_call
-* affirm
+* affirm or ask_which_day
   - utter_ask_day
 
 ## is this you forest

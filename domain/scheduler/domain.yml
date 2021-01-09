@@ -722,8 +722,8 @@ templates:
   - text: Do you want to schedule a call?
   - text: Should we schedule a call?
   utter_ask_schedule_call_discuss:
-  - text: Would you like to schedule a call to discuss?
-  - text: Shall we plan on having a call to discuss?
+  - text: Should we put a call on the calendar?
+  - text: Shall we plan on having a call then?
   utter_ask_are_you_tryna_schedule:
   - text: Are you trying to set up a call with Forest?
   - text: Are you trying to set up a meeting with Forest?

@@ -229,3 +229,50 @@
 - do you have their address
 - do you have their email
 - do you have their contact info
+
+
+
+### ~~~~~~~~~~~~~~~~~~~~ Call Logistics ~~~~~~~~~~~~~~~~~~~~
+
+## intent:oot
+- ill be OOT
+- i will be OOT
+- i will be out of town
+- i will be out of town [then](When)
+- i will be out of town [until then](When)
+- im planning a trip
+- im planning a trip [then](When)
+- i wont be in town
+- i wont be in town [then](When)
+- i dont think ill be around
+- i dont think ill be around [then](When)
+- ill be gone
+- ill be gone [then](When)
+- i will be gone
+- ill be away
+- i will be away
+- im going to be gone
+- im going to be away
+- im planning to be away that week
+- im planning to be away that day
+- im planning to be out of town then
+- ill be away [on the 4th](When)
+- ill be away [over the holidays](When)
+
+## get_back_to_you
+- i have to get back to you
+- i will have to get back to you
+- i will have to get back to you on that
+- ill lyk
+- i will lyk
+- ill have to lyk
+- i will have to let you know
+- im gonna have to lyk
+- im gonna have to let you know
+- ill have to lyk
+- ill have to let you know
+- let me get back to you
+- let me get back to you later
+- let me get back to you on that
+- let me get back to you later on that
+- let me get back to you on that later

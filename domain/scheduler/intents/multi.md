@@ -32,7 +32,6 @@
 - i will know by [tomorrow](Day)
 - i will know by [next week](When)
 
-
 ## intent:time_of_day
 - [morning](TOD)
 - [afternoon](TOD)
@@ -51,33 +50,7 @@
 - i have more time in the [afternoon](TOD) look
 - [morning](TOD) could work, depending on what time
 
-## intent:ask_which_day
-- which days good for you
-- which day is good for you
-- whats a good day for you
-- what day works for you
-- which day works for you
-- what day is good for you
-- whats your calendar like
-- whats your calendar look like
-- whats the best day for you
-- what day is best for you
-- is there a specific day thats good for you
-- any particular day thats good for you
-- any particular day thats better for you
-- which is your best day
-- which is the best day
-- whats a good day
-- whats a good day for you
-- what day
-- what day works
-- what day works for you
-- any particular day
-- any pariticular day good
-- what day are you thinking
-- whats your best availability
-- what day is best for you
-- you tell me what day is good
+
 
 ## intent:change_day
 - can we change the day
@@ -488,88 +461,45 @@
 - can you hop on a call now
 
 
-### ~~~~~~~~~~~~~~~~~~~~ Call Logistics ~~~~~~~~~~~~~~~~~~~~
-
-## intent:oot
-- ill be OOT
-- i will be OOT
-- i will be out of town
-- i will be out of town [then](When)
-- i will be out of town [until then](When)
-- im planning a trip
-- im planning a trip [then](When)
-- i wont be in town
-- i wont be in town [then](When)
-- i dont think ill be around
-- i dont think ill be around [then](When)
-- ill be gone
-- ill be gone [then](When)
-- i will be gone
-- ill be away
-- i will be away
-- im going to be gone
-- im going to be away
-- im planning to be away that week
-- im planning to be away that day
-- im planning to be out of town then
-- ill be away [on the 4th](When)
-- ill be away [over the holidays](When)
-
-## get_back_to_you
-- i have to get back to you
-- i will have to get back to you
-- i will have to get back to you on that
-- ill lyk
-- i will lyk
-- ill have to lyk
-- i will have to let you know
-- im gonna have to lyk
-- im gonna have to let you know
-- ill have to lyk
-- ill have to let you know
-- let me get back to you
-- let me get back to you later
-- let me get back to you on that
-- let me get back to you later on that
-- let me get back to you on that later
-
 
 ## intent:multi_intent
 - Hi Forest, thank you for coming back to me and i would be keen to [set up a call](activity). Can you let me know what your availability is? Thanks, [Sarah](Nou)
 - Hi Forest thank you for getting back to me. I would be interested in [setting up a call](activity). Thanks very much, [Ann](Nou)
 - Hi Forest thank you for getting back to me. I would like to [set up a call](activity). Sincerely, [Bud](Nou)
 - Hi Forest, it's [lana](Nou) did you get the resumes i snt over? Let me know what you think of these candidates please.
-- Hi Forest thank you for getting back to me. I am interested in setting up a call. Sincerely, [Chuck](Nou)
+- Hi Forest thank you for getting back to me. I am interested in [setting up a call](activity). Sincerely, [Chuck](Nou)
 - Forest, I appreciate your reply to my Linked in message. What's a good time for a call you you? Best, [Lance](Nou)
-- Hello Forest, what's a good day for us to have a call? Best, [Trey](Nou)
+- Hello Forest, what's a good day for us to [have a call](activity)? Best, [Trey](Nou)
 - Hey Forest, did you get my email? Will you let me know your availability for a call? Best, [will](Nou)
-- hi forest, thanks for getting back to me and id like to set up a call. will you let me know what a good day is for you? thanks, [William](Nou)
-- hi forest, thanks for getting back to me can we set up a call? whats a good day for you? cheers, [will](Nou)
-- hi forest this is [Bill](Nou) from the acme company. Do you have time for a call this week?
-- forest, dan here from bci. whats your availability for a call this week?
-- hi forest, i sent you some resumes and wanted to see whats a good time to discuss? LMK! Best, [chip](Nou)
-- hi forest thank you for getting back to me and i would like to schedule a call. what is your availability this week? thanks, [pam](Nou)
-- hi forest thank you for getting back to me and i would like to schedule a call. what is your availability this week or next? thanks, [mel](Nou)
-- hi forest thank you for getting back to me, can we hop on a call. whats good for this week? thanks, [mel](Nou)
-- hi forest, good to hear from you. can you let me know your availability for a call? thanks, [angie](Nou)
-- hi forest, thank you for the email. (this is [james](Nou) btw) i would be interested to set up a call.
-- hi forest, i received your email and i would be interested in setting up a call.
-- hi forest this is [andy](Nou). do you have a time for a call this week? I have some interesting candidates for you.
+- hi forest, thanks for getting back to me and id like to [set up a call](activity). will you let me know what a good day is for you? thanks, [William](Nou)
+- hi forest, thanks for getting back to me can we [set up a call](activity)? whats a good day for you? cheers, [will](Nou)
+- hi forest this is [Bill](Nou) from the acme company. Do you [have time for a call](activity) [this week](when)?
+- forest, dan here from bci. whats your availability for [a call](activity) this week?
+- hi forest, i sent you some resumes and wanted to see whats a good time to [discuss](activity)? LMK! Best, [chip](Nou)
+- hi forest thank you for getting back to me and i would like to [schedule a call](activity). what is your availability this week? thanks, [pam](Nou)
+- hi forest thank you for getting back to me and i would like to [schedule a call](activity). what is your availability this week or next? thanks, [mel](Nou)
+- hi forest thank you for getting back to me, can we [hop on a call](activity). whats good for this week? thanks, [mel](Nou)
+- hi forest, good to hear from you. can you let me know your availability for [a call](activity)? thanks, [angie](Nou)
+- hi forest, thank you for the email. (this is [james](Nou) btw) i would be interested to [set up a call](activity).
+- hi forest, thank you for the email. (this is [james](Nou) btw) i would be interested in[setting up a call](activity).
+- hi forest, i received your email and i would be interested in [setting up a call](activity).
+- hi forest this is [andy](Nou). do you have a time for [a call](activity) this week? I have some interesting candidates for you.
 - hi forest this is [therese](Nou), what's your availability like this week? I sent some candidates your way
-- hi forest this is [tatiana](Nou). what's a good time for a call? I have some resumes to send your way.
+- hi forest this is [tatiana](Nou). what's a good time for [a call](activity).? I have some resumes to send your way.
 - hi forest this is [kevin](Nou) did you get the resumes i sent over
 - hi forest this is [igor](Nou) just checking in to see if you got the candidates I sent over
-- hi forest, this is [chip](Nou) i sent you some resumes and wanted to see whats a good time to discuss? LMK!
-- hi forest it's [pam](Nou) thank you for getting back to me and i would like to schedule a call. what is your availability this week? thanks!
-- hi forest it's [mel](Nou) thank you for getting back to me and i would like to schedule a call. what is your availability this week or next? thanks
+- hi forest, this is [chip](Nou) i sent you some resumes and wanted to see whats a good time to [discuss](activity)? LMK!
+- hi forest it's [pam](Nou) thank you for getting back to me and i would like to [schedule a call](activity). what is your availability this week? thanks!
+- hi forest it's [mel](Nou) thank you for getting back to me and i would like to [schedule a call](activity). what is your availability this week or next? thanks
+- hi forest it's [mel](Nou) thank you for getting back to me and i would like to [book a call](activity). what is your availability this week or next? thanks
 - hy forest it’s [roger](Nou) have you had a chance to look at those resumes i sent
-- hey forest this is [andy](Nou) thank you for getting back to me, can we hop on a call. whats good for this week?
+- hey forest this is [Andy Tsang](PERSON) thank you for getting back to me, can we [hop on a call](activity) whats good for this week?
 - hey forest this is [barry](Nou) got time for [a call](activity) this week?
 - hey  this is [cal](Nou) we spoke on the phone.
 - hey forest its [dan](Nou) did you get a chance to look at the candidates i sent you
 - hello forest its [eric](Nou) have you had a chance to review the candidates
 - hello forest this is [felicia](Nou). did you get the candidates i sent over
-- Hey Forest, Love to set up a call. [Freddie](Nou) Scope Personel
+- Hey Forest, Love to set up a call. [Paul](Nou) Acme Personel
 - hi forest this is [arlo](Nou) thank you for getting back to me, can we [hop on a call](activity). whats good for this week?
 - hi forest this is [barbara](Nou) got time for [a call](activity) this week?
 - hi this is [rachel](Nou) we spoke on the phone.
@@ -579,7 +509,7 @@
 - hi forest it's [don](Nou). just following up on my email
 - hi forest it's [ron](Nou). i received your email and
 - hi forest it's [chelsea](Nou). great talking to you
-- hi forest this is [arlo](Nou), thank you for getting back to me, can we hop on a call. whats good for this week?
+- hi forest this is [arlo](Nou), thank you for getting back to me, can we [hop on a call](activity). whats good for this week?
 - hi forest this is [barbara](Nou), got time for a call this week?
 - hi this is [rachel](Nou), we spoke on the phone.
 - hi forest its [chris](Nou), did you get a chance to look at the candidates i sent you
@@ -598,7 +528,9 @@
 - Hi [Forest](forest) it's [Raymond](Nou), can we set up [a call](activity) please?
 - hi zoro, it's [chris](Nou) are you able to set up [a call](activity) with [forest](forest)
 - hey forest this is [Jean Luc Pierre](PERSON). I was wondering if you mihght have some time for us to schedule a call, maybe this week or next?
-- Forest asked me to text you to set up a time for he and I to have a call. Please let me know when we can do that. TY [Gene](NAME)
+- Forest asked me to text you to set up a time for he and I to [have a call](activity). Please let me know when we can do that. TY [Gene](NAME)
+
+
 
 
 ## intent:multi_intent_no_name

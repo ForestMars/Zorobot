@@ -192,8 +192,7 @@ intents:
 - lost_the_plot
 - nvrmnd
 - i_just_told_you
-- change_day_or_time
-- change_date_or_time
+
 - same_time_or_different
 - so_am_i
 - me_too
@@ -202,31 +201,44 @@ intents:
 - vague_when
 - do_you_like
 
-# ~~~~~~~~~~ Scheduler
+
+# ~~~~~~~~~~ Kill
+- suggest_day_forest
 - schedule_meeting
 - schedule_call
+- when_is_good
+- ask_which_day
+
+# ~~~~~~~~~~ Scheduler
+- lets_do
+- can_we_do_something
+
+- ask_availability
+- suggest_availability
+- suggest_date
+- suggest_time
+
+- change_day_or_time
+- change_date_or_time
+
+- suggest_different_day
+- suggest_different_date
+- suggest_different_time
+
 - search_for_meeting
 - time_of_day
 - following_up
-- ask_availability
-- ask_which_day
 - ask_to_confirm_call
 - ask_are_we_confirmed
 - affirm_day
 - affirm_time
+
 - best_email_is
 - best_number_is
 - check_cal
 - do_you_have_my_number
 - do_you_have_my_email
-- get_back_to_you
-- suggest_day
-- suggest_date
-- suggest_day_forest
-- suggest_different_day
-- suggest_different_date
-- suggest_different_time
-- suggest_time
+
 - whats_your_number
 - whats_your_email
 - should_i_call_you
@@ -235,6 +247,8 @@ intents:
 - looking_forward
 - meet_up
 - will_lyk
+- get_back_to_you
+
 
 # ~~~~~~~~~~ Logistics / Making Plans
 - dinner
@@ -315,9 +329,9 @@ intents:
 - awesome
 - metoo
 - backup
-- lets_do_something
-- can_we_do_something
-- when_is_good
+
+
+
 - enthusiasm
 - saymyname
 - when_will_you

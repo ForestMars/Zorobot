@@ -57,5 +57,9 @@
 - did you enjoy it
 
 ## intent:mask
+- masker
 - wearing mask
 - wearing a mask
+- anit-masker
+- not wearing mask
+- not wearing a mask

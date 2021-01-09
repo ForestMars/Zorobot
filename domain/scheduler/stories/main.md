@@ -1,5 +1,5 @@
 ## lets do
-* lets_do_something OR can_we_do_something
+* lets_do OR can_we_do_something
   - utter_sure_we_can
   - utter_ask_day
 * suggest_day
@@ -75,6 +75,8 @@
 * ask_availability OR following_up
   - utter_ask_who
 * thisis
+  - utter_nicetohearfromu
+  - utter_sure_we_can
   - utter_ask_day
 
 ## who and time

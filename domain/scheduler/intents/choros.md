@@ -1,6 +1,25 @@
 
 ## ~~~~~~~~~~~~~~~~~~~~ Coming and Going ~~~~~~~~~~~~~~~~~~~~  
 
+### this should be a synonym for different
+## intent:better_day
+- actually [sun](Day) is bettter
+- actually [mon](Day) is bettter
+- actually [tue](Day) is bettter
+- actually [wed](Day) is bettter
+- actually [thu](Day) is bettter
+- actually [thur](Day) is bettter
+- actually [fri](Day) is bettter
+- actually [sat](Day) is bettter
+- actually [sunday](Day) is bettter
+- actually [monday](Day) is bettter
+- actually [tuesday](Day) is bettter
+- actually [wednesday](Day) is bettter
+- actually [thursday](Day) is bettter
+- actually [friday](Day)
+- actually [saturday](Day)
+
+
 ## intent:omw
 - omw
 - on my way

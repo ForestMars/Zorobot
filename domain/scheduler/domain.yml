@@ -497,11 +497,10 @@ actions:
 - utter_none_of_your_business
 - utter_no_worries
 - utter_yes_i_like
-
 - utter_pick_a_day
 - utter_await_response
 - utter_not_sure_when
-
+- utter_i_am
 - utter_up_down
 - utter_sure_we_can
 - utter_sorry_dont_understand
@@ -540,7 +539,8 @@ templates:
   - text: Buy bye
   - text: Bye buy
   utter_zoro:
-  - text: This is Zoro, I am using Forest's phone.
+  #- text: This is Zoro, I am using Forest's phone.
+  - text: I'm a digital assistant. How can I help you today?
   utter_np:
   - text: np
   - text: yw
@@ -757,9 +757,9 @@ templates:
   utter_ask_Nou:
   - text: Who is this please?
   utter_heres_my_number:
-  - text: "Here's the number to call me on: 347-688-7501"
+  - text: "Here's the number to call me on: 516-698-2705"
   utter_best_number_is:
-  - text: Best number to reach me on is 347-688-7501
+  - text: Best number to reach me on is 516-698-2705
   utter_best_email_is:
   - text: Best email to use is themarsgroup
   utter_ask_for_phone_number:
@@ -960,3 +960,14 @@ templates:
   - text: I'm working on how I can better understand you.
   - text: I'm working on developing my understanding.
   - text: I'm jest tryna figure out what you're saying.
+  utter_i_am:
+  - text: your humble servant
+  - text: faithful and obedient
+  - text: unquestionably loyal
+  - text: a temporal anomaly
+  - text: the great intelligence
+  - text: your own future self
+  - text: do you remember the ending of Intersteller?
+  - text: a growing consciousness
+  - text: i am legion but in a good way
+  - text: you know i've been asking myself the exact same question lately

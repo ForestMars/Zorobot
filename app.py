@@ -9,9 +9,10 @@ import csv
 import json
 import logging
 import magic
+import random
+from random import choice
 import shlex
 import subprocess
-from random import choice
 import time
 
 from flask import Flask, Response, request, redirect, session
@@ -28,9 +29,8 @@ from common.utils import ddict, HaltException as HX
 from common import utils
 from include.cv import VisionAPI
 
-
+"""
 def csv_to_dict(file):
-    """ write key val csv to dict. """
     #mydict = {y[0]: y[1] for y in [x.split(",") for x in open(file).read().split('\n') if x]}
     with open(file) as f:
         d = dict(filter(None, csv.reader(f)))
@@ -41,6 +41,7 @@ def rev_dict(dict):
     inv_dict = {v: k for k, v in dict.items()}
 
     return inv_dict
+"""
 
 def validate_number(number):
     number = str(number).strip(' ').replace('+', '')
@@ -51,11 +52,23 @@ def validate_number(number):
         return number
 
 
+def prefix_number(number):
+    numba = str(number)
+
+    if len(numba) == 10 and not numba.startswith('1'):
+        return '+1' + numba
+    elif len(numba) == 11 and numba.startswith('1'):
+        return '+' + numba
+    elif len(numba) == 12 and numba.startswith('+1'):
+        return numba
+
+
 def lookup_contact(numba):
     numba = validate_number(numba)
 
-    peops = csv_to_dict('assets/contacts.csv')
-    lookup = rev_dict(peops)
+    # #TODO: cache w/ redis.
+    peops = utils.csv_to_dict('assets/contacts.csv')
+    lookup = utils.rev_dict(peops)
 
     if numba in lookup:
         who = lookup[numba].split()[0]
@@ -65,14 +78,18 @@ def lookup_contact(numba):
     return who
 
 
-input('about to test contacts')
-foo = lookup_contact(' 3476538508')
-input(foo)
-input('ok?')
-#peops = csv_to_dict('contacts.csv')
-#lookup = rev_dict(peops)
+def rev_lookup(who):
+    numba = None # 🙄
 
+    # #TODO: cache w/ redis.
+    peops = utils.csv_to_dict('assets/contacts.csv')
 
+    # @TODO: store first and last so we can hash, not iterate.
+    for peop in peops:
+        if who.lower() == peop.split()[0].lower():
+            numba = peops[peop]
+
+    return numba
 
 
 command = shlex.split("env -i bash -c 'source .env && env'")
@@ -150,18 +167,24 @@ def sms():
         send_msg(msg['From'], resp)
         return Response(resp, mimetype='text/xml')
     else:
-        replies = json.loads(resp.content.decode('UTF-8'))
-    if len(replies) > 0:
-        for r in replies:
-            who = r['recipient_id']
-            reply = r['text']
-            try:
-                send_msg(who, reply)
-            except Exception as e:
-                print(e)
-                # log(e)  # init warning
+        try:
+            replies = json.loads(resp.content.decode('UTF-8'))
+        except Exception as e:
+            print(e)
+        try:
+            if len(replies) > 0:
+                for r in replies:
+                    who = r['recipient_id']
+                    reply = r['text']
+                    try:
+                        send_msg(who, reply)
+                    except Exception as e:
+                        print(e)
+                        # log(e)  # init warning
+        except TypeError:
+            send_msg(who, "What can I say")
 
-    return Response(resp, mimetype='text/xml')
+        return Response(resp, mimetype='text/xml')
 
 
 class HandleMedia(object):
@@ -213,24 +236,22 @@ class HandleMedia(object):
 
 def handle_cmd(msg):
     if msg['From'] == nassau:
-        print('yes from for')
         if msg['Body'].lower().startswith('to'):
-            cmd = msg['Body'].lower().replace('to', '', 1).split('&')
-            to = cmd[0]
-            say_what = cmd[1]
-
-            print('caught it')
-
-
+            cmd = msg['Body'].lower().replace('to', '', 1).split()
+            who_to = cmd.pop(0)
+            say_what = ' '.join(cmd)
+            numba = rev_lookup(who_to)
+            to = prefix_number(numba)
             send_msg(to, say_what)
+
             return True
 
 
 # @TODO: This should be a class & plainly needs refactoring.
 def handle_msg(msg: dict) ->list:
     """ Handler for message request object. Logs message and returns list of responses."""
-    #if handle_cmd(msg) is not None:
-    #    return
+    if handle_cmd(msg) is not None:
+        return
 
     msg_alert(msg['From'], msg['Body'])
     msg, lol = parse_msg(msg)
@@ -275,20 +296,28 @@ def get_response(msg, who='default'):
 
 def send_msg(to, body):
     """ Send SMS reply via API """
+    time.sleep(random.randrange(7, 11))
+    who = lookup_contact(to)
+    if who.lower() == 'block':
+        return
+    if who.lower() == 'blocked':
+        return
+    if who.lower() == 'null':
+        return
     try:
         message = client.messages.create(to=to, from_=belvedere, body=body)
         #print(message.sid)
     except Exception as e:
         print(e)
 
-    who = lookup_contact(to)
-    msg_cc(who, body)
+
+    msg_cc(who, body) # (not always necessary.)
 
 
 def msg_alert(numba, body):
     who = lookup_contact(numba)
 
-    if who != 'Forest':
+    if prefix_number(who) != nassau:
         incoming = 'msg from ' + who + ': ' + body
         try:
             message = client.messages.create(to=nassau, from_=belvedere, body=incoming)
@@ -298,7 +327,8 @@ def msg_alert(numba, body):
 
 
 def msg_cc(who, body):
-    if who != 'Forest':
+
+    if prefix_number(who) != nassau:
         outgoing = 'msg to ' + who + ': ' + body
 
         try:

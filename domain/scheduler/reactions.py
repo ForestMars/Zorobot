@@ -1,6 +1,6 @@
 # actions.py - Define custom actions for message responses
 # -*- coding: utf-8 -*-
-
+# @TODO: Better logging. 
 
 import datetime
 import json
@@ -363,12 +363,25 @@ class ActionUpdateContacts(Action):
         return "action_update_contacts"
 
     def run(self, dispatcher, tracker, domain):
-        name = tracker.get_slot('Nou')
-        if name:
-            # if number.isnumeric():
-            number = tracker.sender_id.replace('+1', '') # tracker.current_state()["sender_id"]
-            sch.update_contacts(name, number)
+        slots = []
+        if tracker.get_slot('PERSON'):
+            person = tracker.get_slot('PERSON')
+        elif tracker.get_slot('Nou'):
+            name = tracker.get_slot('Nou')
+        if 'person' in locals() and 'name' not in locals(): # Python-speak for "if person and not name" #cringe
+            name = person.split()[0]
+            slots.append(SlotSet('Nou', name))
+        elif 'name' in locals() and 'person' not in locals(): # Srsly, it's just so dirty.
+            person = name
 
+        try:
+            number = tracker.sender_id.replace('+1', '') # tracker.current_state()["sender_id"]
+            if number.strip() != 'default':
+                sch.update_contacts(person, number)
+        except:
+            print("Can't imagine.")
+
+        return slots
 
 class EmailForm(FormAction):
     def name(self):

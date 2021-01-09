@@ -18,6 +18,26 @@
 - do i know u
 - who's this
 - whos this
+- who dis
+- new phone who dis
+- i dont know who you are
+- seriously who is this
+- i have a new phone, who is this
+- who is this please? i have a new phone
+- i actually can't see who this is
+- i don't have this number saved
+- youre not in my contacts, who is this
+- youre not in my contacts, who is this please
+- whos this? i dont have your number
+- may i ask whos number this is
+- may i ask whose number this is
+- i dont have your number saved, who is this please?
+- i dont have your number saved- who is this please?
+- Aloha - I don’t have your number saved- who is this please?
+- for some reason i dont have this number in my phone
+- sorry who is this
+- sorry who are you
+
 
 ### ~~~ GENERAL CHITCHAT ~~~ ###
 
@@ -108,11 +128,13 @@ _ zztop
 - are you zoro
 - are you the scheduler
 - are you the assistant
-- are you [forest's](fm) assistant
 - is this the scheduler
-- is this [forest's](fm) scheduler
-- are you forest's helper
-- are you forests dog
+
+## intent:who_are_you
+- who are you
+- who am i talking to
+- who do i have the pleasure of speaking with
+
 
 ## intent:go_for_walk
 - are you ready to go

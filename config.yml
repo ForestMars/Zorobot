@@ -11,7 +11,7 @@ pipeline:
 # - name: "supervised_embeddings"
 
 - name: "nlp_spacy"                   # loads the spacy language model
-#  case_sensitive: true
+  case_sensitive: true
 
 - name: "tokenizer_spacy"             # splits the sentence into tokens
 ####- name: "featurizer_spacy"            # also added

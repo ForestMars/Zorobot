@@ -61,6 +61,35 @@ def fopen(filepath, mode):
     yield file
     file.close()
 
+def csv_to_dict(file):
+    """ write key val csv to dict. """
+    #mydict = {y[0]: y[1] for y in [x.split(",") for x in open(file).read().split('\n') if x]}
+    with open(file) as f:
+        d = dict(filter(None, csv.reader(f)))
+
+    return d
+
+# @FIXME: THis should really check for duplcate keys before committing.
+def rev_dict(dict):
+    """ In node.js, this would be a module. """ # 🤣
+    inv_dict = {v: k for k, v in dict.items()}
+
+    return inv_dict
+
+
+def dict_to_csv(d, file):
+    with open(file, 'w') as f:
+        for key in d.keys():
+            f.write("%s,%s\n"%(key, d[key]))
+
+
+def dict_to_csv_(d, file):
+    """ Saves dictionary to a csv with 1 row for keys and 1 row for values. """
+    with open(file, 'w') as f:
+        w = csv.DictWriter(f, d.keys())
+        w.writeheader()
+        w.writerow(d)
+
 
 ## file system utilities
 

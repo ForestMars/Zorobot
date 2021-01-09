@@ -86,9 +86,11 @@
 - definitely
 - yes i do
 - sure
+- sure why not
 - yes sure
 - you got it
 - works for me
+- we could do that
 - that works
 - yes that sounds good
 - yes lets do that
@@ -854,8 +856,6 @@
 - rstart
 - retstr
 - resatrt
-- rere
-- re
 - please restart
 - bot restart
 - restart bot
@@ -863,6 +863,7 @@
 - lets start from the beginning
 - lets start from the beginning again
 - could we start again please
+- can we try this again
 - lets try this again
 - do over
 - asd

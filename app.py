@@ -29,6 +29,11 @@ from common.utils import ddict, HaltException as HX
 from common import utils
 from include.cv import VisionAPI
 
+try:
+    from config.lists import real_time
+except:
+    real_time = []
+
 """
 def csv_to_dict(file):
     #mydict = {y[0]: y[1] for y in [x.split(",") for x in open(file).read().split('\n') if x]}
@@ -296,7 +301,6 @@ def get_response(msg, who='default'):
 
 def send_msg(to, body):
     """ Send SMS reply via API """
-    time.sleep(random.randrange(7, 11))
     who = lookup_contact(to)
     if who.lower() == 'block':
         return
@@ -304,6 +308,7 @@ def send_msg(to, body):
         return
     if who.lower() == 'null':
         return
+
     try:
         message = client.messages.create(to=to, from_=belvedere, body=body)
         #print(message.sid)

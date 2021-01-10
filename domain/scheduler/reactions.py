@@ -1,6 +1,6 @@
 # actions.py - Define custom actions for message responses
 # -*- coding: utf-8 -*-
-# @TODO: Better logging. 
+# @TODO: Better logging.
 
 import datetime
 import json
@@ -383,6 +383,7 @@ class ActionUpdateContacts(Action):
 
         return slots
 
+
 class EmailForm(FormAction):
     def name(self):
         return "email_form"
@@ -406,27 +407,13 @@ class EmailForm(FormAction):
                 dispatcher.utter_message("Got it.\n")
                 return email
 
-    # We don't need no steekin validate
-    """
-	def validate(self, dispatcher, tracker, domain):
-		try:
-			return super().validate(dispatcher, tracker, domain)
-		except Exception as e:
-			#print('Exception: ', e)
-			# could not extract entity
-			dispatcher.utter_message(email)
-			#dispatcher.utter_message(e)
-			#dispatcher.utter_message("Sorry, I didn't get that. \n")
-			return []
-	"""
-
     def submit(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict]:
         return []
 
 
 class NouForm(FormAction):
     def name(self):
-        return "Nou_form"
+        return "nou_form"
 
     @staticmethod
     def required_slots(tracker):

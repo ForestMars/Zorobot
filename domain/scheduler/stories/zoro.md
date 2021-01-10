@@ -37,8 +37,6 @@
 ## good dog
 * zoro_good
   - utter_zoro_thx
-* affirm
-  - utter_yum
 
 ## good dog but no treat
 * zoro_good

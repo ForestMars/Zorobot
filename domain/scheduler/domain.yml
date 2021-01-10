@@ -7,12 +7,13 @@ session_config:
 action_factory: remote
 
 forms:
-  - Nou_form
+  - nou_form
   - email_form
 
 
 entities:
   - fm
+  - forest
   - activity
   - appt
   - ETA
@@ -768,8 +769,10 @@ templates:
   - text: ok, {Time} is good for me too.
   utter_ask_email:
   - text: What's your best email?
-  utter_ask_Nou:
+  utter_ask_nou:
   - text: Who is this please?
+  utter_ask_Nou:
+  - text: Wait who is this please?
   utter_heres_my_number:
   - text: "Here's the number to call me on: 516-698-2705"
   utter_best_number_is:
@@ -975,13 +978,7 @@ templates:
   - text: I'm working on developing my understanding.
   - text: I'm jest tryna figure out what you're saying.
   utter_i_am:
-  - text: your humble servant
-  - text: faithful and obedient
-  - text: unquestionably loyal
-  - text: a temporal anomaly
-  - text: the great intelligence
-  - text: your own future self
-  - text: do you remember the ending of Intersteller?
-  - text: a growing consciousness
-  - text: i am legion but in a good way
-  - text: you know i've been asking myself the exact same question lately
+  - text: We're friends on facebook
+  - text: I have a Spanish name
+  - text: I joined facebook in 2016
+  - text: I'm trying to remember where we met!

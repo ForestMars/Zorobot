@@ -53,6 +53,11 @@
 - lets [meet up](activity)
 - lets [take in a film](activity)
 - lets [party like its 2999](activity)
+- Ok, so let's [set up that call](activity:have a call)
+- can we [set up that call](activity) now
+- can we [schedule our call](activity)
+- id like to [schedule a call](activity)
+- we were talking about [having a call](activity)
 - we should [get together](activity)
 - we should [get together](activity) [sometime](when)
 - we should [hang out](activity)
@@ -66,6 +71,8 @@
 - would like to [hang out](activity) with please
 - would like to [meet up](activity) with forest
 - would like to [meet up](activity) with please
+
+
 - are we able to [set up [a call](activity:have a call)
 - are you able to [schedule a call](activity:have a call)
 - are you able to [set up a call](activity:have a call)
@@ -101,6 +108,44 @@
 - would like to [book a call](activity:have a call) please
 - would like to [book a call](activity:have a call) with forest
 - would like to [book a call](activity:have a call) with forest please
+
+- are we able to [set up a call](activity:have a meeting)
+- are you able to [schedule a meeting](activity:have a meeting)
+- are you able to [set up a meeting](activity:have a meeting)
+- can i schedule a meeting with [Forest](forest)
+- can u pls set up a meeting for me and [Forest](forest)
+- can we [book a meeting](activity:have a meeting)
+- can we [make an appointment for a meeting](activity:have a meeting)
+- can we [plan a meeting](activity:have a meeting)
+- can we [schedule a meeting](activity:have a meeting)
+- can we [set up a meeting](activity:have a meeting)
+- can we plan to [have a meeting](activity)
+- can you [book a meeting](activity:have a meeting)
+- can you [book a meeting](activity:have a meeting) for me
+- can you [schedule a meeting](activity:have a meeting)
+- can you [schedule a meeting](activity:have a meeting) for me
+- can you [set up a meeting](activity:have a meeting) for me
+- can you please schedule a meeting with [Forest](forest)
+- hi would like to [book a meeting](activity:have a meeting) please
+- hi would like to [book a meeting](activity:have a meeting) with forest
+- hi would like to [book a meeting](activity:have a meeting) with forest please
+- i would like to [book a meeting](activity:have a meeting)
+- i would like to [set up a meeting](activity:have a meeting)
+- id like to [book a meeting](activity:have a meeting)
+- id like to schedule [a meeting](activity:have a meeting)
+- lets [have a meeting](activity)
+- lets [schdule a meeting](activity:have a meeting)
+- lets [set up a meeting](activity:have a meeting)
+- please schedule a meeting with [Forest](forest)
+- we should [have a meeting](activity)
+- we should [set up a meeting](activity:have a meeting)
+- when is a good time for us to [book a meeting](activity:have a meeting)
+- would like to [book a meeting](activity:have a meeting)
+- would like to [book a meeting](activity:have a meeting) please
+- would like to [book a meeting](activity:have a meeting) with forest
+- would like to [book a meeting](activity:have a call) with forest please
+
+
 
 
 ## intent:ask_availability

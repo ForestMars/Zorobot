@@ -419,6 +419,14 @@ class NouForm(FormAction):
     def required_slots(tracker):
         return ["Nou"]
 
+    def run(self, dispatcher, tracker, domain):
+        slots = []
+        if tracker.get_slot('PERSON'):
+            person = tracker.get_slot('PERSON')
+            slots.append(SlotSet('Nou', person.split()[0]))
+            
+        return slots
+
     def submit(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict]:
         # Unfortunately, submit *always* fires even if the form was previously completed. So, yeah, just write more custom code as a workaround, right?
         #name = tracker.get_slot('Nou')

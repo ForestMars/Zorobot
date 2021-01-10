@@ -6,6 +6,7 @@ models/*
 
 # misc
 assets/contacts.csv
+convo_hist.txt
 dir_msg_test.py
 dir_mesg_test.py
 xyz

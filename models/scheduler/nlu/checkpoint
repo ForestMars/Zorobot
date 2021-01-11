@@ -1,0 +1,2 @@
+model_checkpoint_path: "/Users/forestmars/Repoman/zorobot1/models/scheduler/nlu/component_4_EmbeddingIntentClassifier.ckpt"
+all_model_checkpoint_paths: "/Users/forestmars/Repoman/zorobot1/models/scheduler/nlu/component_4_EmbeddingIntentClassifier.ckpt"

@@ -2,7 +2,7 @@
 .idea
 
 # Models are built for target architecture.
-models/*
+# models/*
 
 # misc
 assets/contacts.csv

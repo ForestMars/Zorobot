@@ -83,11 +83,8 @@
   - utter_nicetohearfromu
   - utter_sure_we_can
   - utter_ask_day
-  - utter_sorry
 * ask_availability
-  - utter_wunderbar
   - utter_pick_a_day
-  - utter_wunderbar
 
 ## suggest date
 * suggest_date

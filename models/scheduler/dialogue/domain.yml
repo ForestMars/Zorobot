@@ -998,7 +998,7 @@ templates:
   - text: Ok great {Nou}, Shall we confirm for {Day}, {month_name} {day_ordinal} at
       {time_hour}:{time_minutes}?
   utter_smiley:
-  - text: :-)
+  - text: 🙄
   utter_soami:
   - text: So am I!
   utter_sok:

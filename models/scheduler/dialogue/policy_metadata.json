@@ -119,7 +119,7 @@
     "rasa_core.policies.form_policy.FormPolicy",
     "rasa_core.policies.fallback.FallbackPolicy"
   ],
-  "trained_at": "20210110-232803",
+  "trained_at": "20210111-012751",
   "rasa_core": "0.13.8",
   "tensorflow": "1.12.0",
   "sklearn": "0.20.2"

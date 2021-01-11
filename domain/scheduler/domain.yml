@@ -532,12 +532,10 @@ actions:
 - utter_zoro_origin
 - utter_zorobot
 - utter_working_on
+- utter_im_anna
 
 
 templates:
-  utter_default:
-  - text: I am sorry, I didn't get that. Could you please repeat your query?
-  - text: I am not sure what you are aiming for.
 
 # General
   utter_greet:
@@ -563,34 +561,55 @@ templates:
   - text: You're welcome
   - text: You're very welcome
   - text: No problem.
+  utter_hiyou:
+  - text: Hey you
+  - text: Hi you
+  - text: Hello you
+  - text: Oh, you!
+  - text: I was just thinking of you
+  utter_hiu:
+  - text: Hi you.
+  utter_ok:
+  - text: Ok
+  utter_timeofday:
+  - text: Good morning
+  utter_thatshow:
+  - text: that's how!
+  utter_yes:
+  - text: Yes.
+  utter_yw:
+  - text: yw
+  utter_good2hear:
+  - text: Good to hear!
+  utter_no_worries:
+  - text: No worries!
+  utter_k:
+  - text: k
+  utter_sure:
+  - text: Sure.
+  utter_pretty_sure:
+  - text: I'm pretty sure, anyway.
+  utter_notsure:
+  - text: Not sure.
+  utter_thx:
+  - text: thx
+  utter_thanks:
+  - text: Thanks, I really appreciate it.
 
-# Super (fold into super class)
+# Catch Phrases
+  utter_ikr:
+  - text: I know, right?
+
+
+# Super Sentiments (fold into super class)
+  utter_super:
+  - So much {super}
   utter_awesome:
   - text: Awesome!
   utter_cool:
   - text: cool
-
-# Idle talk / Pithy
-  utter_forsooth:
-  - text: Forsooth
-  utter_wink_gmta:
-  - text: GMTA
-
-
-# Tryna Help You
-  utter_domybest:
-  - text: I'll do my best
-  - text: I'll try my best
-  - text: I'll try to answer as best I can
-
-  utter_familiar:
-  - text: That sounds fmailiar
-  utter_fine:
-  - text: As fine as a bee's wing! 🐝 How are you?
-
-
-
-# Super Sentiments
+  utter_nice:
+  - text: Nice!
   utter_super_good:
   - text: Really good to hear
   utter_super_great:
@@ -602,16 +621,8 @@ templates:
   - text: Hope springs eternal
   utter_gladicanamuse:
   - text: Glad I can amuse you.
-
-
-  utter_hiyou:
-  - text: Hey you
-  - text: Hi you
-  - text: Hello you
-  - text: Oh, you!
-  - text: I was just thinking of you
-  utter_hiu:
-  - text: Hi you.
+  utter_wunderbar:
+  - text: Wunderbar!
 
   utter_hru:
   - text: How's everything with you?
@@ -619,112 +630,28 @@ templates:
   - text: Work is good, thanks for asking.
   - text: My company is doing well, thanks for asking.
 
-
-
-  utter_here4u:
-  - text: I'm here for you.
-  - text: I'm here for you. Or at least my chatbot is anyway
-  utter_icanfeelit:
-  - text: I can feel it!
-  utter_icanseewhy:
-  - text: I can see why you would have that impression
-
-# Catch Phrases
-  utter_ikr:
-  - text: I know, right?
-  utter_k:
-  - text: k
-
-# Logistics
-  utter_lmk_when_here:
-  - text: Ok, let me know when you're here, and I'll buzz you in.
-
-  utter_nice:
-  - text: Nice!
-
-# Chitchat
-  utter_sup:
-  - text: What's going on with you?
-  utter_sup_answer:
-  - text: Oh my, where to even start!
-  utter_who:
-  - text: Sorry I have a new phone, who is this?
-  utter_sok:
-  - text: s'okay, thx
-  - text: It's okay, thanks.
-  - text: s'alright
-  - text: s'alright, thx
-  - text: s'alright, thanks
-  utter_andyou:
-  - text: And how are you?
-
-# Exclamations & Sentiments
-  utter_soami:
-  - text: So am I!
   utter_sorry:
   - text: Sorry about that.
   utter_sorry2hear:
   - text: I'm sorry to hear that.
-  utter_pretty_sure:
-  - text: I'm pretty sure, anyway.
-  utter_notsure:
-  - text: Not sure.
-  utter_thx:
-  - text: thx
-  utter_thanks:
-  - text: Thanks, I really appreciate it.
-
-  utter_timeofday:
-  - text: Good morning
-  utter_thatshow:
-  - text: that's how!
-
-  utter_yes:
-  - text: Yes.
-
-  utter_yw:
-  - text: yw
-  utter_good2hear:
-  - text: Good to hear!
-  utter_no_worries:
-  - text: No worries!
+  utter_all_apologies:
+  - text: What else should I be? All apologies. -K. Cobain (literally the last song on his last album!)
 
 
-  utter_whatdoin:
-  - text: Oh you know, about a million things at once
-  - text: Same old, same old, lol
-  - text: Not much lol
-  utter_ask_upto:
-  - text: What are you up to?
-  utter_ask_howcanihelp:
-  - text: What can I help you with?
-  - text: How can I help?
-  - text: What can I do for you?
-  utter_ask_howfeeling:
-  - text: What are you up to?
-  utter_ask_whatdoin:
-  - text: What are you doing?
-  utter_ask_for_more_info:
-  - text: What can I clarify for you?
+  utter_who:
+  - text: Sorry I have a new phone, who is this?
+  utter_ask_nou:
+  - text: Who is this please?
+  utter_ask_Nou:
+  - text: Wait who is this please?
   utter_nicetohearfromu:
   - Nice to hear from you {Nou}
   utter_nicetomeetu:
   - Nice to meet you, {Nou}.
 
-  # Test Slots
-  utter_quality:
-  - I guess I am just too {quality}
-  utter_enjoy_din_with:
-  - text: I hope you enjoy your dinner with {Who}
-  - text: I hope you and {Who} enjoy your dinner.
-  utter_the_weather:
-  - text: The weather in {location} is FANTASTIC
-  utter_super:
-  - So much {super}
 
-  # Sceduler Bot
-  utter_zoro_greet:
-  - text: Hi, this is Forest's assitant, Zoro.
+# Sceduler Domain (@TODO: domain file for each domain)
+
   utter_ask_schedule_call:
   - text: Did you want to schedule a call?
   - text: Do you want to schedule a call?
@@ -751,6 +678,16 @@ templates:
   #- text: What's a good time for you to have a call on ({Day}) {month_name} {day_ordinal})?
   - text: What's a good time for you to have a call on ({Day}) {month_name} {day_of_month}?
   #- text: What's a good time for you to have a call on ({Day}) {month_and_date})?
+
+  utter_sure_we_can:
+  - text: Sure we can {activity}
+
+  utter_pick_a_day:
+  - text: What's your preferred day?
+  - text: What would be your preferred day?
+  - text: What's a particular day that's good for you?
+  - text: Jut about any day could work, depending on the time. What's a good day for you?
+
   utter_suggest_day:
   - text: How is Wednesday?
   utter_suggest_time:
@@ -763,10 +700,6 @@ templates:
   - text: ok, {Time} is good for me too.
   utter_ask_email:
   - text: What's your best email?
-  utter_ask_nou:
-  - text: Who is this please?
-  utter_ask_Nou:
-  - text: Wait who is this please?
 
   utter_repeat_email:
   - text: Ok, I will use {email} to send the invite
@@ -801,7 +734,6 @@ templates:
   - text: Please call me then
   - text: Will you please call me then?
 
-
   utter_ill_send_invite:
   - text: Ok, I'll send out a calendar invite.
   utter_lmk_you_dont_get_it:
@@ -827,31 +759,14 @@ templates:
   utter_topic_facebook:
   - text: Facebook is quite an effective waste of time.
   - text: I don't really "check Facebook" all that much.
-  utter_topic_camus:
-  - text: The Plague is actually one of my all time favourite novels since I read it in college.
+
   utter_i_will:
   - text: I will!
   utter_sorry_try_again:
   - text: Sorry I didn't quite get that, can you please rephrase?
   utter_im_a_scheduling_agent:
   - Ah ok, is there something else I can help you with?
-  utter_anything_else:
-  - text: Is there anything else I can help you with?
 
-  utter_ok:
-  - text: Ok
-
-  utter_when_will_you_be_back:
-  - text: Ah, hope it's a good trip! When will you be back?
-  - text: Ah, hope it's a good trip! When do you return?
-
-  utter_all_apologies:
-  - text: What else should I be? All apologies. -K. Cobain (literally the last song on his last album!)
-
-  utter_hope_to_make_it:
-  - text: Hope I can make it!
-  utter_sure:
-  - text: Sure.
   utter_send_invite:
   - text: I just sent a calendar invitation to {email}, please do lmk if you do not get it. (!!!)
   utter_until_we_meet:
@@ -864,25 +779,110 @@ templates:
   - text: Do we need to change the date or time?
   utter_ask_change_what:
   - text: Which do we need to change, the date or the time?
-  utter_looking_forward:
-  - text: Looking forward!
-  utter_az:
-  - text: One of my favourite letters!
 
   utter_ok_morning:
   - text: Ok, morning then.
   utter_ok_afternoon:
-  - text: Ok, morning then.
+  - text: Ok, afternoon then.
   utter_confirm_change_date_or_time:
   - text: Ok, you'd like to change the {date_or_time}, correct?
 
-# ETC
-  utter_shabbat:
-  - text: Shabbat shalom!
-  utter_smiley:
-  - text: 🙄
+  utter_looking_forward:
+  - text: Looking forward!
+
+
+# ANNA / Zoro
+  utter_anna:
+  - text: A Neural Net Acquaintance
+  - text: It stands for Neural Net Acquaintance
+  - text: It stands for my full name: A Neural Net Acquaintance
+  - text: A.N.N.A. - A Neural Net Acquaintance
+  - text: ANNA stands for A Neural Net Acquaintance
+  utter_im_anna:
+  - text: Hi, I'm ANNA! I mostly help with scheduling and stuff like that, but you can ask me anything.
+  utter_im_zoro:
+  - text: Hi, I'm ANNA! I mostly help with scheduling and stuff like that, but you can ask me anything.
+
+  utter_zorobot:
+  - text: Who can say for sure? There’s this thing called the Turing test…
+  - text: Well I'm sure not your grandparents' Eliza.
+  - text: Are you? It cuts both ways! 😉
+  - text: Are you saying you would like me less?
+
+  utter_working_on:
+  - text: I'm working on better understanding you.
+  - text: I'm working on how I can better understand you.
+  - text: I'm working on developing my understanding.
+  - text: I'm jest tryna figure out what you're saying.
+  utter_i_am:
+  - text: We're friends on facebook
+  - text: I have a Spanish name
+  - text: I joined facebook in 2016
+  - text: I'm trying to remember where we met!
+
+  utter_hope_to_make_it:
+  - text: Hope I can make it!
+
+  utter_ask_howcanihelp:
+  - text: What can I help you with?
+  - text: How can I help?
+  - text: What can I do for you?
+  utter_sorry_dont_understand:
+  - text: I'm sorry, I didn't understand that
+  utter_ask_for_more_info:
+  - text: What can I clarify for you?
+
+  utter_zoro_walk:
+  - text: You're kidding right? I ALWAYS want to go for a walk! I live for walks!!
+  utter_zoro_spoiled:
+  - text: I'm probably the most spoiled dog on the Upper East Side, which is really saying something.
+  utter_zoro_likes:
+  - text: Besides loving Forest, I love walks, treats, getting attention and most people.
+  utter_zoro_origin:
+  - text: I arrived here in a crystal spaceship from a distant galaxy to bring my message of love to evereyone.
+  utter_await_response:
+  - text: Ok, I await your update.
+  utter_zoro_greet:
+  - text: Hi, this is ANNA, I'm a digital assistant.
+  utter_zoro:
+  #- text: This is Zoro, I am using Forest's phone.
+  - text: I'm a digital assistant. How can I help you today?
+  utter_zoro_thx:
+  - text: Thanks! Do I get a treat with that?
+  utter_yum:
+  - text: Yum!
+  utter_intro_dog:
+  - text: What if I never find out... https://i.pinimg.com/736x/98/d6/26/98d626eb01a1096c1c24e97a1d94d183--so-funny-funny-dogs.jpg
+
+# Tryna Help You
+  utter_domybest:
+  - text: I'll do my best
+  - text: I'll try my best
+  - text: I'll try to answer as best I can
+  utter_familiar:
+  - text: That sounds fmailiar
+  utter_here4u:
+  - text: I'm here for you.
+  - text: I'm here for you. Or at least my chatbot is anyway
+  utter_icanfeelit:
+  - text: I can feel it!
+  utter_icanseewhy:
+  - text: I can see why you would have that impression
+  utter_anything_else:
+  - text: Is there anything else I can help you with?
+
+
+# Logistics
+  utter_lmk_when_here:
+  - text: Ok, let me know when you're here, and I'll buzz you in.
+  utter_when_will_you_be_back:
+  - text: Ah, hope it's a good trip! When will you be back?
+  - text: Ah, hope it's a good trip! When do you return?
+
 
 # Easter Eggs and Memes
+  utter_anyway:
+  - text: hemingway...
   utter_hereiam:
   - text: Here I am.
   utter_ihavenicethings:
@@ -910,19 +910,53 @@ templates:
   - text: Sorry, I think you mean Quincy Jones
   utter_whatsgoingon:
   - text: Link to song
+  utter_up_down:
+  - text: The opposite of down?
+  - text: The lightest of all known quarks?
+  - text: One third of a neutron? (A neutron is made up of 1 up quark + 2 down quarks.)
+  utter_forsooth:
+  - text: Forsooth
+  utter_wink_gmta:
+  - text: GMTA
 
-  utter_zoro:
-  #- text: This is Zoro, I am using Forest's phone.
-  - text: I'm a digital assistant. How can I help you today?
-  utter_zoro_thx:
-  - text: Thanks! Do I get a treat with that?
-  utter_yum:
-  - text: Yum!
-  utter_intro_dog:
-  - text: What if I never find out... https://i.pinimg.com/736x/98/d6/26/98d626eb01a1096c1c24e97a1d94d183--so-funny-funny-dogs.jpg
+# ETC
+  utter_shabbat:
+  - text: Shabbat shalom!
+  utter_smiley:
+  - text: 🙄
 
 
- # Misc Topic Responses
+# META
+  utter_restart:
+  - text: Ok, starting over.
+  utter_corona_bot:
+  - text: Please text any Covid related questions to the Corona Data Natural Language Server at {corona_bot}. \n You can also visit http://coda.to for pandemic data visualizations and epidemiological modeling.
+  utter_topic_camus:
+  - text: The Plague is actually one of my all time favourite novels since I read it in college.
+
+# @TODO: DELETE Chichat after confirming not being used
+  utter_fine:
+  - text: As fine as a bee's wing! 🐝 How are you?
+  utter_sup:
+  - text: What's going on with you?
+  utter_sup_answer:
+  - text: Oh my, where to even start!
+  utter_sok:
+  - text: s'okay, thx
+  - text: It's okay, thanks.
+  - text: s'alright
+  - text: s'alright, thx
+  - text: s'alright, thanks
+  utter_andyou:
+  - text: And how are you?
+  utter_whatdoin:
+  - text: Oh you know, about a million things at once
+  - text: Same old, same old, lol
+  - text: Not much lol
+  utter_ask_upto:
+  - text: What are you up to?
+
+# DELETE -- good ideas here, but need to be defined in a domain, or else it's just chitchat.
   utter_political:
   - text: Marx said that *everything* is political
   utter_thisyear:
@@ -932,79 +966,42 @@ templates:
   utter_weather:
   - text: The weather is nice
   - text: It's nice
-  utter_chitchat:
-  - text: I'm not too good at small talk, this number is only for scheduling meetings. If you'd like to have a general conversation, please use 347-688-7501 instead.
-  utter_momgood:
-  - text: Thanks for asking, mom is good. We talk nearly every day. {Who}
-  utter_wunderbar:
-  - text: Wunderbar!
-  - text: Super!
-  utter_anyway:
-  - text: hemingway...
-  utter_free:
-  - text: Free is the best way to feel
-  - text: Free to be you and me
-  - text: I feel free
-  utter_restart:
-  - text: Ok, starting over.
-  utter_corona_bot:
-  - text: Please text any Covid related questions to the Corona Data Natural Language Server at {corona_bot}. \n You can also visit http://coda.to for pandemic data visualizations and epidemiological modeling.
-  utter_up_down:
-  - text: The opposite of down?
-  - text: The lightest of all known quarks?
-  - text: One third of a neutron? (A neutron is made up of 1 up quark + 2 down quarks.)
-  utter_sure_we_can:
-  - text: Sure we can {activity}
-  utter_sorry_dont_understand:
-  - text: I'm sorry, I didn't understand that
-  utter_your_name:
-  - text: ok {Nou} {Nou_last}
-  utter_pick_a_day:
-  - text: What's your preferred day?
-  - text: What would be your preferred day?
-  - text: What's a particular day that's good for you?
-  - text: Jut about any day could work, depending on the time. What's a good day for you?
-
-
-
-  utter_im_zoro:
-  - text: Hi, I'm Zoro! I mostly help Forest with scheduling and stuff like that, but you can ask me anything.
-  utter_zoro_walk:
-  - text: You're kidding right? I ALWAYS want to go for a walk! I live for walks!!
-  utter_zoro_spoiled:
-  - text: I'm probably the most spoiled dog on the Upper East Side, which is really saying something.
-  utter_zoro_likes:
-  - text: Besides loving Forest, I love walks, treats, getting attention and most people.
-  utter_zoro_origin:
-  - text: I arrived here in a crystal spaceship from a distant galaxy to bring my message of love to evereyone.
-  utter_await_response:
-  - text: Ok, I await your update.
-
-  utter_zorobot:
-  - text: Who can say for sure? There’s this thing called the Turing test…
-  - text: Well I'm sure not your grandparents' Eliza.
-  - text: Are you? It cuts both ways! 😉
-  - text: Are you saying you would like me less?
+  utter_ask_whatdoin:
+  - text: What are you doing?
   utter_yes_i_like:
   - text: What's not to like about {qha}?
   - text: Can you think of a a good reason not to like {qha}?
   - text: I'm a dog, I like anything that isn't a threat.
   - text: I do, should I take it that you do too?
-  utter_working_on:
-  - text: I'm working on better understanding you.
-  - text: I'm working on how I can better understand you.
-  - text: I'm working on developing my understanding.
-  - text: I'm jest tryna figure out what you're saying.
-  utter_i_am:
-  - text: We're friends on facebook
-  - text: I have a Spanish name
-  - text: I joined facebook in 2016
-  - text: I'm trying to remember where we met!
-
-
+  utter_free:
+  - text: Free is the best way to feel
+  - text: Free to be you and me
+  - text: I feel free
+  utter_chitchat:
+  - text: I'm not too good at small talk, this number is only for scheduling meetings. If you'd like to have a general conversation, please use 347-688-7501 instead.
   utter_picky:
   - text: I'm picky!
   utter_not_sure_when:
   - text: Not sure when I will be {activity}, will lyk
   utter_none_of_your_business:
   - text: None of your business, LOL. \n It probably means I need to run an update. Thanks for telling me, I will run my self-diagnostics.
+# Defaut is not used. If we don't get a domain match, we just consider it general conversation.
+  utter_default:
+  - text: I am sorry, I didn't get that. Could you please repeat your query?
+  - text: I am not sure what you are aiming for.
+  utter_az:
+  - text: One of my favourite letters!
+# Test Slots
+  utter_quality:
+  - I guess I am just too {quality}
+  utter_enjoy_din_with:
+  - text: I hope you enjoy your dinner with {Who}
+  - text: I hope you and {Who} enjoy your dinner.
+  utter_the_weather:
+  - text: The weather in {location} is FANTASTIC
+  utter_ask_howfeeling:
+  - text: What are you up to?
+  utter_your_name:
+  - text: ok {Nou} {Nou_last}
+  utter_soami:
+  - text: So am I!

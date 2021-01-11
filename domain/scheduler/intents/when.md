@@ -145,21 +145,19 @@
 - would like to [book a meeting](activity:have a meeting) with forest
 - would like to [book a meeting](activity:have a call) with forest please
 
-
-
-
-
-
-
 ## intent:ask_availability
-- any pariticular [day](When) good
+- what is a good day
+- whats your best availability
+- whats your calendar like
+- whats your calendar look like
+- what [day](When)
 - any particular [day](When)
+- any pariticular [day](When) good
 - any particular [day](When) thats better for you
 - any particular [day](When) thats good for you
 - do you have a [day](When) in mind
 - do you have a preferred [day](When)
 - is there a specific [day](When) thats good for you
-- what [day](When)
 - what [day](When) are you thinking
 - what [day](When) is best for you
 - what [day](When) is good for you
@@ -169,9 +167,6 @@
 - whats a good [day](When)
 - whats a good [day](When) for you
 - whats the best [day](When) for you
-- whats your best availability
-- whats your calendar like
-- whats your calendar look like
 - which [day](When)
 - which [day](When) are you thinking
 - which [day](When) is best for you
@@ -187,7 +182,7 @@
 - which is the best [day](When) for you
 - which is your best availabile [day](When)
 - which is your best [day](When)
-- which your calendar look like
+- what does your calendar look like
 - you tell me what [day](When) is good
 - [whats a good day](When) to [get together](activity)
 - [When](When) is a good time for us to [get together](activity)
@@ -207,12 +202,12 @@
 - whats a good [day](When) to have [a call](activity)
 - whats a good [day](When) for us to have [a call](activity)
 - whats a good [day](When) for you to have [a call](activity)
-- what is a good time
 - what is a good time for [a call](activity)
 - whats a good time for [a call](activity)
 - is there a good time we can [speak](activity)
 - is there a good time for [a call](activity)
-- whats a good time for for [a call](activity)
+- whats a good time for [a call](activity)
+
 - when are you [free](activity)
 - when are you [going to be home](activity)
 - when are you [having dinner](activity)
@@ -230,6 +225,7 @@
 - when will you be [having dinner](activity)
 - when will you be [free](activity)
 - is there a good time to [discuss](activity)
+
 - when is a good time for us to [schedule a call](activity:have a call)
 - hey forest this is [Andy Tsang](PERSON) thank you for getting back to me, can we [hop on a call](activity) whats good for this week?
 - hey forest this is [barry](Nou) got time for [a call](activity) this week?

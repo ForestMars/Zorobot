@@ -56,39 +56,6 @@
 
 
 
-## intent:affirm_time
-- [10:00](Time) looks good
-- [200](Time) sounds good
-- [1000am](Time) looks good
-- [2pm](Time) looks good
-- [10:00](Time) looks good
-- [200](Time) looks good
-- [10:00](Time) is fine
-- [200](Time) should be fine
-- that time sounds good
-- that time should be fine
-- that time is just fine
-
-## intent:confirm_day_and_time
-- ok, [Wed](Day) at [10am](Time) it is
-- got it [Thursday](Day) at [10:00](Time) it is
-- great then well talk on [Tue](Day) at [3pm](Time)
-- confirmed talk you at [10:30](Time) on [Tuesday](Day)
-- [2:00 pm](Time) on [Monday](Day) confirmed
-- that day and time are fine with me
-- just added to my calendar [10:45](Time) on [Friday](Day)
-
-## intent:reject_day_or_time
-- no good
-- thats no good for me
-- ah thats no good for me
-- i have a conflict then
-- i have something then
-- no can do
-- ah no can do
-- sorry cant
-- whats your 2nd choice
-- whats your second choice
 
 
 ### ~~~~~~~~~~~~~~~~~~~~ Confirm Call ~~~~~~~~~~~~~~~~~~~~

@@ -54,16 +54,7 @@
 
 ### ~~~~~~~~~~~~~~~~~~~~~~~~~ React to proposed date time
 
-## intent:affirm_day
-- [monday](Day) is good for me
-- [tuesday](Day) is good for me
-- [wednesday](Day) works for me
-- [thursday](Day) could work
-- sure [friday](Day) sounds good
-- sure lets do that
-- yes thats good
-- that day is good
-- ok great lets do that
+
 
 ## intent:affirm_time
 - [10:00](Time) looks good
@@ -185,7 +176,6 @@
 - [otto@gmail](email)
 - [thatgy@hotmail](email)
 - [yang@yahoo](email)
-- [oldtimer@aol](email)
 - [clever.name@gmail](email)
 - [yang@yahoo](email)
 - [lisa@hotmail](email)
@@ -205,6 +195,7 @@
 - [benoit.mandelbroit@fractal.xyz](email)
 - [edward@witten.org](email)
 - [first.last@mydomain](email)
+- [oldschool@aol](email)
 - its [madam@curie.us](email)
 - its [me@me.me](email)
 - you can email at [foo@gmail.com](email)

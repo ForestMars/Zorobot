@@ -513,6 +513,7 @@ actions:
 - utter_no_worries
 - utter_yes_i_like
 - utter_pick_a_day
+- utter_picky
 - utter_await_response
 - utter_not_sure_when
 - utter_i_am
@@ -752,7 +753,8 @@ templates:
   utter_ask_time:
   - text: What's a good time for you?
   utter_ask_time_day:
-  - text: What's a good time for you to have a call {Day} {month_name} {day_ordinal}?
+  #- text: What's a good time for you to have a call {Day} {month_name} {day_ordinal}?
+  - text: What's a good time for you to {activity}?
   utter_ask_time_date:
   #- text: What's a good time for you to have a call on ({Day}) {month_name} {day_ordinal})?
   - text: What's a good time for you to have a call on ({Day}) {month_name} {day_of_month}?
@@ -959,7 +961,12 @@ templates:
   utter_await_response:
   - text: Ok, I await your update.
   utter_pick_a_day:
-  - text: What's a particular day that's good for you {DATE}?
+  - text: What's your preferred day?
+  - text: What would be your preferred day?
+  - text: What's a particular day that's good for you?
+  - text: Jut about any day could work, depending on the time. What's a good day for you?
+  utter_picky:
+  - text: I'm picky!
   utter_not_sure_when:
   - text: Not sure when I will be {activity}, will lyk
   utter_zorobot:

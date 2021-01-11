@@ -39,12 +39,6 @@
 - plague
 - 14 days to flatten the curve
 - i fucking hate covid it's ruining everything
-- masks
-- wear a mask
-- wearing masks
-- maskers
-- antimaskers
-- anti-maskers
 
 ## intent:ask_camus
 - what camus novel
@@ -63,3 +57,9 @@
 - anit-masker
 - not wearing mask
 - not wearing a mask
+- masks
+- wear a mask
+- wearing masks
+- maskers
+- antimaskers
+- anti-maskers

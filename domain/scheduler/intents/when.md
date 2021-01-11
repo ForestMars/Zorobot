@@ -148,6 +148,9 @@
 
 
 
+
+
+
 ## intent:ask_availability
 - any pariticular [day](When) good
 - any particular [day](When)
@@ -193,12 +196,17 @@
 - [whats a good day](When) to [meet](activity)
 - [When is a good time](When) for us to [meet up](activity)
 - whats [a good day](When) to [hang out in your garden](activity
-- whats a good day for you
-- whats a good day for you?
-- what is a good day for [a call](activity)
-- whats a good day to have [a call](activity)
-- whats a good day for us to have [a call](activity)
-- whats a good day for you to have [a call](activity)
+- whats a good [day](When) for you
+- whats a good [day](When) for you?
+- what [day](When) is good for you?
+- which [day](When) works for you
+- which [day](When) is good for you?
+- any particular [day](When) in mind?
+
+- what is a good [day](When) for [a call](activity)
+- whats a good [day](When) to have [a call](activity)
+- whats a good [day](When) for us to have [a call](activity)
+- whats a good [day](When) for you to have [a call](activity)
 - what is a good time
 - what is a good time for [a call](activity)
 - whats a good time for [a call](activity)
@@ -1019,6 +1027,20 @@
 - i have [2:30](Time) open
 - i have  [4:00](Time) available
 - you know what [11:45](Time) looks good
+- [monday](Day) is good for me
+- [tuesday](Day) is good for me
+- [wednesday](Day) works for me
+- [thursday](Day) could work
+- sure [friday](Day) sounds good
+- that [day](vague_when) is good
+- ok great lets do that
+- OK, [Thursday](Day) at 2:00 works for me
+- OK, [Friday](Day) at 3:00 works for me too
+- OK, [Monday](Day) at 1:00 is good for me
+- OK, [Tuesday](Day) at 4:00 is good for me too
+- great lets shoot for [monday](Day)
+- ok lets aim for [monday](Day)
+
 
 ## intent:suggest_different_date
 - can we do [aug 8](month_and_date) instead
@@ -1197,3 +1219,43 @@
 - whats a good time for us to have a call
 - can you let me know what a good time for a call might be
 - is there a particular time thats good for you
+
+
+
+
+
+
+
+## intent:affirm_time
+- [10:00](Time) looks good
+- [200](Time) sounds good
+- [1000am](Time) looks good
+- [2pm](Time) looks good
+- [10:00](Time) looks good
+- [200](Time) looks good
+- [10:00](Time) is fine
+- [200](Time) should be fine
+- that time sounds good
+- that time should be fine
+- that time is just fine
+
+## intent:confirm_day_and_time
+- ok, [Wed](Day) at [10am](Time) it is
+- got it [Thursday](Day) at [10:00](Time) it is
+- great then well talk on [Tue](Day) at [3pm](Time)
+- confirmed talk you at [10:30](Time) on [Tuesday](Day)
+- [2:00 pm](Time) on [Monday](Day) confirmed
+- that day and time are fine with me
+- just added to my calendar [10:45](Time) on [Friday](Day)
+
+## intent:reject_day_or_time
+- no good
+- thats no good for me
+- ah thats no good for me
+- i have a conflict then
+- i have something then
+- no can do
+- ah no can do
+- sorry cant
+- whats your 2nd choice
+- whats your second choice

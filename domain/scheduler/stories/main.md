@@ -62,9 +62,6 @@
 * lets_do OR can_we_do_something
   - utter_sure_we_can
   - utter_ask_day
-* suggest_availability
-  - action_check_day
-  - utter_ask_time_day
 
 ## availability
 * ask_availability
@@ -74,15 +71,9 @@
   - utter_nicetohearfromu
   - utter_sure_we_can
   - utter_ask_day
-* affirm
-  - utter_wunderbar
-  - utter_pick_a_day
-* suggest_day
+* suggest_availability
   - action_check_day
-  - utter_ask_time_day  
-
-
-
+  - utter_ask_time_day
 
 ## availability follow up negative
 * ask_availability
@@ -97,15 +88,6 @@
   - utter_wunderbar
   - utter_pick_a_day
   - utter_wunderbar
-* deny
-  - utter_wunderbar
-  - utter_pick_a_day
-
-
-## suggest day
-* suggest_day OR suggest_day_forest
-  - action_check_day
-  - utter_ask_time_day
 
 ## suggest date
 * suggest_date

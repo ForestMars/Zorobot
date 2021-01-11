@@ -12,8 +12,6 @@ dir_mesg_test.py
 xyz
 
 # Build directory and logs
-#build/src
-#build/setup.py
 logs
 logs/*
 nohup.out

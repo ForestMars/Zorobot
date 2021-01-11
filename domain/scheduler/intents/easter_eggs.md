@@ -1,6 +1,18 @@
 
 ### ~~~~~~~~~~~~~~~~~~~~~ Easter Eggs ~~~~~~~~~~~~~~~~~~~~
 
+## intent:anna
+- who are you
+- who is anna
+- who are i talking to
+- what is your identity
+- what does anna stand for
+- does anna stand for something
+- is that acronym
+- is anna an acronym
+- does your name stand for something
+- is your name an acronym
+
 ## intent:myhat
 - do you like my hat
 - Do you like my hat
@@ -19,14 +31,23 @@
 - my party hat do you like it
 
 ## intent:hello_bugmen
+- bugman
+- bugmen
+- bug men
+- the bugmen
+- the bug men
 - hello bugmen
 - hello bugmen got any coffee
+- hello bugmen have you got any coffee
+- hello bugmen have you got any coffee in there
 - hello bugmen do you have any coffee
 - hello bugmen do you have any coffee in there
 - hello bugmen you got any coffee
 - hello bugmen is there any coffee
 - hello bugmen is there any coffee in there
-- hello bugment were looking for coffee
+- hello bugmen were looking for coffee
+- is there coffee around
+- is there coffee to be found
 - bugmen coffee
 
 ## intent:life_is_good

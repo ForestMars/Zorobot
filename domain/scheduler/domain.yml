@@ -554,9 +554,6 @@ templates:
   - text: Bye the by and by
   - text: Buy bye
   - text: Bye buy
-  utter_zoro:
-  #- text: This is Zoro, I am using Forest's phone.
-  - text: I'm a digital assistant. How can I help you today?
   utter_np:
   - text: np
   - text: yw
@@ -567,7 +564,7 @@ templates:
   - text: You're very welcome
   - text: No problem.
 
-# Super
+# Super (fold into super class)
   utter_awesome:
   - text: Awesome!
   utter_cool:
@@ -622,15 +619,7 @@ templates:
   - text: Work is good, thanks for asking.
   - text: My company is doing well, thanks for asking.
 
-# Easter Eggs
-  utter_hereiam:
-  - text: Here I am.
-  utter_ihavenicethings:
-  - text: don't tell anyone, but I actually have nice things.
-  utter_robot:
-  - text: Robots are my next of kin.
-  utter_does_that_make_sense:
-  - text: Does that make sense?
+
 
   utter_here4u:
   - text: I'm here for you.
@@ -669,7 +658,7 @@ templates:
   utter_andyou:
   - text: And how are you?
 
-# Exclamations
+# Exclamations & Sentiments
   utter_soami:
   - text: So am I!
   utter_sorry:
@@ -689,13 +678,16 @@ templates:
   - text: Good morning
   utter_thatshow:
   - text: that's how!
-  utter_whatsgoingon:
-  - text: Link to song
+
+  utter_yes:
+  - text: Yes.
 
   utter_yw:
   - text: yw
   utter_good2hear:
   - text: Good to hear!
+  utter_no_worries:
+  - text: No worries!
 
 
   utter_whatdoin:
@@ -775,6 +767,17 @@ templates:
   - text: Who is this please?
   utter_ask_Nou:
   - text: Wait who is this please?
+
+  utter_repeat_email:
+  - text: Ok, I will use {email} to send the invite
+  - text: Ok, I will send the calendar invite to {email}
+  utter_ask_confirm:
+  - text: So then, ae we confirmed for {Day} at {Time} ?
+  - text: So then, ae we confirmed for {Time}on {Day} ?
+  utter_final_confirm:
+  - text: Ok we are confirmed for {Day} at {Time}. I'll look for your call then.
+  - text: As a final confirmation, our call is set for {Day} at {time_hour}:{time_minutes}. I'll look for your call then.
+
   utter_heres_my_number:
   - text: "Here's the number to call me on: 516-698-2705"
   utter_best_number_is:
@@ -797,17 +800,8 @@ templates:
   - text: Please call me
   - text: Please call me then
   - text: Will you please call me then?
-  utter_repeat_email:
-  - text: Ok, I will use {email} to send the invite
-  - text: Ok, I will send the calendar invite to {email}
-  utter_ask_confirm:
-  - text: So then, ae we confirmed for {Day} at {Time} ?
-  - text: So then, ae we confirmed for {Time}on {Day} ?
-  utter_final_confirm:
-  - text: Ok we are confirmed for {Day} at {Time}. I'll look for your call then.
-  - text: As a final confirmation, our call is set for {Day} at {time_hour}:{time_minutes}. I'll look for your call then.
-  utter_yes:
-  - text: Yes.
+
+
   utter_ill_send_invite:
   - text: Ok, I'll send out a calendar invite.
   utter_lmk_you_dont_get_it:
@@ -843,16 +837,17 @@ templates:
   - Ah ok, is there something else I can help you with?
   utter_anything_else:
   - text: Is there anything else I can help you with?
+
   utter_ok:
   - text: Ok
+
   utter_when_will_you_be_back:
   - text: Ah, hope it's a good trip! When will you be back?
   - text: Ah, hope it's a good trip! When do you return?
+
   utter_all_apologies:
   - text: What else should I be? All apologies. -K. Cobain (literally the last song on his last album!)
-  utter_money_money_money:
-  - text: https://www.youtube.com/watch?v=RYxJC3idnxk
-  - text: https://www.youtube.com/watch?v=-0kcet4aPpQ
+
   utter_hope_to_make_it:
   - text: Hope I can make it!
   utter_sure:
@@ -873,11 +868,7 @@ templates:
   - text: Looking forward!
   utter_az:
   - text: One of my favourite letters!
-  utter_quincy_jones:
-  - text: It's Quncy jones
-  - text: I'm Quincy Jones
-  - text: I'm really Quincy Jones
-  - text: Sorry, I think you mean Quincy Jones
+
   utter_ok_morning:
   - text: Ok, morning then.
   utter_ok_afternoon:
@@ -889,26 +880,48 @@ templates:
   utter_shabbat:
   - text: Shabbat shalom!
   utter_smiley:
-  - text: :-)
+  - text: 🙄
 
-  # Easter Eggs
+# Easter Eggs and Memes
+  utter_hereiam:
+  - text: Here I am.
+  utter_ihavenicethings:
+  - text: don't tell anyone, but I actually have nice things.
+  utter_robot:
+  - text: Robots are my next of kin.
+  utter_does_that_make_sense:
+  - text: Does that make sense?
   utter_cool_cat:
   - I'm sure {cat} is a cool cat.
   utter_jackie_chan:
   - text: Maybe ask Jackie Chan how did that happen!
   - text: I expect you are referring to the Jackie Chan meme (how did that happen??)
+  utter_money_money_money:
+  - text: https://www.youtube.com/watch?v=RYxJC3idnxk
+  - text: https://www.youtube.com/watch?v=-0kcet4aPpQ
   utter_stop_smoking:
   - text: Well I think you should stop smoking (what is the song that ends like that?)
   utter_noidonotlikeyourhat:
   - text: No, I do not like your hat.
-  utter_intro_dog:
-  - text: What if I never find out... https://i.pinimg.com/736x/98/d6/26/98d626eb01a1096c1c24e97a1d94d183--so-funny-funny-dogs.jpg
+  utter_quincy_jones:
+  - text: It's Quncy jones
+  - text: I'm Quincy Jones
+  - text: I'm really Quincy Jones
+  - text: Sorry, I think you mean Quincy Jones
+  utter_whatsgoingon:
+  - text: Link to song
+
+  utter_zoro:
+  #- text: This is Zoro, I am using Forest's phone.
+  - text: I'm a digital assistant. How can I help you today?
   utter_zoro_thx:
   - text: Thanks! Do I get a treat with that?
   utter_yum:
   - text: Yum!
-  utter_no_worries:
-  - text: No worries!
+  utter_intro_dog:
+  - text: What if I never find out... https://i.pinimg.com/736x/98/d6/26/98d626eb01a1096c1c24e97a1d94d183--so-funny-funny-dogs.jpg
+
+
  # Misc Topic Responses
   utter_political:
   - text: Marx said that *everything* is political
@@ -936,8 +949,6 @@ templates:
   - text: Ok, starting over.
   utter_corona_bot:
   - text: Please text any Covid related questions to the Corona Data Natural Language Server at {corona_bot}. \n You can also visit http://coda.to for pandemic data visualizations and epidemiological modeling.
-  utter_none_of_your_business:
-  - text: None of your business, LOL. \n It probably means I need to run an update. Thanks for telling me, I will run my self-diagnostics.
   utter_up_down:
   - text: The opposite of down?
   - text: The lightest of all known quarks?
@@ -948,6 +959,14 @@ templates:
   - text: I'm sorry, I didn't understand that
   utter_your_name:
   - text: ok {Nou} {Nou_last}
+  utter_pick_a_day:
+  - text: What's your preferred day?
+  - text: What would be your preferred day?
+  - text: What's a particular day that's good for you?
+  - text: Jut about any day could work, depending on the time. What's a good day for you?
+
+
+
   utter_im_zoro:
   - text: Hi, I'm Zoro! I mostly help Forest with scheduling and stuff like that, but you can ask me anything.
   utter_zoro_walk:
@@ -960,15 +979,7 @@ templates:
   - text: I arrived here in a crystal spaceship from a distant galaxy to bring my message of love to evereyone.
   utter_await_response:
   - text: Ok, I await your update.
-  utter_pick_a_day:
-  - text: What's your preferred day?
-  - text: What would be your preferred day?
-  - text: What's a particular day that's good for you?
-  - text: Jut about any day could work, depending on the time. What's a good day for you?
-  utter_picky:
-  - text: I'm picky!
-  utter_not_sure_when:
-  - text: Not sure when I will be {activity}, will lyk
+
   utter_zorobot:
   - text: Who can say for sure? There’s this thing called the Turing test…
   - text: Well I'm sure not your grandparents' Eliza.
@@ -989,3 +1000,11 @@ templates:
   - text: I have a Spanish name
   - text: I joined facebook in 2016
   - text: I'm trying to remember where we met!
+
+
+  utter_picky:
+  - text: I'm picky!
+  utter_not_sure_when:
+  - text: Not sure when I will be {activity}, will lyk
+  utter_none_of_your_business:
+  - text: None of your business, LOL. \n It probably means I need to run an update. Thanks for telling me, I will run my self-diagnostics.

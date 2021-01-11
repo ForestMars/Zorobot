@@ -67,20 +67,20 @@
 * ask_availability
   - nou_form
   - form{"name": "nou_form"}
-  - form{"name": null}
   - utter_nicetohearfromu
+  - form{"name": null}
   - utter_sure_we_can
   - utter_ask_day
 * suggest_availability
   - action_check_day
   - utter_ask_time_day
 
-## availability follow up negative
+## availability ping pong
 * ask_availability
   - nou_form
   - form{"name": "nou_form"}
-  - form{"name": null}
   - utter_nicetohearfromu
+  - form{"name": null}
   - utter_sure_we_can
   - utter_ask_day
 * ask_availability
@@ -262,9 +262,6 @@
   - utter_shall_we_confirm
 * deny
   - utter_ask_change_what
-
-
-
 
 
 ## goodbye

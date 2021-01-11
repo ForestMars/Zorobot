@@ -1,4 +1,4 @@
-### Scheduling-related Intents Training File for Appointment SCHEDULER Bot
+### Scheduling-related Intents Training File for Appointment SCHEDULER Domain
 
 ## intent:lets_do
 - are you able to [get together](activity)
@@ -72,7 +72,6 @@
 - would like to [meet up](activity) with forest
 - would like to [meet up](activity) with please
 
-
 - are we able to [set up [a call](activity:have a call)
 - are you able to [schedule a call](activity:have a call)
 - are you able to [set up a call](activity:have a call)
@@ -109,6 +108,7 @@
 - would like to [book a call](activity:have a call) with forest
 - would like to [book a call](activity:have a call) with forest please
 
+- are you [interviewing candidates](activity) [this week](When)
 - are we able to [set up a call](activity:have a meeting)
 - are you able to [schedule a meeting](activity:have a meeting)
 - are you able to [set up a meeting](activity:have a meeting)
@@ -470,14 +470,23 @@
 - how does [tuesday](Day) work for you
 - how does [wednesday](Day) work for you
 - how does [thursday](Day) work for you
-- how does [fiday](Day) work for you
+- how does [friday](Day) work for you
+- how does [friday](Day) look
+- how does [thursday](Day) look for you
+- how is [thursday](Day) for you
+- how is [friday](Day) looking
+- how is [wednesday](Day) looking for you?
 - how does [monday](Day) work for you
 - how does [tuesday](Day) work for you
 - how does [wednesday](Day) work for you
 - how does [thursday](Day) work for you
 - how does [fiday](Day) work for you
 - how about [monday](Day)
-- how about [tusday](Day)
+- how about [tuesday](Day)
+- how about [tueday](Day) this week
+- how about this week on [tuesday](Day)
+- how about next week on [monday](Day)
+- how about [monday](Day) of next week?
 - how about [wednsday](Day)
 - how about [thursday](Day)
 - how about [friday](Day)
@@ -529,6 +538,7 @@
 - rather can we do [wednesday](Day)
 - can we change the day
 - can we do a different day
+
 
 ## intent:suggest_date
 - [the 1st](Ordinal)
@@ -1164,6 +1174,10 @@
 - you got the [day](date_or_time) wrong
 - you got the [date](date_or_time) wrong
 - you got the [time](date_or_time) wrong
+- the [date](date_or_time) obviously
+- the [date](date_or_time) is missing
+- im not seeing the [date](date_or_time)
+- the [date](date_or_time) is wrong
 
 
 ## intent:suggest_different_time

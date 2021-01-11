@@ -444,266 +444,6 @@
         "text": "morning could work, depending on what time"
       },
       {
-        "intent": "affirm_time",
-        "entities": [
-          {
-            "start": 0,
-            "end": 5,
-            "value": "10:00",
-            "entity": "Time"
-          }
-        ],
-        "text": "10:00 looks good"
-      },
-      {
-        "intent": "affirm_time",
-        "entities": [
-          {
-            "start": 0,
-            "end": 3,
-            "value": "200",
-            "entity": "Time"
-          }
-        ],
-        "text": "200 sounds good"
-      },
-      {
-        "intent": "affirm_time",
-        "entities": [
-          {
-            "start": 0,
-            "end": 6,
-            "value": "1000am",
-            "entity": "Time"
-          }
-        ],
-        "text": "1000am looks good"
-      },
-      {
-        "intent": "affirm_time",
-        "entities": [
-          {
-            "start": 0,
-            "end": 3,
-            "value": "2pm",
-            "entity": "Time"
-          }
-        ],
-        "text": "2pm looks good"
-      },
-      {
-        "intent": "affirm_time",
-        "entities": [
-          {
-            "start": 0,
-            "end": 5,
-            "value": "10:00",
-            "entity": "Time"
-          }
-        ],
-        "text": "10:00 looks good"
-      },
-      {
-        "intent": "affirm_time",
-        "entities": [
-          {
-            "start": 0,
-            "end": 3,
-            "value": "200",
-            "entity": "Time"
-          }
-        ],
-        "text": "200 looks good"
-      },
-      {
-        "intent": "affirm_time",
-        "entities": [
-          {
-            "start": 0,
-            "end": 5,
-            "value": "10:00",
-            "entity": "Time"
-          }
-        ],
-        "text": "10:00 is fine"
-      },
-      {
-        "intent": "affirm_time",
-        "entities": [
-          {
-            "start": 0,
-            "end": 3,
-            "value": "200",
-            "entity": "Time"
-          }
-        ],
-        "text": "200 should be fine"
-      },
-      {
-        "intent": "affirm_time",
-        "text": "that time sounds good"
-      },
-      {
-        "intent": "affirm_time",
-        "text": "that time should be fine"
-      },
-      {
-        "intent": "affirm_time",
-        "text": "that time is just fine"
-      },
-      {
-        "intent": "confirm_day_and_time",
-        "entities": [
-          {
-            "start": 4,
-            "end": 7,
-            "value": "Wed",
-            "entity": "Day"
-          },
-          {
-            "start": 11,
-            "end": 15,
-            "value": "10am",
-            "entity": "Time"
-          }
-        ],
-        "text": "ok, Wed at 10am it is"
-      },
-      {
-        "intent": "confirm_day_and_time",
-        "entities": [
-          {
-            "start": 7,
-            "end": 15,
-            "value": "Thursday",
-            "entity": "Day"
-          },
-          {
-            "start": 19,
-            "end": 24,
-            "value": "10:00",
-            "entity": "Time"
-          }
-        ],
-        "text": "got it Thursday at 10:00 it is"
-      },
-      {
-        "intent": "confirm_day_and_time",
-        "entities": [
-          {
-            "start": 24,
-            "end": 27,
-            "value": "Tue",
-            "entity": "Day"
-          },
-          {
-            "start": 31,
-            "end": 34,
-            "value": "3pm",
-            "entity": "Time"
-          }
-        ],
-        "text": "great then well talk on Tue at 3pm"
-      },
-      {
-        "intent": "confirm_day_and_time",
-        "entities": [
-          {
-            "start": 22,
-            "end": 27,
-            "value": "10:30",
-            "entity": "Time"
-          },
-          {
-            "start": 31,
-            "end": 38,
-            "value": "Tuesday",
-            "entity": "Day"
-          }
-        ],
-        "text": "confirmed talk you at 10:30 on Tuesday"
-      },
-      {
-        "intent": "confirm_day_and_time",
-        "entities": [
-          {
-            "start": 0,
-            "end": 7,
-            "value": "2:00 pm",
-            "entity": "Time"
-          },
-          {
-            "start": 11,
-            "end": 17,
-            "value": "Monday",
-            "entity": "Day"
-          }
-        ],
-        "text": "2:00 pm on Monday confirmed"
-      },
-      {
-        "intent": "confirm_day_and_time",
-        "text": "that day and time are fine with me"
-      },
-      {
-        "intent": "confirm_day_and_time",
-        "entities": [
-          {
-            "start": 26,
-            "end": 31,
-            "value": "10:45",
-            "entity": "Time"
-          },
-          {
-            "start": 35,
-            "end": 41,
-            "value": "Friday",
-            "entity": "Day"
-          }
-        ],
-        "text": "just added to my calendar 10:45 on Friday"
-      },
-      {
-        "intent": "reject_day_or_time",
-        "text": "no good"
-      },
-      {
-        "intent": "reject_day_or_time",
-        "text": "thats no good for me"
-      },
-      {
-        "intent": "reject_day_or_time",
-        "text": "ah thats no good for me"
-      },
-      {
-        "intent": "reject_day_or_time",
-        "text": "i have a conflict then"
-      },
-      {
-        "intent": "reject_day_or_time",
-        "text": "i have something then"
-      },
-      {
-        "intent": "reject_day_or_time",
-        "text": "no can do"
-      },
-      {
-        "intent": "reject_day_or_time",
-        "text": "ah no can do"
-      },
-      {
-        "intent": "reject_day_or_time",
-        "text": "sorry cant"
-      },
-      {
-        "intent": "reject_day_or_time",
-        "text": "whats your 2nd choice"
-      },
-      {
-        "intent": "reject_day_or_time",
-        "text": "whats your second choice"
-      },
-      {
         "intent": "confirm_call",
         "text": "ok we are confirmed for"
       },
@@ -8977,6 +8717,24 @@
         "intent": "lets_do",
         "entities": [
           {
+            "start": 8,
+            "end": 31,
+            "value": "interviewing candidates",
+            "entity": "activity"
+          },
+          {
+            "start": 32,
+            "end": 41,
+            "value": "this week",
+            "entity": "When"
+          }
+        ],
+        "text": "are you interviewing candidates this week"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
             "start": 15,
             "end": 28,
             "value": "have a meeting",
@@ -9395,15 +9153,31 @@
       },
       {
         "intent": "ask_availability",
+        "text": "what is a good day"
+      },
+      {
+        "intent": "ask_availability",
+        "text": "whats your best availability"
+      },
+      {
+        "intent": "ask_availability",
+        "text": "whats your calendar like"
+      },
+      {
+        "intent": "ask_availability",
+        "text": "whats your calendar look like"
+      },
+      {
+        "intent": "ask_availability",
         "entities": [
           {
-            "start": 16,
-            "end": 19,
+            "start": 5,
+            "end": 8,
             "value": "day",
             "entity": "When"
           }
         ],
-        "text": "any pariticular day good"
+        "text": "what day"
       },
       {
         "intent": "ask_availability",
@@ -9416,6 +9190,18 @@
           }
         ],
         "text": "any particular day"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 16,
+            "end": 19,
+            "value": "day",
+            "entity": "When"
+          }
+        ],
+        "text": "any pariticular day good"
       },
       {
         "intent": "ask_availability",
@@ -9476,18 +9262,6 @@
           }
         ],
         "text": "is there a specific day thats good for you"
-      },
-      {
-        "intent": "ask_availability",
-        "entities": [
-          {
-            "start": 5,
-            "end": 8,
-            "value": "day",
-            "entity": "When"
-          }
-        ],
-        "text": "what day"
       },
       {
         "intent": "ask_availability",
@@ -9596,18 +9370,6 @@
           }
         ],
         "text": "whats the best day for you"
-      },
-      {
-        "intent": "ask_availability",
-        "text": "whats your best availability"
-      },
-      {
-        "intent": "ask_availability",
-        "text": "whats your calendar like"
-      },
-      {
-        "intent": "ask_availability",
-        "text": "whats your calendar look like"
       },
       {
         "intent": "ask_availability",
@@ -9791,7 +9553,7 @@
       },
       {
         "intent": "ask_availability",
-        "text": "which your calendar look like"
+        "text": "what does your calendar look like"
       },
       {
         "intent": "ask_availability",
@@ -10071,10 +9833,6 @@
       },
       {
         "intent": "ask_availability",
-        "text": "what is a good time"
-      },
-      {
-        "intent": "ask_availability",
         "entities": [
           {
             "start": 24,
@@ -10125,13 +9883,13 @@
         "intent": "ask_availability",
         "entities": [
           {
-            "start": 26,
-            "end": 32,
+            "start": 22,
+            "end": 28,
             "value": "a call",
             "entity": "activity"
           }
         ],
-        "text": "whats a good time for for a call"
+        "text": "whats a good time for a call"
       },
       {
         "intent": "ask_availability",
@@ -13410,12 +13168,72 @@
         "entities": [
           {
             "start": 9,
-            "end": 14,
-            "value": "fiday",
+            "end": 15,
+            "value": "friday",
             "entity": "Day"
           }
         ],
-        "text": "how does fiday work for you"
+        "text": "how does friday work for you"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 9,
+            "end": 15,
+            "value": "friday",
+            "entity": "Day"
+          }
+        ],
+        "text": "how does friday look"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 9,
+            "end": 17,
+            "value": "thursday",
+            "entity": "Day"
+          }
+        ],
+        "text": "how does thursday look for you"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 7,
+            "end": 15,
+            "value": "thursday",
+            "entity": "Day"
+          }
+        ],
+        "text": "how is thursday for you"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 7,
+            "end": 13,
+            "value": "friday",
+            "entity": "Day"
+          }
+        ],
+        "text": "how is friday looking"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 7,
+            "end": 16,
+            "value": "wednesday",
+            "entity": "Day"
+          }
+        ],
+        "text": "how is wednesday looking for you?"
       },
       {
         "intent": "suggest_availability",
@@ -13494,12 +13312,60 @@
         "entities": [
           {
             "start": 10,
-            "end": 16,
-            "value": "tusday",
+            "end": 17,
+            "value": "tuesday",
             "entity": "Day"
           }
         ],
-        "text": "how about tusday"
+        "text": "how about tuesday"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 10,
+            "end": 16,
+            "value": "tueday",
+            "entity": "Day"
+          }
+        ],
+        "text": "how about tueday this week"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 23,
+            "end": 30,
+            "value": "tuesday",
+            "entity": "Day"
+          }
+        ],
+        "text": "how about this week on tuesday"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 23,
+            "end": 29,
+            "value": "monday",
+            "entity": "Day"
+          }
+        ],
+        "text": "how about next week on monday"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 10,
+            "end": 16,
+            "value": "monday",
+            "entity": "Day"
+          }
+        ],
+        "text": "how about monday of next week?"
       },
       {
         "intent": "suggest_availability",
@@ -21426,6 +21292,54 @@
           }
         ],
         "text": "you got the time wrong"
+      },
+      {
+        "intent": "change_date_or_time",
+        "entities": [
+          {
+            "start": 4,
+            "end": 8,
+            "value": "date",
+            "entity": "date_or_time"
+          }
+        ],
+        "text": "the date obviously"
+      },
+      {
+        "intent": "change_date_or_time",
+        "entities": [
+          {
+            "start": 4,
+            "end": 8,
+            "value": "date",
+            "entity": "date_or_time"
+          }
+        ],
+        "text": "the date is missing"
+      },
+      {
+        "intent": "change_date_or_time",
+        "entities": [
+          {
+            "start": 18,
+            "end": 22,
+            "value": "date",
+            "entity": "date_or_time"
+          }
+        ],
+        "text": "im not seeing the date"
+      },
+      {
+        "intent": "change_date_or_time",
+        "entities": [
+          {
+            "start": 4,
+            "end": 8,
+            "value": "date",
+            "entity": "date_or_time"
+          }
+        ],
+        "text": "the date is wrong"
       },
       {
         "intent": "suggest_different_time",

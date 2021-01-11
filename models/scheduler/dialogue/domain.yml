@@ -16,9 +16,7 @@ actions:
 - utter_goodbye
 - utter_andyou
 - utter_anyway
-- utter_awesome
 - utter_bye
-- utter_cool
 - utter_denada
 - utter_domybest
 - utter_gladicanamuse
@@ -26,68 +24,14 @@ actions:
 - utter_hiu
 - utter_hru
 - utter_sntiment_hope2
-- utter_free
-- utter_fine
-- utter_forsooth
-- utter_wink_gmta
-- utter_super_good
-- utter_super_great
-- utter_hereiam
-- utter_here4u
-- utter_icanfeelit
-- utter_icanseewhy
-- utter_ihavenicethings
-- utter_jackie_chan
-- utter_ikr
-- utter_i_will
-- utter_lmk_when_here
-- utter_k
-- utter_momgood
-- utter_nice
-- utter_no
-- utter_np
-- utter_not_sure
-- utter_pretty_sure
-- utter_robot
-- utter_sup
-- utter_sup_answer
-- utter_sok
-- utter_shabbat
-- utter_smiley
-- utter_soami
-- utter_sorry
-- utter_sorry2hear
-- utter_thx
-- utter_thanks
-- utter_thatshow
-- utter_timeofday
-- utter_weather
-- utter_the_weather
-- utter_welcome
-- utter_whatsgoingon
-- utter_who
-- utter_yw
+- utter_ok
+- utter_no_worries
 - utter_default
-- utter_political
-- utter_thisyear
-- utter_pan_demic
-- utter_trump
-- utter_enjoy_din_with
-- utter_does_that_make_sense
-- utter_noidonotlikeyourhat
-- utter_whatdoin
+- utter_k
+- utter_your_name
 - utter_nicetohearfromu
-- utter_nicetomeetu
-- utter_cool_cat
-- utter_quality
-- utter_topic_camus
-- utter_topic_facebook
-- utter_answer_hru_prof
-- utter_ask_howcanihelp
-- utter_ask_upto
-- utter_ask_howfeeling
-- utter_ask_whatdoin
-- utter_ask_for_more_info
+- utter_sure_we_can
+- utter_pick_a_day
 - utter_ask_have_my_number
 - utter_ask_schedule_call
 - utter_ask_schedule_call_discuss
@@ -122,48 +66,36 @@ actions:
 - utter_yes
 - utter_ill_send_invite
 - utter_lmk_you_dont_get_it
-- utter_bot_help
-- utter_ask_are_you_tryna_schedule
-- utter_sorry_try_again
-- utter_im_a_scheduling_agent
-- utter_anything_else
-- utter_ok
-- utter_when_will_you_be_back
-- utter_all_apologies
-- utter_money_money_money
-- utter_hope_to_make_it
-- utter_sure
-- utter_yum
-- utter_send_invite
-- utter_until_we_meet
-- utter_glad_conversation
-- utter_u_c_where_im_going
 - utter_ask_change
 - utter_ask_change_what
-- utter_az
-- utter_quincy_jones
-- utter_ok_morning
-- utter_ok_afternoon
-- utter_stop_soking
-- utter_chitchat
 - utter_confirm_change_day_or_time
 - utter_confirm_change_date_or_time
+- utter_ok_morning
+- utter_ok_afternoon
+- utter_timeofday
+- utter_lmk_when_here
+- utter_super_good
+- utter_super_great
 - utter_wunderbar
+- utter_forsooth
+- utter_nice
+- utter_awesome
+- utter_cool
+- utter_no
+- utter_np
+- utter_not_sure
+- utter_pretty_sure
+- utter_who
+- utter_sup
+- utter_sup_answer
+- utter_sok
+- utter_sorry
+- utter_sorry2hear
+- utter_thx
+- utter_thanks
+- utter_yw
+- utter_welcome
 - utter_restart
-- utter_familiar
-- utter_corona_bot
-- utter_none_of_your_business
-- utter_no_worries
-- utter_yes_i_like
-- utter_pick_a_day
-- utter_picky
-- utter_await_response
-- utter_not_sure_when
-- utter_i_am
-- utter_up_down
-- utter_sure_we_can
-- utter_sorry_dont_understand
-- utter_your_name
 - utter_zoro
 - utter_zoro_greet
 - utter_zoro_thx
@@ -175,6 +107,70 @@ actions:
 - utter_zoro_origin
 - utter_zorobot
 - utter_working_on
+- utter_im_anna
+- utter_anna
+- utter_bot_help
+- utter_ask_are_you_tryna_schedule
+- utter_sorry_try_again
+- utter_im_a_scheduling_agent
+- utter_anything_else
+- utter_when_will_you_be_back
+- utter_all_apologies
+- utter_money_money_money
+- utter_hope_to_make_it
+- utter_sure
+- utter_yum
+- utter_send_invite
+- utter_until_we_meet
+- utter_glad_conversation
+- utter_u_c_where_im_going
+- utter_ask_for_more_info
+- utter_ask_howcanihelp
+- utter_sorry_dont_understand
+- utter_corona_bot
+- utter_bugmen
+- utter_quincy_jones
+- utter_robot
+- utter_shabbat
+- utter_stop_smoking
+- utter_wassup
+- utter_whatsgoingon
+- utter_wink_gmta
+- utter_noidonotlikeyourhat
+- utter_az
+- utter_chitchat
+- utter_familiar
+- utter_i_will
+- utter_free
+- utter_fine
+- utter_momgood
+- utter_none_of_your_business
+- utter_yes_i_like
+- utter_smiley
+- utter_soami
+- utter_thatshow
+- utter_weather
+- utter_the_weather
+- utter_political
+- utter_thisyear
+- utter_pan_demic
+- utter_trump
+- utter_enjoy_din_with
+- utter_does_that_make_sense
+- utter_whatdoin
+- utter_nicetomeetu
+- utter_cool_cat
+- utter_quality
+- utter_topic_camus
+- utter_topic_facebook
+- utter_answer_hru_prof
+- utter_ask_upto
+- utter_ask_howfeeling
+- utter_ask_whatdoin
+- utter_picky
+- utter_await_response
+- utter_not_sure_when
+- utter_i_am
 config:
   store_entities_as_slots: true
 entities:
@@ -722,6 +718,13 @@ templates:
       on his last album!)
   utter_andyou:
   - text: And how are you?
+  utter_anna:
+  - text: A Neural Net Acquaintance
+  - text: It stands for Neural Net Acquaintance
+  - text: It stands for my full name, A Neural Net Acquaintance
+  - text: ANNA A Neural Net Acquaintance
+  - text: ANNA stands for A Neural Net Acquaintance
+  - text: I'm ANNA, which stands for "A Neural Net Acquaintance"
   utter_answer_hru_prof:
   - text: Work is good, thanks for asking.
   - text: My company is doing well, thanks for asking.
@@ -780,7 +783,7 @@ templates:
   utter_ask_time_date:
   - text: What's a good time for you to have a call on ({Day}) {month_name} {day_of_month}?
   utter_ask_time_day:
-  - text: What's a good time for you to {activity}?
+  - text: What's a good time for you on {Day} {month_name} {day_ordinal} to {activity}?
   utter_ask_upto:
   - text: What are you up to?
   utter_ask_whatdoin:
@@ -906,9 +909,12 @@ templates:
   - text: Ok, I'll send out a calendar invite.
   utter_im_a_scheduling_agent:
   - text: Ah ok, is there something else I can help you with?
+  utter_im_anna:
+  - text: Hi, I'm ANNA! I mostly help with scheduling and stuff like that, but you
+      can ask me anything.
   utter_im_zoro:
-  - text: Hi, I'm Zoro! I mostly help Forest with scheduling and stuff like that,
-      but you can ask me anything.
+  - text: Hi, I'm ANNA! I mostly help with scheduling and stuff like that, but you
+      can ask me anything.
   utter_intro_dog:
   - text: What if I never find out... https://i.pinimg.com/736x/98/d6/26/98d626eb01a1096c1c24e97a1d94d183--so-funny-funny-dogs.jpg
   utter_jackie_chan:
@@ -922,8 +928,6 @@ templates:
   - text: Let me know if you don't get it
   utter_looking_forward:
   - text: Looking forward!
-  utter_momgood:
-  - text: Thanks for asking, mom is good. We talk nearly every day. {Who}
   utter_money_money_money:
   - text: https://www.youtube.com/watch?v=RYxJC3idnxk
   - text: https://www.youtube.com/watch?v=-0kcet4aPpQ
@@ -952,7 +956,7 @@ templates:
   utter_ok:
   - text: Ok
   utter_ok_afternoon:
-  - text: Ok, morning then.
+  - text: Ok, afternoon then.
   utter_ok_morning:
   - text: Ok, morning then.
   utter_pan_demic:
@@ -961,8 +965,8 @@ templates:
   - text: What's your preferred day?
   - text: What would be your preferred day?
   - text: What's a particular day that's good for you?
-  - text: Jut about any day could work, depending on the time. What's a good day for
-      you?
+  - text: Just about any day could work, depending on the time. What's a good day
+      for you?
   utter_picky:
   - text: I'm picky!
   utter_please_call_me:
@@ -1062,7 +1066,7 @@ templates:
   - text: You see where I'm going with this...
   utter_until_we_meet:
   - text: Until we meet again
-  utter_up_down:
+  utter_wassup:
   - text: The opposite of down?
   - text: The lightest of all known quarks?
   - text: One third of a neutron? (A neutron is made up of 1 up quark + 2 down quarks.)
@@ -1093,7 +1097,6 @@ templates:
   - text: I'm jest tryna figure out what you're saying.
   utter_wunderbar:
   - text: Wunderbar!
-  - text: Super!
   utter_yes:
   - text: Yes.
   utter_yes_i_like:
@@ -1110,14 +1113,13 @@ templates:
   utter_zoro:
   - text: I'm a digital assistant. How can I help you today?
   utter_zoro_greet:
-  - text: Hi, this is Forest's assitant, Zoro.
+  - text: Hi, this is ANNA, I'm a digital assistant.
   utter_zoro_greet_with_help:
   - text: I'm Zoro, Forest's scheduling bot. You can ask me about Forest's availability
       for a meeting by day or time, or tell me when you'd like to have a call with
       Forest.
   utter_zoro_likes:
-  - text: Besides loving Forest, I love walks, treats, getting attention and most
-      people.
+  - text: I love walks, treats, getting attention and most people.
   utter_zoro_origin:
   - text: I arrived here in a crystal spaceship from a distant galaxy to bring my
       message of love to evereyone.

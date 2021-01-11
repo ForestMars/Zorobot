@@ -68,7 +68,7 @@
 
 ## wassup
 * sup
-  - utter_up_down
+  - utter_wassup
 
 # wat doin  
 * what_are_you_doing

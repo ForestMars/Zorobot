@@ -17,25 +17,25 @@
     "utter_ask_change_what": {
       "slots": []
     },
+    "utter_pick_a_day": {
+      "slots": []
+    },
+    "nou_form": {
+      "slots": []
+    },
+    "utter_nicetohearfromu": {
+      "slots": []
+    },
     "utter_ask_time_date": {
       "slots": []
     },
     "utter_im_a_scheduling_agent": {
       "slots": []
     },
-    "utter_pick_a_day": {
-      "slots": []
-    },
     "utter_zoro_likes": {
       "slots": []
     },
     "utter_corona_bot": {
-      "slots": []
-    },
-    "nou_form": {
-      "slots": []
-    },
-    "utter_wunderbar": {
       "slots": []
     },
     "utter_im_zoro": {
@@ -56,7 +56,7 @@
     "utter_zoro_walk": {
       "slots": []
     },
-    "utter_up_down": {
+    "utter_wassup": {
       "slots": []
     },
     "utter_looking_forward": {
@@ -65,43 +65,37 @@
     "utter_ask_time_day": {
       "slots": []
     },
+    "utter_ask_schedule_call": {
+      "slots": []
+    },
+    "utter_working_on": {
+      "slots": []
+    },
+    "utter_zoro": {
+      "slots": []
+    },
+    "utter_ask_day": {
+      "slots": []
+    },
     "utter_ask_who": {
       "slots": []
     },
     "utter_greet": {
       "slots": []
     },
-    "utter_working_on": {
+    "utter_zoro_origin": {
       "slots": []
     },
-    "utter_zoro_thx": {
+    "utter_intro_dog": {
       "slots": []
     },
-    "utter_ask_schedule_call": {
-      "slots": []
-    },
-    "utter_ask_day": {
+    "utter_super_good": {
       "slots": []
     },
     "utter_zoro_spoiled": {
       "slots": []
     },
     "utter_zorobot": {
-      "slots": []
-    },
-    "utter_your_name": {
-      "slots": []
-    },
-    "utter_intro_dog": {
-      "slots": []
-    },
-    "utter_zoro": {
-      "slots": []
-    },
-    "utter_zoro_origin": {
-      "slots": []
-    },
-    "utter_super_good": {
       "slots": []
     }
   },
@@ -119,7 +113,7 @@
     "rasa_core.policies.form_policy.FormPolicy",
     "rasa_core.policies.fallback.FallbackPolicy"
   ],
-  "trained_at": "20210111-012751",
+  "trained_at": "20210111-053419",
   "rasa_core": "0.13.8",
   "tensorflow": "1.12.0",
   "sklearn": "0.20.2"

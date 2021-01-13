@@ -247,11 +247,25 @@ class ActionCheckTime(Action):
             when['am_pm'] = ampm  # ?
 
         confirm, message = sch.check_time_avail(when)
-        if confirm == 'yes':
-            dispatcher.utter_message("Yes, " + message)
+
+        if confirm == 'Yes':
+            if tracker.get_slot('activity') is not None:
+                activity = tracker.get_slot('activity')
+            else:
+                activity = 'do that'
+            message = ", we can {} at {}:{} {} on {} {} {}".format(
+                activity,
+                when['time_hour'],
+                when['time_minutes'],
+                when['am_pm'],
+                when['Day'],
+                when['month_name'],
+                when['day']
+                )
+            dispatcher.utter_message(confirm + message)
         elif confirm == 'no':
             # I can't believe you've done this.
-            dispatcher.utter_message("Sorry, " + message)
+            dispatcher.utter_message("Sorry, I have a conflict then, what's another time that works for you?")
 
         return slots
 
@@ -392,7 +406,6 @@ class EmailForm(FormAction):
     def required_slots(tracker):
         return ["email"]
 
-    # @FIXME: Unused 'val' param
     def validate_email(self, val, dispatcher, tracker, domain):
         if tracker.get_slot('email') is not None:
             email = tracker.get_slot('email')
@@ -419,12 +432,25 @@ class NouForm(FormAction):
     def required_slots(tracker):
         return ["Nou"]
 
+    # @TODO: move into preprocessors.
+    def preprocess_name(self, name):
+        name = name.replace('TY', '')
+        return name
+
+    # Needs refactoring, but preserve *NER* distincton between user's name and name of a person they are talking about.
     def run(self, dispatcher, tracker, domain):
         slots = []
         if tracker.get_slot('PERSON'):
             person = tracker.get_slot('PERSON')
+            person = self.preprocess_name(person)
+            name_greet = "Nice to hear from you " + person.split()[0]
             slots.append(SlotSet('Nou', person.split()[0]))
-            
+        if len(tracker.get_slot('Nou').strip()) > 0:
+            name = tracker.get_slot('Nou')
+            name_greet = "Nice to hear from you " + name
+        if name_greet:
+            dispatcher.utter_message(name_greet)
+
         return slots
 
     def submit(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict]:
@@ -435,9 +461,28 @@ class NouForm(FormAction):
         return []
 
 
+class ActionChat(Action):
+    """ User inputs not matching an active domain are considered general conversation and handled as such. """
+
+    def name(self):
+        return "action_chat"
+
+    def run(self, dispatcher, tracker, domain):
+
+        slots = []
+        user = (tracker.current_state())["sender_id"]
+        #input(tracker.latest_message)
+        message = tracker.latest_message['text'] # :-)
+        #dispatcher.utter_message(message)
+
+        response = chat.ask(user, message)
+        dispatcher.utter_message(response)
+
+        return slots
+
 
 class ActionRepeat(Action):
-    """ Repeats last thing bot said when the user asks (not sure why you would need this in threaded messaging apps) """
+    """ Repeats last thing bot said when the user asks (not sure why you would need this in threaded messaging apps, but I guess it's not too horrible a feature for voice assistants.) """
 
     def name(self) -> Text:
         return "action_repeat"
@@ -482,22 +527,3 @@ class ActionRepeatSomething(Action):
             i -= 1
 
         return []
-
-class ActionChat(Action):
-    """ User inputs not matching an active domain are considered general conversation and handled as such. """
-
-    def name(self):
-        return "action_chat"
-
-    def run(self, dispatcher, tracker, domain):
-
-        slots = []
-        user = (tracker.current_state())["sender_id"]
-        #input(tracker.latest_message)
-        message = tracker.latest_message['text'] # :-)
-        #dispatcher.utter_message(message)
-
-        response = chat.ask(user, message)
-        dispatcher.utter_message(response)
-
-        return slots

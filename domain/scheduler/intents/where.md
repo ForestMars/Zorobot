@@ -1,4 +1,48 @@
 
+## intent:where_to_meet
+- where should we meet
+- where do you want to meet
+- where would you like to meet
+- where would you like to meet up
+- where should we have lunch at
+- whats a good place to meet
+- do you have any recommendations
+- do you have any recommendations in the neighborhood
+- do you have any recommendations in your neighborhood
+- do you have any recommendations in your nabe
+- whats a good spot nearby
+- whats your favorite spot
+- do you have favorite place?
+
+- where should we meet for [lunch](activity)
+- where do you want to meet [lunch](activity)
+- where would you like to meet for [lunch](activity)
+- where would you like to meet up for [lunch](activity)
+- where should we have [lunch](activity)
+- where should we have [lunch](activity) at
+- whats a good place to meet for [lunch](activity)
+- do you have any [lunch](activity) recommendations
+- do you have any [lunch](activity) recommendations in the neighborhood
+- do you have any recommendations in your neighborhood
+- do you have any recommendations in your nabe
+- whats a good spot nearby
+- whats a good [lunch](activity) spot nearby
+- whats your favorite spot
+- do you have favorite place?
+- do you have any place in mind
+- got a place in mind?
+
+## intent suggest_place
+- let's meet at [Jean-Georges](restaurant)
+- how about we meet at [Blue Ribbon](restaurant)
+- do you have a [Blue Ribbon Sushi](restaurant) in your neighborhood
+- would you like to go to [Per Se](restaurant)
+- is [Flex Mussels](restaurant) open for lunch?
+
+
+
+
+
 ## ~~~~~~~~~~~~~~~~~~~~ Coming and Going ~~~~~~~~~~~~~~~~~~~~  
 
 ### this should be a synonym for different

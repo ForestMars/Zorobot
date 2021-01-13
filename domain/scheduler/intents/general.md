@@ -807,13 +807,17 @@
 - as i am too
 - as am i too
 
-
 ## intent:bye
 - Bye
 - Bbye
 - bai
 - Goodbye
 - goodbye
+- goodnight
+- good night
+- goodnight alice
+- goodnight bob
+- goodnight eve
 - See you
 - See you later
 - cu
@@ -822,13 +826,26 @@
 - cya l8r
 - bye
 - bye for now
-
-## intent:bye_fancy
+- ciao
+- ciao for now
+- chow
+- ciao4now
+- chow4now
+- thats enough
+- thats enough for now
+- no more for now
+- stop texting me
+- STOP
+- take me off your list
+- unsubscribe
+- buhbye
+- byebye
+- im out
+- im done
+- fin
 - catch you later
 - catch you outside
-- ciao
-- chow
-- ciao for now
+- chow for now
 - chow fun fat
 - have a nice day
 - TTYL

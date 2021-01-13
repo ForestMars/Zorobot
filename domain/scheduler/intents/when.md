@@ -1,9 +1,178 @@
 ### Scheduling-related Intents Training File for Appointment SCHEDULER Domain
 
 ## intent:lets_do
+
+- are we able to [set up [a call](activity:have a call)
+- are we able to [set up a call](activity:have a call)
+- are you [interviewing candidates](activity) [this week](When)
 - are you able to [get together](activity)
 - are you able to [hang out](activity)
 - are you able to [meet up](activity)
+- are you able to [schedule a call](activity:have a call)
+- are you able to [schedule a meeting](activity)
+- are you able to [set up a call](activity:have a call)
+- are you able to [set up a meeting](activity)
+
+- can i [schedule a meeting](activity) with [Forest](forest)
+- can i schedule a call with [Forest](forest)
+- can u pls set up a call for me and [Forest](forest)
+- can u pls set up a meeting for me and [Forest](forest)
+- can we [book a call](activity:have a call)
+- can we [book a meeting](activity:have a meeting)
+- can we [make an appointment for a call](activity:have a call)
+- can we [make an appointment for a meeting](activity:have a meeting)
+- can we [plan a call](activity:have a call)
+- can we [plan a meeting](activity:have a meeting)
+- can we [schedule a call](activity:have a call)
+- can we [schedule a meeting](activity:have a meeting)
+- can we [schedule our call](activity)
+- can we [set up a call](activity:have a call)
+- can we [set up a meeting](activity:have a meeting)
+- can we [set up that call](activity) now
+- can we plan to [have a call](activity)
+- can we plan to [have a meeting](activity)
+- can you [book a call](activity:have a call)
+- can you [book a call](activity:have a call) for me
+- can you [book a meeting](activity:have a meeting)
+- can you [book a meeting](activity:have a meeting) for me
+- can you [schedule a call](activity:have a call)
+- can you [schedule a call](activity:have a call) for me
+- can you [schedule a meeting](activity:have a meeting)
+- can you [schedule a meeting](activity:have a meeting) for me
+- can you [set up a call](activity:have a call) for me
+- can you [set up a meeting](activity:have a meeting) for me
+- can you arrange [a call](activity) for me
+- can you book [a call](activity) for me
+- can you please [schedule a call](activity) with [Forest](fm)
+- can you please [schedule a meeting](activity) with [Forest](fm)
+- can you please [set up a meeting](activity) with [Forest](fm)
+- can you please [plan a Zoom call](activity) with [forest](fm)
+- can you [schedule a call](activity) for me
+- can you [schedule a call](activity) on [forest's](fm:forest) calendar
+- can you [add a meeting](activity) to [forest's](fm:forest) calendar
+
+- Hey [forest](fm), Love to set up [a call](activity). [Paul](Nou) Acme Personel
+- hi would like to [book a call](activity:have a call) please
+- hi would like to [book a call](activity:have a call) with forest
+- hi would like to [book a Zoom call](activity:set up a Zoom call) with forest please
+- hi would like to [book a meeting](activity:have a meeting) please
+- hi would like to [book a meeting](activity:have a meeting) with [forest](fm)
+- hi would like to [book a meeting](activity:have a meeting) with [forest](fm) please
+- i want to [meet in your garden](activity)
+
+- i would like a [schedule a Zoom meeting](activity:Zoom)
+- i would like a [plan a Zoom call](activity:Zoom) so I can share my screen
+- i would like to [book a call](activity:have a call)
+- i would like to [book a meeting](activity:have a meeting)
+- i would like to [get together](activity)
+- i would like to [hang out](activity)
+- i would like to [meet up](activity)
+- i would like to [set up a call](activity:have a call)
+- i would like to [set up a meeting](activity:have a meeting)
+- id like to [book a call](activity:have a call)
+- id like to [book a meeting](activity:have a meeting)
+- id like to [get together](activity)
+- id like to [hang out](activity)
+- id like to [meet up](activity)
+- id like to [schedule a call](activity)
+- id like to [schedule a meeting](activity)
+- id like to schedule [a call](activity:have a call)
+- id like to schedule [a meeting](activity:have a meeting)
+
+- let's [meet in your garden](activity)
+- lets [get together](activity)
+- lets [go see a movie](activity)
+- lets [go to a show](activity)
+- lets [grab lunch](activity)
+- lets [grab lunch](activity) [sometime](when)
+- lets [hang out in your garden](activity)
+- lets [hang out](activity)
+- lets [have a call](activity)
+- lets [have a meeting](activity)
+- lets [have dinner](activity)
+- lets [meet up](activity)
+- lets [party like its 2999](activity)
+- lets [schdule a call](activity:have a call)
+- lets [schdule a meeting](activity:have a meeting)
+- lets [set up a call](activity:have a call)
+- lets [set up a meeting](activity:have a meeting)
+- lets [take in a film](activity)
+- Ok, so let's [set up that call](activity:have a call)
+
+- please [schedule a call](activity) with [Forest](forest)
+- please [schedule a meeting](activity) with [[forest](fm)](forest)
+
+- we should [get together](activity)
+- we should [get together](activity) [sometime](when)
+- we should [hang out](activity)
+- we should [hang out](activity) [sometime](when)
+- we should [have a call](activity)
+- we should [have a meeting](activity)
+- we should [meet up](activity)
+- we should [meet up](activity) [sometime](when)
+- we should [set up a call](activity:have a call)
+- we should [set up a meeting](activity:have a meeting)
+- we were talking about [having a call](activity)
+- whats a good day for a [meeting](activity:meet)
+- when is a good time for us to [book a call](activity:have a call)
+- when is a good time for us to [book a meeting](activity:have a meeting)
+
+- would like to [book a call](activity:have a call)
+- would like to [book a call](activity:have a call) please
+- would like to [book a call](activity:have a call) with forest
+- would like to [book a call](activity:have a call) with forest please
+- would like to [book a meeting](activity:have a call) with [forest](fm) please
+- would like to [book a meeting](activity:have a meeting)
+- would like to [book a meeting](activity:have a meeting) please
+- would like to [book a meeting](activity:have a meeting) with [forest](fm)
+- would like to [get together](activity) with forest
+- would like to [get together](activity) with please
+- would like to [hang out](activity) with forest
+- would like to [hang out](activity) with please
+- would like to [meet up](activity) with forest
+- would like to [meet up](activity) with please
+
+- i received your email and i would be interested in [setting up a call](activity).
+- i would like to schedule a call with [forest](fm)
+- I would like to set up a call with [forest](fm)
+- i would like to schedule a meeting with [forest](fm)
+- I would like to set up a meeting with [forest](fm)
+
+- i would like to book a meeting with [forest](fm)
+
+- i want to [meet in your garden](activity:hang out in the garden)
+- let's [meet in your garden](activity:hang out in the garden)
+- lets [hang out in your garden](activity:hang out in the garden)
+- do you want me to [come over](activity)
+- do you want me to [come over](activity) [tonight](when)
+
+## intent:ask_availability
+
+- what is a good day
+- whats your best availability
+- whats your calendar like
+- whats your calendar look like
+- what does your calendar look like
+
+- are you available to [meet up](activity) [this week](when)
+- are you available for a [meeting](activity) [this week](when)
+- are you available to [get together](activity) [this week](when)
+- are you available for [an on-site](activity:meet on site) [this week](when)
+- are you available for [an on site](activity:meet on-site) [this week](when)
+- are you available for [lunch](activity) [this week](when)
+- are you available for a [lunch](activity) [this week](when)
+- Are you available for a [meeting](activity) this week?
+- Are you available for a [meeting](activity) next week?
+- Are you available for a [meeting](activity) this week or next?
+- are you available for [a call](activity) this week?
+- are you available for [lunch](activity) next week?
+- are you able to interview engineering candidates [this week](When)
+- are you available for [an interview](Activity) [this week](When)
+- are you able to interview engineering candidates [next week](When)
+- are you scheduling interviews [this week](When)
+- are you interviewing candidates [next week](When)
+- are you interviewing engineers [this week](When)
+
 - can i [come over](activity) [this week](when)
 - can i [come over](activity) [today](when)
 - can i [come over](activity) [tomorrow](when)
@@ -13,143 +182,84 @@
 - can we [hang out in your garden](activity:hang out in the garden)
 - can we [hang out](activity)
 - can we [meet up](activity)
-- can we have a [zoom meeting](activity)
-- can we have a [zoom meeting](activity) to discuss
+- can we [have a zoom meeting](activity:Zoom)
+- can we [have a zoom meeting](activity:Zoom) to discuss
 - can we make a plan to [meet up](activity)
 - can we make an appointment to [get together](activity)
 - can we make an appointment to [hang out](activity)
 - can we make an appointment to [meet up](activity)
 - can we pick a time to [meet up](activity)
+- can we pick a time for [a zoom call](activity:Zoom) [this week](Whn)
 - can we plan a [meeting](activity)
 - can we plan to [get together](activity)
 - can we plan to [hang out](activity)
 - can we plan to [meet up](activity)
 - can we schedule a [meeting](activity)
 - can we set up a [meeting](activity) sometime
-- do you want me to [come over](activity)
-- do you want me to [come over](activity) [tonight](when)
-- i want to [meet in your garden](activity)
-- i want to [meet in your garden](activity:hang out in the garden)
-- i would like a [Zoom meeting](activity)
-- i would like a [Zoom meeting](activity) so I can share my screen
-- i would like to [get together](activity)
-- i would like to [hang out](activity)
-- i would like to [meet up](activity)
-- id like to [get together](activity)
-- id like to [hang out](activity)
-- id like to [meet up](activity)
-- id like to schedule a [meeting](activity)
-- let's [meet in your garden](activity)
-- let's [meet in your garden](activity:hang out in the garden)
-- lets [get together](activity)
-- lets [go see a movie](activity)
-- lets [go to a show](activity)
-- lets [grab lunch](activity)
-- lets [grab lunch](activity) [sometime](when)
-- lets [hang out in your garden](activity)
-- lets [hang out in your garden](activity:hang out in the garden)
-- lets [hang out](activity)
-- lets [have dinner](activity)
-- lets [meet up](activity)
-- lets [take in a film](activity)
-- lets [party like its 2999](activity)
-- Ok, so let's [set up that call](activity:have a call)
-- can we [set up that call](activity) now
-- can we [schedule our call](activity)
-- id like to [schedule a call](activity)
-- we were talking about [having a call](activity)
-- we should [get together](activity)
-- we should [get together](activity) [sometime](when)
-- we should [hang out](activity)
-- we should [hang out](activity) [sometime](when)
-- we should [meet up](activity)
-- we should [meet up](activity) [sometime](when)
-- whats a good day for a [meeting](activity)
-- would like to [get together](activity) with forest
-- would like to [get together](activity) with please
-- would like to [hang out](activity) with forest
-- would like to [hang out](activity) with please
-- would like to [meet up](activity) with forest
-- would like to [meet up](activity) with please
+- can we put [lunch](activity) on the calendar next week
+- can we put [lunch](activity) on the calendar for next week
+- can we [do lunch](activity)
+- can we [do lunch](activity) [this week](When)
+- can we [do lunch](activity) [next week](When)
+- can you [come in](activity) [this week](When)
+- can we [have a meeting](activity) [this week](When)
+- can you [take a meeting](activity) [next week](When)
 
-- are we able to [set up [a call](activity:have a call)
-- are you able to [schedule a call](activity:have a call)
-- are you able to [set up a call](activity:have a call)
-- can i schedule a call with [Forest](forest)
-- can u pls set up a call for me and [Forest](forest)
-- can we [book a call](activity:have a call)
-- can we [make an appointment for a call](activity:have a call)
-- can we [plan a call](activity:have a call)
-- can we [schedule a call](activity:have a call)
-- can we [set up a call](activity:have a call)
-- can we plan to [have a call](activity)
-- can you [book a call](activity:have a call)
-- can you [book a call](activity:have a call) for me
-- can you [schedule a call](activity:have a call)
-- can you [schedule a call](activity:have a call) for me
-- can you [set up a call](activity:have a call) for me
-- can you please schedule a call with [Forest](forest)
-- hi would like to [book a call](activity:have a call) please
-- hi would like to [book a call](activity:have a call) with forest
-- hi would like to [book a call](activity:have a call) with forest please
-- i would like to [book a call](activity:have a call)
-- i would like to [set up a call](activity:have a call)
-- id like to [book a call](activity:have a call)
-- id like to schedule [a call](activity:have a call)
-- lets [have a call](activity)
-- lets [schdule a call](activity:have a call)
-- lets [set up a call](activity:have a call)
-- please schedule a call with [Forest](forest)
-- we should [have a call](activity)
-- we should [set up a call](activity:have a call)
-- when is a good time for us to [book a call](activity:have a call)
-- would like to [book a call](activity:have a call)
-- would like to [book a call](activity:have a call) please
-- would like to [book a call](activity:have a call) with forest
-- would like to [book a call](activity:have a call) with forest please
+- do you have time for [lunch](activity:do lunch) this week?
+- will you have time for [lunch](activity:do lunch) this week?
+- got time for [lunch](activity:do lunch) [today](When)
+- got time for [lunch](activity:do lunch) [tomorrow](When)
+- got time for [lunch](activity:do lunch) [this week](When)
 
-- are you [interviewing candidates](activity) [this week](When)
-- are we able to [set up a call](activity:have a meeting)
-- are you able to [schedule a meeting](activity:have a meeting)
-- are you able to [set up a meeting](activity:have a meeting)
-- can i schedule a meeting with [Forest](forest)
-- can u pls set up a meeting for me and [Forest](forest)
-- can we [book a meeting](activity:have a meeting)
-- can we [make an appointment for a meeting](activity:have a meeting)
-- can we [plan a meeting](activity:have a meeting)
-- can we [schedule a meeting](activity:have a meeting)
-- can we [set up a meeting](activity:have a meeting)
-- can we plan to [have a meeting](activity)
-- can you [book a meeting](activity:have a meeting)
-- can you [book a meeting](activity:have a meeting) for me
-- can you [schedule a meeting](activity:have a meeting)
-- can you [schedule a meeting](activity:have a meeting) for me
-- can you [set up a meeting](activity:have a meeting) for me
-- can you please schedule a meeting with [Forest](forest)
-- hi would like to [book a meeting](activity:have a meeting) please
-- hi would like to [book a meeting](activity:have a meeting) with forest
-- hi would like to [book a meeting](activity:have a meeting) with forest please
-- i would like to [book a meeting](activity:have a meeting)
-- i would like to [set up a meeting](activity:have a meeting)
-- id like to [book a meeting](activity:have a meeting)
-- id like to schedule [a meeting](activity:have a meeting)
-- lets [have a meeting](activity)
-- lets [schdule a meeting](activity:have a meeting)
-- lets [set up a meeting](activity:have a meeting)
-- please schedule a meeting with [Forest](forest)
-- we should [have a meeting](activity)
-- we should [set up a meeting](activity:have a meeting)
-- when is a good time for us to [book a meeting](activity:have a meeting)
-- would like to [book a meeting](activity:have a meeting)
-- would like to [book a meeting](activity:have a meeting) please
-- would like to [book a meeting](activity:have a meeting) with forest
-- would like to [book a meeting](activity:have a call) with forest please
+- what [day](When) is good for you?
+- what is a good [day](When) for [a call](activity)
+- what is a good time for [a call](activity)
+- what's a good day for us to [have lunch](activity)
+- what's a good day for us to [have lunch](activity) [this week](When)
+- what's a good day for us to [meet up for lunch](activity)
+- what's a good day for us to [meet up for lunch](activity) [this week](When)
+- what's a good day to [have lunch](activity)
+- what's a good day to [have lunch](activity) [this week](When)
+- what's a good day to [meet up for lunch](activity)
+- what's a good day to [meet up for lunch](activity) [this week](When)
+- whats [a good day](When) to [hang out in your garden](activity
+- whats [the soonest](When) we can [schedule an interview](acvitity)
+- whats a good [day](When) for us to have [a call](activity)
+- whats a good [day](When) for you
+- whats a good [day](When) for you to have [a call](activity)
+- whats a good [day](When) for you?
+- whats a good [day](When) to have [a call](activity)
+- whats a good [day](When) to [get together](activity)
+- whats a good [day](When) to [hang out](activity)
+- whats a good [day](When) to [meet](activity)
+- whats a good [day](When) to [have a call](activity)
 
-## intent:ask_availability
-- what is a good day
-- whats your best availability
-- whats your calendar like
-- whats your calendar look like
+- whats a good time for [a call](activity:have a call)
+- whats a good time for [a zoom call](activity:schedule a zoom call)
+
+- [When is a good time](When) for us to [hang out](activity)
+- [When is a good time](When) for us to [meet up](activity)
+- [When](When) is a good time for us to [get together](activity)
+- when should we [have lunch](activity)
+
+- when are you [free](activity)
+- when are you [going to be home](activity)
+- when are you [having dinner](activity)
+- when are you [leaving for japan](activity)
+- when are you [leaving](activity)
+- when are you [painting](activity)
+- when are you [raking the leaves](activity)
+- when are you [working](activity)
+- when are you [doing band related stuff](activity)
+- when is a good time for us to [schedule a call](activity:have a call)
+- when will you be [doing band related stuff](activity)
+- when will you be [working](activity)
+- when will you be [painting](activity)
+- when will you be [leaving](activity)
+- when will you be [leaving for japan](activity)
+- when will you be [having dinner](activity)
+- when will you be [free](activity)
+
 - what [day](When)
 - any particular [day](When)
 - any pariticular [day](When) good
@@ -182,62 +292,28 @@
 - which is the best [day](When) for you
 - which is your best availabile [day](When)
 - which is your best [day](When)
-- what does your calendar look like
-- you tell me what [day](When) is good
-- [whats a good day](When) to [get together](activity)
-- [When](When) is a good time for us to [get together](activity)
-- [whats a good day](When) to [hang out](activity)
-- [When is a good time](When) for us to [hang out](activity)
-- [whats a good day](When) to [meet](activity)
-- [When is a good time](When) for us to [meet up](activity)
-- whats [a good day](When) to [hang out in your garden](activity
-- whats a good [day](When) for you
-- whats a good [day](When) for you?
-- what [day](When) is good for you?
-- which [day](When) works for you
 - which [day](When) is good for you?
-- any particular [day](When) in mind?
+- which [day](When) works for you
+- which [day](When) works for you for a [meeting](activity:meet)
+- which day is good for [lunch](activity:do lunch)
 
-- what is a good [day](When) for [a call](activity)
-- whats a good [day](When) to have [a call](activity)
-- whats a good [day](When) for us to have [a call](activity)
-- whats a good [day](When) for you to have [a call](activity)
-- what is a good time for [a call](activity)
-- whats a good time for [a call](activity)
+- hey [forest](fm), want to [have lunch](activity) this week](When)
+- hey [forest](fm) this is [Andy Tsang](PERSON) thank you for getting back to me, can we [hop on a call](activity) whats good for this week?
+- hey [forest](fm) this is [barry](Nou) got time for [a call](activity) this week?
+- Hey [forest](fm), did you get my email? Will you let me know your availability for a call? Best, [will](Nou)
+- Hi [forest](fm) thank you for getting back to me. I am interested in [setting up a call](activity). Sincerely, [Chuck](Nou)
+- Hi [forest](fm) thank you for getting back to me. I would be interested in [setting up a call](activity). Thanks very much, [Ann](Nou)
+- Hi [forest](fm) thank you for getting back to me. I would like to [set up a call](activity). Sincerely, [Bud](Nou)
+- hi [forest](fm) this is [tatiana](Nou). what's a good time for [a call](activity).? I have some resumes to send your way.
+- Hi [forest](fm), it's [lana](Nou) did you get the resumes i snt over? Let me know what you think of these candidates please.
+- Hi [forest](fm), thank you for coming back to me and i would be keen to [set up a call](activity). Can you let me know what your availability is? Thanks, [Sarah](Nou)
+- hi [forest](fm), this is [chip](Nou) i sent you some resumes and wanted to see whats a good time to [discuss](activity)? LMK!
+
+- any particular [day](When) in mind?
 - is there a good time we can [speak](activity)
 - is there a good time for [a call](activity)
-- whats a good time for [a call](activity)
-
-- when are you [free](activity)
-- when are you [going to be home](activity)
-- when are you [having dinner](activity)
-- when are you [leaving for japan](activity)
-- when are you [leaving](activity)
-- when are you [painting](activity)
-- when are you [raking the leaves](activity)
-- when are you [working](activity)
-- when are you [doing band related stuff](activity)
-- when will you be [doing band related stuff](activity)
-- when will you be [working](activity)
-- when will you be [painting](activity)
-- when will you be [leaving](activity)
-- when will you be [leaving for japan](activity)
-- when will you be [having dinner](activity)
-- when will you be [free](activity)
 - is there a good time to [discuss](activity)
-
-- when is a good time for us to [schedule a call](activity:have a call)
-- hey forest this is [Andy Tsang](PERSON) thank you for getting back to me, can we [hop on a call](activity) whats good for this week?
-- hey forest this is [barry](Nou) got time for [a call](activity) this week?
-- Hey Forest, did you get my email? Will you let me know your availability for a call? Best, [will](Nou)
-- Hi Forest thank you for getting back to me. I am interested in [setting up a call](activity). Sincerely, [Chuck](Nou)
-- Hi Forest thank you for getting back to me. I would be interested in [setting up a call](activity). Thanks very much, [Ann](Nou)
-- Hi Forest thank you for getting back to me. I would like to [set up a call](activity). Sincerely, [Bud](Nou)
-- hi forest this is [tatiana](Nou). what's a good time for [a call](activity).? I have some resumes to send your way.
-- Hi Forest, it's [lana](Nou) did you get the resumes i snt over? Let me know what you think of these candidates please.
-- Hi Forest, thank you for coming back to me and i would be keen to [set up a call](activity). Can you let me know what your availability is? Thanks, [Sarah](Nou)
-- hi forest, this is [chip](Nou) i sent you some resumes and wanted to see whats a good time to [discuss](activity)? LMK!
-
+- you tell me what [day](When) is good
 
 ## intent:suggest_availability
 - [Today](Day)
@@ -507,9 +583,13 @@
 - how does [friday](Day) look like for you
 - can we do a call on [tuesday](Day)
 - how is your availability looking on [tuesday](Day)
+- shall we say [thursday](Day)
+- shall we say [thursday](Day) then?
+- shall we confirm for [tuesday](Day) then?
 
 
-## intent:suggest_different_day- [friday](Day) is better for me
+## intent:suggest_different_day
+- [friday](Day) is better for me
 - [thursday](Day) is better for me
 - are you able to do [wednesday](Day) instead
 - can we chage it to [tomorrow](Day) instead

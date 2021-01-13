@@ -30,6 +30,8 @@ actions:
 - utter_k
 - utter_your_name
 - utter_nicetohearfromu
+- ask_where
+- utter_confirm_location
 - utter_sure_we_can
 - utter_pick_a_day
 - utter_ask_have_my_number
@@ -209,6 +211,9 @@ entities:
 - open_roles
 - DATE
 - PERSON
+- vcmd
+- VimCmd
+- VimObj
 forms:
 - nou_form
 - email_form
@@ -423,6 +428,8 @@ intents:
     use_entities: true
 - whereami:
     use_entities: true
+- where_to:
+    use_entities: true
 - heard_you_are_hiring:
     use_entities: true
 - ask_are_you_hiring:
@@ -461,27 +468,23 @@ intents:
     triggers: utter_chitchat
 - ruabot:
     use_entities: true
-- myhat:
-    use_entities: true
-- partyhat:
+- emoji:
     use_entities: true
 - elephant_talk:
     use_entities: true
 - elephant_walk:
     use_entities: true
+- get_weather:
+    use_entities: true
 - howdid:
+    use_entities: true
+- myhat:
+    use_entities: true
+- mypartyhat:
     use_entities: true
 - robot:
     use_entities: true
 - whats_going_on:
-    use_entities: true
-- quality:
-    use_entities: true
-- mycat:
-    use_entities: true
-- beg:
-    use_entities: true
-- get_weather:
     use_entities: true
 - news:
     use_entities: true
@@ -559,6 +562,8 @@ intents:
     use_entities: true
 - holiday:
     use_entities: true
+- quality:
+    use_entities: true
 slots:
   DATE:
     auto_fill: true
@@ -606,7 +611,7 @@ slots:
     type: rasa_core.slots.BooleanSlot
   activity:
     auto_fill: true
-    initial_value: have a phone call
+    initial_value: do something
     type: rasa_core.slots.TextSlot
   are_you_hiring:
     auto_fill: true
@@ -788,6 +793,9 @@ templates:
   - text: What are you up to?
   utter_ask_whatdoin:
   - text: What are you doing?
+  utter_ask_where:
+  - text: Where should we meet?
+  - text: Where would you like to meet?
   utter_ask_who:
   - text: Who is this please?
   utter_await_response:
@@ -817,6 +825,9 @@ templates:
   - text: Just to confirm, {email} is the right email to send to?
   utter_confirm_change_date_or_time:
   - text: Ok, you'd like to change the {date_or_time}, correct?
+  utter_confirm_location:
+  - text: Ok, {place} it is.
+  - text: Sounds good. We'll meet at {place}
   utter_confirm_phone_number:
   - text: Thanks, I have your number as {Phone}. Is that correct?
   utter_cool:

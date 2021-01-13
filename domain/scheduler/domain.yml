@@ -48,12 +48,16 @@ entities:
   - DATE
   - PERSON
 
+# VimBot
+  - vcmd
+  - VimCmd
+  - VimObj
 
 # SLOTS (Capitalized slots from user, snake_case slots from app.)
 slots:
   activity:
     type: text
-    initial_value: 'have a phone call'
+    initial_value: 'do something'
   Nou:
     type: unfeaturized
     initial_value: ''
@@ -263,6 +267,7 @@ intents:
 - wheredinner
 - whatdinner
 - whereami
+- where_to
 
 # ~~~~~~~~~~ Staffing
 - heard_you_are_hiring
@@ -291,17 +296,15 @@ intents:
 - ruabot
 
 # ~~~~~~~~~~ Easter Eggs
-- myhat
-- partyhat
+- emoji
 - elephant_talk
 - elephant_walk
+- get_weather
 - howdid
+- myhat
+- mypartyhat
 - robot
 - whats_going_on
-- quality
-- mycat
-- beg
-- get_weather
 
 # ~~~~~~~~~~ Topics
 - news
@@ -322,7 +325,6 @@ intents:
 - zerotonica
 - iamme
 - greet_with_name
-
 - sorry
 - whats_none
 - ok
@@ -330,9 +332,6 @@ intents:
 - awesome
 - metoo
 - backup
-
-
-
 - enthusiasm
 - saymyname
 - when_will_you
@@ -349,10 +348,11 @@ intents:
 - ask_zoro
 - where_did_u_come_from
 - what_do_u_like
-
 - nonsequitur
 - holiday
 
+# ~~~~~~~~~~ Delete
+- quality
 
 actions:
 # ~~~~~~~~~~ Actions
@@ -392,6 +392,8 @@ actions:
 - utter_nicetohearfromu
 
 # ~~~~~~~~~~ Schduler Domain
+- ask_where
+- utter_confirm_location
 - utter_sure_we_can
 - utter_pick_a_day
 - utter_ask_have_my_number
@@ -672,11 +674,17 @@ templates:
   - text: Who is this please?
   utter_ask_Nou:
   - text: Wait who is this please?
-  utter_nicetohearfromu:
-  - Nice to hear from you {Nou}
+
   utter_nicetomeetu:
   - Nice to meet you, {Nou}.
 
+
+  utter_ask_where:
+  - Where should we meet?
+  - Where would you like to meet?
+  utter_confirm_location:
+  - Ok, {place} it is.
+  - Sounds good. We'll meet at {place}
 
 # Sceduler Domain (@TODO: domain file for each domain)
 
@@ -708,7 +716,7 @@ templates:
   #- text: What's a good time for you to have a call on ({Day}) {month_and_date})?
 
   utter_sure_we_can:
-  - text: Sure we can {activity}
+  - text: Sure we can {activity} {When}
 
   utter_pick_a_day:
   - text: What's your preferred day?
@@ -1032,3 +1040,7 @@ templates:
   - text: So am I!
   utter_hope_to_make_it:
   - text: Hope I can make it!
+
+# Moved into Reactions
+  utter_nicetohearfromu:
+  - Nice to hear from you {Nou}

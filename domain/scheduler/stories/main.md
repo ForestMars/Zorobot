@@ -1,19 +1,19 @@
 
 ## multi intent (with name)
 * multi_intent
-  - utter_nicetohearfromu
-  - action_update_contacts
+  - nou_form
+  - form{"name": "nou_form"}
   - utter_ask_schedule_call_discuss
+  - form{"name": null}
+  - action_update_contacts
 * affirm or ask_which_day
   - utter_ask_day  
 * ask_avaiailability
   - utter_pick_a_day
 
-
 ## greet with name
 * greet_with_name
   - utter_greet
-  - utter_nicetohearfromu
   - action_update_contacts
   - utter_ask_schedule_call
 
@@ -22,7 +22,6 @@
   - utter_greet
   - utter_ask_who
 * thisis
-  - utter_nicetohearfromu
   - action_update_contacts
   - utter_ask_schedule_call
 * affirm or ask_which_day
@@ -34,7 +33,6 @@
 
 ## who and time
 * thisis
-  - utter_nicetohearfromu
   - action_update_contacts
   - utter_ask_schedule_call
 * affirm or ask_which_day
@@ -49,7 +47,6 @@
 
 ## who and time
 * thisis
-  - utter_nicetohearfromu
   - action_update_contacts
   - utter_ask_schedule_call
 * deny
@@ -67,7 +64,6 @@
 * ask_availability
   - nou_form
   - form{"name": "nou_form"}
-  - utter_nicetohearfromu
   - form{"name": null}
   - utter_sure_we_can
   - utter_ask_day
@@ -79,7 +75,6 @@
 * ask_availability
   - nou_form
   - form{"name": "nou_form"}
-  - utter_nicetohearfromu
   - form{"name": null}
   - utter_sure_we_can
   - utter_ask_day
@@ -157,6 +152,32 @@
   - action_send_invite
 * thanks OR thx
   - utter_np
+
+## suggest date/time - "happy" path + pick place
+* suggest_date
+  - action_check_date
+  - utter_ask_time_date  
+* suggest_time
+  - action_check_time
+  - utter_heres_my_number
+  - email_form
+  - form{"name": "email_form"}
+  - form{"name": null}
+  - utter_confirm_best_email
+* affirm OR thanks OR affirm_day
+  - utter_shall_we_confirm
+* where_to_meet
+  - ask_where
+* suggest_location
+  - utter_confirm_location
+  - utter_shall_we_confirm
+* affirm OR thanks
+  - utter_final_confirm
+  - action_send_invite
+* thanks OR thx
+  - utter_np
+
+
 
 ## suggest time of day - pick time + yes
 * suggest_day OR when

@@ -43,26 +43,26 @@
 
 
 ## intent:greet_with_name
-- hi forest this is [kyle](Nou)
-- hey forest this is [adam](Nou)
-- hi forest this is [mike](Nou)
-- hi forest this is [chris](Nou)
-- hello forest this is [dierdre](Nou)
-- hi this is [bonnie](Nou)
-- hey this is [clyde](Nou)
-- hi this is [rick](Nou)
-- hi this is [will](Nou)
-- hello this is [penn](Nou)
-- hiya, its [paula](Nou)
-- forst its [quentin](Nou)
-- hi forest its [roy](Nou)
-- hi forest its [sara](Nou)
-- hi forest its [tashika](Nou)
-- forest it's [victoria](Nou)
-- hi forest it's [wayne](Nou)
-- hi forest it's [yoli](Nou)
-- it's [rick](Nou) forest
-- this is [greg](Nou) forest
+- hi forest this is [kyle](who)
+- hey forest this is [adam](who)
+- hi forest this is [mike](who)
+- hi forest this is [chris](who)
+- hello forest this is [dierdre](who)
+- hi this is [bonnie](who)
+- hey this is [clyde](who)
+- hi this is [rick](who)
+- hi this is [will](who)
+- hello this is [penn](who)
+- hiya, its [paula](who)
+- forst its [quentin](who)
+- hi forest its [roy](who)
+- hi forest its [sara](who)
+- hi forest its [tashika](who)
+- forest it's [victoria](who)
+- hi forest it's [wayne](who)
+- hi forest it's [yoli](who)
+- it's [rick](who) forest
+- this is [greg](who) forest
 
 
 
@@ -831,8 +831,8 @@
 - chow
 - ciao4now
 - chow4now
-- thats enough
-- thats enough for now
+- thats ewhogh
+- thats ewhogh for now
 - no more for now
 - stop texting me
 - STOP

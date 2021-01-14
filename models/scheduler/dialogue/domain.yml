@@ -1,6 +1,7 @@
 %YAML 1.1
 ---
 actions:
+- action_date_parts
 - action_send_invite
 - action_send_res
 - action_message
@@ -47,9 +48,12 @@ actions:
 - utter_ask_time_date
 - utter_ask_for_phone_number
 - utter_ask_email
-- utter_ask_Nou
+- utter_ask_nou
 - utter_ask_who
 - utter_ask_specific_time
+- utter_ask_Day
+- utter_ask_Time
+- utter_ask_Date
 - utter_affirm_day
 - utter_affirm_time
 - utter_confirm_best_email
@@ -177,46 +181,48 @@ config:
   store_entities_as_slots: true
 entities:
 - fm
-- forest
+- PERSON
+- DATE
+- who
+- What
+- Where
+- Why
+- When
+- Day
+- Time
+- time
+- Ordinal
+- month_and_date
+- TOD
+- same_or_different
 - activity
 - appt
 - ETA
 - Geo
 - ToLocation
 - FromLocation
-- Nou
-- Nou_last
-- Who
-- What
-- Where
-- Why
-- When
-- super
-- NSFW
-- Day
-- Time
-- Ordinal
-- month_and_date
-- same_or_different
-- TOD
 - qha
 - quintessence
 - res
 - email
 - phone
 - kind
-- person
 - accepting_resumes
 - are_you_hiring
 - open_roles
-- DATE
-- PERSON
+- super
+- NSFW
+- forest
+- person
 - vcmd
 - VimCmd
 - VimObj
+- nou
+- nou_last
 forms:
-- nou_form
 - email_form
+- when_form
+- who_form
 intents:
 - forest:
     use_entities: true
@@ -324,12 +330,6 @@ intents:
     use_entities: true
 - me_too:
     use_entities: true
-- multi_intent:
-    use_entities: true
-- multi_intent_no_name:
-    use_entities: true
-- vague_when:
-    use_entities: true
 - do_you_like:
     use_entities: true
 - suggest_day_forest:
@@ -354,6 +354,8 @@ intents:
     use_entities: true
 - suggest_time:
     use_entities: true
+- suggest_location:
+    use_entities: true
 - change_day_or_time:
     use_entities: true
 - change_date_or_time:
@@ -363,6 +365,12 @@ intents:
 - suggest_different_date:
     use_entities: true
 - suggest_different_time:
+    use_entities: true
+- multi_intent:
+    use_entities: true
+- multi_intent_no_name:
+    use_entities: true
+- vague_when:
     use_entities: true
 - search_for_meeting:
     use_entities: true
@@ -406,15 +414,9 @@ intents:
     use_entities: true
 - get_back_to_you:
     use_entities: true
-- dinner:
-    use_entities: true
-- dinner_with:
-    use_entities: true
 - eta_howlong:
     use_entities: true
 - eta_when:
-    use_entities: true
-- have_dinner:
     use_entities: true
 - omw:
     use_entities: true
@@ -422,13 +424,9 @@ intents:
     use_entities: true
 - illcallu:
     use_entities: true
-- wheredinner:
-    use_entities: true
-- whatdinner:
-    use_entities: true
 - whereami:
     use_entities: true
-- where_to:
+- where_to_meet:
     use_entities: true
 - heard_you_are_hiring:
     use_entities: true
@@ -562,6 +560,16 @@ intents:
     use_entities: true
 - holiday:
     use_entities: true
+- dinner:
+    use_entities: true
+- dinner_with:
+    use_entities: true
+- have_dinner:
+    use_entities: true
+- wheredinner:
+    use_entities: true
+- whatdinner:
+    use_entities: true
 - quality:
     use_entities: true
 slots:
@@ -569,10 +577,14 @@ slots:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.TextSlot
+  Date:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
   Day:
     auto_fill: true
-    initial_value: ''
-    type: rasa_core.slots.TextSlot
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
   HowLong:
     auto_fill: true
     initial_value: null
@@ -581,17 +593,9 @@ slots:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.UnfeaturizedSlot
-  Nou:
-    auto_fill: true
-    initial_value: ''
-    type: rasa_core.slots.UnfeaturizedSlot
-  Nou_last:
-    auto_fill: true
-    initial_value: ''
-    type: rasa_core.slots.UnfeaturizedSlot
   PERSON:
     auto_fill: true
-    initial_value: ''
+    initial_value: null
     type: rasa_core.slots.TextSlot
   TOD:
     auto_fill: true
@@ -644,7 +648,7 @@ slots:
     type: rasa_core.slots.UnfeaturizedSlot
   day_ordinal:
     auto_fill: true
-    initial_value: ' '
+    initial_value: null
     type: rasa_core.slots.UnfeaturizedSlot
   email:
     auto_fill: true
@@ -664,7 +668,15 @@ slots:
     type: rasa_core.slots.TextSlot
   month_name:
     auto_fill: true
-    initial_value: ' '
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  nou:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  nou_last:
+    auto_fill: true
+    initial_value: ''
     type: rasa_core.slots.UnfeaturizedSlot
   open_roles:
     auto_fill: true
@@ -693,6 +705,10 @@ slots:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.UnfeaturizedSlot
+  time:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
   time_am_pm:
     auto_fill: true
     initial_value: null
@@ -706,6 +722,10 @@ slots:
     initial_value: null
     type: rasa_core.slots.UnfeaturizedSlot
   weekday:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  who:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.UnfeaturizedSlot
@@ -737,8 +757,14 @@ templates:
   - text: Is there anything else I can help you with?
   utter_anyway:
   - text: hemingway...
-  utter_ask_Nou:
-  - text: Wait who is this please?
+  utter_ask_DATE:
+  - text: What DATE are we shooting for ??
+  utter_ask_Date:
+  - text: What Date are we shooting for ??
+  utter_ask_Day:
+  - text: Ask day capitalized
+  utter_ask_Time:
+  - text: Ask time capitalized
   utter_ask_are_you_tryna_schedule:
   - text: Are you trying to set up a call with Forest?
   - text: Are you trying to set up a meeting with Forest?
@@ -773,7 +799,7 @@ templates:
   utter_ask_howfeeling:
   - text: What are you up to?
   utter_ask_nou:
-  - text: Who is this please?
+  - text: Wait who (nou) is this please?
   utter_ask_schedule_call:
   - text: Did you want to schedule a call?
   - text: Do you want to schedule a call?
@@ -945,9 +971,9 @@ templates:
   utter_nice:
   - text: Nice!
   utter_nicetohearfromu:
-  - text: Nice to hear from you {Nou}
+  - text: Nice to hear from you {nou}
   utter_nicetomeetu:
-  - text: Nice to meet you, {Nou}.
+  - text: Nice to meet you, {nou}.
   utter_no_worries:
   - text: No worries!
   utter_noidonotlikeyourhat:
@@ -1010,7 +1036,7 @@ templates:
   utter_shabbat:
   - text: Shabbat shalom!
   utter_shall_we_confirm:
-  - text: Ok great {Nou}, Shall we confirm for {Day}, {month_name} {day_ordinal} at
+  - text: Ok great {nou}, Shall we confirm for {Day}, {month_name} {day_ordinal} at
       {time_hour}:{time_minutes}?
   utter_smiley:
   - text: 🙄
@@ -1052,7 +1078,8 @@ templates:
   utter_sure:
   - text: Sure.
   utter_sure_we_can:
-  - text: Sure we can {activity}
+  - text: Sure we can {activity} for {Day}, {month_name} {day_ordinal}
+  - text: Sure we can {activity} on {Day}, {month_name} {day_ordinal}
   utter_thanks:
   - text: Thanks, I really appreciate it.
   utter_thatshow:
@@ -1116,7 +1143,7 @@ templates:
   - text: I'm a dog, I like anything that isn't a threat.
   - text: I do, should I take it that you do too?
   utter_your_name:
-  - text: ok {Nou} {Nou_last}
+  - text: ok {nou} {nou_last}
   utter_yum:
   - text: Yum!
   utter_yw:

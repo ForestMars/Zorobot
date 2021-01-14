@@ -1,14 +1,16 @@
 
 ## multi intent (with name)
 * multi_intent
-  - nou_form
-  - form{"name": "nou_form"}
   - utter_ask_schedule_call_discuss
-  - form{"name": null}
   - action_update_contacts
-* affirm or ask_which_day
-  - utter_ask_day  
-* ask_avaiailability
+* affirm OR ask_which_day
+  - utter_ask_day
+  - when_form
+  - form{"name": "when_form"}
+  - form{"name": null}
+  - action_date_parts
+  - utter_sure_we_can
+* ask_availability
   - utter_pick_a_day
 
 ## greet with name
@@ -24,7 +26,7 @@
 * thisis
   - action_update_contacts
   - utter_ask_schedule_call
-* affirm or ask_which_day
+* affirm OR ask_which_day
   - utter_ask_day
 * ask_availability
   - utter_wunderbar
@@ -35,7 +37,7 @@
 * thisis
   - action_update_contacts
   - utter_ask_schedule_call
-* affirm or ask_which_day
+* affirm OR ask_which_day
   - utter_ask_day
 * ask_availability
   - utter_pick_a_day  
@@ -62,22 +64,26 @@
 
 ## availability
 * ask_availability
-  - nou_form
-  - form{"name": "nou_form"}
+  - who_form
+  - form{"name": "who_form"}
   - form{"name": null}
+  - when_form
+  - form{"name": "when_form"}
+  - form{"name": null}
+  - action_date_parts
   - utter_sure_we_can
-  - utter_ask_day
-* suggest_availability
-  - action_check_day
   - utter_ask_time_day
 
 ## availability ping pong
 * ask_availability
-  - nou_form
-  - form{"name": "nou_form"}
+  - who_form
+  - form{"name": "who_form"}
   - form{"name": null}
+  - when_form
+  - form{"name": "when_form"}
+  - form{"name": null}
+  - action_date_parts
   - utter_sure_we_can
-  - utter_ask_day
 * ask_availability
   - utter_pick_a_day
 
@@ -115,7 +121,7 @@
 ### ~~~~~~~~~~~~~~~~~~~~~ Suggest Time ~~~~~~~~~~~~~~~~~~~~
 
 ## suggest day/time - "happy" path + yes
-* suggest_day OR when
+* suggest_availability OR when
   - action_check_day
   - utter_ask_time_day
 * suggest_time
@@ -180,7 +186,7 @@
 
 
 ## suggest time of day - pick time + yes
-* suggest_day OR when
+* suggest_availability OR when
   - action_check_day
   - utter_ask_time_day
 * time_of_day

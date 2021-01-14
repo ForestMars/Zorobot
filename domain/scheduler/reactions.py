@@ -26,6 +26,10 @@ try:
     import lib.ext.convo as chat
 except ImportError:
     import build.src.convo as chat
+
+from build.src import date_time
+
+
 # Explain yourself.
 
 
@@ -102,7 +106,7 @@ class ActionCheckDate(Action):
         weekday = kr.get_weekday_from_date(date)
         slots.append(SlotSet('Day', weekday))
 
-        msg = 'Let me quickly check my schedule for ' + \
+        msg = 'Let me quickly check my schedule for (the date)' + \
             weekday + ' ' + date_clean[0] + ' ' + date_clean[1]
         dispatcher.utter_message(msg)
 
@@ -156,7 +160,7 @@ class ActionCheckDay(Action):
 
         if day_dirty is None:
             dispatcher.utter_message(
-                "Sorry, I didn't get that, what day would you like to have a call?")
+                "Sorry, I didn't get that, what's a good day for you?")
             return [(ActionRepeat)]
 
         day_clean = kr.clean_day_str(day_dirty).capitalize()
@@ -168,13 +172,15 @@ class ActionCheckDay(Action):
         # full-on datetime obj w/ TZ
         if day_dirty != 'today':  # sub-optimal, move get_date_ function into clean_day_str
             when['date'] = kr.get_date_from_weekday(day_clean)
+            ord_day = kr.ord_day_from_date(when['date'])
         elif day_dirty == 'today':
             when['date'] = kr.get_todays_date()
+            ord_day = kr.ord_day_from_date(when['date'])
 
         # date here is month and day string?
-        ord_day = kr.ord_day_from_date(when['date'])
+        #ord_day = kr.ord_day_from_date(when['date'])
         msg_lmc = 'By ' + day_clean + ' you mean ' + \
-            str(when['date']) + ', right? Let me quickly check my schedule...'
+            str(when['date']) + ', right? Let me quickly check my schedule... (for that day)'
         dispatcher.utter_message(msg_lmc)
 
         when = kr.get_date_parts(when)
@@ -186,7 +192,6 @@ class ActionCheckDay(Action):
         when['Day'] = day_clean.capitalize()  # not used
         month_name = kr.get_month_abbr_from_num(ymd[1])
         when['month_name'] = month_name
-
 
         slots.append(SlotSet('month_name', month_name))
         slots.append(SlotSet('date_month', ymd[1]))
@@ -286,7 +291,7 @@ class ActionSendInvite(Action):  # Action Invite
             hour=int(tracker.get_slot('time_hour')),
             # we can't set int here bc of "00"
             mins=tracker.get_slot('time_minutes'),
-            who=tracker.get_slot('Nou'),
+            who=tracker.get_slot('nou'),
             email=tracker.get_slot('email'),
             ampm=tracker.get_slot('time_am_pm'),
             ord=kr.ordinal_from_int(int(tracker.get_slot('day_of_month')))
@@ -341,8 +346,8 @@ class ActionSendRes(Action):
         send = Send()
         sendres = {}
         res=tracker.get_slot('res')
-        if tracker.get_slot('Nou') is not None:
-            sendres['Name'] = tracker.get_slot('Nou').capitalize() +','
+        if tracker.get_slot('nou') is not None:
+            sendres['Name'] = tracker.get_slot('nou').capitalize() +','
         sendres['FM'] = "Forest Mars"
         sendres['From'] = "themarsgroup@gmail.com"
         sendres['To'] =  tracker.get_slot('email')
@@ -380,11 +385,11 @@ class ActionUpdateContacts(Action):
         slots = []
         if tracker.get_slot('PERSON'):
             person = tracker.get_slot('PERSON')
-        elif tracker.get_slot('Nou'):
-            name = tracker.get_slot('Nou')
+        elif tracker.get_slot('nou'):
+            name = tracker.get_slot('nou')
         if 'person' in locals() and 'name' not in locals(): # Python-speak for "if person and not name" #cringe
             name = person.split()[0]
-            slots.append(SlotSet('Nou', name))
+            slots.append(SlotSet('nou', name))
         elif 'name' in locals() and 'person' not in locals(): # Srsly, it's just so dirty.
             person = name
 
@@ -424,41 +429,163 @@ class EmailForm(FormAction):
         return []
 
 
-class NouForm(FormAction):
+class WhoForm(FormAction):
     def name(self):
-        return "nou_form"
+        return "who_form"
 
     @staticmethod
     def required_slots(tracker):
-        return ["Nou"]
+        return ["who"]
 
-    # @TODO: move into preprocessors.
-    def preprocess_name(self, name):
-        name = name.replace('TY', '')
-        return name
+    def validate_email(self, val, dispatcher, tracker, domain):
+        if tracker.get_slot('email') is not None:
+            email = tracker.get_slot('email')
+            email = email.strip()  # FIXME: bug in regex validation before refactoring this block.
+            email = sch.email_tld(tracker.get_slot('email'))
+            if sch.is_valid_email(email) == False:
+                dispatcher.utter_message(
+                    "Sorry, that doesn't seem to be a good email.\n")
+                return None
+                slots.append(SlotSet('email', ''))
+            elif sch.is_valid_email(email) == True:
+                dispatcher.utter_message("Got it.\n")
+                return email
 
-    # Needs refactoring, but preserve *NER* distincton between user's name and name of a person they are talking about.
+    def submit(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict]:
+        return []
+
+
+# @TODO: Move form logic out of reactions file into custom handler.
+class WhenForm(FormAction):
+    def name(self):
+        return "when_form"
+
+    @staticmethod
+    def required_slots(tracker):
+        return ["DATE"]
+
+    def preprocess_day_or_date(self, dispatcher, DATE):
+
+        if DATE.isalpha() and len(DATE.split()) == 1:  # We most assuredly have a day, not a date.
+            day_clean = kr.clean_day_str(DATE).capitalize()
+            date = kr.get_date_from_weekday(day_clean)
+            date_str = datetime.datetime.strftime(date, "%M %d")
+            msg = 'By ' + day_clean + ' you mean ' + \
+                date_str + ', right? Let me quickly check my schedule... (for that day)'
+            dispatcher.utter_message(msg)
+        else:
+            grok = kr.Grok()
+            # unlike clean_day, returns [month_name], [day] and not [month_no], [day]
+            date_clean = grok.clean_date_str(DATE)
+            if date_clean[0].isnumeric():
+                date = kr.get_date_from_month_and_day(date_clean)
+            elif len(date_clean[0]) > 4:
+                date = kr.get_date_from_month_name_and_day(date_clean)
+            else:
+                date = kr.get_date_from_month_abbr_and_day(date_clean)
+
+        return date.strftime("%Y-%m-%d")
+
+    def preprocess_date(DATE):
+        date_clean = self.day_or_date(DATE)
+
+    def validate_DATE(self, val, dispatcher, tracker, domain):
+        DATE = tracker.get_slot('DATE')  # Spacy NER fallback (pretrained)
+        day_dirty = tracker.get_slot('Day')  # CRF is fallback only here, but not by design.
+
+        if DATE is not None:
+            date_clean = self.preprocess_day_or_date(dispatcher, DATE)
+
+        # Sorry, can't fallback to NER if you want to use a form. hahaha. Remove this.
+        elif day_dirty is not None:
+            day_clean = kr.clean_day_str(day_dirty).capitalize()
+            day_clean = kr.day_abbr_to_full(day_clean)
+            #slots.append(SlotSet('Day', day_clean)) # Sorry, you can't do this either.  :-/
+            if day_dirty.lower().strip() not in ['today', '']:  # sub-optimal, move get_date_ function into clean_day_str
+                date_clean = kr.get_date_from_weekday(day_clean)
+                ord_day = kr.ord_day_from_date(when['date'])
+            elif day_dirty.lower() == 'today':
+                when['date'] = kr.get_todays_date()
+                ord_day = kr.ord_day_from_date(when['date'])
+
+        if date_clean is not None:
+            return date_clean
+
+
+    def submit(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict]:
+        return []
+
+
+class ActionDateParts(Action):
+    """ Sadly, you can't do this with NER with Rasa by design-- even though it's kindof a trivial to do in NER, and a much better architectural pattern.
+        Ca. Back-to-Front Middlewares. """
+
+    def name(self):
+        return "action_date_parts"
+
     def run(self, dispatcher, tracker, domain):
         slots = []
-        if tracker.get_slot('PERSON'):
-            person = tracker.get_slot('PERSON')
-            person = self.preprocess_name(person)
-            name_greet = "Nice to hear from you " + person.split()[0]
-            slots.append(SlotSet('Nou', person.split()[0]))
-        if len(tracker.get_slot('Nou').strip()) > 0:
-            name = tracker.get_slot('Nou')
-            name_greet = "Nice to hear from you " + name
-        if name_greet:
-            dispatcher.utter_message(name_greet)
+        when = {}
+        when['date'] = tracker.get_slot('DATE')
+        when['date'] = datetime.datetime.strptime(when['date'], '%Y-%m-%d')
 
-        return slots
+        #when = kr.get_date_parts(when)
+        #ymd = str(when['date']).split('-')
+        when['weekday'] = when['date'].strftime("%A")
+        when['month'] = when['date'].strftime("%m")
+        when['day_of_month'] = when['date'].strftime("%d")
+        when['ord'] = kr.ordinal_from_int(int(when['day_of_month']))
+        when['date_year'] = when['date'].strftime("%Y")
+        when['Day'] = when['date'].strftime("%A")  # not used ?
+        #month_name = kr.get_month_abbr_from_num(ymd[1])
+        when['month_name'] = when['date'].strftime("%b")
+
+        slots.append(SlotSet('month_name', when['month_name']))
+        slots.append(SlotSet('date_month', when['month']))
+        slots.append(SlotSet('day_of_month', when['day_of_month']))
+        slots.append(SlotSet('day_ordinal', when['ord']))
+        slots.append(SlotSet('date_year', when['date_year']))
+        slots.append(SlotSet('Day', when['Day']))
+
+        """
+        if 'date_clean' in locals():
+            dispatcher.utter_message(date_clean)
+            month_num, month_name = kr.month_name_and_num(date_clean[0])
+            #slots.append(SlotSet('month_name', date_clean[0]))
+            slots.append(SlotSet('date_month', month_num))
+            slots.append(SlotSet('month_name', month_name))
+            #slots.append(SlotSet('date_month', kr.get_int_from_month_name(date_clean[0])))
+            slots.append(SlotSet('day_of_month', date_clean[1]))
+            slots.append(
+                SlotSet('day_ordinal', kr.ordinal_from_int(int(date_clean[1]))))
+            # @TODO - Set ordinal for day/date
+            # Spacy NER doesn't clean dates, so we use our NER which is *superior.*
+            DATE = date_clean[0].capitalize() + ' ' + date_clean[1]
+            slots.append(SlotSet('DATE', DATE))
+
+            # clean_date_str() *should* return date in non-euro order, so this should not match.
+            if date_clean[0].isnumeric():
+                date = kr.get_date_from_month_and_day(date_clean)
+            elif len(date_clean[0]) > 4:
+                date = kr.get_date_from_month_name_and_day(date_clean)
+            else:
+                date = kr.get_date_from_month_abbr_and_day(date_clean)
+            """
+
+        msg = 'FORM: Let me quickly check my schedule for (the date) ' + when['Day'] + ' ' + when['month_name'] + ' ' + when['ord']
+        #weekday + ' ' + date_clean[0] + ' ' + date_clean[1]
+        dispatcher.utter_message(msg)
+
+        return slots # And yes, we can use DATE ???
 
     def submit(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict]:
         # Unfortunately, submit *always* fires even if the form was previously completed. So, yeah, just write more custom code as a workaround, right?
-        #name = tracker.get_slot('Nou')
+        #name = tracker.get_slot('nou')
         #msg = "Nice to hear from you " + name
         #dispatcher.utter_message(msg)
         return []
+
+
 
 
 class ActionChat(Action):

@@ -7,75 +7,79 @@ session_config:
 action_factory: remote
 
 forms:
-  - nou_form
   - email_form
-
+  - when_form
+  - who_form
 
 entities:
   - fm
-  - forest
+  - PERSON
+  - DATE
+
+  - who
+  - What
+  - Where
+  - Why
+  - When
+
+  - Day
+  - Time
+  - time
+  - Ordinal
+  - month_and_date
+  - TOD
+
+  - same_or_different
+
   - activity
   - appt
   - ETA
   - Geo
   - ToLocation
   - FromLocation
-  - Nou
-  - Nou_last
-  - Who
-  - What
-  - Where
-  - Why
-  - When
-  - super
-  - NSFW
-  - Day
-  - Time
-  - Ordinal
-  - month_and_date
-  - same_or_different
-  - TOD
   - qha
   - quintessence
   - res
   - email
   - phone
   - kind
-  - person
   - accepting_resumes
   - are_you_hiring
   - open_roles
-  - DATE
-  - PERSON
+  - super
+  - NSFW
+  - forest
+  - person
 
 # VimBot
   - vcmd
   - VimCmd
   - VimObj
 
+# deprecated
+  - nou
+  - nou_last
+
 # SLOTS (Capitalized slots from user, snake_case slots from app.)
 slots:
   activity:
     type: text
     initial_value: 'do something'
-  Nou:
-    type: unfeaturized
-    initial_value: ''
-  Nou_last:
-    type: unfeaturized
-    initial_value: ''
-  Day:
-    type: text
-    initial_value: ''
+
   PERSON:
     type: text
-    initial_value: ''
   DATE:
     type: text
-  HowLong:
+  Date:
     type: text
+
+  who:
+    type: unfeaturized
   When:
     type: text
+
+  Day:
+    type: unfeaturized
   Time:
     type: text
   TOD:
@@ -86,13 +90,15 @@ slots:
     type: unfeaturized
   month_name:
     type: unfeaturized
-    initial_value: ' '
   day_of_month:
     type: unfeaturized
   day_ordinal:
     type: unfeaturized
-    initial_value: ' '
+  HowLong:
+    type: text
   month_and_date:
+    type: text
+  time:
     type: text
   time_hour:
     type: unfeaturized
@@ -106,6 +112,7 @@ slots:
     type: unfeaturized
   location:
     type: unfeaturized
+
   NSFW:
     type: unfeaturized
   super:
@@ -143,6 +150,12 @@ slots:
     type: text
   kind:
     type: unfeaturized
+
+  nou:
+    type: unfeaturized
+  nou_last:
+    type: unfeaturized
+    initial_value: ''
 
 
 intents:
@@ -201,9 +214,6 @@ intents:
 - same_time_or_different
 - so_am_i
 - me_too
-- multi_intent
-- multi_intent_no_name
-- vague_when
 - do_you_like
 
 
@@ -222,6 +232,7 @@ intents:
 - suggest_availability
 - suggest_date
 - suggest_time
+- suggest_location
 
 - change_day_or_time
 - change_date_or_time
@@ -229,6 +240,10 @@ intents:
 - suggest_different_day
 - suggest_different_date
 - suggest_different_time
+
+- multi_intent
+- multi_intent_no_name
+- vague_when
 
 - search_for_meeting
 - time_of_day
@@ -254,20 +269,14 @@ intents:
 - will_lyk
 - get_back_to_you
 
-
 # ~~~~~~~~~~ Logistics / Making Plans
-- dinner
-- dinner_with
 - eta_howlong
 - eta_when
-- have_dinner
 - omw
 - here
 - illcallu
-- wheredinner
-- whatdinner
 - whereami
-- where_to
+- where_to_meet
 
 # ~~~~~~~~~~ Staffing
 - heard_you_are_hiring
@@ -351,11 +360,18 @@ intents:
 - nonsequitur
 - holiday
 
-# ~~~~~~~~~~ Delete
+# ~~~~~~~~~~ Delete Dinnerbot
+- dinner
+- dinner_with
+- have_dinner
+- wheredinner
+- whatdinner
 - quality
+
 
 actions:
 # ~~~~~~~~~~ Actions
+- action_date_parts
 - action_send_invite
 - action_send_res
 - action_message
@@ -396,6 +412,7 @@ actions:
 - utter_confirm_location
 - utter_sure_we_can
 - utter_pick_a_day
+
 - utter_ask_have_my_number
 - utter_ask_schedule_call
 - utter_ask_schedule_call_discuss
@@ -409,9 +426,13 @@ actions:
 - utter_ask_time_date
 - utter_ask_for_phone_number
 - utter_ask_email
-- utter_ask_Nou
+- utter_ask_nou
 - utter_ask_who
 - utter_ask_specific_time
+- utter_ask_Day
+- utter_ask_Time
+- utter_ask_Date
+
 - utter_affirm_day
 - utter_affirm_time
 - utter_confirm_best_email
@@ -630,7 +651,6 @@ templates:
   utter_ikr:
   - text: I know, right?
 
-
 # Super Sentiments (fold into super class)
   utter_super:
   - So much {super}
@@ -667,17 +687,15 @@ templates:
   utter_all_apologies:
   - text: What else should I be? All apologies. -K. Cobain (literally the last song on his last album!)
 
-
+  utter_ask_who:
+  - text: Who is this please?
+  utter_ask_nou:
+  - text: Wait who (nou) is this please?
   utter_who:
   - text: Sorry I have a new phone, who is this?
-  utter_ask_nou:
-  - text: Who is this please?
-  utter_ask_Nou:
-  - text: Wait who is this please?
 
   utter_nicetomeetu:
-  - Nice to meet you, {Nou}.
-
+  - Nice to meet you, {nou}.
 
   utter_ask_where:
   - Where should we meet?
@@ -716,13 +734,16 @@ templates:
   #- text: What's a good time for you to have a call on ({Day}) {month_and_date})?
 
   utter_sure_we_can:
-  - text: Sure we can {activity} {When}
+  - text: Sure we can {activity} for {Day}, {month_name} {day_ordinal}
+  - text: Sure we can {activity} on {Day}, {month_name} {day_ordinal}
 
   utter_pick_a_day:
   - text: What's your preferred day?
   - text: What would be your preferred day?
   - text: What's a particular day that's good for you?
   - text: Just about any day could work, depending on the time. What's a good day for you?
+  utter_ask_specific_time:
+  - text: Ok, {TOD} sounds good. What's a specific time you can do a call?
 
   utter_suggest_day:
   - text: How is Wednesday?
@@ -734,9 +755,9 @@ templates:
   utter_affirm_time:
   - text: ok, {Time} looks good.
   - text: ok, {Time} is good for me too.
+
   utter_ask_email:
   - text: What's your best email?
-
   utter_repeat_email:
   - text: Ok, I will use {email} to send the invite
   - text: Ok, I will send the calendar invite to {email}
@@ -765,31 +786,31 @@ templates:
   - text: Pretty sure I have your phone number, but what is it?
   utter_give_email_again:
   - text: Pretty sure I have your email, but what is it?
+  utter_confirm_phone_number:
+  - text: Thanks, I have your number as {Phone}. Is that correct?
+  utter_confirm_best_email:
+  - text: Just to confirm, {email} is the right email to send to?
+
   utter_please_call_me:
   - text: Please call me
   - text: Please call me then
   - text: Will you please call me then?
-
   utter_ill_send_invite:
   - text: Ok, I'll send out a calendar invite.
   utter_lmk_you_dont_get_it:
   - text: Let me know if you don't get it
+
+
   utter_zoro_greet_with_help:
   - text: I'm Zoro, Forest's scheduling bot. You can ask me about Forest's availability for a meeting by day or time, or tell me when you'd like to have a call with Forest.
   utter_bot_help:
   - text: You can say things like...
   utter_shall_we_confirm:
-  - text: Ok great {Nou}, Shall we confirm for {Day}, {month_name} {day_ordinal} at {time_hour}:{time_minutes}?
-  utter_ask_who:
-  - text: Who is this please?
-  utter_ask_specific_time:
-  - text: Ok, {TOD} sounds good. What's a specific time you can do a call?
-  utter_camus:
-  - text: It has been quite the year. I did find some time to re-read the Camus novel.
-  utter_confirm_phone_number:
-  - text: Thanks, I have your number as {Phone}. Is that correct?
-  utter_confirm_best_email:
-  - text: Just to confirm, {email} is the right email to send to?
+  - text: Ok great {nou}, Shall we confirm for {Day}, {month_name} {day_ordinal} at {time_hour}:{time_minutes}?
+
+
+
+
   utter_pan_demic:
   - text: Pandemic - dem panic.
   utter_topic_facebook:
@@ -950,6 +971,8 @@ templates:
   - text: Forsooth
   utter_wink_gmta:
   - text: GMTA
+  utter_camus:
+  - text: It has been quite the year. I did find some time to re-read the Camus novel.
 
 # ETC
   utter_shabbat:
@@ -1035,12 +1058,20 @@ templates:
   utter_ask_howfeeling:
   - text: What are you up to?
   utter_your_name:
-  - text: ok {Nou} {Nou_last}
+  - text: ok {nou} {nou_last}
   utter_soami:
   - text: So am I!
+  utter_ask_DATE:
+  - text: What DATE are we shooting for ??
+  utter_ask_Date:
+  - text: What Date are we shooting for ??
   utter_hope_to_make_it:
   - text: Hope I can make it!
 
 # Moved into Reactions
   utter_nicetohearfromu:
-  - Nice to hear from you {Nou}
+  - Nice to hear from you {nou}
+  utter_ask_Day:
+  - Ask day capitalized
+  utter_ask_Time:
+  - Ask time capitalized

@@ -604,7 +604,7 @@ slots:
   Time:
     auto_fill: true
     initial_value: null
-    type: rasa_core.slots.TextSlot
+    type: rasa_core.slots.UnfeaturizedSlot
   When:
     auto_fill: true
     initial_value: null
@@ -764,7 +764,8 @@ templates:
   utter_ask_Day:
   - text: Ask day capitalized
   utter_ask_Time:
-  - text: Ask time capitalized
+  - text: What time is good for you?
+  - text: What's a good time for you?
   utter_ask_are_you_tryna_schedule:
   - text: Are you trying to set up a call with Forest?
   - text: Are you trying to set up a meeting with Forest?
@@ -810,7 +811,7 @@ templates:
   utter_ask_specific_time:
   - text: Ok, {TOD} sounds good. What's a specific time you can do a call?
   utter_ask_time:
-  - text: What's a good time for you?
+  - text: What's a good time for you on ({Day}) {month_name} {day_of_month}
   utter_ask_time_date:
   - text: What's a good time for you to have a call on ({Day}) {month_name} {day_of_month}?
   utter_ask_time_day:
@@ -1078,8 +1079,10 @@ templates:
   utter_sure:
   - text: Sure.
   utter_sure_we_can:
-  - text: Sure we can {activity} for {Day}, {month_name} {day_ordinal}
-  - text: Sure we can {activity} on {Day}, {month_name} {day_ordinal}
+  - text: Sure we can {activity} on {Day}, {month_name} {day_ordinal} at {time_hour}:{time_minutes}
+      {time_am_pm}
+  - text: Sure we can {activity} on {Day}, {month_name} {day_ordinal} at {time_hour}:{time_minutes}
+      {time_am_pm}
   utter_thanks:
   - text: Thanks, I really appreciate it.
   utter_thatshow:

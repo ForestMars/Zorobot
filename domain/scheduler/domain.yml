@@ -11,6 +11,7 @@ forms:
   - when_form
   - who_form
 
+
 entities:
   - fm
   - PERSON
@@ -81,7 +82,7 @@ slots:
   Day:
     type: unfeaturized
   Time:
-    type: text
+    type: unfeaturized
   TOD:
     type: text
   date_year:
@@ -724,7 +725,8 @@ templates:
   utter_ask_date:
   - text: What's a better date for you?
   utter_ask_time:
-  - text: What's a good time for you?
+  - text: What's a good time for you on ({Day}) {month_name} {day_of_month}
+  # - text: What's a good time for you on ({Day}) {month_name} {day_of_month} to {activity}?
   utter_ask_time_day:
   #- text: What's a good time for you to have a call {Day} {month_name} {day_ordinal}?
   - text: What's a good time for you on {Day} {month_name} {day_ordinal} to {activity}?
@@ -734,8 +736,8 @@ templates:
   #- text: What's a good time for you to have a call on ({Day}) {month_and_date})?
 
   utter_sure_we_can:
-  - text: Sure we can {activity} for {Day}, {month_name} {day_ordinal}
-  - text: Sure we can {activity} on {Day}, {month_name} {day_ordinal}
+  - text: Sure we can {activity} on {Day}, {month_name} {day_ordinal} at {time_hour}:{time_minutes} {time_am_pm}
+  - text: Sure we can {activity} on {Day}, {month_name} {day_ordinal} at {time_hour}:{time_minutes} {time_am_pm}
 
   utter_pick_a_day:
   - text: What's your preferred day?
@@ -1074,4 +1076,5 @@ templates:
   utter_ask_Day:
   - Ask day capitalized
   utter_ask_Time:
-  - Ask time capitalized
+  - What time is good for you?
+  - What's a good time for you?

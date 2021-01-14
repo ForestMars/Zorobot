@@ -14,9 +14,10 @@
 - are you able to [set up a meeting](activity)
 
 - can i [schedule a meeting](activity) with [Forest](fm)
-- can i schedule a call with [Forest](fm)
-- can u pls set up a call for me and [Forest](fm)
-- can u pls set up a meeting for me and [Forest](fm)
+- can i [schedule a call](activity) with [Forest](fm)
+- can u pls [set up a call](activity) for me and [Forest](fm)
+- can u pls [set up a meeting](activity) for me and [Forest](fm)
+- can we [have a call](activity:have a call)
 - can we [book a call](activity:have a call)
 - can we [book a meeting](activity:have a meeting)
 - can we [make an appointment for a call](activity:have a call)

@@ -1,6 +1,9 @@
 
 ## multi intent (with name)
 * multi_intent
+  - who_form
+  - form{"name": "who_form"}
+  - form{"name": null}
   - utter_ask_schedule_call_discuss
   - action_update_contacts
 * affirm OR ask_which_day
@@ -9,6 +12,7 @@
   - form{"name": "when_form"}
   - form{"name": null}
   - action_date_parts
+  - action_check_time  
   - utter_sure_we_can
 * ask_availability
   - utter_pick_a_day
@@ -25,6 +29,10 @@
   - utter_ask_who
 * thisis
   - action_update_contacts
+  - who_form
+  - form{"name": "who_form"}
+  - form{"name": null}
+  - utter_good2hear
   - utter_ask_schedule_call
 * affirm OR ask_which_day
   - utter_ask_day
@@ -32,28 +40,34 @@
   - utter_wunderbar
   - utter_pick_a_day
 
-
 ## who and time
 * thisis
   - action_update_contacts
+  - who_form
+  - form{"name": "who_form"}
+  - form{"name": null}
   - utter_ask_schedule_call
 * affirm OR ask_which_day
   - utter_ask_day
 * ask_availability
   - utter_pick_a_day  
 
-## is this you forest
-* forest
-  - utter_zoro_greet
-  - utter_ask_who
-
-## who and time
+## who and denial for some reason
 * thisis
   - action_update_contacts
-  - utter_ask_schedule_call
+  - who_form
+  - form{"name": "who_form"}
+  - form{"name": null}
+  - utter_good2hear
 * deny
   - utter_im_a_scheduling_agent
 
+  ## is this you forest
+  * forest
+    - utter_ask_who
+    - who_form
+    - form{"name": "who_form"}
+    - form{"name": null}
 
 ### ~~~~~~~~~~~~~~~~~~~~~ Discuss Day and Time ~~~~~~~~~~~~~~~~~~~~
 
@@ -61,6 +75,11 @@
 * lets_do OR can_we_do_something
   - utter_sure_we_can
   - utter_ask_day
+  - when_form
+  - form{"name": "when_form"}
+  - form{"name": null}
+  - action_date_parts
+  - action_check_time
 
 ## availability
 * ask_availability
@@ -71,8 +90,11 @@
   - form{"name": "when_form"}
   - form{"name": null}
   - action_date_parts
+  - action_check_time
   - utter_sure_we_can
-  - utter_ask_time_day
+  - email_form
+  - form{"name": "email_form"}
+  - form{"name": null}  
 
 ## availability ping pong
 * ask_availability
@@ -86,6 +108,29 @@
   - utter_sure_we_can
 * ask_availability
   - utter_pick_a_day
+* utter_suggest_day
+  - action_check_day
+  - utter_sure_we_can
+  - email_form
+  - form{"name": "email_form"}
+  - form{"name": null}  
+
+## availability not ping pong but exactly the same
+* ask_availability
+  - who_form
+  - form{"name": "who_form"}
+  - form{"name": null}
+  - when_form
+  - form{"name": "when_form"}
+* ask_availability
+  - utter_pick_a_day
+  - form{"name": null}
+  - action_date_parts
+  - action_check_time
+  - utter_sure_we_can
+  - email_form
+  - form{"name": "email_form"}
+  - form{"name": null}
 
 ## suggest date
 * suggest_date
@@ -182,8 +227,6 @@
   - action_send_invite
 * thanks OR thx
   - utter_np
-
-
 
 ## suggest time of day - pick time + yes
 * suggest_availability OR when

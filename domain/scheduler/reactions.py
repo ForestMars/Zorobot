@@ -218,7 +218,7 @@ class ActionCheckTime(Action):
     def run(self, dispatcher, tracker, domain):
         slots = []
         when = {}
-        input('run chk time')
+
         if tracker.get_slot('Time') is not None:
             time_dirty = tracker.get_slot('Time')
         if time_dirty is not None:
@@ -298,34 +298,30 @@ class ActionSendInvite(Action):  # Action Invite
             ord=kr.ordinal_from_int(int(tracker.get_slot('day_of_month')))
             )
 
-        # You never know what you'll get.
+        # Time is like, you never know what you'll get.
         if tracker.get_slot('date_month') is not None:
             call['month_no'] = int(tracker.get_slot('date_month'))
         elif tracker.get_slot('month_name') is not None:
             call['month_no'] = kr.get_int_from_month_name(
                 tracker.get_slot('date_month'))
         if tracker.get_slot('time_am_pm') is not None:
-            #input(tracker.get_slot('time_am_pm'))
             call['ampm'] = tracker.get_slot('time_am_pm')
-            #input(tracker.get_slot('time_am_pm'))
         elif call['hour'] in range(1, 6):
             call['ampm'] = 'pm'
         elif call['hour'] in range(7, 12):
             call['ampm'] = 'am'
         else:
             call['ampm'] = ' '
-        #input(call['ampm'])
+
         # Th ole off by double zero problem.
         if call['mins'] == '0':
             call['mins'] == '00'  # @FIXME: No longer needed.
-        #call['time'] = str(call['hour']) + " " + str(call['mins']) + " " + call['ampm'] + " EST"
         call['time'] = str(call['hour']) + " " + \
                            str(call['mins']) + " " + " EST"
 
         cal_date = datetime.date(2020, call['month_no'], call['day'])
         call_time = datetime.time(call['hour'], int(call['mins']))
         call['datetime'] = datetime.datetime.combine(cal_date, call_time)
-        #slots.append(SlotSet('datetime', call['datetime']))
 
         missing = sch.check_invite(call)
         if len(missing) < 1:
@@ -338,6 +334,7 @@ class ActionSendInvite(Action):  # Action Invite
                 "Sorry, I still need to get some information from you.")
 
         return []
+
 
 class ActionSendRes(Action):
     def name(self):
@@ -469,7 +466,6 @@ class WhenForm(FormAction):
     def required_slots(tracker):
         return ["DATE", "Time"]
 
-    # Misnamed abstract method. Doesn't request next slot, but collects all slots prior to validataion.
     def request_next_slot(self, dispatcher, tracker, domain):
         for slot in self.required_slots(tracker):
             if self._should_request_slot(tracker, slot):
@@ -479,7 +475,8 @@ class WhenForm(FormAction):
                     return [SlotSet('DATE', '')] # ???
                 if slot == 'Time':
                     if tracker.get_slot('DATE') is not None:
-                        date = self.clean_date(tracker)
+                        datestr = self.clean_date(dispatcher, tracker)
+                        date = dt.strptime(datestr, '%Y-%m-%d')
                         kwargs.update({"Day": dt.strftime(date, '%A')})
                         kwargs.update({"month_name": dt.strftime(date, '%b')})
                         kwargs.update({"day_of_month": dt.strftime(date, '%d')})
@@ -487,9 +484,7 @@ class WhenForm(FormAction):
                     dispatcher.utter_template("utter_ask_{}".format(slot), tracker, **kwargs)
                     return [SlotSet('Time', '')] # srsly, wtf
 
-                # return #  just like that? after creating a bunch of side effects, apparently.
-
-    def clean_date(self, tracker):
+    def clean_date(self, dispatcher, tracker):
         day_dirty = tracker.get_slot('Day')  # CRF NER outperforma Spacy NER
         DATE = tracker.get_slot('DATE')  # Spacy NER fallback (pretrained)
 
@@ -506,12 +501,13 @@ class WhenForm(FormAction):
         else:
             try:
                 date_clean = self.preprocess_day_or_date(dispatcher, DATE)
-            except:
-                print("Spacy NER fail.")
+            except Exception as e:
+                print(e)
 
-        return date_clean
+        return date_clean.strftime("%Y-%m-%d")
 
     def preprocess_day_or_date(self, dispatcher, DATE):
+
         if DATE.isalpha() and len(DATE.split()) == 1:  # We most assuredly have a day, not a date. (Execept when Spacy NR fails.)
             day_clean = kr.clean_day_str(DATE).capitalize()
             date = kr.get_date_from_weekday(day_clean)
@@ -530,7 +526,7 @@ class WhenForm(FormAction):
             else:
                 date = kr.get_date_from_month_abbr_and_day(date_clean)
 
-        return date.strftime("%Y-%m-%d")
+        return date
 
     def preprocess_date(self, DATE):
         date_clean = self.day_or_date(DATE)
@@ -571,14 +567,8 @@ class WhenForm(FormAction):
                 slots.append(SlotSet('DATE', None))
             # We literally have to validate every field in a form on submit, bc the form isn't smart enough to validate them.
             else:
-                #date = self.preprocess_day_or_date(dispatcher, DATE)
-                date_clean = self.clean_date(tracker)
-                date = date_clean.strftime("%Y-%m-%d")
-                slots.append(SlotSet('DATE', date))
-
-            #else:
-            #    date = self.postprocess_day_or_date(dispatcher, DATE) #  @FIXME: Postprocessor duplicates preprocessor.
-            #    slots.append(SlotSet('DATE', date))
+                date_clean = self.clean_date(dispatcher, tracker)
+                slots.append(SlotSet('DATE', date_clean))
 
         return slots
 
@@ -590,18 +580,17 @@ class ActionDateParts(Action):
         return "action_date_parts"
 
     def run(self, dispatcher, tracker, domain):
-        input('run date parts')
         slots = []
         when = {}
         date = tracker.get_slot('DATE')
 
         if date is None:
             dispatcher.utter_message("What day do you have in mind?") #  This should use an utterance template.
-            # return [FollowupAction("check_date")]
-            return
+
+            return # rly?
 
         when['date'] = tracker.get_slot('DATE')
-        when['date'] = datetime.datetime.strptime(when['date'], '%Y-%m-%d')
+        when['date'] = dt.strptime(when['date'], '%Y-%m-%d')
         when['weekday'] = when['date'].strftime("%A")
         when['month'] = when['date'].strftime("%m")
         when['day_of_month'] = when['date'].strftime("%d")
@@ -640,8 +629,6 @@ class ActionChat(Action):
         user = (tracker.current_state())["sender_id"]
         #input(tracker.latest_message)
         message = tracker.latest_message['text'] # :-)
-        #dispatcher.utter_message(message)
-
         response = chat.ask(user, message)
         dispatcher.utter_message(response)
 

@@ -844,6 +844,8 @@ templates:
   - text: Ok, morning then.
   utter_ok_afternoon:
   - text: Ok, afternoon then.
+  utter_confirm_change_day_or_time:
+  - text: Ok, you'd like to change the {date_or_time}, correct?
   utter_confirm_change_date_or_time:
   - text: Ok, you'd like to change the {date_or_time}, correct?
 

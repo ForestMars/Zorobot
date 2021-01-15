@@ -8,100 +8,97 @@
     "email_form": {
       "slots": []
     },
+    "who_form": {
+      "slots": []
+    },
+    "when_form": {
+      "slots": []
+    },
+    "utter_pick_a_day": {
+      "slots": []
+    },
     "utter_bye": {
       "slots": []
     },
     "utter_np": {
       "slots": []
     },
-    "utter_ask_schedule_call": {
-      "slots": []
-    },
-    "when_form": {
-      "slots": []
-    },
-    "action_check_time": {
-      "slots": []
-    },
-    "utter_yes_i_like": {
-      "slots": []
-    },
-    "who_form": {
-      "slots": []
-    },
-    "utter_zoro_likes": {
-      "slots": []
-    },
-    "utter_ask_time_date": {
-      "slots": []
-    },
-    "utter_ask_change_what": {
-      "slots": []
-    },
-    "utter_pick_a_day": {
+    "utter_your_name": {
       "slots": []
     },
     "utter_zorobot": {
       "slots": []
     },
-    "utter_looking_forward": {
-      "slots": []
-    },
-    "utter_your_name": {
-      "slots": []
-    },
-    "utter_im_zoro": {
-      "slots": []
-    },
-    "utter_im_a_scheduling_agent": {
-      "slots": []
-    },
-    "utter_zoro_spoiled": {
-      "slots": []
-    },
-    "utter_intro_dog": {
-      "slots": []
-    },
-    "utter_ask_date": {
-      "slots": []
-    },
-    "utter_ask_time_day": {
-      "slots": []
-    },
-    "utter_sorry_dont_understand": {
-      "slots": []
-    },
-    "utter_zoro_origin": {
-      "slots": []
-    },
-    "utter_greet": {
-      "slots": []
-    },
-    "utter_super_good": {
-      "slots": []
-    },
-    "utter_ask_who": {
-      "slots": []
-    },
-    "utter_zoro_thx": {
-      "slots": []
-    },
-    "utter_zoro_walk": {
-      "slots": []
-    },
-    "action_chat": {
+    "utter_zoro_likes": {
       "slots": []
     },
     "utter_corona_bot": {
       "slots": []
     },
+    "utter_super_good": {
+      "slots": []
+    },
+    "utter_greet": {
+      "slots": []
+    },
+    "utter_ask_change_what": {
+      "slots": []
+    },
     "utter_wassup": {
+      "slots": []
+    },
+    "action_check_time": {
+      "slots": []
+    },
+    "utter_zoro_thx": {
+      "slots": []
+    },
+    "utter_im_zoro": {
+      "slots": []
+    },
+    "utter_ask_date": {
+      "slots": []
+    },
+    "utter_working_on": {
+      "slots": []
+    },
+    "utter_ask_time_date": {
+      "slots": []
+    },
+    "utter_yes_i_like": {
+      "slots": []
+    },
+    "action_chat": {
       "slots": []
     },
     "utter_ask_day": {
       "slots": []
     },
-    "utter_working_on": {
+    "utter_im_a_scheduling_agent": {
+      "slots": []
+    },
+    "utter_looking_forward": {
+      "slots": []
+    },
+    "utter_ask_schedule_call": {
+      "slots": []
+    },
+    "utter_zoro_origin": {
+      "slots": []
+    },
+    "utter_zoro_walk": {
+      "slots": []
+    },
+    "utter_sorry_dont_understand": {
+      "slots": []
+    },
+    "utter_zoro": {
+      "slots": []
+    },
+    "utter_zoro_spoiled": {
+      "slots": []
+    },
+    "utter_ask_time_day": {
       "slots": []
     }
   },
@@ -119,7 +116,7 @@
     "rasa_core.policies.form_policy.FormPolicy",
     "rasa_core.policies.fallback.FallbackPolicy"
   ],
-  "trained_at": "20210114-045131",
+  "trained_at": "20210114-203745",
   "rasa_core": "0.13.8",
   "tensorflow": "1.12.0",
   "sklearn": "0.20.2"

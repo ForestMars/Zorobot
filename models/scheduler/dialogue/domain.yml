@@ -9,6 +9,7 @@ actions:
 - action_check_day
 - action_check_date
 - action_check_time
+- action_preprocess_when
 - action_reset_email
 - action_update_contacts
 - utter_greet
@@ -758,14 +759,16 @@ templates:
   utter_anyway:
   - text: hemingway...
   utter_ask_DATE:
-  - text: What DATE are we shooting for ??
+  - text: What's a good day for you?
+  - text: What's your preferred day?
+  - text: What would be your preferred day?
   utter_ask_Date:
   - text: What Date are we shooting for ??
   utter_ask_Day:
   - text: Ask day capitalized
   utter_ask_Time:
-  - text: What time is good for you?
-  - text: What's a good time for you?
+  - text: What time is good for you on {Day}, {month_name} {day_of_month}?
+  - text: What's a good time for you on {Day}, {month_name} {day_of_month}
   utter_ask_are_you_tryna_schedule:
   - text: Are you trying to set up a call with Forest?
   - text: Are you trying to set up a meeting with Forest?

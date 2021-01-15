@@ -8,12 +8,17 @@
   - action_update_contacts
 * affirm OR ask_which_day
   - utter_ask_day
+  - action_preprocess_when
   - when_form
   - form{"name": "when_form"}
   - form{"name": null}
   - action_date_parts
   - action_check_time  
   - utter_sure_we_can
+  - email_form
+  - form{"name": "email_form"}
+  - form{"name": null}
+  - utter_confirm_best_email
 * ask_availability
   - utter_pick_a_day
 
@@ -32,8 +37,8 @@
   - who_form
   - form{"name": "who_form"}
   - form{"name": null}
-  - utter_good2hear
-  - utter_ask_schedule_call
+  - utter_nicetohearfromu
+  - utter_ask_howcanihelp
 * affirm OR ask_which_day
   - utter_ask_day
 * ask_availability
@@ -58,16 +63,17 @@
   - who_form
   - form{"name": "who_form"}
   - form{"name": null}
-  - utter_good2hear
+  - utter_nicetohearfromu
 * deny
   - utter_im_a_scheduling_agent
 
-  ## is this you forest
-  * forest
-    - utter_ask_who
-    - who_form
-    - form{"name": "who_form"}
-    - form{"name": null}
+## is this you forest
+* forest
+  - utter_ask_who
+  - who_form
+  - form{"name": "who_form"}
+  - form{"name": null}
+
 
 ### ~~~~~~~~~~~~~~~~~~~~~ Discuss Day and Time ~~~~~~~~~~~~~~~~~~~~
 
@@ -75,6 +81,7 @@
 * lets_do OR can_we_do_something
   - utter_sure_we_can
   - utter_ask_day
+  - action_preprocess_when  
   - when_form
   - form{"name": "when_form"}
   - form{"name": null}
@@ -86,6 +93,7 @@
   - who_form
   - form{"name": "who_form"}
   - form{"name": null}
+  - action_preprocess_when
   - when_form
   - form{"name": "when_form"}
   - form{"name": null}
@@ -95,31 +103,23 @@
   - email_form
   - form{"name": "email_form"}
   - form{"name": null}  
+  - utter_confirm_best_email
+* affirm OR thanks OR affirm_day
+  - utter_shall_we_confirm  
+* affirm OR thanks
+  - action_send_invite
+* affirm OR ok
+  - utter_looking_forward
+* bye OR bye_fancy
+  - utter_bye
 
-## availability ping pong
-* ask_availability
-  - who_form
-  - form{"name": "who_form"}
-  - form{"name": null}
-  - when_form
-  - form{"name": "when_form"}
-  - form{"name": null}
-  - action_date_parts
-  - utter_sure_we_can
-* ask_availability
-  - utter_pick_a_day
-* utter_suggest_day
-  - action_check_day
-  - utter_sure_we_can
-  - email_form
-  - form{"name": "email_form"}
-  - form{"name": null}  
 
 ## availability not ping pong but exactly the same
 * ask_availability
   - who_form
   - form{"name": "who_form"}
   - form{"name": null}
+  - action_preprocess_when
   - when_form
   - form{"name": "when_form"}
 * ask_availability
@@ -131,6 +131,15 @@
   - email_form
   - form{"name": "email_form"}
   - form{"name": null}
+  - utter_confirm_best_email
+* affirm OR thanks OR affirm_day
+  - utter_shall_we_confirm  
+* affirm OR thanks
+  - action_send_invite
+* affirm OR ok
+  - utter_looking_forward
+* bye OR bye_fancy
+  - utter_bye
 
 ## suggest date
 * suggest_date

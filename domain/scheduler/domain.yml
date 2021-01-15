@@ -380,6 +380,7 @@ actions:
 - action_check_day
 - action_check_date
 - action_check_time
+- action_preprocess_when
 - action_reset_email
 - action_update_contacts
 
@@ -1064,7 +1065,9 @@ templates:
   utter_soami:
   - text: So am I!
   utter_ask_DATE:
-  - text: What DATE are we shooting for ??
+  - text: What's a good day for you?
+  - text: What's your preferred day?
+  - text: What would be your preferred day?
   utter_ask_Date:
   - text: What Date are we shooting for ??
   utter_hope_to_make_it:
@@ -1076,5 +1079,5 @@ templates:
   utter_ask_Day:
   - Ask day capitalized
   utter_ask_Time:
-  - What time is good for you?
-  - What's a good time for you?
+  - What time is good for you on {Day}, {month_name} {day_of_month}?
+  - What's a good time for you on {Day}, {month_name} {day_of_month}?

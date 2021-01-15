@@ -249,6 +249,7 @@
     "prev_action_check_day",
     "prev_action_check_date",
     "prev_action_check_time",
+    "prev_action_preprocess_when",
     "prev_action_reset_email",
     "prev_action_update_contacts",
     "prev_utter_greet",

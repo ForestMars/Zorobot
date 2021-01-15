@@ -3,6 +3,7 @@
 # @TODO: Better logging.
 
 import datetime
+from datetime import datetime as dt
 import json
 from typing import Any, Text, Dict, List, Union
 
@@ -179,7 +180,7 @@ class ActionCheckDay(Action):
         # date here is month and day string?
         #ord_day = kr.ord_day_from_date(when['date'])
         msg_lmc = 'By ' + day_clean + ' you mean ' + \
-            str(when['date']) + ', right? Let me quickly check my schedule... (for that day)'
+            str(when['date']) + ', right? Let me quickly check my schedule...'
         dispatcher.utter_message(msg_lmc)
 
         when = kr.get_date_parts(when)
@@ -217,7 +218,7 @@ class ActionCheckTime(Action):
     def run(self, dispatcher, tracker, domain):
         slots = []
         when = {}
-
+        input('run chk time')
         if tracker.get_slot('Time') is not None:
             time_dirty = tracker.get_slot('Time')
         if time_dirty is not None:
@@ -422,7 +423,7 @@ class EmailForm(FormAction):
                 return None
                 slots.append(SlotSet('email', ''))
             elif sch.is_valid_email(email) == True:
-                dispatcher.utter_message("Got it.\n")
+                #dispatcher.utter_message("Just to confirm, " + email + " is the correct email address to send the calendar invite to?\n")
                 return email
 
     def submit(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict]:
@@ -441,6 +442,24 @@ class WhoForm(FormAction):
         return []
 
 
+class ActionPreprocessWhenForm(Action):
+    """ Because Rasa forms have no preprocessors, lol. """
+
+    def name(self):
+        return "action_preprocess_when"
+
+    def run(self, dispatcher, tracker, domain):
+        slots = []
+        date = tracker.get_slot('DATE')
+
+        if date is not None:
+            if date.lower().replace('sometime', '').strip() in ['this week', 'next week', 'this month', 'next month']:
+                dispatcher.utter_message("We can set something up for " + date)
+                slots.append(SlotSet('DATE', None))
+
+        return slots
+
+
 # @TODO: Move formatters out of reactions file into custom handler.
 class WhenForm(FormAction):
     def name(self):
@@ -450,14 +469,55 @@ class WhenForm(FormAction):
     def required_slots(tracker):
         return ["DATE", "Time"]
 
-    def preprocess_day_or_date(self, dispatcher, DATE):
+    # Misnamed abstract method. Doesn't request next slot, but collects all slots prior to validataion.
+    def request_next_slot(self, dispatcher, tracker, domain):
+        for slot in self.required_slots(tracker):
+            if self._should_request_slot(tracker, slot):
+                kwargs = {}
+                if slot == 'DATE':
+                    dispatcher.utter_template("utter_ask_{}".format(slot), tracker, **kwargs)
+                    return [SlotSet('DATE', '')] # ???
+                if slot == 'Time':
+                    if tracker.get_slot('DATE') is not None:
+                        date = self.clean_date(tracker)
+                        kwargs.update({"Day": dt.strftime(date, '%A')})
+                        kwargs.update({"month_name": dt.strftime(date, '%b')})
+                        kwargs.update({"day_of_month": dt.strftime(date, '%d')})
 
-        if DATE.isalpha() and len(DATE.split()) == 1:  # We most assuredly have a day, not a date.
+                    dispatcher.utter_template("utter_ask_{}".format(slot), tracker, **kwargs)
+                    return [SlotSet('Time', '')] # srsly, wtf
+
+                # return #  just like that? after creating a bunch of side effects, apparently.
+
+    def clean_date(self, tracker):
+        day_dirty = tracker.get_slot('Day')  # CRF NER outperforma Spacy NER
+        DATE = tracker.get_slot('DATE')  # Spacy NER fallback (pretrained)
+
+        # Our CRF works where spaCy NER fails (such as weekday abbreviations just for one example.)
+        if day_dirty is not None:
+            day_clean = kr.clean_day_str(day_dirty).capitalize()
+            day_clean = kr.day_abbr_to_full(day_clean)
+            if day_dirty.lower().strip() not in ['today', '']:  # sub-optimal, move get_date_ function into clean_day_str
+                date_clean = kr.get_date_from_weekday(day_clean)
+                #ord_day = kr.ord_day_from_date(when['date'])
+            elif day_dirty.lower() == 'today': # ????
+                when['date'] = kr.get_todays_date()
+        # Spacy NER is fallback, bc it's doesn't perform as well as our CRF NER (IWBH.)
+        else:
+            try:
+                date_clean = self.preprocess_day_or_date(dispatcher, DATE)
+            except:
+                print("Spacy NER fail.")
+
+        return date_clean
+
+    def preprocess_day_or_date(self, dispatcher, DATE):
+        if DATE.isalpha() and len(DATE.split()) == 1:  # We most assuredly have a day, not a date. (Execept when Spacy NR fails.)
             day_clean = kr.clean_day_str(DATE).capitalize()
             date = kr.get_date_from_weekday(day_clean)
             date_str = datetime.datetime.strftime(date, "%B %d")
             msg = 'By ' + day_clean + ' you mean ' + \
-                date_str + ', right? Let me quickly check my schedule... (for that day)'
+                date_str + ', right? Let me quickly check my schedule...'
             dispatcher.utter_message(msg)
         else:
             grok = kr.Grok()
@@ -472,33 +532,29 @@ class WhenForm(FormAction):
 
         return date.strftime("%Y-%m-%d")
 
-    def preprocess_vague_date(DATE):
-        if DATE.strip().lower() in ['this week', 'next week', 'this month', 'next month']:
-            dispatcher.utter_message("What's a good day for you " + DATE)
-
-    def preprocess_date(DATE):
+    def preprocess_date(self, DATE):
         date_clean = self.day_or_date(DATE)
 
+    def preprocess_vague_date(self, dispatcher, DATE):
+        if DATE.lower().replace('sometime', '').strip() in ['this week', 'next week', 'this month', 'next month']:
+            dispatcher.utter_message("We could set something up for " + DATE)
+
+            return True
+
     def validate_DATE(self, val, dispatcher, tracker, domain):
+        # day_dirty = tracker.get_slot('Day')  # CRF NER outperforms Spacy NER
         DATE = tracker.get_slot('DATE')  # Spacy NER fallback (pretrained)
-        day_dirty = tracker.get_slot('Day')  # CRF is fallback only here, but not by design.
 
         if DATE is not None:
-            date_clean = self.preprocess_day_or_date(dispatcher, DATE)
+            if self.preprocess_vague_date(dispatcher, DATE) is True: # NB: won't fire if slot was set before form was activated.
+                return None
 
-        # This is explictly for handling spaCy NER fails such as weekday abbreviations just for one example.
-        elif day_dirty is not None:
-            day_clean = kr.clean_day_str(day_dirty).capitalize()
-            day_clean = kr.day_abbr_to_full(day_clean)
-            if day_dirty.lower().strip() not in ['today', '']:  # sub-optimal, move get_date_ function into clean_day_str
-                date_clean = kr.get_date_from_weekday(day_clean)
-                ord_day = kr.ord_day_from_date(when['date'])
-            elif day_dirty.lower() == 'today':
-                when['date'] = kr.get_todays_date()
-                ord_day = kr.ord_day_from_date(when['date'])
+        date_clean = self.clean_date(tracker)
 
         if date_clean is not None:
-            return date_clean
+            self.date = date_clean.strftime("%Y-%m-%d")
+
+            return self.date
 
     def validate_Time(self, val, dispatcher, tracker, domain):
         time = tracker.get_slot('Time')
@@ -507,7 +563,22 @@ class WhenForm(FormAction):
 
     def submit(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict]:
         slots = []
-        slots.append(SlotSet('HowLong', 'SUCH QUALITY'))
+        DATE = tracker.get_slot('DATE')
+
+        # This is to catch vague dates captured by NER outside the form action (since form only validate fields it captures itself, and has not concept of preprocessing.)
+        if DATE is not None:
+            if self.preprocess_vague_date(dispatcher, DATE) is not None: # This is less than ideal.
+                slots.append(SlotSet('DATE', None))
+            # We literally have to validate every field in a form on submit, bc the form isn't smart enough to validate them.
+            else:
+                #date = self.preprocess_day_or_date(dispatcher, DATE)
+                date_clean = self.clean_date(tracker)
+                date = date_clean.strftime("%Y-%m-%d")
+                slots.append(SlotSet('DATE', date))
+
+            #else:
+            #    date = self.postprocess_day_or_date(dispatcher, DATE) #  @FIXME: Postprocessor duplicates preprocessor.
+            #    slots.append(SlotSet('DATE', date))
 
         return slots
 
@@ -519,11 +590,18 @@ class ActionDateParts(Action):
         return "action_date_parts"
 
     def run(self, dispatcher, tracker, domain):
+        input('run date parts')
         slots = []
         when = {}
+        date = tracker.get_slot('DATE')
+
+        if date is None:
+            dispatcher.utter_message("What day do you have in mind?") #  This should use an utterance template.
+            # return [FollowupAction("check_date")]
+            return
+
         when['date'] = tracker.get_slot('DATE')
         when['date'] = datetime.datetime.strptime(when['date'], '%Y-%m-%d')
-
         when['weekday'] = when['date'].strftime("%A")
         when['month'] = when['date'].strftime("%m")
         when['day_of_month'] = when['date'].strftime("%d")
@@ -540,8 +618,8 @@ class ActionDateParts(Action):
         slots.append(SlotSet('Day', when['Day']))
 
         #msg = ' Let me quickly check my schedule for ' + when['Day'] + ' ' + when['month_name'] + ' ' + when['ord'] + ' at ' + when['hour'] +':'+ when['minutes']
-        msg = ' Let me quickly check my schedule for ' + when['Day'] + ' ' + when['month_name'] + ' ' + when['ord']
-        dispatcher.utter_message(msg)
+        #msg = ' Let me quickly check my schedule for ' + when['Day'] + ' ' + when['month_name'] + ' ' + when['ord']
+        #dispatcher.utter_message(msg)
 
         return slots
 

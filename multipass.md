@@ -42,8 +42,5 @@
 - it's [mel](who) thank you for getting back to me and i would like to [schedule a call](activity). what is your availability this week or next? thanks
 - it's [mel](who) thank you for getting back to me and i would like to [book a call](activity). what is your availability this week or next? thanks
 
-
-
-
 - hey forest this is [Jean Luc Pierre](PERSON). I was wondering if you mihght have some time for us to schedule a call, maybe this week or next?
 - Forest asked me to text you to set up a time for he and I to [have a call](activity). Please let me know when we can do that. TY [Gene](NAME)

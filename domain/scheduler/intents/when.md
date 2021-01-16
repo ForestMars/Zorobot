@@ -42,8 +42,8 @@
 - can you [schedule a meeting](activity:have a meeting) for me
 - can you [set up a call](activity:have a call) for me
 - can you [set up a meeting](activity:have a meeting) for me
-- can you arrange [a call](activity) for me
-- can you book [a call](activity) for me
+- can you arrange [a call](activity:have a call) for me
+- can you book [a call](activity:have a call) for me
 - can you please [schedule a call](activity) with [Forest](fm)
 - can you please [schedule a meeting](activity) with [Forest](fm)
 - can you please [set up a meeting](activity) with [Forest](fm)
@@ -52,7 +52,7 @@
 - can you [schedule a call](activity) on [forest's](fm:forest) calendar
 - can you [add a meeting](activity) to [forest's](fm:forest) calendar
 
-- Hey [forest](fm), Love to set up [a call](activity). [Paul](who) Acme Personel
+- Hey [forest](fm), Love to set up [a call](activity:have a call). [Paul](who) Acme Personel
 - hi would like to [book a call](activity:have a call) please
 - hi would like to [book a call](activity:have a call) with forest
 - hi would like to [book a Zoom call](activity:set up a Zoom call) with [forest](fm) please
@@ -88,7 +88,7 @@
 - lets [go see a movie](activity)
 - lets [go to a show](activity)
 - lets [grab lunch](activity)
-- lets [grab lunch](activity) [sometime](when)
+- lets [grab lunch](activity) [sometime](When)
 - lets [hang out in your garden](activity)
 - lets [hang out](activity)
 - lets [have a call](activity)
@@ -107,19 +107,19 @@
 - please [schedule a meeting](activity) with [[forest](fm)]
 
 - we should [get together](activity)
-- we should [get together](activity) [sometime](when)
+- we should [get together](activity) [sometime](When)
 - we should [hang out](activity)
-- we should [hang out](activity) [sometime](when)
+- we should [hang out](activity) [sometime](When)
 - we should [have a call](activity)
 - we should [have a meeting](activity)
 - we should [meet up](activity)
-- we should [meet up](activity) [sometime](when)
+- we should [meet up](activity) [sometime](When)
 - we should [set up a call](activity:have a call)
 - we should [set up a meeting](activity:have a meeting)
 - we were talking about [having a call](activity)
 - whats a good day for a [meeting](activity:meet)
-- when is a good time for us to [book a call](activity:have a call) with [forest](fm)
-- when is a good time for us to [book a meeting](activity:have a meeting)
+- When is a good time for us to [book a call](activity:have a call) with [forest](fm)
+- When is a good time for us to [book a meeting](activity:have a meeting)
 
 - would like to [book a call](activity:have a call)
 - would like to [book a call](activity:have a call) please
@@ -148,7 +148,7 @@
 - let's [meet in your garden](activity:hang out in the garden)
 - lets [hang out in your garden](activity:hang out in the garden)
 - do you want me to [come over](activity)
-- do you want me to [come over](activity) [tonight](when)
+- do you want me to [come over](activity) [tonight](When)
 
 ## intent:ask_availability
 
@@ -158,18 +158,29 @@
 - whats your calendar look like
 - what does your calendar look like
 - can we [do lunch](activity)
+- whats your availability
+- whats your best availability
+- whats your availability for [lunch](activity:do lunch)
+- whats your availability for [a call](activity:have a call)
+- whats your availability to [meet up](activity)
+- whats your availability for lunch [tomorrow](Day)
+- whats your availability for a call [today](Day)
+- whats your availability for a call [this week](When)
+- whats your availability to meet up [next week](When)
 
-- are you available to [meet up](activity) [this week](when)
-- are you available for a [meeting](activity) [this week](when)
-- are you available to [get together](activity) [this week](when)
-- are you available for [an on-site](activity:meet on site) [this week](when)
-- are you available for [an on site](activity:meet on-site) [this week](when)
-- are you available for [lunch](activity) [this week](when)
-- are you available for a [lunch](activity) [this week](when)
-- Are you available for a [meeting](activity) this week?
-- Are you available for a [meeting](activity) next week?
-- Are you available for a [meeting](activity) this week or next?
-- are you available for [a call](activity) this week?
+
+- are you available to [meet up](activity) [this week](When)
+- are you available for a [meeting](activity) [this week](When)
+- are you available to [get together](activity) [this week](When)
+- are you available for [an on-site](activity:meet on site) [this week](When)
+- are you available for [an on site](activity:meet on-site) [this week](When)
+- are you available for [lunch](activity) [this week](When)
+- are you available for a [lunch](activity) [this week](When)
+- Are you available for a [meeting](activity) [this week](When)?
+- Are you available for [an interview](activity:schedule an interview) [next week](When)?
+- Are you available for  [an onsite](activity) [next week](When)?
+- Are you available for a [meeting](activity) [this week or next](When)?
+- are you available for [a call](activity:have a call) this week?
 - are you available for [lunch](activity) next week?
 - are you able to interview engineering candidates [this week](When)
 - are you available for [an interview](activity) [this week](When)
@@ -178,10 +189,10 @@
 - are you interviewing candidates [next week](When)
 - are you interviewing engineers [this week](When)
 
-- can i [come over](activity) [this week](when)
-- can i [come over](activity) [today](when)
-- can i [come over](activity) [tomorrow](when)
-- can i [come over](activity) [tonight](when)
+- can i [come over](activity) [this week](When)
+- can i [come over](activity) [today](When)
+- can i [come over](activity) [tomorrow](When)
+- can i [come over](activity) [tonight](When)
 - can we [get together](activity)
 - can we [hang out in the garden](activity)
 - can we [hang out in your garden](activity:hang out in the garden)
@@ -225,8 +236,8 @@
 - got time for [lunch](activity:do lunch) [this week](When)
 
 - what [day](When) is good for you?
-- what is a good [day](When) for [a call](activity)
-- what is a good time for [a call](activity)
+- what is a good [day](When) for [a call](activity:have a call)
+- what is a good time for [a call](activity:have a call)
 - what's a good day for us to [have lunch](activity)
 - what's a good day for us to [have lunch](activity) [this week](When)
 - what's a good day for us to [meet up for lunch](activity)
@@ -237,11 +248,11 @@
 - what's a good day to [meet up for lunch](activity) [this week](When)
 - whats [a good day](When) to [hang out in your garden](activity
 - whats [the soonest](When) we can [schedule an interview](activity)
-- whats a good [day](When) for us to have [a call](activity)
+- whats a good [day](When) for us to have [a call](activity:have a call)
 - whats a good [day](When) for you
-- whats a good [day](When) for you to have [a call](activity)
+- whats a good [day](When) for you to have [a call](activity:have a call)
 - whats a good [day](When) for you?
-- whats a good [day](When) to have [a call](activity)
+- whats a good [day](When) to have [a call](activity:have a call)
 - whats a good [day](When) to [get together](activity)
 - whats a good [day](When) to [hang out](activity)
 - whats a good [day](When) to [meet](activity)
@@ -253,25 +264,25 @@
 - [When is a good time](When) for us to [hang out](activity)
 - [When is a good time](When) for us to [meet up](activity)
 - [When](When) is a good time for us to [get together](activity)
-- when should we [have lunch](activity)
+- When should we [have lunch](activity)
 
-- when are you [free](activity)
-- when are you [going to be home](activity)
-- when are you [having dinner](activity)
-- when are you [leaving for japan](activity)
-- when are you [leaving](activity)
-- when are you [painting](activity)
-- when are you [raking the leaves](activity)
-- when are you [working](activity)
-- when are you [doing band related stuff](activity)
-- when is a good time for us to [schedule a call](activity:have a call)
-- when will you be [doing band related stuff](activity)
-- when will you be [working](activity)
-- when will you be [painting](activity)
-- when will you be [leaving](activity)
-- when will you be [leaving for japan](activity)
-- when will you be [having dinner](activity)
-- when will you be [free](activity)
+- When are you [free](activity)
+- When are you [going to be home](activity)
+- When are you [having dinner](activity)
+- When are you [leaving for japan](activity)
+- When are you [leaving](activity)
+- When are you [painting](activity)
+- When are you [raking the leaves](activity)
+- When are you [working](activity)
+- When are you [doing band related stuff](activity)
+- When is a good time for us to [schedule a call](activity:have a call)
+- When will you be [doing band related stuff](activity)
+- When will you be [working](activity)
+- When will you be [painting](activity)
+- When will you be [leaving](activity)
+- When will you be [leaving for japan](activity)
+- When will you be [having dinner](activity)
+- When will you be [free](activity)
 
 - what [day](When)
 - any particular [day](When)
@@ -310,31 +321,63 @@
 - which [day](When) works for you for a [meeting](activity:meet)
 - which day is good for [lunch](activity:do lunch)
 
-- hey [forest](fm), want to [have lunch](activity) this week](When)
+- Hey [forest](fm), did you get my email? Will you let me know your availability for [a call](activity:have a call)? Best, [will](who)
+- Hey [forest](fm), got time for [a call](activity:have a call) on Friday? This is [Gene](who)
+- hey [forest](fm), want to [have lunch](activity) [this week](When)
 - hey [forest](fm) this is [Andy Tsang](PERSON) thank you for getting back to me, can we [hop on a call](activity) whats good for this week?
-- hey [forest](fm) this is [barry](who) got time for [a call](activity) this week?
-- Hey [forest](fm), did you get my email? Will you let me know your availability for a call? Best, [will](who)
+- hey [forest](fm) this is [barry](who) got time for [a call](activity:have a call) this week?
 - Hi [forest](fm) thank you for getting back to me. I am interested in [setting up a call](activity). Sincerely, [Chuck](who)
 - Hi [forest](fm) thank you for getting back to me. I would be interested in [setting up a call](activity). Thanks very much, [Ann](who)
 - Hi [forest](fm) thank you for getting back to me. I would like to [set up a call](activity). Sincerely, [Bud](who)
-- hi [forest](fm) this is [tatiana](who). what's a good time for [a call](activity).? I have some resumes to send your way.
+- hi [forest](fm) this is [tatiana](who). what's a good time for [a call](activity:have a call).? I have some resumes to send your way.
 - Hi [forest](fm), it's [lana](who) did you get the resumes i snt over? Let me know what you think of these candidates please.
 - Hi [forest](fm), thank you for coming back to me and i would be keen to [set up a call](activity). Can you let me know what your availability is? Thanks, [Sarah](who)
 - hi [forest](fm), this is [chip](who) i sent you some resumes and wanted to see whats a good time to [discuss](activity)? LMK!
-- this is [arlo](who) thank you for getting back to me, can we [hop on a call](activity). whats good for this week?
-- [dan](who) here from bci. whats your availability for [a call](activity) this week?
-- this is [andy](who). do you have a time for [a call](activity) this week? I have some interesting candidates for you.
+- Hi [Forest](fm), it’s [Tom](who), can we [schedule a meeting](activity) [sometime soon](When)?
+- this is [andy](who). do you have a time for [a call](activity:have a call) this week? I have some interesting candidates for you.
+- this is [arlo](who) thank you for getting back to me, can we [hop on a call](activity). whats good for [tomorrow](Day)?
 - this is [arlo](who), thank you for getting back to me, can we [hop on a call](activity)? whats good for this week?
 
-- this is [barbara](who) got time for [a call](activity) this week?
-- this is [barbara](who), got time for a call this week?
-- this is [therese](who), what's your availability like this week? I sent some candidates your way
+- this is [barbara](who) got time for [a call](activity:have a call) [this week](When)?
+- this is [barbara](who), got time for [a call](activity:have a call) [this week](When)?
+- this is [therese](who), what's your availability like [this week](When)? I sent some candidates your way
+- [dan](who) here from bci. whats your availability for [a call](activity:have a call) [this week](When)?
+
+- hi [Forest](fm), this is [Ralph](who). Can we [schedule a meeting](activity) in [the coming week](When)?
+- hi [Forest](fm), can we [schedule a meeting](activity) in [the coming week](When)?
+- Hey [Forest](fm) it’s [Jessica](who), got time for [lunch](activity) [tomorrow](Day)?
+- Hey [Forest](fm) it’s [Franscesa](who), got time to [meet up](activity) [sometime](When)?
+- Hey [Forest](fm) it’s [Samantha](who), got time to [get together](activity) [sometime](When)?
+- got time for [a call](activity:schedule a call)
+- are you free for [lunch](activity:do lunch)
+- forest it’s [fred](who). do you have time for [lunch](activity:do lunch)
+- forest it’s [fred](who). do you have time for [lunch](activity:do lunch) next [tuesday](Day)
 
 - any particular [day](When) in mind?
 - is there a good time we can [speak](activity)
-- is there a good time for [a call](activity)
+- is there a good time for [a call](activity:have a call)
 - is there a good time to [discuss](activity)
 - you tell me what [day](When) is good
+
+- what time on [tuesday](Day)
+- what time do you prefer?
+- what time are you thinking
+- what time works well for you
+- what time is good for you
+- what's good for you
+- what's the best time for you
+- what time should we say
+- whats a good time
+- whats a good time for [lunch](activity:lunch)
+- what's a good day to [meet up](activity)
+- what's the best day to [meet up](activity) [next week](vague_When)
+- do you have a peferred day?
+- what's your preferred day
+- is there a day that's good for you?
+- is there a particular day that works for you
+- do you have a peferred time?
+- what's your preferred time
+
 
 ## intent:suggest_availability
 - [Today](Day)
@@ -455,27 +498,40 @@
 
 
 - can you do a call [tomorrow](Day)
-- can you do [a call](activity) on [monday](Day)
-- can you do [a call](activity) on [tuesday](Day)
-- can you do [a call](activity) on [wensday](Day)
-- can you do [a call](activity) on [thurs](Day)
-- can you do [a call](activity) on [fri](Day)
-- can you do [a call](activity) this [monday](Day)
-- can you do [a call](activity) this [tuesday](Day)
-- can you do [a call](activity) this [wensday](Day)
-- can you do [a call](activity) this [thurs](Day)
-- can you do [a call](activity) this [fri](Day)
-- can you do [a call](activity) next [monday](Day)
-- can you do [a call](activity) next [tuesday](Day)
-- can you do [a call](activity) next [wensday](Day)
-- can you do [a call](activity) next [thurs](Day)
-- can you do [a call](activity) next [fri](Day)
+- can you do [a call](activity:have a call) on [monday](Day)
+- can you do [a call](activity:have a call) on [tuesday](Day)
+- can you do [a call](activity:have a call) on [wensday](Day)
+- can you do [a call](activity:have a call) on [thurs](Day)
+- can you do [a call](activity:have a call) on [fri](Day)
+- can you do [a call](activity:have a call) this [monday](Day)
+- can you do [a call](activity:have a call) this [tuesday](Day)
+- can you do [a call](activity:have a call) this [wensday](Day)
+- can you do [a call](activity:have a call) this [thurs](Day)
+- can you do [a call](activity:have a call) this [fri](Day)
+- can you do [a call](activity:have a call) next [monday](Day)
+- can you do [a call](activity:have a call) next [tuesday](Day)
+- can you do [a call](activity:have a call) next [wensday](Day)
+- can you do [a call](activity:have a call) next [thurs](Day)
+- can you do [a call](activity:have a call) next [fri](Day)
 - can we set up [a ca;;](activity:call) for [monday](Day)
-- do you have time for [a call](activity)
-- do you have availability for [a call](activity)
-- are you available for [a call](activity)
+- do you have time for [a call](activity:have a call)
+- do you have time for [a call](activity:have a call) [tomorrow](Day)?
+- do you have time for [lunch](activity:have lunch) [tomorrow](Day)?
+- do you have time to grab [lunch](activity:have lunch) [tomorrow](Day)?
+- want to grab [lunch](activity:have lunch) [tomorrow](Day)?
+- wanna grab [lunch](activity:have lunch) [tomorrow](Day)?
+- do you have availability for [a call](activity:have a call)
+- are you available for [a call](activity:have a call)
+- got time [tomorrow](Day)?
+- got time for a call [tomorrow](Day)?
+- got time for [lunch](activity) [tomorrow](Day)?
+- got any time to meet up [tomorrow](Day)?
+- got any time for a call [tomorrow](Day)?
+- got any time for [lunch](activity) [tomorrow](Day)?
+- got any time to meet up [tomorrow](Day)?
+- Hey Forest](fm) it's [Jessie](who) got time for [lunch](activity) [tomorrow](Day)?
 
-- are you available for [a call](activity) on [the 15th](DATE)
+- are you available for [a call](activity:have a call) on [the 15th](DATE)
 
 - can you do [a meeting](activity) [tomorrow](Day)
 - can you do [a meeting](activity) on [monday](Day)
@@ -505,8 +561,10 @@
 
 - whats your availability
 - whats your availability like
-- whats your availability for [a call](activity)
+- whats [tomorrow](Day) look like for you?
+- whats your availability for [a call](activity:have a call)
 - whats your availability [today](Day)
+- whats your availability for a call [today](Day)
 - whats your availability [tomorrow](Day)
 - whats your avail [monday](Day)
 - whats your availability [tuesday](Day)
@@ -547,7 +605,7 @@
 - whats your avail on [thursday](Day) for a call
 - whats your availability on [friday](Day) to hop on a call
 - whats your availability for a call on [monday](Day)
-- ows your availability for a call on [tuesday](Day)
+- hows your availability for a call on [tuesday](Day)
 - whats your availability for a call on [wednesday](Day)
 - whats your availability for a call on [thursday](Day)
 - what is your availability for a call on [friday](Day)
@@ -557,9 +615,9 @@
 - hows your availability on [thursday](Day)
 - hows your availability on [friday](Day)
 - hows your availability [today](Day)
-- hows your availability on [tomorrow](Day)
-- hows your availability on [this week](When)
-- hows your availability on [next week](When)
+- hows your availability [tomorrow](Day)
+- hows your availability [this week](When)
+- hows your availability [next week](When)
 - whats your availability [this week](When)
 - whats your availability [next week](When)
 
@@ -1140,7 +1198,7 @@
 - [wednesday](Day) works for me
 - [thursday](Day) could work
 - sure [friday](Day) sounds good
-- that [day](vague_when) is good
+- that [day](vague_When) is good
 - ok great lets do that
 - OK, [Thursday](Day) at 2:00 works for me
 - OK, [Friday](Day) at 3:00 works for me too
@@ -1229,8 +1287,8 @@
 - [jan 12](DATE) would be better for me
 - actually [nov 22](DATE) would be better
 - actually [jan 22](DATE) would be better for me
-- actually [next week](when) is better for me
-- actually [next month](when) is better for me
+- actually [next week](When) is better for me
+- actually [next month](When) is better for me
 
 
 
@@ -1300,7 +1358,7 @@
 - actually [12:00](Time) would be perfect
 - can we do a different time instead
 
-## intent:vague_when
+## intent:vague_When
 - how is your availability looking [this week](DATE)
 - how is your availability looking [next week](DATE)
 - how is your availability looking [the week after next](DATE)

@@ -697,7 +697,7 @@ templates:
   - text: Sorry I have a new phone, who is this?
 
   utter_nicetomeetu:
-  - Nice to meet you, {nou}.
+  - Nice to meet you, {who}.
 
   utter_ask_where:
   - Where should we meet?
@@ -743,8 +743,11 @@ templates:
   utter_pick_a_day:
   - text: What's your preferred day?
   - text: What would be your preferred day?
+  - text: What's a good day for you?
   - text: What's a particular day that's good for you?
+  - text: Is there a particular day that's better for you?
   - text: Just about any day could work, depending on the time. What's a good day for you?
+
   utter_ask_specific_time:
   - text: Ok, {TOD} sounds good. What's a specific time you can do a call?
 
@@ -1077,7 +1080,7 @@ templates:
 
 # Moved into Reactions
   utter_nicetohearfromu:
-  - Nice to hear from you {nou}
+  - Nice to hear from you {who}
   utter_ask_Day:
   - Ask day capitalized
   utter_ask_Time:

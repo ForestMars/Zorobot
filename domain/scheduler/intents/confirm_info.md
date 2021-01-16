@@ -106,19 +106,8 @@
 - lets re-confirm the time
 - ok just to confirm what time
 
-## intent:what_time
-- what time on [tuesday](Day)
-- what time do you prefer?
-- what time are you thinking
-- what time works well for you
-- what time is good for you
-- what's good for you
-- what's the best time for you
-- what time should we say
-- whats a good time
-- whats a good time for [lunch](activity:lunch)
-- what's a good day to [meet up](activity)
-- what's the best day to [meet up](activity) [next week](vague_when)
+
+
 
 
 ### ~~~~~~~~~~~~~~~~~~~~~ Contact Info ~~~~~~~~~~~~~~~~~~~~

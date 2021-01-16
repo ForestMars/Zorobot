@@ -768,7 +768,7 @@ templates:
   - text: Ask day capitalized
   utter_ask_Time:
   - text: What time is good for you on {Day}, {month_name} {day_of_month}?
-  - text: What's a good time for you on {Day}, {month_name} {day_of_month}
+  - text: What's a good time for you on {Day}, {month_name} {day_of_month}?
   utter_ask_are_you_tryna_schedule:
   - text: Are you trying to set up a call with Forest?
   - text: Are you trying to set up a meeting with Forest?
@@ -854,6 +854,8 @@ templates:
   utter_confirm_best_email:
   - text: Just to confirm, {email} is the right email to send to?
   utter_confirm_change_date_or_time:
+  - text: Ok, you'd like to change the {date_or_time}, correct?
+  utter_confirm_change_day_or_time:
   - text: Ok, you'd like to change the {date_or_time}, correct?
   utter_confirm_location:
   - text: Ok, {place} it is.
@@ -975,9 +977,9 @@ templates:
   utter_nice:
   - text: Nice!
   utter_nicetohearfromu:
-  - text: Nice to hear from you {nou}
+  - text: Nice to hear from you {who}
   utter_nicetomeetu:
-  - text: Nice to meet you, {nou}.
+  - text: Nice to meet you, {who}.
   utter_no_worries:
   - text: No worries!
   utter_noidonotlikeyourhat:

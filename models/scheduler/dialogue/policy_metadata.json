@@ -17,10 +17,10 @@
     "utter_pick_a_day": {
       "slots": []
     },
-    "utter_np": {
+    "utter_bye": {
       "slots": []
     },
-    "utter_bye": {
+    "utter_np": {
       "slots": []
     },
     "utter_your_name": {
@@ -29,7 +29,16 @@
     "utter_zorobot": {
       "slots": []
     },
+    "utter_zoro_likes": {
+      "slots": []
+    },
     "utter_corona_bot": {
+      "slots": []
+    },
+    "utter_super_good": {
+      "slots": []
+    },
+    "utter_greet": {
       "slots": []
     },
     "utter_ask_change_what": {
@@ -38,37 +47,28 @@
     "utter_wassup": {
       "slots": []
     },
-    "action_chat": {
-      "slots": []
-    },
-    "utter_ask_time_date": {
-      "slots": []
-    },
-    "utter_zoro_likes": {
-      "slots": []
-    },
     "action_check_time": {
-      "slots": []
-    },
-    "utter_yes_i_like": {
-      "slots": []
-    },
-    "utter_im_zoro": {
       "slots": []
     },
     "utter_zoro_thx": {
       "slots": []
     },
-    "utter_working_on": {
-      "slots": []
-    },
-    "utter_greet": {
-      "slots": []
-    },
-    "utter_super_good": {
+    "utter_im_zoro": {
       "slots": []
     },
     "utter_ask_date": {
+      "slots": []
+    },
+    "utter_working_on": {
+      "slots": []
+    },
+    "utter_ask_time_date": {
+      "slots": []
+    },
+    "utter_yes_i_like": {
+      "slots": []
+    },
+    "action_chat": {
       "slots": []
     },
     "utter_ask_day": {
@@ -83,6 +83,9 @@
     "utter_ask_howcanihelp": {
       "slots": []
     },
+    "utter_zoro_origin": {
+      "slots": []
+    },
     "utter_zoro_walk": {
       "slots": []
     },
@@ -92,9 +95,6 @@
     "utter_nicetohearfromu": {
       "slots": []
     },
-    "utter_zoro_origin": {
-      "slots": []
-    },
     "utter_zoro": {
       "slots": []
     },
@@ -102,9 +102,6 @@
       "slots": []
     },
     "utter_ask_time_day": {
-      "slots": []
-    },
-    "utter_intro_dog": {
       "slots": []
     }
   },
@@ -122,7 +119,7 @@
     "rasa_core.policies.form_policy.FormPolicy",
     "rasa_core.policies.fallback.FallbackPolicy"
   ],
-  "trained_at": "20210115-045936",
+  "trained_at": "20210116-231054",
   "rasa_core": "0.13.8",
   "tensorflow": "1.12.0",
   "sklearn": "0.20.2"

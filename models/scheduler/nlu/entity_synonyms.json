@@ -38,11 +38,15 @@
   "meeting": "meet",
   "meet in your garden": "hang out in the garden",
   "hang out in your garden": "hang out in the garden",
+  "me": "you",
   "lunch": "have lunch",
+  "i": "you",
+  "call you": "call me",
   "an on-site": "meet on site",
   "an on site": "meet on-site",
   "an interview": "schedule an interview",
   "have a zoom meeting": "Zoom",
   "a zoom call": "schedule a zoom call",
+  "help you": "help me",
   "a ca;;": "call"
 }

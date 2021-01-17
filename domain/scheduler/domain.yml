@@ -22,6 +22,7 @@ entities:
   - Where
   - Why
   - When
+  - pov
 
   - Day
   - Time
@@ -113,6 +114,9 @@ slots:
     type: unfeaturized
   location:
     type: unfeaturized
+  pov:
+    type: unfeaturized
+    initial_value: "we"
 
   NSFW:
     type: unfeaturized
@@ -737,8 +741,8 @@ templates:
   #- text: What's a good time for you to have a call on ({Day}) {month_and_date})?
 
   utter_sure_we_can:
-  - text: Sure we can {activity} on {Day}, {month_name} {day_ordinal} at {time_hour}:{time_minutes} {time_am_pm}
-  - text: Sure we can {activity} on {Day}, {month_name} {day_ordinal} at {time_hour}:{time_minutes} {time_am_pm}
+  - text: Sure {pov} can {activity} on {Day}, {month_name} {day_ordinal} at {time_hour}:{time_minutes} {time_am_pm}
+  - text: Sure {pov} can {activity} on {Day}, {month_name} {day_ordinal} at {time_hour}:{time_minutes} {time_am_pm}
 
   utter_pick_a_day:
   - text: What's your preferred day?

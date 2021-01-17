@@ -553,10 +553,8 @@ class WhenForm(FormAction):
                         Time = self.validate_Time(True, dispatcher, tracker, domain)
                         return [SlotSet('Time', Time)]
 
-
-
-
     def clean_date(self, dispatcher, tracker):
+
         day_dirty = tracker.get_slot('Day')  # CRF NER outperforma Spacy NER
         DATE = tracker.get_slot('DATE')  # Spacy NER fallback (pretrained)
 
@@ -585,6 +583,8 @@ class WhenForm(FormAction):
         date_clean = self.day_or_date(DATE)
 
     def preprocess_day_or_date(self, dispatcher, tracker, DATE):
+
+        input(DATE)
         if DATE.isalpha() and len(DATE.split()) == 1:  # We most assuredly have a day, not a date. (Execept when Spacy NER fails.)
             try:
                 date_orig = tracker.get_slot('DATE')
@@ -607,13 +607,15 @@ class WhenForm(FormAction):
 
     def preprocess_vague_date(self, dispatcher, DATE):
         vague_dates = ['this week', 'next week', 'this month', 'next month', 'the coming week', 'this coming week', 'the coming month', 'this coming month']
-        vague_days = ['a day', 'a good day']  # English language dependent. :-/
+        vague_days = ['a day', 'a good day', 'a good time']  # English language dependent. :-/
 
-        if DATE.lower().replace('sometime', '').replace('in', '').strip() in vague_dates:
+        if DATE.lower().replace('sometime', '').replace('in ', '').strip() in vague_dates:
+
             dispatcher.utter_message("We could set something up for " + DATE)
             return True
         elif DATE.lower().strip() in vague_days:
             return True
+
 
     def validate_DATE(self, val, dispatcher, tracker, domain):
 

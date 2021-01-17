@@ -7699,6 +7699,12 @@
         "intent": "lets_do",
         "entities": [
           {
+            "start": 6,
+            "end": 16,
+            "value": "a good day",
+            "entity": "When"
+          },
+          {
             "start": 23,
             "end": 30,
             "value": "meet",
@@ -7710,6 +7716,12 @@
       {
         "intent": "lets_do",
         "entities": [
+          {
+            "start": 8,
+            "end": 19,
+            "value": "a good time",
+            "entity": "When"
+          },
           {
             "start": 30,
             "end": 41,
@@ -7728,6 +7740,12 @@
       {
         "intent": "lets_do",
         "entities": [
+          {
+            "start": 8,
+            "end": 19,
+            "value": "a good time",
+            "entity": "When"
+          },
           {
             "start": 30,
             "end": 44,
@@ -8059,6 +8077,12 @@
         "intent": "lets_do",
         "entities": [
           {
+            "start": 12,
+            "end": 14,
+            "value": "you",
+            "entity": "pov"
+          },
+          {
             "start": 18,
             "end": 27,
             "value": "come over",
@@ -8070,6 +8094,12 @@
       {
         "intent": "lets_do",
         "entities": [
+          {
+            "start": 12,
+            "end": 14,
+            "value": "you",
+            "entity": "pov"
+          },
           {
             "start": 18,
             "end": 27,
@@ -8087,6 +8117,14 @@
       },
       {
         "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 8,
+            "end": 18,
+            "value": "a good day",
+            "entity": "When"
+          }
+        ],
         "text": "what is a good day"
       },
       {
@@ -8208,6 +8246,216 @@
           }
         ],
         "text": "whats your availability to meet up next week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 7,
+            "end": 17,
+            "value": "a good day",
+            "entity": "When"
+          },
+          {
+            "start": 22,
+            "end": 24,
+            "value": "you",
+            "entity": "pov"
+          }
+        ],
+        "text": "What’s a good day for me to come over?"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 4,
+            "end": 5,
+            "value": "you",
+            "entity": "pov"
+          },
+          {
+            "start": 6,
+            "end": 14,
+            "value": "call me",
+            "entity": "activity"
+          },
+          {
+            "start": 15,
+            "end": 20,
+            "value": "today",
+            "entity": "Day"
+          }
+        ],
+        "text": "Can I call you today?"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 4,
+            "end": 5,
+            "value": "you",
+            "entity": "pov"
+          },
+          {
+            "start": 6,
+            "end": 14,
+            "value": "call me",
+            "entity": "activity"
+          },
+          {
+            "start": 15,
+            "end": 23,
+            "value": "tomorrow",
+            "entity": "Day"
+          }
+        ],
+        "text": "Can I call you tomorrow?"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 4,
+            "end": 5,
+            "value": "you",
+            "entity": "pov"
+          },
+          {
+            "start": 6,
+            "end": 14,
+            "value": "call me",
+            "entity": "activity"
+          },
+          {
+            "start": 15,
+            "end": 24,
+            "value": "this week",
+            "entity": "When"
+          }
+        ],
+        "text": "Can I call you this week?"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 4,
+            "end": 5,
+            "value": "you",
+            "entity": "pov"
+          },
+          {
+            "start": 6,
+            "end": 14,
+            "value": "call me",
+            "entity": "activity"
+          },
+          {
+            "start": 15,
+            "end": 24,
+            "value": "next week",
+            "entity": "When"
+          }
+        ],
+        "text": "Can I call you next week?"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 4,
+            "end": 5,
+            "value": "you",
+            "entity": "pov"
+          },
+          {
+            "start": 6,
+            "end": 15,
+            "value": "come over",
+            "entity": "activity"
+          },
+          {
+            "start": 16,
+            "end": 21,
+            "value": "today",
+            "entity": "Day"
+          }
+        ],
+        "text": "Can I come over today?"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 4,
+            "end": 5,
+            "value": "you",
+            "entity": "pov"
+          },
+          {
+            "start": 6,
+            "end": 15,
+            "value": "come over",
+            "entity": "activity"
+          },
+          {
+            "start": 16,
+            "end": 24,
+            "value": "tomorrow",
+            "entity": "Day"
+          }
+        ],
+        "text": "Can I come over tomorrow?"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 4,
+            "end": 5,
+            "value": "you",
+            "entity": "pov"
+          },
+          {
+            "start": 6,
+            "end": 15,
+            "value": "come over",
+            "entity": "activity"
+          },
+          {
+            "start": 16,
+            "end": 25,
+            "value": "this week",
+            "entity": "When"
+          }
+        ],
+        "text": "Can I come over this week?"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 4,
+            "end": 5,
+            "value": "you",
+            "entity": "pov"
+          },
+          {
+            "start": 6,
+            "end": 15,
+            "value": "come over",
+            "entity": "activity"
+          },
+          {
+            "start": 16,
+            "end": 25,
+            "value": "next week",
+            "entity": "When"
+          }
+        ],
+        "text": "Can I come over next week?"
       },
       {
         "intent": "ask_availability",
@@ -8513,6 +8761,12 @@
         "intent": "ask_availability",
         "entities": [
           {
+            "start": 4,
+            "end": 5,
+            "value": "you",
+            "entity": "pov"
+          },
+          {
             "start": 6,
             "end": 15,
             "value": "come over",
@@ -8530,6 +8784,12 @@
       {
         "intent": "ask_availability",
         "entities": [
+          {
+            "start": 4,
+            "end": 5,
+            "value": "you",
+            "entity": "pov"
+          },
           {
             "start": 6,
             "end": 15,
@@ -8549,6 +8809,12 @@
         "intent": "ask_availability",
         "entities": [
           {
+            "start": 4,
+            "end": 5,
+            "value": "you",
+            "entity": "pov"
+          },
+          {
             "start": 6,
             "end": 15,
             "value": "come over",
@@ -8566,6 +8832,12 @@
       {
         "intent": "ask_availability",
         "entities": [
+          {
+            "start": 4,
+            "end": 5,
+            "value": "you",
+            "entity": "pov"
+          },
           {
             "start": 6,
             "end": 15,
@@ -9203,6 +9475,12 @@
         "intent": "ask_availability",
         "entities": [
           {
+            "start": 8,
+            "end": 19,
+            "value": "a good time",
+            "entity": "When"
+          },
+          {
             "start": 24,
             "end": 30,
             "value": "have a call",
@@ -9215,6 +9493,12 @@
         "intent": "ask_availability",
         "entities": [
           {
+            "start": 7,
+            "end": 17,
+            "value": "a good day",
+            "entity": "When"
+          },
+          {
             "start": 28,
             "end": 38,
             "value": "have lunch",
@@ -9226,6 +9510,12 @@
       {
         "intent": "ask_availability",
         "entities": [
+          {
+            "start": 7,
+            "end": 17,
+            "value": "a good day",
+            "entity": "When"
+          },
           {
             "start": 28,
             "end": 38,
@@ -9245,6 +9535,12 @@
         "intent": "ask_availability",
         "entities": [
           {
+            "start": 7,
+            "end": 17,
+            "value": "a good day",
+            "entity": "When"
+          },
+          {
             "start": 28,
             "end": 45,
             "value": "meet up for lunch",
@@ -9256,6 +9552,12 @@
       {
         "intent": "ask_availability",
         "entities": [
+          {
+            "start": 7,
+            "end": 17,
+            "value": "a good day",
+            "entity": "When"
+          },
           {
             "start": 28,
             "end": 45,
@@ -9275,6 +9577,12 @@
         "intent": "ask_availability",
         "entities": [
           {
+            "start": 7,
+            "end": 17,
+            "value": "a good day",
+            "entity": "When"
+          },
+          {
             "start": 21,
             "end": 31,
             "value": "have lunch",
@@ -9286,6 +9594,12 @@
       {
         "intent": "ask_availability",
         "entities": [
+          {
+            "start": 7,
+            "end": 17,
+            "value": "a good day",
+            "entity": "When"
+          },
           {
             "start": 21,
             "end": 31,
@@ -9305,6 +9619,12 @@
         "intent": "ask_availability",
         "entities": [
           {
+            "start": 7,
+            "end": 17,
+            "value": "a good day",
+            "entity": "When"
+          },
+          {
             "start": 21,
             "end": 38,
             "value": "meet up for lunch",
@@ -9316,6 +9636,12 @@
       {
         "intent": "ask_availability",
         "entities": [
+          {
+            "start": 7,
+            "end": 17,
+            "value": "a good day",
+            "entity": "When"
+          },
           {
             "start": 21,
             "end": 38,
@@ -9339,9 +9665,15 @@
             "end": 16,
             "value": "a good day",
             "entity": "When"
+          },
+          {
+            "start": 20,
+            "end": 43,
+            "value": "hang out in your garden",
+            "entity": "activity"
           }
         ],
-        "text": "whats a good day to [hang out in your garden](activity"
+        "text": "whats a good day to hang out in your garden"
       },
       {
         "intent": "ask_availability",
@@ -9365,9 +9697,9 @@
         "intent": "ask_availability",
         "entities": [
           {
-            "start": 13,
+            "start": 6,
             "end": 16,
-            "value": "day",
+            "value": "a good day",
             "entity": "When"
           },
           {
@@ -9383,9 +9715,9 @@
         "intent": "ask_availability",
         "entities": [
           {
-            "start": 13,
+            "start": 6,
             "end": 16,
-            "value": "day",
+            "value": "a good day",
             "entity": "When"
           }
         ],
@@ -9395,9 +9727,9 @@
         "intent": "ask_availability",
         "entities": [
           {
-            "start": 13,
+            "start": 6,
             "end": 16,
-            "value": "day",
+            "value": "a good day",
             "entity": "When"
           },
           {
@@ -9413,9 +9745,9 @@
         "intent": "ask_availability",
         "entities": [
           {
-            "start": 13,
+            "start": 6,
             "end": 16,
-            "value": "day",
+            "value": "a good day",
             "entity": "When"
           }
         ],
@@ -9425,9 +9757,9 @@
         "intent": "ask_availability",
         "entities": [
           {
-            "start": 13,
+            "start": 6,
             "end": 16,
-            "value": "day",
+            "value": "a good day",
             "entity": "When"
           },
           {
@@ -9443,9 +9775,9 @@
         "intent": "ask_availability",
         "entities": [
           {
-            "start": 13,
+            "start": 6,
             "end": 16,
-            "value": "day",
+            "value": "a good day",
             "entity": "When"
           },
           {
@@ -9461,9 +9793,9 @@
         "intent": "ask_availability",
         "entities": [
           {
-            "start": 13,
+            "start": 6,
             "end": 16,
-            "value": "day",
+            "value": "a good day",
             "entity": "When"
           },
           {
@@ -9479,9 +9811,9 @@
         "intent": "ask_availability",
         "entities": [
           {
-            "start": 13,
+            "start": 6,
             "end": 16,
-            "value": "day",
+            "value": "a good day",
             "entity": "When"
           },
           {
@@ -9497,9 +9829,9 @@
         "intent": "ask_availability",
         "entities": [
           {
-            "start": 13,
+            "start": 6,
             "end": 16,
-            "value": "day",
+            "value": "a good day",
             "entity": "When"
           },
           {
@@ -9515,6 +9847,108 @@
         "intent": "ask_availability",
         "entities": [
           {
+            "start": 7,
+            "end": 17,
+            "value": "a good day",
+            "entity": "When"
+          },
+          {
+            "start": 22,
+            "end": 24,
+            "value": "you",
+            "entity": "pov"
+          },
+          {
+            "start": 28,
+            "end": 37,
+            "value": "come over",
+            "entity": "activity"
+          }
+        ],
+        "text": "What’s a good day for me to come over?"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 7,
+            "end": 18,
+            "value": "a good time",
+            "entity": "When"
+          },
+          {
+            "start": 23,
+            "end": 25,
+            "value": "you",
+            "entity": "pov"
+          },
+          {
+            "start": 29,
+            "end": 38,
+            "value": "come over",
+            "entity": "activity"
+          }
+        ],
+        "text": "What’s a good time for me to come over?"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 7,
+            "end": 17,
+            "value": "a good day",
+            "entity": "When"
+          },
+          {
+            "start": 22,
+            "end": 24,
+            "value": "you",
+            "entity": "pov"
+          },
+          {
+            "start": 28,
+            "end": 35,
+            "value": "stop by",
+            "entity": "activity"
+          }
+        ],
+        "text": "What’s a good day for me to stop by?"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 7,
+            "end": 17,
+            "value": "a good day",
+            "entity": "When"
+          },
+          {
+            "start": 22,
+            "end": 24,
+            "value": "you",
+            "entity": "pov"
+          },
+          {
+            "start": 28,
+            "end": 35,
+            "value": "stop by",
+            "entity": "activity"
+          }
+        ],
+        "text": "What’s a good day for me to stop by?"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 6,
+            "end": 17,
+            "value": "a good time",
+            "entity": "When"
+          },
+          {
             "start": 22,
             "end": 28,
             "value": "have a call",
@@ -9527,6 +9961,12 @@
         "intent": "ask_availability",
         "entities": [
           {
+            "start": 6,
+            "end": 17,
+            "value": "a good time",
+            "entity": "When"
+          },
+          {
             "start": 22,
             "end": 33,
             "value": "schedule a zoom call",
@@ -9534,6 +9974,198 @@
           }
         ],
         "text": "whats a good time for a zoom call"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Forest",
+            "entity": "fm"
+          },
+          {
+            "start": 15,
+            "end": 25,
+            "value": "a good day",
+            "entity": "When"
+          },
+          {
+            "start": 29,
+            "end": 31,
+            "value": "you",
+            "entity": "pov"
+          },
+          {
+            "start": 35,
+            "end": 44,
+            "value": "come over",
+            "entity": "activity"
+          }
+        ],
+        "text": "Forest, what’s a good day forme to come over?"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "Forest",
+            "entity": "fm"
+          },
+          {
+            "start": 16,
+            "end": 22,
+            "value": "Portia",
+            "entity": "who"
+          },
+          {
+            "start": 31,
+            "end": 41,
+            "value": "a good day",
+            "entity": "When"
+          },
+          {
+            "start": 45,
+            "end": 47,
+            "value": "you",
+            "entity": "pov"
+          },
+          {
+            "start": 51,
+            "end": 60,
+            "value": "come over",
+            "entity": "activity"
+          }
+        ],
+        "text": "Hi Forest, it’s Portia. What’s a good day forme to come over?"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 7,
+            "end": 17,
+            "value": "a good day",
+            "entity": "When"
+          },
+          {
+            "start": 21,
+            "end": 23,
+            "value": "you",
+            "entity": "pov"
+          },
+          {
+            "start": 27,
+            "end": 35,
+            "value": "call me",
+            "entity": "activity"
+          }
+        ],
+        "text": "What’s a good day forme to call you?"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 4,
+            "end": 10,
+            "value": "Forest",
+            "entity": "fm"
+          },
+          {
+            "start": 19,
+            "end": 29,
+            "value": "a good day",
+            "entity": "When"
+          },
+          {
+            "start": 33,
+            "end": 35,
+            "value": "you",
+            "entity": "pov"
+          },
+          {
+            "start": 39,
+            "end": 47,
+            "value": "call me",
+            "entity": "activity"
+          }
+        ],
+        "text": "Hey Forest, what’s a good day forme to call you?"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "Forest",
+            "entity": "fm"
+          },
+          {
+            "start": 16,
+            "end": 22,
+            "value": "Portia",
+            "entity": "who"
+          },
+          {
+            "start": 31,
+            "end": 41,
+            "value": "a good day",
+            "entity": "When"
+          },
+          {
+            "start": 45,
+            "end": 47,
+            "value": "you",
+            "entity": "pov"
+          },
+          {
+            "start": 51,
+            "end": 59,
+            "value": "call me",
+            "entity": "activity"
+          }
+        ],
+        "text": "Hi Forest, it’s Portia. What’s a good day forme to call you?"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "Forest",
+            "entity": "fm"
+          },
+          {
+            "start": 16,
+            "end": 25,
+            "value": "Franscesa",
+            "entity": "who"
+          },
+          {
+            "start": 34,
+            "end": 44,
+            "value": "a good day",
+            "entity": "When"
+          },
+          {
+            "start": 48,
+            "end": 50,
+            "value": "you",
+            "entity": "pov"
+          },
+          {
+            "start": 54,
+            "end": 62,
+            "value": "help me",
+            "entity": "activity"
+          }
+        ],
+        "text": "Hi Forest, it’s Franscesa. What’s a good day forme to help you with that"
       },
       {
         "intent": "ask_availability",
@@ -9578,6 +10210,12 @@
             "start": 0,
             "end": 4,
             "value": "When",
+            "entity": "When"
+          },
+          {
+            "start": 8,
+            "end": 19,
+            "value": "a good time",
             "entity": "When"
           },
           {
@@ -9712,6 +10350,12 @@
       {
         "intent": "ask_availability",
         "entities": [
+          {
+            "start": 8,
+            "end": 19,
+            "value": "a good time",
+            "entity": "When"
+          },
           {
             "start": 30,
             "end": 45,
@@ -10247,6 +10891,42 @@
         "intent": "ask_availability",
         "entities": [
           {
+            "start": 23,
+            "end": 29,
+            "value": "have a call",
+            "entity": "activity"
+          }
+        ],
+        "text": "Are you able to hop on a call"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 4,
+            "end": 10,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 17,
+            "end": 26,
+            "value": "Christine",
+            "entity": "who"
+          },
+          {
+            "start": 71,
+            "end": 77,
+            "value": "have a call",
+            "entity": "activity"
+          }
+        ],
+        "text": "Hey forest, It's Christine, did you get my email? Do you have time for a call to discuss?"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
             "start": 4,
             "end": 10,
             "value": "forest",
@@ -10451,6 +11131,12 @@
             "entity": "who"
           },
           {
+            "start": 34,
+            "end": 45,
+            "value": "a good time",
+            "entity": "When"
+          },
+          {
             "start": 50,
             "end": 56,
             "value": "have a call",
@@ -10515,6 +11201,12 @@
             "end": 23,
             "value": "chip",
             "entity": "who"
+          },
+          {
+            "start": 72,
+            "end": 83,
+            "value": "a good time",
+            "entity": "When"
           },
           {
             "start": 87,
@@ -10853,25 +11545,43 @@
         "intent": "ask_availability",
         "entities": [
           {
-            "start": 13,
-            "end": 19,
-            "value": "schedule a call",
+            "start": 12,
+            "end": 16,
+            "value": "fred",
+            "entity": "who"
+          },
+          {
+            "start": 39,
+            "end": 44,
+            "value": "do lunch",
             "entity": "activity"
           }
         ],
-        "text": "got time for a call"
+        "text": "forest it’s fred. do you have time for lunch"
       },
       {
         "intent": "ask_availability",
         "entities": [
           {
-            "start": 17,
-            "end": 22,
-            "value": "lunch",
+            "start": 12,
+            "end": 16,
+            "value": "fred",
+            "entity": "who"
+          },
+          {
+            "start": 39,
+            "end": 44,
+            "value": "do lunch",
             "entity": "activity"
+          },
+          {
+            "start": 50,
+            "end": 57,
+            "value": "tuesday",
+            "entity": "Day"
           }
         ],
-        "text": "are you free for lunch"
+        "text": "forest it’s fred. do you have time for lunch next tuesday"
       },
       {
         "intent": "ask_availability",
@@ -10889,6 +11599,36 @@
         "intent": "ask_availability",
         "entities": [
           {
+            "start": 17,
+            "end": 22,
+            "value": "do lunch",
+            "entity": "activity"
+          }
+        ],
+        "text": "are you free for lunch"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 13,
+            "end": 19,
+            "value": "schedule a call",
+            "entity": "activity"
+          }
+        ],
+        "text": "got time for a call"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 9,
+            "end": 20,
+            "value": "a good time",
+            "entity": "When"
+          },
+          {
             "start": 28,
             "end": 33,
             "value": "speak",
@@ -10901,6 +11641,12 @@
         "intent": "ask_availability",
         "entities": [
           {
+            "start": 9,
+            "end": 20,
+            "value": "a good time",
+            "entity": "When"
+          },
+          {
             "start": 25,
             "end": 31,
             "value": "have a call",
@@ -10912,6 +11658,30 @@
       {
         "intent": "ask_availability",
         "entities": [
+          {
+            "start": 9,
+            "end": 20,
+            "value": "a good time",
+            "entity": "When"
+          },
+          {
+            "start": 24,
+            "end": 35,
+            "value": "have a call",
+            "entity": "activity"
+          }
+        ],
+        "text": "is there a good time to have a call"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 9,
+            "end": 20,
+            "value": "a good time",
+            "entity": "When"
+          },
           {
             "start": 24,
             "end": 31,
@@ -10975,11 +11745,25 @@
       },
       {
         "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 6,
+            "end": 17,
+            "value": "a good time",
+            "entity": "When"
+          }
+        ],
         "text": "whats a good time"
       },
       {
         "intent": "ask_availability",
         "entities": [
+          {
+            "start": 6,
+            "end": 17,
+            "value": "a good time",
+            "entity": "When"
+          },
           {
             "start": 22,
             "end": 27,
@@ -10992,6 +11776,12 @@
       {
         "intent": "ask_availability",
         "entities": [
+          {
+            "start": 7,
+            "end": 17,
+            "value": "a good day",
+            "entity": "When"
+          },
           {
             "start": 21,
             "end": 28,
@@ -22825,14 +23615,38 @@
       },
       {
         "intent": "vague_When",
+        "entities": [
+          {
+            "start": 6,
+            "end": 17,
+            "value": "a good time",
+            "entity": "When"
+          }
+        ],
         "text": "whats a good time for you to have a call"
       },
       {
         "intent": "vague_When",
+        "entities": [
+          {
+            "start": 6,
+            "end": 17,
+            "value": "a good time",
+            "entity": "When"
+          }
+        ],
         "text": "whats a good time for us to have a call"
       },
       {
         "intent": "vague_When",
+        "entities": [
+          {
+            "start": 25,
+            "end": 36,
+            "value": "a good time",
+            "entity": "When"
+          }
+        ],
         "text": "can you let me know what a good time for a call might be"
       },
       {
@@ -31691,9 +32505,23 @@
         ]
       },
       {
+        "value": "you",
+        "synonyms": [
+          "me",
+          "I",
+          "i"
+        ]
+      },
+      {
         "value": "have lunch",
         "synonyms": [
           "lunch"
+        ]
+      },
+      {
+        "value": "call me",
+        "synonyms": [
+          "call you"
         ]
       },
       {
@@ -31718,6 +32546,12 @@
         "value": "schedule a zoom call",
         "synonyms": [
           "a zoom call"
+        ]
+      },
+      {
+        "value": "help me",
+        "synonyms": [
+          "help you"
         ]
       },
       {

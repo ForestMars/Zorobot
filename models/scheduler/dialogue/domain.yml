@@ -189,6 +189,7 @@ entities:
 - Where
 - Why
 - When
+- pov
 - Day
 - Time
 - time
@@ -687,6 +688,10 @@ slots:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.UnfeaturizedSlot
+  pov:
+    auto_fill: true
+    initial_value: we
+    type: rasa_core.slots.UnfeaturizedSlot
   requested_slot:
     auto_fill: true
     initial_value: null
@@ -1007,7 +1012,9 @@ templates:
   utter_pick_a_day:
   - text: What's your preferred day?
   - text: What would be your preferred day?
+  - text: What's a good day for you?
   - text: What's a particular day that's good for you?
+  - text: Is there a particular day that's better for you?
   - text: Just about any day could work, depending on the time. What's a good day
       for you?
   utter_picky:
@@ -1084,9 +1091,9 @@ templates:
   utter_sure:
   - text: Sure.
   utter_sure_we_can:
-  - text: Sure we can {activity} on {Day}, {month_name} {day_ordinal} at {time_hour}:{time_minutes}
+  - text: Sure {pov} can {activity} on {Day}, {month_name} {day_ordinal} at {time_hour}:{time_minutes}
       {time_am_pm}
-  - text: Sure we can {activity} on {Day}, {month_name} {day_ordinal} at {time_hour}:{time_minutes}
+  - text: Sure {pov} can {activity} on {Day}, {month_name} {day_ordinal} at {time_hour}:{time_minutes}
       {time_am_pm}
   utter_thanks:
   - text: Thanks, I really appreciate it.

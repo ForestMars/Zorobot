@@ -293,6 +293,7 @@ class ActionSendInvite(Action):  # Action Invite
         # Behold: Data inside a class method.
         call = dict(
             # Superseded by month_name, can be killed.
+            activity=tracker.get_slot('activity'),
             month=tracker.get_slot('date_month'),
             month_name=tracker.get_slot('month_name'),
             day=int(tracker.get_slot('day_of_month')),
@@ -441,7 +442,7 @@ class WhoForm(FormAction):
 
     @staticmethod
     def required_slots(tracker):
-        return ["who"]
+        return ["nou"]
 
     def submit(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict]:
         return []

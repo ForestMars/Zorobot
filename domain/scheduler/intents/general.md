@@ -1,6 +1,6 @@
 ### General Intents Training File for Appointment SCHEDULER Bot
 ### Greetings ~~~~~~~~~~~~~~~~~~~~
-### Who is it?  ~~~~~~~~~~~~~~~~~~~~
+### nou is it?  ~~~~~~~~~~~~~~~~~~~~
 ### Sentiment/s ~~~~~~~~~~~~~~~~~~~~
 ### Gneral Chit Chat ~~~~~~~~~~~~~~~~~~~~
 ### Exclamations! ~~~~~~~~~~~~~~~~~~~~
@@ -46,26 +46,26 @@
 
 
 ## intent:greet_with_name
-- hi forest this is [kyle](who)
-- hey forest this is [adam](who)
-- hi forest this is [mike](who)
-- hi forest this is [chris](who)
-- hello forest this is [dierdre](who)
-- hi this is [bonnie](who)
-- hey this is [clyde](who)
-- hi this is [rick](who)
-- hi this is [will](who)
-- hello this is [penn](who)
-- hiya, its [paula](who)
-- forst its [quentin](who)
-- hi forest its [roy](who)
-- hi forest its [sara](who)
-- hi forest its [tashika](who)
-- forest it's [victoria](who)
-- hi forest it's [wayne](who)
-- hi forest it's [yoli](who)
-- it's [rick](who) forest
-- this is [greg](who) forest
+- hi forest this is [kyle](nou)
+- hey forest this is [adam](nou)
+- hi forest this is [mike](nou)
+- hi forest this is [chris](nou)
+- hello forest this is [dierdre](nou)
+- hi this is [bonnie](nou)
+- hey this is [clyde](nou)
+- hi this is [rick](nou)
+- hi this is [will](nou)
+- hello this is [penn](nou)
+- hiya, its [paula](nou)
+- forst its [quentin](nou)
+- hi forest its [roy](nou)
+- hi forest its [sara](nou)
+- hi forest its [tashika](nou)
+- forest it's [victoria](nou)
+- hi forest it's [wayne](nou)
+- hi forest it's [yoli](nou)
+- it's [rick](nou) forest
+- this is [greg](nou) forest
 
 
 
@@ -118,7 +118,7 @@
 - me too
 - metoo
 - me2
-- i wholeheartedly agree
+- i nouleheartedly agree
 - tell me about it
 - yeah tell me about it
 - youre telling me
@@ -221,8 +221,8 @@
 - any one
 - anyway
 - anyhoo
-- any who
-- anywho
+- any nou
+- anynou
 - any day
 - any day is fine
 - any day is good
@@ -737,7 +737,7 @@
 - which is to say, mostly noise
 - not exactly the same thing as chit chat
 - more like saying nothing
-- a whole show about nothing
+- a noule show about nothing
 - how much do you know about that
 
 ## intent:handle_insult
@@ -834,8 +834,8 @@
 - chow
 - ciao4now
 - chow4now
-- thats ewhogh
-- thats ewhogh for now
+- thats enough
+- thats enough for now
 - no more for now
 - stop texting me
 - STOP

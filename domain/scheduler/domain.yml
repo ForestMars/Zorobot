@@ -701,7 +701,7 @@ templates:
   - text: Sorry I have a new phone, who is this?
 
   utter_nicetomeetu:
-  - Nice to meet you, {who}.
+  - Nice to meet you, {nou}.
 
   utter_ask_where:
   - Where should we meet?
@@ -781,7 +781,7 @@ templates:
   utter_heres_my_number:
   - text: "Here's the number to call me on: 646-535-7175"
   utter_best_number_is:
-  - text: Best number to reach me on is 646-535-7175  
+  - text: Best number to reach me on is 646-535-7175
   utter_best_email_is:
   - text: Best email to use is themarsgroup
   utter_ask_for_phone_number:
@@ -1063,8 +1063,8 @@ templates:
   utter_quality:
   - I guess I am just too {quality}
   utter_enjoy_din_with:
-  - text: I hope you enjoy your dinner with {Who}
-  - text: I hope you and {Who} enjoy your dinner.
+  - text: I hope you enjoy your dinner with {nou}
+  - text: I hope you and {nou} enjoy your dinner.
   utter_the_weather:
   - text: The weather in {location} is FANTASTIC
   utter_ask_howfeeling:
@@ -1084,7 +1084,7 @@ templates:
 
 # Moved into Reactions
   utter_nicetohearfromu:
-  - Nice to hear from you {who}
+  - Nice to hear from you {nou}
   utter_ask_Day:
   - Ask day capitalized
   utter_ask_Time:

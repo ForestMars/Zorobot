@@ -53,7 +53,7 @@
 - can you [add a meeting](activity) to [forest's](fm:forest) calendar
 
 - i want to [meet in your garden](activity)
-- Hey [forest](fm), Love to set up [a call](activity:have a call). [Paul](who) Acme Personel
+- Hey [forest](fm), Love to set up [a call](activity:have a call). [Paul](nou) Acme Personel
 
 - hi would like to [call you](activity:call me) please
 - hi would like to [book a call](activity:have a call) please
@@ -108,10 +108,10 @@
 - I would like to [book a zoom call](activity) with [Forest](fm)
 - i would like to [book a Zoom meeting](activity:Zoom) with [Forest](fm)
 
-- please [book a call](activity:have a call) with [forest](fm) for [Samantha](who)
-- please [set up a zoom call](activityzoom) with [forest](fm) for [Will](who)
-- please [schedule a meeting](activity:meet) with [forest](fm) for [Claire](who)
-- please [plan a meeting](activity:meet) with [forest](fm) for [Trevor](who)
+- please [book a call](activity:have a call) with [forest](fm) for [Samantha](nou)
+- please [set up a zoom call](activityzoom) with [forest](fm) for [Will](nou)
+- please [schedule a meeting](activity:meet) with [forest](fm) for [Claire](nou)
+- please [plan a meeting](activity:meet) with [forest](fm) for [Trevor](nou)
 
 - Can I [schedule a lunch](activity:have lunch) with [Forest](fm) please
 - Can I [book a lunch](activity:have lunch) with [Forest](fm) please
@@ -376,11 +376,15 @@
 - whats [a good time](When) for [a call](activity:have a call)
 - whats [a good time](When) for [a zoom call](activity:schedule a zoom call)
 - [Forest](fm), what’s [a good day](When) for[me](pov:you) to [come over](activity)?
-- Hi [Forest](fm), it’s [Portia](who). What’s [a good day](When) for[me](pov:you) to [come over](activity)?
+- Hi [Forest](fm), it’s [Portia](nou). What’s [a good day](When) for[me](pov:you) to [come over](activity)?
 - What’s [a good day](When) for[me](pov:you) to [call you](activity:call me)?
 - Hey [Forest](fm), what’s [a good day](When) for[me](pov:you) to [call you](activity:call me)?
-- Hi [Forest](fm), it’s [Portia](who). What’s [a good day](When) for[me](pov:you) to [call you](activity:call me)?
-- Hi [Forest](fm), it’s [Franscesa](who). What’s [a good day](When) for[me](pov:you) to [help you](activity:help me) with that
+- Hi [Forest](fm), it’s [Portia](nou). What’s [a good day](When) for[me](pov:you) to [call you](activity:call me)?
+- Hi [Forest](fm), it’s [Franscesa](nou). What’s [a good day](When) for[me](pov:you) to [help you](activity:help me) with that
+- Hey [Forest](fm), [Rob](nou) from [Nexus](org) here. What's your availability for [a call](activity:have a call) on [Wednesday](Day)?
+- This is [Charles](nou) from [Mesh](org). Are you available for [a zoom call](activity:Zoom) [this week or next](When)?
+- Hello [Forest](fm) it's [Karen](nou) from [OpenAI](org). Can we have a call on [Monday](Day)
+- This is [Kumal](nou) from [Broadbridge](nou). Do you have time to [schedule a zoom call](activity:Zoom) in the near future.
 
 - [When is a good time](When) for us to [hang out](activity)
 - [When is a good time](When) for us to [meet up](activity)
@@ -443,34 +447,34 @@
 - which day is good for [lunch](activity:do lunch)
 
 - Are you able to hop on [a call](activity:have a call)
-- Hey [forest](fm), It's [Christine](who), did you get my email? Do you have time for [a call](activity:have a call) to discuss?
-- Hey [forest](fm), did you get my email? Will you let me know your availability for [a call](activity:have a call)? Best, [will](who)
-- Hey [forest](fm), got time for [a call](activity:have a call) on Friday? This is [Gene](who)
+- Hey [forest](fm), It's [Christine](nou), did you get my email? Do you have time for [a call](activity:have a call) to discuss?
+- Hey [forest](fm), did you get my email? Will you let me know your availability for [a call](activity:have a call)? Best, [will](nou)
+- Hey [forest](fm), got time for [a call](activity:have a call) on Friday? This is [Gene](nou)
 - hey [forest](fm), want to [have lunch](activity) [this week](When)
 - hey [forest](fm) this is [Andy Tsang](PERSON) thank you for getting back to me, can we [hop on a call](activity) whats good for this week?
-- hey [forest](fm) this is [barry](who) got time for [a call](activity:have a call) this week?
-- Hi [forest](fm) thank you for getting back to me. I am interested in [setting up a call](activity). Sincerely, [Chuck](who)
-- Hi [forest](fm) thank you for getting back to me. I would be interested in [setting up a call](activity). Thanks very much, [Ann](who)
-- Hi [forest](fm) thank you for getting back to me. I would like to [set up a call](activity). Sincerely, [Bud](who)
-- hi [forest](fm) this is [tatiana](who). what's [a good time](When) for [a call](activity:have a call).? I have some resumes to send your way.
-- Hi [forest](fm), it's [lana](who) did you get the resumes i snt over? Let me know what you think of these candidates please.
-- Hi [forest](fm), thank you for coming back to me and i would be keen to [set up a call](activity). Can you let me know what your availability is? Thanks, [Sarah](who)
-- hi [forest](fm), this is [chip](who) i sent you some resumes and wanted to see whats [a good time](When) to [discuss](activity)? LMK!
-- Hi [Forest](fm), it’s [Tom](who), can we [schedule a meeting](activity) [sometime soon](When)?
-- this is [andy](who). do you have a time for [a call](activity:have a call) this week? I have some interesting candidates for you.
-- this is [arlo](who) thank you for getting back to me, can we [hop on a call](activity). whats good for [tomorrow](Day)?
-- this is [arlo](who), thank you for getting back to me, can we [hop on a call](activity)? whats good for this week?
-- this is [barbara](who) got time for [a call](activity:have a call) [this week](When)?
-- this is [barbara](who), got time for [a call](activity:have a call) [this week](When)?
-- this is [therese](who), what's your availability like [this week](When)? I sent some candidates your way
-- [dan](who) here from bci. whats your availability for [a call](activity:have a call) [this week](When)?
-- hi [Forest](fm), this is [Ralph](who). Can we [schedule a meeting](activity) in [the coming week](When)?
+- hey [forest](fm) this is [barry](nou) got time for [a call](activity:have a call) this week?
+- Hi [forest](fm) thank you for getting back to me. I am interested in [setting up a call](activity). Sincerely, [Chuck](nou)
+- Hi [forest](fm) thank you for getting back to me. I would be interested in [setting up a call](activity). Thanks very much, [Ann](nou)
+- Hi [forest](fm) thank you for getting back to me. I would like to [set up a call](activity). Sincerely, [Bud](nou)
+- hi [forest](fm) this is [tatiana](nou). what's [a good time](When) for [a call](activity:have a call).? I have some resumes to send your way.
+- Hi [forest](fm), it's [lana](nou) did you get the resumes i snt over? Let me know what you think of these candidates please.
+- Hi [forest](fm), thank you for coming back to me and i would be keen to [set up a call](activity). Can you let me know what your availability is? Thanks, [Sarah](nou)
+- hi [forest](fm), this is [chip](nou) i sent you some resumes and wanted to see whats [a good time](When) to [discuss](activity)? LMK!
+- Hi [Forest](fm), it’s [Tom](nou), can we [schedule a meeting](activity) [sometime soon](When)?
+- this is [andy](nou). do you have a time for [a call](activity:have a call) this week? I have some interesting candidates for you.
+- this is [arlo](nou) thank you for getting back to me, can we [hop on a call](activity). whats good for [tomorrow](Day)?
+- this is [arlo](nou), thank you for getting back to me, can we [hop on a call](activity)? whats good for this week?
+- this is [barbara](nou) got time for [a call](activity:have a call) [this week](When)?
+- this is [barbara](nou), got time for [a call](activity:have a call) [this week](When)?
+- this is [therese](nou), what's your availability like [this week](When)? I sent some candidates your way
+- [dan](nou) here from bci. whats your availability for [a call](activity:have a call) [this week](When)?
+- hi [Forest](fm), this is [Ralph](nou). Can we [schedule a meeting](activity) in [the coming week](When)?
 - hi [Forest](fm), can we [schedule a meeting](activity) in [the coming week](When)?
-- Hey [Forest](fm) it’s [Jessica](who), got time for [lunch](activity) [tomorrow](Day)?
-- Hey [Forest](fm) it’s [Franscesa](who), got time to [meet up](activity) [sometime](When)?
-- Hey [Forest](fm) it’s [Samantha](who), got time to [get together](activity) [sometime](When)?
-- forest it’s [fred](who). do you have time for [lunch](activity:do lunch)
-- forest it’s [fred](who). do you have time for [lunch](activity:do lunch) next [tuesday](Day)
+- Hey [Forest](fm) it’s [Jessica](nou), got time for [lunch](activity) [tomorrow](Day)?
+- Hey [Forest](fm) it’s [Franscesa](nou), got time to [meet up](activity) [sometime](When)?
+- Hey [Forest](fm) it’s [Samantha](nou), got time to [get together](activity) [sometime](When)?
+- forest it’s [fred](nou). do you have time for [lunch](activity:do lunch)
+- forest it’s [fred](nou). do you have time for [lunch](activity:do lunch) next [tuesday](Day)
 
 - any particular [day](When) in mind?
 - are you free for [lunch](activity:do lunch)
@@ -651,7 +655,7 @@
 - got any time for a call [tomorrow](Day)?
 - got any time for [lunch](activity) [tomorrow](Day)?
 - got any time to meet up [tomorrow](Day)?
-- Hey Forest](fm) it's [Jessie](who) got time for [lunch](activity) [tomorrow](Day)?
+- Hey Forest](fm) it's [Jessie](nou) got time for [lunch](activity) [tomorrow](Day)?
 
 - are you available for [a call](activity:have a call) on [the 15th](DATE)
 

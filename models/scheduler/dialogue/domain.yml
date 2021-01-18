@@ -887,8 +887,8 @@ templates:
   - text: I'll try my best
   - text: I'll try to answer as best I can
   utter_enjoy_din_with:
-  - text: I hope you enjoy your dinner with {Who}
-  - text: I hope you and {Who} enjoy your dinner.
+  - text: I hope you enjoy your dinner with {nou}
+  - text: I hope you and {nou} enjoy your dinner.
   utter_familiar:
   - text: That sounds fmailiar
   utter_final_confirm:
@@ -982,9 +982,9 @@ templates:
   utter_nice:
   - text: Nice!
   utter_nicetohearfromu:
-  - text: Nice to hear from you {who}
+  - text: Nice to hear from you {nou}
   utter_nicetomeetu:
-  - text: Nice to meet you, {who}.
+  - text: Nice to meet you, {nou}.
   utter_no_worries:
   - text: No worries!
   utter_noidonotlikeyourhat:

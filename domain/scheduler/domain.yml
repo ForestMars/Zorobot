@@ -779,9 +779,9 @@ templates:
   - text: As a final confirmation, our call is set for {Day} at {time_hour}:{time_minutes}. I'll look for your call then.
 
   utter_heres_my_number:
-  - text: "Here's the number to call me on: 516-698-2705"
+  - text: "Here's the number to call me on: 646-535-7175"
   utter_best_number_is:
-  - text: Best number to reach me on is 516-698-2705
+  - text: Best number to reach me on is 646-535-7175  
   utter_best_email_is:
   - text: Best email to use is themarsgroup
   utter_ask_for_phone_number:

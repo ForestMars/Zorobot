@@ -17,55 +17,31 @@
     "utter_pick_a_day": {
       "slots": []
     },
-    "utter_bye": {
-      "slots": []
-    },
     "utter_np": {
       "slots": []
     },
-    "utter_your_name": {
+    "utter_bye": {
       "slots": []
     },
-    "utter_zorobot": {
-      "slots": []
-    },
-    "utter_zoro_likes": {
-      "slots": []
-    },
-    "utter_corona_bot": {
-      "slots": []
-    },
-    "utter_super_good": {
-      "slots": []
-    },
-    "utter_greet": {
-      "slots": []
-    },
-    "utter_ask_change_what": {
-      "slots": []
-    },
-    "utter_wassup": {
-      "slots": []
-    },
-    "action_check_time": {
-      "slots": []
-    },
-    "utter_zoro_thx": {
-      "slots": []
-    },
-    "utter_im_zoro": {
-      "slots": []
-    },
-    "utter_ask_date": {
-      "slots": []
-    },
-    "utter_working_on": {
+    "action_send_invite": {
       "slots": []
     },
     "utter_ask_time_date": {
       "slots": []
     },
-    "utter_yes_i_like": {
+    "utter_ask_change_what": {
+      "slots": []
+    },
+    "utter_zoro_origin": {
+      "slots": []
+    },
+    "utter_intro_dog": {
+      "slots": []
+    },
+    "utter_im_a_scheduling_agent": {
+      "slots": []
+    },
+    "utter_im_zoro": {
       "slots": []
     },
     "action_chat": {
@@ -74,34 +50,61 @@
     "utter_ask_day": {
       "slots": []
     },
-    "utter_im_a_scheduling_agent": {
+    "utter_yes_i_like": {
       "slots": []
     },
-    "utter_looking_forward": {
+    "utter_corona_bot": {
       "slots": []
     },
-    "utter_ask_howcanihelp": {
+    "utter_zoro_thx": {
       "slots": []
     },
-    "utter_zoro_origin": {
+    "utter_wassup": {
+      "slots": []
+    },
+    "utter_ask_time_day": {
+      "slots": []
+    },
+    "utter_super_good": {
+      "slots": []
+    },
+    "utter_zorobot": {
       "slots": []
     },
     "utter_zoro_walk": {
       "slots": []
     },
-    "utter_sorry_dont_understand": {
+    "utter_zoro": {
       "slots": []
     },
     "utter_nicetohearfromu": {
       "slots": []
     },
-    "utter_zoro": {
+    "utter_looking_forward": {
+      "slots": []
+    },
+    "utter_sorry_dont_understand": {
+      "slots": []
+    },
+    "utter_greet": {
+      "slots": []
+    },
+    "utter_working_on": {
+      "slots": []
+    },
+    "utter_your_name": {
+      "slots": []
+    },
+    "utter_ask_howcanihelp": {
       "slots": []
     },
     "utter_zoro_spoiled": {
       "slots": []
     },
-    "utter_ask_time_day": {
+    "utter_zoro_likes": {
+      "slots": []
+    },
+    "utter_ask_date": {
       "slots": []
     }
   },
@@ -119,7 +122,7 @@
     "rasa_core.policies.form_policy.FormPolicy",
     "rasa_core.policies.fallback.FallbackPolicy"
   ],
-  "trained_at": "20210116-231054",
+  "trained_at": "20210117-061616",
   "rasa_core": "0.13.8",
   "tensorflow": "1.12.0",
   "sklearn": "0.20.2"

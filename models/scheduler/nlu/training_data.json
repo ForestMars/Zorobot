@@ -2373,31 +2373,31 @@
       },
       {
         "intent": "greet",
-        "text": "hi forest"
-      },
-      {
-        "intent": "greet",
-        "text": "hello forest"
-      },
-      {
-        "intent": "greet",
-        "text": "hey forest"
-      },
-      {
-        "intent": "greet",
-        "text": "is this forest"
-      },
-      {
-        "intent": "greet",
-        "text": "is this zoro"
-      },
-      {
-        "intent": "greet",
         "text": "yo"
       },
       {
         "intent": "greet",
         "text": "word up"
+      },
+      {
+        "intent": "forest",
+        "text": "hi forest"
+      },
+      {
+        "intent": "forest",
+        "text": "hello forest"
+      },
+      {
+        "intent": "forest",
+        "text": "hey forest"
+      },
+      {
+        "intent": "forest",
+        "text": "is this forest"
+      },
+      {
+        "intent": "forest",
+        "text": "is this zoro"
       },
       {
         "intent": "greet_with_name",
@@ -6757,13 +6757,13 @@
         "intent": "lets_do",
         "entities": [
           {
-            "start": 16,
-            "end": 22,
+            "start": 20,
+            "end": 26,
             "value": "have a call",
             "entity": "activity"
           }
         ],
-        "text": "can you arrange a call for me"
+        "text": "can you arrange for a call for me"
       },
       {
         "intent": "lets_do",
@@ -6901,6 +6901,18 @@
         "intent": "lets_do",
         "entities": [
           {
+            "start": 10,
+            "end": 29,
+            "value": "meet in your garden",
+            "entity": "activity"
+          }
+        ],
+        "text": "i want to meet in your garden"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
             "start": 4,
             "end": 10,
             "value": "forest",
@@ -6920,6 +6932,18 @@
           }
         ],
         "text": "Hey forest, Love to set up a call. Paul Acme Personel"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 17,
+            "end": 25,
+            "value": "call me",
+            "entity": "activity"
+          }
+        ],
+        "text": "hi would like to call you please"
       },
       {
         "intent": "lets_do",
@@ -7015,30 +7039,6 @@
         "intent": "lets_do",
         "entities": [
           {
-            "start": 10,
-            "end": 29,
-            "value": "meet in your garden",
-            "entity": "activity"
-          }
-        ],
-        "text": "i want to meet in your garden"
-      },
-      {
-        "intent": "lets_do",
-        "entities": [
-          {
-            "start": 15,
-            "end": 38,
-            "value": "Zoom",
-            "entity": "activity"
-          }
-        ],
-        "text": "i would like a schedule a Zoom meeting"
-      },
-      {
-        "intent": "lets_do",
-        "entities": [
-          {
             "start": 15,
             "end": 31,
             "value": "Zoom",
@@ -7058,6 +7058,18 @@
           }
         ],
         "text": "i would like to book a call"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 16,
+            "end": 24,
+            "value": "call me",
+            "entity": "activity"
+          }
+        ],
+        "text": "i would like to call you"
       },
       {
         "intent": "lets_do",
@@ -7135,6 +7147,606 @@
         "intent": "lets_do",
         "entities": [
           {
+            "start": 16,
+            "end": 37,
+            "value": "schedule a phone call",
+            "entity": "activity"
+          }
+        ],
+        "text": "I would like to schedule a phone call"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 16,
+            "end": 36,
+            "value": "schedule a zoom call",
+            "entity": "activity"
+          }
+        ],
+        "text": "I would like to schedule a zoom call"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 16,
+            "end": 39,
+            "value": "Zoom",
+            "entity": "activity"
+          }
+        ],
+        "text": "i would like to schedule a Zoom meeting"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 16,
+            "end": 37,
+            "value": "schedule a phone call",
+            "entity": "activity"
+          },
+          {
+            "start": 43,
+            "end": 49,
+            "value": "Forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "I would like to schedule a phone call with Forest"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 16,
+            "end": 36,
+            "value": "schedule a zoom call",
+            "entity": "activity"
+          },
+          {
+            "start": 42,
+            "end": 48,
+            "value": "Forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "I would like to schedule a zoom call with Forest"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 16,
+            "end": 39,
+            "value": "Zoom",
+            "entity": "activity"
+          },
+          {
+            "start": 45,
+            "end": 51,
+            "value": "Forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "i would like to schedule a Zoom meeting with Forest"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 16,
+            "end": 35,
+            "value": "set up a phone call",
+            "entity": "activity"
+          }
+        ],
+        "text": "I would like to set up a phone call"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 16,
+            "end": 34,
+            "value": "set up a zoom call",
+            "entity": "activity"
+          }
+        ],
+        "text": "I would like to set up a zoom call"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 16,
+            "end": 37,
+            "value": "Zoom",
+            "entity": "activity"
+          }
+        ],
+        "text": "i would like to set up a Zoom meeting"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 16,
+            "end": 35,
+            "value": "set up a phone call",
+            "entity": "activity"
+          },
+          {
+            "start": 41,
+            "end": 47,
+            "value": "Forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "I would like to set up a phone call with Forest"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 16,
+            "end": 34,
+            "value": "set up a zoom call",
+            "entity": "activity"
+          },
+          {
+            "start": 40,
+            "end": 46,
+            "value": "Forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "I would like to set up a zoom call with Forest"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 16,
+            "end": 37,
+            "value": "Zoom",
+            "entity": "activity"
+          },
+          {
+            "start": 43,
+            "end": 49,
+            "value": "Forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "i would like to set up a Zoom meeting with Forest"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 16,
+            "end": 36,
+            "value": "arrange a phone call",
+            "entity": "activity"
+          }
+        ],
+        "text": "I would like to arrange a phone call"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 16,
+            "end": 35,
+            "value": "arrange a zoom call",
+            "entity": "activity"
+          }
+        ],
+        "text": "I would like to arrange a zoom call"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 16,
+            "end": 38,
+            "value": "Zoom",
+            "entity": "activity"
+          }
+        ],
+        "text": "i would like to arrange a Zoom meeting"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 16,
+            "end": 36,
+            "value": "arrange a phone call",
+            "entity": "activity"
+          },
+          {
+            "start": 42,
+            "end": 48,
+            "value": "Forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "I would like to arrange a phone call with Forest"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 16,
+            "end": 35,
+            "value": "arrange a zoom call",
+            "entity": "activity"
+          },
+          {
+            "start": 41,
+            "end": 47,
+            "value": "Forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "I would like to arrange a zoom call with Forest"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 16,
+            "end": 38,
+            "value": "Zoom",
+            "entity": "activity"
+          },
+          {
+            "start": 44,
+            "end": 50,
+            "value": "Forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "i would like to arrange a Zoom meeting with Forest"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 16,
+            "end": 40,
+            "value": "arrange for a phone call",
+            "entity": "activity"
+          }
+        ],
+        "text": "I would like to arrange for a phone call"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 16,
+            "end": 39,
+            "value": "arrange for a zoom call",
+            "entity": "activity"
+          }
+        ],
+        "text": "I would like to arrange for a zoom call"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 16,
+            "end": 42,
+            "value": "Zoom",
+            "entity": "activity"
+          }
+        ],
+        "text": "i would like to arrange for a Zoom meeting"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 16,
+            "end": 40,
+            "value": "arrange for a phone call",
+            "entity": "activity"
+          },
+          {
+            "start": 46,
+            "end": 52,
+            "value": "Forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "I would like to arrange for a phone call with Forest"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 16,
+            "end": 39,
+            "value": "arrange for a zoom call",
+            "entity": "activity"
+          },
+          {
+            "start": 45,
+            "end": 51,
+            "value": "Forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "I would like to arrange for a zoom call with Forest"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 16,
+            "end": 42,
+            "value": "Zoom",
+            "entity": "activity"
+          },
+          {
+            "start": 48,
+            "end": 54,
+            "value": "Forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "i would like to arrange for a Zoom meeting with Forest"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 16,
+            "end": 33,
+            "value": "book a phone call",
+            "entity": "activity"
+          }
+        ],
+        "text": "I would like to book a phone call"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 16,
+            "end": 32,
+            "value": "book a zoom call",
+            "entity": "activity"
+          }
+        ],
+        "text": "I would like to book a zoom call"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 16,
+            "end": 35,
+            "value": "Zoom",
+            "entity": "activity"
+          }
+        ],
+        "text": "i would like to book a Zoom meeting"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 16,
+            "end": 33,
+            "value": "book a phone call",
+            "entity": "activity"
+          },
+          {
+            "start": 39,
+            "end": 45,
+            "value": "Forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "I would like to book a phone call with Forest"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 16,
+            "end": 32,
+            "value": "book a zoom call",
+            "entity": "activity"
+          },
+          {
+            "start": 38,
+            "end": 44,
+            "value": "Forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "I would like to book a zoom call with Forest"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 16,
+            "end": 35,
+            "value": "Zoom",
+            "entity": "activity"
+          },
+          {
+            "start": 41,
+            "end": 47,
+            "value": "Forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "i would like to book a Zoom meeting with Forest"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 7,
+            "end": 18,
+            "value": "have a call",
+            "entity": "activity"
+          },
+          {
+            "start": 24,
+            "end": 30,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 35,
+            "end": 43,
+            "value": "Samantha",
+            "entity": "who"
+          }
+        ],
+        "text": "please book a call with forest for Samantha"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 7,
+            "end": 25,
+            "value": "set up a zoom call",
+            "entity": "activityzoom"
+          },
+          {
+            "start": 31,
+            "end": 37,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 42,
+            "end": 46,
+            "value": "Will",
+            "entity": "who"
+          }
+        ],
+        "text": "please set up a zoom call with forest for Will"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 7,
+            "end": 25,
+            "value": "meet",
+            "entity": "activity"
+          },
+          {
+            "start": 31,
+            "end": 37,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 42,
+            "end": 48,
+            "value": "Claire",
+            "entity": "who"
+          }
+        ],
+        "text": "please schedule a meeting with forest for Claire"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 7,
+            "end": 21,
+            "value": "meet",
+            "entity": "activity"
+          },
+          {
+            "start": 27,
+            "end": 33,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 38,
+            "end": 44,
+            "value": "Trevor",
+            "entity": "who"
+          }
+        ],
+        "text": "please plan a meeting with forest for Trevor"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 6,
+            "end": 22,
+            "value": "have lunch",
+            "entity": "activity"
+          },
+          {
+            "start": 28,
+            "end": 34,
+            "value": "Forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "Can I schedule a lunch with Forest please"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 6,
+            "end": 18,
+            "value": "have lunch",
+            "entity": "activity"
+          },
+          {
+            "start": 24,
+            "end": 30,
+            "value": "Forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "Can I book a lunch with Forest please"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 8,
+            "end": 20,
+            "value": "have lunch",
+            "entity": "activity"
+          },
+          {
+            "start": 26,
+            "end": 32,
+            "value": "Forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "Can you set up lunch with Forest please"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
             "start": 11,
             "end": 22,
             "value": "have a call",
@@ -7142,6 +7754,18 @@
           }
         ],
         "text": "id like to book a call"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 11,
+            "end": 19,
+            "value": "call me",
+            "entity": "activity"
+          }
+        ],
+        "text": "id like to call you"
       },
       {
         "intent": "lets_do",
@@ -7963,7 +8587,19 @@
             "entity": "activity"
           }
         ],
-        "text": "would like to meet up with please"
+        "text": "would like to meet up please"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 14,
+            "end": 22,
+            "value": "call me",
+            "entity": "activity"
+          }
+        ],
+        "text": "would like to call you"
       },
       {
         "intent": "lets_do",
@@ -9440,6 +10076,1080 @@
           }
         ],
         "text": "got time for lunch this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 7,
+            "end": 13,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 36,
+            "end": 42,
+            "value": "have a call",
+            "entity": "acvtivity"
+          },
+          {
+            "start": 43,
+            "end": 52,
+            "value": "this week",
+            "entity": "When"
+          }
+        ],
+        "text": "how is forest have availability for a call this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 7,
+            "end": 13,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 36,
+            "end": 47,
+            "value": "zoom",
+            "entity": "acvtivity"
+          },
+          {
+            "start": 48,
+            "end": 57,
+            "value": "this week",
+            "entity": "When"
+          }
+        ],
+        "text": "how is forest have availability for a zoom call this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 7,
+            "end": 13,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 36,
+            "end": 45,
+            "value": "have a call",
+            "entity": "acvtivity"
+          },
+          {
+            "start": 46,
+            "end": 55,
+            "value": "this week",
+            "entity": "When"
+          }
+        ],
+        "text": "how is forest have availability for a meeting this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 5,
+            "end": 11,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 34,
+            "end": 40,
+            "value": "have a call",
+            "entity": "acvtivity"
+          },
+          {
+            "start": 41,
+            "end": 50,
+            "value": "this week",
+            "entity": "When"
+          }
+        ],
+        "text": "does forest have availability for a call this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 5,
+            "end": 11,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 34,
+            "end": 45,
+            "value": "zoom",
+            "entity": "acvtivity"
+          },
+          {
+            "start": 46,
+            "end": 55,
+            "value": "this week",
+            "entity": "When"
+          }
+        ],
+        "text": "does forest have availability for a zoom call this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 5,
+            "end": 11,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 34,
+            "end": 43,
+            "value": "have a call",
+            "entity": "acvtivity"
+          },
+          {
+            "start": 44,
+            "end": 53,
+            "value": "this week",
+            "entity": "When"
+          }
+        ],
+        "text": "does forest have availability for a meeting this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 5,
+            "end": 11,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 26,
+            "end": 32,
+            "value": "have a call",
+            "entity": "acvtivity"
+          },
+          {
+            "start": 33,
+            "end": 42,
+            "value": "this week",
+            "entity": "When"
+          }
+        ],
+        "text": "does forest have time for a call this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 5,
+            "end": 11,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 26,
+            "end": 37,
+            "value": "zoom",
+            "entity": "acvtivity"
+          },
+          {
+            "start": 38,
+            "end": 47,
+            "value": "this week",
+            "entity": "When"
+          }
+        ],
+        "text": "does forest have time for a zoom call this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 5,
+            "end": 11,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 26,
+            "end": 35,
+            "value": "have a call",
+            "entity": "acvtivity"
+          },
+          {
+            "start": 36,
+            "end": 45,
+            "value": "this week",
+            "entity": "When"
+          }
+        ],
+        "text": "does forest have time for a meeting this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 5,
+            "end": 11,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 42,
+            "end": 48,
+            "value": "have a call",
+            "entity": "acvtivity"
+          },
+          {
+            "start": 49,
+            "end": 58,
+            "value": "this week",
+            "entity": "When"
+          }
+        ],
+        "text": "does forest have room on his calendar for a call this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 5,
+            "end": 11,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 42,
+            "end": 53,
+            "value": "zoom",
+            "entity": "acvtivity"
+          },
+          {
+            "start": 54,
+            "end": 63,
+            "value": "this week",
+            "entity": "When"
+          }
+        ],
+        "text": "does forest have room on his calendar for a zoom call this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 5,
+            "end": 11,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 43,
+            "end": 52,
+            "value": "have a call",
+            "entity": "acvtivity"
+          },
+          {
+            "start": 53,
+            "end": 62,
+            "value": "this week",
+            "entity": "When"
+          }
+        ],
+        "text": "does forest have space on his calendar for a meeting this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 13,
+            "end": 19,
+            "value": "have a call",
+            "entity": "activity"
+          },
+          {
+            "start": 25,
+            "end": 31,
+            "value": "forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "can you book a call with forest please"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 13,
+            "end": 24,
+            "value": "Zoom",
+            "entity": "activity"
+          },
+          {
+            "start": 30,
+            "end": 36,
+            "value": "forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "can you book a zoom call with forest please"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 13,
+            "end": 22,
+            "value": "meet",
+            "entity": "activity"
+          },
+          {
+            "start": 28,
+            "end": 34,
+            "value": "forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "can you book a meeting with forest please"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 13,
+            "end": 28,
+            "value": "schedule a lunch meeting",
+            "entity": "activity"
+          },
+          {
+            "start": 34,
+            "end": 40,
+            "value": "forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "can you book a lunch meeting with forest please"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 17,
+            "end": 23,
+            "value": "have a call",
+            "entity": "activity"
+          },
+          {
+            "start": 29,
+            "end": 35,
+            "value": "forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "can you schedule a call with forest please"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 17,
+            "end": 28,
+            "value": "Zoom",
+            "entity": "activity"
+          },
+          {
+            "start": 34,
+            "end": 40,
+            "value": "forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "can you schedule a zoom call with forest please"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 17,
+            "end": 26,
+            "value": "meet",
+            "entity": "activity"
+          },
+          {
+            "start": 32,
+            "end": 38,
+            "value": "forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "can you schedule a meeting with forest please"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 17,
+            "end": 32,
+            "value": "schedule a lunch meeting",
+            "entity": "activity"
+          },
+          {
+            "start": 38,
+            "end": 44,
+            "value": "forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "can you schedule a lunch meeting with forest please"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 15,
+            "end": 21,
+            "value": "have a call",
+            "entity": "activity"
+          },
+          {
+            "start": 27,
+            "end": 33,
+            "value": "forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "can you set up a call with forest please"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 15,
+            "end": 26,
+            "value": "Zoom",
+            "entity": "activity"
+          },
+          {
+            "start": 32,
+            "end": 38,
+            "value": "forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "can you set up a zoom call with forest please"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 15,
+            "end": 24,
+            "value": "meet",
+            "entity": "activity"
+          },
+          {
+            "start": 30,
+            "end": 36,
+            "value": "forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "can you set up a meeting with forest please"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 15,
+            "end": 30,
+            "value": "schedule a lunch meeting",
+            "entity": "activity"
+          },
+          {
+            "start": 36,
+            "end": 42,
+            "value": "forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "can you set up a lunch meeting with forest please"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 4,
+            "end": 10,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 20,
+            "end": 28,
+            "value": "tomorrow",
+            "entity": "Day"
+          }
+        ],
+        "text": "can forest do lunch tomorrow"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 11,
+            "end": 17,
+            "value": "have a call",
+            "entity": "activity"
+          },
+          {
+            "start": 23,
+            "end": 29,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 30,
+            "end": 39,
+            "value": "this week",
+            "entity": "When"
+          }
+        ],
+        "text": "can i book a call with forest this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 11,
+            "end": 22,
+            "value": "Zoom",
+            "entity": "activity"
+          },
+          {
+            "start": 28,
+            "end": 34,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 35,
+            "end": 44,
+            "value": "this week",
+            "entity": "When"
+          }
+        ],
+        "text": "can i book a zoom call with forest this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 11,
+            "end": 20,
+            "value": "meet",
+            "entity": "activity"
+          },
+          {
+            "start": 26,
+            "end": 32,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 33,
+            "end": 42,
+            "value": "this week",
+            "entity": "When"
+          }
+        ],
+        "text": "can i book a meeting with forest this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 11,
+            "end": 26,
+            "value": "schedule a lunch meeting",
+            "entity": "activity"
+          },
+          {
+            "start": 32,
+            "end": 38,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 39,
+            "end": 48,
+            "value": "this week",
+            "entity": "When"
+          }
+        ],
+        "text": "can i book a lunch meeting with forest this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 15,
+            "end": 21,
+            "value": "have a call",
+            "entity": "activity"
+          },
+          {
+            "start": 27,
+            "end": 33,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 34,
+            "end": 43,
+            "value": "this week",
+            "entity": "When"
+          }
+        ],
+        "text": "can i schedule a call with forest this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 15,
+            "end": 26,
+            "value": "Zoom",
+            "entity": "activity"
+          },
+          {
+            "start": 32,
+            "end": 38,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 39,
+            "end": 48,
+            "value": "this week",
+            "entity": "When"
+          }
+        ],
+        "text": "can i schedule a zoom call with forest this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 15,
+            "end": 24,
+            "value": "meet",
+            "entity": "activity"
+          },
+          {
+            "start": 30,
+            "end": 36,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 37,
+            "end": 46,
+            "value": "this week",
+            "entity": "When"
+          }
+        ],
+        "text": "can i schedule a meeting with forest this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 15,
+            "end": 30,
+            "value": "schedule a lunch meeting",
+            "entity": "activity"
+          },
+          {
+            "start": 36,
+            "end": 42,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 43,
+            "end": 52,
+            "value": "this week",
+            "entity": "When"
+          }
+        ],
+        "text": "can i schedule a lunch meeting with forest this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 13,
+            "end": 19,
+            "value": "have a call",
+            "entity": "activity"
+          },
+          {
+            "start": 25,
+            "end": 31,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 32,
+            "end": 41,
+            "value": "this week",
+            "entity": "When"
+          }
+        ],
+        "text": "can i set up a call with forest this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 13,
+            "end": 24,
+            "value": "Zoom",
+            "entity": "activity"
+          },
+          {
+            "start": 30,
+            "end": 36,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 37,
+            "end": 46,
+            "value": "this week",
+            "entity": "When"
+          }
+        ],
+        "text": "can i set up a zoom call with forest this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 13,
+            "end": 22,
+            "value": "meet",
+            "entity": "activity"
+          },
+          {
+            "start": 28,
+            "end": 34,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 35,
+            "end": 44,
+            "value": "this week",
+            "entity": "When"
+          }
+        ],
+        "text": "can i set up a meeting with forest this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 13,
+            "end": 28,
+            "value": "schedule a lunch meeting",
+            "entity": "activity"
+          },
+          {
+            "start": 34,
+            "end": 40,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 41,
+            "end": 50,
+            "value": "this week",
+            "entity": "When"
+          }
+        ],
+        "text": "can i set up a lunch meeting with forest this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 8,
+            "end": 19,
+            "value": "have a call",
+            "entity": "activity"
+          },
+          {
+            "start": 25,
+            "end": 31,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 32,
+            "end": 41,
+            "value": "this week",
+            "entity": "When"
+          }
+        ],
+        "text": "can you book a call with forest this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 8,
+            "end": 24,
+            "value": "Zoom",
+            "entity": "activity"
+          },
+          {
+            "start": 30,
+            "end": 36,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 37,
+            "end": 46,
+            "value": "this week",
+            "entity": "When"
+          }
+        ],
+        "text": "can you book a zoom call with forest this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 8,
+            "end": 22,
+            "value": "meet",
+            "entity": "activity"
+          },
+          {
+            "start": 28,
+            "end": 34,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 35,
+            "end": 44,
+            "value": "this week",
+            "entity": "When"
+          }
+        ],
+        "text": "can you book a meeting with forest this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 8,
+            "end": 28,
+            "value": "schedule a lunch meeting",
+            "entity": "activity"
+          },
+          {
+            "start": 34,
+            "end": 40,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 41,
+            "end": 50,
+            "value": "this week",
+            "entity": "When"
+          }
+        ],
+        "text": "can you book a lunch meeting with forest this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 8,
+            "end": 23,
+            "value": "have a call",
+            "entity": "activity"
+          },
+          {
+            "start": 29,
+            "end": 35,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 36,
+            "end": 45,
+            "value": "this week",
+            "entity": "When"
+          }
+        ],
+        "text": "can you schedule a call with forest this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 8,
+            "end": 28,
+            "value": "Zoom",
+            "entity": "activity"
+          },
+          {
+            "start": 34,
+            "end": 40,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 41,
+            "end": 50,
+            "value": "this week",
+            "entity": "When"
+          }
+        ],
+        "text": "can you schedule a zoom call with forest this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 8,
+            "end": 26,
+            "value": "meet",
+            "entity": "activity"
+          },
+          {
+            "start": 32,
+            "end": 38,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 39,
+            "end": 48,
+            "value": "this week",
+            "entity": "When"
+          }
+        ],
+        "text": "can you schedule a meeting with forest this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 17,
+            "end": 32,
+            "value": "schedule a lunch meeting",
+            "entity": "activity"
+          },
+          {
+            "start": 38,
+            "end": 44,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 45,
+            "end": 54,
+            "value": "this week",
+            "entity": "When"
+          }
+        ],
+        "text": "can you schedule a lunch meeting with forest this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 15,
+            "end": 21,
+            "value": "have a call",
+            "entity": "activity"
+          },
+          {
+            "start": 27,
+            "end": 33,
+            "value": "forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "can you set up a call with forest please"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 15,
+            "end": 26,
+            "value": "Zoom",
+            "entity": "activity"
+          },
+          {
+            "start": 32,
+            "end": 38,
+            "value": "forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "can you set up a zoom call with forest please"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 15,
+            "end": 24,
+            "value": "meet",
+            "entity": "activity"
+          },
+          {
+            "start": 30,
+            "end": 36,
+            "value": "forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "can you set up a meeting with forest please"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 15,
+            "end": 30,
+            "value": "schedule a lunch meeting",
+            "entity": "activity"
+          },
+          {
+            "start": 36,
+            "end": 42,
+            "value": "forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "can you set up a lunch meeting with forest please"
       },
       {
         "intent": "ask_availability",
@@ -32460,14 +34170,20 @@
         ]
       },
       {
-        "value": "have a meeting",
+        "value": "meet",
         "synonyms": [
           "book a meeting",
-          "make an appointment for a meeting",
           "plan a meeting",
           "schedule a meeting",
-          "set up a meeting",
           "a meeting",
+          "meeting"
+        ]
+      },
+      {
+        "value": "have a meeting",
+        "synonyms": [
+          "make an appointment for a meeting",
+          "set up a meeting",
           "schdule a meeting"
         ]
       },
@@ -32475,6 +34191,12 @@
         "value": "forest",
         "synonyms": [
           "forest's"
+        ]
+      },
+      {
+        "value": "call me",
+        "synonyms": [
+          "call you"
         ]
       },
       {
@@ -32486,15 +34208,24 @@
       {
         "value": "Zoom",
         "synonyms": [
-          "schedule a Zoom meeting",
           "plan a Zoom call",
-          "have a zoom meeting"
+          "schedule a Zoom meeting",
+          "set up a Zoom meeting",
+          "arrange a Zoom meeting",
+          "arrange for a Zoom meeting",
+          "book a Zoom meeting",
+          "have a zoom meeting",
+          "book a zoom call",
+          "schedule a zoom call"
         ]
       },
       {
-        "value": "meet",
+        "value": "have lunch",
         "synonyms": [
-          "meeting"
+          "schedule a lunch",
+          "book a lunch",
+          "set up lunch",
+          "lunch"
         ]
       },
       {
@@ -32510,18 +34241,6 @@
           "me",
           "I",
           "i"
-        ]
-      },
-      {
-        "value": "have lunch",
-        "synonyms": [
-          "lunch"
-        ]
-      },
-      {
-        "value": "call me",
-        "synonyms": [
-          "call you"
         ]
       },
       {
@@ -32546,6 +34265,13 @@
         "value": "schedule a zoom call",
         "synonyms": [
           "a zoom call"
+        ]
+      },
+      {
+        "value": "schedule a lunch meeting",
+        "synonyms": [
+          "a lunch meeting",
+          "book a lunch meeting"
         ]
       },
       {

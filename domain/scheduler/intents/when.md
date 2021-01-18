@@ -42,7 +42,7 @@
 - can you [schedule a meeting](activity:have a meeting) for me
 - can you [set up a call](activity:have a call) for me
 - can you [set up a meeting](activity:have a meeting) for me
-- can you arrange [a call](activity:have a call) for me
+- can you arrange for [a call](activity:have a call) for me
 - can you book [a call](activity:have a call) for me
 - can you please [schedule a call](activity) with [Forest](fm)
 - can you please [schedule a meeting](activity) with [Forest](fm)
@@ -52,7 +52,9 @@
 - can you [schedule a call](activity) on [forest's](fm:forest) calendar
 - can you [add a meeting](activity) to [forest's](fm:forest) calendar
 
+- i want to [meet in your garden](activity)
 - Hey [forest](fm), Love to set up [a call](activity:have a call). [Paul](who) Acme Personel
+
 - hi would like to [call you](activity:call me) please
 - hi would like to [book a call](activity:have a call) please
 - hi would like to [book a call](activity:have a call) with forest
@@ -60,9 +62,7 @@
 - hi would like to [book a meeting](activity:have a meeting) please
 - hi would like to [book a meeting](activity:have a meeting) with [forest](fm)
 - hi would like to [book a meeting](activity:have a meeting) with [forest](fm) please
-- i want to [meet in your garden](activity)
 
-- i would like a [schedule a Zoom meeting](activity:Zoom)
 - i would like a [plan a Zoom call](activity:Zoom) so I can share my screen
 - i would like to [book a call](activity:have a call)
 - i would like to [call you](activity:call me)
@@ -72,6 +72,51 @@
 - i would like to [meet up](activity)
 - i would like to [set up a call](activity:have a call)
 - i would like to [set up a meeting](activity:have a meeting)
+
+- I would like to [schedule a phone call](activity)
+- I would like to [schedule a zoom call](activity)
+- i would like to [schedule a Zoom meeting](activity:Zoom)
+- I would like to [schedule a phone call](activity) with [Forest](fm)
+- I would like to [schedule a zoom call](activity) with [Forest](fm)
+- i would like to [schedule a Zoom meeting](activity:Zoom) with [Forest](fm)
+
+- I would like to [set up a phone call](activity)
+- I would like to [set up a zoom call](activity)
+- i would like to [set up a Zoom meeting](activity:Zoom)
+- I would like to [set up a phone call](activity) with [Forest](fm)
+- I would like to [set up a zoom call](activity) with [Forest](fm)
+- i would like to [set up a Zoom meeting](activity:Zoom) with [Forest](fm)
+
+- I would like to [arrange a phone call](activity)
+- I would like to [arrange a zoom call](activity)
+- i would like to [arrange a Zoom meeting](activity:Zoom)
+- I would like to [arrange a phone call](activity) with [Forest](fm)
+- I would like to [arrange a zoom call](activity) with [Forest](fm)
+- i would like to [arrange a Zoom meeting](activity:Zoom) with [Forest](fm)
+
+- I would like to [arrange for a phone call](activity)
+- I would like to [arrange for a zoom call](activity)
+- i would like to [arrange for a Zoom meeting](activity:Zoom)
+- I would like to [arrange for a phone call](activity) with [Forest](fm)
+- I would like to [arrange for a zoom call](activity) with [Forest](fm)
+- i would like to [arrange for a Zoom meeting](activity:Zoom) with [Forest](fm)
+
+- I would like to [book a phone call](activity)
+- I would like to [book a zoom call](activity)
+- i would like to [book a Zoom meeting](activity:Zoom)
+- I would like to [book a phone call](activity) with [Forest](fm)
+- I would like to [book a zoom call](activity) with [Forest](fm)
+- i would like to [book a Zoom meeting](activity:Zoom) with [Forest](fm)
+
+- please [book a call](activity:have a call) with [forest](fm) for [Samantha](who)
+- please [set up a zoom call](activityzoom) with [forest](fm) for [Will](who)
+- please [schedule a meeting](activity:meet) with [forest](fm) for [Claire](who)
+- please [plan a meeting](activity:meet) with [forest](fm) for [Trevor](who)
+
+- Can I [schedule a lunch](activity:have lunch) with [Forest](fm) please
+- Can I [book a lunch](activity:have lunch) with [Forest](fm) please
+- Can you [set up lunch](activity:have lunch) with [Forest](fm) please
+
 - id like to [book a call](activity:have a call)
 - id like to [call you](activity:call me)
 - id like to [book a meeting](activity:have a meeting)
@@ -246,6 +291,61 @@
 - got time for [lunch](activity:do lunch) [today](When)
 - got time for [lunch](activity:do lunch) [tomorrow](When)
 - got time for [lunch](activity:do lunch) [this week](When)
+
+
+- how is [forest](fm) have availability for [a call](acvtivity:have a call) [this week](When)
+- how is [forest](fm) have availability for [a zoom call](acvtivity:zoom) [this week](When)
+- how is [forest](fm) have availability for [a meeting](acvtivity:have a call) [this week](When)
+
+- does [forest](fm) have availability for [a call](acvtivity:have a call) [this week](When)
+- does [forest](fm) have availability for [a zoom call](acvtivity:zoom) [this week](When)
+- does [forest](fm) have availability for [a meeting](acvtivity:have a call) [this week](When)
+- does [forest](fm) have time for [a call](acvtivity:have a call) [this week](When)
+- does [forest](fm) have time for [a zoom call](acvtivity:zoom) [this week](When)
+- does [forest](fm) have time for [a meeting](acvtivity:have a call) [this week](When)
+- does [forest](fm) have room on his calendar for [a call](acvtivity:have a call) [this week](When)
+- does [forest](fm) have room on his calendar for [a zoom call](acvtivity:zoom) [this week](When)
+- does [forest](fm) have space on his calendar for [a meeting](acvtivity:have a call) [this week](When)
+- can you book [a call](activity:have a call) with [forest](fm) please
+- can you book [a zoom call](activity:Zoom) with [forest](fm) please
+- can you book [a meeting](activity:meet) with [forest](fm) please
+- can you book [a lunch meeting](activity:schedule a lunch meeting) with [forest](fm) please
+- can you schedule [a call](activity:have a call) with [forest](fm) please
+- can you schedule [a zoom call](activity:Zoom) with [forest](fm) please
+- can you schedule [a meeting](activity:meet) with [forest](fm) please
+- can you schedule [a lunch meeting](activity:schedule a lunch meeting) with [forest](fm) please
+- can you set up [a call](activity:have a call) with [forest](fm) please
+- can you set up [a zoom call](activity:Zoom) with [forest](fm) please
+- can you set up [a meeting](activity:meet) with [forest](fm) please
+- can you set up [a lunch meeting](activity:schedule a lunch meeting) with [forest](fm) please
+- can [forest](fm) do lunch [tomorrow](Day)
+
+- can i book [a call](activity:have a call) with [forest](fm) [this week](When)
+- can i book [a zoom call](activity:Zoom) with [forest](fm) [this week](When)
+- can i book [a meeting](activity:meet) with [forest](fm) [this week](When)
+- can i book [a lunch meeting](activity:schedule a lunch meeting) with [forest](fm) [this week](When)
+- can i schedule [a call](activity:have a call) with [forest](fm) [this week](When)
+- can i schedule [a zoom call](activity:Zoom) with [forest](fm) [this week](When)
+- can i schedule [a meeting](activity:meet) with [forest](fm) [this week](When)
+- can i schedule [a lunch meeting](activity:schedule a lunch meeting) with [forest](fm) [this week](When)
+- can i set up [a call](activity:have a call) with [forest](fm) [this week](When)
+- can i set up [a zoom call](activity:Zoom) with [forest](fm) [this week](When)
+- can i set up [a meeting](activity:meet) with [forest](fm) [this week](When)
+- can i set up [a lunch meeting](activity:schedule a lunch meeting) with [forest](fm) [this week](When)
+
+- can you [book a call](activity:have a call) with [forest](fm) [this week](When)
+- can you [book a zoom call](activity:Zoom) with [forest](fm) [this week](When)
+- can you [book a meeting](activity:meet) with [forest](fm) [this week](When)
+- can you [book a lunch meeting](activity:schedule a lunch meeting) with [forest](fm) [this week](When)
+- can you [schedule a call](activity:have a call) with [forest](fm) [this week](When)
+- can you [schedule a zoom call](activity:Zoom) with [forest](fm) [this week](When)
+- can you [schedule a meeting](activity:meet) with [forest](fm) [this week](When)
+- can you schedule [a lunch meeting](activity:schedule a lunch meeting) with [forest](fm) [this week](When)
+- can you set up [a call](activity:have a call) with [forest](fm) please
+- can you set up [a zoom call](activity:Zoom) with [forest](fm) please
+- can you set up [a meeting](activity:meet) with [forest](fm) please
+- can you set up [a lunch meeting](activity:schedule a lunch meeting) with [forest](fm) please
+
 
 - what [day](When) is good for you?
 - what is a good [day](When) for [a call](activity:have a call)

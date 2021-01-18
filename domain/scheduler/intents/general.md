@@ -33,13 +33,16 @@
 - greetings and salutations
 - how do you do?
 - howdy doodie
+- yo
+- word up
+
+
+## intent:forest
 - hi forest
 - hello forest
 - hey forest
 - is this forest
 - is this zoro
-- yo
-- word up
 
 
 ## intent:greet_with_name

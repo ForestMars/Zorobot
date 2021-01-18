@@ -842,7 +842,7 @@ templates:
   utter_best_email_is:
   - text: Best email to use is themarsgroup
   utter_best_number_is:
-  - text: Best number to reach me on is 516-698-2705
+  - text: Best number to reach me on is 646-535-7175
   utter_bot_help:
   - text: You can say things like...
   utter_bye:
@@ -925,7 +925,7 @@ templates:
   utter_hereiam:
   - text: Here I am.
   utter_heres_my_number:
-  - text: "Here's the number to call me on: 516-698-2705"
+  - text: "Here's the number to call me on: 646-535-7175"
   utter_hiu:
   - text: Hi you.
   utter_hiyou:

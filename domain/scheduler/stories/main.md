@@ -7,13 +7,11 @@
   - utter_ask_schedule_call_discuss
   - action_update_contacts
 * affirm OR ask_which_day
-  - utter_ask_day
   - action_preprocess_when
   - when_form
   - form{"name": "when_form"}
   - form{"name": null}
   - action_date_parts
-  - utter_sure_we_can
   - email_form
   - form{"name": "email_form"}
   - form{"name": null}
@@ -84,14 +82,20 @@
   - form{"name": "who_form"}
   - form{"name": null}
   - utter_nicetohearfromu
-  - utter_ask_day
   - action_preprocess_when  
   - when_form
   - form{"name": "when_form"}
   - form{"name": null}
   - action_date_parts
-  - utter_sure_we_can
   - action_check_time
+  - email_form
+  - form{"name": "email_form"}
+  - form{"name": null}  
+  - utter_confirm_best_email
+* affirm OR thanks OR affirm_day
+  - utter_shall_we_confirm  
+* affirm OR thanks
+  - action_send_invite
 
 ## availability
 * ask_availability
@@ -104,9 +108,7 @@
   - form{"name": "when_form"}
   - form{"name": null}
   - action_date_parts
-
   - action_check_time
-  - utter_sure_we_can
   - email_form
   - form{"name": "email_form"}
   - form{"name": null}  
@@ -135,7 +137,6 @@
   - form{"name": null}
   - action_date_parts
   - action_check_time
-  - utter_sure_we_can
   - email_form
   - form{"name": "email_form"}
   - form{"name": null}

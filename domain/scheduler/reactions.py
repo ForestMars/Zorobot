@@ -293,7 +293,7 @@ class ActionSendInvite(Action):  # Action Invite
         # Behold: Data inside a class method.
         call = dict(
             # Superseded by month_name, can be killed.
-            activity=tracker.get_slot('activity'),
+            activity=tracker.get_slot('activity'), # Not curently used.
             month=tracker.get_slot('date_month'),
             month_name=tracker.get_slot('month_name'),
             day=int(tracker.get_slot('day_of_month')),

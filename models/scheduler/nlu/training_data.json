@@ -6256,6 +6256,2692 @@
         "text": "huh? none?"
       },
       {
+        "intent": "remember_me",
+        "text": "I don't know if you recall"
+      },
+      {
+        "intent": "remember_me",
+        "text": "I don't know if you remember"
+      },
+      {
+        "intent": "remember_me",
+        "text": "I don't know if you recall"
+      },
+      {
+        "intent": "remember_me",
+        "text": "I don't know if you remember"
+      },
+      {
+        "intent": "remember_me",
+        "text": "I don't know if you recall but we were in touch last year"
+      },
+      {
+        "intent": "remember_me",
+        "text": "we were in touch last year"
+      },
+      {
+        "intent": "remember_me",
+        "text": "you may not remember me"
+      },
+      {
+        "intent": "remember_me",
+        "text": "as you may recall we were talking"
+      },
+      {
+        "intent": "get_my_email",
+        "text": "i sent you an email"
+      },
+      {
+        "intent": "get_my_email",
+        "text": "did you get my email"
+      },
+      {
+        "intent": "get_my_email",
+        "text": "did you get the email i sent you"
+      },
+      {
+        "intent": "get_my_email",
+        "text": "did you have a chance to read my email"
+      },
+      {
+        "intent": "get_my_email",
+        "text": "sent an email your way"
+      },
+      {
+        "intent": "heard_you_are_hiring",
+        "text": "i understand you are hiring"
+      },
+      {
+        "intent": "heard_you_are_hiring",
+        "text": "i understand you are hiring again"
+      },
+      {
+        "intent": "heard_you_are_hiring",
+        "text": "i see you are hiring"
+      },
+      {
+        "intent": "heard_you_are_hiring",
+        "text": "it looks like you are hiring"
+      },
+      {
+        "intent": "heard_you_are_hiring",
+        "text": "it looks like you have open position"
+      },
+      {
+        "intent": "heard_you_are_hiring",
+        "text": "it looks like you have some open roles"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "are you hiring"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "are you currently"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "are you currently hiring"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "are you staffing up"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "are you currently staffing up"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "are you hiring right now"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "are you considering candidates"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "are you interviewing candidates"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "do you have any open roles"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "what roles are you trying to fill"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "what roles are you currently trying to fill"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "what roles do you currently have open"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "what are you open roles right now"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "do you have any open positions"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "what positions are you currently trying to fill"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "what positions do you currently have open"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "what open positions you have"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "what open roles you have"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "is your company hiring"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "is your company currently"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "is your company currently hiring"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "is your company staffing up"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "is your company currently staffing up"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "is your company hiring right now"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "is your company considering candidates"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "is your company interviewing candidates"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "do you have any open roles"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "what roles is your company trying to fill"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "what roles is your company currently trying to fill"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "what roles do you currently have open"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "what is your company open roles right now"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "do you have any open positions"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "what positions is your company currently trying to fill"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "what positions do you currently have open"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "what open positions you have"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "what open roles you have"
+      },
+      {
+        "intent": "ask_are_you_open_to",
+        "entities": [
+          {
+            "start": 23,
+            "end": 33,
+            "value": "candidates",
+            "entity": "pos"
+          }
+        ],
+        "text": "are you open to seeing candidates"
+      },
+      {
+        "intent": "ask_are_you_open_to",
+        "entities": [
+          {
+            "start": 33,
+            "end": 43,
+            "value": "candidates",
+            "entity": "pos"
+          }
+        ],
+        "text": "are you open to seeing potential candidates"
+      },
+      {
+        "intent": "ask_are_you_open_to",
+        "entities": [
+          {
+            "start": 29,
+            "end": 39,
+            "value": "candidates",
+            "entity": "pos"
+          }
+        ],
+        "text": "are you open to seeing a few candidates"
+      },
+      {
+        "intent": "ask_are_you_open_to",
+        "entities": [
+          {
+            "start": 17,
+            "end": 24,
+            "value": "resumes",
+            "entity": "pos"
+          }
+        ],
+        "text": "can i send a few resumes your way"
+      },
+      {
+        "intent": "ask_are_you_open_to",
+        "entities": [
+          {
+            "start": 28,
+            "end": 35,
+            "value": "resumes",
+            "entity": "resumes"
+          }
+        ],
+        "text": "are you open to seeing some resumes"
+      },
+      {
+        "intent": "ask_are_you_open_to",
+        "entities": [
+          {
+            "start": 33,
+            "end": 43,
+            "value": "candidates",
+            "entity": "pos"
+          }
+        ],
+        "text": "are you open to talking to a few candidates"
+      },
+      {
+        "intent": "ask_are_you_open_to",
+        "entities": [
+          {
+            "start": 29,
+            "end": 38,
+            "value": "candidates",
+            "entity": "pos"
+          }
+        ],
+        "text": "are you open to talking to a candidate"
+      },
+      {
+        "intent": "ask_are_you_open_to",
+        "entities": [
+          {
+            "start": 12,
+            "end": 21,
+            "value": "candidate",
+            "entity": "pos"
+          }
+        ],
+        "text": "can i run a candidate by you"
+      },
+      {
+        "intent": "ask_are_you_open_to",
+        "entities": [
+          {
+            "start": 16,
+            "end": 26,
+            "value": "candidates",
+            "entity": "pos"
+          }
+        ],
+        "text": "can i run a few candidates by you"
+      },
+      {
+        "intent": "ask_are_you_open_to",
+        "entities": [
+          {
+            "start": 16,
+            "end": 33,
+            "value": "opp",
+            "entity": "pos"
+          }
+        ],
+        "text": "are you open to new opportunities"
+      },
+      {
+        "intent": "ask_are_you_open_to",
+        "entities": [
+          {
+            "start": 28,
+            "end": 38,
+            "value": "opp",
+            "entity": "pos"
+          }
+        ],
+        "text": "are you open to considering a new role"
+      },
+      {
+        "intent": "ask_are_you_open_to",
+        "entities": [
+          {
+            "start": 32,
+            "end": 41,
+            "value": "opp",
+            "entity": "pos"
+          }
+        ],
+        "text": "are you open to considering any new roles"
+      },
+      {
+        "intent": "ask_are_you_open_to",
+        "entities": [
+          {
+            "start": 10,
+            "end": 21,
+            "value": "opp",
+            "entity": "pos"
+          }
+        ],
+        "text": "i have an opportunity you may be interested in"
+      },
+      {
+        "intent": "did_you_get_candidates",
+        "text": "did you get the resumes i sent over"
+      },
+      {
+        "intent": "did_you_get_candidates",
+        "text": "did you get the resumes i sent you"
+      },
+      {
+        "intent": "did_you_get_candidates",
+        "text": "did you get the resumes i sent your way"
+      },
+      {
+        "intent": "did_you_get_candidates",
+        "text": "did you get the resumes i sent to you"
+      },
+      {
+        "intent": "did_you_get_candidates",
+        "text": "did you have a chance to look at the resumes i sent over"
+      },
+      {
+        "intent": "did_you_get_candidates",
+        "text": "did you get a chance to look at the resumes i sent you"
+      },
+      {
+        "intent": "did_you_get_candidates",
+        "text": "did you have a chance to look at the resumes i sent your way"
+      },
+      {
+        "intent": "did_you_get_candidates",
+        "text": "did you get a chance to look at the resumes i sent to you"
+      },
+      {
+        "intent": "did_you_get_candidates",
+        "text": "did you have a chance to review the resumes i sent over"
+      },
+      {
+        "intent": "did_you_get_candidates",
+        "text": "did you get a chance to review the resumes i sent you"
+      },
+      {
+        "intent": "did_you_get_candidates",
+        "text": "did you have a chance to review the resumes i sent your way"
+      },
+      {
+        "intent": "did_you_get_candidates",
+        "text": "did you have a chance to review the resumes i sent to you"
+      },
+      {
+        "intent": "did_you_get_candidates",
+        "text": "did you get the candidates i sent over"
+      },
+      {
+        "intent": "did_you_get_candidates",
+        "text": "did you get the candidates i sent you"
+      },
+      {
+        "intent": "did_you_get_candidates",
+        "text": "did you get the candidates i sent your way"
+      },
+      {
+        "intent": "did_you_get_candidates",
+        "text": "did you get the candidates i sent to you"
+      },
+      {
+        "intent": "did_you_get_candidates",
+        "text": "did you get a chance to look at the candidates i sent over"
+      },
+      {
+        "intent": "did_you_get_candidates",
+        "text": "did you have a chance to look at the candidates i sent you"
+      },
+      {
+        "intent": "did_you_get_candidates",
+        "text": "did you have a chance to look at the candidates i sent your way"
+      },
+      {
+        "intent": "did_you_get_candidates",
+        "text": "did you have a chance to look at the candidates i sent to you"
+      },
+      {
+        "intent": "did_you_get_candidates",
+        "text": "did you have a chance to review the candidates i sent over"
+      },
+      {
+        "intent": "did_you_get_candidates",
+        "text": "did you have a chance to review the candidates i sent you"
+      },
+      {
+        "intent": "did_you_get_candidates",
+        "text": "did you have a chance to review the candidates i sent your way"
+      },
+      {
+        "intent": "did_you_get_candidates",
+        "text": "did you have a chance to review the candidates i sent to you"
+      },
+      {
+        "intent": "did_you_get_candidates",
+        "text": "did you get a chance to look at the candidates i sent over"
+      },
+      {
+        "intent": "did_you_get_candidates",
+        "text": "have you had a chance to look at the candidates i sent you"
+      },
+      {
+        "intent": "did_you_get_candidates",
+        "text": "have you had a chance to look at the candidates i sent your way"
+      },
+      {
+        "intent": "did_you_get_candidates",
+        "text": "have you had a chance to look at the candidates i sent to you"
+      },
+      {
+        "intent": "did_you_get_candidates",
+        "text": "have you had a chance to look at the resumes i sent you"
+      },
+      {
+        "intent": "did_you_get_candidates",
+        "text": "have you had a chance to look at the resumes i sent your way"
+      },
+      {
+        "intent": "did_you_get_candidates",
+        "text": "have you had a chance to look at the resumes i sent to you"
+      },
+      {
+        "intent": "did_you_get_candidates",
+        "text": "were any of the candidates i sent over interesting to you"
+      },
+      {
+        "intent": "did_you_get_candidates",
+        "text": "are you interested in any of the candidates i sent over"
+      },
+      {
+        "intent": "make_request",
+        "entities": [
+          {
+            "start": 20,
+            "end": 22,
+            "value": "jd",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send me the jd"
+      },
+      {
+        "intent": "make_request",
+        "entities": [
+          {
+            "start": 20,
+            "end": 34,
+            "value": "vp engineering",
+            "entity": "kind"
+          },
+          {
+            "start": 35,
+            "end": 37,
+            "value": "jd",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send me the vp engineering jd"
+      },
+      {
+        "intent": "make_request",
+        "entities": [
+          {
+            "start": 20,
+            "end": 39,
+            "value": "solutions architect",
+            "entity": "kind"
+          },
+          {
+            "start": 40,
+            "end": 42,
+            "value": "jd",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send me the solutions architect jd"
+      },
+      {
+        "intent": "make_request",
+        "entities": [
+          {
+            "start": 20,
+            "end": 38,
+            "value": "solutions engineer",
+            "entity": "kind"
+          },
+          {
+            "start": 39,
+            "end": 41,
+            "value": "jd",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send me the solutions engineer jd"
+      },
+      {
+        "intent": "make_request",
+        "entities": [
+          {
+            "start": 20,
+            "end": 35,
+            "value": "senior engineer",
+            "entity": "kind"
+          },
+          {
+            "start": 36,
+            "end": 38,
+            "value": "jd",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send me the senior engineer jd"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 23,
+            "end": 38,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "can you please send me forest's resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 23,
+            "end": 30,
+            "value": "res:cv",
+            "entity": "res"
+          }
+        ],
+        "text": "can you please send me your cv"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 23,
+            "end": 34,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "can you please send me your resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 25,
+            "end": 40,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "can you please send over forest's resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 25,
+            "end": 32,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "can you please send over your cv"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 25,
+            "end": 36,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "can you please send over your resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 13,
+            "end": 28,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send forest's resume over"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 13,
+            "end": 24,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send your resume over"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 16,
+            "end": 31,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send me forest's resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 16,
+            "end": 35,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send me your current resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 16,
+            "end": 35,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send me your current resume please"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 16,
+            "end": 27,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send me your resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 16,
+            "end": 27,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send me your resume please"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 18,
+            "end": 33,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send over forest's resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 18,
+            "end": 37,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send over your current resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 18,
+            "end": 37,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send over your current resume please"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 18,
+            "end": 29,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send over your resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 18,
+            "end": 29,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send over your resume please"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 19,
+            "end": 34,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "hi can you send me forest's resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 22,
+            "end": 37,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "hi id like to request forest's resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 16,
+            "end": 34,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "if you can send your curent resume over i'll get the process started"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 16,
+            "end": 27,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "if you can send your resume over i'll get the process started"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 12,
+            "end": 23,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "if you send your resume over i'll get the process started"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 23,
+            "end": 34,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "no but can you send me your resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 40,
+            "end": 55,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "no need for a call but can you shoot me forest's resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 40,
+            "end": 51,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "no need for a call but can you shoot me your resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 25,
+            "end": 44,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "no, however can you send your current resume over?"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 25,
+            "end": 36,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "no, however can you send your resume over?"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 30,
+            "end": 45,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "please can you please send me forest's resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 30,
+            "end": 41,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "please can you please send me your resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 15,
+            "end": 26,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "please send me your resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 24,
+            "end": 39,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "will you please send me forest's resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 24,
+            "end": 31,
+            "value": "res:cv",
+            "entity": "res"
+          }
+        ],
+        "text": "will you please send me your cv"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 24,
+            "end": 35,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "will you please send me your resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 26,
+            "end": 41,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "will you please send over forest's resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 26,
+            "end": 33,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "will you please send over your cv"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 26,
+            "end": 37,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "will you please send over your resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 14,
+            "end": 29,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "will you send forest's resume over"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 14,
+            "end": 25,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "will you send your resume over"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 17,
+            "end": 32,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "will you send me forest's resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 17,
+            "end": 36,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "will you send me your current resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 17,
+            "end": 36,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "will you send me your current resume please"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 17,
+            "end": 28,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "will you send me your resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 17,
+            "end": 28,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "will you send me your resume please"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 19,
+            "end": 34,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "will you send over forest's resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 19,
+            "end": 38,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "will you send over your current resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 19,
+            "end": 38,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "will you send over your current resume please"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 19,
+            "end": 30,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "will you send over your resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 19,
+            "end": 30,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "will you send over your resume please"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 23,
+            "end": 34,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "can you please send me forest's cv"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 23,
+            "end": 30,
+            "value": "res:cv",
+            "entity": "res"
+          }
+        ],
+        "text": "can you please send me your cv"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 23,
+            "end": 30,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "can you please send me your cv"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 25,
+            "end": 36,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "can you please send over forest's cv"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 25,
+            "end": 32,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "can you please send over your cv"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 25,
+            "end": 32,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "can you please send over your cv"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 13,
+            "end": 24,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send forest's cv over"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 13,
+            "end": 20,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send your cv over"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 16,
+            "end": 27,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send me forest's cv"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 16,
+            "end": 31,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send me your current cv"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 16,
+            "end": 31,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send me your current cv please"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 16,
+            "end": 23,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send me your cv"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 16,
+            "end": 23,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send me your cv please"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 18,
+            "end": 29,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send over forest's cv"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 18,
+            "end": 33,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send over your current cv"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 18,
+            "end": 33,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send over your current cv please"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 18,
+            "end": 25,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send over your cv"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 18,
+            "end": 25,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send over your cv please"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 19,
+            "end": 30,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "hi can you send me forest's cv"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 22,
+            "end": 33,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "hi id like to request forest's cv"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 16,
+            "end": 30,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "if you can send your curent cv over i'll get the process started"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 16,
+            "end": 23,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "if you can send your cv over i'll get the process started"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "if you send your cv over i'll get the process started"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 23,
+            "end": 30,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "no but can you send me your cv"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 40,
+            "end": 51,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "no need for a call but can you shoot me forest's cv"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 40,
+            "end": 47,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "no need for a call but can you shoot me your cv"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 25,
+            "end": 40,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "no, however can you send your current cv over?"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 25,
+            "end": 32,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "no, however can you send your cv over?"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 30,
+            "end": 41,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "please can you please send me forest's cv"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 30,
+            "end": 37,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "please can you please send me your cv"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 15,
+            "end": 22,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "please send me your cv"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 24,
+            "end": 35,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "will you please send me forest's cv"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 24,
+            "end": 31,
+            "value": "res:cv",
+            "entity": "res"
+          }
+        ],
+        "text": "will you please send me your cv"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 24,
+            "end": 31,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "will you please send me your cv"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 26,
+            "end": 37,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "will you please send over forest's cv"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 26,
+            "end": 33,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "will you please send over your cv"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 26,
+            "end": 33,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "will you please send over your cv"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 14,
+            "end": 25,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "will you send forest's cv over"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 14,
+            "end": 21,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "will you send your cv over"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 17,
+            "end": 28,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "will you send me forest's cv"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 17,
+            "end": 32,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "will you send me your current cv"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 17,
+            "end": 32,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "will you send me your current cv please"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 17,
+            "end": 24,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "will you send me your cv"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 17,
+            "end": 24,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "will you send me your cv please"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 19,
+            "end": 30,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "will you send over forest's cv"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 19,
+            "end": 34,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "will you send over your current cv"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 19,
+            "end": 34,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "will you send over your current cv please"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 19,
+            "end": 26,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "will you send over your cv"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 19,
+            "end": 26,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "will you send over your cv please"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 4,
+            "end": 10,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 27,
+            "end": 46,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "hey forest can you send me your current resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 4,
+            "end": 10,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 24,
+            "end": 43,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "hey forest can you send your current resume over"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 16,
+            "end": 20,
+            "value": "barb",
+            "entity": "Nou"
+          },
+          {
+            "start": 35,
+            "end": 46,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "hi forest, it's barb, can you send your resume over"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 4,
+            "end": 10,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 16,
+            "end": 21,
+            "value": "keith",
+            "entity": "Nou"
+          },
+          {
+            "start": 38,
+            "end": 57,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "hey forest, its keith can you send me your current resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 15,
+            "end": 20,
+            "value": "peter",
+            "entity": "Nou"
+          },
+          {
+            "start": 35,
+            "end": 54,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "hi forest, its peter, can you send your current resume over"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 4,
+            "end": 10,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 16,
+            "end": 20,
+            "value": "mark",
+            "entity": "Nou"
+          },
+          {
+            "start": 38,
+            "end": 49,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "hey forest, its mark, can you send me your resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 14,
+            "end": 18,
+            "value": "matt",
+            "entity": "Nou"
+          },
+          {
+            "start": 32,
+            "end": 43,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "hi forest its matt can you send your resume over"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 4,
+            "end": 10,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 15,
+            "end": 19,
+            "value": "john",
+            "entity": "Nou"
+          },
+          {
+            "start": 36,
+            "end": 55,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "hey forest its john can you send me your current resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 14,
+            "end": 18,
+            "value": "paul",
+            "entity": "Nou"
+          },
+          {
+            "start": 32,
+            "end": 51,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "hi forest its paul can you send your current resume over"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 4,
+            "end": 10,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 15,
+            "end": 19,
+            "value": "will",
+            "entity": "Nou"
+          },
+          {
+            "start": 36,
+            "end": 42,
+            "value": "jd",
+            "entity": "res"
+          },
+          {
+            "start": 51,
+            "end": 69,
+            "value": "solutions engineer",
+            "entity": "kind"
+          }
+        ],
+        "text": "hey forest its will can you send me the jd for the solutions engineer role"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 15,
+            "end": 20,
+            "value": "brian",
+            "entity": "Nou"
+          },
+          {
+            "start": 35,
+            "end": 55,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "hi forest, its brian, can you send that job description over"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 4,
+            "end": 10,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 15,
+            "end": 21,
+            "value": "graham",
+            "entity": "Nou"
+          },
+          {
+            "start": 38,
+            "end": 44,
+            "value": "jd",
+            "entity": "res"
+          }
+        ],
+        "text": "hey forest its graham can you send me the jd for the senior role"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 14,
+            "end": 18,
+            "value": "rick",
+            "entity": "Nou"
+          },
+          {
+            "start": 41,
+            "end": 59,
+            "value": "solutions engineer",
+            "entity": "kind"
+          },
+          {
+            "start": 60,
+            "end": 75,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "hi forest its rick can you send over the solutions engineer job description"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 4,
+            "end": 10,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 16,
+            "end": 19,
+            "value": "dan",
+            "entity": "Nou"
+          },
+          {
+            "start": 34,
+            "end": 45,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "hey forest, its dan, can you send your resume over"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 15,
+            "end": 18,
+            "value": "eli",
+            "entity": "Nou"
+          },
+          {
+            "start": 33,
+            "end": 52,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "hi forest, its eli, can you send your current resume over"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 4,
+            "end": 10,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 16,
+            "end": 25,
+            "value": "francesca",
+            "entity": "Nou"
+          },
+          {
+            "start": 50,
+            "end": 61,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "hey forest, its francesca, can you please send me your resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 15,
+            "end": 19,
+            "value": "greg",
+            "entity": "Nou"
+          },
+          {
+            "start": 51,
+            "end": 62,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "hi forest, its greg, please can you please send me your resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 4,
+            "end": 10,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 16,
+            "end": 21,
+            "value": "holly",
+            "entity": "Nou"
+          },
+          {
+            "start": 37,
+            "end": 48,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "hey forest, its holly, will you send your resume over"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 4,
+            "end": 10,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 16,
+            "end": 22,
+            "value": "isabel",
+            "entity": "Nou"
+          },
+          {
+            "start": 48,
+            "end": 67,
+            "value": "solutions architect",
+            "entity": "kind"
+          },
+          {
+            "start": 68,
+            "end": 83,
+            "value": "jd",
+            "entity": "res"
+          }
+        ],
+        "text": "hey forest, its isabel, will you please send me solutions architect job description please"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 15,
+            "end": 21,
+            "value": "jordan",
+            "entity": "Nou"
+          },
+          {
+            "start": 38,
+            "end": 49,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "hi forest, its jordan, please send me your resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 15,
+            "end": 20,
+            "value": "kevin",
+            "entity": "Nou"
+          },
+          {
+            "start": 38,
+            "end": 53,
+            "value": "senior engineer",
+            "entity": "kind"
+          },
+          {
+            "start": 54,
+            "end": 69,
+            "value": "jd",
+            "entity": "res"
+          }
+        ],
+        "text": "hi forest, its kevin, can you send me senior engineer job description please"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 15,
+            "end": 18,
+            "value": "lee",
+            "entity": "Nou"
+          },
+          {
+            "start": 36,
+            "end": 47,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "hi forest, its lee, can you send me your resume please"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 15,
+            "end": 21,
+            "value": "martha",
+            "entity": "Nou"
+          },
+          {
+            "start": 39,
+            "end": 50,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "hi forest, its martha, can you send me your resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 15,
+            "end": 19,
+            "value": "noel",
+            "entity": "Nou"
+          },
+          {
+            "start": 37,
+            "end": 48,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "hi forest, its noel, can you send me your resume please"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 15,
+            "end": 19,
+            "value": "olga",
+            "entity": "Nou"
+          },
+          {
+            "start": 44,
+            "end": 55,
+            "value": "your resume",
+            "entity": ""
+          }
+        ],
+        "text": "hi forest, its olga, can you please send me your resume"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 15,
+            "end": 22,
+            "value": "pauline",
+            "entity": "Nou"
+          },
+          {
+            "start": 39,
+            "end": 50,
+            "value": "junior role",
+            "entity": "kind"
+          },
+          {
+            "start": 51,
+            "end": 66,
+            "value": "jd",
+            "entity": "res"
+          }
+        ],
+        "text": "hi forest, its pauline, please send me junior role job description"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 15,
+            "end": 22,
+            "value": "quentin",
+            "entity": "Nou"
+          },
+          {
+            "start": 38,
+            "end": 49,
+            "value": "senior role",
+            "entity": "kind"
+          },
+          {
+            "start": 50,
+            "end": 65,
+            "value": "jd",
+            "entity": "res"
+          }
+        ],
+        "text": "hi forest, its quentin, will you send senior role job description over"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 15,
+            "end": 21,
+            "value": "rachel",
+            "entity": "Nou"
+          },
+          {
+            "start": 39,
+            "end": 54,
+            "value": "senior engineer",
+            "entity": "kind"
+          },
+          {
+            "start": 55,
+            "end": 70,
+            "value": "jd",
+            "entity": "res"
+          }
+        ],
+        "text": "hi forest, its rachel, can you send me senior engineer job description"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 15,
+            "end": 19,
+            "value": "stan",
+            "entity": "Nou"
+          },
+          {
+            "start": 37,
+            "end": 55,
+            "value": "solutions engineer",
+            "entity": "kind"
+          },
+          {
+            "start": 56,
+            "end": 71,
+            "value": "jd",
+            "entity": "res"
+          }
+        ],
+        "text": "hi forest, its stan, can you send me solutions engineer job description please"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "forest",
+            "entity": "fm"
+          },
+          {
+            "start": 15,
+            "end": 18,
+            "value": "tom",
+            "entity": "Nou"
+          },
+          {
+            "start": 40,
+            "end": 54,
+            "value": "vp engineering",
+            "entity": "kind"
+          },
+          {
+            "start": 55,
+            "end": 70,
+            "value": "jd",
+            "entity": "res"
+          }
+        ],
+        "text": "hi forest, its tom, can you send me the vp engineering job description"
+      },
+      {
+        "intent": "did_you_send_resume",
+        "entities": [
+          {
+            "start": 36,
+            "end": 43,
+            "value": "resumes",
+            "entity": "res"
+          }
+        ],
+        "text": "did you have a chance to send those resumes yet"
+      },
+      {
+        "intent": "did_you_send_resume",
+        "entities": [
+          {
+            "start": 27,
+            "end": 34,
+            "value": "resumes",
+            "entity": "res"
+          }
+        ],
+        "text": "did you already send those resumes over"
+      },
+      {
+        "intent": "did_you_send_resume",
+        "entities": [
+          {
+            "start": 18,
+            "end": 24,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "did you send your resume over"
+      },
+      {
+        "intent": "did_you_send_resume",
+        "entities": [
+          {
+            "start": 18,
+            "end": 24,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "did you send your resume"
+      },
+      {
+        "intent": "did_you_send_resume",
+        "entities": [
+          {
+            "start": 35,
+            "end": 37,
+            "value": "jd",
+            "entity": "res"
+          }
+        ],
+        "text": "did you have a chance to send that jd"
+      },
+      {
+        "intent": "did_you_send_resume",
+        "entities": [
+          {
+            "start": 35,
+            "end": 37,
+            "value": "jd",
+            "entity": "res"
+          }
+        ],
+        "text": "did you have a chance to send that jd yet"
+      },
+      {
+        "intent": "did_you_send_resume",
+        "entities": [
+          {
+            "start": 27,
+            "end": 34,
+            "value": "resumes",
+            "entity": "res"
+          }
+        ],
+        "text": "did you already send those resumes over"
+      },
+      {
+        "intent": "did_you_send_resume",
+        "entities": [
+          {
+            "start": 13,
+            "end": 24,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "did you send your resume over"
+      },
+      {
+        "intent": "did_you_send_resume",
+        "entities": [
+          {
+            "start": 13,
+            "end": 24,
+            "value": "cv",
+            "entity": "res"
+          }
+        ],
+        "text": "did you send your resume"
+      },
+      {
+        "intent": "did_you_send_resume",
+        "entities": [
+          {
+            "start": 29,
+            "end": 35,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "did you send me your current resume"
+      },
+      {
+        "intent": "is_resume_current",
+        "text": "is your resume up to date"
+      },
+      {
+        "intent": "is_resume_current",
+        "text": "is the resume you sent me current"
+      },
+      {
+        "intent": "is_resume_current",
+        "text": "is the resume you sent me up to date"
+      },
+      {
+        "intent": "is_resume_current",
+        "text": "is the resume you sent me correct"
+      },
+      {
+        "intent": "is_resume_current",
+        "text": "is the resume you sent all ready to go"
+      },
+      {
+        "intent": "is_resume_current",
+        "text": "the resume you sent had a typo"
+      },
+      {
+        "intent": "is_resume_current",
+        "text": "the resume you sent over has a date discrepancy"
+      },
+      {
+        "intent": "is_resume_current",
+        "text": "theres a typo in the resume you sent"
+      },
+      {
+        "intent": "is_resume_current",
+        "text": "the resume you sent has an error"
+      },
+      {
         "intent": "lets_do",
         "entities": [
           {
@@ -34239,6 +36925,66 @@
     "regex_features": [],
     "lookup_tables": [],
     "entity_synonyms": [
+      {
+        "value": "candidates",
+        "synonyms": [
+          "candidate"
+        ]
+      },
+      {
+        "value": "opp",
+        "synonyms": [
+          "new opportunities",
+          "a new role",
+          "new roles",
+          "opportunity"
+        ]
+      },
+      {
+        "value": "resume",
+        "synonyms": [
+          "forest's resume",
+          "your current resume",
+          "your curent resume",
+          "that job description",
+          "resumé",
+          "cv",
+          "CV",
+          "c.v.",
+          "C.V.",
+          "Corpus Vitae"
+        ]
+      },
+      {
+        "value": "cv",
+        "synonyms": [
+          "your cv",
+          "your resume",
+          "forest's cv",
+          "your current cv",
+          "your curent cv",
+          "resume"
+        ]
+      },
+      {
+        "value": "jd",
+        "synonyms": [
+          "the jd",
+          "job description",
+          "j.d.",
+          "JD",
+          "J.D.",
+          "job desc",
+          "role description",
+          "position description"
+        ]
+      },
+      {
+        "value": "please",
+        "synonyms": [
+          "kudasai"
+        ]
+      },
       {
         "value": "nyc",
         "synonyms": [

@@ -1,4 +1,4 @@
-# calendar_event.py - Class for sending calendar invitations
+# calendar_event.py - Class for sending email with attachment
 # -*- coding: utf-8 -*-
 __version__ = '0.1'
 __all__ = ['CalendarInvite']
@@ -84,19 +84,19 @@ class Send():
 
         msg.attach(MIMEText(body, 'html'))
 
-        filename = "Forest\ Mars\ resumé.pdf"
+        filename = "Forest\ Mars\ resume.pdf"
         attachment = open("assets/res/fm", "rb")
 
         part = MIMEBase('application', 'octet-stream')
         part.set_payload((attachment).read())
         encode_base64(part)
-        part.add_header('Content-Disposition', "attachment; filename= %s" % filename)
+        part.add_header('Content-Disposition', "attachment; filename=%s" % filename)
 
         msg.attach(part)
 
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.starttls()
-        server.login(fromaddr, "galacticn0mad")
+        server.login(fromaddr, os.environ['CAL_KEY'])
         text = msg.as_string()
         server.sendmail(msg['From'], msg['To'], text)
         #server.sendmail(fromaddr, toaddr, text)

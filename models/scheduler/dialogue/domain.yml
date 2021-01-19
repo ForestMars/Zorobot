@@ -444,6 +444,10 @@ intents:
     use_entities: true
 - make_request:
     use_entities: true
+- remember_me:
+    use_entities: true
+- get_my_email:
+    use_entities: true
 - feel_good:
     use_entities: true
 - i_dont_feel_so_good:
@@ -573,6 +577,8 @@ intents:
 - whatdinner:
     use_entities: true
 - quality:
+    use_entities: true
+- pls_send_res:
     use_entities: true
 slots:
   DATE:

@@ -222,6 +222,7 @@ intents:
 - do_you_like
 
 
+
 # ~~~~~~~~~~ Kill
 - suggest_day_forest
 - schedule_meeting
@@ -291,6 +292,8 @@ intents:
 - did_you_send_resume
 - send_resume
 - make_request
+- remember_me
+- get_my_email
 
 # ~~~~~~~~~~ Virtual Doc
 - feel_good
@@ -372,6 +375,7 @@ intents:
 - wheredinner
 - whatdinner
 - quality
+- pls_send_res
 
 
 actions:
@@ -696,7 +700,7 @@ templates:
   utter_ask_who:
   - text: Who is this please?
   utter_ask_nou:
-  - text: Wait who (nou) is this please?
+  - text: Who is this please?
   utter_who:
   - text: Sorry I have a new phone, who is this?
 

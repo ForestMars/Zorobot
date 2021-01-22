@@ -115,17 +115,17 @@
 - i may swing through [nyc](ToLocation) [later tomorrow](When)
 - i might come into [the city](ToLocation) briefly in [a day or two](When)
 - im coming back to [the city](ToLocation)
-- i will be in [new york](ToLocation) in [november](when)
-- i will be in [new york](ToLocation) in [december](when)
-- i will be coming to [new york](ToLocation) in [november](when)
-- i will be coming to [new york](ToLocation) in [december](when)
-- i will be visiting [new york](ToLocation) in [november](when)
-- i will be visiting [new york](ToLocation) in [december](when)
-- i will be briefly in [new york](ToLocation) in [november](when)
-- i will be briefly in [new york](ToLocation) in [december](when)
-- i will be in [new york](ToLocation) [after the new year](when)
-- i will be coming to [new york](ToLocation) [in the new yeah](when)
-- i will be visiting [new york](ToLocation) [next year](when)
+- i will be in [new york](ToLocation) in [november](When)
+- i will be in [new york](ToLocation) in [december](When)
+- i will be coming to [new york](ToLocation) in [november](When)
+- i will be coming to [new york](ToLocation) in [december](When)
+- i will be visiting [new york](ToLocation) in [november](When)
+- i will be visiting [new york](ToLocation) in [december](When)
+- i will be briefly in [new york](ToLocation) in [november](When)
+- i will be briefly in [new york](ToLocation) in [december](When)
+- i will be in [new york](ToLocation) [after the new year](When)
+- i will be coming to [new york](ToLocation) [in the new yeah](When)
+- i will be visiting [new york](ToLocation) [next year](When)
 
 ## intent:im_going
 - im going to [New York](ToLocation)
@@ -139,7 +139,7 @@
 - im going to [tulum](ToLocation) for a few weeks
 - im on my way [uptown](ToLocation)
 - im going to [the pier](ToLocation) [before a meeting tomorrow](When)
-- im going to [a slumber party](Event)
+- im going to [a slumber party](activity)
 - im flying to [vegas](ToLocation)
 
 ## intent:eta_logistics
@@ -151,7 +151,7 @@
 - ok I can aim to be up there around [2100](Time) if that's not too late
 - probably [tuesday](Day) or [later](When)
 - i could probably be there in [2:30 - 3hrs ish](ETA)
-- im taking the train and ill arrive at like [5](time)
+- im taking the train and ill arrive at like [5](Time)
 - trying to get a ride
 - if not ill take the bus
 - sorry things ran over here

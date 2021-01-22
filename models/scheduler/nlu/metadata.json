@@ -38,7 +38,7 @@
                     "upper"
                 ]
             ],
-            "max_iterations": 50,
+            "max_iterations": 100,
             "L1_c": 0.1,
             "L2_c": 0.1,
             "name": "ner_crf",
@@ -98,6 +98,6 @@
         }
     ],
     "training_data": "training_data.json",
-    "trained_at": "20210118-183846",
+    "trained_at": "20210121-210254",
     "rasa_nlu_version": "0.14.6"
 }

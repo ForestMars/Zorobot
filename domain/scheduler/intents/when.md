@@ -109,7 +109,7 @@
 - i would like to [book a Zoom meeting](activity:Zoom) with [Forest](fm)
 
 - please [book a call](activity:have a call) with [forest](fm) for [Samantha](nou)
-- please [set up a zoom call](activityzoom) with [forest](fm) for [Will](nou)
+- please [set up a zoom call](activity:zoom) with [forest](fm) for [Will](nou)
 - please [schedule a meeting](activity:meet) with [forest](fm) for [Claire](nou)
 - please [plan a meeting](activity:meet) with [forest](fm) for [Trevor](nou)
 
@@ -369,19 +369,19 @@
 - whats [a good day](When) to [hang out](activity)
 - whats [a good day](When) to [meet](activity)
 - whats [a good day](When) to [have a call](activity)
-- What’s [a good day](When) for [me](pov:you) to [come over](activity)?
-- What’s [a good time](When) for [me](pov:you) to [come over](activity)?
-- What’s [a good day](When) for [me](pov:you) to [stop by](activity)?
-- What’s [a good day](When) for [me](pov:you) to [stop by](activity)?
+- What’s [a good day](When) for [me](pov:you) to [come over](activity) ?
+- What’s [a good time](When) for [me](pov:you) to [come over](activity) ?
+- What’s [a good day](When) for [me](pov:you) to [stop by](activity) ?
+- What’s [a good day](When) for [me](pov:you) to [stop by](activity) ?
 - whats [a good time](When) for [a call](activity:have a call)
 - whats [a good time](When) for [a zoom call](activity:schedule a zoom call)
-- [Forest](fm), what’s [a good day](When) for[me](pov:you) to [come over](activity)?
-- Hi [Forest](fm), it’s [Portia](nou). What’s [a good day](When) for[me](pov:you) to [come over](activity)?
-- What’s [a good day](When) for[me](pov:you) to [call you](activity:call me)?
+- [Forest](fm), what’s [a good day](When) for [me](pov:you) to [come over](activity)?
+- Hi [Forest](fm) , it’s [Portia](nou). What’s [a good day](When) for [me](pov:you) to [come over](activity)?
+- What’s [a good day](When) for [me](pov:you) to [call you](activity:call me)?
 - Hey [Forest](fm), what’s [a good day](When) for[me](pov:you) to [call you](activity:call me)?
-- Hi [Forest](fm), it’s [Portia](nou). What’s [a good day](When) for[me](pov:you) to [call you](activity:call me)?
-- Hi [Forest](fm), it’s [Franscesa](nou). What’s [a good day](When) for[me](pov:you) to [help you](activity:help me) with that
-- Hey [Forest](fm), [Rob](nou) from [Nexus](org) here. What's your availability for [a call](activity:have a call) on [Wednesday](Day)?
+- Hi [Forest](fm), it’s [Portia](nou). What’s [a good day](When) for [me](pov:you) to [call you](activity:call me)?
+- Hi [Forest](fm), it’s [Franscesa](nou). What’s [a good day](When) for [me](pov:you) to [help you](activity:help me) with that
+- Hey [Forest](fm) , [Rob](nou) from [Nexus](org) here. What's your availability for [a call](activity:have a call) on [Wednesday](Day)?
 - This is [Charles](nou) from [Mesh](org). Are you available for [a zoom call](activity:Zoom) [this week or next](When)?
 - Hello [Forest](fm) it's [Karen](nou) from [OpenAI](org). Can we have a call on [Monday](Day)
 - This is [Kumal](nou) from [Broadbridge](nou). Do you have time to [schedule a zoom call](activity:Zoom) in the near future.
@@ -827,20 +827,20 @@
 
 
 ## intent:suggest_date
-- [the 1st](Ordinal)
-- [the 2nd](Ordinal)
-- [the 3rd](Ordinal)
-- [the 4th](Ordinal)
-- [the 5th](Ordinal)
-- [the 6th](Ordinal)
-- hows [the 7th](Ordinal)
-- hows [the 8th](Ordinal)
-- hows [the 9th](Ordinal)
-- how about [the 10th](Ordinal)
-- how about [the 11th](Ordinal)
-- how about [the 12th](Ordinal)
-- can we do [the 13th](Ordinal)
-- can we do [the 14th](Ordinal)
+- [the 1st](DATE)
+- [the 2nd](DATE)
+- [the 3rd](DATE)
+- [the 4th](DATE)
+- [the 5th](DATE)
+- [the 6th](DATE)
+- hows [the 7th](DATE)
+- hows [the 8th](DATE)
+- hows [the 9th](DATE)
+- how about [the 10th](DATE)
+- how about [the 11th](DATE)
+- how about [the 12th](DATE)
+- can we do [the 13th](DATE)
+- can we do [the 14th](DATE)
 
 - [oct 15](DATE)
 - [sep 12](DATE)

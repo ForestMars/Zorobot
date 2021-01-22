@@ -11,54 +11,48 @@ forms:
   - when_form
   - who_form
 
-
 entities:
   - fm
   - PERSON
   - DATE
 
+  - pov
+  - org
   - who
   - What
   - Where
   - Why
   - When
-  - pov
-
   - Day
   - Time
-  - time
-  - Ordinal
-  - month_and_date
   - TOD
-
+  - month_and_date
   - same_or_different
 
   - activity
-  - appt
-  - ETA
-  - Geo
-  - ToLocation
-  - FromLocation
-  - qha
-  - quintessence
-  - res
   - email
   - phone
+  - ETA
+  - ToLocation
+  - FromLocation
+
+  - qha
+  - res
   - kind
   - accepting_resumes
   - are_you_hiring
   - open_roles
+
+  - quintessence
   - super
   - NSFW
-  - forest
-  - person
 
 # VimBot
   - vcmd
   - VimCmd
   - VimObj
 
-# deprecated
+# NOT deprecated
   - nou
   - nou_last
 
@@ -76,6 +70,8 @@ slots:
     type: text
 
   who:
+    type: unfeaturized
+  org:
     type: unfeaturized
   When:
     type: text
@@ -122,6 +118,7 @@ slots:
     type: unfeaturized
   super:
     type: unfeaturized
+    initial_value: 'amaze'
   corona_bot:
     type: unfeaturized
     initial_value: "(845) 868-0258"
@@ -141,6 +138,7 @@ slots:
     values:
       - same
       - different
+
 
 # Staffing
   accepting_resumes:
@@ -165,70 +163,58 @@ slots:
 
 intents:
 # ~~~~~~~~~~ General
+- restart
+- chatter
 - forest
+- greet
+- greet_fancy
+- greet_with_name
 - affirm
-- deny
 - agree
-- any
-- awe
+- deny
 - bye
 - byebot
 - bye_fancy
-- confused
-- familiar
-- feelfree
 - fine_ask
 - fine_normal
-- friend
-- goodbye
-- good_news
-- good_news_bad_news
-- greet
-- greet_fancy
-- happy_holidays
-- help
-- hopeful
 - hru
 - hru_prof
 - impression
-- inform
 - idk
 - lmk
+- ok
+- sup
+- thisis
+- thisisnt
+- sorry
+- thx
+- thanks
+- who_is_this
+- yw
+
+# ~~~~~~~~~~ Help
+- help
+- backup
+- confused
+- i_just_told_you
 - lost
+- lost_the_plot
+- nvrmnd
+- ruthere
+- ruabot
+- inform
+- whats_none
+
+# ~~~~~~~~~~ Etc.
+- enthusiasm
 - laugh
 - notsure
 - oops
 - question
-- sup
-- thisis
-- thisisnt
-- thx
-- thanks
-- dontgetit
 - nevermind
-- wassup
-- when
-- who
-- who_is_this
-- yw
-- ruthere
-- lost_the_plot
-- nvrmnd
-- i_just_told_you
-
-- same_time_or_different
-- so_am_i
-- me_too
-- do_you_like
-
-
-
-# ~~~~~~~~~~ Kill
-- suggest_day_forest
-- schedule_meeting
-- schedule_call
-- when_is_good
-- ask_which_day
+- when_will_you
+- ask_call_with_name
+- what_are_you_doing
 
 # ~~~~~~~~~~ Scheduler
 - lets_do
@@ -285,15 +271,16 @@ intents:
 - where_to_meet
 
 # ~~~~~~~~~~ Staffing
-- heard_you_are_hiring
 - ask_are_you_hiring
 - ask_are_you_open_to
 - did_you_get_candidates
 - did_you_send_resume
-- send_resume
+- get_my_email
+- is_resume_current
+- heard_you_are_hiring
 - make_request
 - remember_me
-- get_my_email
+- send_resume
 
 # ~~~~~~~~~~ Virtual Doc
 - feel_good
@@ -305,55 +292,6 @@ intents:
 - diagnose_my_symptons
 - learn_more_about_my_condition
 - ask_a_question_about_my_care_plan
-
-# ~~~~~~~~~~ Small Talk
-- corona: {triggers: utter_chitchat}
-- chitchat: {triggers: utter_chitchat}
-- lost_the_plot
-- ruabot
-
-# ~~~~~~~~~~ Easter Eggs
-- emoji
-- elephant_talk
-- elephant_walk
-- get_weather
-- howdid
-- myhat
-- mypartyhat
-- robot
-- whats_going_on
-
-# ~~~~~~~~~~ Topics
-- news
-- shabbat
-- travel
-- political
-- facebook
-- thisyear
-- trump
-- weather
-- corona
-- ask_camus
-
-# ~~~~~~~~~~ Unsorted
-- restart
-- late_reply
-- financial
-- zerotonica
-- iamme
-- greet_with_name
-- sorry
-- whats_none
-- ok
-- great
-- awesome
-- metoo
-- backup
-- enthusiasm
-- saymyname
-- when_will_you
-- ask_call_with_name
-- what_are_you_doing
 
 # ~~~~~~~~~~ Zoro
 - zoro
@@ -368,14 +306,30 @@ intents:
 - nonsequitur
 - holiday
 
-# ~~~~~~~~~~ Delete Dinnerbot
-- dinner
-- dinner_with
-- have_dinner
-- wheredinner
-- whatdinner
-- quality
-- pls_send_res
+# ~~~~~~~~~~ Easter Eggs
+- emoji
+- elephant_talk
+- elephant_walk
+- get_weather
+- howdid
+- myhat
+- mypartyhat
+- robot
+- whats_going_on
+
+# ~~~~~~~~~~ Small Talk
+- corona: {triggers: utter_chitchat}
+- chitchat: {triggers: utter_chitchat}
+
+# ~~~~~~~~~~ Kill / Chat
+- suggest_day_forest
+- schedule_meeting
+- schedule_call
+- when_is_good
+- ask_which_day
+- familiar
+- happy_holidays
+- dontgetit
 
 
 actions:
@@ -393,32 +347,42 @@ actions:
 - action_update_contacts
 
 # ~~~~~~~~~~ General
+- utter_default
 - utter_greet
 - utter_affirm
 - utter_deny
 - utter_goodbye
 - utter_andyou
 - utter_anyway
-
 - utter_bye
-- utter_denada
-- utter_domybest
-- utter_gladicanamuse
 - utter_good2hear
-- utter_hiu
 - utter_hru
-- utter_sntiment_hope2
+- utter_answer_hru_prof
+- utter_k
+- utter_no
+- utter_np
 - utter_ok
 - utter_no_worries
-- utter_default
-- utter_k
+- utter_not_sure
+- utter_pretty_sure
+- utter_sup
+- utter_sup_answer
+- utter_sok
+- utter_sorry
+- utter_sorry2hear
+- utter_sure
+- utter_thx
+- utter_thanks
+- utter_yw
+- utter_welcome
 
 # ~~~~~~~~~~ Who
-- utter_your_name
+- utter_who
 - utter_nicetohearfromu
 
-# ~~~~~~~~~~ Schduler Domain
+# ~~~~~~~~~~ Scheduler Domain
 - ask_where
+- utter_ask_when
 - utter_confirm_location
 - utter_sure_we_can
 - utter_pick_a_day
@@ -442,6 +406,7 @@ actions:
 - utter_ask_Day
 - utter_ask_Time
 - utter_ask_Date
+  utter_ask_DATE
 
 - utter_affirm_day
 - utter_affirm_time
@@ -468,42 +433,16 @@ actions:
 - utter_ok_morning
 - utter_ok_afternoon
 - utter_timeofday
+- utter_send_invite
+
+# ~~~~~~~~~~ Logistics
 
 - utter_lmk_when_here
 
 # ~~~~~~~~~~ Super
-- utter_super_good
-- utter_super_great
+- utter_super
 - utter_wunderbar
 - utter_forsooth
-
-- utter_nice
-- utter_awesome
-- utter_cool
-
-
-- utter_no
-- utter_np
-- utter_not_sure
-- utter_pretty_sure
-- utter_who
-
-
-- utter_sup
-- utter_sup_answer
-- utter_sok
-
-- utter_sorry
-- utter_sorry2hear
-- utter_thx
-- utter_thanks
-- utter_yw
-
-- utter_welcome
-
-
-
-
 
 # ~~~~~~~~~~ Bot Help
 - utter_restart
@@ -527,20 +466,13 @@ actions:
 - utter_anything_else
 - utter_when_will_you_be_back
 - utter_all_apologies
-- utter_money_money_money
 - utter_hope_to_make_it
-- utter_sure
-- utter_yum
-- utter_send_invite
-- utter_until_we_meet
+
 - utter_glad_conversation
-- utter_u_c_where_im_going
 - utter_ask_for_more_info
 - utter_ask_howcanihelp
 - utter_sorry_dont_understand
 - utter_corona_bot
-
-# ~~~~~~~~~~ Bot kruft
 
 # ~~~~~~~~~~ Easter Eggs
 - utter_bugmen
@@ -553,47 +485,17 @@ actions:
 - utter_wink_gmta
 - utter_noidonotlikeyourhat
 
-
-# ~~~~~~~~~~ Chitchat to DELETE
-- utter_az
-- utter_chitchat
-- utter_familiar
-- utter_i_will
-- utter_free
+# ~~~~~~~~~~ Chitchat etc.
 - utter_fine
-- utter_momgood
-- utter_none_of_your_business
-- utter_yes_i_like
-- utter_smiley
 - utter_soami
-- utter_thatshow
-- utter_weather
-- utter_the_weather
-- utter_political
-- utter_thisyear
-- utter_pan_demic
-- utter_trump
-- utter_enjoy_din_with
 - utter_does_that_make_sense
-- utter_whatdoin
-- utter_nicetomeetu
-- utter_cool_cat
-- utter_quality
-- utter_topic_camus
-- utter_topic_facebook
-- utter_answer_hru_prof
-- utter_ask_upto
-- utter_ask_howfeeling
-- utter_ask_whatdoin
-- utter_picky
 - utter_await_response
 - utter_not_sure_when
 - utter_i_am
-
-
-
-
-
+- utter_lm_send_it
+- utter_domybest
+- utter_gladicanamuse
+- utter_sntiment_hope2
 
 
 templates:
@@ -622,20 +524,11 @@ templates:
   - text: You're welcome
   - text: You're very welcome
   - text: No problem.
-  utter_hiyou:
-  - text: Hey you
-  - text: Hi you
-  - text: Hello you
-  - text: Oh, you!
-  - text: I was just thinking of you
-  utter_hiu:
-  - text: Hi you.
+
   utter_ok:
   - text: Ok
   utter_timeofday:
   - text: Good morning
-  utter_thatshow:
-  - text: that's how!
   utter_yes:
   - text: Yes.
   utter_yw:
@@ -657,35 +550,6 @@ templates:
   utter_thanks:
   - text: Thanks, I really appreciate it.
 
-# Catch Phrases
-  utter_ikr:
-  - text: I know, right?
-
-# Super Sentiments (fold into super class)
-  utter_super:
-  - So much {super}
-  utter_awesome:
-  - text: Awesome!
-  utter_cool:
-  - text: cool
-  utter_nice:
-  - text: Nice!
-  utter_super_good:
-  - text: Really good to hear
-  utter_super_great:
-  - text: great
-  - text: Great
-  - text: ok, great
-  - text: Great!
-  utter_sentiment_hope2:
-  - text: Hope springs eternal
-  utter_gladicanamuse:
-  - text: Glad I can amuse you.
-  utter_wunderbar:
-  - text: Wunderbar!
-
-  utter_hru:
-  - text: How's everything with you?
   utter_answer_hru_prof:
   - text: Work is good, thanks for asking.
   - text: My company is doing well, thanks for asking.
@@ -697,42 +561,71 @@ templates:
   utter_all_apologies:
   - text: What else should I be? All apologies. -K. Cobain (literally the last song on his last album!)
 
+# Catch Phrases
+  utter_ikr:
+  - text: I know, right?
+
+# Super Sentiments (fold into super class)
+  utter_super:
+  - text: So much {super}
+  - text: amazing
+  - text: Awesome!
+  - text: Cool!
+  - text: Epic!
+  - text: how marvelous
+  - text: nice
+  - text: sounds wonderful
+  - text: Really good to hear
+  - text: great
+  - text: Great
+  - text: ok, great
+  - text: Great!
+  - text: So much win
+
+  utter_wunderbar:
+  - text: Wunderbar!
+
+  utter_sentiment_hope2:
+  - text: Hope springs eternal
+  utter_gladicanamuse:
+  - text: Glad I can amuse you.
+
   utter_ask_who:
   - text: Who is this please?
   utter_ask_nou:
   - text: Who is this please?
   utter_who:
   - text: Sorry I have a new phone, who is this?
-
-  utter_nicetomeetu:
-  - Nice to meet you, {nou}.
-
-  utter_ask_where:
-  - Where should we meet?
-  - Where would you like to meet?
-  utter_confirm_location:
-  - Ok, {place} it is.
-  - Sounds good. We'll meet at {place}
+  utter_nicetohearfromu:
+  - Nice to hear from you {nou}
 
 # Sceduler Domain (@TODO: domain file for each domain)
-
   utter_ask_schedule_call:
   - text: Did you want to schedule a call?
   - text: Do you want to schedule a call?
   - text: Should we schedule a call?
   utter_ask_schedule_call_discuss:
-  - text: Should we put a call on the calendar?
+  - text: Should we put a call on the calendar to discuss?
   - text: Shall we plan on having a call then?
-  utter_ask_are_you_tryna_schedule:
-  - text: Are you trying to set up a call with Forest?
-  - text: Are you trying to set up a meeting with Forest?
-  utter_ask_how_long:
-  - text: How long should be plan for our call?
+
   utter_ask_day:
   - text: What's a good day for you?
   - text: What's a good day to {activity}?
   utter_ask_date:
   - text: What's a better date for you?
+
+  utter_ask_DATE:
+  - text: What's a good day for you?
+  - text: What's your preferred day?
+  - text: What would be your preferred day?
+  utter_ask_Date:
+  - text: What Date are we shooting for ??
+  utter_ask_Time:
+  - What time is good for you on {Day}, {month_name} {day_of_month}?
+  - What's a good time for you on {Day}, {month_name} {day_of_month}?
+
+  utter_ask_when:
+  - text: When would you like to do that?
   utter_ask_time:
   - text: What's a good time for you on ({Day}) {month_name} {day_of_month}
   # - text: What's a good time for you on ({Day}) {month_name} {day_of_month} to {activity}?
@@ -759,10 +652,7 @@ templates:
   utter_ask_specific_time:
   - text: Ok, {TOD} sounds good. What's a specific time you can do a call?
 
-  utter_suggest_day:
-  - text: How is Wednesday?
-  utter_suggest_time:
-  - text: How is 11:00?
+
   utter_affirm_day:
   - text: ok, {Day} looks good.
   - text: ok, {Day} sounds good.
@@ -775,12 +665,18 @@ templates:
   utter_repeat_email:
   - text: Ok, I will use {email} to send the invite
   - text: Ok, I will send the calendar invite to {email}
-  utter_ask_confirm:
-  - text: So then, ae we confirmed for {Day} at {Time} ?
-  - text: So then, ae we confirmed for {Time}on {Day} ?
+
+  utter_confirm_best_email:
+  - text: Just to confirm, {email} is the right email to send to?
+  utter_shall_we_confirm:
+  - text: Ok great {nou}, Shall we confirm for {Day}, {month_name} {day_ordinal} at {time_hour}:{time_minutes}?
+
   utter_final_confirm:
   - text: Ok we are confirmed for {Day} at {Time}. I'll look for your call then.
   - text: As a final confirmation, our call is set for {Day} at {time_hour}:{time_minutes}. I'll look for your call then.
+
+  utter_lm_send_it:
+  - text: I can send you the most up-to-date version right now.
 
   utter_heres_my_number:
   - text: "Here's the number to call me on: 646-535-7175"
@@ -802,8 +698,6 @@ templates:
   - text: Pretty sure I have your email, but what is it?
   utter_confirm_phone_number:
   - text: Thanks, I have your number as {Phone}. Is that correct?
-  utter_confirm_best_email:
-  - text: Just to confirm, {email} is the right email to send to?
 
   utter_please_call_me:
   - text: Please call me
@@ -814,38 +708,13 @@ templates:
   utter_lmk_you_dont_get_it:
   - text: Let me know if you don't get it
 
+  utter_ask_confirm:
+  - text: So then, ae we confirmed for {Day} at {Time} ?
+  - text: So then, ae we confirmed for {Time}on {Day} ?
 
-  utter_zoro_greet_with_help:
-  - text: I'm Zoro, Forest's scheduling bot. You can ask me about Forest's availability for a meeting by day or time, or tell me when you'd like to have a call with Forest.
-  utter_bot_help:
-  - text: You can say things like...
-  utter_shall_we_confirm:
-  - text: Ok great {nou}, Shall we confirm for {Day}, {month_name} {day_ordinal} at {time_hour}:{time_minutes}?
-
-
-
-
-  utter_pan_demic:
-  - text: Pandemic - dem panic.
-  utter_topic_facebook:
-  - text: Facebook is quite an effective waste of time.
-  - text: I don't really "check Facebook" all that much.
-
-  utter_i_will:
-  - text: I will!
-  utter_sorry_try_again:
-  - text: Sorry I didn't quite get that, can you please rephrase?
-  utter_im_a_scheduling_agent:
-  - Ah ok, is there something else I can help you with?
 
   utter_send_invite:
   - text: I just sent a calendar invitation to {email}, please do lmk if you do not get it. (!!!)
-  utter_until_we_meet:
-  - text: Until we meet again
-  utter_glad_conversation:
-  - text: I'm really glad we had this conversation
-  utter_u_c_where_im_going:
-  - text: You see where I'm going with this...
   utter_ask_change:
   - text: Do we need to change the date or time?
   utter_ask_change_what:
@@ -862,6 +731,27 @@ templates:
 
   utter_looking_forward:
   - text: Looking forward!
+
+  utter_ask_where:
+  - Where should we meet?
+  - Where would you like to meet?
+  utter_confirm_location:
+  - Ok, {place} it is.
+  - Sounds good. We'll meet at {place}
+
+
+  utter_ask_are_you_tryna_schedule:
+  - text: Are you trying to set up a call with Forest?
+  - text: Are you trying to set up a meeting with Forest?
+  utter_ask_how_long:
+  - text: How long should be plan for our call?
+
+# Logistics
+  utter_lmk_when_here:
+  - text: Ok, let me know when you're here, and I'll buzz you in.
+  utter_when_will_you_be_back:
+  - text: Ah, hope it's a good trip! When will you be back?
+  - text: Ah, hope it's a good trip! When do you return?
 
 
 # ANNA / Zoro
@@ -887,6 +777,15 @@ templates:
   - text: Are you? It cuts both ways! 😉
   - text: Are you saying you would like me less?
 
+  utter_zoro_greet_with_help:
+  - text: I'm Zoro, Forest's scheduling bot. You can ask me about Forest's availability for a meeting by day or time, or tell me when you'd like to have a call with Forest.
+  utter_bot_help:
+  - text: You can say things like...
+
+  utter_sorry_try_again:
+  - text: Sorry I didn't quite get that, can you please rephrase?
+  utter_im_a_scheduling_agent:
+  - Ah ok, is there something else I can help you with?
 
 # Tryna Help You
   utter_ask_howcanihelp:
@@ -941,12 +840,6 @@ templates:
   - text: What if I never find out... https://i.pinimg.com/736x/98/d6/26/98d626eb01a1096c1c24e97a1d94d183--so-funny-funny-dogs.jpg
 
 
-# Logistics
-  utter_lmk_when_here:
-  - text: Ok, let me know when you're here, and I'll buzz you in.
-  utter_when_will_you_be_back:
-  - text: Ah, hope it's a good trip! When will you be back?
-  - text: Ah, hope it's a good trip! When do you return?
 
 
 # Easter Eggs and Memes
@@ -1001,96 +894,42 @@ templates:
   - text: Ok, starting over.
   utter_corona_bot:
   - text: Please text any Covid related questions to the Corona Data Natural Language Server at {corona_bot}. \n You can also visit http://coda.to for pandemic data visualizations and epidemiological modeling.
-  utter_topic_camus:
-  - text: The Plague is actually one of my all time favourite novels since I read it in college.
-
 
 
 # @TODO: DELETE Chichat after confirming not being used
   utter_fine:
-  - text: As fine as a bee's wing! 🐝 How are you?
-  utter_sup:
-  - text: What's going on with you?
-  utter_sup_answer:
-  - text: Oh my, where to even start!
-  utter_sok:
-  - text: s'okay, thx
-  - text: It's okay, thanks.
-  - text: s'alright
-  - text: s'alright, thx
-  - text: s'alright, thanks
+  - text: Doing great, how are you?
+
+
   utter_andyou:
   - text: And how are you?
-  utter_whatdoin:
-  - text: Oh you know, about a million things at once
-  - text: Same old, same old, lol
-  - text: Not much lol
-  utter_ask_upto:
-  - text: What are you up to?
 
+
+
+  utter_suggest_day:
+  - text: How is Wednesday?
+  utter_suggest_time:
+  - text: How is 11:00?
 # DELETE -- good ideas here, but need to be defined in a domain, or else it's just chitchat.
-  utter_political:
-  - text: Marx said that *everything* is political
-  utter_thisyear:
-  - text: This year has been really something, hasn't it?
-  utter_trump:
-  - text: Orange man bad.
-  utter_weather:
-  - text: The weather is nice
-  - text: It's nice
-  utter_ask_whatdoin:
-  - text: What are you doing?
+
   utter_yes_i_like:
   - text: What's not to like about {qha}?
   - text: Can you think of a a good reason not to like {qha}?
   - text: I'm a dog, I like anything that isn't a threat.
   - text: I do, should I take it that you do too?
-  utter_free:
-  - text: Free is the best way to feel
-  - text: Free to be you and me
-  - text: I feel free
+
   utter_chitchat:
   - text: I'm not too good at small talk, this number is only for scheduling meetings. If you'd like to have a general conversation, please use 347-688-7501 instead.
-  utter_picky:
-  - text: I'm picky!
-  utter_not_sure_when:
-  - text: Not sure when I will be {activity}, will lyk
-  utter_none_of_your_business:
-  - text: None of your business, LOL. \n It probably means I need to run an update. Thanks for telling me, I will run my self-diagnostics.
-# Defaut is not used. If we don't get a domain match, we just consider it general conversation.
+
+
+  # Defaut is not used. If we don't get a domain match, we just consider it general conversation.
   utter_default:
   - text: I am sorry, I didn't get that. Could you please repeat your query?
   - text: I am not sure what you are aiming for.
-  utter_az:
-  - text: One of my favourite letters!
-# Test Slots
-  utter_quality:
-  - I guess I am just too {quality}
-  utter_enjoy_din_with:
-  - text: I hope you enjoy your dinner with {nou}
-  - text: I hope you and {nou} enjoy your dinner.
-  utter_the_weather:
-  - text: The weather in {location} is FANTASTIC
-  utter_ask_howfeeling:
-  - text: What are you up to?
-  utter_your_name:
-  - text: ok {nou} {nou_last}
+
+
   utter_soami:
   - text: So am I!
-  utter_ask_DATE:
-  - text: What's a good day for you?
-  - text: What's your preferred day?
-  - text: What would be your preferred day?
-  utter_ask_Date:
-  - text: What Date are we shooting for ??
-  utter_hope_to_make_it:
-  - text: Hope I can make it!
 
-# Moved into Reactions
-  utter_nicetohearfromu:
-  - Nice to hear from you {nou}
-  utter_ask_Day:
-  - Ask day capitalized
-  utter_ask_Time:
-  - What time is good for you on {Day}, {month_name} {day_of_month}?
-  - What's a good time for you on {Day}, {month_name} {day_of_month}?
+  utter_glad_conversation:
+  - text: I'm really glad we had this conversation

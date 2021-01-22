@@ -12,6 +12,7 @@ actions:
 - action_preprocess_when
 - action_reset_email
 - action_update_contacts
+- utter_default
 - utter_greet
 - utter_affirm
 - utter_deny
@@ -19,18 +20,27 @@ actions:
 - utter_andyou
 - utter_anyway
 - utter_bye
-- utter_denada
-- utter_domybest
-- utter_gladicanamuse
 - utter_good2hear
-- utter_hiu
 - utter_hru
-- utter_sntiment_hope2
+- utter_answer_hru_prof
+- utter_k
+- utter_no
+- utter_np
 - utter_ok
 - utter_no_worries
-- utter_default
-- utter_k
-- utter_your_name
+- utter_not_sure
+- utter_pretty_sure
+- utter_sup
+- utter_sup_answer
+- utter_sok
+- utter_sorry
+- utter_sorry2hear
+- utter_sure
+- utter_thx
+- utter_thanks
+- utter_yw
+- utter_welcome
+- utter_who
 - utter_nicetohearfromu
 - ask_where
 - utter_confirm_location
@@ -54,7 +64,7 @@ actions:
 - utter_ask_specific_time
 - utter_ask_Day
 - utter_ask_Time
-- utter_ask_Date
+- utter_ask_Date utter_ask_DATE
 - utter_affirm_day
 - utter_affirm_time
 - utter_confirm_best_email
@@ -80,6 +90,7 @@ actions:
 - utter_ok_morning
 - utter_ok_afternoon
 - utter_timeofday
+- utter_send_invite
 - utter_lmk_when_here
 - utter_super_good
 - utter_super_great
@@ -88,20 +99,6 @@ actions:
 - utter_nice
 - utter_awesome
 - utter_cool
-- utter_no
-- utter_np
-- utter_not_sure
-- utter_pretty_sure
-- utter_who
-- utter_sup
-- utter_sup_answer
-- utter_sok
-- utter_sorry
-- utter_sorry2hear
-- utter_thx
-- utter_thanks
-- utter_yw
-- utter_welcome
 - utter_restart
 - utter_zoro
 - utter_zoro_greet
@@ -123,14 +120,8 @@ actions:
 - utter_anything_else
 - utter_when_will_you_be_back
 - utter_all_apologies
-- utter_money_money_money
 - utter_hope_to_make_it
-- utter_sure
-- utter_yum
-- utter_send_invite
-- utter_until_we_meet
 - utter_glad_conversation
-- utter_u_c_where_im_going
 - utter_ask_for_more_info
 - utter_ask_howcanihelp
 - utter_sorry_dont_understand
@@ -144,78 +135,49 @@ actions:
 - utter_whatsgoingon
 - utter_wink_gmta
 - utter_noidonotlikeyourhat
-- utter_az
-- utter_chitchat
-- utter_familiar
-- utter_i_will
-- utter_free
 - utter_fine
-- utter_momgood
-- utter_none_of_your_business
-- utter_yes_i_like
-- utter_smiley
 - utter_soami
-- utter_thatshow
-- utter_weather
-- utter_the_weather
-- utter_political
-- utter_thisyear
-- utter_pan_demic
-- utter_trump
-- utter_enjoy_din_with
 - utter_does_that_make_sense
-- utter_whatdoin
-- utter_nicetomeetu
-- utter_cool_cat
-- utter_quality
-- utter_topic_camus
-- utter_topic_facebook
-- utter_answer_hru_prof
-- utter_ask_upto
-- utter_ask_howfeeling
-- utter_ask_whatdoin
-- utter_picky
 - utter_await_response
 - utter_not_sure_when
 - utter_i_am
+- utter_lm_send_it
+- utter_domybest
+- utter_gladicanamuse
+- utter_sntiment_hope2
 config:
   store_entities_as_slots: true
 entities:
 - fm
 - PERSON
 - DATE
+- pov
+- org
 - who
 - What
 - Where
 - Why
 - When
-- pov
 - Day
 - Time
-- time
-- Ordinal
-- month_and_date
 - TOD
+- month_and_date
 - same_or_different
 - activity
-- appt
+- email
+- phone
 - ETA
-- Geo
 - ToLocation
 - FromLocation
 - qha
-- quintessence
 - res
-- email
-- phone
 - kind
 - accepting_resumes
 - are_you_hiring
 - open_roles
+- quintessence
 - super
 - NSFW
-- forest
-- person
 - vcmd
 - VimCmd
 - VimObj
@@ -226,17 +188,23 @@ forms:
 - when_form
 - who_form
 intents:
+- restart:
+    use_entities: true
+- chatter:
+    use_entities: true
 - forest:
+    use_entities: true
+- greet:
+    use_entities: true
+- greet_fancy:
+    use_entities: true
+- greet_with_name:
     use_entities: true
 - affirm:
     use_entities: true
-- deny:
-    use_entities: true
 - agree:
     use_entities: true
-- any:
-    use_entities: true
-- awe:
+- deny:
     use_entities: true
 - bye:
     use_entities: true
@@ -244,33 +212,9 @@ intents:
     use_entities: true
 - bye_fancy:
     use_entities: true
-- confused:
-    use_entities: true
-- familiar:
-    use_entities: true
-- feelfree:
-    use_entities: true
 - fine_ask:
     use_entities: true
 - fine_normal:
-    use_entities: true
-- friend:
-    use_entities: true
-- goodbye:
-    use_entities: true
-- good_news:
-    use_entities: true
-- good_news_bad_news:
-    use_entities: true
-- greet:
-    use_entities: true
-- greet_fancy:
-    use_entities: true
-- happy_holidays:
-    use_entities: true
-- help:
-    use_entities: true
-- hopeful:
     use_entities: true
 - hru:
     use_entities: true
@@ -278,13 +222,53 @@ intents:
     use_entities: true
 - impression:
     use_entities: true
-- inform:
-    use_entities: true
 - idk:
     use_entities: true
 - lmk:
     use_entities: true
+- ok:
+    use_entities: true
+- sup:
+    use_entities: true
+- thisis:
+    use_entities: true
+- thisisnt:
+    use_entities: true
+- sorry:
+    use_entities: true
+- thx:
+    use_entities: true
+- thanks:
+    use_entities: true
+- who_is_this:
+    use_entities: true
+- yw:
+    use_entities: true
+- help:
+    use_entities: true
+- backup:
+    use_entities: true
+- confused:
+    use_entities: true
+- i_just_told_you:
+    use_entities: true
 - lost:
+    use_entities: true
+- lost_the_plot:
+    use_entities: true
+- nvrmnd:
+    use_entities: true
+- ruthere:
+    use_entities: true
+- ruabot:
+    use_entities: true
+- inform:
+    use_entities: true
+- whats_none:
+    use_entities: true
+- awe:
+    use_entities: true
+- enthusiasm:
     use_entities: true
 - laugh:
     use_entities: true
@@ -294,55 +278,13 @@ intents:
     use_entities: true
 - question:
     use_entities: true
-- sup:
-    use_entities: true
-- thisis:
-    use_entities: true
-- thisisnt:
-    use_entities: true
-- thx:
-    use_entities: true
-- thanks:
-    use_entities: true
-- dontgetit:
-    use_entities: true
 - nevermind:
     use_entities: true
-- wassup:
+- when_will_you:
     use_entities: true
-- when:
+- ask_call_with_name:
     use_entities: true
-- who:
-    use_entities: true
-- who_is_this:
-    use_entities: true
-- yw:
-    use_entities: true
-- ruthere:
-    use_entities: true
-- lost_the_plot:
-    use_entities: true
-- nvrmnd:
-    use_entities: true
-- i_just_told_you:
-    use_entities: true
-- same_time_or_different:
-    use_entities: true
-- so_am_i:
-    use_entities: true
-- me_too:
-    use_entities: true
-- do_you_like:
-    use_entities: true
-- suggest_day_forest:
-    use_entities: true
-- schedule_meeting:
-    use_entities: true
-- schedule_call:
-    use_entities: true
-- when_is_good:
-    use_entities: true
-- ask_which_day:
+- what_are_you_doing:
     use_entities: true
 - lets_do:
     use_entities: true
@@ -430,8 +372,6 @@ intents:
     use_entities: true
 - where_to_meet:
     use_entities: true
-- heard_you_are_hiring:
-    use_entities: true
 - ask_are_you_hiring:
     use_entities: true
 - ask_are_you_open_to:
@@ -440,13 +380,17 @@ intents:
     use_entities: true
 - did_you_send_resume:
     use_entities: true
-- send_resume:
+- get_my_email:
+    use_entities: true
+- is_resume_current:
+    use_entities: true
+- heard_you_are_hiring:
     use_entities: true
 - make_request:
     use_entities: true
 - remember_me:
     use_entities: true
-- get_my_email:
+- send_resume:
     use_entities: true
 - feel_good:
     use_entities: true
@@ -465,84 +409,6 @@ intents:
 - learn_more_about_my_condition:
     use_entities: true
 - ask_a_question_about_my_care_plan:
-    use_entities: true
-- corona:
-    use_entities: true
-- chitchat:
-    triggers: utter_chitchat
-- ruabot:
-    use_entities: true
-- emoji:
-    use_entities: true
-- elephant_talk:
-    use_entities: true
-- elephant_walk:
-    use_entities: true
-- get_weather:
-    use_entities: true
-- howdid:
-    use_entities: true
-- myhat:
-    use_entities: true
-- mypartyhat:
-    use_entities: true
-- robot:
-    use_entities: true
-- whats_going_on:
-    use_entities: true
-- news:
-    use_entities: true
-- shabbat:
-    use_entities: true
-- travel:
-    use_entities: true
-- political:
-    use_entities: true
-- facebook:
-    use_entities: true
-- thisyear:
-    use_entities: true
-- trump:
-    use_entities: true
-- weather:
-    use_entities: true
-- ask_camus:
-    use_entities: true
-- restart:
-    use_entities: true
-- late_reply:
-    use_entities: true
-- financial:
-    use_entities: true
-- zerotonica:
-    use_entities: true
-- iamme:
-    use_entities: true
-- greet_with_name:
-    use_entities: true
-- sorry:
-    use_entities: true
-- whats_none:
-    use_entities: true
-- ok:
-    use_entities: true
-- great:
-    use_entities: true
-- awesome:
-    use_entities: true
-- metoo:
-    use_entities: true
-- backup:
-    use_entities: true
-- enthusiasm:
-    use_entities: true
-- saymyname:
-    use_entities: true
-- when_will_you:
-    use_entities: true
-- ask_call_with_name:
-    use_entities: true
-- what_are_you_doing:
     use_entities: true
 - zoro:
     use_entities: true
@@ -566,19 +432,43 @@ intents:
     use_entities: true
 - holiday:
     use_entities: true
-- dinner:
+- emoji:
     use_entities: true
-- dinner_with:
+- elephant_talk:
     use_entities: true
-- have_dinner:
+- elephant_walk:
     use_entities: true
-- wheredinner:
+- get_weather:
     use_entities: true
-- whatdinner:
+- howdid:
     use_entities: true
-- quality:
+- myhat:
     use_entities: true
-- pls_send_res:
+- mypartyhat:
+    use_entities: true
+- robot:
+    use_entities: true
+- whats_going_on:
+    use_entities: true
+- corona:
+    triggers: utter_chitchat
+- chitchat:
+    triggers: utter_chitchat
+- suggest_day_forest:
+    use_entities: true
+- schedule_meeting:
+    use_entities: true
+- schedule_call:
+    use_entities: true
+- when_is_good:
+    use_entities: true
+- ask_which_day:
+    use_entities: true
+- familiar:
+    use_entities: true
+- happy_holidays:
+    use_entities: true
+- dontgetit:
     use_entities: true
 slots:
   DATE:
@@ -690,6 +580,10 @@ slots:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.ListSlot
+  org:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
   phone:
     auto_fill: true
     initial_value: null
@@ -775,8 +669,6 @@ templates:
   - text: What would be your preferred day?
   utter_ask_Date:
   - text: What Date are we shooting for ??
-  utter_ask_Day:
-  - text: Ask day capitalized
   utter_ask_Time:
   - text: What time is good for you on {Day}, {month_name} {day_of_month}?
   - text: What's a good time for you on {Day}, {month_name} {day_of_month}?
@@ -811,16 +703,14 @@ templates:
   - text: What can I help you with?
   - text: How can I help?
   - text: What can I do for you?
-  utter_ask_howfeeling:
-  - text: What are you up to?
   utter_ask_nou:
-  - text: Wait who (nou) is this please?
+  - text: Who is this please?
   utter_ask_schedule_call:
   - text: Did you want to schedule a call?
   - text: Do you want to schedule a call?
   - text: Should we schedule a call?
   utter_ask_schedule_call_discuss:
-  - text: Should we put a call on the calendar?
+  - text: Should we put a call on the calendar to discuss?
   - text: Shall we plan on having a call then?
   utter_ask_specific_time:
   - text: Ok, {TOD} sounds good. What's a specific time you can do a call?
@@ -830,10 +720,6 @@ templates:
   - text: What's a good time for you to have a call on ({Day}) {month_name} {day_of_month}?
   utter_ask_time_day:
   - text: What's a good time for you on {Day} {month_name} {day_ordinal} to {activity}?
-  utter_ask_upto:
-  - text: What are you up to?
-  utter_ask_whatdoin:
-  - text: What are you doing?
   utter_ask_where:
   - text: Where should we meet?
   - text: Where would you like to meet?
@@ -843,8 +729,6 @@ templates:
   - text: Ok, I await your update.
   utter_awesome:
   - text: Awesome!
-  utter_az:
-  - text: One of my favourite letters!
   utter_best_email_is:
   - text: Best email to use is themarsgroup
   utter_best_number_is:
@@ -892,9 +776,6 @@ templates:
   - text: I'll do my best
   - text: I'll try my best
   - text: I'll try to answer as best I can
-  utter_enjoy_din_with:
-  - text: I hope you enjoy your dinner with {nou}
-  - text: I hope you and {nou} enjoy your dinner.
   utter_familiar:
   - text: That sounds fmailiar
   utter_final_confirm:
@@ -902,13 +783,9 @@ templates:
   - text: As a final confirmation, our call is set for {Day} at {time_hour}:{time_minutes}.
       I'll look for your call then.
   utter_fine:
-  - text: As fine as a bee's wing! 🐝 How are you?
+  - text: Doing great, how are you?
   utter_forsooth:
   - text: Forsooth
-  utter_free:
-  - text: Free is the best way to feel
-  - text: Free to be you and me
-  - text: I feel free
   utter_give_email_again:
   - text: Pretty sure I have your email, but what is it?
   utter_give_it_again:
@@ -932,25 +809,11 @@ templates:
   - text: Here I am.
   utter_heres_my_number:
   - text: "Here's the number to call me on: 646-535-7175"
-  utter_hiu:
-  - text: Hi you.
-  utter_hiyou:
-  - text: Hey you
-  - text: Hi you
-  - text: Hello you
-  - text: Oh, you!
-  - text: I was just thinking of you
-  utter_hope_to_make_it:
-  - text: Hope I can make it!
-  utter_hru:
-  - text: How's everything with you?
   utter_i_am:
   - text: We're friends on facebook
   - text: I have a Spanish name
   - text: I joined facebook in 2016
   - text: I'm trying to remember where we met!
-  utter_i_will:
-  - text: I will!
   utter_icanfeelit:
   - text: I can feel it!
   utter_icanseewhy:
@@ -976,6 +839,8 @@ templates:
   - text: I expect you are referring to the Jackie Chan meme (how did that happen??)
   utter_k:
   - text: k
+  utter_lm_send_it:
+  - text: I can send you the most up-to-date version right now.
   utter_lmk_when_here:
   - text: Ok, let me know when you're here, and I'll buzz you in.
   utter_lmk_you_dont_get_it:
@@ -989,17 +854,10 @@ templates:
   - text: Nice!
   utter_nicetohearfromu:
   - text: Nice to hear from you {nou}
-  utter_nicetomeetu:
-  - text: Nice to meet you, {nou}.
   utter_no_worries:
   - text: No worries!
   utter_noidonotlikeyourhat:
   - text: No, I do not like your hat.
-  utter_none_of_your_business:
-  - text: None of your business, LOL. \n It probably means I need to run an update.
-      Thanks for telling me, I will run my self-diagnostics.
-  utter_not_sure_when:
-  - text: Not sure when I will be {activity}, will lyk
   utter_notsure:
   - text: Not sure.
   utter_noworries:
@@ -1013,8 +871,6 @@ templates:
   - text: Ok, afternoon then.
   utter_ok_morning:
   - text: Ok, morning then.
-  utter_pan_demic:
-  - text: Pandemic - dem panic.
   utter_pick_a_day:
   - text: What's your preferred day?
   - text: What would be your preferred day?
@@ -1023,18 +879,12 @@ templates:
   - text: Is there a particular day that's better for you?
   - text: Just about any day could work, depending on the time. What's a good day
       for you?
-  utter_picky:
-  - text: I'm picky!
   utter_please_call_me:
   - text: Please call me
   - text: Please call me then
   - text: Will you please call me then?
-  utter_political:
-  - text: Marx said that *everything* is political
   utter_pretty_sure:
   - text: I'm pretty sure, anyway.
-  utter_quality:
-  - text: I guess I am just too {quality}
   utter_quincy_jones:
   - text: It's Quncy jones
   - text: I'm Quincy Jones
@@ -1061,12 +911,6 @@ templates:
   - text: 🙄
   utter_soami:
   - text: So am I!
-  utter_sok:
-  - text: s'okay, thx
-  - text: It's okay, thanks.
-  - text: s'alright
-  - text: s'alright, thx
-  - text: s'alright, thanks
   utter_sorry:
   - text: Sorry about that.
   utter_sorry2hear:
@@ -1081,10 +925,6 @@ templates:
   - text: How is Wednesday?
   utter_suggest_time:
   - text: How is 11:00?
-  utter_sup:
-  - text: What's going on with you?
-  utter_sup_answer:
-  - text: Oh my, where to even start!
   utter_super:
   - text: So much {super}
   utter_super_good:
@@ -1103,43 +943,18 @@ templates:
       {time_am_pm}
   utter_thanks:
   - text: Thanks, I really appreciate it.
-  utter_thatshow:
-  - text: that's how!
-  utter_the_weather:
-  - text: The weather in {location} is FANTASTIC
-  utter_thisyear:
-  - text: This year has been really something, hasn't it?
   utter_thx:
   - text: thx
   utter_timeofday:
   - text: Good morning
-  utter_topic_camus:
-  - text: The Plague is actually one of my all time favourite novels since I read
-      it in college.
-  utter_topic_facebook:
-  - text: Facebook is quite an effective waste of time.
-  - text: I don't really "check Facebook" all that much.
-  utter_trump:
-  - text: Orange man bad.
-  utter_u_c_where_im_going:
-  - text: You see where I'm going with this...
-  utter_until_we_meet:
-  - text: Until we meet again
   utter_wassup:
   - text: The opposite of down?
   - text: The lightest of all known quarks?
   - text: One third of a neutron? (A neutron is made up of 1 up quark + 2 down quarks.)
-  utter_weather:
-  - text: The weather is nice
-  - text: It's nice
   utter_welcome:
   - text: You're welcome
   - text: You're very welcome
   - text: No problem.
-  utter_whatdoin:
-  - text: Oh you know, about a million things at once
-  - text: Same old, same old, lol
-  - text: Not much lol
   utter_whatsgoingon:
   - text: Link to song
   utter_when_will_you_be_back:
@@ -1163,8 +978,6 @@ templates:
   - text: Can you think of a a good reason not to like {qha}?
   - text: I'm a dog, I like anything that isn't a threat.
   - text: I do, should I take it that you do too?
-  utter_your_name:
-  - text: ok {nou} {nou_last}
   utter_yum:
   - text: Yum!
   utter_yw:

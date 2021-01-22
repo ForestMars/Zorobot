@@ -419,6 +419,10 @@ class EmailForm(FormAction):
         return ["email"]
 
     def validate_email(self, val, dispatcher, tracker, domain):
+
+        #if tracker.get_slot('email') is None:
+        #    return None
+
         if tracker.get_slot('email') is not None:
             email = tracker.get_slot('email')
             email = email.strip()  # FIXME: bug in regex validation
@@ -489,7 +493,7 @@ class WhenForm(FormAction):
 
             if slot == 'DATE':
                 date = tracker.get_slot(slot)
-
+                
                 # Preprocess vague/bad dates.
                 if isinstance(date, str):
                     #if tracker.get_slot(slot) is not None and self.preprocess_vague_date(dispatcher, tracker.get_slot(slot)) == True:
@@ -512,16 +516,19 @@ class WhenForm(FormAction):
                 kwargs = {}
 
                 if slot == 'DATE':
+                    print('it is')
                     if tracker.get_slot('DATE') is None and tracker.get_slot('Day') is not None:
                         date = tracker.get_slot('Day')
                         dispatcher.utter_message("What's a a good time for you " + date + "?")
                         SlotSet('DATE', date)
 
                     else:
+                        print('this SHOULD fire')
                         dispatcher.utter_template("utter_ask_{}".format(slot), tracker, **kwargs)
+                        print('why didnt it'    )
                         date = tracker.get_slot('DATE')
-
                         date = self.validate_DATE(True, dispatcher, tracker, domain)
+
                     return [SlotSet('DATE', date)]
 
                 if slot == 'Time':

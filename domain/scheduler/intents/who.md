@@ -191,6 +191,21 @@
 - [Alexis](nou)
 - [Kayla](nou)
 - [Charlotte](nou)
+- [heather](nou)
+- [astrid](nou)
+- [cassie](nou)
+- [chaewon](nou)
+- [craig](nou)
+- [eliot](nou)
+- [eliott](nou)
+- [kyle](nou)
+- [mika](nou)
+- [mort](nou)
+- [morty](nou)
+- [will](nou)
+- [hal](nou)
+- [holly](nou)
+- [doyne](nou)
 - [edith](nou) [piaf](nou)
 - [lon](nou) [chaney](nou)
 - [victor](nou) [frankenstein](nou)
@@ -382,17 +397,25 @@
 - thanks [alice](nou) here
 - thanks, [lisa](nou) here
 - sincerely, [chris](nou) here
-
+- TY [Gene](nou)
 - it's [don](nou). just following up on my email
 - it's [ron](nou). i received your email and
 - its [chris](nou) did you get a chance to look at the candidates i sent you
-- its [chris](nou), did you get a chance to look at the candidates i sent you
-- its [dale](nou) have you had a chance to review the candidates
-- its [dale](nou), have you had a chance to review the candidates
+- its [carl](nou), did you get a chance to look at the candidates i sent you
+- its [dennis](nou) have you had a chance to review the candidates
+- its [dave](nou), have you had a chance to review the candidates
 - this is [igor](nou) just checking in to see if you got the candidates I sent over
 - this is [kevin](nou) did you get the resumes i sent over
 - this is [larry](nou), did you get the candidates i sent over
-
+- Hi, this is [Jackie](nou) from [Publicis](org)
+- [Tim](nou) from [Apple](org)
+- [Barry](nou) from [Netlix](org)
+- [Larry](nou) from [Google](org)
+- [Robert](nou) from [Trilogy](org)
+- [Dale](nou) from [Omnicom](org)
+- [Johan](nou) from [SAP](org)
+- [lynne](nou) from [sappi](org)
+- [roger](nou) from [Sperry](org)
 
 ## intent:thisisnt
 - this isnt [adam](nou)
@@ -457,20 +480,3 @@
 - hey forest
 - yo forest
 - forest?
-
-## intent:bare_names
-- [heather](nou)
-- [astrid](nou)
-- [cassie](nou)
-- [chaewon](nou)
-- [craig](nou)
-- [eliot](nou)
-- [eliott](nou)
-- [kyle](nou)
-- [mika](nou)
-- [mort](nou)
-- [morty](nou)
-- [will](nou)
-- [hal](nou)
-- [holly](nou)
-- [doyne](nou)

@@ -174,9 +174,6 @@ def sms():
     else:
         try:
             replies = json.loads(resp.content.decode('UTF-8'))
-        except Exception as e:
-            print(e)
-        try:
             if len(replies) > 0:
                 for r in replies:
                     who = r['recipient_id']
@@ -188,6 +185,8 @@ def sms():
                         # log(e)  # init warning
         except TypeError:
             send_msg(who, "What can I say")
+        except Exception as e:
+            print(e)
 
         return Response(resp, mimetype='text/xml')
 

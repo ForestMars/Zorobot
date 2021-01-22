@@ -2,6 +2,10 @@
   "rasa_nlu_data": {
     "common_examples": [
       {
+        "intent": "chatter",
+        "text": "I told you, I work in a factory"
+      },
+      {
         "intent": "following_up",
         "text": "i got your email"
       },
@@ -52,7 +56,7 @@
             "start": 3,
             "end": 9,
             "value": "forest",
-            "entity": "forest"
+            "entity": "fm"
           }
         ],
         "text": "hi forest i received your email. whats a good time for a call"
@@ -144,10 +148,10 @@
             "start": 23,
             "end": 32,
             "value": "next week",
-            "entity": "(When"
+            "entity": "When"
           }
         ],
-        "text": "i will let you know by next week)"
+        "text": "i will let you know by next week"
       },
       {
         "intent": "will_lyk",
@@ -1021,11 +1025,71 @@
           {
             "start": 0,
             "end": 8,
+            "value": "info@ibm",
+            "entity": "email"
+          }
+        ],
+        "text": "info@ibm"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 15,
+            "value": "deepmind@google",
+            "entity": "email"
+          }
+        ],
+        "text": "deepmind@google"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "value": "curie@openai",
+            "entity": "email"
+          }
+        ],
+        "text": "curie@openai"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "turing@aol",
+            "entity": "email"
+          }
+        ],
+        "text": "turing@aol"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
             "value": "elmo@aol",
             "entity": "email"
           }
         ],
         "text": "elmo@aol"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 17,
+            "value": "bert@transformers",
+            "entity": "email"
+          }
+        ],
+        "text": "bert@transformers"
       },
       {
         "intent": "best_email_is",
@@ -1044,12 +1108,12 @@
         "entities": [
           {
             "start": 0,
-            "end": 14,
-            "value": "thatgy@hotmail",
+            "end": 15,
+            "value": "thatguy@hotmail",
             "entity": "email"
           }
         ],
-        "text": "thatgy@hotmail"
+        "text": "thatguy@hotmail"
       },
       {
         "intent": "best_email_is",
@@ -1080,12 +1144,12 @@
         "entities": [
           {
             "start": 0,
-            "end": 10,
-            "value": "yang@yahoo",
+            "end": 11,
+            "value": "jyang@yahoo",
             "entity": "email"
           }
         ],
-        "text": "yang@yahoo"
+        "text": "jyang@yahoo"
       },
       {
         "intent": "best_email_is",
@@ -1307,6 +1371,630 @@
         "intent": "best_email_is",
         "entities": [
           {
+            "start": 0,
+            "end": 8,
+            "value": "jeff@aws",
+            "entity": "email"
+          }
+        ],
+        "text": "jeff@aws"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "ray@Bbn",
+            "entity": "email"
+          }
+        ],
+        "text": "ray@Bbn"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 13,
+            "value": "dan@think.com",
+            "entity": "email"
+          }
+        ],
+        "text": "dan@think.com"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "scholz@Mmc",
+            "entity": "email"
+          }
+        ],
+        "text": "scholz@Mmc"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "mlp@dec",
+            "entity": "email"
+          }
+        ],
+        "text": "mlp@dec"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "dave@hp",
+            "entity": "email"
+          }
+        ],
+        "text": "dave@hp"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "bill@hp",
+            "entity": "email"
+          }
+        ],
+        "text": "bill@hp"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "ray@ovac",
+            "entity": "email"
+          }
+        ],
+        "text": "ray@ovac"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "herb@simon",
+            "entity": "email"
+          }
+        ],
+        "text": "herb@simon"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "good@times",
+            "entity": "email"
+          }
+        ],
+        "text": "good@times"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "hey@joe",
+            "entity": "email"
+          }
+        ],
+        "text": "hey@joe"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "blue@ribbon",
+            "entity": "email"
+          }
+        ],
+        "text": "blue@ribbon"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "value": "green@planet",
+            "entity": "email"
+          }
+        ],
+        "text": "green@planet"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "red@alert",
+            "entity": "email"
+          }
+        ],
+        "text": "red@alert"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 13,
+            "value": "radius@proton",
+            "entity": "email"
+          }
+        ],
+        "text": "radius@proton"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 14,
+            "value": "fermion@proton",
+            "entity": "email"
+          }
+        ],
+        "text": "fermion@proton"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 15,
+            "value": "richard@caltech",
+            "entity": "email"
+          }
+        ],
+        "text": "richard@caltech"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "value": "al@princeton",
+            "entity": "email"
+          }
+        ],
+        "text": "al@princeton"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 13,
+            "value": "roger@penrose",
+            "entity": "email"
+          }
+        ],
+        "text": "roger@penrose"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "value": "leo@susskind",
+            "entity": "email"
+          }
+        ],
+        "text": "leo@susskind"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "wolf@gang",
+            "entity": "email"
+          }
+        ],
+        "text": "wolf@gang"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "max@planck",
+            "entity": "email"
+          }
+        ],
+        "text": "max@planck"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "ed@witten",
+            "entity": "email"
+          }
+        ],
+        "text": "ed@witten"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "alice@ibm",
+            "entity": "email"
+          }
+        ],
+        "text": "alice@ibm"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "bob@ibm",
+            "entity": "email"
+          }
+        ],
+        "text": "bob@ibm"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "carol@ibm",
+            "entity": "email"
+          }
+        ],
+        "text": "carol@ibm"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "doug@ibm",
+            "entity": "email"
+          }
+        ],
+        "text": "doug@ibm"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "eve@ibm",
+            "entity": "email"
+          }
+        ],
+        "text": "eve@ibm"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "fred@ibm",
+            "entity": "email"
+          }
+        ],
+        "text": "fred@ibm"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "greg@ibm",
+            "entity": "email"
+          }
+        ],
+        "text": "greg@ibm"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "hal@finney",
+            "entity": "email"
+          }
+        ],
+        "text": "hal@finney"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "simon@ibm",
+            "entity": "email"
+          }
+        ],
+        "text": "simon@ibm"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "john@bbc",
+            "entity": "email"
+          }
+        ],
+        "text": "john@bbc"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "kevin@nivek",
+            "entity": "email"
+          }
+        ],
+        "text": "kevin@nivek"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "lol@creme",
+            "entity": "email"
+          }
+        ],
+        "text": "lol@creme"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "me@me",
+            "entity": "email"
+          }
+        ],
+        "text": "me@me"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "no@one",
+            "entity": "email"
+          }
+        ],
+        "text": "no@one"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "jy@yahoo",
+            "entity": "email"
+          }
+        ],
+        "text": "jy@yahoo"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "yoo@yahoo",
+            "entity": "email"
+          }
+        ],
+        "text": "yoo@yahoo"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "jim@yahoo",
+            "entity": "email"
+          }
+        ],
+        "text": "jim@yahoo"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "joe@yahoo",
+            "entity": "email"
+          }
+        ],
+        "text": "joe@yahoo"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "jer@yahoo",
+            "entity": "email"
+          }
+        ],
+        "text": "jer@yahoo"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "mm@yahoo",
+            "entity": "email"
+          }
+        ],
+        "text": "mm@yahoo"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "tem@yahoo",
+            "entity": "email"
+          }
+        ],
+        "text": "tem@yahoo"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "shingy@aol",
+            "entity": "email"
+          }
+        ],
+        "text": "shingy@aol"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "tim@aol",
+            "entity": "email"
+          }
+        ],
+        "text": "tim@aol"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "ron@ron.co",
+            "entity": "email"
+          }
+        ],
+        "text": "ron@ron.co"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "coco@co.co",
+            "entity": "email"
+          }
+        ],
+        "text": "coco@co.co"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "slow@po.co",
+            "entity": "email"
+          }
+        ],
+        "text": "slow@po.co"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "value": "slow@slow.ly",
+            "entity": "email"
+          }
+        ],
+        "text": "slow@slow.ly"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "value": "spot@spot.io",
+            "entity": "email"
+          }
+        ],
+        "text": "spot@spot.io"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 14,
+            "value": "copy@floppy.cc",
+            "entity": "email"
+          }
+        ],
+        "text": "copy@floppy.cc"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
             "start": 4,
             "end": 18,
             "value": "madam@curie.us",
@@ -1374,6 +2062,102 @@
           }
         ],
         "text": "my email is thatgirl@hotmail.com"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 12,
+            "end": 29,
+            "value": "itstime@abouttime",
+            "entity": "email"
+          }
+        ],
+        "text": "my email is itstime@abouttime"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 12,
+            "end": 27,
+            "value": "first@symbolics",
+            "entity": "email"
+          }
+        ],
+        "text": "my email is first@symbolics"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 12,
+            "end": 20,
+            "value": "al@ibaba",
+            "entity": "email"
+          }
+        ],
+        "text": "my email is al@ibaba"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "at@sign",
+            "entity": "email"
+          }
+        ],
+        "text": "my email is at@sign"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 12,
+            "end": 21,
+            "value": "more@data",
+            "entity": "email"
+          }
+        ],
+        "text": "my email is more@data"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 12,
+            "end": 17,
+            "value": "it@me",
+            "entity": "email"
+          }
+        ],
+        "text": "my email is it@me"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 9,
+            "end": 18,
+            "value": "vint@cerf",
+            "entity": "email"
+          }
+        ],
+        "text": "email is vint@cerf"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 9,
+            "end": 16,
+            "value": "tbl@tbl",
+            "entity": "email"
+          }
+        ],
+        "text": "email is tbl@tbl"
       },
       {
         "intent": "best_email_is",
@@ -2280,106 +3064,6 @@
         "text": "anti-maskers"
       },
       {
-        "intent": "greet",
-        "text": "hello"
-      },
-      {
-        "intent": "greet",
-        "text": "helloworld"
-      },
-      {
-        "intent": "greet",
-        "text": "hello world"
-      },
-      {
-        "intent": "greet",
-        "text": "hey"
-      },
-      {
-        "intent": "greet",
-        "text": "hey there"
-      },
-      {
-        "intent": "greet",
-        "text": "hiya there"
-      },
-      {
-        "intent": "greet",
-        "text": "heya there"
-      },
-      {
-        "intent": "greet",
-        "text": "heya"
-      },
-      {
-        "intent": "greet",
-        "text": "hi"
-      },
-      {
-        "intent": "greet",
-        "text": "hi again"
-      },
-      {
-        "intent": "greet",
-        "text": "hi there"
-      },
-      {
-        "intent": "greet",
-        "text": "hii"
-      },
-      {
-        "intent": "greet",
-        "text": "hiya"
-      },
-      {
-        "intent": "greet",
-        "text": "hiay"
-      },
-      {
-        "intent": "greet",
-        "text": "good morning"
-      },
-      {
-        "intent": "greet",
-        "text": "good afternoon"
-      },
-      {
-        "intent": "greet",
-        "text": "good evening"
-      },
-      {
-        "intent": "greet",
-        "text": "morning!"
-      },
-      {
-        "intent": "greet",
-        "text": "greetings"
-      },
-      {
-        "intent": "greet",
-        "text": "salutations"
-      },
-      {
-        "intent": "greet",
-        "text": "greetings and salutations"
-      },
-      {
-        "intent": "greet",
-        "text": "how do you do?"
-      },
-      {
-        "intent": "greet",
-        "text": "howdy doodie"
-      },
-      {
-        "intent": "greet",
-        "text": "yo"
-      },
-      {
-        "intent": "greet",
-        "text": "word up"
-      },
-      {
         "intent": "forest",
         "text": "hi forest"
       },
@@ -2393,11 +3077,23 @@
       },
       {
         "intent": "forest",
+        "text": "Hi forest"
+      },
+      {
+        "intent": "forest",
+        "text": "Hello forest"
+      },
+      {
+        "intent": "forest",
+        "text": "Hey forest"
+      },
+      {
+        "intent": "forest",
         "text": "is this forest"
       },
       {
         "intent": "forest",
-        "text": "is this zoro"
+        "text": "Is this forest"
       },
       {
         "intent": "greet_with_name",
@@ -2640,6 +3336,134 @@
         "text": "this is greg forest"
       },
       {
+        "intent": "greet",
+        "text": "hello"
+      },
+      {
+        "intent": "greet",
+        "text": "helloworld"
+      },
+      {
+        "intent": "greet",
+        "text": "hello world"
+      },
+      {
+        "intent": "greet",
+        "text": "Hello"
+      },
+      {
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "intent": "greet",
+        "text": "hey there"
+      },
+      {
+        "intent": "greet",
+        "text": "hiya there"
+      },
+      {
+        "intent": "greet",
+        "text": "heya there"
+      },
+      {
+        "intent": "greet",
+        "text": "heya"
+      },
+      {
+        "intent": "greet",
+        "text": "hi"
+      },
+      {
+        "intent": "greet",
+        "text": "hi again"
+      },
+      {
+        "intent": "greet",
+        "text": "hi there"
+      },
+      {
+        "intent": "greet",
+        "text": "hii"
+      },
+      {
+        "intent": "greet",
+        "text": "hiya"
+      },
+      {
+        "intent": "greet",
+        "text": "hiay"
+      },
+      {
+        "intent": "greet",
+        "text": "Hi"
+      },
+      {
+        "intent": "greet",
+        "text": "HI"
+      },
+      {
+        "intent": "greet",
+        "text": "Hi there"
+      },
+      {
+        "intent": "greet",
+        "text": "Hi again"
+      },
+      {
+        "intent": "greet",
+        "text": "Hiya"
+      },
+      {
+        "intent": "greet",
+        "text": "good morning"
+      },
+      {
+        "intent": "greet",
+        "text": "good afternoon"
+      },
+      {
+        "intent": "greet",
+        "text": "good evening"
+      },
+      {
+        "intent": "greet",
+        "text": "morning!"
+      },
+      {
+        "intent": "greet",
+        "text": "greetings"
+      },
+      {
+        "intent": "greet",
+        "text": "salutations"
+      },
+      {
+        "intent": "greet",
+        "text": "greetings and salutations"
+      },
+      {
+        "intent": "greet",
+        "text": "how do you do?"
+      },
+      {
+        "intent": "greet",
+        "text": "howdy doodie"
+      },
+      {
+        "intent": "greet",
+        "text": "yo"
+      },
+      {
+        "intent": "greet",
+        "text": "word up"
+      },
+      {
+        "intent": "greet",
+        "text": "Hey"
+      },
+      {
         "intent": "affirm",
         "text": "Y"
       },
@@ -2662,6 +3486,10 @@
       {
         "intent": "affirm",
         "text": "yeppers"
+      },
+      {
+        "intent": "affirm",
+        "text": "Yes"
       },
       {
         "intent": "affirm",
@@ -2858,6 +3686,46 @@
       {
         "intent": "agree",
         "text": "forsooth"
+      },
+      {
+        "intent": "agree",
+        "text": "so am i"
+      },
+      {
+        "intent": "agree",
+        "text": "so am i too"
+      },
+      {
+        "intent": "agree",
+        "text": "and so am i"
+      },
+      {
+        "intent": "agree",
+        "text": "so am i as well"
+      },
+      {
+        "intent": "agree",
+        "text": "me too"
+      },
+      {
+        "intent": "agree",
+        "text": "i am too"
+      },
+      {
+        "intent": "agree",
+        "text": "i am as well"
+      },
+      {
+        "intent": "agree",
+        "text": "as am i"
+      },
+      {
+        "intent": "agree",
+        "text": "as i am too"
+      },
+      {
+        "intent": "agree",
+        "text": "as am i too"
       },
       {
         "intent": "ok",
@@ -3130,46 +3998,6 @@
       {
         "intent": "jk",
         "text": "i was just kidding"
-      },
-      {
-        "intent": "any",
-        "text": "any"
-      },
-      {
-        "intent": "any",
-        "text": "anything"
-      },
-      {
-        "intent": "any",
-        "text": "any one"
-      },
-      {
-        "intent": "any",
-        "text": "anyway"
-      },
-      {
-        "intent": "any",
-        "text": "anyhoo"
-      },
-      {
-        "intent": "any",
-        "text": "any nou"
-      },
-      {
-        "intent": "any",
-        "text": "anynou"
-      },
-      {
-        "intent": "any",
-        "text": "any day"
-      },
-      {
-        "intent": "any",
-        "text": "any day is fine"
-      },
-      {
-        "intent": "any",
-        "text": "any day is good"
       },
       {
         "intent": "hru",
@@ -3476,74 +4304,6 @@
         "text": "everything good at work"
       },
       {
-        "intent": "good_news",
-        "text": "good news"
-      },
-      {
-        "intent": "good_news",
-        "text": "ive got good news"
-      },
-      {
-        "intent": "good_news",
-        "text": "ive got some good news"
-      },
-      {
-        "intent": "good_news",
-        "text": "ive got some good news for you"
-      },
-      {
-        "intent": "good_news",
-        "text": "ive got some good news to tell you"
-      },
-      {
-        "intent": "good_news",
-        "text": "i have some very good news for you"
-      },
-      {
-        "intent": "good_news",
-        "text": "you want to hear some good news"
-      },
-      {
-        "intent": "good_news",
-        "text": "u wanna hear some good news"
-      },
-      {
-        "intent": "good_news_bad_news",
-        "text": "good news bad news"
-      },
-      {
-        "intent": "good_news_bad_news",
-        "text": "bad news good news"
-      },
-      {
-        "intent": "good_news_bad_news",
-        "text": "ive got good news and i got bad news"
-      },
-      {
-        "intent": "good_news_bad_news",
-        "text": "theres good news and bad news"
-      },
-      {
-        "intent": "good_news_bad_news",
-        "text": "theres good news and theres bad news"
-      },
-      {
-        "intent": "good_news_bad_news",
-        "text": "which do you want first the good news or the bad news"
-      },
-      {
-        "intent": "good_news_bad_news",
-        "text": "which do you want to hear first the good news or the bad news"
-      },
-      {
-        "intent": "good_news_bad_news",
-        "text": "which should I tell you first the good news or the bad news"
-      },
-      {
-        "intent": "good_news_bad_news",
-        "text": "do you want the bad news or the good news"
-      },
-      {
         "intent": "sup",
         "text": "what's up"
       },
@@ -3824,6 +4584,86 @@
         "text": "i am very sorry about that"
       },
       {
+        "intent": "sorry",
+        "text": "apologies for my late response"
+      },
+      {
+        "intent": "sorry",
+        "text": "apologies for my late reply"
+      },
+      {
+        "intent": "sorry",
+        "text": "apologies for my late replies"
+      },
+      {
+        "intent": "sorry",
+        "text": "sorry for my late response"
+      },
+      {
+        "intent": "sorry",
+        "text": "sorry for my late reply"
+      },
+      {
+        "intent": "sorry",
+        "text": "sorry for my late replies"
+      },
+      {
+        "intent": "sorry",
+        "text": "sorry for the delayed reply"
+      },
+      {
+        "intent": "sorry",
+        "text": "sorry for the delayed response"
+      },
+      {
+        "intent": "sorry",
+        "text": "sorry for the delayed reply"
+      },
+      {
+        "intent": "sorry",
+        "text": "sorry for the delayed response"
+      },
+      {
+        "intent": "sorry",
+        "text": "apologies for just now getting back to you"
+      },
+      {
+        "intent": "sorry",
+        "text": "apologies im just now getting back to you"
+      },
+      {
+        "intent": "sorry",
+        "text": "sorry ive been so absent"
+      },
+      {
+        "intent": "sorry",
+        "text": "sorry ive been so unresponsive"
+      },
+      {
+        "intent": "sorry",
+        "text": "just saw this"
+      },
+      {
+        "intent": "sorry",
+        "text": "sorry just saw this"
+      },
+      {
+        "intent": "sorry",
+        "text": "just got this"
+      },
+      {
+        "intent": "sorry",
+        "text": "sorry just now got this"
+      },
+      {
+        "intent": "sorry",
+        "text": "sorry i missed this"
+      },
+      {
+        "intent": "sorry",
+        "text": "sorry i missed this earlier"
+      },
+      {
         "intent": "thanks",
         "text": "Thanks"
       },
@@ -4044,7 +4884,179 @@
         "text": "dont even mention it"
       },
       {
-        "intent": "amazing",
+        "intent": "who_is_this",
+        "text": "did you get a new number"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "do i know u"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "do i know you"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "for some reason i dont have this number in my phone"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "hello who are you"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "hi who is this"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "hi who is this please"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "hi, how are you"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "hi, who is this"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "hi, who is this please"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "i actually can't see who this is"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "i don't have this number saved"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "i dont have your number saved, who is this please?"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "i dont have your number saved- who is this please?"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "i dont know who you are"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "i have a new phone, who is this"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "may i ask whos number this is"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "may i ask whose number this is"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "new phone who dis"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "seriously who is this"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "sorry who are you"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "sorry who is this"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "who am i talking to"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "who are you"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "who are you?"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "who dis"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "who is this"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "who is this please"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "who is this please? i have a new phone"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "who is this pls"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "who r u"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "who this"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "who's this"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "whos this"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "whos this? i dont have your number"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "youre not in my contacts"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "youre not in my contacts, who is this"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "youre not in my contacts, who is this please"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "what is your name"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "do you have a name"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "will you tell me your name"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "whats your name"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "what name do you go by"
+      },
+      {
+        "intent": "super",
         "entities": [
           {
             "start": 0,
@@ -4056,7 +5068,7 @@
         "text": "amazing"
       },
       {
-        "intent": "amazing",
+        "intent": "super",
         "entities": [
           {
             "start": 8,
@@ -4068,7 +5080,7 @@
         "text": "this is amazing"
       },
       {
-        "intent": "amazing",
+        "intent": "super",
         "entities": [
           {
             "start": 12,
@@ -4080,7 +5092,7 @@
         "text": "that sounds amazing"
       },
       {
-        "intent": "amazing",
+        "intent": "super",
         "entities": [
           {
             "start": 4,
@@ -4092,7 +5104,7 @@
         "text": "how amazing is that"
       },
       {
-        "intent": "amazing",
+        "intent": "super",
         "entities": [
           {
             "start": 0,
@@ -4104,7 +5116,7 @@
         "text": "amazed"
       },
       {
-        "intent": "awe",
+        "intent": "super",
         "entities": [
           {
             "start": 0,
@@ -4116,7 +5128,7 @@
         "text": "awesome"
       },
       {
-        "intent": "awe",
+        "intent": "super",
         "entities": [
           {
             "start": 0,
@@ -4128,7 +5140,7 @@
         "text": "Awesome!"
       },
       {
-        "intent": "awe",
+        "intent": "super",
         "entities": [
           {
             "start": 13,
@@ -4140,7 +5152,7 @@
         "text": "thats really awesome"
       },
       {
-        "intent": "awe",
+        "intent": "super",
         "entities": [
           {
             "start": 9,
@@ -4152,7 +5164,7 @@
         "text": "thats so awesome"
       },
       {
-        "intent": "awe",
+        "intent": "super",
         "entities": [
           {
             "start": 8,
@@ -4164,7 +5176,7 @@
         "text": "totally awesome"
       },
       {
-        "intent": "awe",
+        "intent": "super",
         "entities": [
           {
             "start": 6,
@@ -4176,7 +5188,23 @@
         "text": "totes awesome"
       },
       {
-        "intent": "awe",
+        "intent": "super",
+        "text": "cool"
+      },
+      {
+        "intent": "super",
+        "text": "so cool"
+      },
+      {
+        "intent": "super",
+        "text": "totally cool"
+      },
+      {
+        "intent": "super",
+        "text": "cool beans"
+      },
+      {
+        "intent": "super",
         "entities": [
           {
             "start": 0,
@@ -4188,23 +5216,35 @@
         "text": "epic"
       },
       {
-        "intent": "awe",
+        "intent": "super",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "fantastic",
+            "entity": "super"
+          }
+        ],
+        "text": "fantastic"
+      },
+      {
+        "intent": "super",
         "text": "wonder"
       },
       {
-        "intent": "awe",
+        "intent": "super",
         "text": "wonderful"
       },
       {
-        "intent": "awe",
+        "intent": "super",
         "text": "marvelous"
       },
       {
-        "intent": "awe",
+        "intent": "super",
         "text": "wow"
       },
       {
-        "intent": "nice",
+        "intent": "super",
         "entities": [
           {
             "start": 0,
@@ -4216,7 +5256,7 @@
         "text": "nice"
       },
       {
-        "intent": "nice",
+        "intent": "super",
         "entities": [
           {
             "start": 3,
@@ -4228,7 +5268,7 @@
         "text": "oh nice"
       },
       {
-        "intent": "nice",
+        "intent": "super",
         "entities": [
           {
             "start": 5,
@@ -4240,7 +5280,7 @@
         "text": "very nice"
       },
       {
-        "intent": "nice",
+        "intent": "super",
         "entities": [
           {
             "start": 6,
@@ -4252,7 +5292,7 @@
         "text": "thats nice"
       },
       {
-        "intent": "nice",
+        "intent": "super",
         "entities": [
           {
             "start": 0,
@@ -4264,7 +5304,7 @@
         "text": "niice"
       },
       {
-        "intent": "nice",
+        "intent": "super",
         "entities": [
           {
             "start": 0,
@@ -4276,7 +5316,7 @@
         "text": "niiice"
       },
       {
-        "intent": "nice",
+        "intent": "super",
         "entities": [
           {
             "start": 0,
@@ -4288,7 +5328,7 @@
         "text": "niiiice"
       },
       {
-        "intent": "nice",
+        "intent": "super",
         "entities": [
           {
             "start": 4,
@@ -5192,86 +6232,6 @@
         "text": "i prefer the real you honestly"
       },
       {
-        "intent": "late_reply",
-        "text": "apologies for my late response"
-      },
-      {
-        "intent": "late_reply",
-        "text": "apologies for my late reply"
-      },
-      {
-        "intent": "late_reply",
-        "text": "apologies for my late replies"
-      },
-      {
-        "intent": "late_reply",
-        "text": "sorry for my late response"
-      },
-      {
-        "intent": "late_reply",
-        "text": "sorry for my late reply"
-      },
-      {
-        "intent": "late_reply",
-        "text": "sorry for my late replies"
-      },
-      {
-        "intent": "late_reply",
-        "text": "sorry for the delayed reply"
-      },
-      {
-        "intent": "late_reply",
-        "text": "sorry for the delayed response"
-      },
-      {
-        "intent": "late_reply",
-        "text": "sorry for the delayed reply"
-      },
-      {
-        "intent": "late_reply",
-        "text": "sorry for the delayed response"
-      },
-      {
-        "intent": "late_reply",
-        "text": "apologies for just now getting back to you"
-      },
-      {
-        "intent": "late_reply",
-        "text": "apologies im just now getting back to you"
-      },
-      {
-        "intent": "late_reply",
-        "text": "sorry ive been so absent"
-      },
-      {
-        "intent": "late_reply",
-        "text": "sorry ive been so unresponsive"
-      },
-      {
-        "intent": "late_reply",
-        "text": "just saw this"
-      },
-      {
-        "intent": "late_reply",
-        "text": "sorry just saw this"
-      },
-      {
-        "intent": "late_reply",
-        "text": "just got this"
-      },
-      {
-        "intent": "late_reply",
-        "text": "sorry just now got this"
-      },
-      {
-        "intent": "late_reply",
-        "text": "sorry i missed this"
-      },
-      {
-        "intent": "late_reply",
-        "text": "sorry i missed this earlier"
-      },
-      {
         "intent": "catchupsoon",
         "text": "catch up soon"
       },
@@ -5318,46 +6278,6 @@
       {
         "intent": "lookingforward",
         "text": "im really looking forward"
-      },
-      {
-        "intent": "metoo",
-        "text": "so am i"
-      },
-      {
-        "intent": "metoo",
-        "text": "so am i too"
-      },
-      {
-        "intent": "metoo",
-        "text": "and so am i"
-      },
-      {
-        "intent": "metoo",
-        "text": "so am i as well"
-      },
-      {
-        "intent": "metoo",
-        "text": "me too"
-      },
-      {
-        "intent": "metoo",
-        "text": "i am too"
-      },
-      {
-        "intent": "metoo",
-        "text": "i am as well"
-      },
-      {
-        "intent": "metoo",
-        "text": "as am i"
-      },
-      {
-        "intent": "metoo",
-        "text": "as i am too"
-      },
-      {
-        "intent": "metoo",
-        "text": "as am i too"
       },
       {
         "intent": "bye",
@@ -5528,28 +6448,20 @@
         "text": "TTYL8r"
       },
       {
-        "intent": "bye_curt",
+        "intent": "bye",
         "text": "gotta go"
       },
       {
-        "intent": "bye_curt",
+        "intent": "bye",
         "text": "i'm off"
       },
       {
-        "intent": "bye_curt",
+        "intent": "bye",
         "text": "end"
       },
       {
-        "intent": "bye_curt",
+        "intent": "bye",
         "text": "finish"
-      },
-      {
-        "intent": "goodbye",
-        "text": "Goodbye"
-      },
-      {
-        "intent": "goodbye",
-        "text": "goodbye"
       },
       {
         "intent": "restart",
@@ -6088,46 +7000,6 @@
         "text": "it would be great"
       },
       {
-        "intent": "saymyname",
-        "text": "whats my name"
-      },
-      {
-        "intent": "saymyname",
-        "text": "what is my name"
-      },
-      {
-        "intent": "saymyname",
-        "text": "do you know my name"
-      },
-      {
-        "intent": "saymyname",
-        "text": "did you catch my name"
-      },
-      {
-        "intent": "saymyname",
-        "text": "can you tell me my name"
-      },
-      {
-        "intent": "saymyname",
-        "text": "do you know what my name is"
-      },
-      {
-        "intent": "saymyname",
-        "text": "tell me my name"
-      },
-      {
-        "intent": "saymyname",
-        "text": "can you refer to me by name"
-      },
-      {
-        "intent": "saymyname",
-        "text": "can you refer to me by name please"
-      },
-      {
-        "intent": "saymyname",
-        "text": "say my name"
-      },
-      {
         "intent": "backup",
         "text": "we didnt pick a day"
       },
@@ -6158,38 +7030,6 @@
       {
         "intent": "backup",
         "text": "what time is None"
-      },
-      {
-        "intent": "blame_autocorrect",
-        "text": "i blame siri"
-      },
-      {
-        "intent": "blame_autocorrect",
-        "text": "siri messed that up"
-      },
-      {
-        "intent": "blame_autocorrect",
-        "text": "oops bad siri"
-      },
-      {
-        "intent": "blame_autocorrect",
-        "text": "siri got that wrong"
-      },
-      {
-        "intent": "blame_autocorrect",
-        "text": "voice recognition fail"
-      },
-      {
-        "intent": "blame_autocorrect",
-        "text": "autocorrect fail"
-      },
-      {
-        "intent": "blame_autocorrect",
-        "text": "autocorrect disaster"
-      },
-      {
-        "intent": "blame_autocorrect",
-        "text": "why does autocorrect get everything wrong"
       },
       {
         "intent": "hi_forest",
@@ -6254,6 +7094,178 @@
       {
         "intent": "whats_none",
         "text": "huh? none?"
+      },
+      {
+        "intent": "emoji",
+        "text": "😀"
+      },
+      {
+        "intent": "emoji",
+        "text": "😄"
+      },
+      {
+        "intent": "emoji",
+        "text": "😆"
+      },
+      {
+        "intent": "emoji",
+        "text": "😊"
+      },
+      {
+        "intent": "emoji",
+        "text": "😃"
+      },
+      {
+        "intent": "emoji",
+        "text": "😏"
+      },
+      {
+        "intent": "emoji",
+        "text": "😍"
+      },
+      {
+        "intent": "emoji",
+        "text": "😘"
+      },
+      {
+        "intent": "emoji",
+        "text": "😳"
+      },
+      {
+        "intent": "emoji",
+        "text": "😌"
+      },
+      {
+        "intent": "emoji",
+        "text": "😆"
+      },
+      {
+        "intent": "emoji",
+        "text": "😁"
+      },
+      {
+        "intent": "emoji",
+        "text": "😉"
+      },
+      {
+        "intent": "emoji",
+        "text": "😒"
+      },
+      {
+        "intent": "emoji",
+        "text": "😅"
+      },
+      {
+        "intent": "emoji",
+        "text": "😓"
+      },
+      {
+        "intent": "emoji",
+        "text": "😩"
+      },
+      {
+        "intent": "emoji",
+        "text": "😔"
+      },
+      {
+        "intent": "emoji",
+        "text": "😞"
+      },
+      {
+        "intent": "emoji",
+        "text": "😖"
+      },
+      {
+        "intent": "emoji",
+        "text": "😨"
+      },
+      {
+        "intent": "emoji",
+        "text": "😰"
+      },
+      {
+        "intent": "emoji",
+        "text": "😣"
+      },
+      {
+        "intent": "emoji",
+        "text": "😢"
+      },
+      {
+        "intent": "emoji",
+        "text": "😭"
+      },
+      {
+        "intent": "emoji",
+        "text": "😂"
+      },
+      {
+        "intent": "emoji",
+        "text": "😲"
+      },
+      {
+        "intent": "emoji",
+        "text": "😱"
+      },
+      {
+        "intent": "emoji",
+        "text": "😫"
+      },
+      {
+        "intent": "emoji",
+        "text": "😠"
+      },
+      {
+        "intent": "emoji",
+        "text": "😡"
+      },
+      {
+        "intent": "emoji",
+        "text": "😤"
+      },
+      {
+        "intent": "emoji",
+        "text": "😪"
+      },
+      {
+        "intent": "emoji",
+        "text": "😋"
+      },
+      {
+        "intent": "emoji",
+        "text": "😷"
+      },
+      {
+        "intent": "emoji",
+        "text": "😎"
+      },
+      {
+        "intent": "emoji",
+        "text": "😵"
+      },
+      {
+        "intent": "emoji",
+        "text": "👿"
+      },
+      {
+        "intent": "emoji",
+        "text": "😈"
+      },
+      {
+        "intent": "emoji",
+        "text": "😐"
+      },
+      {
+        "intent": "emoji",
+        "text": "😶"
+      },
+      {
+        "intent": "emoji",
+        "text": "😇"
+      },
+      {
+        "intent": "emoji",
+        "text": "👅"
       },
       {
         "intent": "remember_me",
@@ -6333,6 +7345,10 @@
       },
       {
         "intent": "ask_are_you_hiring",
+        "text": "Are you hiring"
+      },
+      {
+        "intent": "ask_are_you_hiring",
         "text": "are you hiring"
       },
       {
@@ -6365,23 +7381,39 @@
       },
       {
         "intent": "ask_are_you_hiring",
+        "text": "are you hiring for open roles"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "are you hiring for open positions"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "are you currently looking to fill any positions"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "are you currently looking to fill any open roles?"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "are you interviewing for any positions"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "are you currently interviewing for any positions"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "are you accepting resumes"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "ar you accepting resumes for any positions"
+      },
+      {
+        "intent": "ask_are_you_hiring",
         "text": "do you have any open roles"
-      },
-      {
-        "intent": "ask_are_you_hiring",
-        "text": "what roles are you trying to fill"
-      },
-      {
-        "intent": "ask_are_you_hiring",
-        "text": "what roles are you currently trying to fill"
-      },
-      {
-        "intent": "ask_are_you_hiring",
-        "text": "what roles do you currently have open"
-      },
-      {
-        "intent": "ask_are_you_hiring",
-        "text": "what are you open roles right now"
       },
       {
         "intent": "ask_are_you_hiring",
@@ -6389,19 +7421,11 @@
       },
       {
         "intent": "ask_are_you_hiring",
-        "text": "what positions are you currently trying to fill"
+        "text": "does your company have any open roles"
       },
       {
         "intent": "ask_are_you_hiring",
-        "text": "what positions do you currently have open"
-      },
-      {
-        "intent": "ask_are_you_hiring",
-        "text": "what open positions you have"
-      },
-      {
-        "intent": "ask_are_you_hiring",
-        "text": "what open roles you have"
+        "text": "does your company have any open positions"
       },
       {
         "intent": "ask_are_you_hiring",
@@ -6437,7 +7461,35 @@
       },
       {
         "intent": "ask_are_you_hiring",
-        "text": "do you have any open roles"
+        "text": "what roles are you trying to fill"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "what roles are you currently trying to fill"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "what roles do you currently have open"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "what are you open roles right now"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "what positions are you currently trying to fill"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "what positions do you currently have open"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "what open positions you have"
+      },
+      {
+        "intent": "ask_are_you_hiring",
+        "text": "what open roles you have"
       },
       {
         "intent": "ask_are_you_hiring",
@@ -6530,7 +7582,7 @@
             "start": 28,
             "end": 35,
             "value": "resumes",
-            "entity": "resumes"
+            "entity": "pos"
           }
         ],
         "text": "are you open to seeing some resumes"
@@ -7067,6 +8119,78 @@
         "intent": "send_resume",
         "entities": [
           {
+            "start": 23,
+            "end": 34,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "Can you send over your your resume?"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 23,
+            "end": 34,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send over your your resume?"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 23,
+            "end": 34,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "Can you send over your your resume to me?"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 23,
+            "end": 34,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send over your your resume to me?"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 23,
+            "end": 34,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "Can you send over your your resume?"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 22,
+            "end": 33,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "can you email us your your resume?"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
             "start": 19,
             "end": 34,
             "value": "resume",
@@ -7434,6 +8558,378 @@
           }
         ],
         "text": "will you send over your resume please"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 23,
+            "end": 38,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "can you please send me forest's resumé"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 23,
+            "end": 30,
+            "value": "res:cv",
+            "entity": "res"
+          }
+        ],
+        "text": "can you please send me your cv"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 23,
+            "end": 34,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "can you please send me your resumé"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 25,
+            "end": 40,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "can you please send over forest's resumé"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 25,
+            "end": 32,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "can you please send over your cv"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 25,
+            "end": 36,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "can you please send over your resumé"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 13,
+            "end": 28,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send forest's resumé over"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 13,
+            "end": 24,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send your resumé over"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 16,
+            "end": 31,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send me forest's resumé"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 16,
+            "end": 35,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send me your current resumé"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 16,
+            "end": 35,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send me your current resumé please"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 16,
+            "end": 27,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send me your resumé"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 16,
+            "end": 27,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send me your resumé please"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 18,
+            "end": 33,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send over forest's resumé"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 18,
+            "end": 37,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send over your current resumé"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 18,
+            "end": 37,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send over your current resumé please"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 18,
+            "end": 29,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send over your resumé"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 18,
+            "end": 29,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "can you send over your resumé please"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 19,
+            "end": 34,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "hi can you send me forest's resumé"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 22,
+            "end": 37,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "hi id like to request forest's resumé"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 16,
+            "end": 34,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "if you can send your curent resumé over i'll get the process started"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 16,
+            "end": 27,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "if you can send your resumé over i'll get the process started"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 12,
+            "end": 23,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "if you send your resumé over i'll get the process started"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 23,
+            "end": 34,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "no but can you send me your resumé"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 40,
+            "end": 55,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "no need for a call but can you shoot me forest's resumé"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 40,
+            "end": 51,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "no need for a call but can you shoot me your resumé"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 25,
+            "end": 44,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "no, however can you send your current resumé over?"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 25,
+            "end": 36,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "no, however can you send your resumé over?"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 30,
+            "end": 45,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "please can you please send me forest's resumé"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 30,
+            "end": 41,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "please can you please send me your resumé"
+      },
+      {
+        "intent": "send_resume",
+        "entities": [
+          {
+            "start": 15,
+            "end": 26,
+            "value": "resume",
+            "entity": "res"
+          }
+        ],
+        "text": "please send me your resumé"
       },
       {
         "intent": "send_resume",
@@ -8072,7 +9568,7 @@
             "start": 16,
             "end": 20,
             "value": "barb",
-            "entity": "Nou"
+            "entity": "nou"
           },
           {
             "start": 35,
@@ -8096,7 +9592,7 @@
             "start": 16,
             "end": 21,
             "value": "keith",
-            "entity": "Nou"
+            "entity": "nou"
           },
           {
             "start": 38,
@@ -8120,7 +9616,7 @@
             "start": 15,
             "end": 20,
             "value": "peter",
-            "entity": "Nou"
+            "entity": "nou"
           },
           {
             "start": 35,
@@ -8144,7 +9640,7 @@
             "start": 16,
             "end": 20,
             "value": "mark",
-            "entity": "Nou"
+            "entity": "nou"
           },
           {
             "start": 38,
@@ -8168,7 +9664,7 @@
             "start": 14,
             "end": 18,
             "value": "matt",
-            "entity": "Nou"
+            "entity": "nou"
           },
           {
             "start": 32,
@@ -8192,7 +9688,7 @@
             "start": 15,
             "end": 19,
             "value": "john",
-            "entity": "Nou"
+            "entity": "nou"
           },
           {
             "start": 36,
@@ -8216,7 +9712,7 @@
             "start": 14,
             "end": 18,
             "value": "paul",
-            "entity": "Nou"
+            "entity": "nou"
           },
           {
             "start": 32,
@@ -8240,7 +9736,7 @@
             "start": 15,
             "end": 19,
             "value": "will",
-            "entity": "Nou"
+            "entity": "nou"
           },
           {
             "start": 36,
@@ -8270,7 +9766,7 @@
             "start": 15,
             "end": 20,
             "value": "brian",
-            "entity": "Nou"
+            "entity": "nou"
           },
           {
             "start": 35,
@@ -8294,7 +9790,7 @@
             "start": 15,
             "end": 21,
             "value": "graham",
-            "entity": "Nou"
+            "entity": "nou"
           },
           {
             "start": 38,
@@ -8318,7 +9814,7 @@
             "start": 14,
             "end": 18,
             "value": "rick",
-            "entity": "Nou"
+            "entity": "nou"
           },
           {
             "start": 41,
@@ -8348,7 +9844,7 @@
             "start": 16,
             "end": 19,
             "value": "dan",
-            "entity": "Nou"
+            "entity": "nou"
           },
           {
             "start": 34,
@@ -8372,7 +9868,7 @@
             "start": 15,
             "end": 18,
             "value": "eli",
-            "entity": "Nou"
+            "entity": "nou"
           },
           {
             "start": 33,
@@ -8396,7 +9892,7 @@
             "start": 16,
             "end": 25,
             "value": "francesca",
-            "entity": "Nou"
+            "entity": "nou"
           },
           {
             "start": 50,
@@ -8420,7 +9916,7 @@
             "start": 15,
             "end": 19,
             "value": "greg",
-            "entity": "Nou"
+            "entity": "nou"
           },
           {
             "start": 51,
@@ -8444,7 +9940,7 @@
             "start": 16,
             "end": 21,
             "value": "holly",
-            "entity": "Nou"
+            "entity": "nou"
           },
           {
             "start": 37,
@@ -8468,7 +9964,7 @@
             "start": 16,
             "end": 22,
             "value": "isabel",
-            "entity": "Nou"
+            "entity": "nou"
           },
           {
             "start": 48,
@@ -8498,7 +9994,7 @@
             "start": 15,
             "end": 21,
             "value": "jordan",
-            "entity": "Nou"
+            "entity": "nou"
           },
           {
             "start": 38,
@@ -8522,7 +10018,7 @@
             "start": 15,
             "end": 20,
             "value": "kevin",
-            "entity": "Nou"
+            "entity": "nou"
           },
           {
             "start": 38,
@@ -8552,7 +10048,7 @@
             "start": 15,
             "end": 18,
             "value": "lee",
-            "entity": "Nou"
+            "entity": "nou"
           },
           {
             "start": 36,
@@ -8576,7 +10072,7 @@
             "start": 15,
             "end": 21,
             "value": "martha",
-            "entity": "Nou"
+            "entity": "nou"
           },
           {
             "start": 39,
@@ -8600,7 +10096,7 @@
             "start": 15,
             "end": 19,
             "value": "noel",
-            "entity": "Nou"
+            "entity": "nou"
           },
           {
             "start": 37,
@@ -8624,13 +10120,13 @@
             "start": 15,
             "end": 19,
             "value": "olga",
-            "entity": "Nou"
+            "entity": "nou"
           },
           {
             "start": 44,
             "end": 55,
-            "value": "your resume",
-            "entity": ""
+            "value": "resume",
+            "entity": "res"
           }
         ],
         "text": "hi forest, its olga, can you please send me your resume"
@@ -8648,7 +10144,7 @@
             "start": 15,
             "end": 22,
             "value": "pauline",
-            "entity": "Nou"
+            "entity": "nou"
           },
           {
             "start": 39,
@@ -8678,7 +10174,7 @@
             "start": 15,
             "end": 22,
             "value": "quentin",
-            "entity": "Nou"
+            "entity": "nou"
           },
           {
             "start": 38,
@@ -8708,7 +10204,7 @@
             "start": 15,
             "end": 21,
             "value": "rachel",
-            "entity": "Nou"
+            "entity": "nou"
           },
           {
             "start": 39,
@@ -8738,7 +10234,7 @@
             "start": 15,
             "end": 19,
             "value": "stan",
-            "entity": "Nou"
+            "entity": "nou"
           },
           {
             "start": 37,
@@ -8768,7 +10264,7 @@
             "start": 15,
             "end": 18,
             "value": "tom",
-            "entity": "Nou"
+            "entity": "nou"
           },
           {
             "start": 40,
@@ -8940,6 +10436,34 @@
       {
         "intent": "is_resume_current",
         "text": "the resume you sent has an error"
+      },
+      {
+        "intent": "is_resume_current",
+        "text": "Do I have your most up-to-date resume?"
+      },
+      {
+        "intent": "is_resume_current",
+        "text": "do we have your most up-to-date resume"
+      },
+      {
+        "intent": "is_resume_current",
+        "text": "do i have your current resume"
+      },
+      {
+        "intent": "is_resume_current",
+        "text": "do I have your most current resume?"
+      },
+      {
+        "intent": "is_resume_current",
+        "text": "do we have your most current resume"
+      },
+      {
+        "intent": "is_resume_current",
+        "text": "is the resume we have for you up-to-date?"
+      },
+      {
+        "intent": "is_resume_current",
+        "text": "is the resume you sent the most current one"
       },
       {
         "intent": "lets_do",
@@ -10309,8 +11833,8 @@
           {
             "start": 7,
             "end": 25,
-            "value": "set up a zoom call",
-            "entity": "activityzoom"
+            "value": "zoom",
+            "entity": "activity"
           },
           {
             "start": 31,
@@ -14261,7 +15785,7 @@
             "entity": "activity"
           }
         ],
-        "text": "What’s a good day for me to come over?"
+        "text": "What’s a good day for me to come over ?"
       },
       {
         "intent": "ask_availability",
@@ -14285,7 +15809,7 @@
             "entity": "activity"
           }
         ],
-        "text": "What’s a good time for me to come over?"
+        "text": "What’s a good time for me to come over ?"
       },
       {
         "intent": "ask_availability",
@@ -14309,7 +15833,7 @@
             "entity": "activity"
           }
         ],
-        "text": "What’s a good day for me to stop by?"
+        "text": "What’s a good day for me to stop by ?"
       },
       {
         "intent": "ask_availability",
@@ -14333,7 +15857,7 @@
             "entity": "activity"
           }
         ],
-        "text": "What’s a good day for me to stop by?"
+        "text": "What’s a good day for me to stop by ?"
       },
       {
         "intent": "ask_availability",
@@ -14387,19 +15911,19 @@
             "entity": "When"
           },
           {
-            "start": 29,
-            "end": 31,
+            "start": 30,
+            "end": 32,
             "value": "you",
             "entity": "pov"
           },
           {
-            "start": 35,
-            "end": 44,
+            "start": 36,
+            "end": 45,
             "value": "come over",
             "entity": "activity"
           }
         ],
-        "text": "Forest, what’s a good day forme to come over?"
+        "text": "Forest, what’s a good day for me to come over?"
       },
       {
         "intent": "ask_availability",
@@ -14411,31 +15935,31 @@
             "entity": "fm"
           },
           {
-            "start": 16,
-            "end": 22,
+            "start": 17,
+            "end": 23,
             "value": "Portia",
             "entity": "nou"
           },
           {
-            "start": 31,
-            "end": 41,
+            "start": 32,
+            "end": 42,
             "value": "a good day",
             "entity": "When"
           },
           {
-            "start": 45,
-            "end": 47,
+            "start": 47,
+            "end": 49,
             "value": "you",
             "entity": "pov"
           },
           {
-            "start": 51,
-            "end": 60,
+            "start": 53,
+            "end": 62,
             "value": "come over",
             "entity": "activity"
           }
         ],
-        "text": "Hi Forest, it’s Portia. What’s a good day forme to come over?"
+        "text": "Hi Forest , it’s Portia. What’s a good day for me to come over?"
       },
       {
         "intent": "ask_availability",
@@ -14447,19 +15971,19 @@
             "entity": "When"
           },
           {
-            "start": 21,
-            "end": 23,
+            "start": 22,
+            "end": 24,
             "value": "you",
             "entity": "pov"
           },
           {
-            "start": 27,
-            "end": 35,
+            "start": 28,
+            "end": 36,
             "value": "call me",
             "entity": "activity"
           }
         ],
-        "text": "What’s a good day forme to call you?"
+        "text": "What’s a good day for me to call you?"
       },
       {
         "intent": "ask_availability",
@@ -14513,19 +16037,19 @@
             "entity": "When"
           },
           {
-            "start": 45,
-            "end": 47,
+            "start": 46,
+            "end": 48,
             "value": "you",
             "entity": "pov"
           },
           {
-            "start": 51,
-            "end": 59,
+            "start": 52,
+            "end": 60,
             "value": "call me",
             "entity": "activity"
           }
         ],
-        "text": "Hi Forest, it’s Portia. What’s a good day forme to call you?"
+        "text": "Hi Forest, it’s Portia. What’s a good day for me to call you?"
       },
       {
         "intent": "ask_availability",
@@ -14549,19 +16073,19 @@
             "entity": "When"
           },
           {
-            "start": 48,
-            "end": 50,
+            "start": 49,
+            "end": 51,
             "value": "you",
             "entity": "pov"
           },
           {
-            "start": 54,
-            "end": 62,
+            "start": 55,
+            "end": 63,
             "value": "help me",
             "entity": "activity"
           }
         ],
-        "text": "Hi Forest, it’s Franscesa. What’s a good day forme to help you with that"
+        "text": "Hi Forest, it’s Franscesa. What’s a good day for me to help you with that"
       },
       {
         "intent": "ask_availability",
@@ -14573,31 +16097,31 @@
             "entity": "fm"
           },
           {
-            "start": 12,
-            "end": 15,
+            "start": 13,
+            "end": 16,
             "value": "Rob",
             "entity": "nou"
           },
           {
-            "start": 21,
-            "end": 26,
+            "start": 22,
+            "end": 27,
             "value": "Nexus",
             "entity": "org"
           },
           {
-            "start": 62,
-            "end": 68,
+            "start": 63,
+            "end": 69,
             "value": "have a call",
             "entity": "activity"
           },
           {
-            "start": 72,
-            "end": 81,
+            "start": 73,
+            "end": 82,
             "value": "Wednesday",
             "entity": "Day"
           }
         ],
-        "text": "Hey Forest, Rob from Nexus here. What's your availability for a call on Wednesday?"
+        "text": "Hey Forest , Rob from Nexus here. What's your availability for a call on Wednesday?"
       },
       {
         "intent": "ask_availability",
@@ -20290,7 +21814,7 @@
             "start": 0,
             "end": 7,
             "value": "the 1st",
-            "entity": "Ordinal"
+            "entity": "DATE"
           }
         ],
         "text": "the 1st"
@@ -20302,7 +21826,7 @@
             "start": 0,
             "end": 7,
             "value": "the 2nd",
-            "entity": "Ordinal"
+            "entity": "DATE"
           }
         ],
         "text": "the 2nd"
@@ -20314,7 +21838,7 @@
             "start": 0,
             "end": 7,
             "value": "the 3rd",
-            "entity": "Ordinal"
+            "entity": "DATE"
           }
         ],
         "text": "the 3rd"
@@ -20326,7 +21850,7 @@
             "start": 0,
             "end": 7,
             "value": "the 4th",
-            "entity": "Ordinal"
+            "entity": "DATE"
           }
         ],
         "text": "the 4th"
@@ -20338,7 +21862,7 @@
             "start": 0,
             "end": 7,
             "value": "the 5th",
-            "entity": "Ordinal"
+            "entity": "DATE"
           }
         ],
         "text": "the 5th"
@@ -20350,7 +21874,7 @@
             "start": 0,
             "end": 7,
             "value": "the 6th",
-            "entity": "Ordinal"
+            "entity": "DATE"
           }
         ],
         "text": "the 6th"
@@ -20362,7 +21886,7 @@
             "start": 5,
             "end": 12,
             "value": "the 7th",
-            "entity": "Ordinal"
+            "entity": "DATE"
           }
         ],
         "text": "hows the 7th"
@@ -20374,7 +21898,7 @@
             "start": 5,
             "end": 12,
             "value": "the 8th",
-            "entity": "Ordinal"
+            "entity": "DATE"
           }
         ],
         "text": "hows the 8th"
@@ -20386,7 +21910,7 @@
             "start": 5,
             "end": 12,
             "value": "the 9th",
-            "entity": "Ordinal"
+            "entity": "DATE"
           }
         ],
         "text": "hows the 9th"
@@ -20398,7 +21922,7 @@
             "start": 10,
             "end": 18,
             "value": "the 10th",
-            "entity": "Ordinal"
+            "entity": "DATE"
           }
         ],
         "text": "how about the 10th"
@@ -20410,7 +21934,7 @@
             "start": 10,
             "end": 18,
             "value": "the 11th",
-            "entity": "Ordinal"
+            "entity": "DATE"
           }
         ],
         "text": "how about the 11th"
@@ -20422,7 +21946,7 @@
             "start": 10,
             "end": 18,
             "value": "the 12th",
-            "entity": "Ordinal"
+            "entity": "DATE"
           }
         ],
         "text": "how about the 12th"
@@ -20434,7 +21958,7 @@
             "start": 10,
             "end": 18,
             "value": "the 13th",
-            "entity": "Ordinal"
+            "entity": "DATE"
           }
         ],
         "text": "can we do the 13th"
@@ -20446,7 +21970,7 @@
             "start": 10,
             "end": 18,
             "value": "the 14th",
-            "entity": "Ordinal"
+            "entity": "DATE"
           }
         ],
         "text": "can we do the 14th"
@@ -29402,7 +30926,7 @@
             "start": 25,
             "end": 33,
             "value": "november",
-            "entity": "when"
+            "entity": "When"
           }
         ],
         "text": "i will be in new york in november"
@@ -29420,7 +30944,7 @@
             "start": 25,
             "end": 33,
             "value": "december",
-            "entity": "when"
+            "entity": "When"
           }
         ],
         "text": "i will be in new york in december"
@@ -29438,7 +30962,7 @@
             "start": 32,
             "end": 40,
             "value": "november",
-            "entity": "when"
+            "entity": "When"
           }
         ],
         "text": "i will be coming to new york in november"
@@ -29456,7 +30980,7 @@
             "start": 32,
             "end": 40,
             "value": "december",
-            "entity": "when"
+            "entity": "When"
           }
         ],
         "text": "i will be coming to new york in december"
@@ -29474,7 +30998,7 @@
             "start": 31,
             "end": 39,
             "value": "november",
-            "entity": "when"
+            "entity": "When"
           }
         ],
         "text": "i will be visiting new york in november"
@@ -29492,7 +31016,7 @@
             "start": 31,
             "end": 39,
             "value": "december",
-            "entity": "when"
+            "entity": "When"
           }
         ],
         "text": "i will be visiting new york in december"
@@ -29510,7 +31034,7 @@
             "start": 33,
             "end": 41,
             "value": "november",
-            "entity": "when"
+            "entity": "When"
           }
         ],
         "text": "i will be briefly in new york in november"
@@ -29528,7 +31052,7 @@
             "start": 33,
             "end": 41,
             "value": "december",
-            "entity": "when"
+            "entity": "When"
           }
         ],
         "text": "i will be briefly in new york in december"
@@ -29546,7 +31070,7 @@
             "start": 22,
             "end": 40,
             "value": "after the new year",
-            "entity": "when"
+            "entity": "When"
           }
         ],
         "text": "i will be in new york after the new year"
@@ -29564,7 +31088,7 @@
             "start": 29,
             "end": 44,
             "value": "in the new yeah",
-            "entity": "when"
+            "entity": "When"
           }
         ],
         "text": "i will be coming to new york in the new yeah"
@@ -29582,7 +31106,7 @@
             "start": 28,
             "end": 37,
             "value": "next year",
-            "entity": "when"
+            "entity": "When"
           }
         ],
         "text": "i will be visiting new york next year"
@@ -29732,7 +31256,7 @@
             "start": 12,
             "end": 27,
             "value": "a slumber party",
-            "entity": "Event"
+            "entity": "activity"
           }
         ],
         "text": "im going to a slumber party"
@@ -29858,7 +31382,7 @@
             "start": 43,
             "end": 44,
             "value": "5",
-            "entity": "time"
+            "entity": "Time"
           }
         ],
         "text": "im taking the train and ill arrive at like 5"
@@ -33124,6 +34648,186 @@
         "entities": [
           {
             "start": 0,
+            "end": 7,
+            "value": "heather",
+            "entity": "nou"
+          }
+        ],
+        "text": "heather"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "astrid",
+            "entity": "nou"
+          }
+        ],
+        "text": "astrid"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "cassie",
+            "entity": "nou"
+          }
+        ],
+        "text": "cassie"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "chaewon",
+            "entity": "nou"
+          }
+        ],
+        "text": "chaewon"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "craig",
+            "entity": "nou"
+          }
+        ],
+        "text": "craig"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "eliot",
+            "entity": "nou"
+          }
+        ],
+        "text": "eliot"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "eliott",
+            "entity": "nou"
+          }
+        ],
+        "text": "eliott"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "kyle",
+            "entity": "nou"
+          }
+        ],
+        "text": "kyle"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "mika",
+            "entity": "nou"
+          }
+        ],
+        "text": "mika"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "mort",
+            "entity": "nou"
+          }
+        ],
+        "text": "mort"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "morty",
+            "entity": "nou"
+          }
+        ],
+        "text": "morty"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "will",
+            "entity": "nou"
+          }
+        ],
+        "text": "will"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "hal",
+            "entity": "nou"
+          }
+        ],
+        "text": "hal"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "holly",
+            "entity": "nou"
+          }
+        ],
+        "text": "holly"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "doyne",
+            "entity": "nou"
+          }
+        ],
+        "text": "doyne"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 0,
             "end": 5,
             "value": "edith",
             "entity": "nou"
@@ -36045,6 +37749,18 @@
         "intent": "thisis",
         "entities": [
           {
+            "start": 3,
+            "end": 7,
+            "value": "Gene",
+            "entity": "nou"
+          }
+        ],
+        "text": "TY Gene"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
             "start": 5,
             "end": 8,
             "value": "don",
@@ -36082,12 +37798,24 @@
         "entities": [
           {
             "start": 4,
-            "end": 9,
-            "value": "chris",
+            "end": 8,
+            "value": "carl",
             "entity": "nou"
           }
         ],
-        "text": "its chris, did you get a chance to look at the candidates i sent you"
+        "text": "its carl, did you get a chance to look at the candidates i sent you"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 4,
+            "end": 10,
+            "value": "dennis",
+            "entity": "nou"
+          }
+        ],
+        "text": "its dennis have you had a chance to review the candidates"
       },
       {
         "intent": "thisis",
@@ -36095,23 +37823,11 @@
           {
             "start": 4,
             "end": 8,
-            "value": "dale",
+            "value": "dave",
             "entity": "nou"
           }
         ],
-        "text": "its dale have you had a chance to review the candidates"
-      },
-      {
-        "intent": "thisis",
-        "entities": [
-          {
-            "start": 4,
-            "end": 8,
-            "value": "dale",
-            "entity": "nou"
-          }
-        ],
-        "text": "its dale, have you had a chance to review the candidates"
+        "text": "its dave, have you had a chance to review the candidates"
       },
       {
         "intent": "thisis",
@@ -36148,6 +37864,168 @@
           }
         ],
         "text": "this is larry, did you get the candidates i sent over"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 12,
+            "end": 18,
+            "value": "Jackie",
+            "entity": "nou"
+          },
+          {
+            "start": 24,
+            "end": 32,
+            "value": "Publicis",
+            "entity": "org"
+          }
+        ],
+        "text": "Hi, this is Jackie from Publicis"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "Tim",
+            "entity": "nou"
+          },
+          {
+            "start": 9,
+            "end": 14,
+            "value": "Apple",
+            "entity": "org"
+          }
+        ],
+        "text": "Tim from Apple"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "Barry",
+            "entity": "nou"
+          },
+          {
+            "start": 11,
+            "end": 17,
+            "value": "Netlix",
+            "entity": "org"
+          }
+        ],
+        "text": "Barry from Netlix"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "Larry",
+            "entity": "nou"
+          },
+          {
+            "start": 11,
+            "end": 17,
+            "value": "Google",
+            "entity": "org"
+          }
+        ],
+        "text": "Larry from Google"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Robert",
+            "entity": "nou"
+          },
+          {
+            "start": 12,
+            "end": 19,
+            "value": "Trilogy",
+            "entity": "org"
+          }
+        ],
+        "text": "Robert from Trilogy"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Dale",
+            "entity": "nou"
+          },
+          {
+            "start": 10,
+            "end": 17,
+            "value": "Omnicom",
+            "entity": "org"
+          }
+        ],
+        "text": "Dale from Omnicom"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "Johan",
+            "entity": "nou"
+          },
+          {
+            "start": 11,
+            "end": 14,
+            "value": "SAP",
+            "entity": "org"
+          }
+        ],
+        "text": "Johan from SAP"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "lynne",
+            "entity": "nou"
+          },
+          {
+            "start": 11,
+            "end": 16,
+            "value": "sappi",
+            "entity": "org"
+          }
+        ],
+        "text": "lynne from sappi"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "roger",
+            "entity": "nou"
+          },
+          {
+            "start": 11,
+            "end": 17,
+            "value": "Sperry",
+            "entity": "org"
+          }
+        ],
+        "text": "roger from Sperry"
       },
       {
         "intent": "thisisnt",
@@ -36740,186 +38618,6 @@
       {
         "intent": "forest",
         "text": "forest?"
-      },
-      {
-        "intent": "bare_names",
-        "entities": [
-          {
-            "start": 0,
-            "end": 7,
-            "value": "heather",
-            "entity": "nou"
-          }
-        ],
-        "text": "heather"
-      },
-      {
-        "intent": "bare_names",
-        "entities": [
-          {
-            "start": 0,
-            "end": 6,
-            "value": "astrid",
-            "entity": "nou"
-          }
-        ],
-        "text": "astrid"
-      },
-      {
-        "intent": "bare_names",
-        "entities": [
-          {
-            "start": 0,
-            "end": 6,
-            "value": "cassie",
-            "entity": "nou"
-          }
-        ],
-        "text": "cassie"
-      },
-      {
-        "intent": "bare_names",
-        "entities": [
-          {
-            "start": 0,
-            "end": 7,
-            "value": "chaewon",
-            "entity": "nou"
-          }
-        ],
-        "text": "chaewon"
-      },
-      {
-        "intent": "bare_names",
-        "entities": [
-          {
-            "start": 0,
-            "end": 5,
-            "value": "craig",
-            "entity": "nou"
-          }
-        ],
-        "text": "craig"
-      },
-      {
-        "intent": "bare_names",
-        "entities": [
-          {
-            "start": 0,
-            "end": 5,
-            "value": "eliot",
-            "entity": "nou"
-          }
-        ],
-        "text": "eliot"
-      },
-      {
-        "intent": "bare_names",
-        "entities": [
-          {
-            "start": 0,
-            "end": 6,
-            "value": "eliott",
-            "entity": "nou"
-          }
-        ],
-        "text": "eliott"
-      },
-      {
-        "intent": "bare_names",
-        "entities": [
-          {
-            "start": 0,
-            "end": 4,
-            "value": "kyle",
-            "entity": "nou"
-          }
-        ],
-        "text": "kyle"
-      },
-      {
-        "intent": "bare_names",
-        "entities": [
-          {
-            "start": 0,
-            "end": 4,
-            "value": "mika",
-            "entity": "nou"
-          }
-        ],
-        "text": "mika"
-      },
-      {
-        "intent": "bare_names",
-        "entities": [
-          {
-            "start": 0,
-            "end": 4,
-            "value": "mort",
-            "entity": "nou"
-          }
-        ],
-        "text": "mort"
-      },
-      {
-        "intent": "bare_names",
-        "entities": [
-          {
-            "start": 0,
-            "end": 5,
-            "value": "morty",
-            "entity": "nou"
-          }
-        ],
-        "text": "morty"
-      },
-      {
-        "intent": "bare_names",
-        "entities": [
-          {
-            "start": 0,
-            "end": 4,
-            "value": "will",
-            "entity": "nou"
-          }
-        ],
-        "text": "will"
-      },
-      {
-        "intent": "bare_names",
-        "entities": [
-          {
-            "start": 0,
-            "end": 3,
-            "value": "hal",
-            "entity": "nou"
-          }
-        ],
-        "text": "hal"
-      },
-      {
-        "intent": "bare_names",
-        "entities": [
-          {
-            "start": 0,
-            "end": 5,
-            "value": "holly",
-            "entity": "nou"
-          }
-        ],
-        "text": "holly"
-      },
-      {
-        "intent": "bare_names",
-        "entities": [
-          {
-            "start": 0,
-            "end": 5,
-            "value": "doyne",
-            "entity": "nou"
-          }
-        ],
-        "text": "doyne"
       }
     ],
     "regex_features": [],
@@ -36946,6 +38644,10 @@
           "forest's resume",
           "your current resume",
           "your curent resume",
+          "forest's resumé",
+          "your resumé",
+          "your current resumé",
+          "your curent resumé",
           "that job description",
           "resumé",
           "cv",
@@ -37084,6 +38786,12 @@
           "a zoom call",
           "book a zoom call",
           "schedule a zoom call"
+        ]
+      },
+      {
+        "value": "zoom",
+        "synonyms": [
+          "set up a zoom call"
         ]
       },
       {

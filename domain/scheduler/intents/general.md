@@ -9,41 +9,15 @@
 
 ### ~~~~~~~~~~~~~~~~~~~~ Greetings & Agreement ~~~~~~~~~~~~~~~~~~~~
 
-## intent:greet
-- hello
-- helloworld
-- hello world
-- hey
-- hey there
-- hiya there
-- heya there
-- heya
-- hi
-- hi again
-- hi there
-- hii
-- hiya
-- hiay
-- good morning
-- good afternoon
-- good evening
-- morning!
-- greetings
-- salutations
-- greetings and salutations
-- how do you do?
-- howdy doodie
-- yo
-- word up
-
-
 ## intent:forest
 - hi forest
 - hello forest
 - hey forest
+- Hi forest
+- Hello forest
+- Hey forest
 - is this forest
-- is this zoro
-
+- Is this forest
 
 ## intent:greet_with_name
 - hi forest this is [kyle](nou)
@@ -67,7 +41,39 @@
 - it's [rick](nou) forest
 - this is [greg](nou) forest
 
-
+## intent:greet
+- hello
+- helloworld
+- hello world
+- Hello
+- hey
+- hey there
+- hiya there
+- heya there
+- heya
+- hi
+- hi again
+- hi there
+- hii
+- hiya
+- hiay
+- Hi
+- HI
+- Hi there
+- Hi again
+- Hiya
+- good morning
+- good afternoon
+- good evening
+- morning!
+- greetings
+- salutations
+- greetings and salutations
+- how do you do?
+- howdy doodie
+- yo
+- word up
+- Hey
 
 ## intent:affirm
 - Y
@@ -76,6 +82,7 @@
 - yup
 - yep
 - yeppers
+- Yes
 - yss
 - yes
 - ys
@@ -127,6 +134,16 @@
 - yes very
 - indeed
 - forsooth
+- so am i
+- so am i too
+- and so am i
+- so am i as well
+- me too
+- i am too
+- i am as well
+- as am i
+- as i am too
+- as am i too
 
 ## intent:ok
 - k
@@ -215,19 +232,6 @@
 - i was just joking
 - i was just kidding
 
-## intent:any
-- any
-- anything
-- any one
-- anyway
-- anyhoo
-- any nou
-- anynou
-- any day
-- any day is fine
-- any day is good
-
-
 ### ~~~~~~~~~~~~~~~~~~~~ General chit chat ~~~~~~~~~~~~~~~~~~~~
 
 ## intent:hru
@@ -314,27 +318,6 @@
 - how is everything work wise
 - everything good at work
 
-## intent:good_news
-- good news
-- ive got good news
-- ive got some good news
-- ive got some good news for you
-- ive got some good news to tell you
-- i have some very good news for you
-- you want to hear some good news
-- u wanna hear some good news
-
-## intent:good_news_bad_news
-- good news bad news
-- bad news good news
-- ive got good news and i got bad news
-- theres good news and bad news
-- theres good news and theres bad news
-- which do you want first the good news or the bad news
-- which do you want to hear first the good news or the bad news
-- which should I tell you first the good news or the bad news
-- do you want the bad news or the good news
-
 ## intent:sup
 - what's up
 - whats up
@@ -414,6 +397,26 @@
 - such sorry
 - very sorrow
 - i am very sorry about that
+- apologies for my late response
+- apologies for my late reply
+- apologies for my late replies
+- sorry for my late response
+- sorry for my late reply
+- sorry for my late replies
+- sorry for the delayed reply
+- sorry for the delayed response
+- sorry for the delayed reply
+- sorry for the delayed response
+- apologies for just now getting back to you
+- apologies im just now getting back to you
+- sorry ive been so absent
+- sorry ive been so unresponsive
+- just saw this
+- sorry just saw this
+- just got this
+- sorry just now got this
+- sorry i missed this
+- sorry i missed this earlier
 
 
 ## intent:thanks
@@ -479,30 +482,77 @@
 - dont mention it
 - dont even mention it
 
+## intent:who_is_this
+- did you get a new number
+- do i know u
+- do i know you
+- for some reason i dont have this number in my phone
+- hello who are you
+- hi who is this
+- hi who is this please
+- hi, how are you
+- hi, who is this
+- hi, who is this please
+- i actually can't see who this is
+- i don't have this number saved
+- i dont have your number saved, who is this please?
+- i dont have your number saved- who is this please?
+- i dont know who you are
+- i have a new phone, who is this
+- may i ask whos number this is
+- may i ask whose number this is
+- new phone who dis
+- seriously who is this
+- sorry who are you
+- sorry who is this
+- who am i talking to
+- who are you
+- who are you?
+- who dis
+- who is this
+- who is this please
+- who is this please? i have a new phone
+- who is this pls
+- who r u
+- who this
+- who's this
+- whos this
+- whos this? i dont have your number
+- youre not in my contacts
+- youre not in my contacts, who is this
+- youre not in my contacts, who is this please
+- what is your name
+- do you have a name
+- will you tell me your name
+- whats your name
+- what name do you go by
+
 
 ### ~~~~~~~~~~~~~~~~~~~~~ Exclamations &  Expressions ~~~~~~~~~~~~~~~~~~~~
 
-## intent:amazing
+## intent:super
 - [amazing](super)
 - this is [amazing](super)
 - that sounds [amazing](super)
 - how [amazing](super) is that
 - [amazed](super)
-
-## intent:awe
 - [awesome](super)
 - [Awesome!](super)
 - thats really [awesome](super)
 - thats so [awesome](super)
 - totally [awesome](super)
 - totes [awesome](super)
+- [cool](super)
+- so [cool](super)
+- totally [cool](super)
+- [cool](super) beans
+
 - [epic](super)
+- [fantastic](super)
 - wonder
 - wonderful
 - marvelous
 - wow
-
-## intent:nice
 - [nice](super)
 - oh [nice](super)
 - very [nice](super)
@@ -758,27 +808,7 @@
 - honestly i prefer the real you
 - i prefer the real you honestly
 
-## intent:late_reply
-- apologies for my late response
-- apologies for my late reply
-- apologies for my late replies
-- sorry for my late response
-- sorry for my late reply
-- sorry for my late replies
-- sorry for the delayed reply
-- sorry for the delayed response
-- sorry for the delayed reply
-- sorry for the delayed response
-- apologies for just now getting back to you
-- apologies im just now getting back to you
-- sorry ive been so absent
-- sorry ive been so unresponsive
-- just saw this
-- sorry just saw this
-- just got this
-- sorry just now got this
-- sorry i missed this
-- sorry i missed this earlier
+
 
 ### ~~~~~~~~~~~~~~~~~~~~~ Endings ~~~~~~~~~~~~~~~~~~~~
 
@@ -798,17 +828,6 @@
 - very much looking forward
 - im really looking forward
 
-## intent:metoo
-- so am i
-- so am i too
-- and so am i
-- so am i as well
-- me too
-- i am too
-- i am as well
-- as am i
-- as i am too
-- as am i too
 
 ## intent:bye
 - Bye
@@ -853,16 +872,12 @@
 - have a nice day
 - TTYL
 - TTYL8r
-
-## intent:bye_curt
 - gotta go
 - i'm off
 - end
 - finish
 
-## intent:goodbye
-- Goodbye
-- goodbye
+
 
 ### ~~~~~~~~~~~~~~~~~~~~~ misc commands ~~~~~~~~~~~~~~~~~~~~
 
@@ -1034,18 +1049,6 @@
 - I would be pumped
 - it would be great
 
-## intent:saymyname
-- whats my name
-- what is my name
-- do you know my name
-- did you catch my name
-- can you tell me my name
-- do you know what my name is
-- tell me my name
-- can you refer to me by name
-- can you refer to me by name please
-- say my name
-
 
 ### ~~~ Meta ~~~
 
@@ -1058,16 +1061,6 @@
 - what does None mean
 - what day is None
 - what time is None
-
-## intent:blame_autocorrect
-- i blame siri
-- siri messed that up
-- oops bad siri
-- siri got that wrong
-- voice recognition fail
-- autocorrect fail
-- autocorrect disaster
-- why does autocorrect get everything wrong
 
 ## intent:hi_forest
 - hi forest
@@ -1088,3 +1081,54 @@
 - whats (None None)
 - what is (None None)
 - huh? none?
+
+
+
+
+
+
+
+## intent:emoji
+- 😀
+- 😄
+- 😆
+- 😊
+- 😃
+- 😏
+- 😍
+- 😘
+- 😳
+- 😌
+- 😆
+- 😁
+- 😉
+- 😒
+- 😅
+- 😓
+- 😩
+- 😔
+- 😞
+- 😖
+- 😨
+- 😰
+- 😣
+- 😢
+- 😭
+- 😂
+- 😲
+- 😱
+- 😫
+- 😠
+- 😡
+- 😤
+- 😪
+- 😋
+- 😷
+- 😎
+- 😵
+- 👿
+- 😈
+- 😐
+- 😶
+- 😇
+- 👅

@@ -544,8 +544,17 @@
 - totes [awesome](super)
 - [cool](super)
 - so [cool](super)
+- thats so [cool](super)
 - totally [cool](super)
 - [cool](super) beans
+- thats [cool](super)
+- [epic](super)
+- thats [amazing](super)
+- thats [awesome](super)
+- thats so [awesome](super)
+- thats totally [awesome](super)
+- thats [epic](super)
+
 
 - [epic](super)
 - [fantastic](super)
@@ -718,6 +727,17 @@
 - youre way off
 - what we have here here is a failure to communicate
 - communication breakdown
+- back up
+- go back
+
+- we didnt pick a day
+- we didnt pick a date
+- we didnt pick a time
+- you didn't hear me correctly
+- None is wrong
+- what does None mean
+- what day is None
+- what time is None
 
 ## intent:nvrmnd
 - nvmnd
@@ -1052,16 +1072,6 @@
 
 ### ~~~ Meta ~~~
 
-## intent:backup
-- we didnt pick a day
-- we didnt pick a date
-- we didnt pick a time
-- you didn't hear me correctly
-- None is wrong
-- what does None mean
-- what day is None
-- what time is None
-
 ## intent:hi_forest
 - hi forest
 - hello forest
@@ -1081,11 +1091,6 @@
 - whats (None None)
 - what is (None None)
 - huh? none?
-
-
-
-
-
 
 
 ## intent:emoji
@@ -1132,3 +1137,31 @@
 - 😶
 - 😇
 - 👅
+
+
+## intent:integer
+- 1
+- 2
+- 3
+- 4
+- 5
+- 6
+- 7
+- 8
+- 9
+- 10
+- 11
+- 12
+- 13
+- 14
+- 15
+- 16
+- 17
+- 18
+- 19
+- 20
+- 21
+- 22
+- 23
+- 24
+- 25

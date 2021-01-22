@@ -9,10 +9,10 @@
     "email_form": {
       "slots": []
     },
-    "who_form": {
+    "when_form": {
       "slots": []
     },
-    "when_form": {
+    "who_form": {
       "slots": []
     },
     "utter_pick_a_day": {
@@ -24,37 +24,40 @@
     "utter_bye": {
       "slots": []
     },
-    "utter_ask_howcanihelp": {
+    "utter_thanks": {
       "slots": []
     },
-    "utter_wassup": {
-      "slots": []
-    },
-    "action_send_invite": {
-      "slots": []
-    },
-    "utter_super_good": {
+    "utter_ok": {
       "slots": []
     },
     "utter_ask_schedule_call_discuss": {
       "slots": []
     },
-    "action_chat": {
-      "slots": []
-    },
-    "utter_thanks": {
+    "utter_ask_howcanihelp": {
       "slots": []
     },
     "utter_working_on": {
       "slots": []
     },
-    "utter_yw": {
+    "action_send_invite": {
+      "slots": []
+    },
+    "action_chat": {
+      "slots": []
+    },
+    "utter_ask_change_what": {
+      "slots": []
+    },
+    "utter_im_a_scheduling_agent": {
       "slots": []
     },
     "utter_ask_date": {
       "slots": []
     },
-    "utter_ask_change_what": {
+    "utter_wassup": {
+      "slots": []
+    },
+    "utter_sorry_dont_understand": {
       "slots": []
     },
     "utter_ask_day": {
@@ -63,22 +66,22 @@
     "utter_ask_time_day": {
       "slots": []
     },
-    "utter_ask_time_date": {
-      "slots": []
-    },
     "utter_looking_forward": {
       "slots": []
     },
     "utter_zorobot": {
       "slots": []
     },
+    "utter_yw": {
+      "slots": []
+    },
     "utter_corona_bot": {
       "slots": []
     },
-    "utter_sorry_dont_understand": {
+    "action_date_parts": {
       "slots": []
     },
-    "utter_im_a_scheduling_agent": {
+    "utter_super": {
       "slots": []
     }
   },
@@ -96,7 +99,7 @@
     "rasa_core.policies.form_policy.FormPolicy",
     "rasa_core.policies.fallback.FallbackPolicy"
   ],
-  "trained_at": "20210121-200840",
+  "trained_at": "20210122-015554",
   "rasa_core": "0.13.8",
   "tensorflow": "1.12.0",
   "sklearn": "0.20.2"

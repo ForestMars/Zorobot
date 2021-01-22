@@ -77,16 +77,18 @@ class ActionCheckDate(Action):
         date_dirty = tracker.get_slot('month_and_date')  # CRF
         DATE = tracker.get_slot('DATE')  # Spacy NER fallback (pretrained)
 
-        if date_dirty:
+        if date_dirty is not None:
             grok = kr.Grok()
             # returns list containing month and day parts, or None.
             date_clean = grok.clean_date_str(date_dirty)
-        elif DATE:
+        elif DATE is not None:
             grok = kr.Grok()
             # unlike clean_day, returns [month_name], [day] and not [month_no], [day]
             date_clean = grok.clean_date_str(DATE)
+        else:
+            return
 
-        if date_clean is not None:
+        if date_clean is not None:  # If should be unnecessary.
             month_num, month_name = kr.month_name_and_num(date_clean[0])
             #slots.append(SlotSet('month_name', date_clean[0]))
             slots.append(SlotSet('date_month', month_num))
@@ -448,6 +450,16 @@ class WhoForm(FormAction):
     def required_slots(tracker):
         return ["nou"]
 
+    def request_next_slot(self, dispatcher, tracker, domain):
+        for slot in self.required_slots(tracker):
+
+            if slot == 'nou':
+                who = tracker.get_slot(slot)
+                if who is None:
+                    dispatcher.utter_template("utter_ask_{}".format(slot), tracker)
+                    return [SlotSet('nou', None)]
+
+
     def submit(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict]:
         return []
 
@@ -489,11 +501,16 @@ class WhenForm(FormAction):
         return ["DATE", "Time"]
 
     def request_next_slot(self, dispatcher, tracker, domain):
+        intent = tracker.latest_message['intent'].get('name')
+        if intent == 'nvrmnd':
+            return
+
         for slot in self.required_slots(tracker):
 
             if slot == 'DATE':
                 date = tracker.get_slot(slot)
-                
+
+
                 # Preprocess vague/bad dates.
                 if isinstance(date, str):
                     #if tracker.get_slot(slot) is not None and self.preprocess_vague_date(dispatcher, tracker.get_slot(slot)) == True:
@@ -516,23 +533,24 @@ class WhenForm(FormAction):
                 kwargs = {}
 
                 if slot == 'DATE':
-                    print('it is')
                     if tracker.get_slot('DATE') is None and tracker.get_slot('Day') is not None:
                         date = tracker.get_slot('Day')
                         dispatcher.utter_message("What's a a good time for you " + date + "?")
                         SlotSet('DATE', date)
 
                     else:
-                        print('this SHOULD fire')
                         dispatcher.utter_template("utter_ask_{}".format(slot), tracker, **kwargs)
-                        print('why didnt it'    )
                         date = tracker.get_slot('DATE')
                         date = self.validate_DATE(True, dispatcher, tracker, domain)
 
                     return [SlotSet('DATE', date)]
 
                 if slot == 'Time':
+                    print('slot is time')
                     date = tracker.get_slot('DATE')
+                    if date is None:
+                        print('we got it')
+                        return
                     if isinstance(date, str):
                         date_list = []
                         date_list+=[date]
@@ -556,9 +574,11 @@ class WhenForm(FormAction):
                             #    self.msg = "Sorry, let me ask that again " # Could also use random.choice here.
                             #dispatcher.utter_message(self.msg)
 
-                        dispatcher.utter_template("utter_ask_{}".format(slot), tracker, **kwargs)
-                        Time = tracker.get_slot('Time')
-                        Time = self.validate_Time(True, dispatcher, tracker, domain)
+
+                            dispatcher.utter_template("utter_ask_{}".format(slot), tracker, **kwargs)
+                            Time = tracker.get_slot('Time')
+                            Time = self.validate_Time(True, dispatcher, tracker, domain)
+
                         return [SlotSet('Time', Time)]
 
     def clean_date(self, dispatcher, tracker):
@@ -793,3 +813,6 @@ class ActionRepeatSomething(Action):
             i -= 1
 
         return []
+
+# intent= tracker.latest_message[‘intent’].get(‘name’)
+# tracker.latest_message[‘entities’]

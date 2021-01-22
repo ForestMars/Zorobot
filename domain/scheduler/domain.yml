@@ -375,6 +375,7 @@ actions:
 - utter_thanks
 - utter_yw
 - utter_welcome
+- utter_smiley
 
 # ~~~~~~~~~~ Who
 - utter_who
@@ -927,7 +928,8 @@ templates:
   - text: I am sorry, I didn't get that. Could you please repeat your query?
   - text: I am not sure what you are aiming for.
 
-
+  utter_smiley:
+  - text: 🙂
   utter_soami:
   - text: So am I!
 

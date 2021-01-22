@@ -12,6 +12,10 @@
 - are you able to [schedule a meeting](activity)
 - are you able to [set up a call](activity:have a call)
 - are you able to [set up a meeting](activity)
+- are you are able to [book a zom call](activity:Zoom) with forest?
+- and you are able to [book a zom call](activity:Zoom) with forest?
+- are you are able to [book a zoom call](activity:Zoom) with forest?
+- and you are able to [book a zoom call](activity:Zoom) with forest?
 
 - can i [schedule a meeting](activity) with [Forest](fm)
 - can i [schedule a call](activity) with [Forest](fm)
@@ -198,6 +202,9 @@
 - lets [hang out in your garden](activity:hang out in the garden)
 - do you want [me](pov:you) to [come over](activity)
 - do you want [me](pov:you) to [come over](activity) [tonight](When)
+
+- can you schdule a zoom call with Foesst?
+
 
 ## intent:ask_availability
 
@@ -1111,6 +1118,11 @@
 - how about [07/11](DATE)
 - how about [8-12](DATE)
 
+- [monday](Day) is good for me
+- [tuesday](Day) is good for me
+- [wednesday](Day) works for me
+- [thursday](Day) could work
+
 ## intent:suggest_time
 - [1p](Time)
 - [2p](Time)
@@ -1256,11 +1268,11 @@
 - lets do [10:30 AM](Time)
 - lets do [9:30AM](Time)
 - lets do [930AM](Time)
-- lets do [12:00](Time)
-- lets do [1:30 pm](Time)
-- lets do [4:30pm](Time)
-- lets do [930am](Time)
-- lets do [3p](Time)
+- lets say [12:00](Time)
+- lets say [1:30 pm](Time)
+- lets say [4:30pm](Time)
+- can we say [930am](Time)
+- can we say [3p](Time)
 - lets aim for [930AM](Time)
 - lets aim for [12:00](Time)
 - lets aim for [1:30 pm](Time)
@@ -1319,20 +1331,6 @@
 - i have [2:30](Time) open
 - i have  [4:00](Time) available
 - you know what [11:45](Time) looks good
-- [monday](Day) is good for me
-- [tuesday](Day) is good for me
-- [wednesday](Day) works for me
-- [thursday](Day) could work
-- sure [friday](Day) sounds good
-- that [day](vague_When) is good
-- ok great lets do that
-- OK, [Thursday](Day) at 2:00 works for me
-- OK, [Friday](Day) at 3:00 works for me too
-- OK, [Monday](Day) at 1:00 is good for me
-- OK, [Tuesday](Day) at 4:00 is good for me too
-- great lets shoot for [monday](Day)
-- ok lets aim for [monday](Day)
-
 
 ## intent:suggest_different_date
 - can we do [aug 8](DATE) instead
@@ -1516,11 +1514,15 @@
 - can you let me know what [a good time](When) for a call might be
 - is there a particular time thats good for you
 
-
-
-
-
-
+## intent:affirm_day
+- sure [friday](Day) sounds good
+- that [day](vague_When) is good
+- OK, [Thursday](Day) at 2:00 works for me
+- OK, [Friday](Day) at 3:00 works for me too
+- OK, [Monday](Day) at 1:00 is good for me
+- OK, [Tuesday](Day) at 4:00 is good for me too
+- great lets shoot for [monday](Day)
+- ok lets aim for [monday](Day)
 
 ## intent:affirm_time
 - [10:00](Time) looks good

@@ -2,6 +2,10 @@
 * thanks OR thx
   - utter_yw
 
+## no worries
+* np
+  - utter_smiley
+
 ## omw
 * omw
   - utter_looking_forward
@@ -29,10 +33,18 @@
 * ruabot
   - utter_zorobot
 
+## nvrmnd
+* nvrmnd
+  - utter_ok
+
 ## confusion
 * confused
   - utter_ask_howcanihelp
 
+## lost
+* lost_the_plot
+  - utter_sorry
+  
 ## nonsequitur
 * nonsequitur
   - utter_sorry_dont_understand

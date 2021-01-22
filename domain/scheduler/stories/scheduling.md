@@ -157,17 +157,11 @@
 ## suggest date
 * suggest_date
   - action_check_date
-  - utter_ask_time_date
-
-## suggest different day
-* suggest_different_date
-  - action_check_date
-  - utter_ask_time_date
-
-## suggest different date
-* suggest_different_date
-  - action_check_date
-  - utter_ask_time_date
+  - action_preprocess_when
+  - when_form
+  - form{"name": "when_form"}
+  - form{"name": null}
+  - action_date_parts
 
 ## change day
 * change_day_or_time {"date_or_time": "day"}
@@ -189,8 +183,12 @@
 
 ## suggest day/time - "happy" path + yes
 * suggest_availability
-  - action_check_day
+  - action_preprocess_when
+  - when_form
+  - form{"name": "when_form"}
+  - form{"name": null}
   - action_date_parts
+  - action_check_day
   - utter_ask_time_day
 * suggest_time
   - action_check_time
@@ -211,6 +209,10 @@
 ## suggest date/time - "happy" path + thx
 * suggest_date
   - action_check_date
+  - action_preprocess_when
+  - when_form
+  - form{"name": "when_form"}
+  - form{"name": null}
   - action_date_parts
   - utter_ask_time_date
 * suggest_time
@@ -231,6 +233,10 @@
 ## suggest date/time - "happy" path + pick place
 * suggest_date
   - action_check_date
+  - action_preprocess_when
+  - when_form
+  - form{"name": "when_form"}
+  - form{"name": null}
   - action_date_parts
   - utter_ask_time_date
 * suggest_time
@@ -255,8 +261,12 @@
 
 ## suggest time of day - pick time + yes
 * suggest_availability
+  - action_preprocess_when
+  - when_form
+  - form{"name": "when_form"}
+  - form{"name": null}
+  - action_date_parts
   - action_check_day
-  - action_date_parts  
   - utter_ask_time_day
 * time_of_day
   - utter_ask_specific_time
@@ -279,7 +289,11 @@
 ## suggest date/time - "happy" path + thx BUT with email correction
 * suggest_date
   - action_check_date
-  - action_date_parts  
+  - action_preprocess_when
+  - when_form
+  - form{"name": "when_form"}
+  - form{"name": null}
+  - action_date_parts
   - utter_ask_time_date
 * suggest_time
   - action_check_time
@@ -306,7 +320,11 @@
 ## don't confirm >  change date  > don't confirm
 * suggest_date
   - action_check_date
-  - action_date_parts  
+  - action_preprocess_when
+  - when_form
+  - form{"name": "when_form"}
+  - form{"name": null}
+  - action_date_parts
   - utter_ask_time_date
 * suggest_time
   - action_check_time
@@ -332,7 +350,11 @@
 ## don't confirm >  change date  > don't confirm BUT with email correction
 * suggest_date
   - action_check_date
-  - action_date_parts  
+  - action_preprocess_when
+  - when_form
+  - form{"name": "when_form"}
+  - form{"name": null}
+  - action_date_parts
   - utter_ask_time_date
 * suggest_time
   - action_check_time

@@ -3,7 +3,59 @@
     "common_examples": [
       {
         "intent": "chatter",
-        "text": "I told you, I work in a factory"
+        "text": "Let's talk about something else"
+      },
+      {
+        "intent": "chatter",
+        "text": "lets talk about something else"
+      },
+      {
+        "intent": "chatter",
+        "text": "lets not talk about that"
+      },
+      {
+        "intent": "chatter",
+        "text": "lets move on"
+      },
+      {
+        "intent": "chatter",
+        "text": "lets not and say we did"
+      },
+      {
+        "intent": "chatter",
+        "text": "lets get to know each other"
+      },
+      {
+        "intent": "chatter",
+        "text": "lets get to know one another"
+      },
+      {
+        "intent": "chatter",
+        "text": "lets be friends"
+      },
+      {
+        "intent": "chatter",
+        "text": "I told you, I work in an office"
+      },
+      {
+        "intent": "chatter",
+        "text": "Where is Mr. Spock?"
+      },
+      {
+        "intent": "chatter",
+        "text": "can i meet them"
+      },
+      {
+        "intent": "chatter",
+        "text": "and you like animals"
+      },
+      {
+        "intent": "chatter",
+        "text": "do you help with scheduling?"
+      },
+      {
+        "intent": "chatter",
+        "text": "who do you help with scheduling?"
       },
       {
         "intent": "following_up",
@@ -5189,19 +5241,147 @@
       },
       {
         "intent": "super",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "cool",
+            "entity": "super"
+          }
+        ],
         "text": "cool"
       },
       {
         "intent": "super",
+        "entities": [
+          {
+            "start": 3,
+            "end": 7,
+            "value": "cool",
+            "entity": "super"
+          }
+        ],
         "text": "so cool"
       },
       {
         "intent": "super",
+        "entities": [
+          {
+            "start": 9,
+            "end": 13,
+            "value": "cool",
+            "entity": "super"
+          }
+        ],
+        "text": "thats so cool"
+      },
+      {
+        "intent": "super",
+        "entities": [
+          {
+            "start": 8,
+            "end": 12,
+            "value": "cool",
+            "entity": "super"
+          }
+        ],
         "text": "totally cool"
       },
       {
         "intent": "super",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "cool",
+            "entity": "super"
+          }
+        ],
         "text": "cool beans"
+      },
+      {
+        "intent": "super",
+        "entities": [
+          {
+            "start": 6,
+            "end": 10,
+            "value": "cool",
+            "entity": "super"
+          }
+        ],
+        "text": "thats cool"
+      },
+      {
+        "intent": "super",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "epic",
+            "entity": "super"
+          }
+        ],
+        "text": "epic"
+      },
+      {
+        "intent": "super",
+        "entities": [
+          {
+            "start": 6,
+            "end": 13,
+            "value": "amazing",
+            "entity": "super"
+          }
+        ],
+        "text": "thats amazing"
+      },
+      {
+        "intent": "super",
+        "entities": [
+          {
+            "start": 6,
+            "end": 13,
+            "value": "awesome",
+            "entity": "super"
+          }
+        ],
+        "text": "thats awesome"
+      },
+      {
+        "intent": "super",
+        "entities": [
+          {
+            "start": 9,
+            "end": 16,
+            "value": "awesome",
+            "entity": "super"
+          }
+        ],
+        "text": "thats so awesome"
+      },
+      {
+        "intent": "super",
+        "entities": [
+          {
+            "start": 14,
+            "end": 21,
+            "value": "awesome",
+            "entity": "super"
+          }
+        ],
+        "text": "thats totally awesome"
+      },
+      {
+        "intent": "super",
+        "entities": [
+          {
+            "start": 6,
+            "end": 10,
+            "value": "epic",
+            "entity": "super"
+          }
+        ],
+        "text": "thats epic"
       },
       {
         "intent": "super",
@@ -5930,6 +6110,46 @@
       {
         "intent": "lost_the_plot",
         "text": "communication breakdown"
+      },
+      {
+        "intent": "lost_the_plot",
+        "text": "back up"
+      },
+      {
+        "intent": "lost_the_plot",
+        "text": "go back"
+      },
+      {
+        "intent": "lost_the_plot",
+        "text": "we didnt pick a day"
+      },
+      {
+        "intent": "lost_the_plot",
+        "text": "we didnt pick a date"
+      },
+      {
+        "intent": "lost_the_plot",
+        "text": "we didnt pick a time"
+      },
+      {
+        "intent": "lost_the_plot",
+        "text": "you didn't hear me correctly"
+      },
+      {
+        "intent": "lost_the_plot",
+        "text": "None is wrong"
+      },
+      {
+        "intent": "lost_the_plot",
+        "text": "what does None mean"
+      },
+      {
+        "intent": "lost_the_plot",
+        "text": "what day is None"
+      },
+      {
+        "intent": "lost_the_plot",
+        "text": "what time is None"
       },
       {
         "intent": "nvrmnd",
@@ -7000,38 +7220,6 @@
         "text": "it would be great"
       },
       {
-        "intent": "backup",
-        "text": "we didnt pick a day"
-      },
-      {
-        "intent": "backup",
-        "text": "we didnt pick a date"
-      },
-      {
-        "intent": "backup",
-        "text": "we didnt pick a time"
-      },
-      {
-        "intent": "backup",
-        "text": "you didn't hear me correctly"
-      },
-      {
-        "intent": "backup",
-        "text": "None is wrong"
-      },
-      {
-        "intent": "backup",
-        "text": "what does None mean"
-      },
-      {
-        "intent": "backup",
-        "text": "what day is None"
-      },
-      {
-        "intent": "backup",
-        "text": "what time is None"
-      },
-      {
         "intent": "hi_forest",
         "text": "hi forest"
       },
@@ -7266,6 +7454,106 @@
       {
         "intent": "emoji",
         "text": "👅"
+      },
+      {
+        "intent": "integer",
+        "text": "1"
+      },
+      {
+        "intent": "integer",
+        "text": "2"
+      },
+      {
+        "intent": "integer",
+        "text": "3"
+      },
+      {
+        "intent": "integer",
+        "text": "4"
+      },
+      {
+        "intent": "integer",
+        "text": "5"
+      },
+      {
+        "intent": "integer",
+        "text": "6"
+      },
+      {
+        "intent": "integer",
+        "text": "7"
+      },
+      {
+        "intent": "integer",
+        "text": "8"
+      },
+      {
+        "intent": "integer",
+        "text": "9"
+      },
+      {
+        "intent": "integer",
+        "text": "10"
+      },
+      {
+        "intent": "integer",
+        "text": "11"
+      },
+      {
+        "intent": "integer",
+        "text": "12"
+      },
+      {
+        "intent": "integer",
+        "text": "13"
+      },
+      {
+        "intent": "integer",
+        "text": "14"
+      },
+      {
+        "intent": "integer",
+        "text": "15"
+      },
+      {
+        "intent": "integer",
+        "text": "16"
+      },
+      {
+        "intent": "integer",
+        "text": "17"
+      },
+      {
+        "intent": "integer",
+        "text": "18"
+      },
+      {
+        "intent": "integer",
+        "text": "19"
+      },
+      {
+        "intent": "integer",
+        "text": "20"
+      },
+      {
+        "intent": "integer",
+        "text": "21"
+      },
+      {
+        "intent": "integer",
+        "text": "22"
+      },
+      {
+        "intent": "integer",
+        "text": "23"
+      },
+      {
+        "intent": "integer",
+        "text": "24"
+      },
+      {
+        "intent": "integer",
+        "text": "25"
       },
       {
         "intent": "remember_me",
@@ -12960,6 +13248,10 @@
           }
         ],
         "text": "do you want me to come over tonight"
+      },
+      {
+        "intent": "lets_do",
+        "text": "can you schdule a zoom call with Foesst?"
       },
       {
         "intent": "ask_availability",
@@ -25132,6 +25424,54 @@
         "text": "how about 8-12"
       },
       {
+        "intent": "suggest_date",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "monday",
+            "entity": "Day"
+          }
+        ],
+        "text": "monday is good for me"
+      },
+      {
+        "intent": "suggest_date",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "tuesday",
+            "entity": "Day"
+          }
+        ],
+        "text": "tuesday is good for me"
+      },
+      {
+        "intent": "suggest_date",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "wednesday",
+            "entity": "Day"
+          }
+        ],
+        "text": "wednesday works for me"
+      },
+      {
+        "intent": "suggest_date",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "thursday",
+            "entity": "Day"
+          }
+        ],
+        "text": "thursday could work"
+      },
+      {
         "intent": "suggest_time",
         "entities": [
           {
@@ -26839,61 +27179,61 @@
         "intent": "suggest_time",
         "entities": [
           {
-            "start": 8,
-            "end": 13,
+            "start": 9,
+            "end": 14,
             "value": "12:00",
             "entity": "Time"
           }
         ],
-        "text": "lets do 12:00"
+        "text": "lets say 12:00"
       },
       {
         "intent": "suggest_time",
         "entities": [
           {
-            "start": 8,
-            "end": 15,
+            "start": 9,
+            "end": 16,
             "value": "1:30 pm",
             "entity": "Time"
           }
         ],
-        "text": "lets do 1:30 pm"
+        "text": "lets say 1:30 pm"
       },
       {
         "intent": "suggest_time",
         "entities": [
           {
-            "start": 8,
-            "end": 14,
+            "start": 9,
+            "end": 15,
             "value": "4:30pm",
             "entity": "Time"
           }
         ],
-        "text": "lets do 4:30pm"
+        "text": "lets say 4:30pm"
       },
       {
         "intent": "suggest_time",
         "entities": [
           {
-            "start": 8,
-            "end": 13,
+            "start": 11,
+            "end": 16,
             "value": "930am",
             "entity": "Time"
           }
         ],
-        "text": "lets do 930am"
+        "text": "can we say 930am"
       },
       {
         "intent": "suggest_time",
         "entities": [
           {
-            "start": 8,
-            "end": 10,
+            "start": 11,
+            "end": 13,
             "value": "3p",
             "entity": "Time"
           }
         ],
-        "text": "lets do 3p"
+        "text": "can we say 3p"
       },
       {
         "intent": "suggest_time",
@@ -27596,154 +27936,6 @@
           }
         ],
         "text": "you know what 11:45 looks good"
-      },
-      {
-        "intent": "suggest_time",
-        "entities": [
-          {
-            "start": 0,
-            "end": 6,
-            "value": "monday",
-            "entity": "Day"
-          }
-        ],
-        "text": "monday is good for me"
-      },
-      {
-        "intent": "suggest_time",
-        "entities": [
-          {
-            "start": 0,
-            "end": 7,
-            "value": "tuesday",
-            "entity": "Day"
-          }
-        ],
-        "text": "tuesday is good for me"
-      },
-      {
-        "intent": "suggest_time",
-        "entities": [
-          {
-            "start": 0,
-            "end": 9,
-            "value": "wednesday",
-            "entity": "Day"
-          }
-        ],
-        "text": "wednesday works for me"
-      },
-      {
-        "intent": "suggest_time",
-        "entities": [
-          {
-            "start": 0,
-            "end": 8,
-            "value": "thursday",
-            "entity": "Day"
-          }
-        ],
-        "text": "thursday could work"
-      },
-      {
-        "intent": "suggest_time",
-        "entities": [
-          {
-            "start": 5,
-            "end": 11,
-            "value": "friday",
-            "entity": "Day"
-          }
-        ],
-        "text": "sure friday sounds good"
-      },
-      {
-        "intent": "suggest_time",
-        "entities": [
-          {
-            "start": 5,
-            "end": 8,
-            "value": "day",
-            "entity": "vague_When"
-          }
-        ],
-        "text": "that day is good"
-      },
-      {
-        "intent": "suggest_time",
-        "text": "ok great lets do that"
-      },
-      {
-        "intent": "suggest_time",
-        "entities": [
-          {
-            "start": 4,
-            "end": 12,
-            "value": "Thursday",
-            "entity": "Day"
-          }
-        ],
-        "text": "OK, Thursday at 2:00 works for me"
-      },
-      {
-        "intent": "suggest_time",
-        "entities": [
-          {
-            "start": 4,
-            "end": 10,
-            "value": "Friday",
-            "entity": "Day"
-          }
-        ],
-        "text": "OK, Friday at 3:00 works for me too"
-      },
-      {
-        "intent": "suggest_time",
-        "entities": [
-          {
-            "start": 4,
-            "end": 10,
-            "value": "Monday",
-            "entity": "Day"
-          }
-        ],
-        "text": "OK, Monday at 1:00 is good for me"
-      },
-      {
-        "intent": "suggest_time",
-        "entities": [
-          {
-            "start": 4,
-            "end": 11,
-            "value": "Tuesday",
-            "entity": "Day"
-          }
-        ],
-        "text": "OK, Tuesday at 4:00 is good for me too"
-      },
-      {
-        "intent": "suggest_time",
-        "entities": [
-          {
-            "start": 21,
-            "end": 27,
-            "value": "monday",
-            "entity": "Day"
-          }
-        ],
-        "text": "great lets shoot for monday"
-      },
-      {
-        "intent": "suggest_time",
-        "entities": [
-          {
-            "start": 16,
-            "end": 22,
-            "value": "monday",
-            "entity": "Day"
-          }
-        ],
-        "text": "ok lets aim for monday"
       },
       {
         "intent": "suggest_different_date",
@@ -29692,6 +29884,102 @@
       {
         "intent": "vague_When",
         "text": "is there a particular time thats good for you"
+      },
+      {
+        "intent": "affirm_day",
+        "entities": [
+          {
+            "start": 5,
+            "end": 11,
+            "value": "friday",
+            "entity": "Day"
+          }
+        ],
+        "text": "sure friday sounds good"
+      },
+      {
+        "intent": "affirm_day",
+        "entities": [
+          {
+            "start": 5,
+            "end": 8,
+            "value": "day",
+            "entity": "vague_When"
+          }
+        ],
+        "text": "that day is good"
+      },
+      {
+        "intent": "affirm_day",
+        "entities": [
+          {
+            "start": 4,
+            "end": 12,
+            "value": "Thursday",
+            "entity": "Day"
+          }
+        ],
+        "text": "OK, Thursday at 2:00 works for me"
+      },
+      {
+        "intent": "affirm_day",
+        "entities": [
+          {
+            "start": 4,
+            "end": 10,
+            "value": "Friday",
+            "entity": "Day"
+          }
+        ],
+        "text": "OK, Friday at 3:00 works for me too"
+      },
+      {
+        "intent": "affirm_day",
+        "entities": [
+          {
+            "start": 4,
+            "end": 10,
+            "value": "Monday",
+            "entity": "Day"
+          }
+        ],
+        "text": "OK, Monday at 1:00 is good for me"
+      },
+      {
+        "intent": "affirm_day",
+        "entities": [
+          {
+            "start": 4,
+            "end": 11,
+            "value": "Tuesday",
+            "entity": "Day"
+          }
+        ],
+        "text": "OK, Tuesday at 4:00 is good for me too"
+      },
+      {
+        "intent": "affirm_day",
+        "entities": [
+          {
+            "start": 21,
+            "end": 27,
+            "value": "monday",
+            "entity": "Day"
+          }
+        ],
+        "text": "great lets shoot for monday"
+      },
+      {
+        "intent": "affirm_day",
+        "entities": [
+          {
+            "start": 16,
+            "end": 22,
+            "value": "monday",
+            "entity": "Day"
+          }
+        ],
+        "text": "ok lets aim for monday"
       },
       {
         "intent": "affirm_time",
@@ -33604,6 +33892,18 @@
         "entities": [
           {
             "start": 0,
+            "end": 6,
+            "value": "Ashley",
+            "entity": "nou"
+          }
+        ],
+        "text": "Ashley"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 0,
             "end": 5,
             "value": "Betty",
             "entity": "nou"
@@ -33616,24 +33916,12 @@
         "entities": [
           {
             "start": 0,
-            "end": 6,
-            "value": "Sandra",
+            "end": 8,
+            "value": "brittany",
             "entity": "nou"
           }
         ],
-        "text": "Sandra"
-      },
-      {
-        "intent": "thisis",
-        "entities": [
-          {
-            "start": 0,
-            "end": 6,
-            "value": "Ashley",
-            "entity": "nou"
-          }
-        ],
-        "text": "Ashley"
+        "text": "brittany"
       },
       {
         "intent": "thisis",
@@ -34390,6 +34678,18 @@
           }
         ],
         "text": "Doris"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Sandra",
+            "entity": "nou"
+          }
+        ],
+        "text": "Sandra"
       },
       {
         "intent": "thisis",

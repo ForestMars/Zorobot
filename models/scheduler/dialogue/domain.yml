@@ -43,6 +43,7 @@ actions:
 - utter_who
 - utter_nicetohearfromu
 - ask_where
+- utter_ask_when
 - utter_confirm_location
 - utter_sure_we_can
 - utter_pick_a_day
@@ -92,13 +93,9 @@ actions:
 - utter_timeofday
 - utter_send_invite
 - utter_lmk_when_here
-- utter_super_good
-- utter_super_great
+- utter_super
 - utter_wunderbar
 - utter_forsooth
-- utter_nice
-- utter_awesome
-- utter_cool
 - utter_restart
 - utter_zoro
 - utter_zoro_greet
@@ -265,8 +262,6 @@ intents:
 - inform:
     use_entities: true
 - whats_none:
-    use_entities: true
-- awe:
     use_entities: true
 - enthusiasm:
     use_entities: true
@@ -609,7 +604,7 @@ slots:
     - different
   super:
     auto_fill: true
-    initial_value: null
+    initial_value: amaze
     type: rasa_core.slots.UnfeaturizedSlot
   time:
     auto_fill: true
@@ -720,6 +715,8 @@ templates:
   - text: What's a good time for you to have a call on ({Day}) {month_name} {day_of_month}?
   utter_ask_time_day:
   - text: What's a good time for you on {Day} {month_name} {day_ordinal} to {activity}?
+  utter_ask_when:
+  - text: When would you like to do that?
   utter_ask_where:
   - text: Where should we meet?
   - text: Where would you like to meet?
@@ -727,8 +724,6 @@ templates:
   - text: Who is this please?
   utter_await_response:
   - text: Ok, I await your update.
-  utter_awesome:
-  - text: Awesome!
   utter_best_email_is:
   - text: Best email to use is themarsgroup
   utter_best_number_is:
@@ -757,8 +752,6 @@ templates:
   - text: Sounds good. We'll meet at {place}
   utter_confirm_phone_number:
   - text: Thanks, I have your number as {Phone}. Is that correct?
-  utter_cool:
-  - text: cool
   utter_cool_cat:
   - text: I'm sure {cat} is a cool cat.
   utter_corona_bot:
@@ -850,8 +843,6 @@ templates:
   utter_money_money_money:
   - text: https://www.youtube.com/watch?v=RYxJC3idnxk
   - text: https://www.youtube.com/watch?v=-0kcet4aPpQ
-  utter_nice:
-  - text: Nice!
   utter_nicetohearfromu:
   - text: Nice to hear from you {nou}
   utter_no_worries:
@@ -927,13 +918,19 @@ templates:
   - text: How is 11:00?
   utter_super:
   - text: So much {super}
-  utter_super_good:
+  - text: amazing
+  - text: Awesome!
+  - text: Cool!
+  - text: Epic!
+  - text: how marvelous
+  - text: nice
+  - text: sounds wonderful
   - text: Really good to hear
-  utter_super_great:
   - text: great
   - text: Great
   - text: ok, great
   - text: Great!
+  - text: So much win
   utter_sure:
   - text: Sure.
   utter_sure_we_can:

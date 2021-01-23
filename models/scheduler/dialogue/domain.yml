@@ -40,6 +40,8 @@ actions:
 - utter_thanks
 - utter_yw
 - utter_welcome
+- utter_smiley
+- utter_eyeroll
 - utter_who
 - utter_nicetohearfromu
 - ask_where
@@ -769,6 +771,8 @@ templates:
   - text: I'll do my best
   - text: I'll try my best
   - text: I'll try to answer as best I can
+  utter_eyeroll:
+  - text: 🙄
   utter_familiar:
   - text: That sounds fmailiar
   utter_final_confirm:
@@ -899,7 +903,7 @@ templates:
   - text: Ok great {nou}, Shall we confirm for {Day}, {month_name} {day_ordinal} at
       {time_hour}:{time_minutes}?
   utter_smiley:
-  - text: 🙄
+  - text: 🙂
   utter_soami:
   - text: So am I!
   utter_sorry:

@@ -104,15 +104,11 @@ class Send():
 
 
 
-
-
-
-
 if __name__ == '__main__':
     #cal_test = CalendarInvite()
     #cal_test.send_invite(call)
     sendres = {}
-    sendres['Name'] = "Neil"
+    sendres['Name'] = "Name"
     sendres['From'] = "themarsgroup@gmail.com"
     sendres['To'] = "lostjournals@gmail.com"
     sendres['Subject'] = "Name Resume"
@@ -121,7 +117,6 @@ if __name__ == '__main__':
         sender.send_email(sendres)
     except Exception as e:
         print("oopsie, ", e)
-
 
 
 # Ca. https://www.w3.org/Protocols/rfc1341/7_2_Multipart.html

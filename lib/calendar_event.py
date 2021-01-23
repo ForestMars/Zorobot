@@ -77,10 +77,11 @@ class CalendarInvite():
         part_cal = MIMEText(ical,'calendar;method=REQUEST')
         msgAlternative = MIMEMultipart('alternative')
         msg.attach(msgAlternative)
-        ical_attach = MIMEBase('application/ics',' ;name="%s"'%("invite.ics"))
+        ical_attach = MIMEBase('application/ics',"attachment; filename=%s" % ("invite.ics"))
         ical_attach.set_payload(ical)
         encode_base64(ical_attach)
-        ical_attach.add_header('Content-Disposition', 'attachment; filename="%s"'%("invite.ics"))
+        # @FIXME
+        ical_attach.add_header('Content-Disposition', "attachment; filename=%s" % "invite.ics")
         email_attach = MIMEText('', 'text/html')
         encode_base64(email_attach)
         email_attach.add_header('Content-Transfer-Encoding', "")

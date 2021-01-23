@@ -2,14 +2,14 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
-        "date_or_time",
-        "res"
+        "res",
+        "date_or_time"
       ]
     },
-    "email_form": {
+    "when_form": {
       "slots": []
     },
-    "when_form": {
+    "email_form": {
       "slots": []
     },
     "who_form": {
@@ -21,67 +21,64 @@
     "utter_np": {
       "slots": []
     },
+    "utter_ask_howcanihelp": {
+      "slots": []
+    },
     "utter_bye": {
       "slots": []
     },
     "utter_thanks": {
       "slots": []
     },
-    "utter_ok": {
-      "slots": []
-    },
     "utter_ask_schedule_call_discuss": {
-      "slots": []
-    },
-    "utter_ask_howcanihelp": {
-      "slots": []
-    },
-    "utter_working_on": {
       "slots": []
     },
     "action_send_invite": {
       "slots": []
     },
-    "action_chat": {
+    "utter_yw": {
       "slots": []
     },
     "utter_ask_change_what": {
       "slots": []
     },
-    "utter_im_a_scheduling_agent": {
+    "utter_looking_forward": {
+      "slots": []
+    },
+    "action_chat": {
       "slots": []
     },
     "utter_ask_date": {
       "slots": []
     },
-    "utter_wassup": {
-      "slots": []
-    },
-    "utter_sorry_dont_understand": {
-      "slots": []
-    },
-    "utter_ask_day": {
+    "utter_sorry": {
       "slots": []
     },
     "utter_ask_time_day": {
       "slots": []
     },
-    "utter_looking_forward": {
+    "action_date_parts": {
       "slots": []
     },
     "utter_zorobot": {
       "slots": []
     },
-    "utter_yw": {
+    "utter_super": {
       "slots": []
     },
     "utter_corona_bot": {
       "slots": []
     },
-    "action_date_parts": {
+    "utter_working_on": {
       "slots": []
     },
-    "utter_super": {
+    "utter_im_a_scheduling_agent": {
+      "slots": []
+    },
+    "utter_smiley": {
+      "slots": []
+    },
+    "utter_ask_day": {
       "slots": []
     }
   },
@@ -99,7 +96,7 @@
     "rasa_core.policies.form_policy.FormPolicy",
     "rasa_core.policies.fallback.FallbackPolicy"
   ],
-  "trained_at": "20210122-015554",
+  "trained_at": "20210122-110231",
   "rasa_core": "0.13.8",
   "tensorflow": "1.12.0",
   "sklearn": "0.20.2"

@@ -376,6 +376,7 @@ actions:
 - utter_yw
 - utter_welcome
 - utter_smiley
+- utter_eyeroll
 
 # ~~~~~~~~~~ Who
 - utter_who
@@ -887,7 +888,7 @@ templates:
 # ETC
   utter_shabbat:
   - text: Shabbat shalom!
-  utter_smiley:
+  utter_eyeroll:
   - text: 🙄
 
 # META

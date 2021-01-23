@@ -101,6 +101,21 @@
 * affirm OR thanks
   - action_send_invite
 
+## lets do w/ cancel
+* greet
+  - who_form
+  - form{"name": "who_form"}
+  - form{"name": null}
+  - utter_nicetohearfromu
+  - utter_ask_howcanihelp
+* lets_do
+  - action_preprocess_when  
+  - when_form
+  - form{"name": "when_form"}
+  - form{"name": null}
+* nvrmnd  
+  - action_listen
+
 ## availability
 * ask_availability
   - who_form

@@ -8,10 +8,7 @@
 - lets get to know each other
 - lets get to know one another
 - lets be friends
-- I told you, I work in an office
-- Where is Mr. Spock?
-- can i meet them
-- and you like animals
+- we were having a conversation
 
 - do you help with scheduling?
 - who do you help with scheduling?
@@ -20,3 +17,8 @@
 
 - what does anna mean
 - does ann stand for anything
+
+- I told you, I work in an office
+- Where is Mr. Spock?
+- can i meet them
+- and you like animals

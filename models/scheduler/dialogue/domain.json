@@ -242,6 +242,8 @@
     "prev_utter_thanks",
     "prev_utter_yw",
     "prev_utter_welcome",
+    "prev_utter_smiley",
+    "prev_utter_eyeroll",
     "prev_utter_who",
     "prev_utter_nicetohearfromu",
     "prev_ask_where",

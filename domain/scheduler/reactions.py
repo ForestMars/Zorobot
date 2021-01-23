@@ -10,7 +10,7 @@ import time
 from typing import Any, Text, Dict, List, Union
 
 from rasa_core_sdk import Action, Tracker
-from rasa_core_sdk.events import SlotSet
+from rasa_core_sdk.events import SlotSet, FollowupAction
 from rasa_core_sdk.executor import CollectingDispatcher
 from rasa_core_sdk.forms import FormAction
 #from rasa_core_sdk.events import UserUtteranceReverted
@@ -330,7 +330,7 @@ class ActionSendInvite(Action):  # Action Invite
         call['time'] = str(call['hour']) + " " + \
                            str(call['mins']) + " " + " EST"
 
-        cal_date = datetime.date(2020, call['month_no'], call['day'])
+        cal_date = datetime.date(2021, call['month_no'], call['day'])
         call_time = datetime.time(call['hour'], int(call['mins']))
         call['datetime'] = datetime.datetime.combine(cal_date, call_time)
 
@@ -501,15 +501,18 @@ class WhenForm(FormAction):
         return ["DATE", "Time"]
 
     def request_next_slot(self, dispatcher, tracker, domain):
+
+        # You really don't want dialog logic in an action, and yet that's how RASA does this.
         intent = tracker.latest_message['intent'].get('name')
         if intent == 'nvrmnd':
-            return
+            dispatcher.utter_message("ok")
+            #return [FollowupAction('action_listen')]
+            return self.deactivate()
 
         for slot in self.required_slots(tracker):
 
             if slot == 'DATE':
                 date = tracker.get_slot(slot)
-
 
                 # Preprocess vague/bad dates.
                 if isinstance(date, str):
@@ -612,7 +615,6 @@ class WhenForm(FormAction):
 
     def preprocess_day_or_date(self, dispatcher, tracker, DATE):
 
-        input(DATE)
         if DATE.isalpha() and len(DATE.split()) == 1:  # We most assuredly have a day, not a date. (Execept when Spacy NER fails.)
             try:
                 date_orig = tracker.get_slot('DATE')
@@ -646,6 +648,11 @@ class WhenForm(FormAction):
 
 
     def validate_DATE(self, val, dispatcher, tracker, domain):
+
+        intent = tracker.latest_message['intent'].get('name')
+        if intent == 'nvrmnd':
+            dispatcher.utter_message("ok now")
+            return self.deactivate()
 
         day_dirty = tracker.get_slot('Day')  # CRF NER outperforms Spacy NER
         if day_dirty is not None:
@@ -715,9 +722,12 @@ class ActionDateParts(Action):
         slots = []
         when = {}
         date = tracker.get_slot('DATE')
+        day = tracker.get_slot('Day')
 
-        if date is None:
-            dispatcher.utter_message("What day do you have in mind?") #  This should use an utterance template.
+        if date is None and day is None:
+            return [FollowupAction('action_listen')]
+        elif date is None:
+            dispatcher.utter_message("What day might you have in mind?") #  This should use an utterance template.
 
             return # rly?
 

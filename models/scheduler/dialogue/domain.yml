@@ -1,6 +1,8 @@
 %YAML 1.1
 ---
 actions:
+- action_confirm_event
+- action_check_event
 - action_date_parts
 - action_send_invite
 - action_send_res
@@ -319,6 +321,8 @@ intents:
     use_entities: true
 - following_up:
     use_entities: true
+- confirm_call:
+    use_entities: true
 - ask_to_confirm_call:
     use_entities: true
 - ask_are_we_confirmed:
@@ -516,6 +520,14 @@ slots:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.BooleanSlot
+  confirm_email:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.BooleanSlot
+  confirm_event:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.BooleanSlot
   corona_bot:
     auto_fill: true
     initial_value: (845) 868-0258
@@ -661,9 +673,9 @@ templates:
   utter_anyway:
   - text: hemingway...
   utter_ask_DATE:
-  - text: What's a good day for you?
-  - text: What's your preferred day?
-  - text: What would be your preferred day?
+  - text: What's a good day for you to {activity}?
+  - text: What's your preferred day to {activity}?
+  - text: What would be your preferred day for that?
   utter_ask_Date:
   - text: What Date are we shooting for ??
   utter_ask_Time:
@@ -785,6 +797,7 @@ templates:
   - text: Forsooth
   utter_give_email_again:
   - text: Pretty sure I have your email, but what is it?
+  - text: Here's what I have for your email {email}
   utter_give_it_again:
   - text: Pretty sure I have it, but what is it?
   utter_give_phone_again:
@@ -929,7 +942,6 @@ templates:
   - text: how marvelous
   - text: nice
   - text: sounds wonderful
-  - text: Really good to hear
   - text: great
   - text: Great
   - text: ok, great

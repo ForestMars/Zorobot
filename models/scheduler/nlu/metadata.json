@@ -54,6 +54,23 @@
             "class": "rasa_nlu.featurizers.spacy_featurizer.SpacyFeaturizer"
         },
         {
+            "analyzer": "word",
+            "token_pattern": "(?u)\\b\\w\\w+\\b",
+            "strip_accents": null,
+            "stop_words": null,
+            "min_df": 1,
+            "max_df": 1.0,
+            "min_ngram": 1,
+            "max_ngram": 1,
+            "max_features": null,
+            "lowercase": true,
+            "OOV_token": null,
+            "OOV_words": [],
+            "name": "intent_featurizer_count_vectors",
+            "featurizer_file": "intent_featurizer_count_vectors.pkl",
+            "class": "rasa_nlu.featurizers.count_vectors_featurizer.CountVectorsFeaturizer"
+        },
+        {
             "C": [
                 1,
                 2,
@@ -75,29 +92,12 @@
             "class": "rasa_nlu.classifiers.sklearn_intent_classifier.SklearnIntentClassifier"
         },
         {
-            "analyzer": "word",
-            "token_pattern": "(?u)\\b\\w\\w+\\b",
-            "strip_accents": null,
-            "stop_words": null,
-            "min_df": 1,
-            "max_df": 1.0,
-            "min_ngram": 1,
-            "max_ngram": 1,
-            "max_features": null,
-            "lowercase": true,
-            "OOV_token": null,
-            "OOV_words": [],
-            "name": "intent_featurizer_count_vectors",
-            "featurizer_file": "intent_featurizer_count_vectors.pkl",
-            "class": "rasa_nlu.featurizers.count_vectors_featurizer.CountVectorsFeaturizer"
-        },
-        {
             "name": "ner_synonyms",
             "synonyms_file": "entity_synonyms.json",
             "class": "rasa_nlu.extractors.entity_synonyms.EntitySynonymMapper"
         }
     ],
     "training_data": "training_data.json",
-    "trained_at": "20210122-030603",
+    "trained_at": "20210124-002943",
     "rasa_nlu_version": "0.14.6"
 }

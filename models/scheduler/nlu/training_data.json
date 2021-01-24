@@ -2,6 +2,42 @@
   "rasa_nlu_data": {
     "common_examples": [
       {
+        "intent": "let_me_know",
+        "text": "can you let me know"
+      },
+      {
+        "intent": "let_me_know",
+        "text": "can you let me know when"
+      },
+      {
+        "intent": "let_me_know",
+        "text": "can you let me know if"
+      },
+      {
+        "intent": "let_me_know",
+        "text": "can you tell me"
+      },
+      {
+        "intent": "let_me_know",
+        "text": "can you tell me if"
+      },
+      {
+        "intent": "let_me_know",
+        "text": "can you tell me when"
+      },
+      {
+        "intent": "let_me_know",
+        "text": "can you let me know what"
+      },
+      {
+        "intent": "let_me_know",
+        "text": "can you let me know where"
+      },
+      {
+        "intent": "chatter",
+        "text": "we have to talk"
+      },
+      {
         "intent": "chatter",
         "text": "Let's talk about something else"
       },
@@ -35,11 +71,55 @@
       },
       {
         "intent": "chatter",
+        "text": "we were having a conversation"
+      },
+      {
+        "intent": "chatter",
+        "text": "what is your name"
+      },
+      {
+        "intent": "chatter",
+        "text": "what are you thinking"
+      },
+      {
+        "intent": "chatter",
+        "text": "when can you have it done by?"
+      },
+      {
+        "intent": "chatter",
+        "text": "do you help with scheduling?"
+      },
+      {
+        "intent": "chatter",
+        "text": "who do you help with scheduling?"
+      },
+      {
+        "intent": "chatter",
+        "text": "scheduling must be very complicated"
+      },
+      {
+        "intent": "chatter",
+        "text": "do you like doing scheduling"
+      },
+      {
+        "intent": "chatter",
+        "text": "what does anna mean"
+      },
+      {
+        "intent": "chatter",
+        "text": "does ann stand for anything"
+      },
+      {
+        "intent": "chatter",
         "text": "I told you, I work in an office"
       },
       {
         "intent": "chatter",
         "text": "Where is Mr. Spock?"
+      },
+      {
+        "intent": "chatter",
+        "text": "The Avengers broke up"
       },
       {
         "intent": "chatter",
@@ -51,11 +131,59 @@
       },
       {
         "intent": "chatter",
-        "text": "do you help with scheduling?"
+        "text": "what is the best opening in chess?"
       },
       {
         "intent": "chatter",
-        "text": "who do you help with scheduling?"
+        "text": "what's a good opening in chess"
+      },
+      {
+        "intent": "chatter",
+        "text": "which is the better opening for white in chess, e4 or d4?"
+      },
+      {
+        "intent": "chatter",
+        "text": "what do you think of"
+      },
+      {
+        "intent": "chatter",
+        "text": "what is the best"
+      },
+      {
+        "intent": "chatter",
+        "text": "i told you"
+      },
+      {
+        "intent": "chatter",
+        "text": "do you know a lot about"
+      },
+      {
+        "intent": "chatter",
+        "text": "is that a good one"
+      },
+      {
+        "intent": "chatter",
+        "text": "is any question going to get the same answer from you?"
+      },
+      {
+        "intent": "chatter",
+        "text": "should we tell Russia our chess strategy?"
+      },
+      {
+        "intent": "chatter",
+        "text": "today is NOT the 27th, what planet are you on?"
+      },
+      {
+        "intent": "chatter",
+        "text": "i found the bug"
+      },
+      {
+        "intent": "chatter",
+        "text": "what did you find"
+      },
+      {
+        "intent": "chatter",
+        "text": "hey can you do something for me?"
       },
       {
         "intent": "following_up",
@@ -329,6 +457,42 @@
         "intent": "time_of_day",
         "entities": [
           {
+            "start": 0,
+            "end": 16,
+            "value": "tomorrow morning",
+            "entity": "TOD"
+          }
+        ],
+        "text": "tomorrow morning"
+      },
+      {
+        "intent": "time_of_day",
+        "entities": [
+          {
+            "start": 0,
+            "end": 18,
+            "value": "tomorrow afternoon",
+            "entity": "TOD"
+          }
+        ],
+        "text": "tomorrow afternoon"
+      },
+      {
+        "intent": "time_of_day",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "tomorrow evening",
+            "entity": "TOD"
+          }
+        ],
+        "text": "tomorrow evening"
+      },
+      {
+        "intent": "time_of_day",
+        "entities": [
+          {
             "start": 10,
             "end": 17,
             "value": "morning",
@@ -336,6 +500,48 @@
           }
         ],
         "text": "how about morning"
+      },
+      {
+        "intent": "time_of_day",
+        "entities": [
+          {
+            "start": 10,
+            "end": 26,
+            "value": "tomorrow morning",
+            "entity": "TOD"
+          }
+        ],
+        "text": "how about tomorrow morning"
+      },
+      {
+        "intent": "time_of_day",
+        "entities": [
+          {
+            "start": 10,
+            "end": 28,
+            "value": "tomorrow afternoon",
+            "entity": "TOD"
+          }
+        ],
+        "text": "how about tomorrow afternoon"
+      },
+      {
+        "intent": "time_of_day",
+        "entities": [
+          {
+            "start": 10,
+            "end": 16,
+            "value": "Sunday",
+            "entity": "Day"
+          },
+          {
+            "start": 17,
+            "end": 24,
+            "value": "evening",
+            "entity": "TOD"
+          }
+        ],
+        "text": "how about Sunday evening"
       },
       {
         "intent": "time_of_day",
@@ -498,6 +704,78 @@
           }
         ],
         "text": "morning could work, depending on what time"
+      },
+      {
+        "intent": "time_of_day",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "evening",
+            "entity": "TOD"
+          }
+        ],
+        "text": "evening could work"
+      },
+      {
+        "intent": "time_of_day",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "later today",
+            "entity": "TOD"
+          }
+        ],
+        "text": "later today"
+      },
+      {
+        "intent": "time_of_day",
+        "entities": [
+          {
+            "start": 0,
+            "end": 20,
+            "value": "later this afternoon",
+            "entity": "TOD"
+          }
+        ],
+        "text": "later this afternoon"
+      },
+      {
+        "intent": "time_of_day",
+        "entities": [
+          {
+            "start": 0,
+            "end": 18,
+            "value": "later this morning",
+            "entity": "TOD"
+          }
+        ],
+        "text": "later this morning"
+      },
+      {
+        "intent": "time_of_day",
+        "entities": [
+          {
+            "start": 0,
+            "end": 13,
+            "value": "later tonight",
+            "entity": "TOD"
+          }
+        ],
+        "text": "later tonight"
+      },
+      {
+        "intent": "time_of_day",
+        "entities": [
+          {
+            "start": 0,
+            "end": 13,
+            "value": "anytime today",
+            "entity": "TOD"
+          }
+        ],
+        "text": "anytime today"
       },
       {
         "intent": "confirm_call",
@@ -2429,43 +2707,11 @@
       },
       {
         "intent": "do_you_have_my_email",
-        "text": "do you have my email"
-      },
-      {
-        "intent": "do_you_have_my_email",
-        "text": "do you still have my email"
-      },
-      {
-        "intent": "do_you_have_my_email",
         "text": "did i give you my email"
       },
       {
         "intent": "do_you_have_my_email",
-        "text": "do you know my email"
-      },
-      {
-        "intent": "do_you_have_my_email",
-        "text": "do you need my email"
-      },
-      {
-        "intent": "do_you_have_my_email",
-        "text": "do you know what my email is"
-      },
-      {
-        "intent": "do_you_have_my_email",
-        "text": "you have my email right"
-      },
-      {
-        "intent": "do_you_have_my_email",
-        "text": "you already have my email right"
-      },
-      {
-        "intent": "do_you_have_my_email",
-        "text": "i already gave you my email"
-      },
-      {
-        "intent": "do_you_have_my_email",
-        "text": "did i give you my email"
+        "text": "did i give you my email address"
       },
       {
         "intent": "do_you_have_my_email",
@@ -2473,7 +2719,27 @@
       },
       {
         "intent": "do_you_have_my_email",
-        "text": "lets make sure you have my best email"
+        "text": "didi tell you my email address"
+      },
+      {
+        "intent": "do_you_have_my_email",
+        "text": "do you have my email"
+      },
+      {
+        "intent": "do_you_have_my_email",
+        "text": "do you have my email address"
+      },
+      {
+        "intent": "do_you_have_my_email",
+        "text": "do you know my email"
+      },
+      {
+        "intent": "do_you_have_my_email",
+        "text": "do you know my email addres"
+      },
+      {
+        "intent": "do_you_have_my_email",
+        "text": "do you know what my email is"
       },
       {
         "intent": "do_you_have_my_email",
@@ -2481,7 +2747,55 @@
       },
       {
         "intent": "do_you_have_my_email",
+        "text": "do you still have my email"
+      },
+      {
+        "intent": "do_you_have_my_email",
+        "text": "do you still have my email address"
+      },
+      {
+        "intent": "do_you_have_my_email",
+        "text": "i already gave you my email"
+      },
+      {
+        "intent": "do_you_have_my_email",
         "text": "im pretty sure you have my email"
+      },
+      {
+        "intent": "do_you_have_my_email",
+        "text": "is my email on file"
+      },
+      {
+        "intent": "do_you_have_my_email",
+        "text": "lets make sure you have my best email"
+      },
+      {
+        "intent": "do_you_have_my_email",
+        "text": "what email address do you have for me"
+      },
+      {
+        "intent": "do_you_have_my_email",
+        "text": "what email do you have for me"
+      },
+      {
+        "intent": "do_you_have_my_email",
+        "text": "what is my email address"
+      },
+      {
+        "intent": "do_you_have_my_email",
+        "text": "what is my email?"
+      },
+      {
+        "intent": "do_you_have_my_email",
+        "text": "whats my email address"
+      },
+      {
+        "intent": "do_you_have_my_email",
+        "text": "you already have my email right"
+      },
+      {
+        "intent": "do_you_have_my_email",
+        "text": "you have my email right"
       },
       {
         "intent": "should_i_call_you",
@@ -3910,6 +4224,10 @@
       {
         "intent": "deny",
         "text": "thats a terrible idea"
+      },
+      {
+        "intent": "deny",
+        "text": "thats wrong"
       },
       {
         "intent": "idk",
@@ -6017,43 +6335,7 @@
       },
       {
         "intent": "lost_the_plot",
-        "text": "i think you misheard me"
-      },
-      {
-        "intent": "lost_the_plot",
-        "text": "you may have misheard me"
-      },
-      {
-        "intent": "lost_the_plot",
-        "text": "let me try that again"
-      },
-      {
-        "intent": "lost_the_plot",
-        "text": "did you get that"
-      },
-      {
-        "intent": "lost_the_plot",
-        "text": "i think you missed that one"
-      },
-      {
-        "intent": "lost_the_plot",
-        "text": "you may be a little confused"
-      },
-      {
-        "intent": "lost_the_plot",
-        "text": "i think you missed that one"
-      },
-      {
-        "intent": "lost_the_plot",
-        "text": "you lost me"
-      },
-      {
-        "intent": "lost_the_plot",
-        "text": "i think youre Lost"
-      },
-      {
-        "intent": "lost_the_plot",
-        "text": "i think you lost the plot"
+        "text": "back up"
       },
       {
         "intent": "lost_the_plot",
@@ -6061,15 +6343,27 @@
       },
       {
         "intent": "lost_the_plot",
-        "text": "try again"
+        "text": "communication breakdown"
       },
       {
         "intent": "lost_the_plot",
-        "text": "lets try that again"
+        "text": "did you get that"
       },
       {
         "intent": "lost_the_plot",
-        "text": "i dont think you heard what i said"
+        "text": "do over"
+      },
+      {
+        "intent": "lost_the_plot",
+        "text": "forget it"
+      },
+      {
+        "intent": "lost_the_plot",
+        "text": "go back"
+      },
+      {
+        "intent": "lost_the_plot",
+        "text": "huh"
       },
       {
         "intent": "lost_the_plot",
@@ -6077,11 +6371,59 @@
       },
       {
         "intent": "lost_the_plot",
-        "text": "oops i did it again"
+        "text": "i dont think you heard what i said"
+      },
+      {
+        "intent": "lost_the_plot",
+        "text": "i think you lost the plot"
+      },
+      {
+        "intent": "lost_the_plot",
+        "text": "i think you misheard me"
+      },
+      {
+        "intent": "lost_the_plot",
+        "text": "i think you missed that one"
+      },
+      {
+        "intent": "lost_the_plot",
+        "text": "i think youre Lost"
+      },
+      {
+        "intent": "lost_the_plot",
+        "text": "let me try that again"
+      },
+      {
+        "intent": "lost_the_plot",
+        "text": "lets try that again"
       },
       {
         "intent": "lost_the_plot",
         "text": "oops"
+      },
+      {
+        "intent": "lost_the_plot",
+        "text": "oops i did it again"
+      },
+      {
+        "intent": "lost_the_plot",
+        "text": "scratch that"
+      },
+      {
+        "intent": "lost_the_plot",
+        "text": "thats not what i meant"
+      },
+      {
+        "intent": "lost_the_plot",
+        "text": "thats not what i said"
+      },
+      {
+        "intent": "lost_the_plot",
+        "text": "try again"
+      },
+      {
+        "intent": "lost_the_plot",
+        "text": "wait what"
       },
       {
         "intent": "lost_the_plot",
@@ -6093,11 +6435,31 @@
       },
       {
         "intent": "lost_the_plot",
-        "text": "huh"
+        "text": "what we have here here is a failure to communicate"
       },
       {
         "intent": "lost_the_plot",
-        "text": "wait what"
+        "text": "you didnt hear me right"
+      },
+      {
+        "intent": "lost_the_plot",
+        "text": "you lost me"
+      },
+      {
+        "intent": "lost_the_plot",
+        "text": "you misheard me"
+      },
+      {
+        "intent": "lost_the_plot",
+        "text": "you may be a little confused"
+      },
+      {
+        "intent": "lost_the_plot",
+        "text": "you may have misheard me"
+      },
+      {
+        "intent": "lost_the_plot",
+        "text": "youre not listening"
       },
       {
         "intent": "lost_the_plot",
@@ -6105,19 +6467,11 @@
       },
       {
         "intent": "lost_the_plot",
-        "text": "what we have here here is a failure to communicate"
+        "text": "wait, what"
       },
       {
         "intent": "lost_the_plot",
-        "text": "communication breakdown"
-      },
-      {
-        "intent": "lost_the_plot",
-        "text": "back up"
-      },
-      {
-        "intent": "lost_the_plot",
-        "text": "go back"
+        "text": "wait, what?"
       },
       {
         "intent": "lost_the_plot",
@@ -6158,6 +6512,14 @@
       {
         "intent": "nvrmnd",
         "text": "nvrmnd"
+      },
+      {
+        "intent": "nvrmnd",
+        "text": "nvmind"
+      },
+      {
+        "intent": "nvrmnd",
+        "text": "nvrmind"
       },
       {
         "intent": "nvrmnd",
@@ -6526,18 +6888,6 @@
       {
         "intent": "bye",
         "text": "good night"
-      },
-      {
-        "intent": "bye",
-        "text": "goodnight alice"
-      },
-      {
-        "intent": "bye",
-        "text": "goodnight bob"
-      },
-      {
-        "intent": "bye",
-        "text": "goodnight eve"
       },
       {
         "intent": "bye",
@@ -10883,6 +11233,54 @@
         "intent": "lets_do",
         "entities": [
           {
+            "start": 20,
+            "end": 35,
+            "value": "Zoom",
+            "entity": "activity"
+          }
+        ],
+        "text": "are you are able to book a zom call with forest?"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 20,
+            "end": 35,
+            "value": "Zoom",
+            "entity": "activity"
+          }
+        ],
+        "text": "and you are able to book a zom call with forest?"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 20,
+            "end": 36,
+            "value": "Zoom",
+            "entity": "activity"
+          }
+        ],
+        "text": "are you are able to book a zoom call with forest?"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 20,
+            "end": 36,
+            "value": "Zoom",
+            "entity": "activity"
+          }
+        ],
+        "text": "and you are able to book a zoom call with forest?"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
             "start": 6,
             "end": 24,
             "value": "schedule a meeting",
@@ -11394,6 +11792,66 @@
           }
         ],
         "text": "can you add a meeting to forest's calendar"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 16,
+            "end": 31,
+            "value": "schedule a call",
+            "entity": "activity"
+          }
+        ],
+        "text": "can you help me schedule a call"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 16,
+            "end": 36,
+            "value": "Zoom",
+            "entity": "activity"
+          }
+        ],
+        "text": "can you help me schedule a zoom call"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 16,
+            "end": 34,
+            "value": "schedule a meeting",
+            "entity": "activity"
+          }
+        ],
+        "text": "can you help me schedule a meeting"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 16,
+            "end": 30,
+            "value": "book a meeting",
+            "entity": "activity"
+          }
+        ],
+        "text": "can you help me book a meeting"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 16,
+            "end": 34,
+            "value": "Zoom",
+            "entity": "activity"
+          }
+        ],
+        "text": "can you help me set up a zoom call"
       },
       {
         "intent": "lets_do",
@@ -18136,7 +18594,7 @@
             "start": 31,
             "end": 40,
             "value": "next week",
-            "entity": "vague_When"
+            "entity": "When"
           }
         ],
         "text": "what's the best day to meet up next week"
@@ -21766,6 +22224,48 @@
           }
         ],
         "text": "shall we confirm for tuesday then?"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 9,
+            "end": 22,
+            "value": "anytime today",
+            "entity": "TOD"
+          },
+          {
+            "start": 70,
+            "end": 84,
+            "value": "jump on a call",
+            "entity": "activity"
+          },
+          {
+            "start": 85,
+            "end": 93,
+            "value": "whenever",
+            "entity": "TOD"
+          },
+          {
+            "start": 95,
+            "end": 101,
+            "value": "Sunday",
+            "entity": "Day"
+          },
+          {
+            "start": 118,
+            "end": 122,
+            "value": "noon",
+            "entity": "Time"
+          },
+          {
+            "start": 126,
+            "end": 135,
+            "value": "after 4pm",
+            "entity": "Time"
+          }
+        ],
+        "text": "I’m free anytime today except 1-3pm. Tomorrow is kinda loose, I could jump on a call whenever. Sunday I could talk at noon or after 4pm"
       },
       {
         "intent": "suggest_different_day",
@@ -29598,7 +30098,7 @@
         "text": "can we do a different time instead"
       },
       {
-        "intent": "vague_When",
+        "intent": "vague_when",
         "entities": [
           {
             "start": 33,
@@ -29610,7 +30110,7 @@
         "text": "how is your availability looking this week"
       },
       {
-        "intent": "vague_When",
+        "intent": "vague_when",
         "entities": [
           {
             "start": 33,
@@ -29622,7 +30122,7 @@
         "text": "how is your availability looking next week"
       },
       {
-        "intent": "vague_When",
+        "intent": "vague_when",
         "entities": [
           {
             "start": 33,
@@ -29634,7 +30134,7 @@
         "text": "how is your availability looking the week after next"
       },
       {
-        "intent": "vague_When",
+        "intent": "vague_when",
         "entities": [
           {
             "start": 33,
@@ -29646,7 +30146,7 @@
         "text": "how is your availability looking the week after this"
       },
       {
-        "intent": "vague_When",
+        "intent": "vague_when",
         "entities": [
           {
             "start": 33,
@@ -29658,7 +30158,7 @@
         "text": "how is your availability looking not this week but next"
       },
       {
-        "intent": "vague_When",
+        "intent": "vague_when",
         "entities": [
           {
             "start": 33,
@@ -29670,7 +30170,7 @@
         "text": "how is your availability looking next week"
       },
       {
-        "intent": "vague_When",
+        "intent": "vague_when",
         "entities": [
           {
             "start": 29,
@@ -29682,7 +30182,7 @@
         "text": "whats your availability like this week"
       },
       {
-        "intent": "vague_When",
+        "intent": "vague_when",
         "entities": [
           {
             "start": 29,
@@ -29694,7 +30194,7 @@
         "text": "whats your availability like next week"
       },
       {
-        "intent": "vague_When",
+        "intent": "vague_when",
         "entities": [
           {
             "start": 6,
@@ -29706,7 +30206,7 @@
         "text": "whats this weekend look like"
       },
       {
-        "intent": "vague_When",
+        "intent": "vague_when",
         "entities": [
           {
             "start": 5,
@@ -29718,7 +30218,7 @@
         "text": "what this weekend look like"
       },
       {
-        "intent": "vague_When",
+        "intent": "vague_when",
         "entities": [
           {
             "start": 5,
@@ -29730,7 +30230,7 @@
         "text": "hows this weekend look"
       },
       {
-        "intent": "vague_When",
+        "intent": "vague_when",
         "entities": [
           {
             "start": 5,
@@ -29742,7 +30242,7 @@
         "text": "hows this weekend looking"
       },
       {
-        "intent": "vague_When",
+        "intent": "vague_when",
         "entities": [
           {
             "start": 6,
@@ -29754,7 +30254,7 @@
         "text": "whats your weekend look like"
       },
       {
-        "intent": "vague_When",
+        "intent": "vague_when",
         "entities": [
           {
             "start": 9,
@@ -29766,7 +30266,7 @@
         "text": "you free this weekend"
       },
       {
-        "intent": "vague_When",
+        "intent": "vague_when",
         "entities": [
           {
             "start": 13,
@@ -29778,7 +30278,7 @@
         "text": "are you free this weekend"
       },
       {
-        "intent": "vague_When",
+        "intent": "vague_when",
         "entities": [
           {
             "start": 17,
@@ -29790,7 +30290,7 @@
         "text": "do you have time this weekend"
       },
       {
-        "intent": "vague_When",
+        "intent": "vague_when",
         "entities": [
           {
             "start": 10,
@@ -29802,19 +30302,19 @@
         "text": "how about this weekend"
       },
       {
-        "intent": "vague_When",
+        "intent": "vague_when",
         "text": "tomorrow, monday or tuesday is fine. afternoons are best"
       },
       {
-        "intent": "vague_When",
+        "intent": "vague_when",
         "text": "either tomorrow or thursday"
       },
       {
-        "intent": "vague_When",
+        "intent": "vague_when",
         "text": "any day but friday"
       },
       {
-        "intent": "vague_When",
+        "intent": "vague_when",
         "entities": [
           {
             "start": 8,
@@ -29826,27 +30326,67 @@
         "text": "any day this week"
       },
       {
-        "intent": "vague_When",
+        "intent": "vague_when",
+        "entities": [
+          {
+            "start": 0,
+            "end": 20,
+            "value": "later this afternoon",
+            "entity": "When"
+          },
+          {
+            "start": 24,
+            "end": 40,
+            "value": "tomorrow morning",
+            "entity": "When"
+          }
+        ],
         "text": "later this afternoon or tomorrow morning"
       },
       {
-        "intent": "vague_When",
+        "intent": "vague_when",
+        "entities": [
+          {
+            "start": 7,
+            "end": 12,
+            "value": "today",
+            "entity": "Day"
+          },
+          {
+            "start": 16,
+            "end": 24,
+            "value": "tomorrow",
+            "entity": "Day"
+          }
+        ],
         "text": "either today or tomorrow are good"
       },
       {
-        "intent": "vague_When",
+        "intent": "vague_when",
+        "entities": [
+          {
+            "start": 19,
+            "end": 27,
+            "value": "sometime",
+            "entity": "When"
+          }
+        ],
         "text": "can we have a call sometime"
       },
       {
-        "intent": "vague_When",
+        "intent": "vague_when",
+        "entities": [
+          {
+            "start": 30,
+            "end": 38,
+            "value": "sometime",
+            "entity": "When"
+          }
+        ],
         "text": "are you avavilable for a call sometime"
       },
       {
-        "intent": "vague_When",
-        "text": "whats your availability for a call"
-      },
-      {
-        "intent": "vague_When",
+        "intent": "vague_when",
         "entities": [
           {
             "start": 6,
@@ -29858,7 +30398,7 @@
         "text": "whats a good time for you to have a call"
       },
       {
-        "intent": "vague_When",
+        "intent": "vague_when",
         "entities": [
           {
             "start": 6,
@@ -29870,7 +30410,7 @@
         "text": "whats a good time for us to have a call"
       },
       {
-        "intent": "vague_When",
+        "intent": "vague_when",
         "entities": [
           {
             "start": 25,
@@ -29882,8 +30422,32 @@
         "text": "can you let me know what a good time for a call might be"
       },
       {
-        "intent": "vague_When",
+        "intent": "vague_when",
         "text": "is there a particular time thats good for you"
+      },
+      {
+        "intent": "vague_when",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "anytime",
+            "entity": "When"
+          }
+        ],
+        "text": "anytime could work"
+      },
+      {
+        "intent": "vague_when",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "any time",
+            "entity": "When"
+          }
+        ],
+        "text": "any time could work"
       },
       {
         "intent": "affirm_day",
@@ -36867,54 +37431,6 @@
         "intent": "thisis",
         "entities": [
           {
-            "start": 4,
-            "end": 9,
-            "value": "Wally",
-            "entity": "nou"
-          }
-        ],
-        "text": "its Wally. Do you remember me?"
-      },
-      {
-        "intent": "thisis",
-        "entities": [
-          {
-            "start": 5,
-            "end": 10,
-            "value": "Misha",
-            "entity": "nou"
-          }
-        ],
-        "text": "it's Misha from Long Island. Do you remember me?"
-      },
-      {
-        "intent": "thisis",
-        "entities": [
-          {
-            "start": 4,
-            "end": 9,
-            "value": "Celia",
-            "entity": "nou"
-          }
-        ],
-        "text": "its Celia from the other night. Do you remember me?"
-      },
-      {
-        "intent": "thisis",
-        "entities": [
-          {
-            "start": 8,
-            "end": 20,
-            "value": "dave brubeck",
-            "entity": "nou"
-          }
-        ],
-        "text": "its the dave brubeck"
-      },
-      {
-        "intent": "thisis",
-        "entities": [
-          {
             "start": 8,
             "end": 19,
             "value": "david jones",
@@ -36999,18 +37515,6 @@
         "intent": "thisis",
         "entities": [
           {
-            "start": 21,
-            "end": 32,
-            "value": "harry brown",
-            "entity": "nou"
-          }
-        ],
-        "text": "its the one and only harry brown"
-      },
-      {
-        "intent": "thisis",
-        "entities": [
-          {
             "start": 8,
             "end": 17,
             "value": "phil roth",
@@ -37030,18 +37534,6 @@
           }
         ],
         "text": "its the bruce campbell"
-      },
-      {
-        "intent": "thisis",
-        "entities": [
-          {
-            "start": 15,
-            "end": 28,
-            "value": "horace silver",
-            "entity": "nou"
-          }
-        ],
-        "text": "wassup its the horace silver"
       },
       {
         "intent": "thisis",
@@ -38085,90 +38577,6 @@
         "intent": "thisis",
         "entities": [
           {
-            "start": 4,
-            "end": 9,
-            "value": "chris",
-            "entity": "nou"
-          }
-        ],
-        "text": "its chris did you get a chance to look at the candidates i sent you"
-      },
-      {
-        "intent": "thisis",
-        "entities": [
-          {
-            "start": 4,
-            "end": 8,
-            "value": "carl",
-            "entity": "nou"
-          }
-        ],
-        "text": "its carl, did you get a chance to look at the candidates i sent you"
-      },
-      {
-        "intent": "thisis",
-        "entities": [
-          {
-            "start": 4,
-            "end": 10,
-            "value": "dennis",
-            "entity": "nou"
-          }
-        ],
-        "text": "its dennis have you had a chance to review the candidates"
-      },
-      {
-        "intent": "thisis",
-        "entities": [
-          {
-            "start": 4,
-            "end": 8,
-            "value": "dave",
-            "entity": "nou"
-          }
-        ],
-        "text": "its dave, have you had a chance to review the candidates"
-      },
-      {
-        "intent": "thisis",
-        "entities": [
-          {
-            "start": 8,
-            "end": 12,
-            "value": "igor",
-            "entity": "nou"
-          }
-        ],
-        "text": "this is igor just checking in to see if you got the candidates I sent over"
-      },
-      {
-        "intent": "thisis",
-        "entities": [
-          {
-            "start": 8,
-            "end": 13,
-            "value": "kevin",
-            "entity": "nou"
-          }
-        ],
-        "text": "this is kevin did you get the resumes i sent over"
-      },
-      {
-        "intent": "thisis",
-        "entities": [
-          {
-            "start": 8,
-            "end": 13,
-            "value": "larry",
-            "entity": "nou"
-          }
-        ],
-        "text": "this is larry, did you get the candidates i sent over"
-      },
-      {
-        "intent": "thisis",
-        "entities": [
-          {
             "start": 12,
             "end": 18,
             "value": "Jackie",
@@ -39038,6 +39446,22 @@
         ]
       },
       {
+        "value": "Zoom",
+        "synonyms": [
+          "book a zom call",
+          "book a zoom call",
+          "schedule a zoom call",
+          "plan a Zoom call",
+          "schedule a Zoom meeting",
+          "set up a Zoom meeting",
+          "arrange a Zoom meeting",
+          "arrange for a Zoom meeting",
+          "book a Zoom meeting",
+          "have a zoom meeting",
+          "a zoom call"
+        ]
+      },
+      {
         "value": "meet",
         "synonyms": [
           "book a meeting",
@@ -39062,6 +39486,12 @@
         ]
       },
       {
+        "value": "zoom",
+        "synonyms": [
+          "set up a zoom call"
+        ]
+      },
+      {
         "value": "call me",
         "synonyms": [
           "call you"
@@ -39071,27 +39501,6 @@
         "value": "set up a Zoom call",
         "synonyms": [
           "book a Zoom call"
-        ]
-      },
-      {
-        "value": "Zoom",
-        "synonyms": [
-          "plan a Zoom call",
-          "schedule a Zoom meeting",
-          "set up a Zoom meeting",
-          "arrange a Zoom meeting",
-          "arrange for a Zoom meeting",
-          "book a Zoom meeting",
-          "have a zoom meeting",
-          "a zoom call",
-          "book a zoom call",
-          "schedule a zoom call"
-        ]
-      },
-      {
-        "value": "zoom",
-        "synonyms": [
-          "set up a zoom call"
         ]
       },
       {

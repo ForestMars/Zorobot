@@ -310,10 +310,7 @@
 - its [Ute](nou)
 - its [Veronica](nou)
 - its [Victoria](nou)
-- its [Wally](nou). Do you remember me?
-- it's [Misha](nou) from Long Island. Do you remember me?  
-- its [Celia](nou) from the other night. Do you remember me?
-- its the [dave brubeck](nou)
+
 - its the [david jones](nou)
 - its the [ed teller](nou)
 - its the [sonny sharrock](nou)
@@ -321,10 +318,8 @@
 - its the [steve irwin](nou)
 - its the [bill monroe](nou)
 - its the [alex bugnon](nou)
-- its the one and only [harry brown](nou)
 - its the [phil roth](nou)
 - its the [bruce campbell](nou)
-- wassup its the [horace silver](nou)
 - this is [adam](nou)
 - this is [beth](nou)
 - this is [cat](nou)
@@ -401,13 +396,7 @@
 - TY [Gene](nou)
 - it's [don](nou). just following up on my email
 - it's [ron](nou). i received your email and
-- its [chris](nou) did you get a chance to look at the candidates i sent you
-- its [carl](nou), did you get a chance to look at the candidates i sent you
-- its [dennis](nou) have you had a chance to review the candidates
-- its [dave](nou), have you had a chance to review the candidates
-- this is [igor](nou) just checking in to see if you got the candidates I sent over
-- this is [kevin](nou) did you get the resumes i sent over
-- this is [larry](nou), did you get the candidates i sent over
+
 - Hi, this is [Jackie](nou) from [Publicis](org)
 - [Tim](nou) from [Apple](org)
 - [Barry](nou) from [Netlix](org)

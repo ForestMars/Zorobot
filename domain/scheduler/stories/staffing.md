@@ -1,6 +1,16 @@
 ## are you hiring
 * ask_are_you_hiring OR heard_you_are_hiring
   - utter_ask_schedule_call_discuss
+* affirm
+  -  when_form
+  - form{"name": "when_form"}
+  - form{"name": null}
+
+## are you hiring
+* ask_are_you_hiring OR heard_you_are_hiring
+  - utter_ask_schedule_call_discuss
+* deny
+  - utter_ask_howcanihelp
 
 ## are you open to
 * ask_are_you_open_to

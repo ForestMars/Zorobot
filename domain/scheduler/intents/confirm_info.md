@@ -36,7 +36,13 @@
 - [morning](TOD)
 - [afternoon](TOD)
 - [evening](TOD)
+- [tomorrow morning](TOD)
+- [tomorrow afternoon](TOD)
+- [tomorrow evening](TOD)
 - how about [morning](TOD)
+- how about [tomorrow morning](TOD)
+- how about [tomorrow afternoon](TOD)
+- how about [Sunday](Day) [evening](TOD)
 - hows [morning](TOD) look
 - hows your [morning](TOD) look?
 - hows your [afternoon](TOD) look?
@@ -49,7 +55,12 @@
 - [morning](TOD) is much better for me
 - i have more time in the [afternoon](TOD) look
 - [morning](TOD) could work, depending on what time
-
+- [evening](TOD) could work
+- [later today](TOD)
+- [later this afternoon](TOD)
+- [later this morning](TOD)
+- [later tonight](TOD)
+- [anytime today](TOD)
 
 
 ### ~~~~~~~~~~~~~~~~~~~~~~~~~ React to proposed date time
@@ -251,6 +262,7 @@
 - heres my email in case you dont have it [werner@heisenberg.de](email)
 
 
+
 ## intent:change_email
 - wrong email
 - thats the wrong email
@@ -277,20 +289,29 @@
 - do you need my number
 
 ## intent:do_you_have_my_email
-- do you have my email
-- do you still have my email
 - did i give you my email
-- do you know my email
-- do you need my email
-- do you know what my email is
-- you have my email right
-- you already have my email right
-- i already gave you my email
-- did i give you my email
+- did i give you my email address
 - did i tell you my email
-- lets make sure you have my best email
+- didi tell you my email address
+- do you have my email
+- do you have my email address
+- do you know my email
+- do you know my email addres
+- do you know what my email is
 - do you need my email
+- do you still have my email
+- do you still have my email address
+- i already gave you my email
 - im pretty sure you have my email
+- is my email on file
+- lets make sure you have my best email
+- what email address do you have for me
+- what email do you have for me
+- what is my email address
+- what is my email?
+- whats my email address
+- you already have my email right
+- you have my email right
 
 ## intent:should_i_call_you
 - i should call you

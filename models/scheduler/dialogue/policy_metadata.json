@@ -18,16 +18,16 @@
     "utter_pick_a_day": {
       "slots": []
     },
-    "utter_np": {
-      "slots": []
-    },
     "utter_ask_howcanihelp": {
       "slots": []
     },
     "utter_bye": {
       "slots": []
     },
-    "utter_thanks": {
+    "utter_np": {
+      "slots": []
+    },
+    "utter_shall_we_confirm": {
       "slots": []
     },
     "utter_ask_schedule_call_discuss": {
@@ -36,49 +36,22 @@
     "action_send_invite": {
       "slots": []
     },
-    "utter_yw": {
+    "action_confirm_event": {
       "slots": []
     },
-    "utter_ask_change_what": {
+    "utter_confirm_best_email": {
       "slots": []
     },
-    "utter_looking_forward": {
+    "utter_thanks": {
       "slots": []
     },
-    "action_chat": {
+    "utter_give_email_again": {
       "slots": []
     },
     "utter_ask_date": {
       "slots": []
     },
-    "utter_sorry": {
-      "slots": []
-    },
     "utter_ask_time_day": {
-      "slots": []
-    },
-    "action_date_parts": {
-      "slots": []
-    },
-    "utter_zorobot": {
-      "slots": []
-    },
-    "utter_super": {
-      "slots": []
-    },
-    "utter_corona_bot": {
-      "slots": []
-    },
-    "utter_working_on": {
-      "slots": []
-    },
-    "utter_im_a_scheduling_agent": {
-      "slots": []
-    },
-    "utter_smiley": {
-      "slots": []
-    },
-    "utter_ask_day": {
       "slots": []
     }
   },
@@ -96,7 +69,7 @@
     "rasa_core.policies.form_policy.FormPolicy",
     "rasa_core.policies.fallback.FallbackPolicy"
   ],
-  "trained_at": "20210122-110231",
+  "trained_at": "20210124-055343",
   "rasa_core": "0.13.8",
   "tensorflow": "1.12.0",
   "sklearn": "0.20.2"

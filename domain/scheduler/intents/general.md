@@ -181,6 +181,7 @@
 - not gonna happen
 - im gonna have to say no
 - thats a terrible idea
+- thats wrong
 
 ## intent:idk
 - idk
@@ -703,33 +704,41 @@
 - what does that mean
 
 ## intent:lost_the_plot
-- do over
-- i think you misheard me
-- you may have misheard me
-- let me try that again
-- did you get that
-- i think you missed that one
-- you may be a little confused
-- i think you missed that one
-- you lost me
-- i think youre Lost
-- i think you lost the plot
+- back up
 - come again
-- try again
-- lets try that again
-- i dont think you heard what i said
+- communication breakdown
+- did you get that
+- do over
+- forget it
+- go back
+- huh
 - i dont think you got what i said
-- oops i did it again
+- i dont think you heard what i said
+- i think you lost the plot
+- i think you misheard me
+- i think you missed that one
+- i think youre Lost
+- let me try that again
+- lets try that again
 - oops
+- oops i did it again
+- scratch that
+- thats not what i meant
+- thats not what i said
+- try again
+- wait what
 - what
 - what did you say
-- huh
-- wait what
-- youre way off
 - what we have here here is a failure to communicate
-- communication breakdown
-- back up
-- go back
+- you didnt hear me right
+- you lost me
+- you misheard me
+- you may be a little confused
+- you may have misheard me
+- youre not listening
+- youre way off
+- wait, what
+- wait, what?
 
 - we didnt pick a day
 - we didnt pick a date
@@ -743,6 +752,8 @@
 ## intent:nvrmnd
 - nvmnd
 - nvrmnd
+- nvmind
+- nvrmind
 - nevermind
 - never mind
 - ive changed my mind
@@ -858,9 +869,6 @@
 - goodbye
 - goodnight
 - good night
-- goodnight alice
-- goodnight bob
-- goodnight eve
 - See you
 - See you later
 - cu

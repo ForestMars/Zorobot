@@ -1,6 +1,6 @@
 # actions.py - Define custom actions for message responses
 # -*- coding: utf-8 -*-
-# @TODO: Better logging.
+# @TODO: Better logging. Explain yourself.
 
 import datetime
 from datetime import datetime as dt
@@ -31,8 +31,6 @@ except ImportError:
     import build.src.convo as chat
 
 from build.src import date_time
-
-# Explain yourself.
 
 
 logger = logging.getLogger(__name__)
@@ -186,6 +184,82 @@ class ActionCheckDay(Action):
 
         # date here is month and day string?
         #ord_day = kr.ord_day_from_date(when['date'])
+        #msg_lmc = 'By ' + day_clean + ' you mean ' + \
+        #    str(when['date']) + ', right? Let me quickly check my schedule...'
+        #dispatcher.utter_message(msg_lmc)
+        #time.sleep(10)
+
+        when = kr.get_date_parts(when)
+        ymd = str(when['date']).split('-')
+        when['date_year'] = ymd[0]
+        when['month'] = ymd[1]
+        when['ord'] = ord_day
+        when['weekday'] = day_clean
+        when['Day'] = day_clean.capitalize()  # not used
+        month_name = kr.get_month_abbr_from_num(ymd[1])
+        when['month_name'] = month_name
+
+        slots.append(SlotSet('month_name', month_name))
+        slots.append(SlotSet('date_month', ymd[1]))
+        slots.append(SlotSet('day_of_month', ymd[2]))
+        slots.append(SlotSet('day_ordinal', when['ord']))
+        slots.append(SlotSet('date_year', ymd[0]))
+        slots.append(SlotSet('Day', when['Day']))
+
+
+        return slots
+
+
+class ActionCheckDayConfirm(Action):
+    # @TODO: confirm weekends. determine if it's "this friday" or "next friday"
+    def name(self):
+        return "action_check_day_confirm"
+
+    # @when - dict containing date + time components.
+    def validate(self, dispatcher, tracker, domain):
+        try:
+            return super().validate(dispatcher, tracker, domain)
+        except Exception as e:
+            print(e)
+            # could not extract entity
+            dispatcher.utter_message(
+                "Sorry, I really didn't get that \n"
+                "What's a good day for you?")
+
+            return []
+
+    # #TODO: run method should just make call to app api. (API First)
+    def run(self, dispatcher, tracker, domain):
+        slots = []
+        when = {}
+
+        # This guard block is not needed if we override the validate() menthod.
+        day_dirty = tracker.get_slot('Day')
+        if day_dirty is None:
+            day_dirty = tracker.get_slot('DATE')
+            slots.append(SlotSet('Day', day_dirty))
+
+        if day_dirty is None:
+            dispatcher.utter_message(
+                "Sorry, I didn't get that, what's a good day for you?")
+            return [(ActionRepeat)]
+
+        day_clean = kr.clean_day_str(day_dirty).capitalize()
+        # kill this which is too polymorphous.
+        day_clean = kr.day_abbr_to_full(day_clean)
+        if day_dirty != day_clean:
+            dispatcher.utter_message("Ok, " + day_clean)
+
+        # full-on datetime obj w/ TZ
+        if day_dirty != 'today':  # sub-optimal, move get_date_ function into clean_day_str
+            when['date'] = kr.get_date_from_weekday(day_clean)
+            ord_day = kr.ord_day_from_date(when['date'])
+        elif day_dirty == 'today':
+            when['date'] = kr.get_todays_date()
+            ord_day = kr.ord_day_from_date(when['date'])
+
+        # date here is month and day string?
+        #ord_day = kr.ord_day_from_date(when['date'])
         msg_lmc = 'By ' + day_clean + ' you mean ' + \
             str(when['date']) + ', right? Let me quickly check my schedule...'
         dispatcher.utter_message(msg_lmc)
@@ -216,6 +290,8 @@ class ActionCheckDay(Action):
             dispatcher.utter_message("Sorry, " + message)
 
         return slots
+
+
 
 
 class ActionCheckTime(Action):
@@ -412,6 +488,18 @@ class ActionUpdateContacts(Action):
         return slots
 
 
+class ActionConfirmEvent(Action):
+    def name(self):
+        return "action_confirm_event"
+
+    def run(self, dispatcher, tracker, domain):
+        slots = []
+        slots.append(SlotSet('confirm_event', True))
+
+        return slots
+
+
+
 class EmailForm(FormAction):
     def name(self):
         return "email_form"
@@ -504,9 +592,15 @@ class WhenForm(FormAction):
 
         # You really don't want dialog logic in an action, and yet that's how RASA does this.
         intent = tracker.latest_message['intent'].get('name')
-        if intent == 'nvrmnd':
+        if intent == 'nvrmnd':  # Command
             dispatcher.utter_message("ok")
-            #return [FollowupAction('action_listen')]
+            return self.deactivate()
+        elif intent == 'lost_the_plot':  # Fast Fail
+            dispatcher.utter_message("Sorry, I'll back up")
+            return self.deactivate()
+        # Positive Match
+        schedule_something = ['ask_availability', 'suggest_availability', 'suggest_time', 'vague_when', 'lets_do']
+        if intent not in schedule_something:
             return self.deactivate()
 
         for slot in self.required_slots(tracker):
@@ -516,10 +610,12 @@ class WhenForm(FormAction):
 
                 # Preprocess vague/bad dates.
                 if isinstance(date, str):
-                    #if tracker.get_slot(slot) is not None and self.preprocess_vague_date(dispatcher, tracker.get_slot(slot)) == True:
+                    # if tracker.get_slot(slot) is not None and self.preprocess_vague_date(dispatcher, tracker.get_slot(slot)) == True:
                     if date is not None and self.preprocess_vague_date(dispatcher, date) == True:
                         dispatcher.utter_template("utter_ask_{}".format(slot), tracker)
                         return [SlotSet(slot, None)]
+
+                # Juggle Multiple
                 """
                 elif isinstance(date, list):
                     for d in date:
@@ -549,14 +645,12 @@ class WhenForm(FormAction):
                     return [SlotSet('DATE', date)]
 
                 if slot == 'Time':
-                    print('slot is time')
                     date = tracker.get_slot('DATE')
                     if date is None:
-                        print('we got it')
                         return
                     if isinstance(date, str):
                         date_list = []
-                        date_list+=[date]
+                        date_list += [date]
                     elif isinstance(date, list):
                         date_list = date
                     for date in date_list:
@@ -577,7 +671,6 @@ class WhenForm(FormAction):
                             #    self.msg = "Sorry, let me ask that again " # Could also use random.choice here.
                             #dispatcher.utter_message(self.msg)
 
-
                             dispatcher.utter_template("utter_ask_{}".format(slot), tracker, **kwargs)
                             Time = tracker.get_slot('Time')
                             Time = self.validate_Time(True, dispatcher, tracker, domain)
@@ -593,7 +686,6 @@ class WhenForm(FormAction):
         if day_dirty is not None:
             day_clean = kr.clean_day_str(day_dirty).capitalize()
             day_clean = kr.day_abbr_to_full(day_clean)
-
 
             if day_dirty.lower().strip() not in ['today', '']:  # sub-optimal, move get_date_ function into clean_day_str
                 date_clean = kr.get_date_from_weekday(day_clean)
@@ -679,7 +771,7 @@ class WhenForm(FormAction):
                 [SlotSet("DATE", None)]
 
             # Exception should be handled sooner.
-            #if date_clean is not None:
+            # if date_clean is not None:
             #    self.date = date_clean.strftime("%Y-%m-%d")
 
             return date_clean
@@ -710,10 +802,8 @@ class WhenForm(FormAction):
         return slots
 
 
-
-
 class ActionDateParts(Action):
-    """ Rather than cramming this into the submit handler... """
+    """ Rather than cramming this into the submit handler; makes available to be used by other modules. """
 
     def name(self):
         return "action_date_parts"
@@ -725,29 +815,40 @@ class ActionDateParts(Action):
         day = tracker.get_slot('Day')
 
         if date is None and day is None:
+            dispatcher.utter_message("parts: both are none")
             return [FollowupAction('action_listen')]
-        elif date is None:
-            dispatcher.utter_message("What day might you have in mind?") #  This should use an utterance template.
+        elif date is None:  # There are exactly 7 logical operators.
+            dispatcher.utter_message("What date is that?") #  This should use an utterance template.
 
             return # rly?
 
+        # Datetime functions not available on *FE*
         when['date'] = tracker.get_slot('DATE')
-        when['date'] = dt.strptime(when['date'], '%Y-%m-%d')
-        when['weekday'] = when['date'].strftime("%A")
-        when['month'] = when['date'].strftime("%m")
-        when['day_of_month'] = when['date'].strftime("%d")
-        when['ord'] = kr.ordinal_from_int(int(when['day_of_month']))
-        when['date_year'] = when['date'].strftime("%Y")
-        when['Day'] = when['date'].strftime("%A")  # not used ?
-        when['month_name'] = when['date'].strftime("%b")
 
-        slots.append(SlotSet('month_name', when['month_name']))
-        slots.append(SlotSet('date_month', when['month']))
-        slots.append(SlotSet('day_of_month', when['day_of_month']))
-        slots.append(SlotSet('day_ordinal', when['ord']))
-        slots.append(SlotSet('date_year', when['date_year']))
-        slots.append(SlotSet('Day', when['Day']))
+        when['date'] = kr.validate_date_str(when['date'])
+        if when['date'] is not None:
+            dispatcher.utter_message(when['date'])
+            when['date'] = dt.strptime(when['date'], '%Y-%m-%d')
 
+            when['weekday'] = when['date'].strftime("%A")
+            when['month'] = when['date'].strftime("%m")
+            when['day_of_month'] = when['date'].strftime("%d")
+            when['ord'] = kr.ordinal_from_int(int(when['day_of_month']))
+            when['date_year'] = when['date'].strftime("%Y")
+            when['Day'] = when['date'].strftime("%A")  # not used ?
+            when['month_name'] = when['date'].strftime("%b")
+
+            slots.append(SlotSet('month_name', when['month_name']))
+            slots.append(SlotSet('date_month', when['month']))
+            slots.append(SlotSet('day_of_month', when['day_of_month']))
+            slots.append(SlotSet('day_ordinal', when['ord']))
+            slots.append(SlotSet('date_year', when['date_year']))
+            slots.append(SlotSet('Day', when['Day']))
+
+
+        elif when['date'] is None:
+            dispatcher.utter_message("we didn't get when-date")
+            return [FollowupAction('action_listen')]
         #msg = ' Let me quickly check my schedule for ' + when['Day'] + ' ' + when['month_name'] + ' ' + when['ord'] + ' at ' + when['hour'] +':'+ when['minutes']
         #msg = ' Let me quickly check my schedule for ' + when['Day'] + ' ' + when['month_name'] + ' ' + when['ord']
         #dispatcher.utter_message(msg)
@@ -760,7 +861,7 @@ class ActionDateParts(Action):
 
 
 class ActionChat(Action):
-    """ User inputs not matching an active domain are considered general conversation and handled as such. """
+    """ User inputs not matching an active domain are considered tangential conversation and handled as such. """
 
     def name(self):
         return "action_chat"
@@ -777,8 +878,8 @@ class ActionChat(Action):
         return slots
 
 
-class ActionRepeat(Action):
-    """ Repeats last thing bot said when the user asks (not sure why you would need this in threaded messaging apps, but I guess it's not too horrible a feature for voice assistants.) """
+class ActionRepeat(Action):  # AKA "What was that again?"
+    """ Repeats last thing bot said when the user asks (not sure why you would need this in threaded messaging apps, but not too horrible a feature for voice assistants.) """
 
     def name(self) -> Text:
         return "action_repeat"

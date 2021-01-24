@@ -55,6 +55,11 @@
 - can you [schedule a call](activity) for me
 - can you [schedule a call](activity) on [forest's](fm:forest) calendar
 - can you [add a meeting](activity) to [forest's](fm:forest) calendar
+- can you help me [schedule a call](activity)
+- can you help me [schedule a zoom call](activity:Zoom)
+- can you help me [schedule a meeting](activity)
+- can you help me [book a meeting](activity)
+- can you help me [set up a zoom call](activity:Zoom)
 
 - i want to [meet in your garden](activity)
 - Hey [forest](fm), Love to set up [a call](activity:have a call). [Paul](nou) Acme Personel
@@ -503,7 +508,7 @@
 - whats [a good time](When)
 - whats [a good time](When) for [lunch](activity:lunch)
 - what's [a good day](When) to [meet up](activity)
-- what's the best day to [meet up](activity) [next week](vague_When)
+- what's the best day to [meet up](activity) [next week](When)
 - do you have a peferred day?
 - what's your preferred day
 - is there a day that's good for you?
@@ -628,7 +633,6 @@
 - can we do [monday](Day)
 - can we do next [tuesday](Day)
 - can we do this [tuesday](Day)
-
 
 - can you do a call [tomorrow](Day)
 - can you do [a call](activity:have a call) on [monday](Day)
@@ -800,6 +804,7 @@
 - shall we say [thursday](Day) then?
 - shall we confirm for [tuesday](Day) then?
 
+- I’m free [anytime today](TOD) except 1-3pm. Tomorrow is kinda loose, I could [jump on a call](activity) [whenever](TOD). [Sunday](Day) I could talk at [noon](Time) or [after 4pm](Time)
 
 ## intent:suggest_different_day
 - [friday](Day) is better for me
@@ -1482,7 +1487,7 @@
 - actually [12:00](Time) would be perfect
 - can we do a different time instead
 
-## intent:vague_When
+## intent:vague_when
 - how is your availability looking [this week](DATE)
 - how is your availability looking [next week](DATE)
 - how is your availability looking [the week after next](DATE)
@@ -1504,15 +1509,16 @@
 - either tomorrow or thursday
 - any day but friday
 - any day [this week](DATE)
-- later this afternoon or tomorrow morning
-- either today or tomorrow are good
-- can we have a call sometime
-- are you avavilable for a call sometime
-- whats your availability for a call
+- [later this afternoon](When) or [tomorrow morning](When)
+- either [today](Day) or [tomorrow](Day) are good
+- can we have a call [sometime](When)
+- are you avavilable for a call [sometime](When)
 - whats [a good time](When) for you to have a call
 - whats [a good time](When) for us to have a call
 - can you let me know what [a good time](When) for a call might be
 - is there a particular time thats good for you
+- [anytime](When) could work
+- [any time](When) could work
 
 ## intent:affirm_day
 - sure [friday](Day) sounds good

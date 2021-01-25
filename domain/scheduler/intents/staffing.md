@@ -10,11 +10,14 @@
 - as you may recall we were talking
 
 ## intent:get_my_email
+- i emailed you
 - i sent you an email
 - did you get my email
 - did you get the email i sent you
 - did you have a chance to read my email
 - sent an email your way
+- sent you an email
+- sent an email to you
 
 ## intent:heard_you_are_hiring
 - i understand you are hiring

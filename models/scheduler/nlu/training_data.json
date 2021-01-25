@@ -87,6 +87,14 @@
       },
       {
         "intent": "chatter",
+        "text": "what does anna mean"
+      },
+      {
+        "intent": "chatter",
+        "text": "does anna stand for anything"
+      },
+      {
+        "intent": "chatter",
         "text": "do you help with scheduling?"
       },
       {
@@ -100,14 +108,6 @@
       {
         "intent": "chatter",
         "text": "do you like doing scheduling"
-      },
-      {
-        "intent": "chatter",
-        "text": "what does anna mean"
-      },
-      {
-        "intent": "chatter",
-        "text": "does ann stand for anything"
       },
       {
         "intent": "chatter",
@@ -184,6 +184,10 @@
       {
         "intent": "chatter",
         "text": "hey can you do something for me?"
+      },
+      {
+        "intent": "chatter",
+        "text": "it's getting late"
       },
       {
         "intent": "following_up",
@@ -7904,6 +7908,750 @@
       {
         "intent": "integer",
         "text": "25"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 6,
+            "end": 31,
+            "value": "http://wwww.symbolics.com",
+            "entity": "website"
+          }
+        ],
+        "text": "go to http://wwww.symbolics.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 6,
+            "end": 28,
+            "value": "http://wwww.google.com",
+            "entity": "website"
+          }
+        ],
+        "text": "go to http://wwww.google.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 5,
+            "end": 29,
+            "value": "http://wwww.facebook.com",
+            "entity": "website"
+          }
+        ],
+        "text": "it's http://wwww.facebook.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 11,
+            "end": 33,
+            "value": "http://wwww.amazon.com",
+            "entity": "website"
+          }
+        ],
+        "text": "my site is http://wwww.amazon.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 14,
+            "end": 35,
+            "value": "http://wwww.apple.com",
+            "entity": "website"
+          }
+        ],
+        "text": "my website is http://wwww.apple.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 11,
+            "end": 34,
+            "value": "http://wwww.netflix.com",
+            "entity": "website"
+          }
+        ],
+        "text": "website is http://wwww.netflix.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 6,
+            "end": 23,
+            "value": "http://google.com",
+            "entity": "website"
+          }
+        ],
+        "text": "go to http://google.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 5,
+            "end": 24,
+            "value": "http://facebook.com",
+            "entity": "website"
+          }
+        ],
+        "text": "it's http://facebook.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 11,
+            "end": 28,
+            "value": "http://amazon.com",
+            "entity": "website"
+          }
+        ],
+        "text": "my site is http://amazon.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 14,
+            "end": 30,
+            "value": "http://apple.com",
+            "entity": "website"
+          }
+        ],
+        "text": "my website is http://apple.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 11,
+            "end": 29,
+            "value": "http://netflix.com",
+            "entity": "website"
+          }
+        ],
+        "text": "website is http://netflix.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 6,
+            "end": 16,
+            "value": "google.com",
+            "entity": "website"
+          }
+        ],
+        "text": "go to google.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 5,
+            "end": 17,
+            "value": "facebook.com",
+            "entity": "website"
+          }
+        ],
+        "text": "it's facebook.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 11,
+            "end": 21,
+            "value": "amazon.com",
+            "entity": "website"
+          }
+        ],
+        "text": "my site is amazon.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 14,
+            "end": 23,
+            "value": "apple.com",
+            "entity": "website"
+          }
+        ],
+        "text": "my website is apple.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 11,
+            "end": 22,
+            "value": "netflix.com",
+            "entity": "website"
+          }
+        ],
+        "text": "website is netflix.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 6,
+            "end": 14,
+            "value": "ebay.com",
+            "entity": "website"
+          }
+        ],
+        "text": "go to ebay.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 5,
+            "end": 16,
+            "value": "twitter.com",
+            "entity": "website"
+          }
+        ],
+        "text": "it's twitter.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 11,
+            "end": 17,
+            "value": "ai.com",
+            "entity": "website"
+          }
+        ],
+        "text": "my site is ai.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 14,
+            "end": 30,
+            "value": "benandjerrys.com",
+            "entity": "website"
+          }
+        ],
+        "text": "my website is benandjerrys.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 11,
+            "end": 22,
+            "value": "comcast.com",
+            "entity": "website"
+          }
+        ],
+        "text": "website is comcast.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 6,
+            "end": 15,
+            "value": "delta.com",
+            "entity": "website"
+          }
+        ],
+        "text": "go to delta.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 5,
+            "end": 13,
+            "value": "ebay.com",
+            "entity": "website"
+          }
+        ],
+        "text": "it's ebay.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 11,
+            "end": 25,
+            "value": "friendster.com",
+            "entity": "website"
+          }
+        ],
+        "text": "my site is friendster.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 14,
+            "end": 25,
+            "value": "gattica.com",
+            "entity": "website"
+          }
+        ],
+        "text": "my website is gattica.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 11,
+            "end": 27,
+            "value": "housingworks.com",
+            "entity": "website"
+          }
+        ],
+        "text": "website is housingworks.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 6,
+            "end": 23,
+            "value": "intelligensia.com",
+            "entity": "website"
+          }
+        ],
+        "text": "go to intelligensia.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 5,
+            "end": 12,
+            "value": "wsj.com",
+            "entity": "website"
+          }
+        ],
+        "text": "it's wsj.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 11,
+            "end": 22,
+            "value": "latimes.com",
+            "entity": "website"
+          }
+        ],
+        "text": "my site is latimes.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 14,
+            "end": 32,
+            "value": "masonicsecrets.com",
+            "entity": "website"
+          }
+        ],
+        "text": "my website is masonicsecrets.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 11,
+            "end": 22,
+            "value": "notabot.com",
+            "entity": "website"
+          }
+        ],
+        "text": "website is notabot.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 0,
+            "end": 25,
+            "value": "http://wwww.symbolics.com",
+            "entity": "website"
+          }
+        ],
+        "text": "http://wwww.symbolics.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 0,
+            "end": 22,
+            "value": "http://wwww.google.com",
+            "entity": "website"
+          }
+        ],
+        "text": "http://wwww.google.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 0,
+            "end": 24,
+            "value": "http://wwww.facebook.com",
+            "entity": "website"
+          }
+        ],
+        "text": "http://wwww.facebook.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 0,
+            "end": 22,
+            "value": "http://wwww.amazon.com",
+            "entity": "website"
+          }
+        ],
+        "text": "http://wwww.amazon.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 0,
+            "end": 21,
+            "value": "http://wwww.apple.com",
+            "entity": "website"
+          }
+        ],
+        "text": "http://wwww.apple.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 0,
+            "end": 23,
+            "value": "http://wwww.netflix.com",
+            "entity": "website"
+          }
+        ],
+        "text": "http://wwww.netflix.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 0,
+            "end": 17,
+            "value": "http://google.com",
+            "entity": "website"
+          }
+        ],
+        "text": "http://google.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 0,
+            "end": 19,
+            "value": "http://facebook.com",
+            "entity": "website"
+          }
+        ],
+        "text": "http://facebook.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 0,
+            "end": 17,
+            "value": "http://amazon.com",
+            "entity": "website"
+          }
+        ],
+        "text": "http://amazon.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "http://apple.com",
+            "entity": "website"
+          }
+        ],
+        "text": "http://apple.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 0,
+            "end": 18,
+            "value": "http://netflix.com",
+            "entity": "website"
+          }
+        ],
+        "text": "http://netflix.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "google.com",
+            "entity": "website"
+          }
+        ],
+        "text": "google.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "value": "facebook.com",
+            "entity": "website"
+          }
+        ],
+        "text": "facebook.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "amazon.com",
+            "entity": "website"
+          }
+        ],
+        "text": "amazon.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "apple.com",
+            "entity": "website"
+          }
+        ],
+        "text": "apple.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "netflix.com",
+            "entity": "website"
+          }
+        ],
+        "text": "netflix.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "ebay.com",
+            "entity": "website"
+          }
+        ],
+        "text": "ebay.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "twitter.com",
+            "entity": "website"
+          }
+        ],
+        "text": "twitter.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "ai.com",
+            "entity": "website"
+          }
+        ],
+        "text": "ai.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "benandjerrys.com",
+            "entity": "website"
+          }
+        ],
+        "text": "benandjerrys.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "comcast.com",
+            "entity": "website"
+          }
+        ],
+        "text": "comcast.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "delta.com",
+            "entity": "website"
+          }
+        ],
+        "text": "delta.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "ebay.com",
+            "entity": "website"
+          }
+        ],
+        "text": "ebay.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 0,
+            "end": 14,
+            "value": "friendster.com",
+            "entity": "website"
+          }
+        ],
+        "text": "friendster.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "gattica.com",
+            "entity": "website"
+          }
+        ],
+        "text": "gattica.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "housingworks.org",
+            "entity": "website"
+          }
+        ],
+        "text": "housingworks.org"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 0,
+            "end": 17,
+            "value": "intelligensia.com",
+            "entity": "website"
+          }
+        ],
+        "text": "intelligensia.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "wsj.com",
+            "entity": "website"
+          }
+        ],
+        "text": "wsj.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "latimes.com",
+            "entity": "website"
+          }
+        ],
+        "text": "latimes.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 0,
+            "end": 18,
+            "value": "masonicsecrets.com",
+            "entity": "website"
+          }
+        ],
+        "text": "masonicsecrets.com"
+      },
+      {
+        "intent": "website",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "notabot.com",
+            "entity": "website"
+          }
+        ],
+        "text": "notabot.com"
       },
       {
         "intent": "remember_me",
@@ -33677,6 +34425,30 @@
           {
             "start": 0,
             "end": 3,
+            "value": "ted",
+            "entity": "nou"
+          }
+        ],
+        "text": "ted"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "ed",
+            "entity": "nou"
+          }
+        ],
+        "text": "ed"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
             "value": "uma",
             "entity": "nou"
           }
@@ -35188,12 +35960,12 @@
         "entities": [
           {
             "start": 0,
-            "end": 5,
-            "value": "Alice",
+            "end": 3,
+            "value": "amy",
             "entity": "nou"
           }
         ],
-        "text": "Alice"
+        "text": "amy"
       },
       {
         "intent": "thisis",

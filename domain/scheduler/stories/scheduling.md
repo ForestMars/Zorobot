@@ -39,7 +39,6 @@
   - when_form
   - form{"name": "when_form"}
   - form{"name": null}
-  - action_date_parts
   - email_form
   - form{"name": "email_form"}
   - form{"name": null}
@@ -62,7 +61,6 @@
   - when_form
   - form{"name": "when_form"}
   - form{"name": null}
-  - action_date_parts
   - action_check_time
   - email_form
   - form{"name": "email_form"}
@@ -83,7 +81,6 @@
   - when_form
   - form{"name": "when_form"}
   - form{"name": null}
-  - action_date_parts
   - action_check_time
   - email_form
   - form{"name": "email_form"}
@@ -110,7 +107,6 @@
 * ask_availability
   - utter_pick_a_day
   - form{"name": null}
-  - action_date_parts
   - action_check_time
   - email_form
   - form{"name": "email_form"}
@@ -132,22 +128,6 @@
   - when_form
   - form{"name": "when_form"}
   - form{"name": null}
-  - action_date_parts
-
-## change day
-* change_day_or_time {"date_or_time": "day"}
-  - utter_confirm_change_day_or_time
-  - utter_ask_day
-
-## change date
-* change_day_or_time {"date_or_time": "date"}
-  - utter_confirm_change_day_or_time
-  - utter_ask_date
-
-## change time
-* change_day_or_time {"date_or_time": "time"}
-  - utter_confirm_change_day_or_time
-  - utter_ask_time_day
 
 
 ### ~~~~~~~~~~~~~~~~~~~~~ Suggest Time ~~~~~~~~~~~~~~~~~~~~
@@ -158,7 +138,6 @@
   - when_form
   - form{"name": "when_form"}
   - form{"name": null}
-  - action_date_parts
   - action_check_day
 * suggest_time
   - action_check_time
@@ -182,7 +161,6 @@
   - when_form
   - form{"name": "when_form"}
   - form{"name": null}
-  - action_date_parts
   - action_check_day
 * time_of_day
   - utter_ask_specific_time
@@ -209,7 +187,6 @@
   - when_form
   - form{"name": "when_form"}
   - form{"name": null}
-  - action_date_parts
   - utter_ask_time_date
 * suggest_time
   - action_check_time
@@ -240,7 +217,6 @@
   - when_form
   - form{"name": "when_form"}
   - form{"name": null}
-  - action_date_parts
   - utter_ask_time_date
 * suggest_time
   - action_check_time
@@ -256,9 +232,12 @@
 * change_day_or_time {"date_or_time": "date"}
   - utter_confirm_change_date_or_time
 * affirm  
-  - utter_ask_date
+  - action_reset_date
+  - when_form
+  - form{"name": "when_form"}
+  - form{"name": null}  
+  - utter_shall_we_confirm
 * suggest_different_date OR suggest_date
-  - action_date_parts
   - action_check_date
   - utter_shall_we_confirm
 * deny
@@ -284,7 +263,6 @@
   - when_form
   - form{"name": "when_form"}
   - form{"name": null}
-  - action_date_parts
   - utter_ask_time_date
 * suggest_time
   - action_check_time
@@ -302,7 +280,6 @@
 * affirm  
   - utter_ask_date
 * suggest_different_date OR suggest_date
-  - action_date_parts
   - action_check_date
   - utter_shall_we_confirm
 * deny
@@ -310,9 +287,12 @@
 * change_day_or_time {"date_or_time": "day"}
   - utter_confirm_change_date_or_time
 * affirm  
-  - utter_ask_date
+  - action_reset_date
+  - when_form
+  - form{"name": "when_form"}
+  - form{"name": null}
+  - utter_shall_we_confirm  
 * suggest_availability
-  - action_date_parts
   - action_check_day
   - utter_shall_we_confirm  
 * affirm OR confirm_call
@@ -327,7 +307,6 @@
   - when_form
   - form{"name": "when_form"}
   - form{"name": null}
-  - action_date_parts
   - utter_ask_time_date
 * suggest_time
   - action_check_time
@@ -342,10 +321,10 @@
   - utter_ask_change_what
 * change_day_or_time {"date_or_time": "time"}
   - utter_confirm_change_date_or_time
-* affirm  
-  - utter_ask_time
-* suggest_different_time OR suggest_time
-  - action_check_time
+  - action_reset_time
+  - when_form
+  - form{"name": "when_form"}
+  - form{"name": null}
   - utter_shall_we_confirm
 * deny
   - utter_ask_change_what
@@ -360,7 +339,6 @@
   - when_form
   - form{"name": "when_form"}
   - form{"name": null}
-  - action_date_parts
   - utter_ask_time_date
 * suggest_time
   - action_check_time
@@ -383,7 +361,11 @@
 * change_day_or_time {"date_or_time": "date"}
   - utter_confirm_change_date_or_time
 * affirm  
-  - utter_ask_date
+  - action_reset_date
+  - when_form
+  - form{"name": "when_form"}
+  - form{"name": null}
+  - utter_shall_we_confirm  
 * suggest_different_date OR suggest_date
   - action_check_date
   - utter_shall_we_confirm
@@ -431,7 +413,6 @@
   - when_form
   - form{"name": "when_form"}
   - form{"name": null}
-  - action_date_parts
   - action_check_time
   - email_form
   - form{"name": "email_form"}
@@ -444,7 +425,11 @@
 * change_day_or_time {"date_or_time": "date"}
   - utter_confirm_change_date_or_time
 * affirm  
-  - utter_ask_date
+  - action_reset_date
+  - when_form
+  - form{"name": "when_form"}
+  - form{"name": null}
+  - utter_shall_we_confirm  
 * suggest_date
   - utter_shall_we_confirm
 
@@ -455,7 +440,6 @@
   - when_form
   - form{"name": "when_form"}
   - form{"name": null}
-  - action_date_parts
   - utter_ask_time_date
 * suggest_time
   - action_check_time

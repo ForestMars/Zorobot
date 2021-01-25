@@ -64,6 +64,31 @@ class ResetSlot(Action):
     def run(self, dispatcher, tracker, domain):
         return [SlotSet("email", None)]
 
+class ResetDate(Action):
+    """ The can be refactored as a factory with eval a/o get_attr """
+
+    # Hard coded to reset a particular slot. :-/
+    def name(self):
+        return "action_reset_date"
+
+    def run(self, dispatcher, tracker, domain):
+        slots = []
+        slots.append(SlotSet('DATE', None))
+        slots.append(SlotSet('Day', None))
+        return slots
+        #return [SlotSet("DATE", None)]
+
+class ResetTime(Action):
+    """ The can be refactored as a factory with eval a/o get_attr """
+
+    # Hard coded to reset a particular slot. :-/
+    def name(self):
+        return "action_reset_time"
+
+    def run(self, dispatcher, tracker, domain):
+        return [SlotSet("Time", None)]
+
+
 
 class ActionCheckDate(Action):
 
@@ -72,7 +97,7 @@ class ActionCheckDate(Action):
 
     def run(self, dispatcher, tracker, domain):
         slots = []
-        date_dirty = tracker.get_slot('month_and_date')  # CRF
+        date_dirty = tracker.get_slot('month_and_date')  # CRF not used, slot not entity
         DATE = tracker.get_slot('DATE')  # Spacy NER fallback (pretrained)
 
         if date_dirty is not None:
@@ -509,7 +534,7 @@ class EmailForm(FormAction):
         return ["email"]
 
     def validate_email(self, val, dispatcher, tracker, domain):
-
+        dispatcher.utter_message("validating email")
         #if tracker.get_slot('email') is None:
         #    return None
 
@@ -553,7 +578,7 @@ class WhoForm(FormAction):
 
 
 class ActionPreprocessWhenForm(Action):
-    """ Because Rasa forms have no preprocessors, lol. """
+    """ Because forms have no preprocessors, lol. """
 
     def name(self):
         return "action_preprocess_when"
@@ -586,11 +611,19 @@ class WhenForm(FormAction):
 
     @staticmethod
     def required_slots(tracker):
-        return ["DATE", "Time"]
+        return ['DATE','Time']
+
+    @classmethod
+    def set_parts(cls, val):
+        cls.foo = val
+
+    @classmethod
+    def get_parts(cls):
+        return cls.foo
 
     def request_next_slot(self, dispatcher, tracker, domain):
+        """Send customized message"""
 
-        # You really don't want dialog logic in an action, and yet that's how RASA does this.
         intent = tracker.latest_message['intent'].get('name')
         if intent == 'nvrmnd':  # Command
             dispatcher.utter_message("ok")
@@ -604,45 +637,79 @@ class WhenForm(FormAction):
             return self.deactivate()
 
         for slot in self.required_slots(tracker):
-
             if slot == 'DATE':
                 date = tracker.get_slot(slot)
 
                 # Preprocess vague/bad dates.
                 if isinstance(date, str):
-                    # if tracker.get_slot(slot) is not None and self.preprocess_vague_date(dispatcher, tracker.get_slot(slot)) == True:
                     if date is not None and self.preprocess_vague_date(dispatcher, date) == True:
                         dispatcher.utter_template("utter_ask_{}".format(slot), tracker)
                         return [SlotSet(slot, None)]
 
-                # Juggle Multiple
-                """
-                elif isinstance(date, list):
-                    for d in date:
-                        input('tryna list')
-                        if d is not None and self.preprocess_vague_date(dispatcher, d) != True:
-                            input('heyoh')
-                            #return [SlotSet(slot, d)]
-                    input('nevah get here')
 
-                    return [SlotSet(slot, None)]
-                """
+            if self._should_request_slot(tracker, slot):
+                kwargs = {}
+                if slot == 'DATE':
+                    dispatcher.utter_template("utter_ask_{}".format(slot), tracker, **kwargs)
+                    #if tracker.get_slot('DATE') is None:
+                    #    return None
+
+                    date = next(tracker.get_latest_entity_values('DATE'), None)
+                    date = tracker.get_slot('DATE')
+                    if date is not None:
+                        date = self.validate_DATE(True, dispatcher, tracker, domain)
+                    #return
+                    return [SlotSet('DATE', date)]#
+
+
+                if slot == 'Time':
+                    # This is so painful it hurts.
+                    date = tracker.get_slot('DATE')
+                    if date is not None:
+                        date = self.validate_DATE(True, dispatcher, tracker, domain)
+
+                    #kwargs = {}
+                    #when = ActionDateParts.get_parts()
+                    #kwargs.update({"Day": when['Day']})
+                    #kwargs.update({"month_name": when['month_name']})
+                    #kwargs.update({"day_of_month": when['day_of_month']})
+                    time = tracker.get_slot('Time')
+
+                    #dispatcher.utter_template("utter_ask_{}".format(slot), tracker, **kwargs)
+
+                    time = tracker.get_slot('Time')
+                    #if time is not None:
+                    #    time = self.validate_Time(True, dispatcher, tracker, domain)
+
+                    return [SlotSet(slot, time)]
+
+
+    def __request_next_slot(self, dispatcher, tracker, domain):
+
+        for slot in self.required_slots(tracker):
+
+
 
             if self._should_request_slot(tracker, slot):
                 kwargs = {}
 
-                if slot == 'DATE':
-                    if tracker.get_slot('DATE') is None and tracker.get_slot('Day') is not None:
-                        date = tracker.get_slot('Day')
-                        dispatcher.utter_message("What's a a good time for you " + date + "?")
-                        SlotSet('DATE', date)
+                if slot == 'DATEY':
+                    self.validate_DATE(True, dispatcher, tracker, domain)
+                    #dispatcher.utter_template("utter_ask_{}".format(slot), tracker, **kwargs)
 
-                    else:
-                        dispatcher.utter_template("utter_ask_{}".format(slot), tracker, **kwargs)
-                        date = tracker.get_slot('DATE')
-                        date = self.validate_DATE(True, dispatcher, tracker, domain)
-
-                    return [SlotSet('DATE', date)]
+                    try:
+                        if tracker.get_slot('DATE') is None and tracker.get_slot('Day') is not None:
+                            date = tracker.get_slot('Day')
+                            dispatcher.utter_message("What's a a good time for you " + date + "?") # seems wrong
+                            SlotSet('DATE', date)
+                        else:
+                            dispatcher.utter_template("utter_ask_{}".format(slot), tracker, **kwargs)
+                            date = tracker.get_slot('DATE')
+                            date = self.validate_DATE(True, dispatcher, tracker, domain)
+                            #return
+                            return [SlotSet('DATE', date)]
+                    except Exception as e:
+                        print("when_form date_field exception: ", e)
 
                 if slot == 'Time':
                     date = tracker.get_slot('DATE')
@@ -677,10 +744,10 @@ class WhenForm(FormAction):
 
                         return [SlotSet('Time', Time)]
 
-    def clean_date(self, dispatcher, tracker):
+    def clean_date(self, dispatcher, tracker, DATE):
 
         day_dirty = tracker.get_slot('Day')  # CRF NER outperforma Spacy NER
-        DATE = tracker.get_slot('DATE')  # Spacy NER fallback (pretrained)
+        #DATE = tracker.get_slot('DATE')  # Spacy NER fallback (pretrained)
 
         # Our CRF works where spaCy NER fails (such as weekday abbreviations just for one example.)
         if day_dirty is not None:
@@ -740,7 +807,6 @@ class WhenForm(FormAction):
 
 
     def validate_DATE(self, val, dispatcher, tracker, domain):
-
         intent = tracker.latest_message['intent'].get('name')
         if intent == 'nvrmnd':
             dispatcher.utter_message("ok now")
@@ -759,34 +825,55 @@ class WhenForm(FormAction):
         if isinstance(DATE, str):
             date_list = []
             date_list+=[DATE] # bc Spacy sometimes gives you a string, sometimes a list.
+        elif isinstance(DATE, list):
+            date_list = DATE
 
         for DATE in date_list:
-
             if DATE is not None and DATE.strip() != '':
-                if self.preprocess_vague_date(dispatcher, DATE) is True: # NB: won't fire if slot was set before form was activated.
+                if self.preprocess_vague_date(dispatcher, DATE) is True: # this can likely be removed, we check in request_next_slot()
+                    #dispatcher.utter_message("")
                     continue
-
-            date_clean = self.clean_date(dispatcher, tracker)
+            date_clean = self.clean_date(dispatcher, tracker, DATE)
             if date_clean.strip() == '':
                 [SlotSet("DATE", None)]
-
             # Exception should be handled sooner.
             # if date_clean is not None:
             #    self.date = date_clean.strftime("%Y-%m-%d")
+            when = ActionDateParts.set_parts(date_clean)
+
+            kwargs = {}
+            kwargs.update({"Day": when['Day']})
+            kwargs.update({"month_name": when['month_name']})
+            kwargs.update({"day_of_month": when['day_of_month']})
+            #if tracker.get_slot('Time') is None or tracker.get_slot('Time').strip() != '':
+            if tracker.get_slot('Time') is None:
+                dispatcher.utter_template("utter_ask_Time".format('Time'), tracker, **kwargs)
 
             return date_clean
 
         return None
 
     def validate_Time(self, val, dispatcher, tracker, domain):
+        kwargs = {}
+        when = ActionDateParts.get_parts()
+        kwargs.update({"Day": when['Day']})
+        kwargs.update({"month_name": when['month_name']})
+        kwargs.update({"day_of_month": when['day_of_month']})
         time = tracker.get_slot('Time')
-        if time is None or time.strip() != '':
+
+        if time is None or time.strip() == '':
             return None
+
+        return time
 
     def submit(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict]:
         #input('portia')
         slots = []
         DATE = tracker.get_slot('DATE')
+        if isinstance(DATE, list):
+            DATE = DATE[0] # spaCy NER sometomes returns a list with the entity repeated. This is brittle, obvi.
+
+        when = ActionDateParts.get_parts()  # This should be a different class method.
 
         # This is to catch vague dates captured by NER outside the form action (since form only validate fields it captures itself, and has not concept of preprocessing.)
         if DATE is not None and DATE.strip() != '':
@@ -794,41 +881,106 @@ class WhenForm(FormAction):
                 slots.append(SlotSet('DATE', None))
             # We literally have to validate every field in a form on submit, bc the form isn't smart enough to validate them.
             else:
-                date_clean = self.clean_date(dispatcher, tracker)
+                date_clean = self.clean_date(dispatcher, tracker, DATE)
                 slots.append(SlotSet('DATE', date_clean))
 
-        self.set_date(False) # Reset date memory.
+        self.set_date(False) # Reset date memory. (This can be removed ??)
+
+        slots.append(SlotSet('month_name', when['month_name']))
+        slots.append(SlotSet('date_month', when['month']))
+        slots.append(SlotSet('day_of_month', when['day_of_month']))
+        slots.append(SlotSet('day_ordinal', when['ord']))
+        slots.append(SlotSet('date_year', when['date_year']))
+        slots.append(SlotSet('Day', when['Day']))
 
         return slots
 
 
+# @TODO: Move formatters out of reactions file into custom handler.
+class TimeForm(FormAction):
+    def name(self):
+        return "time_form"
+
+    def __init__(self, asked=False):
+        self.set_date(asked)
+
+    def get_date(self):
+        return self._date
+
+    def set_date(self, value):
+        self._date = value
+
+    @staticmethod
+    def required_slots(tracker):
+        return ["DATE"]
+
+
+# Datetime functions not available on *FE*
 class ActionDateParts(Action):
     """ Rather than cramming this into the submit handler; makes available to be used by other modules. """
 
     def name(self):
         return "action_date_parts"
 
-    def run(self, dispatcher, tracker, domain):
-        slots = []
-        when = {}
-        date = tracker.get_slot('DATE')
-        day = tracker.get_slot('Day')
+    @classmethod
+    def __init__(cls):
+        cls.when = None
 
-        if date is None and day is None:
-            dispatcher.utter_message("parts: both are none")
-            return [FollowupAction('action_listen')]
-        elif date is None:  # There are exactly 7 logical operators.
-            dispatcher.utter_message("What date is that?") #  This should use an utterance template.
+    @classmethod
+    def get_parts(cls):
+        if cls.when is not None:
+            return cls.when
 
-            return # rly?
+    @classmethod
+    def set_parts(cls, date):
+        cls.when = {}
 
-        # Datetime functions not available on *FE*
-        when['date'] = tracker.get_slot('DATE')
+        # @FIXME
+        if isinstance(date, list):
+            date = date[0]
 
-        when['date'] = kr.validate_date_str(when['date'])
-        if when['date'] is not None:
-            dispatcher.utter_message(when['date'])
-            when['date'] = dt.strptime(when['date'], '%Y-%m-%d')
+        cls.when['date'] = kr.validate_date_str(date)
+
+        # Quick win if we have a valid date string.
+        if cls.when['date'] is not None:
+            cls.when['date'] = dt.strptime(cls.when['date'], '%Y-%m-%d')
+            cls.when['weekday'] = cls.when['date'].strftime("%A")
+            cls.when['month'] = cls.when['date'].strftime("%m")
+            cls.when['day_of_month'] = cls.when['date'].strftime("%d")
+            cls.when['ord'] = kr.ordinal_from_int(int(cls.when['day_of_month']))
+            cls.when['date_year'] = cls.when['date'].strftime("%Y")
+            cls.when['Day'] = cls.when['date'].strftime("%A")  # not used ?
+            cls.when['month_name'] = cls.when['date'].strftime("%b")
+
+            '''
+            slots.append(SlotSet('month_name', when['month_name']))
+            slots.append(SlotSet('date_month', when['month']))
+            slots.append(SlotSet('day_of_month', when['day_of_month']))
+            slots.append(SlotSet('day_ordinal', when['ord']))
+            slots.append(SlotSet('date_year', when['date_year']))
+            slots.append(SlotSet('Day', when['Day']))
+            '''
+
+        return cls.when
+        # Date parsing if we didn't get the quick win.
+        if date is None:
+            pass
+        elif when['date'] is None:
+            grok = kr.Grok()
+
+            # returns list containing month and day parts, or None.
+            date_clean = grok.clean_date_str(date)
+
+
+            if date_clean[0].isnumeric():
+                date = kr.get_date_from_month_and_day(date_clean)
+            elif len(date_clean[0]) > 4:
+                date = kr.get_date_from_month_name_and_day(date_clean)
+
+            else:
+                date = kr.get_date_from_month_abbr_and_day(date_clean)
+
+            when['date'] = date
 
             when['weekday'] = when['date'].strftime("%A")
             when['month'] = when['date'].strftime("%m")
@@ -845,10 +997,7 @@ class ActionDateParts(Action):
             slots.append(SlotSet('date_year', when['date_year']))
             slots.append(SlotSet('Day', when['Day']))
 
-
-        elif when['date'] is None:
-            dispatcher.utter_message("we didn't get when-date")
-            return [FollowupAction('action_listen')]
+            #return [FollowupAction('action_listen')]
         #msg = ' Let me quickly check my schedule for ' + when['Day'] + ' ' + when['month_name'] + ' ' + when['ord'] + ' at ' + when['hour'] +':'+ when['minutes']
         #msg = ' Let me quickly check my schedule for ' + when['Day'] + ' ' + when['month_name'] + ' ' + when['ord']
         #dispatcher.utter_message(msg)
@@ -870,7 +1019,6 @@ class ActionChat(Action):
 
         slots = []
         user = (tracker.current_state())["sender_id"]
-        #input(tracker.latest_message)
         message = tracker.latest_message['text'] # :-)
         response = chat.ask(user, message)
         dispatcher.utter_message(response)

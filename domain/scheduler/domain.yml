@@ -31,6 +31,7 @@ entities:
 
   - activity
   - email
+  - website
   - phone
   - ETA
   - ToLocation
@@ -72,6 +73,8 @@ slots:
   who:
     type: unfeaturized
   org:
+    type: unfeaturized
+  website:
     type: unfeaturized
   When:
     type: text
@@ -353,6 +356,8 @@ actions:
 - action_check_time
 - action_preprocess_when
 - action_reset_email
+- action_reset_date
+- action_reset_time
 - action_update_contacts
 
 # ~~~~~~~~~~ General

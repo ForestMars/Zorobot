@@ -2,8 +2,8 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
-        "res",
-        "date_or_time"
+        "date_or_time",
+        "res"
       ]
     },
     "when_form": {
@@ -18,40 +18,37 @@
     "utter_pick_a_day": {
       "slots": []
     },
-    "utter_ask_howcanihelp": {
+    "utter_bye": {
       "slots": []
     },
-    "utter_bye": {
+    "utter_ask_howcanihelp": {
       "slots": []
     },
     "utter_np": {
       "slots": []
     },
-    "utter_shall_we_confirm": {
-      "slots": []
-    },
-    "utter_ask_schedule_call_discuss": {
-      "slots": []
-    },
-    "action_send_invite": {
-      "slots": []
-    },
-    "action_confirm_event": {
-      "slots": []
-    },
-    "utter_confirm_best_email": {
+    "utter_confirm_change_date_or_time": {
       "slots": []
     },
     "utter_thanks": {
       "slots": []
     },
+    "action_send_invite": {
+      "slots": []
+    },
+    "utter_ask_schedule_call_discuss": {
+      "slots": []
+    },
+    "utter_shall_we_confirm": {
+      "slots": []
+    },
+    "utter_confirm_best_email": {
+      "slots": []
+    },
+    "action_confirm_event": {
+      "slots": []
+    },
     "utter_give_email_again": {
-      "slots": []
-    },
-    "utter_ask_date": {
-      "slots": []
-    },
-    "utter_ask_time_day": {
       "slots": []
     }
   },
@@ -69,7 +66,7 @@
     "rasa_core.policies.form_policy.FormPolicy",
     "rasa_core.policies.fallback.FallbackPolicy"
   ],
-  "trained_at": "20210124-055343",
+  "trained_at": "20210125-043630",
   "rasa_core": "0.13.8",
   "tensorflow": "1.12.0",
   "sklearn": "0.20.2"

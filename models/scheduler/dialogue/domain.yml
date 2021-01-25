@@ -13,6 +13,8 @@ actions:
 - action_check_time
 - action_preprocess_when
 - action_reset_email
+- action_reset_date
+- action_reset_time
 - action_update_contacts
 - utter_default
 - utter_greet
@@ -166,6 +168,7 @@ entities:
 - same_or_different
 - activity
 - email
+- website
 - phone
 - ETA
 - ToLocation
@@ -633,6 +636,10 @@ slots:
     initial_value: null
     type: rasa_core.slots.UnfeaturizedSlot
   time_minutes:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  website:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.UnfeaturizedSlot

@@ -650,7 +650,7 @@ templates:
   - text: About what time are you thinking?
   - text: It's possible! What do you have in mind?
   utter_ask_time:
-  - text: ok, so what's a good time for you {date_for_time}
+  - text: What's a good time for you {date_for_time} 
   # - text: What's a good time for you on ({Day}) {month_name} {day_of_month} to {activity}?
   utter_ask_time_day:
   #- text: What's a good time for you to have a call {Day} {month_name} {day_ordinal}?

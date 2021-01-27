@@ -387,7 +387,6 @@ class ActionCheckTime(Action):
 
     @classmethod
     def checktime(cls, time_dirty, dispatcher, tracker):
-        print('our class method')
         slots = []
         when = {}
 
@@ -688,7 +687,6 @@ class WhenForm(FormAction):
 
     def request_next_slot(self, dispatcher, tracker, domain):
         """ mainly for message (utter_ask) template formatters. """
-        print('req_next_slot')
         intent = tracker.latest_message['intent'].get('name')
         if intent == 'nvrmnd':  # Command
             dispatcher.utter_message("ok")
@@ -703,10 +701,8 @@ class WhenForm(FormAction):
             return self.deactivate()
 
         for slot in self.required_slots(tracker):
-            print('iterating slots')
 
             if slot == 'DATE':
-                print('if date')
                 day = tracker.get_slot('Day')
                 date = tracker.get_slot(slot)
                 if isinstance(date, list):
@@ -736,7 +732,6 @@ class WhenForm(FormAction):
                         #slots.append(SlotSet('DATE', None))
 
             if slot == 'Time':
-                print('if time')
                 time_of_day = tracker.get_slot('TOD')
                 # Preprocess vague/bad dates.
                 if time_of_day is not None:
@@ -752,8 +747,6 @@ class WhenForm(FormAction):
 
                 #    return slots
 
-            print('should we request ', slot)
-            print(self._should_request_slot(tracker, slot))
             if self._should_request_slot(tracker, slot):
                 kwargs = {}
                 if slot == 'DATE':
@@ -778,17 +771,18 @@ class WhenForm(FormAction):
 
     def clean_date(self, dispatcher, tracker, DATE):
         day_dirty = tracker.get_slot('Day')  # CRF NER outperforma Spacy NER
-
         # Our CRF works where spaCy NER fails (such as weekday abbreviations just for one example.)
         if day_dirty is not None:
             day_clean = kr.clean_day_str(day_dirty).capitalize()
             day_clean = kr.day_abbr_to_full(day_clean)
-
             if day_dirty.lower().strip() not in ['today', '']:  # sub-optimal, move get_date_ function into clean_day_str
                 date_clean = kr.get_date_from_weekday(day_clean)
                 #ord_day = kr.ord_day_from_date(when['date'])
+            #elif day_dirty.lower() == 'today' or DAYE.lower() == 'today':
             elif day_dirty.lower() == 'today':
                 date_clean = kr.get_todays_date()
+        elif DATE.lower().strip() == 'today':
+            date_clean = kr.get_todays_date()
         else:  # Spacy NER is fallback, bc it doesn't perform as well as our CRF NER (IWBH.)
             try:
                 date_clean = self.preprocess_day_or_date(dispatcher, tracker, DATE)
@@ -797,16 +791,17 @@ class WhenForm(FormAction):
 
         return date_clean.strftime("%Y-%m-%d")
 
-    def preprocess_date(self, DATE): #  Is this being used?
-        date_clean = self.day_or_date(DATE)
+    # deprecated, kill
+    #def preprocess_date(self, DATE): #  Is this being used?
+    #    date_clean = self.day_or_date(DATE)
 
     def preprocess_day_or_date(self, dispatcher, tracker, DATE):
         if DATE.isalpha() and len(DATE.split()) == 1:  # We most assuredly have a day, not a date. (Execept when Spacy NER fails.)
             try:
                 date_orig = tracker.get_slot('DATE')
-                day_clean = kr.clean_day_str(DATE).capitalize()
-                date = kr.get_date_from_weekday(day_clean)
-                date_str = datetime.datetime.strftime(date, "%B %d")
+                day_clean = kr.clean_day_str(DATE).capitalize()  # fetches 3 letter day abbr
+                date = kr.get_date_from_weekday(day_clean)  # DATE argument is soley to fix 'today' handling
+                #date_str = datetime.datetime.strftime(date, "%B %d")
             except Exception as e:
                 print(e)
         else:
@@ -833,7 +828,6 @@ class WhenForm(FormAction):
             return True
 
     def validate_DATE(self, val, dispatcher, tracker, domain):
-        print('validating date')
         intent = tracker.latest_message['intent'].get('name')
         if intent == 'nvrmnd':  # This doesn't need to be in 2 places.
             dispatcher.utter_message("What's the magic word?")
@@ -873,7 +867,7 @@ class WhenForm(FormAction):
             kwargs.update({"day_of_month": when['day_of_month']})
             #if tracker.get_slot('Time') is None or tracker.get_slot('Time').strip() != '':
             if tracker.get_slot('Time') is None:
-                if DATE == 'today':
+                if DATE.lower().strip() in ['today', 'tomorrow']:
                     kwargs = {'date_for_time': DATE}
                 # @# TODO:
                 # elif DATE in weekdays:
@@ -881,7 +875,6 @@ class WhenForm(FormAction):
                 else:
                     not_today = "on {0} ({1} {2})".format(when['Day'], when['month_name'], when['day_of_month'])
                     kwargs = {'date_for_time': not_today}
-                print(kwargs)
                 dispatcher.utter_message("Let's pick a time")
                 #dispatcher.utter_template("utter_ask_Time".format('Time'), tracker, **kwargs)
                 dispatcher.utter_template("utter_ask_time".format('Time'), tracker, **kwargs)
@@ -892,8 +885,6 @@ class WhenForm(FormAction):
         return None
 
     def validate_Time(self, val, dispatcher, tracker, domain):
-        print("validating time")
-        dispatcher.utter_message('val time')
         kwargs = {}
         when = ActionDateParts.get_parts()
         kwargs.update({"Day": when['Day']})
@@ -903,13 +894,11 @@ class WhenForm(FormAction):
 
         if time is None or time.strip() == '':
             return None
-        print('hod it do')
+
         #if ActionCheckTime.checktime(time, dispatcher, tracker) == True:
             #return time
 
     def submit(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict]:
-        print('please submit')
-
         slots = []
         DATE = tracker.get_slot('DATE')
         if isinstance(DATE, list):

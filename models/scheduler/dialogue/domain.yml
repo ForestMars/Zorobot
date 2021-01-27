@@ -71,6 +71,7 @@ actions:
 - utter_ask_specific_time
 - utter_ask_Day
 - utter_ask_Time
+- utter_ask_Time_what
 - utter_ask_Date utter_ask_DATE
 - utter_affirm_day
 - utter_affirm_time
@@ -114,8 +115,8 @@ actions:
 - utter_zoro_origin
 - utter_zorobot
 - utter_working_on
-- utter_im_anna
 - utter_anna
+- utter_anna_anna
 - utter_bot_help
 - utter_ask_are_you_tryna_schedule
 - utter_sorry_try_again
@@ -143,7 +144,7 @@ actions:
 - utter_does_that_make_sense
 - utter_await_response
 - utter_not_sure_when
-- utter_i_am
+- utter_hints
 - utter_lm_send_it
 - utter_domybest
 - utter_gladicanamuse
@@ -536,6 +537,10 @@ slots:
     auto_fill: true
     initial_value: (845) 868-0258
     type: rasa_core.slots.UnfeaturizedSlot
+  date_for_time:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
   date_month:
     auto_fill: true
     initial_value: null
@@ -565,6 +570,10 @@ slots:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.UnfeaturizedSlot
+  greeted:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.BooleanSlot
   kind:
     auto_fill: true
     initial_value: null
@@ -667,6 +676,9 @@ templates:
   utter_andyou:
   - text: And how are you?
   utter_anna:
+  - text: Hi, I'm ANNA! I mostly help with scheduling and stuff like that, but you
+      can ask me anything.
+  utter_anna_anna:
   - text: A Neural Net Acquaintance
   - text: It stands for Neural Net Acquaintance
   - text: It stands for my full name, A Neural Net Acquaintance
@@ -687,7 +699,16 @@ templates:
   utter_ask_Date:
   - text: What Date are we shooting for ??
   utter_ask_Time:
-  - text: Ok, What time is good for you on {Day}, {month_name} {day_of_month}?
+  - text: What time is good for you to {activity} on {Day}, {month_name} {day_of_month}?
+  - text: Ok, {Day} looks good. What time should we plan to {activity}?
+  - text: Ok, {month_name} {day_of_month} is doable. What time are you thinking?
+  - text: What time are you thinking?
+  - text: Sounds good, what time are you thinking?
+  - text: Do you have a particular time in mind?
+  utter_ask_Time_what:
+  - text: What are you thinking? And about what time?
+  - text: About what time are you thinking?
+  - text: It's possible! What do you have in mind?
   utter_ask_are_you_tryna_schedule:
   - text: Are you trying to set up a call with Forest?
   - text: Are you trying to set up a meeting with Forest?
@@ -731,7 +752,7 @@ templates:
   utter_ask_specific_time:
   - text: Ok, {TOD} sounds good. What's a specific time you can do a call?
   utter_ask_time:
-  - text: ok, what's a good time for you on ({Day}) {month_name} {day_of_month}
+  - text: ok, so what's a good time for you {date_for_time}
   utter_ask_time_date:
   - text: What's a good time for you to have a call on ({Day}) {month_name} {day_of_month}?
   utter_ask_time_day:
@@ -826,7 +847,7 @@ templates:
   - text: Here I am.
   utter_heres_my_number:
   - text: "Here's the number to call me on: 646-535-7175"
-  utter_i_am:
+  utter_hints:
   - text: We're friends on facebook
   - text: I have a Spanish name
   - text: I joined facebook in 2016
@@ -843,9 +864,6 @@ templates:
   - text: Ok, I'll send out a calendar invite.
   utter_im_a_scheduling_agent:
   - text: Ah ok, is there something else I can help you with?
-  utter_im_anna:
-  - text: Hi, I'm ANNA! I mostly help with scheduling and stuff like that, but you
-      can ask me anything.
   utter_im_zoro:
   - text: Hi, I'm ANNA! I mostly help with scheduling and stuff like that, but you
       can ask me anything.

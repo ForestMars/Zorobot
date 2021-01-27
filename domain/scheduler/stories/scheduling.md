@@ -1,47 +1,11 @@
 ## greet with name
-* greet_with_name
-  - utter_greet
-  - action_update_contacts
-  - utter_ask_howcanihelp
-
-## greet no name
-* greet
-  - utter_greet
-  - utter_ask_who
 * thisis
+  - utter_greet
+  - who_form
+  - form{"name": "who_form"}
+  - form{"name": null}
   - action_update_contacts
-  - who_form
-  - form{"name": "who_form"}
-  - form{"name": null}
   - utter_ask_howcanihelp
-
-## is this you forest
-* forest
-  - utter_ask_who
-  - who_form
-  - form{"name": "who_form"}
-  - form{"name": null}
-  - utter_ask_howcanihelp
-
-## multi intent (with name)
-* multi_intent
-  - who_form
-  - form{"name": "who_form"}
-  - form{"name": null}
-  - utter_ask_schedule_call_discuss
-  - action_update_contacts
-* affirm OR ask_which_day
-  - action_preprocess_when
-  - when_form
-  - form{"name": "when_form"}
-  - form{"name": null}
-  - email_form
-  - form{"name": "email_form"}
-  - form{"name": null}
-  - utter_confirm_best_email
-* ask_availability
-  - utter_pick_a_day
-
 
 ### ~~~~~~~~~~~~~~~~~~~~~ Discuss Day and Time ~~~~~~~~~~~~~~~~~~~~
 
@@ -60,7 +24,6 @@
   - email_form
   - form{"name": "email_form"}
   - form{"name": null}
-  - action_check_time
   - utter_confirm_best_email
 * affirm OR thanks OR affirm_day
   - utter_shall_we_confirm  
@@ -69,10 +32,10 @@
 
 ## availability OR lets do
 * lets_do
-  - action_preprocess_when
   - who_form
   - form{"name": "who_form"}
   - form{"name": null}
+  - action_preprocess_when
   - when_form
   - form{"name": "when_form"}
   - form{"name": null}
@@ -90,44 +53,14 @@
 * bye OR bye_fancy
   - utter_bye
 
-## availability + ping pong > move into action
-* lets_do
-  - who_form
-  - form{"name": "who_form"}
-  - form{"name": null}
-  - action_preprocess_when
-  - when_form
-  - form{"name": "when_form"}
-* ask_availability
-  - utter_pick_a_day
-  - form{"name": null}
-  - action_check_time
-  - email_form
-  - form{"name": "email_form"}
-  - form{"name": null}
-  - utter_confirm_best_email
-* affirm OR thanks OR affirm_day
-  - utter_shall_we_confirm  
-* affirm OR confirm_call
-  - action_send_invite
-* affirm OR ok
-  - utter_looking_forward
-* bye OR bye_fancy
-  - utter_bye
 
-## suggest date
-* suggest_date
-  - action_check_date
-  - action_preprocess_when
-  - when_form
-  - form{"name": "when_form"}
-  - form{"name": null}
-
-
-### ~~~~~~~~~~~~~~~~~~~~~ Suggest Time ~~~~~~~~~~~~~~~~~~~~
+### ~~~~~~~~~~~~~~~~~~~~~ Availability ~~~~~~~~~~~~~~~~~~~~
 
 ## suggest day/time - HP + yes
 * ask_availability OR suggest_availability
+  - who_form
+  - form{"name": "who_form"}
+  - form{"name": null}
   - action_preprocess_when
   - when_form
   - form{"name": "when_form"}
@@ -147,6 +80,15 @@
 * bye OR bye_fancy
   - utter_bye
 
+### ~~~~~~~~~~~~~~~~~~~~~ Suggest Date ~~~~~~~~~~~~~~~~~~~~
+
+## suggest date
+* suggest_date
+  - action_check_date
+  - action_preprocess_when
+  - when_form
+  - form{"name": "when_form"}
+  - form{"name": null}
 
 ## suggest date/time - HP + email correction
 * suggest_date

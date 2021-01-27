@@ -2,8 +2,8 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
-        "date_or_time",
-        "res"
+        "res",
+        "date_or_time"
       ]
     },
     "when_form": {
@@ -15,13 +15,7 @@
     "who_form": {
       "slots": []
     },
-    "utter_pick_a_day": {
-      "slots": []
-    },
     "utter_bye": {
-      "slots": []
-    },
-    "utter_np": {
       "slots": []
     },
     "utter_ask_howcanihelp": {
@@ -33,19 +27,52 @@
     "utter_thanks": {
       "slots": []
     },
+    "utter_ask_schedule_call_discuss": {
+      "slots": []
+    },
+    "utter_sorry": {
+      "slots": []
+    },
     "action_send_invite": {
       "slots": []
     },
-    "utter_ask_schedule_call_discuss": {
+    "utter_np": {
       "slots": []
     },
     "utter_confirm_best_email": {
       "slots": []
     },
-    "utter_give_email_again": {
+    "utter_wassup": {
+      "slots": []
+    },
+    "utter_yw": {
       "slots": []
     },
     "action_confirm_event": {
+      "slots": []
+    },
+    "utter_ok": {
+      "slots": []
+    },
+    "utter_anna": {
+      "slots": []
+    },
+    "action_chat": {
+      "slots": []
+    },
+    "utter_smiley": {
+      "slots": []
+    },
+    "utter_corona_bot": {
+      "slots": []
+    },
+    "utter_sorry_dont_understand": {
+      "slots": []
+    },
+    "utter_working_on": {
+      "slots": []
+    },
+    "utter_give_email_again": {
       "slots": []
     }
   },
@@ -63,7 +90,7 @@
     "rasa_core.policies.form_policy.FormPolicy",
     "rasa_core.policies.fallback.FallbackPolicy"
   ],
-  "trained_at": "20210126-233300",
+  "trained_at": "20210127-080806",
   "rasa_core": "0.13.8",
   "tensorflow": "1.12.0",
   "sklearn": "0.20.2"

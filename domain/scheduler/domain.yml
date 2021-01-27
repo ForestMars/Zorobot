@@ -60,17 +60,17 @@ entities:
 
 # SLOTS (Capitalized slots from user, snake_case slots from app.)
 slots:
+  greeted:
+    type: bool
   activity:
     type: text
     initial_value: 'do something'
-
   PERSON:
     type: text
   DATE:
     type: text
   Date:
     type: text
-
   who:
     type: unfeaturized
   org:
@@ -79,7 +79,6 @@ slots:
     type: unfeaturized
   When:
     type: text
-
   Day:
     type: unfeaturized
   Time:
@@ -142,7 +141,8 @@ slots:
   confirm_email:
     type: bool
 
-
+  date_for_time:
+    type: unfeaturized
   same_or_different:
     type: categorical
     values:
@@ -422,6 +422,7 @@ actions:
 - utter_ask_specific_time
 - utter_ask_Day
 - utter_ask_Time
+- utter_ask_Time_what
 - utter_ask_Date
   utter_ask_DATE
 
@@ -474,8 +475,8 @@ actions:
 - utter_zoro_origin
 - utter_zorobot
 - utter_working_on
-- utter_im_anna
 - utter_anna
+- utter_anna_anna
 - utter_bot_help
 - utter_ask_are_you_tryna_schedule
 - utter_sorry_try_again
@@ -508,7 +509,7 @@ actions:
 - utter_does_that_make_sense
 - utter_await_response
 - utter_not_sure_when
-- utter_i_am
+- utter_hints
 - utter_lm_send_it
 - utter_domybest
 - utter_gladicanamuse
@@ -623,10 +624,8 @@ templates:
   utter_ask_schedule_call_discuss:
   - text: Should we put a call on the calendar to discuss?
   - text: Shall we plan on having a call then?
-
   utter_ask_when:
   - text: When would you like to do that?
-
   utter_ask_day:
   - text: What's a good day for you?
   - text: What's a good day to {activity}?
@@ -638,12 +637,20 @@ templates:
   - text: What would be your preferred day for that?
   utter_ask_Date:
   - text: What Date are we shooting for ??
-
   utter_ask_Time:
-  - Ok, What time is good for you on {Day}, {month_name} {day_of_month}?
+  - text: What time is good for you to {activity} on {Day}, {month_name} {day_of_month}?
+  - text: Ok, {Day} looks good. What time should we plan to {activity}?
+  - text: Ok, {month_name} {day_of_month} is doable. What time are you thinking?
+  - text: What time are you thinking?
+  - text: Sounds good, what time are you thinking?
+  - text: Do you have a particular time in mind?
   #- What's a good time for you on {Day}, {month_name} {day_of_month}?
+  utter_ask_Time_what:
+  - text: What are you thinking? And about what time?
+  - text: About what time are you thinking?
+  - text: It's possible! What do you have in mind?
   utter_ask_time:
-  - text: ok, what's a good time for you on ({Day}) {month_name} {day_of_month}
+  - text: ok, so what's a good time for you {date_for_time}
   # - text: What's a good time for you on ({Day}) {month_name} {day_of_month} to {activity}?
   utter_ask_time_day:
   #- text: What's a good time for you to have a call {Day} {month_name} {day_ordinal}?
@@ -652,11 +659,9 @@ templates:
   #- text: What's a good time for you to have a call on ({Day}) {month_name} {day_ordinal})?
   - text: What's a good time for you to have a call on ({Day}) {month_name} {day_of_month}?
   #- text: What's a good time for you to have a call on ({Day}) {month_and_date})?
-
   utter_sure_we_can:
   - text: Sure {pov} can {activity} on {Day}, {month_name} {day_ordinal} at {time_hour}:{time_minutes} {time_am_pm}
   - text: Sure {pov} can {activity} on {Day}, {month_name} {day_ordinal} at {time_hour}:{time_minutes} {time_am_pm}
-
   utter_pick_a_day:
   - text: What's your preferred day?
   - text: What would be your preferred day?
@@ -664,36 +669,28 @@ templates:
   - text: What's a particular day that's good for you?
   - text: Is there a particular day that's better for you?
   - text: Just about any day could work, depending on the time. What's a good day for you?
-
   utter_ask_specific_time:
   - text: Ok, {TOD} sounds good. What's a specific time you can do a call?
-
-
   utter_affirm_day:
   - text: ok, {Day} looks good.
   - text: ok, {Day} sounds good.
   utter_affirm_time:
   - text: ok, {Time} looks good.
   - text: ok, {Time} is good for me too.
-
   utter_ask_email:
   - text: What's your best email?
   utter_repeat_email:
   - text: Ok, I will use {email} to send the invite
   - text: Ok, I will send the calendar invite to {email}
-
   utter_confirm_best_email:
   - text: Just to confirm, {email} is the right email to send to?
   utter_shall_we_confirm:
   - text: Ok great {nou}, Shall we confirm for {Day}, {month_name} {day_ordinal} at {time_hour}:{time_minutes}?
-
   utter_final_confirm:
   - text: Ok we are confirmed for {Day} at {Time}. I'll look for your call then.
   - text: As a final confirmation, our call is set for {Day} at {time_hour}:{time_minutes}. I'll look for your call then.
-
   utter_lm_send_it:
   - text: I can send you the most up-to-date version right now.
-
   utter_heres_my_number:
   - text: "Here's the number to call me on: 646-535-7175"
   utter_best_number_is:
@@ -715,7 +712,6 @@ templates:
   - text: Here's what I have for your email {email}
   utter_confirm_phone_number:
   - text: Thanks, I have your number as {Phone}. Is that correct?
-
   utter_please_call_me:
   - text: Please call me
   - text: Please call me then
@@ -724,19 +720,15 @@ templates:
   - text: Ok, I'll send out a calendar invite.
   utter_lmk_you_dont_get_it:
   - text: Let me know if you don't get it
-
   utter_ask_confirm:
   - text: So then, ae we confirmed for {Day} at {Time} ?
   - text: So then, ae we confirmed for {Time}on {Day} ?
-
-
   utter_send_invite:
   - text: I just sent a calendar invitation to {email}, please do lmk if you do not get it. (!!!)
   utter_ask_change:
   - text: Do we need to change the date or time?
   utter_ask_change_what:
   - text: Which do we need to change, the date or the time?
-
   utter_ok_morning:
   - text: Ok, morning then.
   utter_ok_afternoon:
@@ -746,8 +738,6 @@ templates:
   utter_confirm_change_date_or_time:
   - text: Ok, you'd like to change the {date_or_time}, correct?
 
-  utter_looking_forward:
-  - text: Looking forward!
 
   utter_ask_where:
   - Where should we meet?
@@ -755,7 +745,6 @@ templates:
   utter_confirm_location:
   - Ok, {place} it is.
   - Sounds good. We'll meet at {place}
-
 
   utter_ask_are_you_tryna_schedule:
   - text: Are you trying to set up a call with Forest?
@@ -772,20 +761,15 @@ templates:
 
 
 # ANNA / Zoro
-  utter_i_am:
-  - text: We're friends on facebook
-  - text: I have a Spanish name
-  - text: I joined facebook in 2016
-  - text: I'm trying to remember where we met!
   utter_anna:
+  - text: Hi, I'm ANNA! I mostly help with scheduling and stuff like that, but you can ask me anything.
+  utter_anna_anna:
   - text: A Neural Net Acquaintance
   - text: It stands for Neural Net Acquaintance
   - text: It stands for my full name, A Neural Net Acquaintance
   - text: ANNA A Neural Net Acquaintance
   - text: ANNA stands for A Neural Net Acquaintance
   - text: I'm ANNA, which stands for "A Neural Net Acquaintance"
-  utter_im_anna:
-  - text: Hi, I'm ANNA! I mostly help with scheduling and stuff like that, but you can ask me anything.
   utter_im_zoro:
   - text: Hi, I'm ANNA! I mostly help with scheduling and stuff like that, but you can ask me anything.
   utter_zorobot:
@@ -793,6 +777,12 @@ templates:
   - text: Well I'm sure not your grandparents' Eliza.
   - text: Are you? It cuts both ways! 😉
   - text: Are you saying you would like me less?
+  utter_hints:
+  - text: We're friends on facebook
+  - text: I have a Spanish name
+  - text: I joined facebook in 2016
+  - text: I'm trying to remember where we met!
+
 
   utter_zoro_greet_with_help:
   - text: I'm Zoro, Forest's scheduling bot. You can ask me about Forest's availability for a meeting by day or time, or tell me when you'd like to have a call with Forest.
@@ -857,7 +847,8 @@ templates:
   - text: What if I never find out... https://i.pinimg.com/736x/98/d6/26/98d626eb01a1096c1c24e97a1d94d183--so-funny-funny-dogs.jpg
 
 
-
+  utter_looking_forward:
+  - text: Looking forward!
 
 # Easter Eggs and Memes
   utter_anyway:

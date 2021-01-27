@@ -18,8 +18,6 @@
 - Hey forest
 - is this forest
 - Is this forest
-
-## intent:greet_with_name
 - hi forest this is [kyle](nou)
 - hey forest this is [adam](nou)
 - hi forest this is [mike](nou)

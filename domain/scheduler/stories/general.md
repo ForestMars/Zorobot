@@ -20,7 +20,7 @@
 
 ## r u a bot
 * ruabot
-  - utter_zorobot
+  - utter_anna
 
 ## holidays  
 * holiday
@@ -40,7 +40,11 @@
 
 # forest
 * forest
-  - utter_im_anna  
+  - utter_anna
+  - who_form
+  - form{"name": "who_form"}
+  - form{"name": null}
+  - utter_ask_howcanihelp
 
 ## lost
 * lost_the_plot

@@ -642,10 +642,13 @@ class WhoForm(FormAction):
                     return [SlotSet('nou', None)]
 
     def submit(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict]:
+        slots = []
         nou = tracker.get_slot('nou')
         kwargs = {'nou': nou}
-        dispatcher.utter_template('utter_nicetohearfromu', tracker, **kwargs)
-        return []
+        if tracker.get_slot('greeted') is not True:
+            dispatcher.utter_template('utter_nicetohearfromu', tracker, **kwargs)
+        slots.append(SlotSet('greeted', True))
+        return slots
 
 
 class ActionPreprocessWhenForm(Action):
@@ -695,7 +698,7 @@ class WhenForm(FormAction):
             return self.deactivate()
 
         # Positive Match
-        schedule_something = ['ask_availability', 'suggest_availability', 'suggest_date', 'suggest_time', 'vague_when', 'when', 'lets_do']
+        schedule_something = ['ask_availability', 'suggest_availability', 'suggest_date', 'suggest_time', 'vague_when', 'when', 'lets_do', 'thisis']
         if intent not in schedule_something:
             return self.deactivate()
 
@@ -721,14 +724,15 @@ class WhenForm(FormAction):
                 # Preprocess vague/bad dates.
                 if isinstance(date, str):
                     if date is not None and self.preprocess_vague_date(dispatcher, date) == True:
-                        input('holy shit')
                         dispatcher.utter_template("utter_ask_{}".format(slot), tracker)
                         return None # [SlotSet(slot, None)]
                     vague = ['anytime', 'any time', 'sometime', 'sometime']
                     for v in vague:
                         date = date.replace(v, '')
-                    if date.lower().strip() in ['this week', 'next week', 'this month', 'next month']:
-                        dispatcher.utter_message("We can set something up for " + date)
+
+                    # This is handled in a separate preprocess function, to avoid the complications of trying to preprocess in a form.
+                    #if date.lower().strip() in ['this week', 'next week', 'this month', 'next month']:
+                        #dispatcher.utter_message("We can set something up for " + date)
                         #slots.append(SlotSet('DATE', None))
 
             if slot == 'Time':
@@ -786,7 +790,6 @@ class WhenForm(FormAction):
             elif day_dirty.lower() == 'today':
                 date_clean = kr.get_todays_date()
         else:  # Spacy NER is fallback, bc it doesn't perform as well as our CRF NER (IWBH.)
-            input(DATE)
             try:
                 date_clean = self.preprocess_day_or_date(dispatcher, tracker, DATE)
             except Exception as e:
@@ -819,7 +822,7 @@ class WhenForm(FormAction):
         return date
 
     def preprocess_vague_date(self, dispatcher, DATE):
-        vague_dates = ['this week', 'next week', 'this month', 'next month', 'the coming week', 'this coming week', 'the coming month', 'this coming month']
+        vague_dates = ['this week', 'next week', 'the next week', 'this month', 'next month', 'the coming week', 'this coming week', 'the coming month', 'this coming month', 'the coming days']
         vague_days = ['a day', 'a good day', 'a good time']  # English language dependent. :-/
 
         if DATE.lower().replace('sometime', '').replace('in ', '').strip() in vague_dates:
@@ -870,7 +873,19 @@ class WhenForm(FormAction):
             kwargs.update({"day_of_month": when['day_of_month']})
             #if tracker.get_slot('Time') is None or tracker.get_slot('Time').strip() != '':
             if tracker.get_slot('Time') is None:
-                dispatcher.utter_template("utter_ask_Time".format('Time'), tracker, **kwargs)
+                if DATE == 'today':
+                    kwargs = {'date_for_time': DATE}
+                # @# TODO:
+                # elif DATE in weekdays:
+                #    kwargs = {'date_for_time': DATE}
+                else:
+                    not_today = "on {0} ({1} {2})".format(when['Day'], when['month_name'], when['day_of_month'])
+                    kwargs = {'date_for_time': not_today}
+                print(kwargs)
+                dispatcher.utter_message("Let's pick a time")
+                #dispatcher.utter_template("utter_ask_Time".format('Time'), tracker, **kwargs)
+                dispatcher.utter_template("utter_ask_time".format('Time'), tracker, **kwargs)
+                #dispatcher.utter_template("utter_ask_time".format('Time'), tracker, **kwargs)
 
             return date_clean
 

@@ -230,7 +230,7 @@
 - [schedule me a call](activity:schedule a call)
 - [book me a call](activity:book a call)
 
-
+- what say we [have a call](activity)
 
 
 ## intent:ask_availability

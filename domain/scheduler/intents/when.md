@@ -13,14 +13,24 @@
 - are you able to [set up a call](activity:have a call)
 - are you able to [set up a meeting](activity)
 - are you are able to [book a zom call](activity:Zoom) with forest?
-- and you are able to [book a zom call](activity:Zoom) with forest?
+- and you are able to [book a zoom](activity:Zoom) with forest?
 - are you are able to [book a zoom call](activity:Zoom) with forest?
-- and you are able to [book a zoom call](activity:Zoom) with forest?
+- and you are able to [book a zoom](activity:Zoom) with forest?
+- can we schedule [zoom](activity)
 
 - can i [schedule a meeting](activity) with [Forest](fm)
 - can i [schedule a call](activity) with [Forest](fm)
 - can u pls [set up a call](activity) for me and [Forest](fm)
 - can u pls [set up a meeting](activity) for me and [Forest](fm)
+- can we [do lunch](activity)
+- can you [do lunch](activity)
+- can you and i [do lunch](activity)
+- can you [do lunch](activity) with some friends of mine
+- can you [hop on a call](activity)
+- can you [hop on a call](activity) with our VP
+- can you [hop on a call](activity) with our SVP
+- can you [hop on a call](activity) with our CEO
+- can you [hop on a call](activity) with our CTO
 - can we [have a call](activity:have a call)
 - can we [book a call](activity:have a call)
 - can we [book a meeting](activity:have a meeting)
@@ -46,12 +56,15 @@
 - can you [schedule a meeting](activity:have a meeting) for me
 - can you [set up a call](activity:have a call) for me
 - can you [set up a meeting](activity:have a meeting) for me
+- can you [take a call](activity:have a call)
+- can you [take a meeting](activity:meet)
 - can you arrange for [a call](activity:have a call) for me
 - can you book [a call](activity:have a call) for me
 - can you please [schedule a call](activity) with [Forest](fm)
 - can you please [schedule a meeting](activity) with [Forest](fm)
 - can you please [set up a meeting](activity) with [Forest](fm)
 - can you please [plan a Zoom call](activity) with [forest](fm)
+- can you please [plan a Zoom](activity) with [forest](fm)
 - can you [schedule a call](activity) for me
 - can you [schedule a call](activity) on [forest's](fm:forest) calendar
 - can you [add a meeting](activity) to [forest's](fm:forest) calendar
@@ -74,6 +87,7 @@
 
 - i would like a [plan a Zoom call](activity:Zoom) so I can share my screen
 - i would like to [book a call](activity:have a call)
+- i would like to [zoom](activity)
 - i would like to [call you](activity:call me)
 - i would like to [book a meeting](activity:have a meeting)
 - i would like to [get together](activity)
@@ -84,6 +98,7 @@
 
 - I would like to [schedule a phone call](activity)
 - I would like to [schedule a zoom call](activity)
+- I would like to [schedule a zoom](activity)
 - i would like to [schedule a Zoom meeting](activity:Zoom)
 - I would like to [schedule a phone call](activity) with [Forest](fm)
 - I would like to [schedule a zoom call](activity) with [Forest](fm)
@@ -140,7 +155,8 @@
 - is this the right number to [book a call](activity) with [forest](fm)
 - is this the right number to [schedule a call](activity) with [forest](fm)
 
-- let's [meet in your garden](activity)
+- lets [do lunch](activity)
+- let's [do lunch](activity)
 - lets [get together](activity)
 - lets [go see a movie](activity)
 - lets [go to a show](activity)
@@ -158,6 +174,7 @@
 - lets [set up a call](activity:have a call)
 - lets [set up a meeting](activity:have a meeting)
 - lets [take in a film](activity)
+- let's [meet in your garden](activity)
 - Ok, so let's [set up that call](activity:have a call)
 
 - please [schedule a call](activity) with [Forest](fm)
@@ -208,7 +225,12 @@
 - do you want [me](pov:you) to [come over](activity)
 - do you want [me](pov:you) to [come over](activity) [tonight](When)
 
-- can you schdule a zoom call with Foesst?
+- can you [schedule a zoom call](activity:Zoom) with Forest?
+- How bout you [program me a call](activity:have a call) with forest
+- [schedule me a call](activity:schedule a call)
+- [book me a call](activity:book a call)
+
+
 
 
 ## intent:ask_availability
@@ -224,17 +246,17 @@
 - whats your availability for [lunch](activity:do lunch)
 - whats your availability for [a call](activity:have a call)
 - whats your availability to [meet up](activity)
-- whats your availability for lunch [tomorrow](Day)
-- whats your availability for a call [today](Day)
-- whats your availability for a call [this week](When)
-- whats your availability to meet up [next week](When)
+- whats your availability for [lunch](activity:have a call) [tomorrow](DATE)
+- whats your availability for [a call](activity:have a call) [today](DATE)
+- whats your availability for [a call ](activity:have a call)[this week](When)
+- whats your availability to [meet up](activity) [next week](When)
 - What’s [a good day](When) for [me](pov:you) to come over?
-- Can [I](pov:you) [call you](activity:call me) [today](Day)?
-- Can [I](pov:you) [call you](activity:call me) [tomorrow](Day)?
+- Can [I](pov:you) [call you](activity:call me) [today](DATE)?
+- Can [I](pov:you) [call you](activity:call me) [tomorrow](DATE)?
 - Can [I](pov:you) [call you](activity:call me) [this week](When)?
 - Can [I](pov:you) [call you](activity:call me) [next week](When)?
-- Can [I](pov:you) [come over](activity:come over) [today](Day)?
-- Can [I](pov:you) [come over](activity:come over) [tomorrow](Day)?
+- Can [I](pov:you) [come over](activity:come over) [today](DATE)?
+- Can [I](pov:you) [come over](activity:come over) [tomorrow](DATE)?
 - Can [I](pov:you) [come over](activity:come over) [this week](When)?
 - Can [I](pov:you) [come over](activity:come over) [next week](When)?
 
@@ -267,13 +289,13 @@
 - can we [hang out in your garden](activity:hang out in the garden)
 - can we [hang out](activity)
 - can we [meet up](activity)
-- can we [have a call](activity) on [Monday](Day)
+- can we [have a call](activity) on [Monday](DATE)
 - can we [have a zoom meeting](activity:Zoom)
 - can we [have a zoom meeting](activity:Zoom) to discuss
-- can we [have a call](activity) on [Friday](Day)
-- can we [plan a call](activity) for [Monday](Day)
-- can we [do lunch](activity) next week on [Tuesday](Day)
-- can we [schedule a call](activity) for [this week](Day)
+- can we [have a call](activity) on [Friday](DATE)
+- can we [plan a call](activity) for [Monday](DATE)
+- can we [do lunch](activity) next week on [Tuesday](DATE)
+- can we [schedule a call](activity) for [this week](DATE)
 - can we make a plan to [meet up](activity)
 - can we make an appointment to [get together](activity)
 - can we make an appointment to [hang out](activity)
@@ -294,16 +316,25 @@
 - can we [have a call](activity) [next week](When)
 - can we [schedule a call](activity) for [sometime next week](When)
 
+- can you [take a call](activity:have a call) [today](DATE)
+- can you [take a call](activity:have a call) on [Monday](DATE)
+- can you [take a meeting](activity:meet) [this week](DATE)
+- can you [take a meeting](activity) [next week](When)
+
+
 - can you [come in](activity) [this week](When)
 - can we [have a meeting](activity) [this week](When)
-- can you [take a meeting](activity) [next week](When)
+- got time for [lunch](activity) [today](DATE)
+- got time for [a call](activity) [tomorrow](DATE)
+- go time for a [meeting](activity) [this week](DATE)
+- got time for a [zoom call](activity:zoom)
+- when will you have time for a [zoom call](activity:zoom)
 
 - do you have time for [lunch](activity:do lunch) this week?
 - will you have time for [lunch](activity:do lunch) this week?
 - got time for [lunch](activity:do lunch) [today](When)
 - got time for [lunch](activity:do lunch) [tomorrow](When)
 - got time for [lunch](activity:do lunch) [this week](When)
-
 
 - how is [forest](fm) have availability for [a call](acvtivity:have a call) [this week](When)
 - how is [forest](fm) have availability for [a zoom call](acvtivity:zoom) [this week](When)
@@ -330,7 +361,7 @@
 - can you set up [a zoom call](activity:Zoom) with [forest](fm) please
 - can you set up [a meeting](activity:meet) with [forest](fm) please
 - can you set up [a lunch meeting](activity:schedule a lunch meeting) with [forest](fm) please
-- can [forest](fm) do lunch [tomorrow](Day)
+- can [forest](fm) do lunch [tomorrow](DATE)
 
 - can i book [a call](activity:have a call) with [forest](fm) [this week](When)
 - can i book [a zoom call](activity:Zoom) with [forest](fm) [this week](When)
@@ -357,7 +388,6 @@
 - can you set up [a zoom call](activity:Zoom) with [forest](fm) please
 - can you set up [a meeting](activity:meet) with [forest](fm) please
 - can you set up [a lunch meeting](activity:schedule a lunch meeting) with [forest](fm) please
-
 
 - what [day](When) is good for you?
 - what is a good [day](When) for [a call](activity:have a call)
@@ -393,9 +423,9 @@
 - Hey [Forest](fm), what’s [a good day](When) for[me](pov:you) to [call you](activity:call me)?
 - Hi [Forest](fm), it’s [Portia](nou). What’s [a good day](When) for [me](pov:you) to [call you](activity:call me)?
 - Hi [Forest](fm), it’s [Franscesa](nou). What’s [a good day](When) for [me](pov:you) to [help you](activity:help me) with that
-- Hey [Forest](fm) , [Rob](nou) from [Nexus](org) here. What's your availability for [a call](activity:have a call) on [Wednesday](Day)?
+- Hey [Forest](fm) , [Rob](nou) from [Nexus](org) here. What's your availability for [a call](activity:have a call) on [Wednesday](DATE)?
 - This is [Charles](nou) from [Mesh](org). Are you available for [a zoom call](activity:Zoom) [this week or next](When)?
-- Hello [Forest](fm) it's [Karen](nou) from [OpenAI](org). Can we have a call on [Monday](Day)
+- Hello [Forest](fm) it's [Karen](nou) from [OpenAI](org). Can we have a call on [Monday](DATE)
 - This is [Kumal](nou) from [Broadbridge](nou). Do you have time to [schedule a zoom call](activity:Zoom) in the near future.
 
 - [When is a good time](When) for us to [hang out](activity)
@@ -474,7 +504,7 @@
 - hi [forest](fm), this is [chip](nou) i sent you some resumes and wanted to see whats [a good time](When) to [discuss](activity)? LMK!
 - Hi [Forest](fm), it’s [Tom](nou), can we [schedule a meeting](activity) [sometime soon](When)?
 - this is [andy](nou). do you have a time for [a call](activity:have a call) this week? I have some interesting candidates for you.
-- this is [arlo](nou) thank you for getting back to me, can we [hop on a call](activity). whats good for [tomorrow](Day)?
+- this is [arlo](nou) thank you for getting back to me, can we [hop on a call](activity). whats good for [tomorrow](DATE)?
 - this is [arlo](nou), thank you for getting back to me, can we [hop on a call](activity)? whats good for this week?
 - this is [barbara](nou) got time for [a call](activity:have a call) [this week](When)?
 - this is [barbara](nou), got time for [a call](activity:have a call) [this week](When)?
@@ -482,11 +512,11 @@
 - [dan](nou) here from bci. whats your availability for [a call](activity:have a call) [this week](When)?
 - hi [Forest](fm), this is [Ralph](nou). Can we [schedule a meeting](activity) in [the coming week](When)?
 - hi [Forest](fm), can we [schedule a meeting](activity) in [the coming week](When)?
-- Hey [Forest](fm) it’s [Jessica](nou), got time for [lunch](activity) [tomorrow](Day)?
+- Hey [Forest](fm) it’s [Jessica](nou), got time for [lunch](activity) [tomorrow](DATE)?
 - Hey [Forest](fm) it’s [Franscesa](nou), got time to [meet up](activity) [sometime](When)?
 - Hey [Forest](fm) it’s [Samantha](nou), got time to [get together](activity) [sometime](When)?
 - forest it’s [fred](nou). do you have time for [lunch](activity:do lunch)
-- forest it’s [fred](nou). do you have time for [lunch](activity:do lunch) next [tuesday](Day)
+- forest it’s [fred](nou). do you have time for [lunch](activity:do lunch) next [tuesday](DATE)
 
 - any particular [day](When) in mind?
 - are you free for [lunch](activity:do lunch)
@@ -497,7 +527,7 @@
 - is there [a good time](When) to [have a call](activity)
 - is there [a good time](When) to [discuss](activity)
 - you tell me what [day](When) is good
-- what time on [tuesday](Day)
+- what time on [tuesday](DATE)
 - what time do you prefer?
 - what time are you thinking
 - what time works well for you
@@ -516,177 +546,238 @@
 - do you have a peferred time?
 - what's your preferred time
 
+- how is your availability looking [this week](DATE)
+- how is your availability looking [next week](DATE)
+- how is your availability looking [the week after next](DATE)
+- how is your availability looking [the week after this](DATE)
+- how is your availability looking [not this week but next](DATE)
+- how is your availability looking [next week](DATE)
+- whats your availability like [this week](DATE)
+- whats your availability like [next week](DATE)
+- whats [this weekend](DATE) look like
+- what [this weekend](DATE) look like
+- hows [this weekend](DATE) look
+- hows [this weekend](DATE) looking
+- whats [your weekend](DATE) look like
+- you free [this weekend](DATE)
+- are you free [this weekend](DATE)
+- do you have time [this weekend](DATE)
+- how about [this weekend](DATE)
+- any day [this week](DATE)
+- [later this afternoon](When) or [tomorrow morning](When)
+- either [today](DATE) or [tomorrow](DATE) are good
+- can we have a call [sometime](When)
+- are you avavilable for a call [sometime](When)
+- whats [a good time](When) for you to have a call
+- whats [a good time](When) for us to have a call
+- can you let me know what [a good time](When) for a call might be
+- is there a particular time thats good for you
+- [thisweek](When:this week)
+- [nextweek](When:next week)
+- [this week](When)
+- [next week](When)
+- how about [this week](When)
+- how bout [next week](When)
+- [this weekend](When)
+- [next weekend](When)
+- [anytime](When) could work
+- [any time](When) could work
+- [anytime this week](When)
+- [any time this week](When)
+- [sometime this week](When)
+- [some time this week](When)
+- [anytime this week](When) could work
+- [any time this week](When) could work
+- [sometime this week](When) could work
+- [some time this week](When) could work
+- [anytime next week](When)
+- [any time next week](When)
+- [sometime next week](When)
+- [some time next week](When)
+- [anytime next week](When) could work
+- [any time next week](When) could work
+- [sometime next week](When) could work
+- [some time next week](When) could work
+- tomorrow, monday or tuesday is fine. afternoons are best
+- either tomorrow or thursday
+- any day but friday
+
+
 
 ## intent:suggest_availability
-- [Today](Day)
-- [today](Day)
-- [tomorrow](Day)
-- [Tomorrow](Day)
-- [Today](Day) is good
-- [Tomorrow](Day) looks good
-- [tomorrow](Day) maybe?
-- can we have a call [today](Day)
-- how does [tomorrow](Day) look
-- how does [tomorrow](Day) work
-- how does [tomorrow](Day) work for you
-- idk maybe [tomorrow](Day)
-- is [tomorrow](Day) good
-- is [tomorrow](Day) good for you
-- is [tomorrow](Day) good?
-- is [tomorrow](Day) ok?
-- maybe [tomorrow](Day)
-- maybe [tomorrow](Day)?
-- [sun](Day)
-- [mon](Day)
-- [tue](Day)
-- [wed](Day)
-- [thu](Day)
-- [thur](Day)
-- [thurs](Day)
-- [fri](Day)
-- [sat](Day)
-- [Sun](Day)
-- [Mon](Day)
-- [Tue](Day)
-- [Wed](Day)
-- [Thu](Day)
-- [Thur](Day)
-- [Thurs](Day)
-- [Fri](Day)
-- [Sat](Day)
-- [Sunday](Day)
-- [Monday](Day)
-- [Tuesday](Day)
-- [Wednesday](Day)
-- [Thursday](Day)
-- [Friday](Day)
-- [Saturday](Day)
-- [sunday](Day)
-- [monday](Day)
-- [tuesday](Day)
-- [wednesday](Day)
-- [thursday](Day)
-- [friday](Day)
-- [saturday](Day)
-- next [sun](Day)
-- next [mon](Day)
-- next [tue](Day)
-- next [wed](Day)
-- next [thu](Day)
-- next [thur](Day)
-- next [fri](Day)
-- next [sat](Day)
-- this [sunday](Day)
-- this [monday](Day)
-- this [tuesday](Day)
-- this [wednesday](Day)
-- this [thursday](Day)
-- this [friday](Day)
-- this [sunday](Day)
-- next [monday](Day)
-- next [tuesday](Day)
-- next [wednesday](Day)
-- next [thursday](Day)
-- next [friday](Day)
-- next [saturday](Day)
-- ok [sunday](Day)
-- ok [monday](Day)
-- ok [tuesday](Day)
-- ok [wednesday](Day)
-- ok [thursday](Day)
-- ok [friday](Day)
-- ok [saturday](Day)
-- ok then [sunday](Day)
-- ok then [monday](Day)
-- ok then [tuesday](Day)
-- ok then [wednesday](Day)
-- ok then [thursday](Day)
-- ok then [friday](Day)
-- ok then [saturday](Day)
-- [tomorrow](Day) works
-- [sunday](Day) works
-- [monday](Day) wokks
-- [tuesday](Day) works
-- [wednesday](Day) works
-- [thursday](Day) woorks
-- [friday](Day) works
-- how about [monday](Day)
-- how about [tusday](Day)
-- how about [wednsday](Day)
-- how about [thursday](Day)
-- how about [friday](Day)
-- [monday](Day) is good for me
-- [tuesday](Day) is good for me
-- [wednesday](Day) is good for me
-- [thursday](Day) is good for me
-- [friday](Day) is good for me
-- next [monday](Day) is good for me
-- next [tuesday](Day) is good for me
-- next [wednesday](Day) is good for me
-- next [thursday](Day) is good for me
-- next [friday](Day) is good for me
-- whats [monday](Day) look like
-- whats [this friday](Day) look like
-- can we do [next monday](Day)
-- how about the [wenesday after next](Day)
-- how about the [thursday after this](Day)
-- can we do [monday](Day)
-- can we do next [tuesday](Day)
-- can we do this [tuesday](Day)
+- [Today](DATE)
+- [today](DATE)
+- [tomorrow](DATE)
+- [Tomorrow](DATE)
+- [Today](DATE) is good
+- [Tomorrow](DATE) looks good
+- [tomorrow](DATE) maybe?
+- can we have a call [today](DATE)
+- how does [tomorrow](DATE) look
+- how does [tomorrow](DATE) work
+- how does [tomorrow](DATE) work for you
+- idk maybe [tomorrow](DATE)
+- is [tomorrow](DATE) good
+- is [tomorrow](DATE) good for you
+- is [tomorrow](DATE) good?
+- is [tomorrow](DATE) ok?
+- maybe [tomorrow](DATE)
+- maybe [tomorrow](DATE)?
+- [sun](DATE)
+- [mon](DATE)
+- [tue](DATE)
+- [wed](DATE)
+- [thu](DATE)
+- [thur](DATE)
+- [thurs](DATE)
+- [fri](DATE)
+- [sat](DATE)
+- [Sun](DATE)
+- [Mon](DATE)
+- [Tue](DATE)
+- [Wed](DATE)
+- [Thu](DATE)
+- [Thur](DATE)
+- [Thurs](DATE)
+- [Fri](DATE)
+- [Sat](DATE)
+- [Sunday](DATE)
+- [Monday](DATE)
+- [Tuesday](DATE)
+- [Wednesday](DATE)
+- [Thursday](DATE)
+- [Friday](DATE)
+- [Saturday](DATE)
+- [sunday](DATE)
+- [monday](DATE)
+- [tuesday](DATE)
+- [wednesday](DATE)
+- [thursday](DATE)
+- [friday](DATE)
+- [saturday](DATE)
+- next [sun](DATE)
+- next [mon](DATE)
+- next [tue](DATE)
+- next [wed](DATE)
+- next [thu](DATE)
+- next [thur](DATE)
+- next [fri](DATE)
+- next [sat](DATE)
+- this [sunday](DATE)
+- this [monday](DATE)
+- this [tuesday](DATE)
+- this [wednesday](DATE)
+- this [thursday](DATE)
+- this [friday](DATE)
+- this [sunday](DATE)
+- next [monday](DATE)
+- next [tuesday](DATE)
+- next [wednesday](DATE)
+- next [thursday](DATE)
+- next [friday](DATE)
+- next [saturday](DATE)
+- ok [sunday](DATE)
+- ok [monday](DATE)
+- ok [tuesday](DATE)
+- ok [wednesday](DATE)
+- ok [thursday](DATE)
+- ok [friday](DATE)
+- ok [saturday](DATE)
+- ok then [sunday](DATE)
+- ok then [monday](DATE)
+- ok then [tuesday](DATE)
+- ok then [wednesday](DATE)
+- ok then [thursday](DATE)
+- ok then [friday](DATE)
+- ok then [saturday](DATE)
+- [tomorrow](DATE) works
+- [sunday](DATE) works
+- [monday](DATE) wokks
+- [tuesday](DATE) works
+- [wednesday](DATE) works
+- [thursday](DATE) woorks
+- [friday](DATE) works
+- how about [monday](DATE)
+- how about [tusday](DATE)
+- how about [wednsday](DATE)
+- how about [thursday](DATE)
+- how about [friday](DATE)
+- [monday](DATE) is good for me
+- [tuesday](DATE) is good for me
+- [wednesday](DATE) is good for me
+- [thursday](DATE) is good for me
+- [friday](DATE) is good for me
+- next [monday](DATE) is good for me
+- next [tuesday](DATE) is good for me
+- next [wednesday](DATE) is good for me
+- next [thursday](DATE) is good for me
+- next [friday](DATE) is good for me
+- whats [monday](DATE) look like
+- whats [this friday](DATE) look like
+- can we do [next monday](DATE)
+- how about the [wenesday after next](DATE)
+- how about the [thursday after this](DATE)
+- can we do [monday](DATE)
+- can we do next [tuesday](DATE)
+- can we do this [tuesday](DATE)
 
-- can you do a call [tomorrow](Day)
-- can you do [a call](activity:have a call) on [monday](Day)
-- can you do [a call](activity:have a call) on [tuesday](Day)
-- can you do [a call](activity:have a call) on [wensday](Day)
-- can you do [a call](activity:have a call) on [thurs](Day)
-- can you do [a call](activity:have a call) on [fri](Day)
-- can you do [a call](activity:have a call) this [monday](Day)
-- can you do [a call](activity:have a call) this [tuesday](Day)
-- can you do [a call](activity:have a call) this [wensday](Day)
-- can you do [a call](activity:have a call) this [thurs](Day)
-- can you do [a call](activity:have a call) this [fri](Day)
-- can you do [a call](activity:have a call) next [monday](Day)
-- can you do [a call](activity:have a call) next [tuesday](Day)
-- can you do [a call](activity:have a call) next [wensday](Day)
-- can you do [a call](activity:have a call) next [thurs](Day)
-- can you do [a call](activity:have a call) next [fri](Day)
-- can we set up [a ca;;](activity:call) for [monday](Day)
+- can we have [lunch](activity) [monday](DATE)
+- can we [have a call](activity) [tues](DATE)
+- can we [have a zoom call](activity:Zoom) [wed](DATE)
+- can we [have a meeting](activity) [thurs](DATE)
+- can you do a call [tomorrow](DATE)
+- can you do [a call](activity:have a call) on [monday](DATE)
+- can you do [a call](activity:have a call) on [tuesday](DATE)
+- can you do [a call](activity:have a call)   [wensday](DATE)
+- can you do [a call](activity:have a call) on [thurs](DATE)
+- can you do [a call](activity:have a call) on [fri](DATE)
+- can you do [a call](activity:have a call) this [monday](DATE)
+- can you do [a call](activity:have a call) this [tuesday](DATE)
+- can you do [a call](activity:have a call) this [wensday](DATE)
+- can you do [a call](activity:have a call) this [thurs](DATE)
+- can you do [a call](activity:have a call) this [fri](DATE)
+- can you do [a call](activity:have a call) next [monday](DATE)
+- can you do [a call](activity:have a call) next [tuesday](DATE)
+- can you do [a call](activity:have a call) next [wensday](DATE)
+- can you do [a call](activity:have a call) next [thurs](DATE)
+- can you do [a call](activity:have a call) next [fri](DATE)
+- can we set up [a ca;;](activity:call) for [monday](DATE)
 - do you have time for [a call](activity:have a call)
-- do you have time for [a call](activity:have a call) [tomorrow](Day)?
-- do you have time for [lunch](activity:have lunch) [tomorrow](Day)?
-- do you have time to grab [lunch](activity:have lunch) [tomorrow](Day)?
-- want to grab [lunch](activity:have lunch) [tomorrow](Day)?
-- wanna grab [lunch](activity:have lunch) [tomorrow](Day)?
+- do you have time for [a call](activity:have a call) [tomorrow](DATE)?
+- do you have time for [lunch](activity:have lunch) [tomorrow](DATE)?
+- do you have time to grab [lunch](activity:have lunch) [tomorrow](DATE)?
+- want to grab [lunch](activity:have lunch) [tomorrow](DATE)?
+- wanna grab [lunch](activity:have lunch) [tomorrow](DATE)?
 - do you have availability for [a call](activity:have a call)
 - are you available for [a call](activity:have a call)
-- got time [tomorrow](Day)?
-- got time for a call [tomorrow](Day)?
-- got time for [lunch](activity) [tomorrow](Day)?
-- got any time to meet up [tomorrow](Day)?
-- got any time for a call [tomorrow](Day)?
-- got any time for [lunch](activity) [tomorrow](Day)?
-- got any time to meet up [tomorrow](Day)?
-- Hey Forest](fm) it's [Jessie](nou) got time for [lunch](activity) [tomorrow](Day)?
+- got time [tomorrow](DATE)?
+- got time for a call [tomorrow](DATE)?
+- got time for [lunch](activity) [tomorrow](DATE)?
+- got any time to meet up [tomorrow](DATE)?
+- got any time for a call [tomorrow](DATE)?
+- got any time for [lunch](activity) [tomorrow](DATE)?
+- got any time to meet up [tomorrow](DATE)?
+- Hey Forest](fm) it's [Jessie](nou) got time for [lunch](activity) [tomorrow](DATE)?
 
 - are you available for [a call](activity:have a call) on [the 15th](DATE)
 
-- can you do [a meeting](activity) [tomorrow](Day)
-- can you do [a meeting](activity) on [monday](Day)
-- can you do [a meeting](activity) on [tuesday](Day)
-- can you do [a meeting](activity) on [wensday](Day)
-- can you do [a meeting](activity) on [thurs](Day)
-- can you do [a meeting](activity) on [fri](Day)
-- can you do [a meeting](activity) this [monday](Day)
-- can you do [a meeting](activity) this [tuesday](Day)
-- can you do [a meeting](activity) this [wensday](Day)
-- can you do [a meeting](activity) this [thurs](Day)
-- can you do [a meeting](activity) this [fri](Day)
-- can you do [a meeting](activity) next [monday](Day)
-- can you do [a meeting](activity) next [tuesday](Day)
-- can you do [a meeting](activity) next [wensday](Day)
-- can you do [a meeting](activity) next [thurs](Day)
-- can you do [a meeting](activity) next [fri](Day)
-- can we set up a [a meeting](activity) for [monday](Day)
+- can you do [a meeting](activity) [tomorrow](DATE)
+- can you do [a meeting](activity) on [monday](DATE)
+- can you do [a meeting](activity) on [tuesday](DATE)
+- can you do [a meeting](activity) on [wensday](DATE)
+- can you do [a meeting](activity) on [thurs](DATE)
+- can you do [a meeting](activity) on [fri](DATE)
+- can you do [a meeting](activity) this [monday](DATE)
+- can you do [a meeting](activity) this [tuesday](DATE)
+- can you do [a meeting](activity) this [wensday](DATE)
+- can you do [a meeting](activity) this [thurs](DATE)
+- can you do [a meeting](activity) this [fri](DATE)
+- can you do [a meeting](activity) next [monday](DATE)
+- can you do [a meeting](activity) next [tuesday](DATE)
+- can you do [a meeting](activity) next [wensday](DATE)
+- can you do [a meeting](activity) next [thurs](DATE)
+- can you do [a meeting](activity) next [fri](DATE)
+- can we set up a [a meeting](activity) for [monday](DATE)
 - do you have time for [a meeting](activity)
 - do you have availability for [a meeting](activity)
 - will you be available for [a meeting](activity)
@@ -696,144 +787,176 @@
 - will you be available to [meet up](activity)
 - are you available to [meet up](activity)
 
+- can you [do lunch](activity) [today](DATE)
+- can you [do lunch](activity) [tomorrow](DATE)
+- can we [have lunch](activity) [today](DATE)
+- can we [have lunch](activity) [tomorrow](DATE)
+- can you [do a call](activity) [today](DATE)
+- can you [do a call](activity) [tomorrow](DATE)
+- can we [have a call](activity) [today](DATE)
+- can we [have a call](activity) [tomorrow](DATE)
+- can we [meet](activity) [today](DATE)
+- can we [meet up](activity) [tomorrow](DATE)
+- can you fit [a call](activity) in [today](DATE)
+- can you fit [a meeting](activity) in [tomorrow](DATE)
+- do you have time [today](DATE)
+- do you have time for [a call](activity:have a call) [today](DATE)
+- do you have time for [a meeting](activity:meet) [tomorrow](DATE)
+
+- can you [do lunch](activity) [this week](When)
+- can you [do lunch](activity) [tomorrow](DATE)
+- can we [have lunch](activity) [this week](When)
+- can we [have lunch](activity) [tomorrow](DATE)
+- can you [do a call](activity) [this week](When)
+- can you [do a call](activity) [next week](DATE)
+- can we [have a call](activity) [this week](DATE)
+- can we [have a call](activity) [next week](DATE)
+- can we [meet](activity) [this week](When)
+- can we [meet up](activity) [next week](DATE)
+- can you fit [a call](activity) in [this week](When)
+- can you fit [a meeting](activity) in [tomorrow](DATE)
+- do you have time [today](DATE)
+- do you have time for [a call](activity:have a call) [today](DATE)
+- do you have time for [a meeting](activity:meet) [tomorrow](DATE)
+
 - whats your availability
 - whats your availability like
-- whats [tomorrow](Day) look like for you?
+- whats [tomorrow](DATE) look like for you?
 - whats your availability for [a call](activity:have a call)
-- whats your availability [today](Day)
-- whats your availability for a call [today](Day)
-- whats your availability [tomorrow](Day)
-- whats your avail [monday](Day)
-- whats your availability [tuesday](Day)
-- whats your availability [wednesday](Day)
-- whats your availability [thursday](Day)
-- whats your availability [thu](Day)
-- whats your availability [thur](Day)
-- whats your availability look like [tuesday](Day)
-- whats your availability look like [wednesday](Day)
-- whats your availability [thursday](Day)
-- whats your availability [thu](Day)
-- whats your availability [thur](Day)
-- wats your availability [thurs](Day)
-- whats your availability [friday](Day)
-- whats your avail like on [thursday](Day)
-- whats your availability like this [thu](Day)
-- whats your availability like next [thur](Day)
-- whats your availability on [thurs](Day) like
-- whats your availability like this coming [friday](Day)
-- whats your availability this [monday](Day)
-- whats your availability this [tuesday](Day)
-- whats your availability this [wednesday](Day)
-- whats your availability this [thursday](Day)
-- whats your avail this [friday](Day)
-- whats your availability next [monday](Day)
-- whats your availability next [tuesday](Day)
-- whats your availability next [wednesday](Day)
-- whats your availability next [thursday](Day)
-- hats your availability next [friday](Day)
-- ows your availability on [monday](Day)
-- whats your availability on [tuesday](Day)
-- whats your availability on [wednesday](Day)
-- whats your availability on [thursday](Day)
-- whats your availability on [friday](Day)
-- whats your availability on [monday](Day) for a call
-- whats your availability on [tuesday](Day) for a call
-- whats your availability on [wednesday](Day) for call
-- whats your avail on [thursday](Day) for a call
-- whats your availability on [friday](Day) to hop on a call
-- whats your availability for a call on [monday](Day)
-- hows your availability for a call on [tuesday](Day)
-- whats your availability for a call on [wednesday](Day)
-- whats your availability for a call on [thursday](Day)
-- what is your availability for a call on [friday](Day)
-- ows your availability on [monday](Day)
-- hows your availability on [tuesday](Day)
-- hows your availability on [wednesday](Day)
-- hows your availability on [thursday](Day)
-- hows your availability on [friday](Day)
-- hows your availability [today](Day)
-- hows your availability [tomorrow](Day)
+- whats your availability [today](DATE)
+- whats your availability for a call [today](DATE)
+- whats your availability [tomorrow](DATE)
+- whats your avail [monday](DATE)
+- whats your availability [tuesday](DATE)
+- whats your availability [wednesday](DATE)
+- whats your availability [thursday](DATE)
+- whats your availability [thu](DATE)
+- whats your availability [thur](DATE)
+- whats your availability look like [tuesday](DATE)
+- whats your availability look like [wednesday](DATE)
+- whats your availability [thursday](DATE)
+- whats your availability [thu](DATE)
+- whats your availability [thur](DATE)
+- wats your availability [thurs](DATE)
+- whats your availability [friday](DATE)
+- whats your avail like on [thursday](DATE)
+- whats your availability like this [thu](DATE)
+- whats your availability like next [thur](DATE)
+- whats your availability on [thurs](DATE) like
+- whats your availability like this coming [friday](DATE)
+- whats your availability this [monday](DATE)
+- whats your availability this [tuesday](DATE)
+- whats your availability this [wednesday](DATE)
+- whats your availability this [thursday](DATE)
+- whats your avail this [friday](DATE)
+- whats your availability next [monday](DATE)
+- whats your availability next [tuesday](DATE)
+- whats your availability next [wednesday](DATE)
+- whats your availability next [thursday](DATE)
+- hats your availability next [friday](DATE)
+- ows your availability on [monday](DATE)
+- whats your availability on [tuesday](DATE)
+- whats your availability on [wednesday](DATE)
+- whats your availability on [thursday](DATE)
+- whats your availability on [friday](DATE)
+- whats your availability on [monday](DATE) for a call
+- whats your availability on [tuesday](DATE) for a call
+- whats your availability on [wednesday](DATE) for call
+- whats your avail on [thursday](DATE) for a call
+- whats your availability on [friday](DATE) to hop on a call
+- whats your availability for a call on [monday](DATE)
+- hows your availability for a call on [tuesday](DATE)
+- whats your availability for a call on [wednesday](DATE)
+- whats your availability for a call on [thursday](DATE)
+- what is your availability for a call on [friday](DATE)
+- ows your availability on [monday](DATE)
+- hows your availability on [tuesday](DATE)
+- hows your availability on [wednesday](DATE)
+- hows your availability on [thursday](DATE)
+- hows your availability on [friday](DATE)
+- hows your availability [today](DATE)
+- hows your availability [tomorrow](DATE)
 - hows your availability [this week](When)
 - hows your availability [next week](When)
 - whats your availability [this week](When)
 - whats your availability [next week](When)
 
-- how does [tomorrow](Day) work for you
-- how does [monday](Day) work for you
-- how does [tuesday](Day) work for you
-- how does [wednesday](Day) work for you
-- how does [thursday](Day) work for you
-- how does [friday](Day) work for you
-- how does [friday](Day) look
-- how does [thursday](Day) look for you
-- how is [thursday](Day) for you
-- how is [friday](Day) looking
-- how is [wednesday](Day) looking for you?
-- how does [monday](Day) work for you
-- how does [tuesday](Day) work for you
-- how does [wednesday](Day) work for you
-- how does [thursday](Day) work for you
-- how does [fiday](Day) work for you
-- how about [monday](Day)
-- how about [tuesday](Day)
-- how about [tueday](Day) this week
-- how about this week on [tuesday](Day)
-- how about next week on [monday](Day)
-- how about [monday](Day) of next week?
-- how about [wednsday](Day)
-- how about [thursday](Day)
-- how about [friday](Day)
-- [monday](Day) is good for me
-- [tuesday](Day) is good for me
-- [wednesday](Day) is good for me
-- [thursday](Day) is good for me
-- [friday](Day) is good for me
-- next [monday](Day) is good for me
-- next [tuesday](Day) is good for me
-- next [wednesday](Day) is good for me
-- next [thursday](Day) is good for me
-- next [friday](Day) is good for me
-- whats [monday](Day) look like
-- whats your [tuesday](Day) look like
-- what does [wednesday](Day) look like
-- what does [thursday](Day) look like for you
-- how does [friday](Day) look like for you
-- can we do a call on [tuesday](Day)
-- how is your availability looking on [tuesday](Day)
-- shall we say [thursday](Day)
-- shall we say [thursday](Day) then?
-- shall we confirm for [tuesday](Day) then?
+- how does [tomorrow](DATE) work for you
+- how does [monday](DATE) work for you
+- how does [tuesday](DATE) work for you
+- how does [wednesday](DATE) work for you
+- how does [thursday](DATE) work for you
+- how does [friday](DATE) work for you
+- how does [friday](DATE) look
+- how does [thursday](DATE) look for you
+- how is [thursday](DATE) for you
+- how is [friday](DATE) looking
+- how is [wednesday](DATE) looking for you?
+- how does [monday](DATE) work for you
+- how does [tuesday](DATE) work for you
+- how does [wednesday](DATE) work for you
+- how does [thursday](DATE) work for you
+- how does [fiday](DATE) work for you
+- how about [monday](DATE)
+- how about [tuesday](DATE)
+- how about [tueday](DATE) this week
+- how about this week on [tuesday](DATE)
+- how about next week on [monday](DATE)
+- how about [monday](DATE) of next week?
+- how about [wednsday](DATE)
+- how about [thursday](DATE)
+- how about [friday](DATE)
+- [monday](DATE) is good for me
+- [tuesday](DATE) is good for me
+- [wednesday](DATE) is good for me
+- [thursday](DATE) is good for me
+- [friday](DATE) is good for me
+- next [monday](DATE) is good for me
+- next [tuesday](DATE) is good for me
+- next [wednesday](DATE) is good for me
+- next [thursday](DATE) is good for me
+- next [friday](DATE) is good for me
+- whats [monday](DATE) look like
+- whats your [tuesday](DATE) look like
+- what does [wednesday](DATE) look like
+- what does [thursday](DATE) look like for you
+- how does [friday](DATE) look like for you
+- can we do a call on [tuesday](DATE)
+- how is your availability looking on [tuesday](DATE)
+- shall we say [thursday](DATE)
+- shall we say [thursday](DATE) then?
+- shall we confirm for [tuesday](DATE) then?
 
-- I’m free [anytime today](TOD) except 1-3pm. Tomorrow is kinda loose, I could [jump on a call](activity) [whenever](TOD). [Sunday](Day) I could talk at [noon](Time) or [after 4pm](Time)
+- I’m free [anytime today](TOD) except 1-3pm. Tomorrow is kinda loose, I could [jump on a call](activity) [whenever](TOD). [Sunday](DATE) I could talk at [noon](Time) or [after 4pm](Time)
 
 ## intent:suggest_different_day
-- [friday](Day) is better for me
-- [thursday](Day) is better for me
-- are you able to do [wednesday](Day) instead
-- can we chage it to [tomorrow](Day) instead
-- can we change to [monday](Day)
-- can we change to [tuesday](Day)
-- can we do [friday](Day) instead
-- can we do [monday](Day) instead
-- can we do [the day after tomorrow](Day) instead
-- can we do [thursday](Day) instead
-- can we do [tomorrow](Day) instead
-- can we do [tuesday](Day) instead
-- can we do [wednesday](Day) instead
-- does [friday](Day) work
-- does [friday](Day) work instead
-- does [monday](Day) work
-- does [monday](Day) work instead
-- does [thursday](Day) work
-- does [thursday](Day) work instead
-- does [tuesday](Day) work
-- does [tuesday](Day) work instead
-- does [wednesday](Day) work
-- does [wednesday](Day) work instead
-- how does [thursday](Day) work instead
-- i would prefer [tuesday](Day)
-- i would rather we do [monday](Day)
-- rather can we do [wednesday](Day)
+- [friday](DATE) is better for me
+- [thursday](DATE) is better for me
+- are you able to do [wednesday](DATE) instead
+- can we chage it to [tomorrow](DATE) instead
+- can we change to [monday](DATE)
+- can we change to [tuesday](DATE)
+- can we do [friday](DATE) instead
+- can we do [monday](DATE) instead
+- can we do [the day after tomorrow](DATE) instead
+- can we do [thursday](DATE) instead
+- can we do [tomorrow](DATE) instead
+- can we do [tuesday](DATE) instead
+- can we do [wednesday](DATE) instead
+- does [friday](DATE) work
+- does [friday](DATE) work instead
+- does [monday](DATE) work
+- does [monday](DATE) work instead
+- does [thursday](DATE) work
+- does [thursday](DATE) work instead
+- does [tuesday](DATE) work
+- does [tuesday](DATE) work instead
+- does [wednesday](DATE) work
+- does [wednesday](DATE) work instead
+- how does [thursday](DATE) work instead
+- i would prefer [tuesday](DATE)
+- i would rather we do [monday](DATE)
+- rather can we do [wednesday](DATE)
 - can we change the day
 - can we do a different day
 
@@ -1118,15 +1241,26 @@
 - what does the [30th of sept](DATE) look like
 - can we do a call on the [4th of novembver](DATE)
 - could we do a call on the [4th of novembver](DATE)
-- could we do a call on the [4th of novembver](DATE)
+- could we do a call on the [4th of Nov](DATE)
 - how about [11/11](DATE)
 - how about [07/11](DATE)
 - how about [8-12](DATE)
+- how is your availability looking on the [16 oct](DATE)
+- how is your availability looking for [13 May](DATE)
+- how is your availability looking for [14 June](DATE)
+- can you do a meeting on [15 July](DATE)
+- do you have room on your calendar for [16 Aug](DATE)
+= what's your calendar like on [11 April](DATE)
+= what's your availability like on [11 April](DATE)
+- what does the [30th of sept](DATE) look like
+- can we do [lunch](activity:do lunch) on the [4 Sept](DATE)
+- could we [do a call](activity) on the [4 december](DATE)
 
-- [monday](Day) is good for me
-- [tuesday](Day) is good for me
-- [wednesday](Day) works for me
-- [thursday](Day) could work
+
+- [monday](DATE) is good for me
+- [tuesday](DATE) is good for me
+- [wednesday](DATE) works for me
+- [thursday](DATE) could work
 
 ## intent:suggest_time
 - [1p](Time)
@@ -1487,48 +1621,16 @@
 - actually [12:00](Time) would be perfect
 - can we do a different time instead
 
-## intent:vague_when
-- how is your availability looking [this week](DATE)
-- how is your availability looking [next week](DATE)
-- how is your availability looking [the week after next](DATE)
-- how is your availability looking [the week after this](DATE)
-- how is your availability looking [not this week but next](DATE)
-- how is your availability looking [next week](DATE)
-- whats your availability like [this week](DATE)
-- whats your availability like [next week](DATE)
-- whats [this weekend](DATE) look like
-- what [this weekend](DATE) look like
-- hows [this weekend](DATE) look
-- hows [this weekend](DATE) looking
-- whats [your weekend](DATE) look like
-- you free [this weekend](DATE)
-- are you free [this weekend](DATE)
-- do you have time [this weekend](DATE)
-- how about [this weekend](DATE)
-- tomorrow, monday or tuesday is fine. afternoons are best
-- either tomorrow or thursday
-- any day but friday
-- any day [this week](DATE)
-- [later this afternoon](When) or [tomorrow morning](When)
-- either [today](Day) or [tomorrow](Day) are good
-- can we have a call [sometime](When)
-- are you avavilable for a call [sometime](When)
-- whats [a good time](When) for you to have a call
-- whats [a good time](When) for us to have a call
-- can you let me know what [a good time](When) for a call might be
-- is there a particular time thats good for you
-- [anytime](When) could work
-- [any time](When) could work
 
 ## intent:affirm_day
-- sure [friday](Day) sounds good
-- that [day](vague_When) is good
-- OK, [Thursday](Day) at 2:00 works for me
-- OK, [Friday](Day) at 3:00 works for me too
-- OK, [Monday](Day) at 1:00 is good for me
-- OK, [Tuesday](Day) at 4:00 is good for me too
-- great lets shoot for [monday](Day)
-- ok lets aim for [monday](Day)
+- sure [friday](DATE) sounds good
+- [that day](When) is good
+- OK, [Thursday](DATE) at 2:00 works for me
+- OK, [Friday](DATE) at 3:00 works for me too
+- OK, [Monday](DATE) at 1:00 is good for me
+- OK, [Tuesday](DATE) at 4:00 is good for me too
+- great lets shoot for [monday](DATE)
+- ok lets aim for [monday](DATE)
 
 ## intent:affirm_time
 - [10:00](Time) looks good
@@ -1544,13 +1646,13 @@
 - that time is just fine
 
 ## intent:confirm_day_and_time
-- ok, [Wed](Day) at [10am](Time) it is
-- got it [Thursday](Day) at [10:00](Time) it is
-- great then well talk on [Tue](Day) at [3pm](Time)
-- confirmed talk you at [10:30](Time) on [Tuesday](Day)
-- [2:00 pm](Time) on [Monday](Day) confirmed
+- ok, [Wed](DATE) at [10am](Time) it is
+- got it [Thursday](DATE) at [10:00](Time) it is
+- great then well talk on [Tue](DATE) at [3pm](Time)
+- confirmed talk you at [10:30](Time) on [Tuesday](DATE)
+- [2:00 pm](Time) on [Monday](DATE) confirmed
 - that day and time are fine with me
-- just added to my calendar [10:45](Time) on [Friday](Day)
+- just added to my calendar [10:45](Time) on [Friday](DATE)
 
 ## intent:reject_day_or_time
 - no good

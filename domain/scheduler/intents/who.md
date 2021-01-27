@@ -398,6 +398,15 @@
 - TY [Gene](nou)
 - it's [don](nou). just following up on my email
 - it's [ron](nou). i received your email and
+- hi its' [beth](nou)
+- hi, its' [lou](nou)
+- Hi, its' [adele](nou)
+- Hi its' [callie](nou)
+- its' [kellie](nou)
+- its' [lonnie](nou)
+- its' [izzy](nou)
+- its' [valerie](nou)
+
 
 - Hi, this is [Jackie](nou) from [Publicis](org)
 - [Tim](nou) from [Apple](org)
@@ -410,6 +419,7 @@
 - [roger](nou) from [Sperry](org)
 
 ## intent:thisisnt
+- im not [brian eno](nou)
 - this isnt [adam](nou)
 - this isnt [beth](nou)
 - this isnt [cat](nou)
@@ -421,7 +431,6 @@
 - this isnt [nicholas](nou)
 - this isnt [peter](nou)
 - this isnt [quincy jones](nou)
-- im not [brian eno](nou)
 - this isnt [raj](nou)
 - this isnt [sam](nou)
 - this isnt [tatiana](nou)

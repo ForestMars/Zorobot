@@ -153,7 +153,7 @@ config:
 entities:
 - fm
 - PERSON
-- DATE
+- TIME
 - pov
 - org
 - who
@@ -165,6 +165,7 @@ entities:
 - Time
 - TOD
 - month_and_date
+- date_or_time
 - same_or_different
 - activity
 - email
@@ -686,8 +687,7 @@ templates:
   utter_ask_Date:
   - text: What Date are we shooting for ??
   utter_ask_Time:
-  - text: What time is good for you on {Day}, {month_name} {day_of_month}?
-  - text: What's a good time for you on {Day}, {month_name} {day_of_month}?
+  - text: Ok, What time is good for you on {Day}, {month_name} {day_of_month}?
   utter_ask_are_you_tryna_schedule:
   - text: Are you trying to set up a call with Forest?
   - text: Are you trying to set up a meeting with Forest?
@@ -731,7 +731,7 @@ templates:
   utter_ask_specific_time:
   - text: Ok, {TOD} sounds good. What's a specific time you can do a call?
   utter_ask_time:
-  - text: What's a good time for you on ({Day}) {month_name} {day_of_month}
+  - text: ok, what's a good time for you on ({Day}) {month_name} {day_of_month}
   utter_ask_time_date:
   - text: What's a good time for you to have a call on ({Day}) {month_name} {day_of_month}?
   utter_ask_time_day:

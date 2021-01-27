@@ -8687,6 +8687,10 @@
       },
       {
         "intent": "get_my_email",
+        "text": "i emailed you"
+      },
+      {
+        "intent": "get_my_email",
         "text": "i sent you an email"
       },
       {
@@ -8704,6 +8708,14 @@
       {
         "intent": "get_my_email",
         "text": "sent an email your way"
+      },
+      {
+        "intent": "get_my_email",
+        "text": "sent you an email"
+      },
+      {
+        "intent": "get_my_email",
+        "text": "sent an email to you"
       },
       {
         "intent": "heard_you_are_hiring",
@@ -11994,12 +12006,12 @@
         "entities": [
           {
             "start": 20,
-            "end": 35,
+            "end": 31,
             "value": "Zoom",
             "entity": "activity"
           }
         ],
-        "text": "and you are able to book a zom call with forest?"
+        "text": "and you are able to book a zoom with forest?"
       },
       {
         "intent": "lets_do",
@@ -12018,12 +12030,24 @@
         "entities": [
           {
             "start": 20,
-            "end": 36,
+            "end": 31,
             "value": "Zoom",
             "entity": "activity"
           }
         ],
-        "text": "and you are able to book a zoom call with forest?"
+        "text": "and you are able to book a zoom with forest?"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 16,
+            "end": 20,
+            "value": "zoom",
+            "entity": "activity"
+          }
+        ],
+        "text": "can we schedule zoom"
       },
       {
         "intent": "lets_do",
@@ -12096,6 +12120,114 @@
           }
         ],
         "text": "can u pls set up a meeting for me and Forest"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 7,
+            "end": 15,
+            "value": "do lunch",
+            "entity": "activity"
+          }
+        ],
+        "text": "can we do lunch"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 8,
+            "end": 16,
+            "value": "do lunch",
+            "entity": "activity"
+          }
+        ],
+        "text": "can you do lunch"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 14,
+            "end": 22,
+            "value": "do lunch",
+            "entity": "activity"
+          }
+        ],
+        "text": "can you and i do lunch"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 8,
+            "end": 16,
+            "value": "do lunch",
+            "entity": "activity"
+          }
+        ],
+        "text": "can you do lunch with some friends of mine"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 8,
+            "end": 21,
+            "value": "hop on a call",
+            "entity": "activity"
+          }
+        ],
+        "text": "can you hop on a call"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 8,
+            "end": 21,
+            "value": "hop on a call",
+            "entity": "activity"
+          }
+        ],
+        "text": "can you hop on a call with our VP"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 8,
+            "end": 21,
+            "value": "hop on a call",
+            "entity": "activity"
+          }
+        ],
+        "text": "can you hop on a call with our SVP"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 8,
+            "end": 21,
+            "value": "hop on a call",
+            "entity": "activity"
+          }
+        ],
+        "text": "can you hop on a call with our CEO"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 8,
+            "end": 21,
+            "value": "hop on a call",
+            "entity": "activity"
+          }
+        ],
+        "text": "can you hop on a call with our CTO"
       },
       {
         "intent": "lets_do",
@@ -12401,6 +12533,30 @@
         "intent": "lets_do",
         "entities": [
           {
+            "start": 8,
+            "end": 19,
+            "value": "have a call",
+            "entity": "activity"
+          }
+        ],
+        "text": "can you take a call"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 8,
+            "end": 22,
+            "value": "meet",
+            "entity": "activity"
+          }
+        ],
+        "text": "can you take a meeting"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
             "start": 20,
             "end": 26,
             "value": "have a call",
@@ -12492,6 +12648,24 @@
           }
         ],
         "text": "can you please plan a Zoom call with forest"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 15,
+            "end": 26,
+            "value": "plan a Zoom",
+            "entity": "activity"
+          },
+          {
+            "start": 32,
+            "end": 38,
+            "value": "forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "can you please plan a Zoom with forest"
       },
       {
         "intent": "lets_do",
@@ -12768,6 +12942,18 @@
         "entities": [
           {
             "start": 16,
+            "end": 20,
+            "value": "zoom",
+            "entity": "activity"
+          }
+        ],
+        "text": "i would like to zoom"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 16,
             "end": 24,
             "value": "call me",
             "entity": "activity"
@@ -12870,6 +13056,18 @@
           }
         ],
         "text": "I would like to schedule a zoom call"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 16,
+            "end": 31,
+            "value": "schedule a zoom",
+            "entity": "activity"
+          }
+        ],
+        "text": "I would like to schedule a zoom"
       },
       {
         "intent": "lets_do",
@@ -13607,13 +13805,25 @@
         "intent": "lets_do",
         "entities": [
           {
-            "start": 6,
-            "end": 25,
-            "value": "meet in your garden",
+            "start": 5,
+            "end": 13,
+            "value": "do lunch",
             "entity": "activity"
           }
         ],
-        "text": "let's meet in your garden"
+        "text": "lets do lunch"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 6,
+            "end": 14,
+            "value": "do lunch",
+            "entity": "activity"
+          }
+        ],
+        "text": "let's do lunch"
       },
       {
         "intent": "lets_do",
@@ -13824,6 +14034,18 @@
           }
         ],
         "text": "lets take in a film"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 6,
+            "end": 25,
+            "value": "meet in your garden",
+            "entity": "activity"
+          }
+        ],
+        "text": "let's meet in your garden"
       },
       {
         "intent": "lets_do",
@@ -14457,7 +14679,51 @@
       },
       {
         "intent": "lets_do",
-        "text": "can you schdule a zoom call with Foesst?"
+        "entities": [
+          {
+            "start": 8,
+            "end": 28,
+            "value": "Zoom",
+            "entity": "activity"
+          }
+        ],
+        "text": "can you schedule a zoom call with Forest?"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 13,
+            "end": 30,
+            "value": "have a call",
+            "entity": "activity"
+          }
+        ],
+        "text": "How bout you program me a call with forest"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 0,
+            "end": 18,
+            "value": "schedule a call",
+            "entity": "activity"
+          }
+        ],
+        "text": "schedule me a call"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 0,
+            "end": 14,
+            "value": "book a call",
+            "entity": "activity"
+          }
+        ],
+        "text": "book me a call"
       },
       {
         "intent": "ask_availability",
@@ -14547,10 +14813,16 @@
         "intent": "ask_availability",
         "entities": [
           {
+            "start": 28,
+            "end": 33,
+            "value": "have a call",
+            "entity": "activity"
+          },
+          {
             "start": 34,
             "end": 42,
             "value": "tomorrow",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your availability for lunch tomorrow"
@@ -14559,10 +14831,16 @@
         "intent": "ask_availability",
         "entities": [
           {
+            "start": 28,
+            "end": 34,
+            "value": "have a call",
+            "entity": "activity"
+          },
+          {
             "start": 35,
             "end": 40,
             "value": "today",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your availability for a call today"
@@ -14570,6 +14848,12 @@
       {
         "intent": "ask_availability",
         "entities": [
+          {
+            "start": 28,
+            "end": 35,
+            "value": "have a call",
+            "entity": "activity"
+          },
           {
             "start": 35,
             "end": 44,
@@ -14582,6 +14866,12 @@
       {
         "intent": "ask_availability",
         "entities": [
+          {
+            "start": 27,
+            "end": 34,
+            "value": "meet up",
+            "entity": "activity"
+          },
           {
             "start": 35,
             "end": 44,
@@ -14628,7 +14918,7 @@
             "start": 15,
             "end": 20,
             "value": "today",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "Can I call you today?"
@@ -14652,7 +14942,7 @@
             "start": 15,
             "end": 23,
             "value": "tomorrow",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "Can I call you tomorrow?"
@@ -14724,7 +15014,7 @@
             "start": 16,
             "end": 21,
             "value": "today",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "Can I come over today?"
@@ -14748,7 +15038,7 @@
             "start": 16,
             "end": 24,
             "value": "tomorrow",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "Can I come over tomorrow?"
@@ -15270,7 +15560,7 @@
             "start": 22,
             "end": 28,
             "value": "Monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can we have a call on Monday"
@@ -15312,7 +15602,7 @@
             "start": 22,
             "end": 28,
             "value": "Friday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can we have a call on Friday"
@@ -15330,7 +15620,7 @@
             "start": 23,
             "end": 29,
             "value": "Monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can we plan a call for Monday"
@@ -15348,7 +15638,7 @@
             "start": 29,
             "end": 36,
             "value": "Tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can we do lunch next week on Tuesday"
@@ -15366,7 +15656,7 @@
             "start": 27,
             "end": 36,
             "value": "this week",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can we schedule a call for this week"
@@ -15658,6 +15948,78 @@
         "entities": [
           {
             "start": 8,
+            "end": 19,
+            "value": "have a call",
+            "entity": "activity"
+          },
+          {
+            "start": 20,
+            "end": 25,
+            "value": "today",
+            "entity": "DATE"
+          }
+        ],
+        "text": "can you take a call today"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 8,
+            "end": 19,
+            "value": "have a call",
+            "entity": "activity"
+          },
+          {
+            "start": 23,
+            "end": 29,
+            "value": "Monday",
+            "entity": "DATE"
+          }
+        ],
+        "text": "can you take a call on Monday"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 8,
+            "end": 22,
+            "value": "meet",
+            "entity": "activity"
+          },
+          {
+            "start": 23,
+            "end": 32,
+            "value": "this week",
+            "entity": "DATE"
+          }
+        ],
+        "text": "can you take a meeting this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 8,
+            "end": 22,
+            "value": "take a meeting",
+            "entity": "activity"
+          },
+          {
+            "start": 23,
+            "end": 32,
+            "value": "next week",
+            "entity": "When"
+          }
+        ],
+        "text": "can you take a meeting next week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 8,
             "end": 15,
             "value": "come in",
             "entity": "activity"
@@ -15693,19 +16055,79 @@
         "intent": "ask_availability",
         "entities": [
           {
-            "start": 8,
-            "end": 22,
-            "value": "take a meeting",
+            "start": 13,
+            "end": 18,
+            "value": "lunch",
             "entity": "activity"
           },
           {
-            "start": 23,
-            "end": 32,
-            "value": "next week",
-            "entity": "When"
+            "start": 19,
+            "end": 24,
+            "value": "today",
+            "entity": "DATE"
           }
         ],
-        "text": "can you take a meeting next week"
+        "text": "got time for lunch today"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 13,
+            "end": 19,
+            "value": "a call",
+            "entity": "activity"
+          },
+          {
+            "start": 20,
+            "end": 28,
+            "value": "tomorrow",
+            "entity": "DATE"
+          }
+        ],
+        "text": "got time for a call tomorrow"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 14,
+            "end": 21,
+            "value": "meeting",
+            "entity": "activity"
+          },
+          {
+            "start": 22,
+            "end": 31,
+            "value": "this week",
+            "entity": "DATE"
+          }
+        ],
+        "text": "go time for a meeting this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 15,
+            "end": 24,
+            "value": "zoom",
+            "entity": "activity"
+          }
+        ],
+        "text": "got time for a zoom call"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 30,
+            "end": 39,
+            "value": "zoom",
+            "entity": "activity"
+          }
+        ],
+        "text": "when will you have time for a zoom call"
       },
       {
         "intent": "ask_availability",
@@ -16302,7 +16724,7 @@
             "start": 20,
             "end": 28,
             "value": "tomorrow",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can forest do lunch tomorrow"
@@ -17616,7 +18038,7 @@
             "start": 73,
             "end": 82,
             "value": "Wednesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "Hey Forest , Rob from Nexus here. What's your availability for a call on Wednesday?"
@@ -17676,7 +18098,7 @@
             "start": 59,
             "end": 65,
             "value": "Monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "Hello Forest it's Karen from OpenAI. Can we have a call on Monday"
@@ -18822,7 +19244,7 @@
             "start": 84,
             "end": 92,
             "value": "tomorrow",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "this is arlo thank you for getting back to me, can we hop on a call. whats good for tomorrow?"
@@ -19014,7 +19436,7 @@
             "start": 44,
             "end": 52,
             "value": "tomorrow",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "Hey Forest it’s Jessica, got time for lunch tomorrow?"
@@ -19116,7 +19538,7 @@
             "start": 50,
             "end": 57,
             "value": "tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "forest it’s fred. do you have time for lunch next tuesday"
@@ -19248,7 +19670,7 @@
             "start": 13,
             "end": 20,
             "value": "tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "what time on tuesday"
@@ -19372,13 +19794,653 @@
         "text": "what's your preferred time"
       },
       {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 33,
+            "end": 42,
+            "value": "this week",
+            "entity": "DATE"
+          }
+        ],
+        "text": "how is your availability looking this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 33,
+            "end": 42,
+            "value": "next week",
+            "entity": "DATE"
+          }
+        ],
+        "text": "how is your availability looking next week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 33,
+            "end": 52,
+            "value": "the week after next",
+            "entity": "DATE"
+          }
+        ],
+        "text": "how is your availability looking the week after next"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 33,
+            "end": 52,
+            "value": "the week after this",
+            "entity": "DATE"
+          }
+        ],
+        "text": "how is your availability looking the week after this"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 33,
+            "end": 55,
+            "value": "not this week but next",
+            "entity": "DATE"
+          }
+        ],
+        "text": "how is your availability looking not this week but next"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 33,
+            "end": 42,
+            "value": "next week",
+            "entity": "DATE"
+          }
+        ],
+        "text": "how is your availability looking next week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 29,
+            "end": 38,
+            "value": "this week",
+            "entity": "DATE"
+          }
+        ],
+        "text": "whats your availability like this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 29,
+            "end": 38,
+            "value": "next week",
+            "entity": "DATE"
+          }
+        ],
+        "text": "whats your availability like next week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 6,
+            "end": 18,
+            "value": "this weekend",
+            "entity": "DATE"
+          }
+        ],
+        "text": "whats this weekend look like"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 5,
+            "end": 17,
+            "value": "this weekend",
+            "entity": "DATE"
+          }
+        ],
+        "text": "what this weekend look like"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 5,
+            "end": 17,
+            "value": "this weekend",
+            "entity": "DATE"
+          }
+        ],
+        "text": "hows this weekend look"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 5,
+            "end": 17,
+            "value": "this weekend",
+            "entity": "DATE"
+          }
+        ],
+        "text": "hows this weekend looking"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 6,
+            "end": 18,
+            "value": "your weekend",
+            "entity": "DATE"
+          }
+        ],
+        "text": "whats your weekend look like"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 9,
+            "end": 21,
+            "value": "this weekend",
+            "entity": "DATE"
+          }
+        ],
+        "text": "you free this weekend"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 13,
+            "end": 25,
+            "value": "this weekend",
+            "entity": "DATE"
+          }
+        ],
+        "text": "are you free this weekend"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 17,
+            "end": 29,
+            "value": "this weekend",
+            "entity": "DATE"
+          }
+        ],
+        "text": "do you have time this weekend"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 10,
+            "end": 22,
+            "value": "this weekend",
+            "entity": "DATE"
+          }
+        ],
+        "text": "how about this weekend"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 8,
+            "end": 17,
+            "value": "this week",
+            "entity": "DATE"
+          }
+        ],
+        "text": "any day this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 0,
+            "end": 20,
+            "value": "later this afternoon",
+            "entity": "When"
+          },
+          {
+            "start": 24,
+            "end": 40,
+            "value": "tomorrow morning",
+            "entity": "When"
+          }
+        ],
+        "text": "later this afternoon or tomorrow morning"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 7,
+            "end": 12,
+            "value": "today",
+            "entity": "DATE"
+          },
+          {
+            "start": 16,
+            "end": 24,
+            "value": "tomorrow",
+            "entity": "DATE"
+          }
+        ],
+        "text": "either today or tomorrow are good"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 19,
+            "end": 27,
+            "value": "sometime",
+            "entity": "When"
+          }
+        ],
+        "text": "can we have a call sometime"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 30,
+            "end": 38,
+            "value": "sometime",
+            "entity": "When"
+          }
+        ],
+        "text": "are you avavilable for a call sometime"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 6,
+            "end": 17,
+            "value": "a good time",
+            "entity": "When"
+          }
+        ],
+        "text": "whats a good time for you to have a call"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 6,
+            "end": 17,
+            "value": "a good time",
+            "entity": "When"
+          }
+        ],
+        "text": "whats a good time for us to have a call"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 25,
+            "end": 36,
+            "value": "a good time",
+            "entity": "When"
+          }
+        ],
+        "text": "can you let me know what a good time for a call might be"
+      },
+      {
+        "intent": "ask_availability",
+        "text": "is there a particular time thats good for you"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "this week",
+            "entity": "When"
+          }
+        ],
+        "text": "thisweek"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "next week",
+            "entity": "When"
+          }
+        ],
+        "text": "nextweek"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "this week",
+            "entity": "When"
+          }
+        ],
+        "text": "this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "next week",
+            "entity": "When"
+          }
+        ],
+        "text": "next week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 10,
+            "end": 19,
+            "value": "this week",
+            "entity": "When"
+          }
+        ],
+        "text": "how about this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 9,
+            "end": 18,
+            "value": "next week",
+            "entity": "When"
+          }
+        ],
+        "text": "how bout next week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "value": "this weekend",
+            "entity": "When"
+          }
+        ],
+        "text": "this weekend"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "value": "next weekend",
+            "entity": "When"
+          }
+        ],
+        "text": "next weekend"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "anytime",
+            "entity": "When"
+          }
+        ],
+        "text": "anytime could work"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "any time",
+            "entity": "When"
+          }
+        ],
+        "text": "any time could work"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 0,
+            "end": 17,
+            "value": "anytime this week",
+            "entity": "When"
+          }
+        ],
+        "text": "anytime this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 0,
+            "end": 18,
+            "value": "any time this week",
+            "entity": "When"
+          }
+        ],
+        "text": "any time this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 0,
+            "end": 18,
+            "value": "sometime this week",
+            "entity": "When"
+          }
+        ],
+        "text": "sometime this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 0,
+            "end": 19,
+            "value": "some time this week",
+            "entity": "When"
+          }
+        ],
+        "text": "some time this week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 0,
+            "end": 17,
+            "value": "anytime this week",
+            "entity": "When"
+          }
+        ],
+        "text": "anytime this week could work"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 0,
+            "end": 18,
+            "value": "any time this week",
+            "entity": "When"
+          }
+        ],
+        "text": "any time this week could work"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 0,
+            "end": 18,
+            "value": "sometime this week",
+            "entity": "When"
+          }
+        ],
+        "text": "sometime this week could work"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 0,
+            "end": 19,
+            "value": "some time this week",
+            "entity": "When"
+          }
+        ],
+        "text": "some time this week could work"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 0,
+            "end": 17,
+            "value": "anytime next week",
+            "entity": "When"
+          }
+        ],
+        "text": "anytime next week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 0,
+            "end": 18,
+            "value": "any time next week",
+            "entity": "When"
+          }
+        ],
+        "text": "any time next week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 0,
+            "end": 18,
+            "value": "sometime next week",
+            "entity": "When"
+          }
+        ],
+        "text": "sometime next week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 0,
+            "end": 19,
+            "value": "some time next week",
+            "entity": "When"
+          }
+        ],
+        "text": "some time next week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 0,
+            "end": 17,
+            "value": "anytime next week",
+            "entity": "When"
+          }
+        ],
+        "text": "anytime next week could work"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 0,
+            "end": 18,
+            "value": "any time next week",
+            "entity": "When"
+          }
+        ],
+        "text": "any time next week could work"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 0,
+            "end": 18,
+            "value": "sometime next week",
+            "entity": "When"
+          }
+        ],
+        "text": "sometime next week could work"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 0,
+            "end": 19,
+            "value": "some time next week",
+            "entity": "When"
+          }
+        ],
+        "text": "some time next week could work"
+      },
+      {
+        "intent": "ask_availability",
+        "text": "tomorrow, monday or tuesday is fine. afternoons are best"
+      },
+      {
+        "intent": "ask_availability",
+        "text": "either tomorrow or thursday"
+      },
+      {
+        "intent": "ask_availability",
+        "text": "any day but friday"
+      },
+      {
         "intent": "suggest_availability",
         "entities": [
           {
             "start": 0,
             "end": 5,
             "value": "Today",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "Today"
@@ -19390,7 +20452,7 @@
             "start": 0,
             "end": 5,
             "value": "today",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "today"
@@ -19402,7 +20464,7 @@
             "start": 0,
             "end": 8,
             "value": "tomorrow",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "tomorrow"
@@ -19414,7 +20476,7 @@
             "start": 0,
             "end": 8,
             "value": "Tomorrow",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "Tomorrow"
@@ -19426,7 +20488,7 @@
             "start": 0,
             "end": 5,
             "value": "Today",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "Today is good"
@@ -19438,7 +20500,7 @@
             "start": 0,
             "end": 8,
             "value": "Tomorrow",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "Tomorrow looks good"
@@ -19450,7 +20512,7 @@
             "start": 0,
             "end": 8,
             "value": "tomorrow",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "tomorrow maybe?"
@@ -19462,7 +20524,7 @@
             "start": 19,
             "end": 24,
             "value": "today",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can we have a call today"
@@ -19474,7 +20536,7 @@
             "start": 9,
             "end": 17,
             "value": "tomorrow",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "how does tomorrow look"
@@ -19486,7 +20548,7 @@
             "start": 9,
             "end": 17,
             "value": "tomorrow",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "how does tomorrow work"
@@ -19498,7 +20560,7 @@
             "start": 9,
             "end": 17,
             "value": "tomorrow",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "how does tomorrow work for you"
@@ -19510,7 +20572,7 @@
             "start": 10,
             "end": 18,
             "value": "tomorrow",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "idk maybe tomorrow"
@@ -19522,7 +20584,7 @@
             "start": 3,
             "end": 11,
             "value": "tomorrow",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "is tomorrow good"
@@ -19534,7 +20596,7 @@
             "start": 3,
             "end": 11,
             "value": "tomorrow",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "is tomorrow good for you"
@@ -19546,7 +20608,7 @@
             "start": 3,
             "end": 11,
             "value": "tomorrow",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "is tomorrow good?"
@@ -19558,7 +20620,7 @@
             "start": 3,
             "end": 11,
             "value": "tomorrow",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "is tomorrow ok?"
@@ -19570,7 +20632,7 @@
             "start": 6,
             "end": 14,
             "value": "tomorrow",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "maybe tomorrow"
@@ -19582,7 +20644,7 @@
             "start": 6,
             "end": 14,
             "value": "tomorrow",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "maybe tomorrow?"
@@ -19594,7 +20656,7 @@
             "start": 0,
             "end": 3,
             "value": "sun",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "sun"
@@ -19606,7 +20668,7 @@
             "start": 0,
             "end": 3,
             "value": "mon",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "mon"
@@ -19618,7 +20680,7 @@
             "start": 0,
             "end": 3,
             "value": "tue",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "tue"
@@ -19630,7 +20692,7 @@
             "start": 0,
             "end": 3,
             "value": "wed",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "wed"
@@ -19642,7 +20704,7 @@
             "start": 0,
             "end": 3,
             "value": "thu",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "thu"
@@ -19654,7 +20716,7 @@
             "start": 0,
             "end": 4,
             "value": "thur",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "thur"
@@ -19666,7 +20728,7 @@
             "start": 0,
             "end": 5,
             "value": "thurs",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "thurs"
@@ -19678,7 +20740,7 @@
             "start": 0,
             "end": 3,
             "value": "fri",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "fri"
@@ -19690,7 +20752,7 @@
             "start": 0,
             "end": 3,
             "value": "sat",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "sat"
@@ -19702,7 +20764,7 @@
             "start": 0,
             "end": 3,
             "value": "Sun",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "Sun"
@@ -19714,7 +20776,7 @@
             "start": 0,
             "end": 3,
             "value": "Mon",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "Mon"
@@ -19726,7 +20788,7 @@
             "start": 0,
             "end": 3,
             "value": "Tue",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "Tue"
@@ -19738,7 +20800,7 @@
             "start": 0,
             "end": 3,
             "value": "Wed",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "Wed"
@@ -19750,7 +20812,7 @@
             "start": 0,
             "end": 3,
             "value": "Thu",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "Thu"
@@ -19762,7 +20824,7 @@
             "start": 0,
             "end": 4,
             "value": "Thur",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "Thur"
@@ -19774,7 +20836,7 @@
             "start": 0,
             "end": 5,
             "value": "Thurs",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "Thurs"
@@ -19786,7 +20848,7 @@
             "start": 0,
             "end": 3,
             "value": "Fri",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "Fri"
@@ -19798,7 +20860,7 @@
             "start": 0,
             "end": 3,
             "value": "Sat",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "Sat"
@@ -19810,7 +20872,7 @@
             "start": 0,
             "end": 6,
             "value": "Sunday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "Sunday"
@@ -19822,7 +20884,7 @@
             "start": 0,
             "end": 6,
             "value": "Monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "Monday"
@@ -19834,7 +20896,7 @@
             "start": 0,
             "end": 7,
             "value": "Tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "Tuesday"
@@ -19846,7 +20908,7 @@
             "start": 0,
             "end": 9,
             "value": "Wednesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "Wednesday"
@@ -19858,7 +20920,7 @@
             "start": 0,
             "end": 8,
             "value": "Thursday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "Thursday"
@@ -19870,7 +20932,7 @@
             "start": 0,
             "end": 6,
             "value": "Friday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "Friday"
@@ -19882,7 +20944,7 @@
             "start": 0,
             "end": 8,
             "value": "Saturday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "Saturday"
@@ -19894,7 +20956,7 @@
             "start": 0,
             "end": 6,
             "value": "sunday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "sunday"
@@ -19906,7 +20968,7 @@
             "start": 0,
             "end": 6,
             "value": "monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "monday"
@@ -19918,7 +20980,7 @@
             "start": 0,
             "end": 7,
             "value": "tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "tuesday"
@@ -19930,7 +20992,7 @@
             "start": 0,
             "end": 9,
             "value": "wednesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "wednesday"
@@ -19942,7 +21004,7 @@
             "start": 0,
             "end": 8,
             "value": "thursday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "thursday"
@@ -19954,7 +21016,7 @@
             "start": 0,
             "end": 6,
             "value": "friday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "friday"
@@ -19966,7 +21028,7 @@
             "start": 0,
             "end": 8,
             "value": "saturday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "saturday"
@@ -19978,7 +21040,7 @@
             "start": 5,
             "end": 8,
             "value": "sun",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "next sun"
@@ -19990,7 +21052,7 @@
             "start": 5,
             "end": 8,
             "value": "mon",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "next mon"
@@ -20002,7 +21064,7 @@
             "start": 5,
             "end": 8,
             "value": "tue",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "next tue"
@@ -20014,7 +21076,7 @@
             "start": 5,
             "end": 8,
             "value": "wed",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "next wed"
@@ -20026,7 +21088,7 @@
             "start": 5,
             "end": 8,
             "value": "thu",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "next thu"
@@ -20038,7 +21100,7 @@
             "start": 5,
             "end": 9,
             "value": "thur",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "next thur"
@@ -20050,7 +21112,7 @@
             "start": 5,
             "end": 8,
             "value": "fri",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "next fri"
@@ -20062,7 +21124,7 @@
             "start": 5,
             "end": 8,
             "value": "sat",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "next sat"
@@ -20074,7 +21136,7 @@
             "start": 5,
             "end": 11,
             "value": "sunday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "this sunday"
@@ -20086,7 +21148,7 @@
             "start": 5,
             "end": 11,
             "value": "monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "this monday"
@@ -20098,7 +21160,7 @@
             "start": 5,
             "end": 12,
             "value": "tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "this tuesday"
@@ -20110,7 +21172,7 @@
             "start": 5,
             "end": 14,
             "value": "wednesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "this wednesday"
@@ -20122,7 +21184,7 @@
             "start": 5,
             "end": 13,
             "value": "thursday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "this thursday"
@@ -20134,7 +21196,7 @@
             "start": 5,
             "end": 11,
             "value": "friday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "this friday"
@@ -20146,7 +21208,7 @@
             "start": 5,
             "end": 11,
             "value": "sunday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "this sunday"
@@ -20158,7 +21220,7 @@
             "start": 5,
             "end": 11,
             "value": "monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "next monday"
@@ -20170,7 +21232,7 @@
             "start": 5,
             "end": 12,
             "value": "tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "next tuesday"
@@ -20182,7 +21244,7 @@
             "start": 5,
             "end": 14,
             "value": "wednesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "next wednesday"
@@ -20194,7 +21256,7 @@
             "start": 5,
             "end": 13,
             "value": "thursday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "next thursday"
@@ -20206,7 +21268,7 @@
             "start": 5,
             "end": 11,
             "value": "friday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "next friday"
@@ -20218,7 +21280,7 @@
             "start": 5,
             "end": 13,
             "value": "saturday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "next saturday"
@@ -20230,7 +21292,7 @@
             "start": 3,
             "end": 9,
             "value": "sunday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "ok sunday"
@@ -20242,7 +21304,7 @@
             "start": 3,
             "end": 9,
             "value": "monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "ok monday"
@@ -20254,7 +21316,7 @@
             "start": 3,
             "end": 10,
             "value": "tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "ok tuesday"
@@ -20266,7 +21328,7 @@
             "start": 3,
             "end": 12,
             "value": "wednesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "ok wednesday"
@@ -20278,7 +21340,7 @@
             "start": 3,
             "end": 11,
             "value": "thursday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "ok thursday"
@@ -20290,7 +21352,7 @@
             "start": 3,
             "end": 9,
             "value": "friday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "ok friday"
@@ -20302,7 +21364,7 @@
             "start": 3,
             "end": 11,
             "value": "saturday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "ok saturday"
@@ -20314,7 +21376,7 @@
             "start": 8,
             "end": 14,
             "value": "sunday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "ok then sunday"
@@ -20326,7 +21388,7 @@
             "start": 8,
             "end": 14,
             "value": "monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "ok then monday"
@@ -20338,7 +21400,7 @@
             "start": 8,
             "end": 15,
             "value": "tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "ok then tuesday"
@@ -20350,7 +21412,7 @@
             "start": 8,
             "end": 17,
             "value": "wednesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "ok then wednesday"
@@ -20362,7 +21424,7 @@
             "start": 8,
             "end": 16,
             "value": "thursday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "ok then thursday"
@@ -20374,7 +21436,7 @@
             "start": 8,
             "end": 14,
             "value": "friday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "ok then friday"
@@ -20386,7 +21448,7 @@
             "start": 8,
             "end": 16,
             "value": "saturday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "ok then saturday"
@@ -20398,7 +21460,7 @@
             "start": 0,
             "end": 8,
             "value": "tomorrow",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "tomorrow works"
@@ -20410,7 +21472,7 @@
             "start": 0,
             "end": 6,
             "value": "sunday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "sunday works"
@@ -20422,7 +21484,7 @@
             "start": 0,
             "end": 6,
             "value": "monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "monday wokks"
@@ -20434,7 +21496,7 @@
             "start": 0,
             "end": 7,
             "value": "tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "tuesday works"
@@ -20446,7 +21508,7 @@
             "start": 0,
             "end": 9,
             "value": "wednesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "wednesday works"
@@ -20458,7 +21520,7 @@
             "start": 0,
             "end": 8,
             "value": "thursday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "thursday woorks"
@@ -20470,7 +21532,7 @@
             "start": 0,
             "end": 6,
             "value": "friday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "friday works"
@@ -20482,7 +21544,7 @@
             "start": 10,
             "end": 16,
             "value": "monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "how about monday"
@@ -20494,7 +21556,7 @@
             "start": 10,
             "end": 16,
             "value": "tusday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "how about tusday"
@@ -20506,7 +21568,7 @@
             "start": 10,
             "end": 18,
             "value": "wednsday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "how about wednsday"
@@ -20518,7 +21580,7 @@
             "start": 10,
             "end": 18,
             "value": "thursday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "how about thursday"
@@ -20530,7 +21592,7 @@
             "start": 10,
             "end": 16,
             "value": "friday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "how about friday"
@@ -20542,7 +21604,7 @@
             "start": 0,
             "end": 6,
             "value": "monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "monday is good for me"
@@ -20554,7 +21616,7 @@
             "start": 0,
             "end": 7,
             "value": "tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "tuesday is good for me"
@@ -20566,7 +21628,7 @@
             "start": 0,
             "end": 9,
             "value": "wednesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "wednesday is good for me"
@@ -20578,7 +21640,7 @@
             "start": 0,
             "end": 8,
             "value": "thursday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "thursday is good for me"
@@ -20590,7 +21652,7 @@
             "start": 0,
             "end": 6,
             "value": "friday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "friday is good for me"
@@ -20602,7 +21664,7 @@
             "start": 5,
             "end": 11,
             "value": "monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "next monday is good for me"
@@ -20614,7 +21676,7 @@
             "start": 5,
             "end": 12,
             "value": "tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "next tuesday is good for me"
@@ -20626,7 +21688,7 @@
             "start": 5,
             "end": 14,
             "value": "wednesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "next wednesday is good for me"
@@ -20638,7 +21700,7 @@
             "start": 5,
             "end": 13,
             "value": "thursday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "next thursday is good for me"
@@ -20650,7 +21712,7 @@
             "start": 5,
             "end": 11,
             "value": "friday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "next friday is good for me"
@@ -20662,7 +21724,7 @@
             "start": 6,
             "end": 12,
             "value": "monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats monday look like"
@@ -20674,7 +21736,7 @@
             "start": 6,
             "end": 17,
             "value": "this friday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats this friday look like"
@@ -20686,7 +21748,7 @@
             "start": 10,
             "end": 21,
             "value": "next monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can we do next monday"
@@ -20698,7 +21760,7 @@
             "start": 14,
             "end": 33,
             "value": "wenesday after next",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "how about the wenesday after next"
@@ -20710,7 +21772,7 @@
             "start": 14,
             "end": 33,
             "value": "thursday after this",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "how about the thursday after this"
@@ -20722,7 +21784,7 @@
             "start": 10,
             "end": 16,
             "value": "monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can we do monday"
@@ -20734,7 +21796,7 @@
             "start": 15,
             "end": 22,
             "value": "tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can we do next tuesday"
@@ -20746,7 +21808,7 @@
             "start": 15,
             "end": 22,
             "value": "tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can we do this tuesday"
@@ -20755,10 +21817,82 @@
         "intent": "suggest_availability",
         "entities": [
           {
+            "start": 12,
+            "end": 17,
+            "value": "lunch",
+            "entity": "activity"
+          },
+          {
+            "start": 18,
+            "end": 24,
+            "value": "monday",
+            "entity": "DATE"
+          }
+        ],
+        "text": "can we have lunch monday"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 7,
+            "end": 18,
+            "value": "have a call",
+            "entity": "activity"
+          },
+          {
+            "start": 19,
+            "end": 23,
+            "value": "tues",
+            "entity": "DATE"
+          }
+        ],
+        "text": "can we have a call tues"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 7,
+            "end": 23,
+            "value": "Zoom",
+            "entity": "activity"
+          },
+          {
+            "start": 24,
+            "end": 27,
+            "value": "wed",
+            "entity": "DATE"
+          }
+        ],
+        "text": "can we have a zoom call wed"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 7,
+            "end": 21,
+            "value": "have a meeting",
+            "entity": "activity"
+          },
+          {
+            "start": 22,
+            "end": 27,
+            "value": "thurs",
+            "entity": "DATE"
+          }
+        ],
+        "text": "can we have a meeting thurs"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
             "start": 18,
             "end": 26,
             "value": "tomorrow",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can you do a call tomorrow"
@@ -20776,7 +21910,7 @@
             "start": 21,
             "end": 27,
             "value": "monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can you do a call on monday"
@@ -20794,7 +21928,7 @@
             "start": 21,
             "end": 28,
             "value": "tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can you do a call on tuesday"
@@ -20809,13 +21943,13 @@
             "entity": "activity"
           },
           {
-            "start": 21,
-            "end": 28,
+            "start": 20,
+            "end": 27,
             "value": "wensday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
-        "text": "can you do a call on wensday"
+        "text": "can you do a call   wensday"
       },
       {
         "intent": "suggest_availability",
@@ -20830,7 +21964,7 @@
             "start": 21,
             "end": 26,
             "value": "thurs",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can you do a call on thurs"
@@ -20848,7 +21982,7 @@
             "start": 21,
             "end": 24,
             "value": "fri",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can you do a call on fri"
@@ -20866,7 +22000,7 @@
             "start": 23,
             "end": 29,
             "value": "monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can you do a call this monday"
@@ -20884,7 +22018,7 @@
             "start": 23,
             "end": 30,
             "value": "tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can you do a call this tuesday"
@@ -20902,7 +22036,7 @@
             "start": 23,
             "end": 30,
             "value": "wensday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can you do a call this wensday"
@@ -20920,7 +22054,7 @@
             "start": 23,
             "end": 28,
             "value": "thurs",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can you do a call this thurs"
@@ -20938,7 +22072,7 @@
             "start": 23,
             "end": 26,
             "value": "fri",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can you do a call this fri"
@@ -20956,7 +22090,7 @@
             "start": 23,
             "end": 29,
             "value": "monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can you do a call next monday"
@@ -20974,7 +22108,7 @@
             "start": 23,
             "end": 30,
             "value": "tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can you do a call next tuesday"
@@ -20992,7 +22126,7 @@
             "start": 23,
             "end": 30,
             "value": "wensday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can you do a call next wensday"
@@ -21010,7 +22144,7 @@
             "start": 23,
             "end": 28,
             "value": "thurs",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can you do a call next thurs"
@@ -21028,7 +22162,7 @@
             "start": 23,
             "end": 26,
             "value": "fri",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can you do a call next fri"
@@ -21046,7 +22180,7 @@
             "start": 25,
             "end": 31,
             "value": "monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can we set up a ca;; for monday"
@@ -21076,7 +22210,7 @@
             "start": 28,
             "end": 36,
             "value": "tomorrow",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "do you have time for a call tomorrow?"
@@ -21094,7 +22228,7 @@
             "start": 27,
             "end": 35,
             "value": "tomorrow",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "do you have time for lunch tomorrow?"
@@ -21112,7 +22246,7 @@
             "start": 31,
             "end": 39,
             "value": "tomorrow",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "do you have time to grab lunch tomorrow?"
@@ -21130,7 +22264,7 @@
             "start": 19,
             "end": 27,
             "value": "tomorrow",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "want to grab lunch tomorrow?"
@@ -21148,7 +22282,7 @@
             "start": 17,
             "end": 25,
             "value": "tomorrow",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "wanna grab lunch tomorrow?"
@@ -21184,7 +22318,7 @@
             "start": 9,
             "end": 17,
             "value": "tomorrow",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "got time tomorrow?"
@@ -21196,7 +22330,7 @@
             "start": 20,
             "end": 28,
             "value": "tomorrow",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "got time for a call tomorrow?"
@@ -21214,7 +22348,7 @@
             "start": 19,
             "end": 27,
             "value": "tomorrow",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "got time for lunch tomorrow?"
@@ -21226,7 +22360,7 @@
             "start": 24,
             "end": 32,
             "value": "tomorrow",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "got any time to meet up tomorrow?"
@@ -21238,7 +22372,7 @@
             "start": 24,
             "end": 32,
             "value": "tomorrow",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "got any time for a call tomorrow?"
@@ -21256,7 +22390,7 @@
             "start": 23,
             "end": 31,
             "value": "tomorrow",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "got any time for lunch tomorrow?"
@@ -21268,7 +22402,7 @@
             "start": 24,
             "end": 32,
             "value": "tomorrow",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "got any time to meet up tomorrow?"
@@ -21292,7 +22426,7 @@
             "start": 47,
             "end": 55,
             "value": "tomorrow",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "Hey Forest](fm) it's Jessie got time for lunch tomorrow?"
@@ -21328,7 +22462,7 @@
             "start": 21,
             "end": 29,
             "value": "tomorrow",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can you do a meeting tomorrow"
@@ -21346,7 +22480,7 @@
             "start": 24,
             "end": 30,
             "value": "monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can you do a meeting on monday"
@@ -21364,7 +22498,7 @@
             "start": 24,
             "end": 31,
             "value": "tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can you do a meeting on tuesday"
@@ -21382,7 +22516,7 @@
             "start": 24,
             "end": 31,
             "value": "wensday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can you do a meeting on wensday"
@@ -21400,7 +22534,7 @@
             "start": 24,
             "end": 29,
             "value": "thurs",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can you do a meeting on thurs"
@@ -21418,7 +22552,7 @@
             "start": 24,
             "end": 27,
             "value": "fri",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can you do a meeting on fri"
@@ -21436,7 +22570,7 @@
             "start": 26,
             "end": 32,
             "value": "monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can you do a meeting this monday"
@@ -21454,7 +22588,7 @@
             "start": 26,
             "end": 33,
             "value": "tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can you do a meeting this tuesday"
@@ -21472,7 +22606,7 @@
             "start": 26,
             "end": 33,
             "value": "wensday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can you do a meeting this wensday"
@@ -21490,7 +22624,7 @@
             "start": 26,
             "end": 31,
             "value": "thurs",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can you do a meeting this thurs"
@@ -21508,7 +22642,7 @@
             "start": 26,
             "end": 29,
             "value": "fri",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can you do a meeting this fri"
@@ -21526,7 +22660,7 @@
             "start": 26,
             "end": 32,
             "value": "monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can you do a meeting next monday"
@@ -21544,7 +22678,7 @@
             "start": 26,
             "end": 33,
             "value": "tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can you do a meeting next tuesday"
@@ -21562,7 +22696,7 @@
             "start": 26,
             "end": 33,
             "value": "wensday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can you do a meeting next wensday"
@@ -21580,7 +22714,7 @@
             "start": 26,
             "end": 31,
             "value": "thurs",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can you do a meeting next thurs"
@@ -21598,7 +22732,7 @@
             "start": 26,
             "end": 29,
             "value": "fri",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can you do a meeting next fri"
@@ -21616,7 +22750,7 @@
             "start": 30,
             "end": 36,
             "value": "monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can we set up a a meeting for monday"
@@ -21719,6 +22853,534 @@
       },
       {
         "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 8,
+            "end": 16,
+            "value": "do lunch",
+            "entity": "activity"
+          },
+          {
+            "start": 17,
+            "end": 22,
+            "value": "today",
+            "entity": "DATE"
+          }
+        ],
+        "text": "can you do lunch today"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 8,
+            "end": 16,
+            "value": "do lunch",
+            "entity": "activity"
+          },
+          {
+            "start": 17,
+            "end": 25,
+            "value": "tomorrow",
+            "entity": "DATE"
+          }
+        ],
+        "text": "can you do lunch tomorrow"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 7,
+            "end": 17,
+            "value": "have lunch",
+            "entity": "activity"
+          },
+          {
+            "start": 18,
+            "end": 23,
+            "value": "today",
+            "entity": "DATE"
+          }
+        ],
+        "text": "can we have lunch today"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 7,
+            "end": 17,
+            "value": "have lunch",
+            "entity": "activity"
+          },
+          {
+            "start": 18,
+            "end": 26,
+            "value": "tomorrow",
+            "entity": "DATE"
+          }
+        ],
+        "text": "can we have lunch tomorrow"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 8,
+            "end": 17,
+            "value": "do a call",
+            "entity": "activity"
+          },
+          {
+            "start": 18,
+            "end": 23,
+            "value": "today",
+            "entity": "DATE"
+          }
+        ],
+        "text": "can you do a call today"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 8,
+            "end": 17,
+            "value": "do a call",
+            "entity": "activity"
+          },
+          {
+            "start": 18,
+            "end": 26,
+            "value": "tomorrow",
+            "entity": "DATE"
+          }
+        ],
+        "text": "can you do a call tomorrow"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 7,
+            "end": 18,
+            "value": "have a call",
+            "entity": "activity"
+          },
+          {
+            "start": 19,
+            "end": 24,
+            "value": "today",
+            "entity": "DATE"
+          }
+        ],
+        "text": "can we have a call today"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 7,
+            "end": 18,
+            "value": "have a call",
+            "entity": "activity"
+          },
+          {
+            "start": 19,
+            "end": 27,
+            "value": "tomorrow",
+            "entity": "DATE"
+          }
+        ],
+        "text": "can we have a call tomorrow"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 7,
+            "end": 11,
+            "value": "meet",
+            "entity": "activity"
+          },
+          {
+            "start": 12,
+            "end": 17,
+            "value": "today",
+            "entity": "DATE"
+          }
+        ],
+        "text": "can we meet today"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 7,
+            "end": 14,
+            "value": "meet up",
+            "entity": "activity"
+          },
+          {
+            "start": 15,
+            "end": 23,
+            "value": "tomorrow",
+            "entity": "DATE"
+          }
+        ],
+        "text": "can we meet up tomorrow"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 12,
+            "end": 18,
+            "value": "a call",
+            "entity": "activity"
+          },
+          {
+            "start": 22,
+            "end": 27,
+            "value": "today",
+            "entity": "DATE"
+          }
+        ],
+        "text": "can you fit a call in today"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 12,
+            "end": 21,
+            "value": "a meeting",
+            "entity": "activity"
+          },
+          {
+            "start": 25,
+            "end": 33,
+            "value": "tomorrow",
+            "entity": "DATE"
+          }
+        ],
+        "text": "can you fit a meeting in tomorrow"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 17,
+            "end": 22,
+            "value": "today",
+            "entity": "DATE"
+          }
+        ],
+        "text": "do you have time today"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 21,
+            "end": 27,
+            "value": "have a call",
+            "entity": "activity"
+          },
+          {
+            "start": 28,
+            "end": 33,
+            "value": "today",
+            "entity": "DATE"
+          }
+        ],
+        "text": "do you have time for a call today"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 21,
+            "end": 30,
+            "value": "meet",
+            "entity": "activity"
+          },
+          {
+            "start": 31,
+            "end": 39,
+            "value": "tomorrow",
+            "entity": "DATE"
+          }
+        ],
+        "text": "do you have time for a meeting tomorrow"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 8,
+            "end": 16,
+            "value": "do lunch",
+            "entity": "activity"
+          },
+          {
+            "start": 17,
+            "end": 26,
+            "value": "this week",
+            "entity": "When"
+          }
+        ],
+        "text": "can you do lunch this week"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 8,
+            "end": 16,
+            "value": "do lunch",
+            "entity": "activity"
+          },
+          {
+            "start": 17,
+            "end": 25,
+            "value": "tomorrow",
+            "entity": "DATE"
+          }
+        ],
+        "text": "can you do lunch tomorrow"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 7,
+            "end": 17,
+            "value": "have lunch",
+            "entity": "activity"
+          },
+          {
+            "start": 18,
+            "end": 27,
+            "value": "this week",
+            "entity": "When"
+          }
+        ],
+        "text": "can we have lunch this week"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 7,
+            "end": 17,
+            "value": "have lunch",
+            "entity": "activity"
+          },
+          {
+            "start": 18,
+            "end": 26,
+            "value": "tomorrow",
+            "entity": "DATE"
+          }
+        ],
+        "text": "can we have lunch tomorrow"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 8,
+            "end": 17,
+            "value": "do a call",
+            "entity": "activity"
+          },
+          {
+            "start": 18,
+            "end": 27,
+            "value": "this week",
+            "entity": "When"
+          }
+        ],
+        "text": "can you do a call this week"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 8,
+            "end": 17,
+            "value": "do a call",
+            "entity": "activity"
+          },
+          {
+            "start": 18,
+            "end": 27,
+            "value": "next week",
+            "entity": "DATE"
+          }
+        ],
+        "text": "can you do a call next week"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 7,
+            "end": 18,
+            "value": "have a call",
+            "entity": "activity"
+          },
+          {
+            "start": 19,
+            "end": 28,
+            "value": "this week",
+            "entity": "DATE"
+          }
+        ],
+        "text": "can we have a call this week"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 7,
+            "end": 18,
+            "value": "have a call",
+            "entity": "activity"
+          },
+          {
+            "start": 19,
+            "end": 28,
+            "value": "next week",
+            "entity": "DATE"
+          }
+        ],
+        "text": "can we have a call next week"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 7,
+            "end": 11,
+            "value": "meet",
+            "entity": "activity"
+          },
+          {
+            "start": 12,
+            "end": 21,
+            "value": "this week",
+            "entity": "When"
+          }
+        ],
+        "text": "can we meet this week"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 7,
+            "end": 14,
+            "value": "meet up",
+            "entity": "activity"
+          },
+          {
+            "start": 15,
+            "end": 24,
+            "value": "next week",
+            "entity": "DATE"
+          }
+        ],
+        "text": "can we meet up next week"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 12,
+            "end": 18,
+            "value": "a call",
+            "entity": "activity"
+          },
+          {
+            "start": 22,
+            "end": 31,
+            "value": "this week",
+            "entity": "When"
+          }
+        ],
+        "text": "can you fit a call in this week"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 12,
+            "end": 21,
+            "value": "a meeting",
+            "entity": "activity"
+          },
+          {
+            "start": 25,
+            "end": 33,
+            "value": "tomorrow",
+            "entity": "DATE"
+          }
+        ],
+        "text": "can you fit a meeting in tomorrow"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 17,
+            "end": 22,
+            "value": "today",
+            "entity": "DATE"
+          }
+        ],
+        "text": "do you have time today"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 21,
+            "end": 27,
+            "value": "have a call",
+            "entity": "activity"
+          },
+          {
+            "start": 28,
+            "end": 33,
+            "value": "today",
+            "entity": "DATE"
+          }
+        ],
+        "text": "do you have time for a call today"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 21,
+            "end": 30,
+            "value": "meet",
+            "entity": "activity"
+          },
+          {
+            "start": 31,
+            "end": 39,
+            "value": "tomorrow",
+            "entity": "DATE"
+          }
+        ],
+        "text": "do you have time for a meeting tomorrow"
+      },
+      {
+        "intent": "suggest_availability",
         "text": "whats your availability"
       },
       {
@@ -21732,7 +23394,7 @@
             "start": 6,
             "end": 14,
             "value": "tomorrow",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats tomorrow look like for you?"
@@ -21756,7 +23418,7 @@
             "start": 24,
             "end": 29,
             "value": "today",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your availability today"
@@ -21768,7 +23430,7 @@
             "start": 35,
             "end": 40,
             "value": "today",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your availability for a call today"
@@ -21780,7 +23442,7 @@
             "start": 24,
             "end": 32,
             "value": "tomorrow",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your availability tomorrow"
@@ -21792,7 +23454,7 @@
             "start": 17,
             "end": 23,
             "value": "monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your avail monday"
@@ -21804,7 +23466,7 @@
             "start": 24,
             "end": 31,
             "value": "tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your availability tuesday"
@@ -21816,7 +23478,7 @@
             "start": 24,
             "end": 33,
             "value": "wednesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your availability wednesday"
@@ -21828,7 +23490,7 @@
             "start": 24,
             "end": 32,
             "value": "thursday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your availability thursday"
@@ -21840,7 +23502,7 @@
             "start": 24,
             "end": 27,
             "value": "thu",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your availability thu"
@@ -21852,7 +23514,7 @@
             "start": 24,
             "end": 28,
             "value": "thur",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your availability thur"
@@ -21864,7 +23526,7 @@
             "start": 34,
             "end": 41,
             "value": "tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your availability look like tuesday"
@@ -21876,7 +23538,7 @@
             "start": 34,
             "end": 43,
             "value": "wednesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your availability look like wednesday"
@@ -21888,7 +23550,7 @@
             "start": 24,
             "end": 32,
             "value": "thursday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your availability thursday"
@@ -21900,7 +23562,7 @@
             "start": 24,
             "end": 27,
             "value": "thu",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your availability thu"
@@ -21912,7 +23574,7 @@
             "start": 24,
             "end": 28,
             "value": "thur",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your availability thur"
@@ -21924,7 +23586,7 @@
             "start": 23,
             "end": 28,
             "value": "thurs",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "wats your availability thurs"
@@ -21936,7 +23598,7 @@
             "start": 24,
             "end": 30,
             "value": "friday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your availability friday"
@@ -21948,7 +23610,7 @@
             "start": 25,
             "end": 33,
             "value": "thursday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your avail like on thursday"
@@ -21960,7 +23622,7 @@
             "start": 34,
             "end": 37,
             "value": "thu",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your availability like this thu"
@@ -21972,7 +23634,7 @@
             "start": 34,
             "end": 38,
             "value": "thur",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your availability like next thur"
@@ -21984,7 +23646,7 @@
             "start": 27,
             "end": 32,
             "value": "thurs",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your availability on thurs like"
@@ -21996,7 +23658,7 @@
             "start": 41,
             "end": 47,
             "value": "friday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your availability like this coming friday"
@@ -22008,7 +23670,7 @@
             "start": 29,
             "end": 35,
             "value": "monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your availability this monday"
@@ -22020,7 +23682,7 @@
             "start": 29,
             "end": 36,
             "value": "tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your availability this tuesday"
@@ -22032,7 +23694,7 @@
             "start": 29,
             "end": 38,
             "value": "wednesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your availability this wednesday"
@@ -22044,7 +23706,7 @@
             "start": 29,
             "end": 37,
             "value": "thursday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your availability this thursday"
@@ -22056,7 +23718,7 @@
             "start": 22,
             "end": 28,
             "value": "friday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your avail this friday"
@@ -22068,7 +23730,7 @@
             "start": 29,
             "end": 35,
             "value": "monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your availability next monday"
@@ -22080,7 +23742,7 @@
             "start": 29,
             "end": 36,
             "value": "tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your availability next tuesday"
@@ -22092,7 +23754,7 @@
             "start": 29,
             "end": 38,
             "value": "wednesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your availability next wednesday"
@@ -22104,7 +23766,7 @@
             "start": 29,
             "end": 37,
             "value": "thursday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your availability next thursday"
@@ -22116,7 +23778,7 @@
             "start": 28,
             "end": 34,
             "value": "friday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "hats your availability next friday"
@@ -22128,7 +23790,7 @@
             "start": 25,
             "end": 31,
             "value": "monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "ows your availability on monday"
@@ -22140,7 +23802,7 @@
             "start": 27,
             "end": 34,
             "value": "tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your availability on tuesday"
@@ -22152,7 +23814,7 @@
             "start": 27,
             "end": 36,
             "value": "wednesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your availability on wednesday"
@@ -22164,7 +23826,7 @@
             "start": 27,
             "end": 35,
             "value": "thursday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your availability on thursday"
@@ -22176,7 +23838,7 @@
             "start": 27,
             "end": 33,
             "value": "friday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your availability on friday"
@@ -22188,7 +23850,7 @@
             "start": 27,
             "end": 33,
             "value": "monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your availability on monday for a call"
@@ -22200,7 +23862,7 @@
             "start": 27,
             "end": 34,
             "value": "tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your availability on tuesday for a call"
@@ -22212,7 +23874,7 @@
             "start": 27,
             "end": 36,
             "value": "wednesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your availability on wednesday for call"
@@ -22224,7 +23886,7 @@
             "start": 20,
             "end": 28,
             "value": "thursday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your avail on thursday for a call"
@@ -22236,7 +23898,7 @@
             "start": 27,
             "end": 33,
             "value": "friday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your availability on friday to hop on a call"
@@ -22248,7 +23910,7 @@
             "start": 38,
             "end": 44,
             "value": "monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your availability for a call on monday"
@@ -22260,7 +23922,7 @@
             "start": 37,
             "end": 44,
             "value": "tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "hows your availability for a call on tuesday"
@@ -22272,7 +23934,7 @@
             "start": 38,
             "end": 47,
             "value": "wednesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your availability for a call on wednesday"
@@ -22284,7 +23946,7 @@
             "start": 38,
             "end": 46,
             "value": "thursday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your availability for a call on thursday"
@@ -22296,7 +23958,7 @@
             "start": 40,
             "end": 46,
             "value": "friday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "what is your availability for a call on friday"
@@ -22308,7 +23970,7 @@
             "start": 25,
             "end": 31,
             "value": "monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "ows your availability on monday"
@@ -22320,7 +23982,7 @@
             "start": 26,
             "end": 33,
             "value": "tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "hows your availability on tuesday"
@@ -22332,7 +23994,7 @@
             "start": 26,
             "end": 35,
             "value": "wednesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "hows your availability on wednesday"
@@ -22344,7 +24006,7 @@
             "start": 26,
             "end": 34,
             "value": "thursday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "hows your availability on thursday"
@@ -22356,7 +24018,7 @@
             "start": 26,
             "end": 32,
             "value": "friday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "hows your availability on friday"
@@ -22368,7 +24030,7 @@
             "start": 23,
             "end": 28,
             "value": "today",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "hows your availability today"
@@ -22380,7 +24042,7 @@
             "start": 23,
             "end": 31,
             "value": "tomorrow",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "hows your availability tomorrow"
@@ -22440,7 +24102,7 @@
             "start": 9,
             "end": 17,
             "value": "tomorrow",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "how does tomorrow work for you"
@@ -22452,7 +24114,7 @@
             "start": 9,
             "end": 15,
             "value": "monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "how does monday work for you"
@@ -22464,7 +24126,7 @@
             "start": 9,
             "end": 16,
             "value": "tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "how does tuesday work for you"
@@ -22476,7 +24138,7 @@
             "start": 9,
             "end": 18,
             "value": "wednesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "how does wednesday work for you"
@@ -22488,7 +24150,7 @@
             "start": 9,
             "end": 17,
             "value": "thursday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "how does thursday work for you"
@@ -22500,7 +24162,7 @@
             "start": 9,
             "end": 15,
             "value": "friday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "how does friday work for you"
@@ -22512,7 +24174,7 @@
             "start": 9,
             "end": 15,
             "value": "friday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "how does friday look"
@@ -22524,7 +24186,7 @@
             "start": 9,
             "end": 17,
             "value": "thursday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "how does thursday look for you"
@@ -22536,7 +24198,7 @@
             "start": 7,
             "end": 15,
             "value": "thursday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "how is thursday for you"
@@ -22548,7 +24210,7 @@
             "start": 7,
             "end": 13,
             "value": "friday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "how is friday looking"
@@ -22560,7 +24222,7 @@
             "start": 7,
             "end": 16,
             "value": "wednesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "how is wednesday looking for you?"
@@ -22572,7 +24234,7 @@
             "start": 9,
             "end": 15,
             "value": "monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "how does monday work for you"
@@ -22584,7 +24246,7 @@
             "start": 9,
             "end": 16,
             "value": "tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "how does tuesday work for you"
@@ -22596,7 +24258,7 @@
             "start": 9,
             "end": 18,
             "value": "wednesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "how does wednesday work for you"
@@ -22608,7 +24270,7 @@
             "start": 9,
             "end": 17,
             "value": "thursday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "how does thursday work for you"
@@ -22620,7 +24282,7 @@
             "start": 9,
             "end": 14,
             "value": "fiday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "how does fiday work for you"
@@ -22632,7 +24294,7 @@
             "start": 10,
             "end": 16,
             "value": "monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "how about monday"
@@ -22644,7 +24306,7 @@
             "start": 10,
             "end": 17,
             "value": "tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "how about tuesday"
@@ -22656,7 +24318,7 @@
             "start": 10,
             "end": 16,
             "value": "tueday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "how about tueday this week"
@@ -22668,7 +24330,7 @@
             "start": 23,
             "end": 30,
             "value": "tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "how about this week on tuesday"
@@ -22680,7 +24342,7 @@
             "start": 23,
             "end": 29,
             "value": "monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "how about next week on monday"
@@ -22692,7 +24354,7 @@
             "start": 10,
             "end": 16,
             "value": "monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "how about monday of next week?"
@@ -22704,7 +24366,7 @@
             "start": 10,
             "end": 18,
             "value": "wednsday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "how about wednsday"
@@ -22716,7 +24378,7 @@
             "start": 10,
             "end": 18,
             "value": "thursday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "how about thursday"
@@ -22728,7 +24390,7 @@
             "start": 10,
             "end": 16,
             "value": "friday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "how about friday"
@@ -22740,7 +24402,7 @@
             "start": 0,
             "end": 6,
             "value": "monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "monday is good for me"
@@ -22752,7 +24414,7 @@
             "start": 0,
             "end": 7,
             "value": "tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "tuesday is good for me"
@@ -22764,7 +24426,7 @@
             "start": 0,
             "end": 9,
             "value": "wednesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "wednesday is good for me"
@@ -22776,7 +24438,7 @@
             "start": 0,
             "end": 8,
             "value": "thursday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "thursday is good for me"
@@ -22788,7 +24450,7 @@
             "start": 0,
             "end": 6,
             "value": "friday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "friday is good for me"
@@ -22800,7 +24462,7 @@
             "start": 5,
             "end": 11,
             "value": "monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "next monday is good for me"
@@ -22812,7 +24474,7 @@
             "start": 5,
             "end": 12,
             "value": "tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "next tuesday is good for me"
@@ -22824,7 +24486,7 @@
             "start": 5,
             "end": 14,
             "value": "wednesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "next wednesday is good for me"
@@ -22836,7 +24498,7 @@
             "start": 5,
             "end": 13,
             "value": "thursday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "next thursday is good for me"
@@ -22848,7 +24510,7 @@
             "start": 5,
             "end": 11,
             "value": "friday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "next friday is good for me"
@@ -22860,7 +24522,7 @@
             "start": 6,
             "end": 12,
             "value": "monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats monday look like"
@@ -22872,7 +24534,7 @@
             "start": 11,
             "end": 18,
             "value": "tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "whats your tuesday look like"
@@ -22884,7 +24546,7 @@
             "start": 10,
             "end": 19,
             "value": "wednesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "what does wednesday look like"
@@ -22896,7 +24558,7 @@
             "start": 10,
             "end": 18,
             "value": "thursday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "what does thursday look like for you"
@@ -22908,7 +24570,7 @@
             "start": 9,
             "end": 15,
             "value": "friday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "how does friday look like for you"
@@ -22920,7 +24582,7 @@
             "start": 20,
             "end": 27,
             "value": "tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can we do a call on tuesday"
@@ -22932,7 +24594,7 @@
             "start": 36,
             "end": 43,
             "value": "tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "how is your availability looking on tuesday"
@@ -22944,7 +24606,7 @@
             "start": 13,
             "end": 21,
             "value": "thursday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "shall we say thursday"
@@ -22956,7 +24618,7 @@
             "start": 13,
             "end": 21,
             "value": "thursday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "shall we say thursday then?"
@@ -22968,7 +24630,7 @@
             "start": 21,
             "end": 28,
             "value": "tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "shall we confirm for tuesday then?"
@@ -22998,7 +24660,7 @@
             "start": 95,
             "end": 101,
             "value": "Sunday",
-            "entity": "Day"
+            "entity": "DATE"
           },
           {
             "start": 118,
@@ -23022,7 +24684,7 @@
             "start": 0,
             "end": 6,
             "value": "friday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "friday is better for me"
@@ -23034,7 +24696,7 @@
             "start": 0,
             "end": 8,
             "value": "thursday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "thursday is better for me"
@@ -23046,7 +24708,7 @@
             "start": 19,
             "end": 28,
             "value": "wednesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "are you able to do wednesday instead"
@@ -23058,7 +24720,7 @@
             "start": 19,
             "end": 27,
             "value": "tomorrow",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can we chage it to tomorrow instead"
@@ -23070,7 +24732,7 @@
             "start": 17,
             "end": 23,
             "value": "monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can we change to monday"
@@ -23082,7 +24744,7 @@
             "start": 17,
             "end": 24,
             "value": "tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can we change to tuesday"
@@ -23094,7 +24756,7 @@
             "start": 10,
             "end": 16,
             "value": "friday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can we do friday instead"
@@ -23106,7 +24768,7 @@
             "start": 10,
             "end": 16,
             "value": "monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can we do monday instead"
@@ -23118,7 +24780,7 @@
             "start": 10,
             "end": 32,
             "value": "the day after tomorrow",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can we do the day after tomorrow instead"
@@ -23130,7 +24792,7 @@
             "start": 10,
             "end": 18,
             "value": "thursday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can we do thursday instead"
@@ -23142,7 +24804,7 @@
             "start": 10,
             "end": 18,
             "value": "tomorrow",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can we do tomorrow instead"
@@ -23154,7 +24816,7 @@
             "start": 10,
             "end": 17,
             "value": "tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can we do tuesday instead"
@@ -23166,7 +24828,7 @@
             "start": 10,
             "end": 19,
             "value": "wednesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "can we do wednesday instead"
@@ -23178,7 +24840,7 @@
             "start": 5,
             "end": 11,
             "value": "friday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "does friday work"
@@ -23190,7 +24852,7 @@
             "start": 5,
             "end": 11,
             "value": "friday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "does friday work instead"
@@ -23202,7 +24864,7 @@
             "start": 5,
             "end": 11,
             "value": "monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "does monday work"
@@ -23214,7 +24876,7 @@
             "start": 5,
             "end": 11,
             "value": "monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "does monday work instead"
@@ -23226,7 +24888,7 @@
             "start": 5,
             "end": 13,
             "value": "thursday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "does thursday work"
@@ -23238,7 +24900,7 @@
             "start": 5,
             "end": 13,
             "value": "thursday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "does thursday work instead"
@@ -23250,7 +24912,7 @@
             "start": 5,
             "end": 12,
             "value": "tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "does tuesday work"
@@ -23262,7 +24924,7 @@
             "start": 5,
             "end": 12,
             "value": "tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "does tuesday work instead"
@@ -23274,7 +24936,7 @@
             "start": 5,
             "end": 14,
             "value": "wednesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "does wednesday work"
@@ -23286,7 +24948,7 @@
             "start": 5,
             "end": 14,
             "value": "wednesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "does wednesday work instead"
@@ -23298,7 +24960,7 @@
             "start": 9,
             "end": 17,
             "value": "thursday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "how does thursday work instead"
@@ -23310,7 +24972,7 @@
             "start": 15,
             "end": 22,
             "value": "tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "i would prefer tuesday"
@@ -23322,7 +24984,7 @@
             "start": 21,
             "end": 27,
             "value": "monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "i would rather we do monday"
@@ -23334,7 +24996,7 @@
             "start": 17,
             "end": 26,
             "value": "wednesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "rather can we do wednesday"
@@ -26628,12 +28290,12 @@
         "entities": [
           {
             "start": 26,
-            "end": 42,
-            "value": "4th of novembver",
+            "end": 36,
+            "value": "4th of Nov",
             "entity": "DATE"
           }
         ],
-        "text": "could we do a call on the 4th of novembver"
+        "text": "could we do a call on the 4th of Nov"
       },
       {
         "intent": "suggest_date",
@@ -26675,10 +28337,118 @@
         "intent": "suggest_date",
         "entities": [
           {
+            "start": 40,
+            "end": 46,
+            "value": "16 oct",
+            "entity": "DATE"
+          }
+        ],
+        "text": "how is your availability looking on the 16 oct"
+      },
+      {
+        "intent": "suggest_date",
+        "entities": [
+          {
+            "start": 37,
+            "end": 43,
+            "value": "13 May",
+            "entity": "DATE"
+          }
+        ],
+        "text": "how is your availability looking for 13 May"
+      },
+      {
+        "intent": "suggest_date",
+        "entities": [
+          {
+            "start": 37,
+            "end": 44,
+            "value": "14 June",
+            "entity": "DATE"
+          }
+        ],
+        "text": "how is your availability looking for 14 June"
+      },
+      {
+        "intent": "suggest_date",
+        "entities": [
+          {
+            "start": 24,
+            "end": 31,
+            "value": "15 July",
+            "entity": "DATE"
+          }
+        ],
+        "text": "can you do a meeting on 15 July"
+      },
+      {
+        "intent": "suggest_date",
+        "entities": [
+          {
+            "start": 38,
+            "end": 44,
+            "value": "16 Aug",
+            "entity": "DATE"
+          }
+        ],
+        "text": "do you have room on your calendar for 16 Aug"
+      },
+      {
+        "intent": "suggest_date",
+        "entities": [
+          {
+            "start": 14,
+            "end": 26,
+            "value": "30th of sept",
+            "entity": "DATE"
+          }
+        ],
+        "text": "what does the 30th of sept look like"
+      },
+      {
+        "intent": "suggest_date",
+        "entities": [
+          {
+            "start": 10,
+            "end": 15,
+            "value": "do lunch",
+            "entity": "activity"
+          },
+          {
+            "start": 23,
+            "end": 29,
+            "value": "4 Sept",
+            "entity": "DATE"
+          }
+        ],
+        "text": "can we do lunch on the 4 Sept"
+      },
+      {
+        "intent": "suggest_date",
+        "entities": [
+          {
+            "start": 9,
+            "end": 18,
+            "value": "do a call",
+            "entity": "activity"
+          },
+          {
+            "start": 26,
+            "end": 36,
+            "value": "4 december",
+            "entity": "DATE"
+          }
+        ],
+        "text": "could we do a call on the 4 december"
+      },
+      {
+        "intent": "suggest_date",
+        "entities": [
+          {
             "start": 0,
             "end": 6,
             "value": "monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "monday is good for me"
@@ -26690,7 +28460,7 @@
             "start": 0,
             "end": 7,
             "value": "tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "tuesday is good for me"
@@ -26702,7 +28472,7 @@
             "start": 0,
             "end": 9,
             "value": "wednesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "wednesday works for me"
@@ -26714,7 +28484,7 @@
             "start": 0,
             "end": 8,
             "value": "thursday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "thursday could work"
@@ -30846,365 +32616,13 @@
         "text": "can we do a different time instead"
       },
       {
-        "intent": "vague_when",
-        "entities": [
-          {
-            "start": 33,
-            "end": 42,
-            "value": "this week",
-            "entity": "DATE"
-          }
-        ],
-        "text": "how is your availability looking this week"
-      },
-      {
-        "intent": "vague_when",
-        "entities": [
-          {
-            "start": 33,
-            "end": 42,
-            "value": "next week",
-            "entity": "DATE"
-          }
-        ],
-        "text": "how is your availability looking next week"
-      },
-      {
-        "intent": "vague_when",
-        "entities": [
-          {
-            "start": 33,
-            "end": 52,
-            "value": "the week after next",
-            "entity": "DATE"
-          }
-        ],
-        "text": "how is your availability looking the week after next"
-      },
-      {
-        "intent": "vague_when",
-        "entities": [
-          {
-            "start": 33,
-            "end": 52,
-            "value": "the week after this",
-            "entity": "DATE"
-          }
-        ],
-        "text": "how is your availability looking the week after this"
-      },
-      {
-        "intent": "vague_when",
-        "entities": [
-          {
-            "start": 33,
-            "end": 55,
-            "value": "not this week but next",
-            "entity": "DATE"
-          }
-        ],
-        "text": "how is your availability looking not this week but next"
-      },
-      {
-        "intent": "vague_when",
-        "entities": [
-          {
-            "start": 33,
-            "end": 42,
-            "value": "next week",
-            "entity": "DATE"
-          }
-        ],
-        "text": "how is your availability looking next week"
-      },
-      {
-        "intent": "vague_when",
-        "entities": [
-          {
-            "start": 29,
-            "end": 38,
-            "value": "this week",
-            "entity": "DATE"
-          }
-        ],
-        "text": "whats your availability like this week"
-      },
-      {
-        "intent": "vague_when",
-        "entities": [
-          {
-            "start": 29,
-            "end": 38,
-            "value": "next week",
-            "entity": "DATE"
-          }
-        ],
-        "text": "whats your availability like next week"
-      },
-      {
-        "intent": "vague_when",
-        "entities": [
-          {
-            "start": 6,
-            "end": 18,
-            "value": "this weekend",
-            "entity": "DATE"
-          }
-        ],
-        "text": "whats this weekend look like"
-      },
-      {
-        "intent": "vague_when",
-        "entities": [
-          {
-            "start": 5,
-            "end": 17,
-            "value": "this weekend",
-            "entity": "DATE"
-          }
-        ],
-        "text": "what this weekend look like"
-      },
-      {
-        "intent": "vague_when",
-        "entities": [
-          {
-            "start": 5,
-            "end": 17,
-            "value": "this weekend",
-            "entity": "DATE"
-          }
-        ],
-        "text": "hows this weekend look"
-      },
-      {
-        "intent": "vague_when",
-        "entities": [
-          {
-            "start": 5,
-            "end": 17,
-            "value": "this weekend",
-            "entity": "DATE"
-          }
-        ],
-        "text": "hows this weekend looking"
-      },
-      {
-        "intent": "vague_when",
-        "entities": [
-          {
-            "start": 6,
-            "end": 18,
-            "value": "your weekend",
-            "entity": "DATE"
-          }
-        ],
-        "text": "whats your weekend look like"
-      },
-      {
-        "intent": "vague_when",
-        "entities": [
-          {
-            "start": 9,
-            "end": 21,
-            "value": "this weekend",
-            "entity": "DATE"
-          }
-        ],
-        "text": "you free this weekend"
-      },
-      {
-        "intent": "vague_when",
-        "entities": [
-          {
-            "start": 13,
-            "end": 25,
-            "value": "this weekend",
-            "entity": "DATE"
-          }
-        ],
-        "text": "are you free this weekend"
-      },
-      {
-        "intent": "vague_when",
-        "entities": [
-          {
-            "start": 17,
-            "end": 29,
-            "value": "this weekend",
-            "entity": "DATE"
-          }
-        ],
-        "text": "do you have time this weekend"
-      },
-      {
-        "intent": "vague_when",
-        "entities": [
-          {
-            "start": 10,
-            "end": 22,
-            "value": "this weekend",
-            "entity": "DATE"
-          }
-        ],
-        "text": "how about this weekend"
-      },
-      {
-        "intent": "vague_when",
-        "text": "tomorrow, monday or tuesday is fine. afternoons are best"
-      },
-      {
-        "intent": "vague_when",
-        "text": "either tomorrow or thursday"
-      },
-      {
-        "intent": "vague_when",
-        "text": "any day but friday"
-      },
-      {
-        "intent": "vague_when",
-        "entities": [
-          {
-            "start": 8,
-            "end": 17,
-            "value": "this week",
-            "entity": "DATE"
-          }
-        ],
-        "text": "any day this week"
-      },
-      {
-        "intent": "vague_when",
-        "entities": [
-          {
-            "start": 0,
-            "end": 20,
-            "value": "later this afternoon",
-            "entity": "When"
-          },
-          {
-            "start": 24,
-            "end": 40,
-            "value": "tomorrow morning",
-            "entity": "When"
-          }
-        ],
-        "text": "later this afternoon or tomorrow morning"
-      },
-      {
-        "intent": "vague_when",
-        "entities": [
-          {
-            "start": 7,
-            "end": 12,
-            "value": "today",
-            "entity": "Day"
-          },
-          {
-            "start": 16,
-            "end": 24,
-            "value": "tomorrow",
-            "entity": "Day"
-          }
-        ],
-        "text": "either today or tomorrow are good"
-      },
-      {
-        "intent": "vague_when",
-        "entities": [
-          {
-            "start": 19,
-            "end": 27,
-            "value": "sometime",
-            "entity": "When"
-          }
-        ],
-        "text": "can we have a call sometime"
-      },
-      {
-        "intent": "vague_when",
-        "entities": [
-          {
-            "start": 30,
-            "end": 38,
-            "value": "sometime",
-            "entity": "When"
-          }
-        ],
-        "text": "are you avavilable for a call sometime"
-      },
-      {
-        "intent": "vague_when",
-        "entities": [
-          {
-            "start": 6,
-            "end": 17,
-            "value": "a good time",
-            "entity": "When"
-          }
-        ],
-        "text": "whats a good time for you to have a call"
-      },
-      {
-        "intent": "vague_when",
-        "entities": [
-          {
-            "start": 6,
-            "end": 17,
-            "value": "a good time",
-            "entity": "When"
-          }
-        ],
-        "text": "whats a good time for us to have a call"
-      },
-      {
-        "intent": "vague_when",
-        "entities": [
-          {
-            "start": 25,
-            "end": 36,
-            "value": "a good time",
-            "entity": "When"
-          }
-        ],
-        "text": "can you let me know what a good time for a call might be"
-      },
-      {
-        "intent": "vague_when",
-        "text": "is there a particular time thats good for you"
-      },
-      {
-        "intent": "vague_when",
-        "entities": [
-          {
-            "start": 0,
-            "end": 7,
-            "value": "anytime",
-            "entity": "When"
-          }
-        ],
-        "text": "anytime could work"
-      },
-      {
-        "intent": "vague_when",
-        "entities": [
-          {
-            "start": 0,
-            "end": 8,
-            "value": "any time",
-            "entity": "When"
-          }
-        ],
-        "text": "any time could work"
-      },
-      {
         "intent": "affirm_day",
         "entities": [
           {
             "start": 5,
             "end": 11,
             "value": "friday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "sure friday sounds good"
@@ -31213,10 +32631,10 @@
         "intent": "affirm_day",
         "entities": [
           {
-            "start": 5,
+            "start": 0,
             "end": 8,
-            "value": "day",
-            "entity": "vague_When"
+            "value": "that day",
+            "entity": "When"
           }
         ],
         "text": "that day is good"
@@ -31228,7 +32646,7 @@
             "start": 4,
             "end": 12,
             "value": "Thursday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "OK, Thursday at 2:00 works for me"
@@ -31240,7 +32658,7 @@
             "start": 4,
             "end": 10,
             "value": "Friday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "OK, Friday at 3:00 works for me too"
@@ -31252,7 +32670,7 @@
             "start": 4,
             "end": 10,
             "value": "Monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "OK, Monday at 1:00 is good for me"
@@ -31264,7 +32682,7 @@
             "start": 4,
             "end": 11,
             "value": "Tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "OK, Tuesday at 4:00 is good for me too"
@@ -31276,7 +32694,7 @@
             "start": 21,
             "end": 27,
             "value": "monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "great lets shoot for monday"
@@ -31288,7 +32706,7 @@
             "start": 16,
             "end": 22,
             "value": "monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "ok lets aim for monday"
@@ -31408,7 +32826,7 @@
             "start": 4,
             "end": 7,
             "value": "Wed",
-            "entity": "Day"
+            "entity": "DATE"
           },
           {
             "start": 11,
@@ -31426,7 +32844,7 @@
             "start": 7,
             "end": 15,
             "value": "Thursday",
-            "entity": "Day"
+            "entity": "DATE"
           },
           {
             "start": 19,
@@ -31444,7 +32862,7 @@
             "start": 24,
             "end": 27,
             "value": "Tue",
-            "entity": "Day"
+            "entity": "DATE"
           },
           {
             "start": 31,
@@ -31468,7 +32886,7 @@
             "start": 31,
             "end": 38,
             "value": "Tuesday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "confirmed talk you at 10:30 on Tuesday"
@@ -31486,7 +32904,7 @@
             "start": 11,
             "end": 17,
             "value": "Monday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "2:00 pm on Monday confirmed"
@@ -31508,7 +32926,7 @@
             "start": 35,
             "end": 41,
             "value": "Friday",
-            "entity": "Day"
+            "entity": "DATE"
           }
         ],
         "text": "just added to my calendar 10:45 on Friday"
@@ -39511,6 +40929,18 @@
         "intent": "thisisnt",
         "entities": [
           {
+            "start": 7,
+            "end": 16,
+            "value": "brian eno",
+            "entity": "nou"
+          }
+        ],
+        "text": "im not brian eno"
+      },
+      {
+        "intent": "thisisnt",
+        "entities": [
+          {
             "start": 10,
             "end": 14,
             "value": "adam",
@@ -39638,18 +41068,6 @@
           }
         ],
         "text": "this isnt quincy jones"
-      },
-      {
-        "intent": "thisisnt",
-        "entities": [
-          {
-            "start": 7,
-            "end": 16,
-            "value": "brian eno",
-            "entity": "nou"
-          }
-        ],
-        "text": "im not brian eno"
       },
       {
         "intent": "thisisnt",
@@ -40212,15 +41630,19 @@
           "book a call",
           "make an appointment for a call",
           "plan a call",
+          "take a call",
           "a call",
           "schdule a call",
-          "set up that call"
+          "set up that call",
+          "program me a call",
+          "a call "
         ]
       },
       {
         "value": "Zoom",
         "synonyms": [
           "book a zom call",
+          "book a zoom",
           "book a zoom call",
           "schedule a zoom call",
           "plan a Zoom call",
@@ -40230,7 +41652,8 @@
           "arrange for a Zoom meeting",
           "book a Zoom meeting",
           "have a zoom meeting",
-          "a zoom call"
+          "a zoom call",
+          "have a zoom call"
         ]
       },
       {
@@ -40239,6 +41662,7 @@
           "book a meeting",
           "plan a meeting",
           "schedule a meeting",
+          "take a meeting",
           "a meeting",
           "meeting"
         ]
@@ -40260,7 +41684,8 @@
       {
         "value": "zoom",
         "synonyms": [
-          "set up a zoom call"
+          "set up a zoom call",
+          "zoom call"
         ]
       },
       {
@@ -40280,8 +41705,7 @@
         "synonyms": [
           "schedule a lunch",
           "book a lunch",
-          "set up lunch",
-          "lunch"
+          "set up lunch"
         ]
       },
       {
@@ -40297,6 +41721,24 @@
           "me",
           "I",
           "i"
+        ]
+      },
+      {
+        "value": "schedule a call",
+        "synonyms": [
+          "schedule me a call"
+        ]
+      },
+      {
+        "value": "book a call",
+        "synonyms": [
+          "book me a call"
+        ]
+      },
+      {
+        "value": "do lunch",
+        "synonyms": [
+          "lunch"
         ]
       },
       {
@@ -40328,6 +41770,18 @@
         "value": "help me",
         "synonyms": [
           "help you"
+        ]
+      },
+      {
+        "value": "this week",
+        "synonyms": [
+          "thisweek"
+        ]
+      },
+      {
+        "value": "next week",
+        "synonyms": [
+          "nextweek"
         ]
       },
       {

@@ -13,9 +13,7 @@
   - who_form
   - form{"name": "who_form"}
   - form{"name": null}
-  - utter_nicetohearfromu
   - utter_ask_howcanihelp
-
 
 ## is this you forest
 * forest
@@ -23,9 +21,7 @@
   - who_form
   - form{"name": "who_form"}
   - form{"name": null}
-  - utter_nicetohearfromu
   - utter_ask_howcanihelp
-
 
 ## multi intent (with name)
 * multi_intent
@@ -49,12 +45,11 @@
 
 ### ~~~~~~~~~~~~~~~~~~~~~ Discuss Day and Time ~~~~~~~~~~~~~~~~~~~~
 
-## greet + lets do OR ask_avail
+## greet + lets do
 * greet
   - who_form
   - form{"name": "who_form"}
   - form{"name": null}
-  - utter_nicetohearfromu
   - utter_ask_howcanihelp
 * lets_do OR ask_availability
   - action_preprocess_when  
@@ -64,20 +59,20 @@
   - action_check_time
   - email_form
   - form{"name": "email_form"}
-  - form{"name": null}  
+  - form{"name": null}
+  - action_check_time
   - utter_confirm_best_email
 * affirm OR thanks OR affirm_day
   - utter_shall_we_confirm  
 * affirm OR confirm_call
   - action_send_invite
 
-## availability OR lets do HP
-* lets_do OR ask_availability
+## availability OR lets do
+* lets_do
+  - action_preprocess_when
   - who_form
   - form{"name": "who_form"}
   - form{"name": null}
-  - utter_nicetohearfromu
-  - action_preprocess_when
   - when_form
   - form{"name": "when_form"}
   - form{"name": null}
@@ -96,11 +91,10 @@
   - utter_bye
 
 ## availability + ping pong > move into action
-* lets_do OR ask_availability
+* lets_do
   - who_form
   - form{"name": "who_form"}
   - form{"name": null}
-  - utter_nicetohearfromu
   - action_preprocess_when
   - when_form
   - form{"name": "when_form"}
@@ -133,13 +127,11 @@
 ### ~~~~~~~~~~~~~~~~~~~~~ Suggest Time ~~~~~~~~~~~~~~~~~~~~
 
 ## suggest day/time - HP + yes
-* suggest_availability
+* ask_availability OR suggest_availability
   - action_preprocess_when
   - when_form
   - form{"name": "when_form"}
   - form{"name": null}
-  - action_check_day
-* suggest_time
   - action_check_time
   - email_form
   - form{"name": "email_form"}
@@ -155,30 +147,6 @@
 * bye OR bye_fancy
   - utter_bye
 
-## suggest time of day - pick time + yes
-* suggest_availability
-  - action_preprocess_when
-  - when_form
-  - form{"name": "when_form"}
-  - form{"name": null}
-  - action_check_day
-* time_of_day
-  - utter_ask_specific_time
-* suggest_time
-  - action_check_time
-  - email_form
-  - form{"name": "email_form"}
-  - form{"name": null}
-  - utter_confirm_best_email
-* affirm OR thanks OR affirm_day
-  - utter_shall_we_confirm  
-* affirm OR thanks
-  - utter_heres_my_number
-  - action_send_invite
-* affirm OR ok
-  - utter_looking_forward
-* bye OR bye_fancy
-  - utter_bye
 
 ## suggest date/time - HP + email correction
 * suggest_date
@@ -400,63 +368,3 @@
 ## goodbye
 * bye OR bye_fancy
   - utter_bye
-
-
-## no greeting
-* chatter
-  - action_chat
-* ask_availability  
-  - who_form
-  - form{"name": "who_form"}
-  - form{"name": null}
-  - action_preprocess_when
-  - when_form
-  - form{"name": "when_form"}
-  - form{"name": null}
-  - action_check_time
-  - email_form
-  - form{"name": "email_form"}
-  - form{"name": null}  
-  - utter_confirm_best_email
-* affirm OR thanks OR affirm_day
-  - utter_shall_we_confirm
-* deny
-  - utter_ask_change_what
-* change_day_or_time {"date_or_time": "date"}
-  - utter_confirm_change_date_or_time
-* affirm  
-  - action_reset_date
-  - when_form
-  - form{"name": "when_form"}
-  - form{"name": null}
-  - utter_shall_we_confirm  
-* suggest_date
-  - utter_shall_we_confirm
-
-## suggest date/time - "happy" path + pick place
-* suggest_date
-  - action_check_date
-  - action_preprocess_when
-  - when_form
-  - form{"name": "when_form"}
-  - form{"name": null}
-  - utter_ask_time_date
-* suggest_time
-  - action_check_time
-  - utter_heres_my_number
-  - email_form
-  - form{"name": "email_form"}
-  - form{"name": null}
-  - utter_confirm_best_email
-* affirm OR thanks OR affirm_day
-  - utter_shall_we_confirm
-* where_to_meet
-  - ask_where
-* suggest_location
-  - utter_confirm_location
-  - utter_shall_we_confirm
-* affirm OR thanks
-  - utter_final_confirm
-  - action_send_invite
-* thanks OR thx
-  - utter_np

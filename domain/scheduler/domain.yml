@@ -14,7 +14,7 @@ forms:
 entities:
   - fm
   - PERSON
-  - DATE
+  - TIME
 
   - pov
   - org
@@ -27,6 +27,7 @@ entities:
   - Time
   - TOD
   - month_and_date
+  - date_or_time
   - same_or_different
 
   - activity
@@ -623,26 +624,26 @@ templates:
   - text: Should we put a call on the calendar to discuss?
   - text: Shall we plan on having a call then?
 
+  utter_ask_when:
+  - text: When would you like to do that?
+
   utter_ask_day:
   - text: What's a good day for you?
   - text: What's a good day to {activity}?
   utter_ask_date:
   - text: What's a better date for you?
-
   utter_ask_DATE:
   - text: What's a good day for you to {activity}?
   - text: What's your preferred day to {activity}?
   - text: What would be your preferred day for that?
   utter_ask_Date:
   - text: What Date are we shooting for ??
-  utter_ask_Time:
-  - What time is good for you on {Day}, {month_name} {day_of_month}?
-  - What's a good time for you on {Day}, {month_name} {day_of_month}?
 
-  utter_ask_when:
-  - text: When would you like to do that?
+  utter_ask_Time:
+  - Ok, What time is good for you on {Day}, {month_name} {day_of_month}?
+  #- What's a good time for you on {Day}, {month_name} {day_of_month}?
   utter_ask_time:
-  - text: What's a good time for you on ({Day}) {month_name} {day_of_month}
+  - text: ok, what's a good time for you on ({Day}) {month_name} {day_of_month}
   # - text: What's a good time for you on ({Day}) {month_name} {day_of_month} to {activity}?
   utter_ask_time_day:
   #- text: What's a good time for you to have a call {Day} {month_name} {day_ordinal}?

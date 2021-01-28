@@ -260,6 +260,11 @@
 - Can [I](pov:you) [come over](activity:come over) [this week](When)?
 - Can [I](pov:you) [come over](activity:come over) [next week](When)?
 
+- are you available for [breakfast](activity:have breakfast) [tomorrow](DATE)?
+- want to [grab lunch](activity:do brunch) [today](DATE)
+- want to [grab breakfast](activity:have breakfast) [tomorrow](DATE)?
+- wanna [grab brunch](activity:do brunch) [this weekend](When)
+
 - are you available to [meet up](activity) [this week](When)
 - are you available for a [meeting](activity) [this week](When)
 - are you available to [get together](activity) [this week](When)
@@ -1169,6 +1174,12 @@
 - [11-18](DATE)
 - [12-24](DATE)
 
+- are you available on [march 22](DATE)
+- wondering if are you available on [feb 20 22](DATE)
+- wondering wheether are you available on [june 8](DATE)
+- lmk if you are available on [sept 15](DATE)
+- pls lmk if you are available on [15 nov](DATE)
+- do you have availability on [aug 8](DATE)
 - can we do a call on [oct 15](DATE)
 - can you do a call on [nov 11th](DATE)
 - can you do a call on [december 6](DATE)

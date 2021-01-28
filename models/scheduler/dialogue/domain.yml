@@ -752,7 +752,7 @@ templates:
   utter_ask_specific_time:
   - text: Ok, {TOD} sounds good. What's a specific time you can do a call?
   utter_ask_time:
-  - text: ok, so what's a good time for you {date_for_time}
+  - text: What's a good time for you {date_for_time}
   utter_ask_time_date:
   - text: What's a good time for you to have a call on ({Day}) {month_name} {day_of_month}?
   utter_ask_time_day:

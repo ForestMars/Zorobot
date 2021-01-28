@@ -650,14 +650,15 @@ templates:
   - text: About what time are you thinking?
   - text: It's possible! What do you have in mind?
   utter_ask_time:
-  - text: What's a good time for you {date_for_time} 
+  - text: What's a good time for you to {activity} {date_for_time}?
+  - text: What's a good time for you {date_for_time} to {activity}?
   # - text: What's a good time for you on ({Day}) {month_name} {day_of_month} to {activity}?
   utter_ask_time_day:
   #- text: What's a good time for you to have a call {Day} {month_name} {day_ordinal}?
   - text: What's a good time for you on {Day} {month_name} {day_ordinal} to {activity}?
   utter_ask_time_date:
   #- text: What's a good time for you to have a call on ({Day}) {month_name} {day_ordinal})?
-  - text: What's a good time for you to have a call on ({Day}) {month_name} {day_of_month}?
+  - text: What's a good time for you to {activity} on ({Day}) {month_name} {day_of_month}?
   #- text: What's a good time for you to have a call on ({Day}) {month_and_date})?
   utter_sure_we_can:
   - text: Sure {pov} can {activity} on {Day}, {month_name} {day_ordinal} at {time_hour}:{time_minutes} {time_am_pm}

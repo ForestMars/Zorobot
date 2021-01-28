@@ -14726,6 +14726,18 @@
         "text": "book me a call"
       },
       {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 12,
+            "end": 23,
+            "value": "have a call",
+            "entity": "activity"
+          }
+        ],
+        "text": "what say we have a call"
+      },
+      {
         "intent": "ask_availability",
         "entities": [
           {
@@ -15090,6 +15102,78 @@
           }
         ],
         "text": "Can I come over next week?"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 22,
+            "end": 31,
+            "value": "have breakfast",
+            "entity": "activity"
+          },
+          {
+            "start": 32,
+            "end": 40,
+            "value": "tomorrow",
+            "entity": "DATE"
+          }
+        ],
+        "text": "are you available for breakfast tomorrow?"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 8,
+            "end": 18,
+            "value": "do brunch",
+            "entity": "activity"
+          },
+          {
+            "start": 19,
+            "end": 24,
+            "value": "today",
+            "entity": "DATE"
+          }
+        ],
+        "text": "want to grab lunch today"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 8,
+            "end": 22,
+            "value": "have breakfast",
+            "entity": "activity"
+          },
+          {
+            "start": 23,
+            "end": 31,
+            "value": "tomorrow",
+            "entity": "DATE"
+          }
+        ],
+        "text": "want to grab breakfast tomorrow?"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 6,
+            "end": 17,
+            "value": "do brunch",
+            "entity": "activity"
+          },
+          {
+            "start": 18,
+            "end": 30,
+            "value": "this weekend",
+            "entity": "When"
+          }
+        ],
+        "text": "wanna grab brunch this weekend"
       },
       {
         "intent": "ask_availability",
@@ -27420,6 +27504,78 @@
           }
         ],
         "text": "12-24"
+      },
+      {
+        "intent": "suggest_date",
+        "entities": [
+          {
+            "start": 21,
+            "end": 29,
+            "value": "march 22",
+            "entity": "DATE"
+          }
+        ],
+        "text": "are you available on march 22"
+      },
+      {
+        "intent": "suggest_date",
+        "entities": [
+          {
+            "start": 34,
+            "end": 43,
+            "value": "feb 20 22",
+            "entity": "DATE"
+          }
+        ],
+        "text": "wondering if are you available on feb 20 22"
+      },
+      {
+        "intent": "suggest_date",
+        "entities": [
+          {
+            "start": 40,
+            "end": 46,
+            "value": "june 8",
+            "entity": "DATE"
+          }
+        ],
+        "text": "wondering wheether are you available on june 8"
+      },
+      {
+        "intent": "suggest_date",
+        "entities": [
+          {
+            "start": 28,
+            "end": 35,
+            "value": "sept 15",
+            "entity": "DATE"
+          }
+        ],
+        "text": "lmk if you are available on sept 15"
+      },
+      {
+        "intent": "suggest_date",
+        "entities": [
+          {
+            "start": 32,
+            "end": 38,
+            "value": "15 nov",
+            "entity": "DATE"
+          }
+        ],
+        "text": "pls lmk if you are available on 15 nov"
+      },
+      {
+        "intent": "suggest_date",
+        "entities": [
+          {
+            "start": 28,
+            "end": 33,
+            "value": "aug 8",
+            "entity": "DATE"
+          }
+        ],
+        "text": "do you have availability on aug 8"
       },
       {
         "intent": "suggest_date",
@@ -40401,6 +40557,66 @@
         "intent": "thisis",
         "entities": [
           {
+            "start": 9,
+            "end": 13,
+            "value": "Beth",
+            "entity": "nou"
+          }
+        ],
+        "text": "Hi, it's Beth"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 8,
+            "end": 14,
+            "value": "Carter",
+            "entity": "nou"
+          }
+        ],
+        "text": "Hi it's Carter"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 8,
+            "end": 13,
+            "value": "Dafna",
+            "entity": "nou"
+          }
+        ],
+        "text": "Hi, its Dafna"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 9,
+            "end": 14,
+            "value": "Erika",
+            "entity": "nou"
+          }
+        ],
+        "text": "hi, it's Erika"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 8,
+            "end": 16,
+            "value": "Francine",
+            "entity": "nou"
+          }
+        ],
+        "text": "hi it's Francine"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
             "start": 8,
             "end": 9,
             "value": "X",
@@ -41835,6 +42051,20 @@
         "value": "do lunch",
         "synonyms": [
           "lunch"
+        ]
+      },
+      {
+        "value": "have breakfast",
+        "synonyms": [
+          "breakfast",
+          "grab breakfast"
+        ]
+      },
+      {
+        "value": "do brunch",
+        "synonyms": [
+          "grab lunch",
+          "grab brunch"
         ]
       },
       {

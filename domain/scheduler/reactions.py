@@ -657,7 +657,6 @@ class ActionPreprocessWhenForm(Action):
         return "action_preprocess_when"
 
     def run(self, dispatcher, tracker, domain):
-        #input('heloo running')
         slots = []
         date = tracker.get_slot('DATE')
 
@@ -669,7 +668,7 @@ class ActionPreprocessWhenForm(Action):
                 date = date.replace(v, '')
 
             if date.lower().strip() in ['this week', 'next week', 'this month', 'next month']:
-                dispatcher.utter_message("Pre: We can set something up for " + date)
+                dispatcher.utter_message("We can set something up for " + date)
                 slots.append(SlotSet('DATE', None))
 
         return slots
@@ -682,7 +681,6 @@ class WhenForm(FormAction):
 
     @staticmethod
     def required_slots(tracker):
-        #   input('wtf')
         return ['DATE','Time']
 
     def request_next_slot(self, dispatcher, tracker, domain):
@@ -772,7 +770,7 @@ class WhenForm(FormAction):
     def clean_date(self, dispatcher, tracker, DATE):
         day_dirty = tracker.get_slot('Day')  # CRF NER outperforma Spacy NER
         # Our CRF works where spaCy NER fails (such as weekday abbreviations just for one example.)
-        if day_dirty is not None:
+        if day_dirty is not None and DATE is None:
             day_clean = kr.clean_day_str(day_dirty).capitalize()
             day_clean = kr.day_abbr_to_full(day_clean)
             if day_dirty.lower().strip() not in ['today', '']:  # sub-optimal, move get_date_ function into clean_day_str
@@ -806,7 +804,9 @@ class WhenForm(FormAction):
                 print(e)
         else:
             grok = kr.Grok()
+
             date_clean = grok.clean_date_str(DATE) #  unlike clean_day, returns [month_name], [day] and not [month_no], [day]
+
             if date_clean[0].isnumeric():
                 date = kr.get_date_from_month_and_day(date_clean)
             elif len(date_clean[0]) > 4:
@@ -831,20 +831,25 @@ class WhenForm(FormAction):
         intent = tracker.latest_message['intent'].get('name')
         if intent == 'nvrmnd':  # This doesn't need to be in 2 places.
             dispatcher.utter_message("What's the magic word?")
+
             return self.deactivate()
 
-        day_dirty = tracker.get_slot('Day')  # CRF NER outperforms Spacy NER
-        if day_dirty is not None:
+        day_dirty = tracker.get_slot('Day')  # CRF NER outperforms Spacy NER, actually.
+        DATE = tracker.get_slot('DATE')
+        #if day_dirty is not None:
+        if DATE is None and day_dirty is not None:  # Fallback is deprecated?
             DATE = day_dirty
-        else:
+        else:  # redundant
             #  DATE = val
             DATE = tracker.get_slot('DATE')  # Spacy NER fallback (pretrained)
+
 
         # Guard conditions should not be needed.
         if DATE == None:
             return None
 
         # More guards for spaCy's 🦆 typing. Should all be consolidated together in a preprocessor.
+        # Is it spaCy tho? Or having 2 NER's?
         if isinstance(DATE, str):
             date_list = []
             date_list+=[DATE] # bc Spacy sometimes gives you a string, sometimes a list.
@@ -856,15 +861,18 @@ class WhenForm(FormAction):
                 if self.preprocess_vague_date(dispatcher, DATE) is True: # this can likely be removed, we check in request_next_slot()
                     #dispatcher.utter_message("")
                     continue
+
             date_clean = self.clean_date(dispatcher, tracker, DATE)
             if date_clean.strip() == '':
                 [SlotSet("DATE", None)] # This is suspect.
 
             when = ActionDateParts.set_parts(date_clean)
+
             kwargs = {}
             kwargs.update({"Day": when['Day']})
             kwargs.update({"month_name": when['month_name']})
-            kwargs.update({"day_of_month": when['day_of_month']})
+            #kwargs.update({"day_of_month": when['day_of_month']})
+            kwargs.update({"day_of_month": when['ord']})
             #if tracker.get_slot('Time') is None or tracker.get_slot('Time').strip() != '':
             if tracker.get_slot('Time') is None:
                 if DATE.lower().strip() in ['today', 'tomorrow']:

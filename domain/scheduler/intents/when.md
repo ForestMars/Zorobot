@@ -243,6 +243,8 @@
 - can we [do lunch](activity)
 - whats your availability
 - whats your best availability
+- whats your availability for [a call](activity:have a call) [in the next week](DATE:next week)
+- whats your availability for [a zoom call](activity:Zoom) [in the coming week](DATE:next week)
 - whats your availability for [lunch](activity:do lunch)
 - whats your availability for [a call](activity:have a call)
 - whats your availability to [meet up](activity)

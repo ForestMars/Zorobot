@@ -32,6 +32,32 @@
 - i will know by [tomorrow](Day)
 - i will know by [next week](When)
 
+## intent:lyk_omw
+- I’ll give you a call when I’m on my way on Monday
+- ill give you a call when im on my way on monday
+- ill lyk when im omw
+- i'll lyk when i'm omw
+- I'll lyk when I'm omw
+- ill let you know when im omw
+- i'll let you know when i'm omw
+- I'll let you know when I'm omw
+- ill lyk when im on my way
+- i'll lyk you know when i'm on on my way
+- I'll lyk you know when I'm on my way
+- ill let you know when im on my way
+- i'll let you know when i'm on on my way
+- I'll let you know when I get on my way
+- i'll lyk you know when i'm on on my way
+- I'll lyk you know when I'm on my way
+- ill let you know when im on the way
+- i'll let you know when i'm on on the way
+- I'll let you know when I'm on the way
+- I'll tell u when i'm on the way
+- I'll tell you when i'm on the way
+- I'll tell you when I'm heading over
+- i'll let you know when i'm heading over
+- i'll let you know when i'm out the door
+
 ## intent:time_of_day
 - [morning](TOD)
 - [afternoon](TOD)

@@ -50,6 +50,11 @@
 * lost_the_plot
   - utter_sorry
 
+## luk when omw
+* lyk_omw
+  - utter_sounds_good
+  - utter_looking_forward
+
 ## nvrmnd
 * nvrmnd
   - utter_ok

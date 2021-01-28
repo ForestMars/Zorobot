@@ -660,6 +660,7 @@ class ActionPreprocessWhenForm(Action):
         slots = []
         date = tracker.get_slot('DATE')
 
+
         if date is not None:  # slot was set before form ran, so not validated.
             # The should probably be handled with BILOU
             # replace_ = lambda s, d: s if not d else mrep(s.replace(*d.popitem()), d)
@@ -667,9 +668,13 @@ class ActionPreprocessWhenForm(Action):
             for v in vague:
                 date = date.replace(v, '')
 
-            if date.lower().strip() in ['this week', 'next week', 'this month', 'next month']:
+            if date.lower().strip() in ['this week', 'next week', 'the next week', 'the coming week', 'this month', 'next month']:
                 dispatcher.utter_message("We can set something up for " + date)
                 slots.append(SlotSet('DATE', None))
+            if len(date.split()) > 1:
+                for d in kr.day_names:
+                    if d in date.lower():
+                        slots.append(SlotSet('DATE', kr.day_dict[d[:3]]))
 
         return slots
 
@@ -684,6 +689,7 @@ class WhenForm(FormAction):
         return ['DATE','Time']
 
     def request_next_slot(self, dispatcher, tracker, domain):
+
         """ mainly for message (utter_ask) template formatters. """
         intent = tracker.latest_message['intent'].get('name')
         if intent == 'nvrmnd':  # Command

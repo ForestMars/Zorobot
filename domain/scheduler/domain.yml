@@ -15,6 +15,7 @@ entities:
   - fm
   - PERSON
   - TIME
+  - DATE
 
   - pov
   - org
@@ -280,6 +281,7 @@ intents:
 - illcallu
 - whereami
 - where_to_meet
+- lyk_omw
 
 # ~~~~~~~~~~ Staffing
 - ask_are_you_hiring
@@ -385,6 +387,7 @@ actions:
 - utter_sok
 - utter_sorry
 - utter_sorry2hear
+- utter_sounds_good
 - utter_sure
 - utter_thx
 - utter_thanks
@@ -847,7 +850,8 @@ templates:
   utter_intro_dog:
   - text: What if I never find out... https://i.pinimg.com/736x/98/d6/26/98d626eb01a1096c1c24e97a1d94d183--so-funny-funny-dogs.jpg
 
-
+  utter_sounds_good:
+  - text: Sounds good
   utter_looking_forward:
   - text: Looking forward!
 

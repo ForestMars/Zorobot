@@ -200,11 +200,14 @@ function run_bot (){
   python -m rasa_core.run -d models/$PROJECT/dialogue -u models/$PROJECT/nlu --endpoints $ENDPOINT --log_file $LOGFILE
 }
 function run_api (){
-  nohup python -m rasa_core.run -d models/$PROJECT/dialogue -u models/$PROJECT/nlu --endpoints $ENDPOINT --log_file $LOGFILE &
+  nohup python -m rasa_core.run --enable_api -d models/$PROJECT/dialogue -u models/$PROJECT/nlu --endpoints $ENDPOINT --log_file $LOGFILE &
 }
 function run_debug (){
   python -m rasa_core.run -d models/$PROJECT/dialogue -u models/$PROJECT/nlu --endpoints $ENDPOINT --log_file $LOGFILE --debug
 
+}
+function run_api_debug (){
+  python -m rasa_core.run --enable_api -d models/$PROJECT/dialogue -u models/$PROJECT/nlu --endpoints $ENDPOINT --log_file $LOGFILE --debug
 }
 
 # The Whole Enchilada
@@ -230,7 +233,7 @@ fi
 
 # Run in API mode (don't retrain)
 if [[ -z "${CHOICE}" ]] && [[ $RUNYN = 'y' ]] && [[ $API = 'y' ]]; then
-  echo "What a mystery";
+  echo "Running in API mode";
   # This is redundant and can be safely removed.
   nohup python -m rasa_core.run \
     -u models/$DOMAIN/nlu \
@@ -243,7 +246,7 @@ fi
 
 # Don't retrain, just run (no API)
 if [[ -z "${CHOICE}" ]] && [[ $RUNYN = 'y' ]]; then
-  echo "Let's do this! (no training, running model)";
+  echo "No training, running model";
   # check training data exists
   # python -m rasa_nlu.train -c nlu_config.yml --data data/$PROJECT/intents/nlu_data.md -o models --fixed_model_name nlu --project $PROJECT --verbose ;
   # python -m rasa_nlu.train -c config.yml --data data//$PROJECT/intents -o models --fixed_model_name nlu --project $PROJECT --verbose --path agent ;
@@ -253,23 +256,22 @@ if [[ -z "${CHOICE}" ]] && [[ $RUNYN = 'y' ]]; then
     -d models/$DOMAIN/dialogue \
     --endpoints $ENDPOINT \
     --log_file $LOGFILE
-  echo "here we are"
-  read foo
+  echo "Exit?"
+  read confirm
   exit 0
 fi
 
 # Just run in debug mode.
 if [[ -z "${CHOICE}" ]] && [[ $RUNYN = 'd' ]]; then
-  echo "Let's do this! (running model in debug mode)";
+  echo "Running model in debug mode";
   # check training data exists
   # python -m rasa_nlu.train -c nlu_config.yml --data data/$PROJECT/intents/nlu_data.md -o models --fixed_model_name nlu --project $PROJECT --verbose ;
   # python -m rasa_nlu.train -c config.yml --data data//$PROJECT/intents -o models --fixed_model_name nlu --project $PROJECT --verbose --path agent ;
   #time python -m rasa_nlu.train -c config.yml --data data//$PROJECT/intents -o models --fixed_model_name nlu --project $PROJECT --verbose ;
   # python -m rasa_core_sdk.endpoint --actions $ACTION & echo $!
   python -m rasa_core.run -d models/$PROJECT/dialogue -u models/$PROJECT/nlu --endpoints $ENDPOINT --log_file $LOGFILE --debug
-  echo "about to exit zero"
   exit 0
-  echo "did that"
+
 fi
 
 # # Following is not just switch case, but communicating switch case to end user in native grammar.

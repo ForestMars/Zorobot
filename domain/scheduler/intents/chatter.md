@@ -23,8 +23,6 @@
 - what is your name
 - what are you thinking
 - when can you have it done by?
-
-
 - what does anna mean
 - does anna stand for anything
 
@@ -32,7 +30,6 @@
 - who do you help with scheduling?
 - scheduling must be very complicated
 - do you like doing scheduling
-
 
 - I told you, I work in an office
 - Where is Mr. Spock?
@@ -55,3 +52,35 @@
 - hey can you do something for me?
 
 - it's getting late
+
+## intent:relatives
+- your mom
+- your dad
+- your uncle
+- your aunt
+- your great aunt
+- your grandfather
+- your grandmother
+- your opa
+- your brother
+- your sister
+- your niece
+- your nephew
+- your son
+- your sons
+- your daughters
+
+## intent:do_you_like
+- do you like art
+- do you like balloons
+- do you like cars
+- do you like dancing
+- do you like everything
+- do you like forest
+- do you like getting away with it
+- do you like having a good time
+- do you like running
+- do you like things
+- do you like walking
+- do you like yourself
+- do you like zoro

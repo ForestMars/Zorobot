@@ -190,6 +190,118 @@
         "text": "it's getting late"
       },
       {
+        "intent": "relatives",
+        "text": "your mom"
+      },
+      {
+        "intent": "relatives",
+        "text": "your dad"
+      },
+      {
+        "intent": "relatives",
+        "text": "your uncle"
+      },
+      {
+        "intent": "relatives",
+        "text": "your aunt"
+      },
+      {
+        "intent": "relatives",
+        "text": "your great aunt"
+      },
+      {
+        "intent": "relatives",
+        "text": "your grandfather"
+      },
+      {
+        "intent": "relatives",
+        "text": "your grandmother"
+      },
+      {
+        "intent": "relatives",
+        "text": "your opa"
+      },
+      {
+        "intent": "relatives",
+        "text": "your brother"
+      },
+      {
+        "intent": "relatives",
+        "text": "your sister"
+      },
+      {
+        "intent": "relatives",
+        "text": "your niece"
+      },
+      {
+        "intent": "relatives",
+        "text": "your nephew"
+      },
+      {
+        "intent": "relatives",
+        "text": "your son"
+      },
+      {
+        "intent": "relatives",
+        "text": "your sons"
+      },
+      {
+        "intent": "relatives",
+        "text": "your daughters"
+      },
+      {
+        "intent": "do_you_like",
+        "text": "do you like art"
+      },
+      {
+        "intent": "do_you_like",
+        "text": "do you like balloons"
+      },
+      {
+        "intent": "do_you_like",
+        "text": "do you like cars"
+      },
+      {
+        "intent": "do_you_like",
+        "text": "do you like dancing"
+      },
+      {
+        "intent": "do_you_like",
+        "text": "do you like everything"
+      },
+      {
+        "intent": "do_you_like",
+        "text": "do you like forest"
+      },
+      {
+        "intent": "do_you_like",
+        "text": "do you like getting away with it"
+      },
+      {
+        "intent": "do_you_like",
+        "text": "do you like having a good time"
+      },
+      {
+        "intent": "do_you_like",
+        "text": "do you like running"
+      },
+      {
+        "intent": "do_you_like",
+        "text": "do you like things"
+      },
+      {
+        "intent": "do_you_like",
+        "text": "do you like walking"
+      },
+      {
+        "intent": "do_you_like",
+        "text": "do you like yourself"
+      },
+      {
+        "intent": "do_you_like",
+        "text": "do you like zoro"
+      },
+      {
         "intent": "following_up",
         "text": "i got your email"
       },
@@ -420,6 +532,102 @@
           }
         ],
         "text": "i will know by next week"
+      },
+      {
+        "intent": "lyk_omw",
+        "text": "I’ll give you a call when I’m on my way on Monday"
+      },
+      {
+        "intent": "lyk_omw",
+        "text": "ill give you a call when im on my way on monday"
+      },
+      {
+        "intent": "lyk_omw",
+        "text": "ill lyk when im omw"
+      },
+      {
+        "intent": "lyk_omw",
+        "text": "i'll lyk when i'm omw"
+      },
+      {
+        "intent": "lyk_omw",
+        "text": "I'll lyk when I'm omw"
+      },
+      {
+        "intent": "lyk_omw",
+        "text": "ill let you know when im omw"
+      },
+      {
+        "intent": "lyk_omw",
+        "text": "i'll let you know when i'm omw"
+      },
+      {
+        "intent": "lyk_omw",
+        "text": "I'll let you know when I'm omw"
+      },
+      {
+        "intent": "lyk_omw",
+        "text": "ill lyk when im on my way"
+      },
+      {
+        "intent": "lyk_omw",
+        "text": "i'll lyk you know when i'm on on my way"
+      },
+      {
+        "intent": "lyk_omw",
+        "text": "I'll lyk you know when I'm on my way"
+      },
+      {
+        "intent": "lyk_omw",
+        "text": "ill let you know when im on my way"
+      },
+      {
+        "intent": "lyk_omw",
+        "text": "i'll let you know when i'm on on my way"
+      },
+      {
+        "intent": "lyk_omw",
+        "text": "I'll let you know when I get on my way"
+      },
+      {
+        "intent": "lyk_omw",
+        "text": "i'll lyk you know when i'm on on my way"
+      },
+      {
+        "intent": "lyk_omw",
+        "text": "I'll lyk you know when I'm on my way"
+      },
+      {
+        "intent": "lyk_omw",
+        "text": "ill let you know when im on the way"
+      },
+      {
+        "intent": "lyk_omw",
+        "text": "i'll let you know when i'm on on the way"
+      },
+      {
+        "intent": "lyk_omw",
+        "text": "I'll let you know when I'm on the way"
+      },
+      {
+        "intent": "lyk_omw",
+        "text": "I'll tell u when i'm on the way"
+      },
+      {
+        "intent": "lyk_omw",
+        "text": "I'll tell you when i'm on the way"
+      },
+      {
+        "intent": "lyk_omw",
+        "text": "I'll tell you when I'm heading over"
+      },
+      {
+        "intent": "lyk_omw",
+        "text": "i'll let you know when i'm heading over"
+      },
+      {
+        "intent": "lyk_omw",
+        "text": "i'll let you know when i'm out the door"
       },
       {
         "intent": "time_of_day",
@@ -2638,6 +2846,162 @@
         "text": "heres my email in case you dont have it werner@heisenberg.de"
       },
       {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 21,
+            "value": "james.woodhouse@gmail",
+            "entity": "email"
+          }
+        ],
+        "text": "james.woodhouse@gmail"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 22,
+            "value": "robert.black@gmail.com",
+            "entity": "email"
+          }
+        ],
+        "text": "robert.black@gmail.com"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 30,
+            "value": "ezra.cohen@advancedsystems.com",
+            "entity": "email"
+          }
+        ],
+        "text": "ezra.cohen@advancedsystems.com"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 28,
+            "value": "peter.principle@piperllc.com",
+            "entity": "email"
+          }
+        ],
+        "text": "peter.principle@piperllc.com"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 24,
+            "value": "marc.ingram@cloudera.com",
+            "entity": "email"
+          }
+        ],
+        "text": "marc.ingram@cloudera.com"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 31,
+            "value": "george.wilde@apexindustries.com",
+            "entity": "email"
+          }
+        ],
+        "text": "george.wilde@apexindustries.com"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 34,
+            "value": "bermie.mittens@buildbackbetter.com",
+            "entity": "email"
+          }
+        ],
+        "text": "bermie.mittens@buildbackbetter.com"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 33,
+            "value": "klaus.kinski@quantumoverdrive.net",
+            "entity": "email"
+          }
+        ],
+        "text": "klaus.kinski@quantumoverdrive.net"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 26,
+            "value": "james.maxwell@explosion.ai",
+            "entity": "email"
+          }
+        ],
+        "text": "james.maxwell@explosion.ai"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 14,
+            "value": "jcm@2rooms.net",
+            "entity": "email"
+          }
+        ],
+        "text": "jcm@2rooms.net"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "faraday@cage.org",
+            "entity": "email"
+          }
+        ],
+        "text": "faraday@cage.org"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 18,
+            "value": "claude@shannon.com",
+            "entity": "email"
+          }
+        ],
+        "text": "claude@shannon.com"
+      },
+      {
+        "intent": "best_email_is",
+        "entities": [
+          {
+            "start": 0,
+            "end": 13,
+            "value": "don@knuth.org",
+            "entity": "email"
+          }
+        ],
+        "text": "don@knuth.org"
+      },
+      {
         "intent": "change_email",
         "text": "wrong email"
       },
@@ -4850,6 +5214,22 @@
         "text": "u r funny"
       },
       {
+        "intent": "laugh",
+        "text": "oh thats funny"
+      },
+      {
+        "intent": "laugh",
+        "text": "thats really funny"
+      },
+      {
+        "intent": "laugh",
+        "text": "real funny"
+      },
+      {
+        "intent": "laugh",
+        "text": "so funny"
+      },
+      {
         "intent": "sorry",
         "text": "sorry"
       },
@@ -5428,6 +5808,18 @@
       {
         "intent": "who_is_this",
         "text": "what name do you go by"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "what is your name"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "what's your name"
+      },
+      {
+        "intent": "who_is_this",
+        "text": "what is your name again"
       },
       {
         "intent": "super",
@@ -8652,6 +9044,46 @@
           }
         ],
         "text": "notabot.com"
+      },
+      {
+        "intent": "multi_intent",
+        "entities": [
+          {
+            "start": 40,
+            "end": 58,
+            "value": "earlier in the day",
+            "entity": "TOD"
+          },
+          {
+            "start": 62,
+            "end": 68,
+            "value": "Monday",
+            "entity": "DATE"
+          },
+          {
+            "start": 138,
+            "end": 142,
+            "value": "2:30",
+            "entity": "Time"
+          }
+        ],
+        "text": "I will be in your neighborhood for work earlier in the day on Monday and I’m wondering if I could drop off some material before I come at 2:30? Including a large wheel of cheese, huge loaf(s) of bread and some slats that I found."
+      },
+      {
+        "intent": "multi_intent",
+        "entities": [
+          {
+            "start": 34,
+            "end": 42,
+            "value": "tomorrow",
+            "entity": "DATE"
+          }
+        ],
+        "text": "Me and Dmitri will be stopping by tomorrow if that works. I'll bring a chess set, he'll bring a bottle of wine. I'll try to keep his, er, naturally boorish tendencies in check. When's a good time?"
+      },
+      {
+        "intent": "multi_intent",
+        "text": "I’m free anytime today example 1-3pm. Tomorrow is kinda loose, I could jump on a call whenever. Sunday I could talk at noon or after 4pm"
       },
       {
         "intent": "remember_me",
@@ -12780,6 +13212,114 @@
         "entities": [
           {
             "start": 10,
+            "end": 21,
+            "value": "have a chat",
+            "entity": "activity"
+          },
+          {
+            "start": 27,
+            "end": 33,
+            "value": "forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "i need to have a chat with forest"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 10,
+            "end": 26,
+            "value": "set up a meeting",
+            "entity": "activity"
+          },
+          {
+            "start": 32,
+            "end": 38,
+            "value": "forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "i need to set up a meeting with forest"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 10,
+            "end": 20,
+            "value": "have a chat",
+            "entity": "activity"
+          },
+          {
+            "start": 21,
+            "end": 27,
+            "value": "forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "i need to speak with forest"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 18,
+            "end": 24,
+            "value": "forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "i need to talk to forest"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 10,
+            "end": 22,
+            "value": "get in touch",
+            "entity": "activity"
+          },
+          {
+            "start": 28,
+            "end": 34,
+            "value": "forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "i need to get in touch with forest"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 10,
+            "end": 25,
+            "value": "schedule a call",
+            "entity": "activity"
+          }
+        ],
+        "text": "i need to schedule a call"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 10,
+            "end": 30,
+            "value": "Zoom",
+            "entity": "activity"
+          }
+        ],
+        "text": "i need to schedule a zoom call"
+      },
+      {
+        "intent": "lets_do",
+        "entities": [
+          {
+            "start": 10,
             "end": 29,
             "value": "meet in your garden",
             "entity": "activity"
@@ -14790,6 +15330,42 @@
         "entities": [
           {
             "start": 28,
+            "end": 34,
+            "value": "have a call",
+            "entity": "activity"
+          },
+          {
+            "start": 35,
+            "end": 51,
+            "value": "next week",
+            "entity": "DATE"
+          }
+        ],
+        "text": "whats your availability for a call in the next week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 28,
+            "end": 39,
+            "value": "Zoom",
+            "entity": "activity"
+          },
+          {
+            "start": 40,
+            "end": 58,
+            "value": "next week",
+            "entity": "DATE"
+          }
+        ],
+        "text": "whats your availability for a zoom call in the coming week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 28,
             "end": 33,
             "value": "do lunch",
             "entity": "activity"
@@ -16098,6 +16674,18 @@
           }
         ],
         "text": "can you take a meeting next week"
+      },
+      {
+        "intent": "ask_availability",
+        "entities": [
+          {
+            "start": 8,
+            "end": 21,
+            "value": "set up a call",
+            "entity": "activity"
+          }
+        ],
+        "text": "can you set ip a call for me and Forest?"
       },
       {
         "intent": "ask_availability",
@@ -23465,6 +24053,90 @@
       },
       {
         "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 21,
+            "end": 27,
+            "value": "have a call",
+            "entity": "activity"
+          },
+          {
+            "start": 28,
+            "end": 35,
+            "value": "2/24",
+            "entity": "DATE"
+          }
+        ],
+        "text": "do you have time for a call on 2/24"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 23,
+            "end": 32,
+            "value": "meet",
+            "entity": "activity"
+          },
+          {
+            "start": 33,
+            "end": 42,
+            "value": "2/24",
+            "entity": "DATE"
+          }
+        ],
+        "text": "will you have time for a meeting on 22 Nov"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 32,
+            "end": 38,
+            "value": "have a call",
+            "entity": "activity"
+          },
+          {
+            "start": 39,
+            "end": 44,
+            "value": "today",
+            "entity": "Day"
+          }
+        ],
+        "text": "any chance you'll have time for a call today"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 3,
+            "end": 19,
+            "value": "today",
+            "entity": "DATE"
+          }
+        ],
+        "text": "is today a good day"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 7,
+            "end": 15,
+            "value": "tomorrow",
+            "entity": "DATE"
+          },
+          {
+            "start": 27,
+            "end": 39,
+            "value": "get together",
+            "entity": "activity"
+          }
+        ],
+        "text": "how is tomorrow looking to get together"
+      },
+      {
+        "intent": "suggest_availability",
         "text": "whats your availability"
       },
       {
@@ -24718,6 +25390,222 @@
           }
         ],
         "text": "shall we confirm for tuesday then?"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 18,
+            "end": 21,
+            "value": "Ted",
+            "entity": "nou"
+          },
+          {
+            "start": 30,
+            "end": 48,
+            "value": "Zoom",
+            "entity": "activity"
+          },
+          {
+            "start": 53,
+            "end": 64,
+            "value": "February 17",
+            "entity": "DATE"
+          },
+          {
+            "start": 68,
+            "end": 75,
+            "value": "5:00 PM",
+            "entity": "Time"
+          }
+        ],
+        "text": "Hi Forest this is Ted. Please set up a zoom call for February 17 at 5:00 PM"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 9,
+            "end": 32,
+            "value": "Zoom",
+            "entity": "activity"
+          },
+          {
+            "start": 48,
+            "end": 59,
+            "value": "February 17",
+            "entity": "DATE"
+          },
+          {
+            "start": 63,
+            "end": 70,
+            "value": "5:00 am",
+            "entity": "Time"
+          }
+        ],
+        "text": "Will you schedule up a zoom call with Forest on February 17 at 5:00 am"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 7,
+            "end": 30,
+            "value": "Zoom",
+            "entity": "activity"
+          },
+          {
+            "start": 46,
+            "end": 57,
+            "value": "February 17",
+            "entity": "DATE"
+          },
+          {
+            "start": 61,
+            "end": 68,
+            "value": "5:00 pm",
+            "entity": "Time"
+          }
+        ],
+        "text": "Please schedule up a zoom call with Forest on February 17 at 5:00 pm"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 9,
+            "end": 23,
+            "value": "meet",
+            "entity": "activity"
+          },
+          {
+            "start": 39,
+            "end": 50,
+            "value": "February 17",
+            "entity": "DATE"
+          },
+          {
+            "start": 54,
+            "end": 61,
+            "value": "3:00 pm",
+            "entity": "Time"
+          }
+        ],
+        "text": "Will you book a meeting with Forest on February 17 at 3:00 pm"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 7,
+            "end": 25,
+            "value": "Zoom",
+            "entity": "activity"
+          },
+          {
+            "start": 41,
+            "end": 49,
+            "value": "March 17",
+            "entity": "DATE"
+          },
+          {
+            "start": 53,
+            "end": 60,
+            "value": "7:00 Am",
+            "entity": "Time"
+          }
+        ],
+        "text": "Please set up a zoom call with Forest on March 17 at 7:00 Am"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 16,
+            "end": 29,
+            "value": "set up a call",
+            "entity": "activity"
+          },
+          {
+            "start": 34,
+            "end": 39,
+            "value": "May 5",
+            "entity": "DATE"
+          },
+          {
+            "start": 45,
+            "end": 60,
+            "value": "5:00",
+            "entity": "Time"
+          }
+        ],
+        "text": "I would like to set up a call for May 5 from 5:00 to 5:30 pm"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 10,
+            "end": 29,
+            "value": "schedule a meething",
+            "entity": "activity"
+          },
+          {
+            "start": 46,
+            "end": 54,
+            "value": "August 8",
+            "entity": "DATE"
+          },
+          {
+            "start": 58,
+            "end": 62,
+            "value": "11AM",
+            "entity": "Time"
+          }
+        ],
+        "text": "I need to schedule a meething with Forest for August 8 at 11AM"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 10,
+            "end": 20,
+            "value": "1:30pm-2pm",
+            "entity": "Time"
+          },
+          {
+            "start": 24,
+            "end": 37,
+            "value": "February 16th",
+            "entity": "DATE"
+          }
+        ],
+        "text": "How about 1:30pm-2pm on February 16th?"
+      },
+      {
+        "intent": "suggest_availability",
+        "entities": [
+          {
+            "start": 5,
+            "end": 18,
+            "value": "10:00-10:30am",
+            "entity": "Time"
+          },
+          {
+            "start": 22,
+            "end": 29,
+            "value": "July 17",
+            "entity": "DATE"
+          },
+          {
+            "start": 39,
+            "end": 45,
+            "value": "have a call",
+            "entity": "activity"
+          }
+        ],
+        "text": "Does 10:00-10:30am on July 17 work for a call"
       },
       {
         "intent": "suggest_availability",
@@ -33128,6 +34016,1398 @@
         "text": "whats your second choice"
       },
       {
+        "intent": "ask_location",
+        "text": "Address?"
+      },
+      {
+        "intent": "ask_location",
+        "text": "address?"
+      },
+      {
+        "intent": "ask_location",
+        "text": "Address, please?"
+      },
+      {
+        "intent": "ask_location",
+        "text": "address please?"
+      },
+      {
+        "intent": "ask_location",
+        "text": "can you send me the address"
+      },
+      {
+        "intent": "ask_location",
+        "text": "can you send me your address"
+      },
+      {
+        "intent": "ask_location",
+        "text": "can you text me the address"
+      },
+      {
+        "intent": "ask_location",
+        "text": "can you text me your address"
+      },
+      {
+        "intent": "ask_location",
+        "text": "can you pls send me your address"
+      },
+      {
+        "intent": "ask_location",
+        "text": "can you please send me your address"
+      },
+      {
+        "intent": "ask_location",
+        "text": "how do i get there"
+      },
+      {
+        "intent": "ask_location",
+        "text": "i need the location"
+      },
+      {
+        "intent": "ask_location",
+        "text": "i need your location"
+      },
+      {
+        "intent": "ask_location",
+        "text": "i need to know the location"
+      },
+      {
+        "intent": "ask_location",
+        "text": "i need to know your location"
+      },
+      {
+        "intent": "ask_location",
+        "text": "please send me the address"
+      },
+      {
+        "intent": "ask_location",
+        "text": "please text me the address"
+      },
+      {
+        "intent": "ask_location",
+        "text": "pls txt me yr address"
+      },
+      {
+        "intent": "ask_location",
+        "text": "what is the address"
+      },
+      {
+        "intent": "ask_location",
+        "text": "what is the exact address"
+      },
+      {
+        "intent": "ask_location",
+        "text": "what is your address"
+      },
+      {
+        "intent": "ask_location",
+        "text": "what is your exact address"
+      },
+      {
+        "intent": "ask_location",
+        "text": "what's the actual address"
+      },
+      {
+        "intent": "ask_location",
+        "text": "what's the street address"
+      },
+      {
+        "intent": "ask_location",
+        "text": "what's your address"
+      },
+      {
+        "intent": "ask_location",
+        "text": "whats the address"
+      },
+      {
+        "intent": "ask_location",
+        "text": "whats your location"
+      },
+      {
+        "intent": "ask_location",
+        "text": "whats yr exact address"
+      },
+      {
+        "intent": "ask_location",
+        "text": "where are you at"
+      },
+      {
+        "intent": "ask_location",
+        "text": "where are you located"
+      },
+      {
+        "intent": "ask_location",
+        "text": "where are you located at"
+      },
+      {
+        "intent": "ask_location",
+        "text": "where do i go"
+      },
+      {
+        "intent": "ask_location",
+        "text": "can you send me the address?"
+      },
+      {
+        "intent": "ask_location",
+        "text": "can you send me your address?"
+      },
+      {
+        "intent": "ask_location",
+        "text": "can you text me the address?"
+      },
+      {
+        "intent": "ask_location",
+        "text": "can you text me your address?"
+      },
+      {
+        "intent": "ask_location",
+        "text": "can you pls send me your address?"
+      },
+      {
+        "intent": "ask_location",
+        "text": "can you please send me your address?"
+      },
+      {
+        "intent": "ask_location",
+        "text": "how do i get there?"
+      },
+      {
+        "intent": "ask_location",
+        "text": "please send me the address?"
+      },
+      {
+        "intent": "ask_location",
+        "text": "please text me the address?"
+      },
+      {
+        "intent": "ask_location",
+        "text": "pls txt me yr address?"
+      },
+      {
+        "intent": "ask_location",
+        "text": "what is the address?"
+      },
+      {
+        "intent": "ask_location",
+        "text": "what is the exact address?"
+      },
+      {
+        "intent": "ask_location",
+        "text": "what is your address?"
+      },
+      {
+        "intent": "ask_location",
+        "text": "what is your exact address?"
+      },
+      {
+        "intent": "ask_location",
+        "text": "what's the actual address?"
+      },
+      {
+        "intent": "ask_location",
+        "text": "what's the street address?"
+      },
+      {
+        "intent": "ask_location",
+        "text": "what's your address?"
+      },
+      {
+        "intent": "ask_location",
+        "text": "whats the address?"
+      },
+      {
+        "intent": "ask_location",
+        "text": "whats your location?"
+      },
+      {
+        "intent": "ask_location",
+        "text": "whats yr exact address?"
+      },
+      {
+        "intent": "ask_location",
+        "text": "where are you at?"
+      },
+      {
+        "intent": "ask_location",
+        "text": "where are you located?"
+      },
+      {
+        "intent": "ask_location",
+        "text": "where are you located at?"
+      },
+      {
+        "intent": "ask_location",
+        "text": "where do i go?"
+      },
+      {
+        "intent": "ask_location",
+        "text": "where do you live"
+      },
+      {
+        "intent": "ask_location",
+        "text": "what is the address please"
+      },
+      {
+        "intent": "ask_location",
+        "text": "what is the address please?"
+      },
+      {
+        "intent": "ask_location",
+        "text": "What is the address please?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "forest's Address?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "forest's address?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "forest's Address, please?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "forest's address please?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 23,
+            "end": 31,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "can you please send me forest's address"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 23,
+            "end": 31,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "can you please send me forest's address?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 20,
+            "end": 28,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "can you pls send me forest's address"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 20,
+            "end": 28,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "can you pls send me forest's address?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 16,
+            "end": 24,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "can you send me forest's address"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 16,
+            "end": 24,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "can you send me forest's address?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 16,
+            "end": 24,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "can you text me forest's address"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 16,
+            "end": 24,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "can you text me forest's address?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "hi forest what is the address please"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 16,
+            "end": 24,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "how do i get to forest's"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 7,
+            "end": 15,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "i need forest's location"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 15,
+            "end": 23,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "i need to know forest's location"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 21,
+            "end": 27,
+            "value": "forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "i need to know where forest lives"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 15,
+            "end": 23,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "please send me forest's address"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 15,
+            "end": 23,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "please send me forest's address?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 15,
+            "end": 23,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "please text me forest's address"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 15,
+            "end": 23,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "please text me forest's address?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 11,
+            "end": 19,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "pls txt me forest's address"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 11,
+            "end": 19,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "pls txt me forest's address?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 8,
+            "end": 16,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "what is forest's address"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 8,
+            "end": 16,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "what is forest's address please"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 8,
+            "end": 16,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "What is forest's address please?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 8,
+            "end": 16,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "what is forest's address please?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 8,
+            "end": 16,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "what is forest's address?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 8,
+            "end": 16,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "what is forest's exact address"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 8,
+            "end": 16,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "what is forest's exact address?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 8,
+            "end": 16,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "what is forest's location"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 7,
+            "end": 15,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "what's forest's actual address"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 7,
+            "end": 15,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "what's forest's actual address?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 7,
+            "end": 15,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "what's forest's address"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 7,
+            "end": 15,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "what's forest's address?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 7,
+            "end": 15,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "what's forest's street address"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 7,
+            "end": 15,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "what's forest's street address?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 6,
+            "end": 14,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "whats forest's address"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 6,
+            "end": 14,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "whats forest's address?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 6,
+            "end": 14,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "whats forest's exact address"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 6,
+            "end": 14,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "whats forest's exact address?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 6,
+            "end": 14,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "whats forest's location"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 6,
+            "end": 14,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "whats forest's location?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 11,
+            "end": 17,
+            "value": "Forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "where does Forest live"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 9,
+            "end": 17,
+            "value": "forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "where is forest's located at?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 9,
+            "end": 15,
+            "value": "forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "where is forest at"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 9,
+            "end": 15,
+            "value": "forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "where is forest at?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 9,
+            "end": 15,
+            "value": "forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "where is forest located"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 9,
+            "end": 15,
+            "value": "forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "where is forest located at"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 9,
+            "end": 15,
+            "value": "forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "where is forestlocated?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 23,
+            "end": 31,
+            "value": "Forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "can you please send me Forest's address"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 23,
+            "end": 31,
+            "value": "Forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "can you please send me Forest's address?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 20,
+            "end": 28,
+            "value": "Forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "can you pls send me Forest's address"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 20,
+            "end": 28,
+            "value": "Forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "can you pls send me Forest's address?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 16,
+            "end": 24,
+            "value": "Forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "can you send me Forest's address"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 16,
+            "end": 24,
+            "value": "Forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "can you send me Forest's address?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 16,
+            "end": 24,
+            "value": "Forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "can you text me Forest's address"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 16,
+            "end": 24,
+            "value": "Forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "can you text me Forest's address?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "Forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "hi Forest what is the address please"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 16,
+            "end": 24,
+            "value": "Forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "how do i get to Forest's"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 7,
+            "end": 15,
+            "value": "Forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "i need Forest's location"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 15,
+            "end": 23,
+            "value": "Forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "i need to know Forest's location"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 21,
+            "end": 27,
+            "value": "Forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "i need to know where Forest lives"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 15,
+            "end": 23,
+            "value": "Forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "please send me Forest's address"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 15,
+            "end": 23,
+            "value": "Forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "please send me Forest's address?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 15,
+            "end": 23,
+            "value": "Forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "please text me Forest's address"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 15,
+            "end": 23,
+            "value": "Forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "please text me Forest's address?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 11,
+            "end": 19,
+            "value": "Forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "pls txt me Forest's address"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 11,
+            "end": 19,
+            "value": "Forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "pls txt me Forest's address?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 8,
+            "end": 16,
+            "value": "Forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "what is Forest's address"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 8,
+            "end": 16,
+            "value": "Forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "what is Forest's address please"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 8,
+            "end": 16,
+            "value": "Forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "What is Forest's address please?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 8,
+            "end": 16,
+            "value": "Forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "what is Forest's address please?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 8,
+            "end": 16,
+            "value": "Forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "what is Forest's address?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 8,
+            "end": 16,
+            "value": "Forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "what is Forest's exact address"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 8,
+            "end": 16,
+            "value": "Forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "what is Forest's exact address?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 8,
+            "end": 16,
+            "value": "Forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "what is Forest's location"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 7,
+            "end": 15,
+            "value": "Forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "what's Forest's actual address"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 7,
+            "end": 15,
+            "value": "Forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "what's Forest's actual address?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 7,
+            "end": 15,
+            "value": "Forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "what's Forest's address"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 7,
+            "end": 15,
+            "value": "Forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "what's Forest's address?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 7,
+            "end": 15,
+            "value": "Forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "what's Forest's street address"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 7,
+            "end": 15,
+            "value": "Forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "what's Forest's street address?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 6,
+            "end": 14,
+            "value": "Forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "whats Forest's address"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 6,
+            "end": 14,
+            "value": "Forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "whats Forest's address?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 6,
+            "end": 14,
+            "value": "Forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "whats Forest's exact address"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 6,
+            "end": 14,
+            "value": "Forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "whats Forest's exact address?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 6,
+            "end": 14,
+            "value": "Forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "whats Forest's location"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 6,
+            "end": 14,
+            "value": "Forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "whats Forest's location?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 11,
+            "end": 17,
+            "value": "Forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "where does Forest live"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 9,
+            "end": 17,
+            "value": "Forest's",
+            "entity": "fm"
+          }
+        ],
+        "text": "where is Forest's located at?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 9,
+            "end": 15,
+            "value": "Forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "where is Forest at"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 9,
+            "end": 15,
+            "value": "Forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "where is Forest at?"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 9,
+            "end": 15,
+            "value": "Forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "where is Forest located"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 9,
+            "end": 15,
+            "value": "Forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "where is Forest located at"
+      },
+      {
+        "intent": "forest_location",
+        "entities": [
+          {
+            "start": 9,
+            "end": 15,
+            "value": "Forest",
+            "entity": "fm"
+          }
+        ],
+        "text": "where is Forestlocated?"
+      },
+      {
         "intent": "where_to_meet",
         "text": "where should we meet"
       },
@@ -35794,6 +38074,18 @@
         "entities": [
           {
             "start": 0,
+            "end": 2,
+            "value": "ed",
+            "entity": "nou"
+          }
+        ],
+        "text": "ed"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 0,
             "end": 5,
             "value": "frank",
             "entity": "nou"
@@ -36923,11 +39215,11 @@
           {
             "start": 0,
             "end": 7,
-            "value": "Melissa",
+            "value": "melissa",
             "entity": "nou"
           }
         ],
-        "text": "Melissa"
+        "text": "melissa"
       },
       {
         "intent": "thisis",
@@ -36983,11 +39275,11 @@
           {
             "start": 0,
             "end": 6,
-            "value": "Sharon",
+            "value": "sharon",
             "entity": "nou"
           }
         ],
-        "text": "Sharon"
+        "text": "sharon"
       },
       {
         "intent": "thisis",
@@ -37019,11 +39311,11 @@
           {
             "start": 0,
             "end": 3,
-            "value": "Amy",
+            "value": "amy",
             "entity": "nou"
           }
         ],
-        "text": "Amy"
+        "text": "amy"
       },
       {
         "intent": "thisis",
@@ -37067,11 +39359,11 @@
           {
             "start": 0,
             "end": 4,
-            "value": "Anna",
+            "value": "anna",
             "entity": "nou"
           }
         ],
-        "text": "Anna"
+        "text": "anna"
       },
       {
         "intent": "thisis",
@@ -37163,11 +39455,11 @@
           {
             "start": 0,
             "end": 9,
-            "value": "Christine",
+            "value": "christine",
             "entity": "nou"
           }
         ],
-        "text": "Christine"
+        "text": "christine"
       },
       {
         "intent": "thisis",
@@ -37187,11 +39479,11 @@
           {
             "start": 0,
             "end": 5,
-            "value": "Debra",
+            "value": "cathy",
             "entity": "nou"
           }
         ],
-        "text": "Debra"
+        "text": "cathy"
       },
       {
         "intent": "thisis",
@@ -37534,6 +39826,18 @@
         "entities": [
           {
             "start": 0,
+            "end": 5,
+            "value": "tomas",
+            "entity": "nou"
+          }
+        ],
+        "text": "tomas"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 0,
             "end": 3,
             "value": "amy",
             "entity": "nou"
@@ -37667,11 +39971,11 @@
           {
             "start": 0,
             "end": 5,
-            "value": "Marie",
+            "value": "marie",
             "entity": "nou"
           }
         ],
-        "text": "Marie"
+        "text": "marie"
       },
       {
         "intent": "thisis",
@@ -37750,12 +40054,24 @@
         "entities": [
           {
             "start": 0,
-            "end": 5,
-            "value": "Diana",
+            "end": 4,
+            "value": "dave",
             "entity": "nou"
           }
         ],
-        "text": "Diana"
+        "text": "dave"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "diana",
+            "entity": "nou"
+          }
+        ],
+        "text": "diana"
       },
       {
         "intent": "thisis",
@@ -40593,6 +42909,18 @@
         "intent": "thisis",
         "entities": [
           {
+            "start": 8,
+            "end": 13,
+            "value": "elise",
+            "entity": "nou"
+          }
+        ],
+        "text": "hi, its elise"
+      },
+      {
+        "intent": "thisis",
+        "entities": [
+          {
             "start": 9,
             "end": 14,
             "value": "Erika",
@@ -41957,15 +44285,17 @@
           "book a zoom",
           "book a zoom call",
           "schedule a zoom call",
+          "set up a zoom call",
           "plan a Zoom call",
           "schedule a Zoom meeting",
           "set up a Zoom meeting",
           "arrange a Zoom meeting",
           "arrange for a Zoom meeting",
           "book a Zoom meeting",
-          "have a zoom meeting",
           "a zoom call",
-          "have a zoom call"
+          "have a zoom meeting",
+          "have a zoom call",
+          "schedule up a zoom call"
         ]
       },
       {
@@ -41994,10 +44324,9 @@
         ]
       },
       {
-        "value": "zoom",
+        "value": "have a chat",
         "synonyms": [
-          "set up a zoom call",
-          "zoom call"
+          "speak with"
         ]
       },
       {
@@ -42048,6 +44377,14 @@
         ]
       },
       {
+        "value": "next week",
+        "synonyms": [
+          "in the next week",
+          "in the coming week",
+          "nextweek"
+        ]
+      },
+      {
         "value": "do lunch",
         "synonyms": [
           "lunch"
@@ -42086,6 +44423,18 @@
         ]
       },
       {
+        "value": "set up a call",
+        "synonyms": [
+          "set ip a call"
+        ]
+      },
+      {
+        "value": "zoom",
+        "synonyms": [
+          "zoom call"
+        ]
+      },
+      {
         "value": "schedule a lunch meeting",
         "synonyms": [
           "a lunch meeting",
@@ -42105,15 +44454,28 @@
         ]
       },
       {
-        "value": "next week",
-        "synonyms": [
-          "nextweek"
-        ]
-      },
-      {
         "value": "call",
         "synonyms": [
           "a ca;;"
+        ]
+      },
+      {
+        "value": "2/24",
+        "synonyms": [
+          "on 2/24",
+          "on 22 Nov"
+        ]
+      },
+      {
+        "value": "today",
+        "synonyms": [
+          "today a good day"
+        ]
+      },
+      {
+        "value": "5:00",
+        "synonyms": [
+          "5:00 to 5:30 pm"
         ]
       }
     ]

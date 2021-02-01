@@ -74,6 +74,15 @@
 - can you help me [book a meeting](activity)
 - can you help me [set up a zoom call](activity:Zoom)
 
+- i need to [have a chat](activity) with [forest](fm)
+- i need to [set up a meeting](activity) with [forest](fm)
+- i need to [speak with](activity:have a chat) [forest](fm)
+- i need to talk to [forest](fm)
+- i need to [get in touch](activity) with [forest](fm)
+- i need to [schedule a call](activity)
+- i need to [schedule a zoom call](activity:Zoom)
+
+
 - i want to [meet in your garden](activity)
 - Hey [forest](fm), Love to set up [a call](activity:have a call). [Paul](nou) Acme Personel
 
@@ -327,7 +336,7 @@
 - can you [take a call](activity:have a call) on [Monday](DATE)
 - can you [take a meeting](activity:meet) [this week](DATE)
 - can you [take a meeting](activity) [next week](When)
-
+- can you [set ip a call](activity:set up a call) for me and Forest?
 
 - can you [come in](activity) [this week](When)
 - can we [have a meeting](activity) [this week](When)
@@ -822,9 +831,16 @@
 - can we [meet up](activity) [next week](DATE)
 - can you fit [a call](activity) in [this week](When)
 - can you fit [a meeting](activity) in [tomorrow](DATE)
+
 - do you have time [today](DATE)
 - do you have time for [a call](activity:have a call) [today](DATE)
 - do you have time for [a meeting](activity:meet) [tomorrow](DATE)
+- do you have time for [a call](activity:have a call) [on 2/24](DATE:2/24)
+- will you have time for [a meeting](activity:meet) [on 22 Nov](DATE:2/24)
+- any chance you'll have time for [a call](activity:have a call) [today](Day)
+
+- is [today a good day](DATE:today)
+- how is [tomorrow](DATE) looking to [get together](activity)
 
 - whats your availability
 - whats your availability like
@@ -934,7 +950,19 @@
 - shall we say [thursday](DATE) then?
 - shall we confirm for [tuesday](DATE) then?
 
+- Hi Forest this is [Ted](nou). Please [set up a zoom call](activity:Zoom) for [February 17](DATE) at [5:00 PM](Time)
+- Will you [schedule up a zoom call](activity:Zoom) with Forest on [February 17](DATE) at [5:00 am](Time)
+- Please [schedule up a zoom call](activity:Zoom) with Forest on [February 17](DATE) at [5:00 pm](Time)
+- Will you [book a meeting](activity:meet) with Forest on [February 17](DATE) at [3:00 pm](Time)
+- Please [set up a zoom call](activity:Zoom) with Forest on [March 17](DATE) at [7:00 Am](Time)
+- I would like to [set up a call](activity) for [May 5](DATE) from [5:00 to 5:30 pm](Time:5:00)
+- I need to [schedule a meething](activity) with Forest for [August 8](DATE) at [11AM](Time)
+- How about [1:30pm-2pm](Time) on [February 16th](DATE)?
+- Does [10:00-10:30am](Time) on [July 17](DATE) work for [a call](activity:have a call)
+
 - I’m free [anytime today](TOD) except 1-3pm. Tomorrow is kinda loose, I could [jump on a call](activity) [whenever](TOD). [Sunday](DATE) I could talk at [noon](Time) or [after 4pm](Time)
+
+
 
 ## intent:suggest_different_day
 - [friday](DATE) is better for me

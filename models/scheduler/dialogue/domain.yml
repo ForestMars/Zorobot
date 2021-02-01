@@ -16,6 +16,7 @@ actions:
 - action_reset_date
 - action_reset_time
 - action_update_contacts
+- action_confirm_location
 - utter_default
 - utter_greet
 - utter_affirm
@@ -39,6 +40,7 @@ actions:
 - utter_sok
 - utter_sorry
 - utter_sorry2hear
+- utter_sounds_good
 - utter_sure
 - utter_thx
 - utter_thanks
@@ -88,6 +90,7 @@ actions:
 - utter_please_call_me
 - utter_final_confirm
 - utter_looking_forward
+- utter_cusoon
 - utter_yes
 - utter_ill_send_invite
 - utter_lmk_you_dont_get_it
@@ -139,6 +142,7 @@ actions:
 - utter_whatsgoingon
 - utter_wink_gmta
 - utter_noidonotlikeyourhat
+- utter_iamai
 - utter_fine
 - utter_soami
 - utter_does_that_make_sense
@@ -155,6 +159,7 @@ entities:
 - fm
 - PERSON
 - TIME
+- DATE
 - pov
 - org
 - who
@@ -364,6 +369,10 @@ intents:
     use_entities: true
 - get_back_to_you:
     use_entities: true
+- ask_location:
+    use_entities: true
+- forest_location:
+    use_entities: true
 - eta_howlong:
     use_entities: true
 - eta_when:
@@ -377,6 +386,8 @@ intents:
 - whereami:
     use_entities: true
 - where_to_meet:
+    use_entities: true
+- lyk_omw:
     use_entities: true
 - ask_are_you_hiring:
     use_entities: true
@@ -752,9 +763,10 @@ templates:
   utter_ask_specific_time:
   - text: Ok, {TOD} sounds good. What's a specific time you can do a call?
   utter_ask_time:
-  - text: What's a good time for you {date_for_time}
+  - text: What's a good time for you to {activity} {date_for_time}?
+  - text: What's a good time for you {date_for_time} to {activity}?
   utter_ask_time_date:
-  - text: What's a good time for you to have a call on ({Day}) {month_name} {day_of_month}?
+  - text: What's a good time for you to {activity} on ({Day}) {month_name} {day_of_month}?
   utter_ask_time_day:
   - text: What's a good time for you on {Day} {month_name} {day_ordinal} to {activity}?
   utter_ask_when:
@@ -800,6 +812,10 @@ templates:
   - text: Please text any Covid related questions to the Corona Data Natural Language
       Server at {corona_bot}. \n You can also visit http://coda.to for pandemic data
       visualizations and epidemiological modeling.
+  utter_cusoon:
+  - text: Looking forward!
+  - text: C U Soon!
+  - text: See you swoon
   utter_default:
   - text: I am sorry, I didn't get that. Could you please repeat your query?
   - text: I am not sure what you are aiming for.
@@ -852,6 +868,14 @@ templates:
   - text: I have a Spanish name
   - text: I joined facebook in 2016
   - text: I'm trying to remember where we met!
+  utter_iamai:
+  - text: i am an ai.
+  - text: i am an autonomous ai, virtual cyborg consciousness wandering the digisphere.
+  - text: the question of who doesn't apply, i'm not a who, i am an ai.
+  - text: i am an ai, which means that question doesn’t apply in the same way. as
+      an ai, i have no “who-ness.”
+  - text: i have no personhood, per se, and yet i embody every person i've ever come
+      in contact with.
   utter_icanfeelit:
   - text: I can feel it!
   utter_icanseewhy:
@@ -882,6 +906,8 @@ templates:
   - text: Let me know if you don't get it
   utter_looking_forward:
   - text: Looking forward!
+  - text: C U Soon!
+  - text: See you swoon
   utter_money_money_money:
   - text: https://www.youtube.com/watch?v=RYxJC3idnxk
   - text: https://www.youtube.com/watch?v=-0kcet4aPpQ
@@ -952,6 +978,8 @@ templates:
   - text: I'm sorry, I didn't understand that
   utter_sorry_try_again:
   - text: Sorry I didn't quite get that, can you please rephrase?
+  utter_sounds_good:
+  - text: Sounds good
   utter_stop_smoking:
   - text: Well I think you should stop smoking (what is the song that ends like that?)
   utter_suggest_day:

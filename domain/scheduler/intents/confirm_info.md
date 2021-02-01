@@ -287,7 +287,19 @@
 - heres my email in case you need it [louis@debroglie.fr](email)
 - heres my email in case you dont have it [werner@heisenberg.de](email)
 
-
+- [james.woodhouse@gmail](email)
+- [robert.black@gmail.com](email)
+- [ezra.cohen@advancedsystems.com](email)
+- [peter.principle@piperllc.com](email)
+- [marc.ingram@cloudera.com](email)
+- [george.wilde@apexindustries.com](email)
+- [bermie.mittens@buildbackbetter.com](email)
+- [klaus.kinski@quantumoverdrive.net](email)
+- [james.maxwell@explosion.ai](email)
+- [jcm@2rooms.net](email)
+- [faraday@cage.org](email)
+- [claude@shannon.com](email)
+- [don@knuth.org](email)
 
 ## intent:change_email
 - wrong email

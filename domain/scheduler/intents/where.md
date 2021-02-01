@@ -1,3 +1,164 @@
+## intent:ask_location
+- Address?
+- address?
+- Address, please?
+- address please?
+- can you send me the address
+- can you send me your address
+- can you text me the address
+- can you text me your address
+- can you pls send me your address
+- can you please send me your address
+- how do i get there
+- i need the location
+- i need your location
+- i need to know the location
+- i need to know your location
+- please send me the address
+- please text me the address
+- pls txt me yr address
+- what is the address
+- what is the exact address
+- what is your address
+- what is your exact address
+- what's the actual address
+- what's the street address
+- what's your address
+- whats the address
+- whats your location
+- whats yr exact address
+- where are you at
+- where are you located
+- where are you located at
+- where do i go
+- can you send me the address?
+- can you send me your address?
+- can you text me the address?
+- can you text me your address?
+- can you pls send me your address?
+- can you please send me your address?
+- how do i get there?
+- please send me the address?
+- please text me the address?
+- pls txt me yr address?
+- what is the address?
+- what is the exact address?
+- what is your address?
+- what is your exact address?
+- what's the actual address?
+- what's the street address?
+- what's your address?
+- whats the address?
+- whats your location?
+- whats yr exact address?
+- where are you at?
+- where are you located?
+- where are you located at?
+- where do i go?
+- where do you live
+- what is the address please
+- what is the address please?
+- What is the address please?
+
+## intent:forest_location
+- [forest's](fm) Address?
+- [forest's](fm) address?
+- [forest's](fm) Address, please?
+- [forest's](fm) address please?
+- can you please send me [forest's](fm) address
+- can you please send me [forest's](fm) address?
+- can you pls send me [forest's](fm) address
+- can you pls send me [forest's](fm) address?
+- can you send me [forest's](fm) address
+- can you send me [forest's](fm) address?
+- can you text me [forest's](fm) address
+- can you text me [forest's](fm) address?
+- hi [forest](fm) what is the address please
+- how do i get to [forest's](fm)
+- i need [forest's](fm) location
+- i need to know [forest's](fm) location
+- i need to know where [forest](fm) lives
+- please send me [forest's](fm) address
+- please send me [forest's](fm) address?
+- please text me [forest's](fm) address
+- please text me [forest's](fm) address?
+- pls txt me [forest's](fm) address
+- pls txt me [forest's](fm) address?
+- what is [forest's](fm) address
+- what is [forest's](fm) address please
+- What is [forest's](fm) address please?
+- what is [forest's](fm) address please?
+- what is [forest's](fm) address?
+- what is [forest's](fm) exact address
+- what is [forest's](fm) exact address?
+- what is [forest's](fm) location
+- what's [forest's](fm) actual address
+- what's [forest's](fm) actual address?
+- what's [forest's](fm) address
+- what's [forest's](fm) address?
+- what's [forest's](fm) street address
+- what's [forest's](fm) street address?
+- whats [forest's](fm) address
+- whats [forest's](fm) address?
+- whats [forest's](fm) exact address
+- whats [forest's](fm) exact address?
+- whats [forest's](fm) location
+- whats [forest's](fm) location?
+- where does [Forest](fm) live
+- where is [forest's](fm) located at?
+- where is [forest](fm) at
+- where is [forest](fm) at?
+- where is [forest](fm) located
+- where is [forest](fm) located at
+- where is [forest](fm)located?
+
+- can you please send me [Forest's](fm) address
+- can you please send me [Forest's](fm) address?
+- can you pls send me [Forest's](fm) address
+- can you pls send me [Forest's](fm) address?
+- can you send me [Forest's](fm) address
+- can you send me [Forest's](fm) address?
+- can you text me [Forest's](fm) address
+- can you text me [Forest's](fm) address?
+- hi [Forest](fm) what is the address please
+- how do i get to [Forest's](fm)
+- i need [Forest's](fm) location
+- i need to know [Forest's](fm) location
+- i need to know where [Forest](fm) lives
+- please send me [Forest's](fm) address
+- please send me [Forest's](fm) address?
+- please text me [Forest's](fm) address
+- please text me [Forest's](fm) address?
+- pls txt me [Forest's](fm) address
+- pls txt me [Forest's](fm) address?
+- what is [Forest's](fm) address
+- what is [Forest's](fm) address please
+- What is [Forest's](fm) address please?
+- what is [Forest's](fm) address please?
+- what is [Forest's](fm) address?
+- what is [Forest's](fm) exact address
+- what is [Forest's](fm) exact address?
+- what is [Forest's](fm) location
+- what's [Forest's](fm) actual address
+- what's [Forest's](fm) actual address?
+- what's [Forest's](fm) address
+- what's [Forest's](fm) address?
+- what's [Forest's](fm) street address
+- what's [Forest's](fm) street address?
+- whats [Forest's](fm) address
+- whats [Forest's](fm) address?
+- whats [Forest's](fm) exact address
+- whats [Forest's](fm) exact address?
+- whats [Forest's](fm) location
+- whats [Forest's](fm) location?
+- where does [Forest](fm) live
+- where is [Forest's](fm) located at?
+- where is [Forest](fm) at
+- where is [Forest](fm) at?
+- where is [Forest](fm) located
+- where is [Forest](fm) located at
+- where is [Forest](fm)located?
+
 
 ## intent:where_to_meet
 - where should we meet
@@ -13,7 +174,6 @@
 - whats a good spot nearby
 - whats your favorite spot
 - do you have favorite place?
-
 - where should we meet for [lunch](activity)
 - where do you want to meet [lunch](activity)
 - where would you like to meet for [lunch](activity)

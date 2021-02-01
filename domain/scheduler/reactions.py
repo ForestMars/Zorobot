@@ -1,6 +1,7 @@
 # actions.py - Define custom actions for message responses. Some of these functions are filthy beasts that need to be refactored.
 # -*- coding: utf-8 -*-
 # @TODO: Better logging. Explain yourself.
+__version__ = '0.2.0'  # refactored datetime handling using form api
 
 import datetime
 from datetime import datetime as dt
@@ -642,11 +643,24 @@ class WhoForm(FormAction):
 
     def submit(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict]:
         slots = []
-        nou = tracker.get_slot('nou')
+
+        # @TODO: Let's refactor this.
+        if isinstance(tracker.get_slot('nou'), list) and isinstance(tracker.get_slot('PERSON'), list):
+                nou = tracker.get_slot('PERSON')[0] # kind of a coin flip which one to go with here.
+        elif tracker.get_slot('PERSON') is not None and tracker.get_slot('nou') is None:
+                nou = tracker.get_slot('PERSON')
+        elif tracker.get_slot('nou') is not None and tracker.get_slot('PERSON') is None:
+                nou = tracker.get_slot('nou')
+        elif isinstance(tracker.get_slot('PERSON'), list) and tracker.get_slot('nou') is not None:
+            nou = tracker.get_slot('nou')
+        elif isinstance(tracker.get_slot('nou'), list) and tracker.get_slot('PERSON') is not None:
+            nou = tracker.get_slot('PERSON')
         kwargs = {'nou': nou}
+        
         if tracker.get_slot('greeted') is not True:
             dispatcher.utter_template('utter_nicetohearfromu', tracker, **kwargs)
         slots.append(SlotSet('greeted', True))
+
         return slots
 
 
@@ -660,7 +674,6 @@ class ActionPreprocessWhenForm(Action):
         slots = []
         date = tracker.get_slot('DATE')
 
-
         if date is not None:  # slot was set before form ran, so not validated.
             # The should probably be handled with BILOU
             # replace_ = lambda s, d: s if not d else mrep(s.replace(*d.popitem()), d)
@@ -668,7 +681,9 @@ class ActionPreprocessWhenForm(Action):
             for v in vague:
                 date = date.replace(v, '')
 
-            if date.lower().strip() in ['this week', 'next week', 'the next week', 'the coming week', 'this month', 'next month']:
+            if date.lower() in ['2moro', '2morow', '2morrow', 'tomorow']:  # Consider moving into train set
+                slots.append(SlotSet('DATE', 'tomorrow'))
+            elif date.lower().strip() in ['this week', 'next week', 'the next week', 'the coming week', 'this month', 'next month']:
                 dispatcher.utter_message("We can set something up for " + date)
                 slots.append(SlotSet('DATE', None))
             if len(date.split()) > 1:
@@ -730,11 +745,6 @@ class WhenForm(FormAction):
                     for v in vague:
                         date = date.replace(v, '')
 
-                    # This is handled in a separate preprocess function, to avoid the complications of trying to preprocess in a form.
-                    #if date.lower().strip() in ['this week', 'next week', 'this month', 'next month']:
-                        #dispatcher.utter_message("We can set something up for " + date)
-                        #slots.append(SlotSet('DATE', None))
-
             if slot == 'Time':
                 time_of_day = tracker.get_slot('TOD')
                 # Preprocess vague/bad dates.
@@ -795,10 +805,6 @@ class WhenForm(FormAction):
 
         return date_clean.strftime("%Y-%m-%d")
 
-    # deprecated, kill
-    #def preprocess_date(self, DATE): #  Is this being used?
-    #    date_clean = self.day_or_date(DATE)
-
     def preprocess_day_or_date(self, dispatcher, tracker, DATE):
         if DATE.isalpha() and len(DATE.split()) == 1:  # We most assuredly have a day, not a date. (Execept when Spacy NER fails.)
             try:
@@ -849,7 +855,6 @@ class WhenForm(FormAction):
             #  DATE = val
             DATE = tracker.get_slot('DATE')  # Spacy NER fallback (pretrained)
 
-
         # Guard conditions should not be needed.
         if DATE == None:
             return None
@@ -879,6 +884,8 @@ class WhenForm(FormAction):
             kwargs.update({"month_name": when['month_name']})
             #kwargs.update({"day_of_month": when['day_of_month']})
             kwargs.update({"day_of_month": when['ord']})
+            if when['day_of_month'][0:1] == '0':
+                when['day_of_month'] = when['day_of_month'][1:]  # @FIXME: This is broken in at least 2 different ways
             #if tracker.get_slot('Time') is None or tracker.get_slot('Time').strip() != '':
             if tracker.get_slot('Time') is None:
                 if DATE.lower().strip() in ['today', 'tomorrow']:
@@ -909,9 +916,6 @@ class WhenForm(FormAction):
         if time is None or time.strip() == '':
             return None
 
-        #if ActionCheckTime.checktime(time, dispatcher, tracker) == True:
-            #return time
-
     def submit(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict]:
         slots = []
         DATE = tracker.get_slot('DATE')
@@ -928,8 +932,6 @@ class WhenForm(FormAction):
             else:
                 date_clean = self.clean_date(dispatcher, tracker, DATE)
                 slots.append(SlotSet('DATE', date_clean))
-
-        #self.set_date(False) # Reset date memory. (This can be removed ??)
 
         slots.append(SlotSet('month_name', when['month_name']))
         slots.append(SlotSet('date_month', when['month']))
@@ -1020,9 +1022,6 @@ class ActionDateParts(Action):
             when['Day'] = when['date'].strftime("%A")  # not used ?
             when['month_name'] = when['date'].strftime("%b")
 
-
-
-
             slots.append(SlotSet('month_name', when['month_name']))
             slots.append(SlotSet('date_month', when['month']))
             slots.append(SlotSet('day_of_month', when['day_of_month']))
@@ -1036,10 +1035,6 @@ class ActionDateParts(Action):
         #dispatcher.utter_message(msg)
 
         return slots
-
-    #def submit(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict]:
-
-        #return []
 
 
 class ActionChat(Action):
@@ -1057,6 +1052,33 @@ class ActionChat(Action):
         dispatcher.utter_message(response)
 
         return slots
+
+class ActionConfirmLocation(Action):
+    """ Return a location (formatted as address) for a given place. """
+
+    def name(self):
+        return "action_confirm_location"
+
+    def run(self, dispatcher, tracker, domain):
+
+        #slots = []
+        # user = (tracker.current_state())["sender_id"]
+        # if user is authorized (if user in contacts)
+        msg = "The address is:\n {0} {1}\n {2}, {3} {4}.\n {5}".format(
+            '322',
+            'E 94',
+            'New York',
+            'NY',
+            '10128',
+            'Last stop on the Q, exit rear, left escalator puts you on the block.'
+        )
+        dispatcher.utter_message(msg)
+
+        #return slots
+
+
+
+
 
 
 class ActionRepeat(Action):  # AKA "What was that again?"

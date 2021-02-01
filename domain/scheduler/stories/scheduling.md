@@ -1,6 +1,5 @@
 ## greet with name
 * thisis
-  - utter_greet
   - who_form
   - form{"name": "who_form"}
   - form{"name": null}
@@ -86,6 +85,9 @@
 ## suggest date
 * suggest_date
   - action_check_date
+  - who_form
+  - form{"name": "who_form"}
+  - form{"name": null}
   - action_preprocess_when
   - when_form
   - form{"name": "when_form"}
@@ -94,6 +96,9 @@
 ## suggest date/time - HP + email correction
 * suggest_date
   - action_check_date
+  - who_form
+  - form{"name": "who_form"}
+  - form{"name": null}
   - action_preprocess_when
   - when_form
   - form{"name": "when_form"}
@@ -124,6 +129,9 @@
 ## don't confirm >  change date  > don't confirm
 * suggest_date
   - action_check_date
+  - who_form
+  - form{"name": "who_form"}
+  - form{"name": null}
   - action_preprocess_when
   - when_form
   - form{"name": "when_form"}
@@ -170,6 +178,9 @@
 ## don't confirm >  change date  > don't confirm
 * suggest_date
   - action_check_date
+  - who_form
+  - form{"name": "who_form"}
+  - form{"name": null}
   - action_preprocess_when
   - when_form
   - form{"name": "when_form"}
@@ -214,6 +225,9 @@
 ## don't confirm >  change date  > don't confirm
 * suggest_date
   - action_check_date
+  - who_form
+  - form{"name": "who_form"}
+  - form{"name": null}
   - action_preprocess_when
   - when_form
   - form{"name": "when_form"}
@@ -246,6 +260,9 @@
 ## don't confirm > change date + email correction
 * suggest_date
   - action_check_date
+  - who_form
+  - form{"name": "who_form"}
+  - form{"name": null}
   - action_preprocess_when
   - when_form
   - form{"name": "when_form"}

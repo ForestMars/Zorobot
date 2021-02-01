@@ -274,6 +274,8 @@ intents:
 - get_back_to_you
 
 # ~~~~~~~~~~ Logistics / Making Plans
+- ask_location
+- forest_location
 - eta_howlong
 - eta_when
 - omw
@@ -333,6 +335,7 @@ intents:
 # ~~~~~~~~~~ Small Talk
 - corona: {triggers: utter_chitchat}
 - chitchat: {triggers: utter_chitchat}
+- relatives
 
 # ~~~~~~~~~~ Kill / Chat
 - suggest_day_forest
@@ -362,6 +365,7 @@ actions:
 - action_reset_date
 - action_reset_time
 - action_update_contacts
+- action_confirm_location
 
 # ~~~~~~~~~~ General
 - utter_default
@@ -444,6 +448,7 @@ actions:
 - utter_please_call_me
 - utter_final_confirm
 - utter_looking_forward
+- utter_cusoon
 - utter_yes
 - utter_ill_send_invite
 - utter_lmk_you_dont_get_it
@@ -505,6 +510,7 @@ actions:
 - utter_whatsgoingon
 - utter_wink_gmta
 - utter_noidonotlikeyourhat
+- utter_iamai
 
 # ~~~~~~~~~~ Chitchat etc.
 - utter_fine
@@ -854,6 +860,13 @@ templates:
   - text: Sounds good
   utter_looking_forward:
   - text: Looking forward!
+  - text: C U Soon!
+  - text: See you swoon
+  utter_cusoon:
+  - text: Looking forward!
+  - text: C U Soon!
+  - text: See you swoon
+
 
 # Easter Eggs and Memes
   utter_anyway:
@@ -895,6 +908,12 @@ templates:
   - text: GMTA
   utter_camus:
   - text: It has been quite the year. I did find some time to re-read the Camus novel.
+  utter_iamai:
+  - text: i am an ai.
+  - text: i am an autonomous ai, virtual cyborg consciousness wandering the digisphere.
+  - text: the question of who doesn't apply, i'm not a who, i am an ai.
+  - text: i am an ai, which means that question doesn’t apply in the same way. as an ai, i have no “who-ness.”
+  - text: i have no personhood, per se, and yet i embody every person i've ever come in contact with.
 
 # ETC
   utter_shabbat:

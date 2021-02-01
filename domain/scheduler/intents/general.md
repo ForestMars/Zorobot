@@ -367,6 +367,10 @@
 - youre funny
 - ur funny
 - u r funny
+- oh thats funny
+- thats really funny
+- real funny
+- so funny
 
 ## intent:sorry
 - sorry
@@ -525,6 +529,9 @@
 - will you tell me your name
 - whats your name
 - what name do you go by
+- what is your name
+- what's your name
+- what is your name again
 
 
 ### ~~~~~~~~~~~~~~~~~~~~~ Exclamations &  Expressions ~~~~~~~~~~~~~~~~~~~~
@@ -702,6 +709,7 @@
 - what does that mean
 
 ## intent:lost_the_plot
+- 🔙
 - back up
 - come again
 - communication breakdown

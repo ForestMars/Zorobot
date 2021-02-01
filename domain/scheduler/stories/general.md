@@ -6,9 +6,13 @@
 * np
   - utter_smiley
 
+## ask for location
+* ask_location OR forest_location OR where_to_meet
+  - action_confirm_location
+
 ## omw
 * omw
-  - utter_looking_forward
+  - utter_cusoon
 
 ## wassup
 * sup

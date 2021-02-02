@@ -272,6 +272,8 @@ intents:
 - meet_up
 - will_lyk
 - get_back_to_you
+- reschedule
+- cancel
 
 # ~~~~~~~~~~ Logistics / Making Plans
 - ask_location
@@ -460,6 +462,10 @@ actions:
 - utter_ok_afternoon
 - utter_timeofday
 - utter_send_invite
+- utter_cancel_activity
+- ask_rusure
+- ask_what_would_you_like_to_do
+- ask_reschedule_when
 
 # ~~~~~~~~~~ Logistics
 
@@ -966,3 +972,12 @@ templates:
 
   utter_glad_conversation:
   - text: I'm really glad we had this conversation
+
+  ask_rusure:
+  - text: I can do that. Are you sure? (y/n)
+  ask_reschedule_when:
+  - text: Ok, what day would you like to reschedule for?
+  utter_cancel_activity:
+  - text: Ok. I have canceled it and removed it from his calendar.
+  ask_what_would_you_like_to_do:
+  - text: What would you like to do?

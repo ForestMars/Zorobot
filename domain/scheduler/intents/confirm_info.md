@@ -468,3 +468,19 @@
 - can we do a call now
 - can you do a call now
 - can you hop on a call now
+
+## intent:cancel
+- i need to cancel our appt
+- i need to cancel our appointment
+- i have to cancel our appointment
+- i have to cancel our call
+- i have to cancel our meeting
+- can you cancel my call with forest
+- can you please cancel the meeting you scheduled
+- can you please cancel the meeting you organized with forest
+- sorry but i need to cancel our meeting
+- please cancel my scheduled call
+- cancel the call
+- cancel the meeting
+
+## intent:reschedule

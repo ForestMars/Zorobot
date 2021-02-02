@@ -57,7 +57,7 @@
 ### ~~~~~~~~~~~~~~~~~~~~~ Availability ~~~~~~~~~~~~~~~~~~~~
 
 ## suggest day/time - HP + yes
-* ask_availability OR suggest_availability
+* ask_availability OR suggest_availability OR reschedule
   - who_form
   - form{"name": "who_form"}
   - form{"name": null}
@@ -127,7 +127,7 @@
   - utter_np
 
 ## don't confirm >  change date  > don't confirm
-* suggest_date
+* suggest_date OR reschedule
   - action_check_date
   - who_form
   - form{"name": "who_form"}
@@ -328,3 +328,15 @@
 ## goodbye
 * bye OR bye_fancy
   - utter_bye
+
+## cancel
+* cancel
+  - ask_rusure
+* affirm OR agree
+  - utter_cancel_activity
+
+## cancel
+* cancel
+  - ask_rusure
+* deny
+  - ask_what_would_you_like_to_do
